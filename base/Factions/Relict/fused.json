@@ -1,0 +1,21 @@
+{
+  "Name": "Fused",
+  "Inherits": "Relict",
+  "Type": "Template",
+  "RestrictToClass": "Heavy",
+  "Traits": [
+    {
+      "Name": "Large",
+      "Description": "Size 2."
+    },
+    {
+      "Name": "Shambling",
+      "Description": "Cannot dash.",
+      "NoDash": true
+    },
+    {
+      "Name": "Release Passengers",
+      "Description": "When defeated, summon 4 relict wight mobs in its space."
+    }
+  ]
+}

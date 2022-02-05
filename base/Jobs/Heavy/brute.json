@@ -1,0 +1,31 @@
+{
+  "Name": "Brute",
+  "Inherits": "Heavy",
+  "Type": "Job",
+  "AddHPPercent": 0.25,
+  "Armor": 0,
+  "Size": 2,
+  "Traits": [
+    {
+      "Name": "Sturdy",
+      "Description": "Immune to shove, daze, and stun."
+    }
+  ],
+  "Actions": [
+    {
+      "Name": "Clobber",
+      "ActionCost": 1,
+      "Tags": [ "melee attack" ],
+      "Hit": "[D]+[fray]",
+      "Miss": "[fray].",
+      "Effect": "Foe must save or become dazed. If already dazed, they are stunned instead on a failed save."
+    },
+    {
+      "Name": "Hurl",
+      "ActionCost": 1,
+      "Tags": [ "repeatable" ],
+      "Description": "The Brute picks up an adjacent character, piece of created terrain, or summon and shoves them 3.",
+      "Collide": "Character is dazed."
+    }
+  ]
+}

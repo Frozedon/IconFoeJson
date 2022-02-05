@@ -1,0 +1,17 @@
+{
+  "Name": "Heavy",
+  "Group": "Heavy",
+  "Vitality": 10,
+  "Speed": 3,
+  "Dash": 2,
+  "Defense": 6,
+  "Armor": 3,
+  "FrayDamage": 4,
+  "DamageDie": "d6",
+  "Traits": [
+    {
+      "Name": "Fortify",
+      "Description": "At the end of their turn, gains vigilance 1."
+    }
+  ]
+}

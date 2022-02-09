@@ -1,5 +1,6 @@
 {
   "Name": "Mob",
+  "Group": "Mob",
   "Vitality": 0,
   "HP": 1,
   "Speed": 4,

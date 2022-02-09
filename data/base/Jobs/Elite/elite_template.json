@@ -1,0 +1,12 @@
+{
+  "Name": "Elite (Template)",
+  "Group": "Elite",
+  "Type": "Template",
+  "HPMultiplier": 8,
+  "SetupTraits": [
+    {
+      "Name": "Elite",
+      "Description": "Increase the recharge of any of their abilities at 4+ or lower to 5+."
+    }
+  ]
+}

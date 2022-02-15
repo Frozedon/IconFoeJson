@@ -63,7 +63,7 @@
     {
       "Name": "Dive",
       "ActionCost": 1,
-      "Tags": [ "recharge 5+" ],
+      "Recharge": 5,
       "Description": "The Kinfisher submerges into the ground, teleporting 5 spaces, then resurfaces, even to an occupied area. When it resurfaces, characters in its area take fray damage, are placed in the closest adjacent space of its choice, then shoved 2."
     }
   ]

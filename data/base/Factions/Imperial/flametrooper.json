@@ -15,7 +15,8 @@
     {
       "Name": "Flame Hurler",
       "ActionCost": 1,
-      "Tags": [ "close blast 1", "true strike", "recharge 6" ],
+      "Recharge": 6,
+      "Tags": [ "close blast 1", "true strike" ],
       "AreaEffect": "4 damage + burning. If a character is already burning, deal bonus damage."
     }
   ]

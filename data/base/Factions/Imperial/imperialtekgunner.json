@@ -14,7 +14,7 @@
     {
       "Name": "Speed Clip",
       "ActionCost": 0,
-      "Tags": [ "recharge 6" ],
+      "Recharge": 6,
       "Description": "The Tek Gunner takes the Full Auto stance."
     }
   ]

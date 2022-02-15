@@ -46,7 +46,7 @@
     {
       "Name": "Arkentech Force Shield",
       "ActionCost": 1,
-      "Tags": [ "recharge 6" ],
+      "Recharge": 6,
       "Description": "The Praetorian gains aura 2 until the end of its next turn. The Praetorian and any of its allies have resistance against abilities originating from characters outside the aura."
     }
   ]

@@ -6,7 +6,8 @@
     {
       "Name": "Rifle",
       "ActionCost": 1,
-      "Tags": [ "ranged attack 8", "recharge 6" ],
+      "Recharge": 6,
+      "Tags": [ "ranged attack 8" ],
       "Hit": "[D]+[fray] and inflict burning.",
       "Miss": "[fray]."
     }

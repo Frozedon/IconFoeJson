@@ -12,7 +12,7 @@
     {
       "Name": "Snatch Memory",
       "Count": 1,
-      "Tags": [ "recharge 4+" ],
+      "Recharge": 4,
       "Trigger": "A foe in range 2 uses an ability and the ability resolves.",
       "Effect": "That foe must save. On a failed save, they lose the memory of that ability, becoming unable to use it until this Hob is defeated or the Hob uses this ability again."
     }

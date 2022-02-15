@@ -14,7 +14,7 @@
     {
       "Name": "Rocket Jump",
       "ActionCost": 1,
-      "Tags": [ "recharge 6" ],
+      "Recharge": 6,
       "Description": "The Blitz trooper flies 4 spaces in a straight line. All adjacent foes when it lands are dazed and shoved 1."
     }
   ]

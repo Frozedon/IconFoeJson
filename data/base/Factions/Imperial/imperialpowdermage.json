@@ -13,7 +13,7 @@
     {
       "Name": "Pistol Flurry",
       "ActionCost": 2,
-      "Tags": [ "recharge 6" ],
+      "Recharge": 6,
       "Description": "The powder mage uses Pistol on all visible hostile characters in range 5, ignoring it's 1/round restriction."
     }
   ]

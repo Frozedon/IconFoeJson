@@ -14,7 +14,7 @@
     {
       "Name": "Ear Splitting Shriek",
       "ActionCost": 1,
-      "Tags": [ "recharge 5+" ],
+      "Recharge": 5,
       "Description": "Foes in range 2 of the Harpy must save or become branded and lose all stances."
     },
     {

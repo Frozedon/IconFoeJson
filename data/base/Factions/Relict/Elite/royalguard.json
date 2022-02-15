@@ -45,7 +45,7 @@
     {
       "Name": "Wind of Obliteration",
       "ActionCost": 2,
-      "Tags": [ "recharge 5+" ],
+      "Recharge": 5,
       "Effect": "The Royal Guard dashes 2 with phasing, then deals [D] to all adjacent characters and shoves them 1. Then, repeat this effect twice."
     }
   ]

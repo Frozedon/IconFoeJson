@@ -17,7 +17,8 @@
     {
       "Name": "Anguish",
       "ActionCost": 1,
-      "Tags": [ "recharge 6", "end turn" ],
+      "Recharge": 6,
+      "Tags": [ "end turn" ],
       "Description": "The banshee ends its turn. It must take a slow turn next round, but at the start of that turn, it emits a blast 2 area effect centered on it. Characters inside other than banshees must save or take [D] three times, or once on a successful save. On a failed save, characters are also shoved outside the area by the most direct route possible."
     }
   ]

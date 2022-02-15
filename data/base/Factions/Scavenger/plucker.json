@@ -13,7 +13,8 @@
     {
       "Name": "Lighten Load",
       "ActionCost": 1,
-      "Tags": [ "melee attack", "recharge 5+" ],
+      "Recharge": 5,
+      "Tags": [ "melee attack" ],
       "Hit": "2 piercing damage once for each valuables token the target is carrying.",
       "Miss": "1 piercing damage once for each valuables token the target is carrying.",
       "Effect": "The Plucker may teleport 3 before this attack."

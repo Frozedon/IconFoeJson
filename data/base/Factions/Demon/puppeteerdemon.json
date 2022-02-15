@@ -13,7 +13,7 @@
     {
       "Name": "Black Strings",
       "ActionCost": 1,
-      "Tags": [ "recharge 5+" ],
+      "Recharge": 5,
       "Description": "A foe in range 5 must save. On a failed save, they teleport up to 3 spaces to the nearest ally and deal [D] to them as an effect."
     }
   ]

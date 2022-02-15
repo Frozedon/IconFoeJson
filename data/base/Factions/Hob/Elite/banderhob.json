@@ -61,7 +61,7 @@
     {
       "Name": "Pounce",
       "ActionCost": 2,
-      "Tags": [ "recharge 5+" ],
+      "Recharge": 5,
       "Description": "The hob flies 4, then an adjacent foe must save or take 2[D] and be shoved 2, or [D] on a successful save.",
       "Collide": "Foe is slowed."
     }

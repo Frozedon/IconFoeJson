@@ -13,7 +13,7 @@
     {
       "Name": "Deploy Barricade",
       "ActionCost": 1,
-      "Tags": [ "recharge 6" ],
+      "Recharge": 6,
       "Description": "The sniper creates a space of height 1 terrain in an adjacent space."
     }
   ]

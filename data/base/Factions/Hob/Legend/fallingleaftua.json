@@ -83,13 +83,13 @@
         {
           "Name": "Whirlwind",
           "ActionCost": 1,
-          "Tags": [ "recharge 5+" ],
+          "Recharge": 5,
           "Effect": "Teleport 1, then deal 1 damage to an adjacent foe and shove them 1. Repeat this effect three times."
         },
         {
           "Name": "Steal Friendship",
           "ActionCost": 0,
-          "Tags": [ "recharge 6" ],
+          "Recharge": 6,
           "Effect": "A foe in range 6 must save. On a failed save, they treat all foes as allies and all allies as foes for the purposes of abilities until the end of their next turn."
         }
       ]

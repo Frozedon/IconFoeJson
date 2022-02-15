@@ -20,7 +20,7 @@
     {
       "Name": "Eternal Ice",
       "ActionCost": 2,
-      "Tags": [ "recharge 6" ],
+      "Recharge": 6,
       "Description": "The hob chooses a character in range 6, then freezes them inside an ice block. That character become intangible, has their speed reduced to 0, and is winded+ while inside the block, which is a height 1 terrain destructible piece sharing their space. The block has 10 hp and is resistant to damage from the character inside it. When it shatters, all these effects on the character end."
     }
   ]

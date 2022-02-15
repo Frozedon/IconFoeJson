@@ -17,7 +17,7 @@
     {
       "Name": "Dancing Light",
       "ActionCost": 1,
-      "Tags": [ "recharge 4+" ],
+      "Recharge": 4,
       "Description": "The Wisp summons a dancing light, an intangible size 1 summon in range 6 that cannot be placed adjacent to any character. When any non-hob character starts their turn adjacent to the light, it explodes in a blast 1 area effect centered on it. Characters inside must save or take 2[D] and become blinded, or [D] on a successful save."
     }
   ]

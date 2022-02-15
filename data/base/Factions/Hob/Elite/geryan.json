@@ -36,7 +36,7 @@
     {
       "Name": "Wish",
       "Count": 1,
-      "Tags": [ "recharge 6" ],
+      "Recharge": 6,
       "Trigger": "An ally in range 6 is reduced to 0 hp.",
       "Effect": "That ally returns to 25% hp instead, then the the Geryan takes 25% of its max hp in damage, which could cause it to be defeated."
     }
@@ -61,19 +61,20 @@
     {
       "Name": "Misfortune",
       "ActionCost": 1,
-      "Tags": [ "recharge 5+" ],
+      "Recharge": 5,
       "Description": "A character in range 10 gains +1 curse on all attack rolls and saves until the end of their next turn."
     },
     {
       "Name": "Great Luck",
       "ActionCost": 1,
-      "Tags": [ "mark", "recharge 5+" ],
+      "Recharge": 5,
+      "Tags": [ "mark" ],
       "Description": "An ally in range 10 gains +1 boon on all attack rolls and saves until the end of their next turn."
     },
     {
       "Name": "Ancient Reversa",
       "ActionCost": 1,
-      "Tags": [ "recharge 5+" ],
+      "Recharge": 5,
       "Description": "The Geryan gains aura 2 until the start of their next turn. While inside the aura, when any character (foe or ally) takes damage, roll a d6. On a 4+, that character is cured."
     }
   ]

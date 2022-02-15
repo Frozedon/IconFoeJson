@@ -16,7 +16,8 @@
     {
       "Name": "Mudslide",
       "ActionCost": 1,
-      "Tags": [ "terrain effect", "recharge 6" ],
+      "Recharge": 6,
+      "Tags": [ "terrain effect" ],
       "Description": "The hob dashes 4 with phasing, then creates a terrain effect in the spaces it just passed through. Non-hob characters that enter the space for the first time on their turn or start their turn there must save or slip and be shoved 3 in a direction of the hob's choice.",
       "Collide": "Character takes [D]."
     }

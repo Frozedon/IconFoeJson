@@ -52,7 +52,7 @@
     {
       "Name": "Junk Form",
       "ActionCost": 1,
-      "Tags": [ "recharge 4+" ],
+      "Recharge": 4,
       "Description": "The Hoarder transforms into junk, then teleports either 3 spaces or adjacent to the location of any free valuables token."
     }
   ]

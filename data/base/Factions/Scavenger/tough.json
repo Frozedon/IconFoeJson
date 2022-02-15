@@ -13,7 +13,7 @@
     {
       "Name": "Cough It Up",
       "ActionCost": 1,
-      "Tags": [ "recharge 4+" ],
+      "Recharge": 4,
       "Description": "An adjacent character must save or become dazed and lose all valuables tokens, placing them in free adjacent spaces."
     }
   ]

@@ -7,7 +7,7 @@
     {
       "Name": "Decoy",
       "Count": 1,
-      "Tags": [ "recharge 5+" ],
+      "Recharge": 5,
       "Trigger": "When hit by an attack.",
       "Effect": "Turn that hit into a miss and teleport 3 spaces to an unoccupied space it can see, which is its 'real' location."
     }
@@ -16,7 +16,7 @@
     {
       "Name": "Disguise",
       "ActionCost": 1,
-      "Tags": [ "recharge 6" ],
+      "Recharge": 6,
       "AreaEffect": "A foe in range 5 must save. On a failed save, the Spy switches places with them, teleporting both characters."
     }
   ]

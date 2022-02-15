@@ -1,0 +1,14 @@
+{
+  "Name": "Legionnaire",
+  "Inherits": "Imperial",
+  "Type": "Template",
+  "Actions": [
+    {
+      "Name": "Rifle",
+      "ActionCost": 1,
+      "Tags": [ "ranged attack 8", "recharge 6" ],
+      "Hit": "[D]+[fray] and inflict burning.",
+      "Miss": "[fray]."
+    }
+  ]
+}

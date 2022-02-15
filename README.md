@@ -6,7 +6,7 @@
 - [X] Relict Faction
 - [X] Ruin Beast Faction
 - [X] Scavenger Faction
-- [ ] Imperial Faction
+- [X] Imperial Faction
 - [ ] Demon Faction
 - [ ] Lowlander Faction
 - [ ] Jotunn Faction

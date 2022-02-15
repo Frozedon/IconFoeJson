@@ -32,11 +32,13 @@
     {
       "Name": "Leaf Blade",
       "HP": 8,
+      "HPMultiplyByPlayers": true,
       "Description": "Leaf dance becomes only dash 2."
     },
     {
       "Name": "Mask",
       "HP": 4,
+      "HPMultiplyByPlayers": true,
       "Description": "The memory of any abilities is returned to characters they were stolen from, and the effects of Steal Friendship immediately end. This body part can be broken multiple times."
     }
   ],

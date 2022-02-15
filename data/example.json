@@ -28,8 +28,6 @@
       "DescriptionNonessential": "", // This description is handled automatically and can be hidden
       "Nonessential": false, // This trait is handled automatically and can be hidden
       "AddHPPercent": 0.0,
-      "AddArmor": 0,
-      "MaxArmor": 0,
       "NoRun": false,
       "NoDash": false
     }
@@ -41,8 +39,6 @@
       "Tags": [ "" ], // Anything that should be in paranthesis
       "Description": "",
       "AddHPPercent": 0.0,
-      "AddArmor": 0,
-      "MaxArmor": 0,
       "NoRun": false,
       "NoDash": false
     }

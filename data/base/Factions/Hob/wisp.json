@@ -1,7 +1,6 @@
 {
   "Name": "Wisp",
   "Inherits": "Hob",
-  "Group": "Hob",
   "Type": "Template",
   "Traits": [
     {

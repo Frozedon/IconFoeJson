@@ -1,7 +1,6 @@
 {
   "Name": "Bonfire Spirit",
   "Inherits": "Hob",
-  "Group": "Hob",
   "Type": "Template",
   "Traits": [
     {

@@ -1,7 +1,6 @@
 {
   "Name": "Great Carp Hobb",
   "Inherits": "Hob",
-  "Group": "Hob",
   "Type": "Template",
   "Traits": [
     {

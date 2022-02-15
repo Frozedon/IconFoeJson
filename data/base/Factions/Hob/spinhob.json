@@ -1,7 +1,6 @@
 {
   "Name": "Spinhob",
   "Inherits": "Hob",
-  "Group": "Hob",
   "Type": "Template",
   "Actions": [
     {

@@ -1,7 +1,6 @@
 {
   "Name": "Garberhob",
   "Inherits": "Hob",
-  "Group": "Hob",
   "Type": "Template",
   "Traits": [
     {

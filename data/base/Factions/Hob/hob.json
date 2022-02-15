@@ -1,5 +1,6 @@
 {
   "Name": "Hob",
+  "Group": "Hob",
   "Type": "Template",
   "IsBaseTemplate": true,
   "FactionBlight": "Any",

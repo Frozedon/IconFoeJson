@@ -1,0 +1,22 @@
+{
+  "Name": "Plucker",
+  "Inherits": "Scavenger",
+  "Type": "Template",
+  "RestrictToClass": "Skirmisher",
+  "Traits": [
+    {
+      "Name": "Golden Burden",
+      "Description": "Has evasion against characters carrying valuables."
+    }
+  ],
+  "Actions": [
+    {
+      "Name": "Lighten Load",
+      "ActionCost": 1,
+      "Tags": [ "melee attack", "recharge 5+" ],
+      "Hit": "2 piercing damage once for each valuables token the target is carrying.",
+      "Miss": "1 piercing damage once for each valuables token the target is carrying.",
+      "Effect": "The Plucker may teleport 3 before this attack."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
 - [X] Jobs
 - [X] Relict Faction
 - [X] Ruin Beast Faction
-- [ ] Scavenger Faction
+- [X] Scavenger Faction
 - [ ] Imperial Faction
 - [ ] Demon Faction
 - [ ] Lowlander Faction

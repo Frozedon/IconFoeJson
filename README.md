@@ -7,8 +7,8 @@
 - [X] Ruin Beast Faction
 - [X] Scavenger Faction
 - [X] Imperial Faction
-- [ ] Demon Faction
-- [ ] Lowlander Faction
+- [X] Demon Faction
+- [X] Lowlander Faction
 - [ ] Jotunn Faction
 - [X] Hob Faction
 - [ ] Templating for Chimaera

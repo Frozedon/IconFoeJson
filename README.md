@@ -9,6 +9,6 @@
 - [X] Imperial Faction
 - [X] Demon Faction
 - [X] Lowlander Faction
-- [ ] Jotunn Faction
+- [X] Jotunn Faction
 - [X] Hob Faction
 - [ ] Templating for Chimaera

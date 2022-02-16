@@ -2,11 +2,26 @@
   "Name": "Elite (Template)",
   "Group": "Elite",
   "Type": "Template",
-  "HPMultiplier": 8,
   "SetupTraits": [
     {
       "Name": "Elite",
       "Description": "Increase the recharge of any of their abilities at 4+ or lower to 5+."
+    },
+    {
+      "Name": "Encounter Budget",
+      "Description": "This foe takes up 2 points in an encounter budget."
+    }
+  ],
+  "Traits": [
+    {
+      "Name": "Elite",
+      "Description": "Takes 2 turns."
+    },
+    {
+      "Name": "Elite Health",
+      "Nonessential": true,
+      "Description": "Double HP if upgrading from a normal foe.",
+      "HPMultiplierIfNormal": 2
     }
   ]
 }

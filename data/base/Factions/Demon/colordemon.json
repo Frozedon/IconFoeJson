@@ -2,7 +2,7 @@
   "Name": "Color Demon",
   "Inherits": "Demon",
   "Type": "Template",
-  "RestrictToClass": "Artillery",
+  "UsesClass": "Artillery",
   "Traits": [
     {
       "Name": "Distorted Soul",

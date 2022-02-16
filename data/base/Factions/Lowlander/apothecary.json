@@ -2,7 +2,7 @@
   "Name": "Apothecary",
   "Inherits": "Lowlander",
   "Type": "Template",
-  "RestrictToClass": "Leader",
+  "UsesClass": "Leader",
   "Traits": [
     {
       "Name": "Great Purity",

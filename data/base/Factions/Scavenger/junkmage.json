@@ -3,7 +3,7 @@
   "Inherits": "Scavenger",
   "Type": "Template",
   "Chapter": 2,
-  "RestrictToClass": "Artillery",
+  "UsesClass": "Artillery",
   "Traits": [
     {
       "Name": "Junk Armor",

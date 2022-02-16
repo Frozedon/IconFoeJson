@@ -2,7 +2,7 @@
   "Name": "Geist",
   "Inherits": "Relict",
   "Type": "Template",
-  "RestrictToClass": "Skirmisher",
+  "UsesClass": "Skirmisher",
   "Traits": [
     {
       "Name": "Ethereal",

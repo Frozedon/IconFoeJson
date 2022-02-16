@@ -3,7 +3,7 @@
   "Inherits": "Ruin Beast",
   "Type": "Template",
   "Chapter": 2,
-  "RestrictToClass": "Leader",
+  "UsesClass": "Leader",
   "Actions": [
     {
       "Name": "Spore",

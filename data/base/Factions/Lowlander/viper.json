@@ -2,7 +2,7 @@
   "Name": "Viper",
   "Inherits": "Lowlander",
   "Type": "Template",
-  "RestrictToClass": "Leader",
+  "UsesClass": "Leader",
   "Actions": [
     {
       "Name": "Pit Poison",

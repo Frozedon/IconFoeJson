@@ -2,7 +2,7 @@
   "Name": "Gulper",
   "Inherits": "Ruin Beast",
   "Type": "Template",
-  "RestrictToClass": "Artillery",
+  "UsesClass": "Artillery",
   "Traits": [
     {
       "Name": "Slippery",

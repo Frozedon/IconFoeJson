@@ -2,7 +2,7 @@
   "Name": "War Beast",
   "Inherits": "Imperial",
   "Type": "Template",
-  "RestrictToClass": "Heavy",
+  "UsesClass": "Heavy",
   "Traits": [
     {
       "Name": "Large",

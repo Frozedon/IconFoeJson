@@ -2,7 +2,7 @@
   "Name": "Plucker",
   "Inherits": "Scavenger",
   "Type": "Template",
-  "RestrictToClass": "Skirmisher",
+  "UsesClass": "Skirmisher",
   "Traits": [
     {
       "Name": "Golden Burden",

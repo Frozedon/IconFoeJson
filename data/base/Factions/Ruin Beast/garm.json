@@ -2,7 +2,7 @@
   "Name": "Garm",
   "Inherits": "Ruin Beast",
   "Type": "Template",
-  "RestrictToClass": "Heavy",
+  "UsesClass": "Heavy",
   "Traits": [
     {
       "Name": "Snap",

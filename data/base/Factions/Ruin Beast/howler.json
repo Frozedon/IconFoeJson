@@ -2,7 +2,7 @@
   "Name": "Howler",
   "Inherits": "Ruin Beast",
   "Type": "Template",
-  "RestrictToClass": "Heavy",
+  "UsesClass": "Heavy",
   "Traits": [
     {
       "Name": "Enrage",

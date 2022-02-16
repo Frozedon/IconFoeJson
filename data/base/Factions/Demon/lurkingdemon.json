@@ -2,7 +2,7 @@
   "Name": "Lurking Demon",
   "Inherits": "Demon",
   "Type": "Template",
-  "RestrictToClass": "Artillery",
+  "UsesClass": "Artillery",
   "Traits": [
     {
       "Name": "Chameleonic",

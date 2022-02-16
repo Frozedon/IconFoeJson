@@ -2,7 +2,7 @@
   "Name": "Looter",
   "Inherits": "Scavenger",
   "Type": "Template",
-  "RestrictToClass": "Heavy",
+  "UsesClass": "Heavy",
   "Traits": [
     {
       "Name": "Loot Sack",

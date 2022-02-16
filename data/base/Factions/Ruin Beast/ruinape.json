@@ -2,7 +2,7 @@
   "Name": "Ruin Ape",
   "Inherits": "Ruin Beast",
   "Type": "Template",
-  "RestrictToClass": "Leader",
+  "UsesClass": "Leader",
   "Traits": [
     {
       "Name": "Latch",

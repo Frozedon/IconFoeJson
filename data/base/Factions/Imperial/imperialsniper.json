@@ -2,7 +2,7 @@
   "Name": "Imperial Sniper",
   "Inherits": "Imperial",
   "Type": "Template",
-  "RestrictToClass": "Artillery",
+  "UsesClass": "Artillery",
   "Traits": [
     {
       "Name": "Brace",

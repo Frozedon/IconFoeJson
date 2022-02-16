@@ -2,7 +2,7 @@
   "Name": "Tough",
   "Inherits": "Scavenger",
   "Type": "Template",
-  "RestrictToClass": "Heavy",
+  "UsesClass": "Heavy",
   "Traits": [
     {
       "Name": "Guard Loot",

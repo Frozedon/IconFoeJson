@@ -2,7 +2,7 @@
   "Name": "Ruin Centipede",
   "Inherits": "Ruin Beast",
   "Type": "Template",
-  "RestrictToClass": "Artillery",
+  "UsesClass": "Artillery",
   "Traits": [
     {
       "Name": "Acid Splash",

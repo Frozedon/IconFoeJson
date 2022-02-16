@@ -2,7 +2,7 @@
   "Name": "Butcher",
   "Inherits": "Lowlander",
   "Type": "Template",
-  "RestrictToClass": "Heavy",
+  "UsesClass": "Heavy",
   "Traits": [
     {
       "Name": "Overwhelm",

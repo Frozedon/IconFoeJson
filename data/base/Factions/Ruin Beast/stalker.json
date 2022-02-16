@@ -2,7 +2,7 @@
   "Name": "Stalker",
   "Inherits": "Ruin Beast",
   "Type": "Template",
-  "RestrictToClass": "Skirmisher",
+  "UsesClass": "Skirmisher",
   "Traits": [
     {
       "Name": "Chameleonic",

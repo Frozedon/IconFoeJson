@@ -2,7 +2,7 @@
   "Name": "Blitz Trooper",
   "Inherits": "Imperial",
   "Type": "Template",
-  "RestrictToClass": "Heavy",
+  "UsesClass": "Heavy",
   "Chapter": 2,
   "Traits": [
     {

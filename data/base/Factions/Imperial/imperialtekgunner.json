@@ -2,7 +2,7 @@
   "Name": "Imperial Tek Gunner",
   "Inherits": "Imperial",
   "Type": "Template",
-  "RestrictToClass": "Artillery",
+  "UsesClass": "Artillery",
   "Chapter": 2,
   "Actions": [
     {

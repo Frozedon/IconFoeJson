@@ -3,7 +3,7 @@
   "Inherits": "Relict",
   "Type": "Template",
   "Chapter": 3,
-  "RestrictToClass": "Leader",
+  "UsesClass": "Leader",
   "Traits": [
     {
       "Name": "Life Link",

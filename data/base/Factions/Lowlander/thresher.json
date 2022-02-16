@@ -2,7 +2,7 @@
   "Name": "Thresher",
   "Inherits": "Lowlander",
   "Type": "Template",
-  "RestrictToClass": "Skirmisher",
+  "UsesClass": "Skirmisher",
   "Actions": [
     {
       "Name": "Grappling Hook",

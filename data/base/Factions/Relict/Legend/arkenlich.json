@@ -5,7 +5,7 @@
   "Type": "Job",
   "IsUniqueJob": true,
   "Chapter": 2,
-  "RestrictToTemplate": "Relict",
+  "UsesTemplate": "Relict",
   "Vitality": 8,
   "Speed": 3,
   "Dash": 2,

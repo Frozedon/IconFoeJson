@@ -3,7 +3,7 @@
   "Inherits": "Scavenger",
   "Type": "Template",
   "Chapter": 2,
-  "RestrictToClass": "Leader",
+  "UsesClass": "Leader",
   "Interrupts": [
     {
       "Name": "Trick of the Light",

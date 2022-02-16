@@ -2,7 +2,7 @@
   "Name": "Monster Hunter",
   "Inherits": "Lowlander",
   "Type": "Template",
-  "RestrictToClass": "Artillery",
+  "UsesClass": "Artillery",
   "Actions": [
     {
       "Name": "Monster Slayer",

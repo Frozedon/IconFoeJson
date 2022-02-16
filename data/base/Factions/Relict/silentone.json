@@ -3,7 +3,7 @@
   "Inherits": "Relict",
   "Type": "Template",
   "Chapter": 2,
-  "RestrictToClass": "Leader",
+  "UsesClass": "Leader",
   "Traits": [
     {
       "Name": "Flying",

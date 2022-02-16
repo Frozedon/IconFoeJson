@@ -2,7 +2,7 @@
   "Name": "Artillerist",
   "Inherits": "Imperial",
   "Type": "Template",
-  "RestrictToClass": "Leader",
+  "UsesClass": "Leader",
   "RemoveTraits": [ "Receive Orders" ],
   "Traits": [
     {

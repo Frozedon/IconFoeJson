@@ -5,7 +5,7 @@
   "Type": "Job",
   "IsUniqueJob": true,
   "Chapter": 1,
-  "RestrictToTemplate": "Hob",
+  "UsesTemplate": "Hob",
   "Vitality": 8,
   "HPMultiplier": 2,
   "Speed": 5,

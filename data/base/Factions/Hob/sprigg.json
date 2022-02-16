@@ -3,7 +3,7 @@
   "Inherits": "Mob",
   "Type": "Job",
   "Group": "Hob",
-  "RestrictToTemplate": "Hob",
+  "UsesTemplate": "Hob",
   "HP": 0,
   "Defense": 0,
   "Speed": 3,

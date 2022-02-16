@@ -2,7 +2,7 @@
   "Name": "Boil",
   "Inherits": "Lowlander",
   "Type": "Template",
-  "RestrictToClass": "Artillery",
+  "UsesClass": "Artillery",
   "Traits": [
     {
       "Name": "Noxious World",

@@ -3,7 +3,7 @@
   "Inherits": "Ruin Beast",
   "Type": "Template",
   "Chapter": 2,
-  "RestrictToClass": "Artillery",
+  "UsesClass": "Artillery",
   "Traits": [
     {
       "Name": "Gallop",

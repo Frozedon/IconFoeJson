@@ -2,7 +2,7 @@
   "Name": "Puppeteer Demon",
   "Inherits": "Demon",
   "Type": "Template",
-  "RestrictToClass": "Leader",
+  "UsesClass": "Leader",
   "Actions": [
     {
       "Name": "White Strings",

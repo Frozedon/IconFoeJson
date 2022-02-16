@@ -5,7 +5,7 @@
   "Type": "Job",
   "IsUniqueJob": true,
   "Chapter": 2,
-  "RestrictToTemplate": "Demon",
+  "UsesTemplate": "Demon",
   "Vitality": 8,
   "HPMultiplier": 4,
   "Speed": 5,

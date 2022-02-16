@@ -2,7 +2,7 @@
   "Name": "Screaming Demon",
   "Inherits": "Demon",
   "Type": "Template",
-  "RestrictToClass": "Leader",
+  "UsesClass": "Leader",
   "Traits": [
     {
       "Name": "Terror",

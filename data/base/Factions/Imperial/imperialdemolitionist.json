@@ -2,7 +2,7 @@
   "Name": "Imperial Demolitionist",
   "Inherits": "Imperial",
   "Type": "Template",
-  "RestrictToClass": "Skirmisher",
+  "UsesClass": "Skirmisher",
   "Actions": [
     {
       "Name": "Arkentech Mine",

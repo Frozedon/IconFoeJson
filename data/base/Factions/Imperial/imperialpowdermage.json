@@ -2,7 +2,7 @@
   "Name": "Imperial Powdermage",
   "Inherits": "Imperial",
   "Type": "Template",
-  "RestrictToClass": "Artillery",
+  "UsesClass": "Artillery",
   "Actions": [
     {
       "Name": "Pistol",

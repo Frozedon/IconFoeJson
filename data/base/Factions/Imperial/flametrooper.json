@@ -2,7 +2,7 @@
   "Name": "Flame Trooper",
   "Inherits": "Imperial",
   "Type": "Template",
-  "RestrictToClass": "Heavy",
+  "UsesClass": "Heavy",
   "Armor": 5,
   "Dash": 0,
   "Traits": [

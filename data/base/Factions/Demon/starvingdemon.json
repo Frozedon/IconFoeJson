@@ -2,7 +2,7 @@
   "Name": "Starving Demon",
   "Inherits": "Demon",
   "Type": "Template",
-  "RestrictToClass": "Heavy",
+  "UsesClass": "Heavy",
   "Traits": [
     {
       "Name": "Engorge",

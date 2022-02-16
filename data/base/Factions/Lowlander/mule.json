@@ -2,7 +2,7 @@
   "Name": "Mule",
   "Inherits": "Lowlander",
   "Type": "Template",
-  "RestrictToClass": "Heavy",
+  "UsesClass": "Heavy",
   "Actions": [
     {
       "Name": "Kidnap",

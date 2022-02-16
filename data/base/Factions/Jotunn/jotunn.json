@@ -25,9 +25,7 @@
     },
     {
       "Name": "Elite Health",
-      "Nonessential": true,
-      "Description": "Double HP if upgrading from a normal foe.",
-      "HPMultiplierIfNormal": 2
+      "Description": "Double HP if upgrading from a normal foe."
     },
     {
       "Name": "Titanblood",

@@ -1,27 +1,16 @@
 {
   "Name": "Elite (Template)",
-  "Group": "Elite",
+  "Inherits": "Elite",
   "Type": "Template",
-  "SetupTraits": [
-    {
-      "Name": "Elite",
-      "Description": "Increase the recharge of any of their abilities at 4+ or lower to 5+."
-    },
-    {
-      "Name": "Encounter Budget",
-      "Description": "This foe takes up 2 points in an encounter budget."
-    }
-  ],
+  "IsElite": true,
   "Traits": [
     {
-      "Name": "Elite",
-      "Description": "Takes 2 turns."
+      "Name": "Elite Health",
+      "Description": "Double HP if upgrading from a normal foe."
     },
     {
-      "Name": "Elite Health",
-      "Nonessential": true,
-      "Description": "Double HP if upgrading from a normal foe.",
-      "HPMultiplierIfNormal": 2
+      "Name": "Elite Recharge",
+      "Description": "Increase the recharge of any of their abilities at 4+ or lower to 5+."
     }
   ]
 }

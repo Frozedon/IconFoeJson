@@ -2,6 +2,7 @@
   "Name": "Jotunn",
   "Group": "Jotunn",
   "Type": "Template",
+  "EncounterBudget": 2,
   "IsBaseTemplate": true,
   "FactionBlight": "Frostbite",
   "DoubleNormalFoeHP": true,
@@ -13,10 +14,6 @@
     {
       "Name": "Monsters",
       "Description": "Newer Jotunn are infected with the Blood Rage. Born of the slaying of the Titans, they are driven only by their pain and rage. Treat them like monsters - they do not flee or negotiate. It might be possible to cure the Rage."
-    },
-    {
-      "Name": "Encounter Budget",
-      "Description": "This foe takes up 2 points in an encounter budget."
     }
   ],
   "Traits": [

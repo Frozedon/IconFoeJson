@@ -1,6 +1,7 @@
 {
   "Name": "Legend",
   "Group": "Legend",
+  "EncounterBudget": -1,
   "IsLegend": true,
   "HPMultiplyByPlayers": true,
   "Traits": [
@@ -15,12 +16,6 @@
       "ActionCost": 0,
       "Tags": [ "1/round" ],
       "Description": "Clear a status, mark, or all blights affecting this character."
-    }
-  ],
-  "SetupTraits": [
-    {
-      "Name": "Encounter Budget",
-      "Description": "This foe is worth the entire encounter budget."
     }
   ]
 }

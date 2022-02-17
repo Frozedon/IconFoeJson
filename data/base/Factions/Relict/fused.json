@@ -3,6 +3,7 @@
   "Inherits": "Relict",
   "Type": "Template",
   "UsesClass": "Heavy",
+  "Dash": 0,
   "Traits": [
     {
       "Name": "Large",
@@ -10,8 +11,7 @@
     },
     {
       "Name": "Shambling",
-      "Description": "Cannot dash.",
-      "NoDash": true
+      "Description": "Cannot dash."
     },
     {
       "Name": "Release Passengers",

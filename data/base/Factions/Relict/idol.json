@@ -4,6 +4,7 @@
   "Type": "Template",
   "UsesClass": "Heavy",
   "AddHPPercent": 0.25,
+  "Dash": 0,
   "Traits": [
     {
       "Name": "Sturdy",
@@ -15,8 +16,7 @@
     },
     {
       "Name": "Shambling",
-      "Description": "Cannot dash.",
-      "NoDash": true
+      "Description": "Cannot dash."
     },
     {
       "Name": "Living Statue",

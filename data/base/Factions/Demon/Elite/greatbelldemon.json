@@ -8,7 +8,7 @@
   "Vitality": 12,
   "HPMultiplier": 8,
   "Speed": 3,
-  "Dash": 2,
+  "Dash": 0,
   "Defense": 5,
   "Armor": 1,
   "FrayDamage": 3,
@@ -28,8 +28,7 @@
     },
     {
       "Name": "Ironbound",
-      "Description": "Permanently winded. Cannot teleport, dash, or fly.",
-      "NoDash": true
+      "Description": "Permanently winded. Cannot teleport, dash, or fly."
     },
     {
       "Name": "Black Temple Bell",

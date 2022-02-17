@@ -1,6 +1,6 @@
 {
   "Name": "Natal",
-  "Inherits": "Mob",
+  "Inherits": [ "Demon", "Mob" ],
   "Type": "Job",
   "Group": "Demon",
   "IsUniqueJob": true,

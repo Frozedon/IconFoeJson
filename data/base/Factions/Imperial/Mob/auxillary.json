@@ -1,6 +1,6 @@
 {
   "Name": "Auxillary",
-  "Inherits": "Mob",
+  "Inherits": [ "Imperial", "Mob" ],
   "Type": "Job",
   "Group": "Imperial",
   "IsUniqueJob": true,

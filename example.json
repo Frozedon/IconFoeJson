@@ -1,7 +1,7 @@
 {
   "Name": "", // Name of this statblock
-  "Inherits": "", // Name of statblock you want to inherit traits from
-  "Type": "", // "Job" or "Faction"
+  "Inherits": [ "" ] , // Name of statblock you want to inherit traits from
+  "Type": "", // "Job", "Template", or "SuperTemplate"
   "Group": "", // The group it should be filtered by
   "IsBaseTemplate": false, // Is a base template of a faction
   "IsMob": false, // Is a mob foe

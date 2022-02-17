@@ -18,10 +18,6 @@
     {
       "Name": "Monsters",
       "Description": "Relict do not flee or negotiate."
-    },
-    {
-      "Name": "Life Link",
-      "Description": "All foes with this trait on the battlefield share the same health pool, which is all their health added together. Dealing damage to health (not vigor) with any foe with this trait damages this common health pool. If new characters are summoned with life link, it adds to this health pool. Foes with life link are only defeated if the total pool is reduced to 0, and are all defeated at once. If defiance triggers, it triggers on all linked foes at once."
     }
   ]
 }

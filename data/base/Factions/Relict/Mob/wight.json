@@ -1,9 +1,11 @@
 {
-  "Name": "Priest of the Dark Sun",
-  "Inherits": "Relict",
-  "Type": "Template",
-  "Chapter": 3,
-  "UsesClass": "Leader",
+  "Name": "Wight",
+  "Inherits": [ "Relict", "Mob" ],
+  "Type": "Job",
+  "Group": "Relict",
+  "IsUniqueJob": true,
+  "HP": 2,
+  "RemoveTraits": [ "Defiance" ],
   "Traits": [
     {
       "Name": "Life Link",
@@ -12,16 +14,11 @@
   ],
   "Actions": [
     {
-      "Name": "Immortalize",
-      "ActionCost": 1,
-      "Tags": [ "1/combat" ],
-      "Description": "A relict in range 3 gains Life Link."
-    },
-    {
-      "Name": "Link Vitality",
-      "ActionCost": 1,
-      "Recharge": 5,
-      "Description": "The priest links a relict and a foe they can see, marking both. While in range 4 of each other, each takes [D] Divine damage the first time in a turn the other linked character takes damage. A character may save to end this effect at the end of their turns. The mark ends on both of them if it ends on one."
+      "Name": "Lurching Grab",
+      "ActionCost": 2,
+      "Tags": [ "melee attack" ],
+      "Description": "Dash 1, then",
+      "AutoHit": "1 damage. If another Wight is adjacent to the target, increase damage to 2."
     }
   ],
   "SetupTraits": [

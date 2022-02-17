@@ -8,7 +8,6 @@
   "IsElite": false, // Is an elite foe
   "IsLegend": false, // Is a legend foe
   "IsUniqueJob": false, // Is a unique job from a faction
-  "UsesTemplate": "", // A template that this job is required to use
   "UsesClass": "", // The class of job that the template has to be on
   "RestrictToBaseTemplates": false, // If this job can only use base faction templates
   "Chapter": 1, // Minimum chapter required to use

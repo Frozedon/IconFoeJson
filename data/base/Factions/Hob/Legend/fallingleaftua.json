@@ -1,11 +1,10 @@
 {
   "Name": "Falling Leaf Tua",
-  "Inherits": "Legend",
+  "Inherits": [ "Hob", "Legend" ],
   "Group": "Hob",
   "Type": "Job",
   "IsUniqueJob": true,
   "Chapter": 1,
-  "UsesTemplate": "Hob",
   "Vitality": 8,
   "HPMultiplier": 2,
   "Speed": 5,

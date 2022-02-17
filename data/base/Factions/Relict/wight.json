@@ -1,9 +1,8 @@
 {
   "Name": "Wight",
-  "Inherits": "Mob",
+  "Inherits": [ "Relict", "Mob" ],
   "Type": "Job",
   "Group": "Relict",
-  "UsesTemplate": "Relict",
   "HP": 2,
   "RemoveTraits": [ "Defiance" ],
   "Traits": [

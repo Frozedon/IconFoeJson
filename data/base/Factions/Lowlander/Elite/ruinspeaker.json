@@ -1,10 +1,9 @@
 {
   "Name": "Ruin Speaker",
-  "Inherits": "Elite",
+  "Inherits": [ "Jotunn", "Elite" ],
   "Type": "Job",
   "Group": "Lowlander",
   "IsUniqueJob": true,
-  "UsesTemplate": "Lowlander",
   "Chapter": 1,
   "Vitality": 8,
   "HPMultiplier": 8,

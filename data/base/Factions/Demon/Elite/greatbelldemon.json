@@ -1,10 +1,9 @@
 {
   "Name": "Great Bell Demon",
-  "Inherits": "Elite",
+  "Inherits": [ "Demon", "Elite" ],
   "Type": "Job",
   "Group": "Demon",
   "IsUniqueJob": true,
-  "UsesTemplate": "Demon",
   "Chapter": 1,
   "Vitality": 12,
   "HPMultiplier": 8,

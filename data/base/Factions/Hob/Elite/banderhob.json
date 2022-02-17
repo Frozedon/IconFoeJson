@@ -1,10 +1,9 @@
 {
   "Name": "Banderhob",
-  "Inherits": "Elite",
+  "Inherits": [ "Hob", "Elite" ],
   "Type": "Job",
   "Group": "Hob",
   "IsUniqueJob": true,
-  "UsesTemplate": "Hob",
   "Chapter": 1,
   "Vitality": 8,
   "HPMultiplier": 8,

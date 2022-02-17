@@ -1,10 +1,9 @@
 {
   "Name": "Gigantapede",
-  "Inherits": "Elite",
+  "Inherits": [ "Ruin Beast", "Elite" ],
   "Type": "Job",
   "Group": "Ruin Beast",
   "IsUniqueJob": true,
-  "UsesTemplate": "Ruin Beast",
   "Chapter": 2,
   "Vitality": 10,
   "HPMultiplier": 8,

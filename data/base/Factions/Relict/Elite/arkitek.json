@@ -1,10 +1,9 @@
 {
   "Name": "Arkitek",
-  "Inherits": "Elite",
+  "Inherits": [ "Relict", "Elite" ],
   "Type": "Job",
   "Group": "Relict",
   "IsUniqueJob": true,
-  "UsesTemplate": "Relict",
   "Chapter": 2,
   "Vitality": 10,
   "HPMultiplier": 8,

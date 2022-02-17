@@ -1,10 +1,9 @@
 {
   "Name": "Skimmer",
-  "Inherits": "Elite",
+  "Inherits": [ "Scavenger", "Elite" ],
   "Type": "Job",
   "Group": "Scavenger",
   "IsUniqueJob": true,
-  "UsesTemplate": "Scavenger",
   "Chapter": 1,
   "Vitality": 12,
   "HPMultiplier": 8,

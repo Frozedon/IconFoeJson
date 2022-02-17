@@ -1,9 +1,8 @@
 {
   "Name": "Sprigg",
-  "Inherits": "Mob",
+  "Inherits": [ "Hob", "Elite" ],
   "Type": "Job",
   "Group": "Hob",
-  "UsesTemplate": "Hob",
   "HP": 0,
   "Defense": 0,
   "Speed": 3,

@@ -1,11 +1,11 @@
 {
   "Name": "Violence Demon",
+  "Inherits": [ "Demon", "Legend" ],
   "Inherits": "Legend",
   "Group": "Demon",
   "Type": "Job",
   "IsUniqueJob": true,
   "Chapter": 2,
-  "UsesTemplate": "Demon",
   "Vitality": 8,
   "HPMultiplier": 4,
   "Speed": 5,

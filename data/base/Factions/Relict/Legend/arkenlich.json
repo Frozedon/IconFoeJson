@@ -1,11 +1,10 @@
 {
   "Name": "Arkenlich",
-  "Inherits": "Legend",
+  "Inherits": [ "Relict", "Legend" ],
   "Group": "Relict",
   "Type": "Job",
   "IsUniqueJob": true,
   "Chapter": 2,
-  "UsesTemplate": "Relict",
   "Vitality": 8,
   "Speed": 3,
   "Dash": 2,

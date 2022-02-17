@@ -1,10 +1,9 @@
 {
   "Name": "Kelpie",
-  "Inherits": "Elite",
+  "Inherits": [ "Ruin Beast", "Elite" ],
   "Type": "Job",
   "Group": "Ruin Beast",
   "IsUniqueJob": true,
-  "UsesTemplate": "Ruin Beast",
   "Chapter": 1,
   "Vitality": 8,
   "HPMultiplier": 8,

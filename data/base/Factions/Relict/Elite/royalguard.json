@@ -1,10 +1,9 @@
 {
   "Name": "Royal Guard",
-  "Inherits": "Elite",
+  "Inherits": [ "Relict", "Elite" ],
   "Type": "Job",
   "Group": "Relict",
   "IsUniqueJob": true,
-  "UsesTemplate": "Relict",
   "Chapter": 1,
   "Vitality": 8,
   "HPMultiplier": 8,

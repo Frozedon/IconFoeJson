@@ -1,10 +1,9 @@
 {
   "Name": "Wrangler",
-  "Inherits": "Elite",
+  "Inherits": [ "Lowlander", "Elite" ],
   "Type": "Job",
   "Group": "Lowlander",
   "IsUniqueJob": true,
-  "UsesTemplate": "Lowlander",
   "Chapter": 2,
   "Vitality": 10,
   "HPMultiplier": 8,

@@ -9,7 +9,7 @@
   "Dash": 2,
   "Defense": 6,
   "Armor": 3,
-  "FrayDamage": 5,
+  "FrayDamage": 4,
   "DamageDie": "d10",
   "SetupTraits": [
     {

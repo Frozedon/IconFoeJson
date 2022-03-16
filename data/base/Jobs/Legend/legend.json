@@ -3,6 +3,7 @@
   "Group": "Legend",
   "EncounterBudget": -1,
   "IsLegend": true,
+  "RestrictToBasicTemplates": true,
   "HPMultiplyByPlayers": true,
   "Traits": [
     {

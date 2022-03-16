@@ -3,6 +3,7 @@
   "Group": "Elite",
   "EncounterBudget": 2,
   "IsElite": true,
+  "RestrictToBasicTemplates": true,
   "Traits": [
     {
       "Name": "Elite",

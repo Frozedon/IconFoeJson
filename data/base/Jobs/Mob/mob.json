@@ -3,6 +3,7 @@
   "Group": "Mob",
   "EncounterBudget": 0.2,
   "IsMob": true,
+  "RestrictToBasicTemplates": true,
   "Vitality": 0,
   "HP": 1,
   "Speed": 4,

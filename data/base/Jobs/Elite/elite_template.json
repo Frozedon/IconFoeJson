@@ -5,10 +5,12 @@
   "Type": "Special",
   "DoNotDisplay": true,
   "DoubleNormalFoeHP": true,
+  "MinimumRecharge": 5,
   "Traits": [
     {
       "Name": "Elite Recharge",
-      "Description": "Increase the recharge of any of their abilities at 4+ or lower to 5+."
+      "Description": "Increase the recharge of any of their abilities at 4+ or lower to 5+.",
+      "Nonessential": true
     }
   ]
 }

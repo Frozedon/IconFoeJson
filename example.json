@@ -24,6 +24,7 @@
   "FrayDamage": 0, // [fray]
   "DamageDie": "", // [D]
   "FactionBlight": "",
+  "MinimumRecharge": 0, // To set a minimum for recharge values on recharge abilities
   "Traits": [
     {
       "Name": "",

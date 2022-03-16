@@ -9,7 +9,7 @@
   "Defense": 8,
   "Armor": 1,
   "FrayDamage": 4,
-  "DamageDie": "d6",
+  "DamageDie": 6,
   "Traits": [
     {
       "Name": "Large",

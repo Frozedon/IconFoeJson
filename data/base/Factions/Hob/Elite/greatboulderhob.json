@@ -11,7 +11,7 @@
   "Defense": 4,
   "Armor": 12,
   "FrayDamage": 4,
-  "DamageDie": "d10",
+  "DamageDie": 10,
   "Traits": [
     {
       "Name": "Enormous",

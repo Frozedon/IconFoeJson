@@ -11,7 +11,7 @@
   "Defense": 10,
   "Armor": 1,
   "FrayDamage": 3,
-  "DamageDie": "d10",
+  "DamageDie": 10,
   "Traits": [
     {
       "Name": "Skirmisher",

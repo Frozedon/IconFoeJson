@@ -9,7 +9,7 @@
   "Defense": 6,
   "Armor": 3,
   "FrayDamage": 4,
-  "DamageDie": "d10",
+  "DamageDie": 10,
   "SetupTraits": [
     {
       "Name": "Blightheart",

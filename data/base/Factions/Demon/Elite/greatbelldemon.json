@@ -11,7 +11,7 @@
   "Defense": 5,
   "Armor": 1,
   "FrayDamage": 3,
-  "DamageDie": "d8",
+  "DamageDie": 8,
   "Traits": [
     {
       "Name": "Fortify",

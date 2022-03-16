@@ -11,7 +11,7 @@
   "Defense": 8,
   "Armor": 1,
   "FrayDamage": 3,
-  "DamageDie": "d6",
+  "DamageDie": 6,
   "Traits": [
     {
       "Name": "Shelter",

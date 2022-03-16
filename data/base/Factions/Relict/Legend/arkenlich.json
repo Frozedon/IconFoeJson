@@ -10,7 +10,7 @@
   "Defense": 6,
   "Armor": 0,
   "FrayDamage": 4,
-  "DamageDie": "d8",
+  "DamageDie": 8,
   "Traits": [
     {
       "Name": "Overdrive 6",

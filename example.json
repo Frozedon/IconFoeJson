@@ -9,7 +9,6 @@
   "IsElite": false, // Is an elite foe
   "IsLegend": false, // Is a legend foe
   "UsesClass": "", // The class of job that the template has to be on
-  "RestrictToBaseTemplates": false, // If this job can only use base faction templates
   "Chapter": 1, // Minimum chapter required to use
   "Vitality": 0,
   "AddHPPercent": 0.0, // Percent more HP the foe gains

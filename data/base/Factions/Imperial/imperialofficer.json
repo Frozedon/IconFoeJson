@@ -1,7 +1,6 @@
 {
   "Name": "Imperial Officer",
-  "Type": "SuperTemplate",
-  "UsesFaction": "Imperial",
+  "Type": "Special",
   "Traits": [
     {
       "Name": "Arkentech Power Armor",

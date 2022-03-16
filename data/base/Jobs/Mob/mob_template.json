@@ -1,8 +1,7 @@
 {
   "Name": "Mob (Template)",
   "Inherits": "Mob",
-  "Type": "SuperTemplate",
-  "RestrictToNormalFoes": true,
+  "Type": "Special",
   "SetupTraits": [
     {
       "Name": "Mob",

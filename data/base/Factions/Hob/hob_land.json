@@ -1,0 +1,13 @@
+{
+  "Name": "Hob (Spirit of Land)",
+  "TitleName": "Hob",
+  "Inherits": "Hob",
+  "Type": "Template",
+  "IsBasicTemplate": true,
+  "Traits": [
+    {
+      "Name": "Body of the Land",
+      "Description": "When defeated, roll a d6. The Hob collapses into the natural land, disappearing. Every space of this Hob becomes a height 1 terrain piece (5-6), difficult terrain (2-4), or a pit (1)."
+    }
+  ]
+}

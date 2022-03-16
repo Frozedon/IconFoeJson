@@ -1,5 +1,6 @@
 {
   "Name": "Elite (Template)",
+  "TitleName": "Elite",
   "Inherits": "Elite",
   "Type": "Special",
   "DoubleNormalFoeHP": true,

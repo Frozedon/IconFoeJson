@@ -1,5 +1,6 @@
 {
   "Name": "Mob (Piercing Shot)",
+  "TitleName": "Mob",
   "Inherits": "Mob",
   "Type": "Job",
   "Actions": [

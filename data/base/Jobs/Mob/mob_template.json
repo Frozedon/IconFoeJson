@@ -1,5 +1,6 @@
 {
   "Name": "Mob (Template)",
+  "TitleName": "Mob",
   "Inherits": "Mob",
   "Type": "Special",
   "SetupTraits": [

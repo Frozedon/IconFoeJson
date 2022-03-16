@@ -1,8 +1,6 @@
 {
   "Name": "Hob",
   "Group": "Hob",
-  "Type": "Template",
-  "IsBasicTemplate": true,
   "FactionBlight": "Any",
   "Traits": [
     {
@@ -18,21 +16,6 @@
     {
       "Name": "Monsters",
       "Description": "Hobs that are stirred up by some natural disaster or desecration of the natural world are warped and malicious, and will not bargain or negotiate until things are put right, usually returning to their usual natures once the crisis passes."
-    },
-    {
-      "Name": "Spirit of Forest and Field",
-      "Description": "Hobs have either the Spirit Away or Body of the Land trait. When defeated, hobs disperse into aether or collapse into the land. Some Hobs are made of almost pure aether, flickering spirits that seem real until they dance away through the air. These hobs have the Spirit Away trait. Other Hobs are more solid and possess bodies of beasts or natural materials, such as stone, wood, or water. These hobs have the Body of the Land trait.",
-      "NestedTraits": [
-        {
-          "Name": "Spirit Away",
-          "Tags": "free action",
-          "Description": "The Hob swaps places with a character in range 2, teleporting both. If either character cannot teleport, this move cannot be made."
-        },
-        {
-          "Name": "Body of the Land",
-          "Description": "When defeated, roll a d6. The Hob collapses into the natural land, disappearing. Every space of this Hob becomes a height 1 terrain piece (5-6), difficult terrain (2-4), or a pit (1)."
-        }
-      ]
     }
   ]
 }

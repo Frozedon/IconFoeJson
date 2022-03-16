@@ -1,5 +1,6 @@
 {
   "Name": "Mob (Scrabble)",
+  "TitleName": "Mob",
   "Inherits": "Mob",
   "Type": "Job",
   "Actions": [

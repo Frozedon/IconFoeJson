@@ -3,6 +3,7 @@
   "Inherits": [ "" ] , // Name of statblock you want to inherit traits from
   "Type": "", // "Job", "Template", "UniqueFoe", or "Special"
   "Group": "", // The group it should be filtered by
+  "DoNotDisplay": false, // If this should be displayed in the options
   "EncounterBudget": 1.0, // The amount of points it takes in the encounter budget. Negative number deontes all points
   "IsBasicTemplate": false, // Is a base template of a faction
   "IsMob": false, // Is a mob foe

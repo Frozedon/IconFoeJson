@@ -3,6 +3,7 @@
   "TitleName": "Elite",
   "Inherits": "Elite",
   "Type": "Special",
+  "DoNotDisplay": true,
   "DoubleNormalFoeHP": true,
   "Traits": [
     {

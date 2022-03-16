@@ -3,6 +3,7 @@
   "TitleName": "Mob",
   "Inherits": "Mob",
   "Type": "Special",
+  "DoNotDisplay": true,
   "SetupTraits": [
     {
       "Name": "Mob",

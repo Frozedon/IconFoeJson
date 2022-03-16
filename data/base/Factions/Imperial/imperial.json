@@ -2,7 +2,7 @@
   "Name": "Imperial",
   "Group": "Imperial",
   "Type": "Template",
-  "IsBaseTemplate": true,
+  "IsBasicTemplate": true,
   "FactionBlight": "Burning",
   "SetupTraits": [
     {

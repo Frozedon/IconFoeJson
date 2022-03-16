@@ -2,7 +2,7 @@
   "Name": "Relict",
   "Group": "Relict",
   "Type": "Template",
-  "IsBaseTemplate": true,
+  "IsBasicTemplate": true,
   "FactionBlight": "Electrified",
   "Traits": [
     {

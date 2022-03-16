@@ -2,7 +2,7 @@
   "Name": "Demon",
   "Group": "Demon",
   "Type": "Template",
-  "IsBaseTemplate": true,
+  "IsBasicTemplate": true,
   "FactionBlight": "Any",
   "SetupTraits": [
     {

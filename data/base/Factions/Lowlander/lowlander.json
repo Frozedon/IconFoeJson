@@ -2,7 +2,7 @@
   "Name": "Lowlander",
   "Group": "Lowlander",
   "Type": "Template",
-  "IsBaseTemplate": true,
+  "IsBasicTemplate": true,
   "FactionBlight": "Poisoned",
   "SetupTraits": [
     {

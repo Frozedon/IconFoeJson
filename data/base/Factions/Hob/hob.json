@@ -2,7 +2,7 @@
   "Name": "Hob",
   "Group": "Hob",
   "Type": "Template",
-  "IsBaseTemplate": true,
+  "IsBasicTemplate": true,
   "FactionBlight": "Any",
   "Traits": [
     {

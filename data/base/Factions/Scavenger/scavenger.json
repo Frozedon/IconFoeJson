@@ -2,7 +2,7 @@
   "Name": "Scavenger",
   "Group": "Scavenger",
   "Type": "Template",
-  "IsBaseTemplate": true,
+  "IsBasicTemplate": true,
   "FactionBlight": "Any",
   "SetupTraits": [
     {

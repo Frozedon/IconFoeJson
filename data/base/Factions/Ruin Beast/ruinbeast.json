@@ -2,7 +2,7 @@
   "Name": "Ruin Beast",
   "Group": "Ruin Beast",
   "Type": "Template",
-  "IsBaseTemplate": true,
+  "IsBasicTemplate": true,
   "FactionBlight": "Poisoned",
   "Traits": [
     {

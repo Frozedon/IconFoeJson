@@ -3,7 +3,7 @@
   "Group": "Jotunn",
   "Type": "Template",
   "EncounterBudget": 2,
-  "IsBaseTemplate": true,
+  "IsBasicTemplate": true,
   "FactionBlight": "Frostbite",
   "DoubleNormalFoeHP": true,
   "SetupTraits": [

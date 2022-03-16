@@ -1,9 +1,8 @@
 {
   "Name": "Gigantapede",
   "Inherits": [ "Ruin Beast", "Elite" ],
-  "Type": "Job",
+  "Type": "UniqueFoe",
   "Group": "Ruin Beast",
-  "IsUniqueJob": true,
   "Chapter": 2,
   "Vitality": 10,
   "HPMultiplier": 8,

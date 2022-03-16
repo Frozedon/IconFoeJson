@@ -1,9 +1,8 @@
 {
   "Name": "Violence Demon",
   "Inherits": [ "Demon", "Legend" ],
+  "Type": "UniqueFoe",
   "Group": "Demon",
-  "Type": "Job",
-  "IsUniqueJob": true,
   "Chapter": 2,
   "Vitality": 8,
   "HPMultiplier": 4,

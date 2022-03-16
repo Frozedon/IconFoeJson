@@ -1,9 +1,8 @@
 {
   "Name": "Ruin Speaker",
   "Inherits": [ "Jotunn", "Elite" ],
-  "Type": "Job",
+  "Type": "UniqueFoe",
   "Group": "Lowlander",
-  "IsUniqueJob": true,
   "Chapter": 1,
   "Vitality": 8,
   "HPMultiplier": 8,

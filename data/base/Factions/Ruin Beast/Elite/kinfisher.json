@@ -1,9 +1,8 @@
 {
   "Name": "Kinfisher",
   "Inherits": [ "Ruin Beast", "Elite" ],
-  "Type": "Job",
+  "Type": "UniqueFoe",
   "Group": "Ruin Beast",
-  "IsUniqueJob": true,
   "Chapter": 1,
   "Vitality": 8,
   "HPMultiplier": 8,

@@ -1,7 +1,7 @@
 {
   "Name": "Elite (Template)",
   "Inherits": "Elite",
-  "Type": "SuperTemplate",
+  "Type": "Special",
   "RestrictToNormalFoes": true,
   "DoubleNormalFoeHP": true,
   "Traits": [

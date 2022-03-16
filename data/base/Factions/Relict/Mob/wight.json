@@ -1,9 +1,8 @@
 {
   "Name": "Wight",
   "Inherits": [ "Relict", "Mob" ],
-  "Type": "Job",
+  "Type": "UniqueFoe",
   "Group": "Relict",
-  "IsUniqueJob": true,
   "HP": 2,
   "RemoveTraits": [ "Defiance" ],
   "Traits": [

@@ -1,9 +1,8 @@
 {
   "Name": "Natal",
   "Inherits": [ "Demon", "Mob" ],
-  "Type": "Job",
+  "Type": "UniqueFoe",
   "Group": "Demon",
-  "IsUniqueJob": true,
   "HP": 1,
   "Speed": 3,
   "Dash": 2,

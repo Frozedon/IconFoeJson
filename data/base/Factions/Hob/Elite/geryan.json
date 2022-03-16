@@ -1,9 +1,8 @@
 {
   "Name": "Geryan",
   "Inherits": [ "Hob", "Elite" ],
-  "Type": "Job",
+  "Type": "UniqueFoe",
   "Group": "Hob",
-  "IsUniqueJob": true,
   "Chapter": 2,
   "Vitality": 10,
   "HPMultiplier": 8,

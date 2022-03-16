@@ -1,9 +1,8 @@
 {
   "Name": "Judicator Demon",
   "Inherits": [ "Demon", "Elite" ],
-  "Type": "Job",
+  "Type": "UniqueFoe",
   "Group": "Demon",
-  "IsUniqueJob": true,
   "Chapter": 1,
   "Vitality": 10,
   "HPMultiplier": 8,

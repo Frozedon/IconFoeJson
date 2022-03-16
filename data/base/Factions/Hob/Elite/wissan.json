@@ -1,9 +1,8 @@
 {
   "Name": "Wissan",
   "Inherits": [ "Hob", "Elite" ],
-  "Type": "Job",
+  "Type": "UniqueFoe",
   "Group": "Hob",
-  "IsUniqueJob": true,
   "Chapter": 2,
   "Vitality": 8,
   "HPMultiplier": 8,

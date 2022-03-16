@@ -1,9 +1,8 @@
 {
   "Name": "Arkenlich",
   "Inherits": [ "Relict", "Legend" ],
+  "Type": "UniqueFoe",
   "Group": "Relict",
-  "Type": "Job",
-  "IsUniqueJob": true,
   "Chapter": 2,
   "Vitality": 8,
   "Speed": 3,

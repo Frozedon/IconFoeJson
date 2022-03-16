@@ -1,9 +1,8 @@
 {
   "Name": "Painwheel",
   "Inherits": [ "Demon", "Elite" ],
-  "Type": "Job",
+  "Type": "UniqueFoe",
   "Group": "Demon",
-  "IsUniqueJob": true,
   "Chapter": 1,
   "Vitality": 8,
   "HPMultiplier": 8,

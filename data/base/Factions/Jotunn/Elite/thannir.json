@@ -1,9 +1,8 @@
 {
   "Name": "Thannir",
   "Inherits": [ "Jotunn", "Elite" ],
-  "Type": "Job",
+  "Type": "UniqueFoe",
   "Group": "Jotunn",
-  "IsUniqueJob": true,
   "Chapter": 2,
   "Vitality": 12,
   "HPMultiplier": 8,

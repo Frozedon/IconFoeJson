@@ -1,9 +1,8 @@
 {
   "Name": "Great Boulder Hob",
   "Inherits": [ "Hob", "Elite" ],
-  "Type": "Job",
+  "Type": "UniqueFoe",
   "Group": "Hob",
-  "IsUniqueJob": true,
   "Chapter": 1,
   "Vitality": 10,
   "HPMultiplier": 8,

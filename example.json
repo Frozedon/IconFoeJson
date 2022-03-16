@@ -1,14 +1,13 @@
 {
   "Name": "", // Name of this statblock
   "Inherits": [ "" ] , // Name of statblock you want to inherit traits from
-  "Type": "", // "Job", "Template", or "SuperTemplate"
+  "Type": "", // "Job", "Template", "UniqueFoe", or "Special"
   "Group": "", // The group it should be filtered by
   "EncounterBudget": 1.0, // The amount of points it takes in the encounter budget. Negative number deontes all points
   "IsBasicTemplate": false, // Is a base template of a faction
   "IsMob": false, // Is a mob foe
   "IsElite": false, // Is an elite foe
   "IsLegend": false, // Is a legend foe
-  "IsUniqueJob": false, // Is a unique job from a faction
   "UsesClass": "", // The class of job that the template has to be on
   "RestrictToBaseTemplates": false, // If this job can only use base faction templates
   "Chapter": 1, // Minimum chapter required to use

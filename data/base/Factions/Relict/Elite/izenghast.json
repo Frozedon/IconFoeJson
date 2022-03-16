@@ -1,9 +1,8 @@
 {
   "Name": "Izenghast",
   "Inherits": [ "Relict", "Elite" ],
-  "Type": "Job",
+  "Type": "UniqueFoe",
   "Group": "Relict",
-  "IsUniqueJob": true,
   "Chapter": 2,
   "Vitality": 8,
   "HPMultiplier": 8,

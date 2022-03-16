@@ -1,6 +1,7 @@
 {
   "Name": "Imperial Officer",
   "Type": "Special",
+  "UsesFaction": "Imperial",
   "Traits": [
     {
       "Name": "Arkentech Power Armor",

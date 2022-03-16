@@ -2,6 +2,8 @@
   "Name": "Filth Hob",
   "Inherits": "Hob",
   "Type": "Template",
+  "UsesClass": "Skirmisher",
+  "RemoveTraits": [ "Spirit of Forest and Field" ],
   "Traits": [
     {
       "Name": "Body of the Land",

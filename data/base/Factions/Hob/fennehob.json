@@ -2,6 +2,8 @@
   "Name": "Fennehob",
   "Inherits": "Hob",
   "Type": "Template",
+  "UsesClass": "Skirmisher",
+  "RemoveTraits": [ "Spirit of Forest and Field" ],
   "Traits": [
     {
       "Name": "Phasing",

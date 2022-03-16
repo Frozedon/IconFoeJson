@@ -2,6 +2,8 @@
   "Name": "Spinhob",
   "Inherits": "Hob",
   "Type": "Template",
+  "UsesClass": "Leader",
+  "RemoveTraits": [ "Spirit of Forest and Field" ],
   "Actions": [
     {
       "Name": "Spirit Away",

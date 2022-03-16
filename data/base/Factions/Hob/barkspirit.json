@@ -2,6 +2,8 @@
   "Name": "Bark Spirit",
   "Inherits": "Hob",
   "Type": "Template",
+  "UsesClass": "Leader",
+  "RemoveTraits": [ "Spirit of Forest and Field" ],
   "Traits": [
     {
       "Name": "Body of the Land",

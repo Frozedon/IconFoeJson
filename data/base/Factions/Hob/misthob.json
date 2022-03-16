@@ -2,7 +2,9 @@
   "Name": "Mist Hob",
   "Inherits": "Hob",
   "Type": "Template",
+  "UsesClass": "Skirmisher",
   "AddHPPercent": -0.25,
+  "RemoveTraits": [ "Spirit of Forest and Field" ],
   "Traits": [
     {
       "Name": "Phasing",

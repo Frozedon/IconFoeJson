@@ -2,6 +2,8 @@
   "Name": "Twiggan",
   "Inherits": "Hob",
   "Type": "Template",
+  "UsesClass": "Heavy",
+  "RemoveTraits": [ "Spirit of Forest and Field" ],
   "Traits": [
     {
       "Name": "Counter",

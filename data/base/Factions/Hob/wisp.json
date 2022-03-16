@@ -2,6 +2,8 @@
   "Name": "Wisp",
   "Inherits": "Hob",
   "Type": "Template",
+  "UsesClass": "Artillery",
+  "RemoveTraits": [ "Spirit of Forest and Field" ],
   "Traits": [
     {
       "Name": "Flying",

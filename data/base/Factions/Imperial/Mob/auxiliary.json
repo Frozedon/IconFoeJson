@@ -1,5 +1,5 @@
 {
-  "Name": "Auxillary",
+  "Name": "Auxiliary",
   "Inherits": [ "Imperial", "Mob" ],
   "Type": "UniqueFoe",
   "Group": "Imperial",

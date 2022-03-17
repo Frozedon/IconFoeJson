@@ -38,7 +38,7 @@
     {
       "Name": "Flatten Mortal",
       "ActionCost": 2,
-      "Tags": [ "melee attack", "piercing", "close blast 1" ],
+      "Tags": [ "melee attack", "pierce", "close blast 1" ],
       "Hit": "4[D] and foe is stunned.",
       "Miss": "[D].",
       "AreaEffect": "[D]."

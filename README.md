@@ -11,4 +11,4 @@
 - [X] Lowlander Faction
 - [X] Jotunn Faction
 - [X] Hob Faction
-- [ ] Templating for Chimaera
+- [X] Templating for Chimaera

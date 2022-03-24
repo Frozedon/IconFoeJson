@@ -23,7 +23,7 @@
       "Tags": [ "ranged attack 6" ],
       "Hit": "Character is inflicted with all four blights.",
       "Miss": "Character is inflicted with two blights of this wright's choice.",
-      "Blightboost": "Character takes [D] once for every blight they are inflicted with. Roll damage once and apply it once for each blight."
+      "Blightboost": "Character takes 2 piercing damage once for every blight they are inflicted with."
     }
   ]
 }

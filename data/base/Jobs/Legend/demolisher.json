@@ -66,7 +66,7 @@
         {
           "Name": "Pound",
           "ActionCost": 1,
-          "Tags": [ "melee attack", "multiattack", "range 2", "combo" ],
+          "Tags": [ "melee attack", "range 2", "multiattack", "combo" ],
           "Hit": "[D]",
           "Miss": "[fray].",
           "PostAttack": "Deals 2[D] against characters suffering from a status.",
@@ -126,7 +126,7 @@
         {
           "Name": "Pound",
           "ActionCost": 1,
-          "Tags": [ "melee attack", "multiattack", "true strike", "range 2", "combo" ],
+          "Tags": [ "melee attack", "range 2", "multiattack", "true strike", "combo" ],
           "Hit": "[D]",
           "Miss": "[fray].",
           "PostAttack": "Deals 2[D] against characters suffering from a status.",

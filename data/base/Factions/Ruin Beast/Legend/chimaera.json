@@ -297,7 +297,7 @@
         {
           "Name": "Ice Shards",
           "ActionCost": 1,
-          "Tags": [ "range attack 6", "multiattack" ],
+          "Tags": [ "ranged attack 6", "multiattack" ],
           "AutoHit": "Piercing [fray] damage."
         },
         {

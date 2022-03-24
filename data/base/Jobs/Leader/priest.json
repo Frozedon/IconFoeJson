@@ -6,7 +6,7 @@
     {
       "Name": "Holy",
       "ActionCost": 1,
-      "Tags": [ "blast 1", "range 4" ],
+      "Tags": [ "range 4", "blast 1" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
       "AreaEffect": "[fray].",

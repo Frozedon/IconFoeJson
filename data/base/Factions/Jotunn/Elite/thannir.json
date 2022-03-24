@@ -39,7 +39,7 @@
     {
       "Name": "Spirit Scythe",
       "ActionCost": 1,
-      "Tags": [ "melee attack", "arc 4", "range 2" ],
+      "Tags": [ "melee attack", "range 2", "arc 4" ],
       "AutoHit": "[fray].",
       "AreaEffect": "[fray].",
       "Effect": "Characters are branded and shoved 1 in any direction."

@@ -34,7 +34,7 @@
     {
       "Name": "Spit Fire",
       "ActionCost": 1,
-      "Tags": [ "blast 1", "range 4" ],
+      "Tags": [ "range 4", "blast 1" ],
       "AreaEffect": "Fray damage and characters are burning. Burning characters instead take [D]."
     },
     {

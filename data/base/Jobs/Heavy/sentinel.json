@@ -17,7 +17,7 @@
     {
       "Name": "Sweep",
       "ActionCost": 2,
-      "Tags": [ "true strike", "melee attack", "multiattack", "range 2" ],
+      "Tags": [ "melee attack", "range 2", "multiattack", "true strike" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
       "Effect": "Shove 1."

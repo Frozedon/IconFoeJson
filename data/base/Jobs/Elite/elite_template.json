@@ -4,7 +4,7 @@
   "Inherits": "Elite",
   "Type": "Special",
   "DoNotDisplay": true,
-  "DoubleNormalFoeHP": true,
+  "DoubleHP": true,
   "MinimumRecharge": 5,
   "Traits": [
     {

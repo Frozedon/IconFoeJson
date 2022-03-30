@@ -5,7 +5,7 @@
   "EncounterBudget": 2,
   "IsBasicTemplate": true,
   "FactionBlight": "Frostbite",
-  "DoubleNormalFoeHP": true,
+  "DoubleHPIfNormalFoe": true,
   "SetupTraits": [
     {
       "Name": "Kin",

@@ -3,6 +3,7 @@
   "Inherits": [ "Relict", "Elite" ],
   "Type": "UniqueFoe",
   "Group": "Relict",
+  "UsesClass": "Skirmisher",
   "Chapter": 2,
   "Vitality": 8,
   "HPMultiplier": 8,

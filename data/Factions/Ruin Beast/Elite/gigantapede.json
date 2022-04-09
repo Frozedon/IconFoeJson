@@ -3,6 +3,7 @@
   "Inherits": [ "Ruin Beast", "Elite" ],
   "Type": "UniqueFoe",
   "Group": "Ruin Beast",
+  "UsesClass": "Heavy",
   "Chapter": 2,
   "Vitality": 10,
   "HPMultiplier": 8,

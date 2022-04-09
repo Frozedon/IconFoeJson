@@ -2,6 +2,7 @@
   "Name": "Archpriest",
   "Inherits": "Elite",
   "Type": "Job",
+  "UsesClass": "Leader",
   "Vitality": 10,
   "Speed": 4,
   "Dash": 2,

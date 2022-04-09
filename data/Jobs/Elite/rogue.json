@@ -2,6 +2,7 @@
   "Name": "Rogue",
   "Inherits": "Elite",
   "Type": "Job",
+  "UsesClass": "Skirmisher",
   "Vitality": 8,
   "Speed": 5,
   "Dash": 5,

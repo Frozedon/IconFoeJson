@@ -3,6 +3,7 @@
   "Inherits": [ "Jotunn", "Elite" ],
   "Type": "UniqueFoe",
   "Group": "Jotunn",
+  "UsesClass": "Leader",
   "Chapter": 2,
   "Vitality": 12,
   "HPMultiplier": 8,

@@ -2,6 +2,7 @@
   "Name": "Eldenwright",
   "Inherits": "Elite",
   "Type": "Job",
+  "UsesClass": "Artillery",
   "Vitality": 8,
   "HPMultiplier": 8,
   "Speed": 3,

@@ -2,6 +2,7 @@
   "Name": "Brood Lord",
   "Inherits": "Legend",
   "Type": "Job",
+  "UsesClass": "Leader",
   "Vitality": 10,
   "HPMultiplier": 2,
   "Speed": 4,

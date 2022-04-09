@@ -2,6 +2,7 @@
   "Name": "Wyrm",
   "Inherits": "Legend",
   "Type": "Job",
+  "UsesClass": "Artillery",
   "Vitality": 8,
   "HPMultiplier": 2,
   "Speed": 4,

@@ -2,6 +2,7 @@
   "Name": "Demolisher",
   "Inherits": "Legend",
   "Type": "Job",
+  "UsesClass": "Heavy",
   "Vitality": 10,
   "Speed": 3,
   "Dash": 2,

@@ -3,6 +3,7 @@
   "Inherits": [ "Jotunn", "Elite" ],
   "Type": "UniqueFoe",
   "Group": "Lowlander",
+  "UsesClass": "Artillery",
   "Chapter": 1,
   "Vitality": 8,
   "HPMultiplier": 8,

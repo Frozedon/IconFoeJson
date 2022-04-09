@@ -3,6 +3,7 @@
   "Inherits": [ "Hob", "Legend" ],
   "Type": "UniqueFoe",
   "Group": "Hob",
+  "UsesClass": "Skirmisher",
   "Chapter": 1,
   "Vitality": 8,
   "HPMultiplier": 2,

@@ -3,6 +3,7 @@
   "Inherits": [ "Relict", "Legend" ],
   "Type": "UniqueFoe",
   "Group": "Relict",
+  "UsesClass": "Artillery",
   "Chapter": 2,
   "Vitality": 8,
   "Speed": 3,

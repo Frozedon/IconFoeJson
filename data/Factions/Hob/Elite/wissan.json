@@ -3,6 +3,7 @@
   "Inherits": [ "Hob", "Elite" ],
   "Type": "UniqueFoe",
   "Group": "Hob",
+  "UsesClass": "Artillery",
   "Chapter": 2,
   "Vitality": 8,
   "HPMultiplier": 8,

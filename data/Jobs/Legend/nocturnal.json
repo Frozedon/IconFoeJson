@@ -2,6 +2,7 @@
   "Name": "Nocturnal",
   "Inherits": "Legend",
   "Type": "Job",
+  "UsesClass": "Skirmisher",
   "Vitality": 8,
   "Speed": 4,
   "Dash": 4,

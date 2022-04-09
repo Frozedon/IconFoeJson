@@ -3,6 +3,7 @@
   "Inherits": [ "Demon", "Elite" ],
   "Type": "UniqueFoe",
   "Group": "Demon",
+  "UsesClass": "Heavy",
   "Chapter": 1,
   "Vitality": 12,
   "HPMultiplier": 8,

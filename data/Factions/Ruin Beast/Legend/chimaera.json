@@ -3,6 +3,7 @@
   "Inherits": [ "Ruin Beast", "Legend" ],
   "Type": "UniqueFoe",
   "Group": "Ruin Beast",
+  "UsesClass": "Heavy",
   "Chapter": 1,
   "Vitality": 10,
   "Speed": 4,

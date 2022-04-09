@@ -3,6 +3,7 @@
   "Inherits": [ "Ruin Beast", "Elite" ],
   "Type": "UniqueFoe",
   "Group": "Ruin Beast",
+  "UsesClass": "Skirmisher",
   "Chapter": 1,
   "Vitality": 8,
   "HPMultiplier": 8,

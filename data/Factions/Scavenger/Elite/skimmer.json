@@ -3,6 +3,7 @@
   "Inherits": [ "Scavenger", "Elite" ],
   "Type": "UniqueFoe",
   "Group": "Scavenger",
+  "UsesClass": "Leader",
   "Chapter": 1,
   "Vitality": 12,
   "HPMultiplier": 8,

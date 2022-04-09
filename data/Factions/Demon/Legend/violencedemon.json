@@ -3,6 +3,7 @@
   "Inherits": [ "Demon", "Legend" ],
   "Type": "UniqueFoe",
   "Group": "Demon",
+  "UsesClass": "Skirmisher",
   "Chapter": 2,
   "Vitality": 8,
   "HPMultiplier": 4,

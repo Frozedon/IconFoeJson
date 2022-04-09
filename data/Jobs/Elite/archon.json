@@ -2,6 +2,7 @@
   "Name": "Archon",
   "Inherits": "Elite",
   "Type": "Job",
+  "UsesClass": "Heavy",
   "Vitality": 10,
   "HPMultiplier": 8,
   "Speed": 3,

@@ -3,6 +3,7 @@
   "Inherits": [ "Relict", "Elite" ],
   "Type": "UniqueFoe",
   "Group": "Relict",
+  "UsesClass": "Heavy",
   "Chapter": 1,
   "Vitality": 8,
   "HPMultiplier": 8,

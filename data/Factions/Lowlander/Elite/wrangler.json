@@ -3,6 +3,7 @@
   "Inherits": [ "Lowlander", "Elite" ],
   "Type": "UniqueFoe",
   "Group": "Lowlander",
+  "UsesClass": "Leader",
   "Chapter": 2,
   "Vitality": 10,
   "HPMultiplier": 8,

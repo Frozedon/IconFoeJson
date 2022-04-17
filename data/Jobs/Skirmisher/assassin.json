@@ -23,7 +23,7 @@
       "Name": "Shadow Clone",
       "ActionCost": 1,
       "Tags": [ "summon" ],
-      "Description": "Summon a shadow clone in a free space in range 3, an intangible size 1 summon. Foes adjacent to a shadow clone at the start of their turn take fray damage from the clone. Clones disappear at the end of combat or if the assassin in defeated."
+      "Description": "Summon a shadow clone in a free space in range 3, an intangible size 1 summon. Foes adjacent to a shadow clone at the start of their turn take fray damage from the clone. Clones disappear at the end of combat or if the assassin is defeated."
     }
   ]
 }

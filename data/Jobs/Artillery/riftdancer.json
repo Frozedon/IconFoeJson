@@ -12,7 +12,7 @@
     {
       "Name": "Dissonant Bolt",
       "ActionCost": 1,
-      "Tags": [ "line 6", "pierce" ],
+      "Tags": [ "ranged attack", "line 6", "pierce" ],
       "Hit": "[D]+[fray], inflict blight.",
       "Miss": "[fray].",
       "AreaEffect": "[fray].",

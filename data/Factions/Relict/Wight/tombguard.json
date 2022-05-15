@@ -1,0 +1,20 @@
+{
+  "Name": "Tomb Guard",
+  "Inherits": "Wight",
+  "Type": "UniqueFoe",
+  "Traits": [
+    {
+      "Name": "Duty of Death",
+      "Description": "Adjacent allies to the Tomb Guard without this trait have dodge."
+    }
+  ],
+  "Actions": [
+    {
+      "Name": "Bash",
+      "ActionCost": 1,
+      "Tags": [ "repeatable" ],
+      "Description": "An adjacent foe is shoved 1 and must save or become winded. Winded foes take [D].",
+      "Collide": "Foe fails the save."
+    }
+  ]
+}

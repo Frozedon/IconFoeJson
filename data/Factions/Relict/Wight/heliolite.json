@@ -1,0 +1,32 @@
+{
+  "Name": "Heliolite",
+  "Inherits": "Wight",
+  "Type": "UniqueFoe",
+  "Chapter": 2,
+  "Traits": [
+    {
+      "Name": "Counter",
+      "Description": "Deal 2 damage to your attacker after being attacked, hit or miss."
+    }
+  ],
+  "Actions": [
+    {
+      "Name": "Redondo",
+      "ActionCost": 0,
+      "Description": "Swap places with an adjacent ally."
+    },
+    {
+      "Name": "Swipe",
+      "ActionCost": 0,
+      "Description": "Adjacent foes take fray damage."
+    },
+    {
+      "Name": "Javelin",
+      "ActionCost": 1,
+      "Tags": [ "true strike", "ranged attack 3" ],
+      "Hit": "[D], electrify, and foe must save or become winded.",
+      "Miss": "1 damage.",
+      "Effect": "Has no maximum range against electrified characters."
+    }
+  ]
+}

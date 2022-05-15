@@ -1,0 +1,61 @@
+{
+  "Name": "Necrosavant",
+  "Inherits": "Relict",
+  "UsesClass": "Leader",
+  "Vitality": 10,
+  "Speed": 4,
+  "Dash": 2,
+  "Defense": 8,
+  "Armor": 0,
+  "FrayDamage": 3,
+  "DamageDie": 6,
+  "Traits": [
+    {
+      "Name": "Shelter",
+      "Description": "+1 boon on saves."
+    }
+  ],
+  "Actions": [
+    {
+      "Name": "Diaga",
+      "ActionCost": 1,
+      "Description": "An ally in range 4 can save, ending a mark, status, or blight on a successful save. If that ally is bloodied, they also gain vigor 1."
+    },
+    {
+      "Name": "Unholy",
+      "ActionCost": 1,
+      "Tags": [ "ranged attack", "range 6", "blast 1" ],
+      "Hit": "[D]+[fray] and foe is branded.",
+      "Miss": "[fray].",
+      "AreaEffect": "[fray].",
+      "Effect": "This action can also be made as a close blast 1 melee attack."
+    },
+    {
+      "Name": "Fear",
+      "ActionCost": 1,
+      "Tags": [ "multimark", "repeatable" ],
+      "Description": "Mark a foe in range 6. While marked, that foe gains +1 curse on attacks and saves unless adjacent to an ally. If they end their turn adjacent to an ally, they can pass a save to clear this mark."
+    },
+    {
+      "Name": "Raise Dead",
+      "ActionCost": 2,
+      "Tags": [ "1/combat" ],
+      "Description": "Restore a defeated Relict in range 6 to 50% hp and remove incapacitated."
+    },
+    {
+      "Name": "Soul Shred",
+      "ActionCost": 1,
+      "Chapter": 2,
+      "Recharge": 4,
+      "Tags": [ "multimark" ],
+      "Description": "Mark a foe in range 6. While marked, that foe gains Aura 1. Allies of that foe that end their turn in the aura take [fray] piercing damage."
+    },
+    {
+      "Name": "Radiance of the Black Sun",
+      "ActionCost": 2,
+      "Chapter": 3,
+      "Tags": [ "1/combat" ],
+      "Description": "This character becomes immobile but gains Aura 2 until the start of its next turn. While the aura is active, Relict in the area cannot be reduced past 1 hp. This Aura also deactivates if this character is stunned."
+    }
+  ]
+}

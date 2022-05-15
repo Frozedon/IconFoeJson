@@ -1,0 +1,24 @@
+{
+  "Name": "Embalmer",
+  "Inherits": "Necrosavant",
+  "Type": "UniqueFoe",
+  "Armor": 2,
+  "Traits": [
+    {
+      "Name": "Aura of Rot",
+      "Description": "The Embalmer has aura 2. Foes that end their turn in the aura lose all vigor, then take 2 piercing damage."
+    }
+  ],
+  "Actions": [
+    {
+      "Name": "Despoil",
+      "ActionCost": 2,
+      "Recharge": 5,
+      "Tags": [ "ranged attack 6", "cross 2" ],
+      "Hit": "3[D]+[fray].",
+      "Miss": "[D]+[fray].",
+      "AreaEffect": "[D]+[fray].",
+      "Effect": "Foes must save or become pacified."
+    }
+  ]
+}

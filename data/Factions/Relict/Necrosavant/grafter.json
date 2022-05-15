@@ -1,0 +1,19 @@
+{
+  "Name": "Grafter",
+  "Inherits": "Necrosavant",
+  "Type": "UniqueFoe",
+  "Traits": [
+    {
+      "Name": "Amalgamate",
+      "Description": "While the Grafter is not incapacitated, whenever a relict is defeated anywhere on the battlefield, another relict of the Grafter's choice gains vigor 1."
+    }
+  ],
+  "Interrupts": [
+    {
+      "Name": "Split Suffering",
+      "Count": 1,
+      "Trigger": "A relict takes damage in range 3 of the Grafter.",
+      "Effect": "That character gains Resistance. The Grafter or a different relict in range 3 from the Grafter takes [D]."
+    }
+  ]
+}

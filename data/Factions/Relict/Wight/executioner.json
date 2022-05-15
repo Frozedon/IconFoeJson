@@ -1,0 +1,17 @@
+{
+  "Name": "Executioner",
+  "Inherits": "Wight",
+  "Type": "UniqueFoe",
+  "Actions": [
+    {
+      "Name": "Lightning Axe",
+      "ActionCost": 2,
+      "Recharge": 5,
+      "Tags": [ "melee attack", "true strike", "close blast 1" ],
+      "Hit": "2[D], shove 1, and electrify.",
+      "Miss": "[D].",
+      "AreaEffect": "[D].",
+      "Effect": "Foe must save or become stunned."
+    }
+  ]
+}

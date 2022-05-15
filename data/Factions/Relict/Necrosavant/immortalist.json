@@ -1,0 +1,20 @@
+{
+  "Name": "Immortalist",
+  "Inherits": "Necrosavant",
+  "Type": "UniqueFoe",
+  "Chapter": 3,
+  "Traits": [
+    {
+      "Name": "Eternal War",
+      "Description": "While the Immortalist is on the battlefield and not defeated, all relict gain Rise Again: This character has a chance to rise again when defeated. Roll 1d6 at the start of each round. On a 4+, this character gets back up at 25% hp. If all characters with this trait are defeated, it deactivates."
+    }
+  ],
+  "Actions": [
+    {
+      "Name": "Entombment of Iz",
+      "ActionCost": 1,
+      "Recharge": 6,
+      "Description": "The Immortalist entombs a character in a magical sarcophagus. While inside, they are immobile, winded+, and are blinded, but can otherwise be targeted normally. The Sarcophagus is a height 1 terrain piece with 10 hp that is destructible. Attacks automatically hit and it is destroyed when it reaches 0. It has resistance to damage from the character inside it."
+    }
+  ]
+}

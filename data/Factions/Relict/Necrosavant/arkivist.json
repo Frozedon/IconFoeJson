@@ -1,0 +1,18 @@
+{
+  "Name": "Arkivist",
+  "Inherits": "Necrosavant",
+  "Type": "UniqueFoe",
+  "Traits": [
+    {
+      "Name": "Aura of the Endless Legion",
+      "Description": "Aura 2. when any relict is defeated in the aura, summon a husk in a free space in the aura."
+    }
+  ],
+  "Actions": [
+    {
+      "Name": "Call the Lost",
+      "ActionCost": 1,
+      "Description": "Summon 3 husks adjacent to a foe in range 8. That character must save or become branded."
+    }
+  ]
+}

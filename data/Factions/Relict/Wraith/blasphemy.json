@@ -1,0 +1,25 @@
+{
+  "Name": "Blasphemy",
+  "Inherits": "Wraith",
+  "Type": "UniqueFoe",
+  "Chapter": 3,
+  "Interrupts": [
+    {
+      "Name": "Iron Coffin",
+      "Count": 1,
+      "Trigger": "When bloodied.",
+      "Effect": "The coffin breaks open. The Wraith becomes intangible until the start of its next turn and immediately triggers Overdrive."
+    }
+  ],
+  "Actions": [
+    {
+      "Name": "Finger of Death",
+      "ActionCost": 2,
+      "Recharge": 6,
+      "Tags": [ "ranged attack 8" ],
+      "Hit": "6[D].",
+      "Miss": "3[D].",
+      "Effect": "This attack can't lower a character past 1 hp."
+    }
+  ]
+}

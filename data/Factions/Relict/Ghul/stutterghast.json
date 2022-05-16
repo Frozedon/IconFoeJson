@@ -1,0 +1,24 @@
+{
+  "Name": "Stuterghast",
+  "Inherits": "Ghul",
+  "Type": "UniqueFoe",
+  "Chapter": 3,
+  "Traits": [
+    {
+      "Name": "Stutter",
+      "Description": "When a foe takes an action in range 3 of the ghast, it may teleport 1 and deal 1 damage to an adjacent foe."
+    },
+    {
+      "Name": "Hollow",
+      "Description": "The Stutterghast has aura 1. While there is exactly 1 other character in hollow's aura, it has have evasion and stealth. This aura has no effect if no other characters, or 2 or more other characters are inside, and its effects (including stealth) turn off it if deactivates."
+    }
+  ],
+  "Interrupts": [
+    {
+      "Name": "Reality Break",
+      "Count": 1,
+      "Trigger": "The Stutterghast is Bloodied.",
+      "Effect": "The stutterghast becomes intangible until the end of its next turn."
+    }
+  ]
+}

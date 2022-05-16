@@ -1,0 +1,24 @@
+{
+  "Name": "Abomination",
+  "Inherits": "Wraith",
+  "Type": "UniqueFoe",
+  "Chapter": 2,
+  "Traits": [
+    {
+      "Name": "Unstable",
+      "Description": "When defeated, explodes in a blast 1 explosion centered on the wraith. Characters inside take 2[D] piercing damage as an area effect. The wraith is then removed from the battlefield."
+    }
+  ],
+  "Actions": [
+    {
+      "Name": "Scouring Beam",
+      "ActionCost": 2,
+      "Recharge": 6,
+      "Tags": [ "ranged attack", "line 10", "pierce" ],
+      "Hit": "[D] twice.",
+      "Miss": "[D].",
+      "AreaEffect": "[D].",
+      "Effect": "All foes in the area are shattered. All terrain height 1 or lower in the path is destroyed."
+    }
+  ]
+}

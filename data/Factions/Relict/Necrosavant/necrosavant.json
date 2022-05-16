@@ -24,7 +24,7 @@
     {
       "Name": "Unholy",
       "ActionCost": 1,
-      "Tags": [ "ranged attack", "range 6", "blast 1" ],
+      "Tags": [ "ranged attack 6", "blast 1" ],
       "Hit": "[D]+[fray] and foe is branded.",
       "Miss": "[fray].",
       "AreaEffect": "[fray].",

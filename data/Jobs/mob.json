@@ -1,6 +1,6 @@
 {
   "Name": "Mob",
-  "IsMob": true,
+  "SpecialClass": "Mob",
   "Vitality": 1,
   "HP": 1,
   "Speed": 4,

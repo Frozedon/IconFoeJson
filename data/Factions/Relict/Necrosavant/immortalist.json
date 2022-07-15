@@ -1,6 +1,7 @@
 {
   "Name": "Immortalist",
   "Inherits": "Necrosavant",
+  "Type": "Foe",
   "Chapter": 3,
   "Traits": [ "Eternal War" ],
   "Actions": [

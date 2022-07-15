@@ -1,6 +1,7 @@
 {
   "Name": "Automata",
   "Inherits": "Relict",
+  "Type": "Foe",
   "Class": "Artillery",
   "Vitality": 6,
   "Speed": 2,

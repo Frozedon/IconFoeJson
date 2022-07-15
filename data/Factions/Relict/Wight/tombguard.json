@@ -1,6 +1,7 @@
 {
   "Name": "Tomb Guard",
   "Inherits": "Wight",
+  "Type": "Foe",
   "Traits": [ "Duty of Death" ],
   "Actions": [
     {

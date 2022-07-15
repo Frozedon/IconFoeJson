@@ -1,6 +1,7 @@
 {
   "Name": "Arkitek",
   "Inherits": [ "Relict", "Elite" ],
+  "Type": "Foe",
   "Class": "Leader",
   "Chapter": 2,
   "Vitality": 10,

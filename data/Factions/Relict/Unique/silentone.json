@@ -1,6 +1,7 @@
 {
   "Name": "Silent One",
   "Inherits": "Relict",
+  "Type": "Foe",
   "Class": "Leader",
   "Vitality": 10,
   "Speed": 6,

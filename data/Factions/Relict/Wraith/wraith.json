@@ -1,7 +1,7 @@
 {
   "Name": "Wraith",
   "Inherits": "Relict",
-  "UsesClass": "Artillery",
+  "Class": "Artillery",
   "Vitality": 4,
   "Speed": 3,
   "Dash": 2,

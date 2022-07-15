@@ -1,6 +1,7 @@
 {
   "Name": "Wailer",
   "Inherits": "Ghul",
+  "Type": "Foe",
   "RemoveActions": "Terrorize",
   "Actions": [
     {

@@ -1,6 +1,7 @@
 {
   "Name": "Arkenlich",
   "Inherits": [ "Relict", "Legend" ],
+  "Type": "Foe",
   "Class": "Artillery",
   "Chapter": 2,
   "Vitality": 8,

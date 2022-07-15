@@ -1,6 +1,7 @@
 {
   "Name": "Executioner",
   "Inherits": "Wight",
+  "Type": "Foe",
   "Actions": [
     {
       "Name": "Lightning Axe",

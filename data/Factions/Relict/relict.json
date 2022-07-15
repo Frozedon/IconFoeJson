@@ -1,7 +1,7 @@
 {
   "Name": "Relict",
   "Faction": "Relict",
-  "IsBasicTemplate": true,
+  "Type": "Template",
   "Traits": [ "Shuffle" ],
   "SetupTraits": [
     {

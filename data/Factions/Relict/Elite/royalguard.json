@@ -1,6 +1,7 @@
 {
   "Name": "Royal Guard",
   "Inherits": [ "Relict", "Elite" ],
+  "Type": "Foe",
   "Class": "Heavy",
   "Vitality": 10,
   "Speed": 3,

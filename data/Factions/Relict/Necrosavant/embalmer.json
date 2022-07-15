@@ -1,6 +1,7 @@
 {
   "Name": "Embalmer",
   "Inherits": "Necrosavant",
+  "Type": "Foe",
   "Traits": [ "Armor 2", "Aura of Rot" ],
   "Actions": [
     {

@@ -1,6 +1,7 @@
 {
   "Name": "Life Hunter",
   "Inherits": "Relict",
+  "Type": "Foe",
   "Class": "Artillery",
   "Chapter": 2,
   "Vitality": 8,

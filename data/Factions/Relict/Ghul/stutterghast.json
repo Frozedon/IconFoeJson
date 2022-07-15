@@ -1,7 +1,7 @@
 {
-  "Name": "Stuterghast",
+  "Name": "Stutterghast",
   "Inherits": "Ghul",
-  "Type": "UniqueFoe",
+  "Type": "Foe",
   "Chapter": 3,
   "Traits": [ "Stutter", "Hollow" ],
   "Interrupts": [

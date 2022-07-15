@@ -1,6 +1,7 @@
 {
   "Name": "Arc Spectre",
   "Inherits": "Wraith",
+  "Type": "Foe",
   "Actions": [
     {
       "Name": "Storm of Wrath",

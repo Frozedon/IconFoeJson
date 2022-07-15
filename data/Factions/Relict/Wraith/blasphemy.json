@@ -1,6 +1,7 @@
 {
   "Name": "Blasphemy",
   "Inherits": "Wraith",
+  "Type": "Foe",
   "Chapter": 3,
   "Interrupts": [
     {

@@ -1,6 +1,7 @@
 {
   "Name": "Izenghast",
   "Inherits": [ "Relict", "Elite" ],
+  "Type": "Foe",
   "Class": "Skirmisher",
   "Chapter": 2,
   "Vitality": 8,

@@ -1,6 +1,7 @@
 {
   "Name": "Arc Ghul",
   "Inherits": "Ghul",
+  "Type": "Foe",
   "Traits": [ "Living Lightning" ],
   "Actions": [
     {

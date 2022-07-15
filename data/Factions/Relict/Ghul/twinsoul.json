@@ -1,7 +1,7 @@
 {
   "Name": "Twinsoul",
   "Inherits": "Ghul",
-  "Type": "UniqueFoe",
+  "Type": "Foe",
   "RemoveActions": "Hamstring",
   "Actions": [
     {

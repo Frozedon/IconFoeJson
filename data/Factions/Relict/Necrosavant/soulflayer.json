@@ -1,6 +1,7 @@
 {
   "Name": "Soul Flayer",
   "Inherits": "Necrosavant",
+  "Type": "Foe",
   "Chapter": 2,
   "Actions": [
     {

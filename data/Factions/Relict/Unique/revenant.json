@@ -1,6 +1,7 @@
 {
   "Name": "Revenant",
   "Inherits": "Relict",
+  "Type": "Foe",
   "Class": "Skirmisher",
   "Chapter": 2,
   "Vitality": 10,

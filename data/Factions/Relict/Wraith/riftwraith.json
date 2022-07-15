@@ -1,6 +1,7 @@
 {
   "Name": "Rift Wraith",
   "Inherits": "Wraith",
+  "Type": "Foe",
   "Traits": [ "Open Rift" ],
   "Actions": [
     {

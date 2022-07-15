@@ -1,6 +1,7 @@
 {
   "Name": "Arkivist",
   "Inherits": "Necrosavant",
+  "Type": "Foe",
   "Traits": [ "Aura of the Endless Legion" ],
   "Actions": [
     {

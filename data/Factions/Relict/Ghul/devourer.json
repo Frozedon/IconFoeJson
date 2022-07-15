@@ -1,5 +1,6 @@
 {
   "Name": "Devourer",
+  "Type": "Foe",
   "Inherits": "Ghul",
   "Chapter": 2,
   "Actions": [

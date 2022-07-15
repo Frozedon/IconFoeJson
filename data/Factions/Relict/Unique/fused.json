@@ -1,6 +1,7 @@
 {
   "Name": "Fused",
   "Inherits": "Relict",
+  "Type": "Foe",
   "Class": "Heavy",
   "Vitality": 15,
   "Speed": 3,

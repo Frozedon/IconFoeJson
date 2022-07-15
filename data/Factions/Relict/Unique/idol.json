@@ -1,6 +1,7 @@
 {
   "Name": "Idol",
   "Inherits": "Relict",
+  "Type": "Foe",
   "Class": "Heavy",
   "Vitality": 8,
   "Speed": 3,

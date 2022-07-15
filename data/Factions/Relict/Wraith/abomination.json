@@ -1,6 +1,7 @@
 {
   "Name": "Abomination",
   "Inherits": "Wraith",
+  "Type": "Foe",
   "Chapter": 2,
   "Traits": [ "Unstable" ],
   "Actions": [

@@ -1,6 +1,7 @@
 {
   "Name": "Immortal",
   "Inherits": "Relict",
+  "Type": "Foe",
   "Class": "Heavy",
   "Chapter": 3,
   "Vitality": 12,

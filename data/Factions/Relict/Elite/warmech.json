@@ -1,6 +1,7 @@
 {
   "Name": "Warmech",
   "Inherits": [ "Relict", "Elite" ],
+  "Type": "Foe",
   "Class": "Artillery",
   "Vitality": 6,
   "Speed": 4,

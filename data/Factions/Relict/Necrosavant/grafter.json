@@ -1,6 +1,7 @@
 {
   "Name": "Grafter",
   "Inherits": "Necrosavant",
+  "Type": "Foe",
   "Traits": [ "Amalgamate" ],
   "Interrupts": [
     {

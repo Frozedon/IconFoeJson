@@ -1,6 +1,7 @@
 {
   "Name": "Vessel Knight",
   "Inherits": [ "Relict", "Legend" ],
+  "Type": "Foe",
   "Class": "Heavy",
   "Vitality": 10,
   "Speed": 4,

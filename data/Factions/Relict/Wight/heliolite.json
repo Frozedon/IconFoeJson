@@ -1,6 +1,7 @@
 {
   "Name": "Heliolite",
   "Inherits": "Wight",
+  "Type": "Foe",
   "Chapter": 2,
   "Traits": [ "Counter" ],
   "Actions": [

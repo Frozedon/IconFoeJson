@@ -1,6 +1,7 @@
 {
   "Name": "Chain Wraith",
   "Inherits": "Wraith",
+  "Type": "Foe",
   "Actions": [
     {
       "Name": "Bind",

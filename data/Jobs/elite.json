@@ -1,5 +1,6 @@
 {
   "Name": "Elite",
   "HPMultiplier": 8,
+  "IsElite": true,
   "Traits": [ "Elite" ]
 }

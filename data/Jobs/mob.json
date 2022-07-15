@@ -1,5 +1,6 @@
 {
   "Name": "Mob",
+  "IsMob": true,
   "Vitality": 1,
   "HP": 1,
   "Speed": 4,

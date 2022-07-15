@@ -1,0 +1,40 @@
+{
+  "Name": "Life Hunter",
+  "Inherits": "Relict",
+  "Class": "Artillery",
+  "Chapter": 2,
+  "Vitality": 8,
+  "Speed": 4,
+  "Defense": 8,
+  "FrayDamage": 0,
+  "DamageDie": 8,
+  "Traits": [ "Overdrive 4", "Skirmisher", "Ethereal", "Rise Again" ],
+  "Actions": [
+    {
+      "Name": "Phase Shift",
+      "ActionCost": 0,
+      "Description": "Teleport 4."
+    },
+    {
+      "Name": "Nock",
+      "ActionCost": 1,
+      "Description": "Dash 2. Life Seeking Arrow recharges."
+    },
+    {
+      "Name": "Liminal Darts",
+      "ActionCost": 1,
+      "Tags": [ "mark" ],
+      "Description": "Mark a foe in line of sight and range 10. At the end of that character's turn, it takes [D] piercing damage twice if it's not in cover from the Life Hunter. Then this mark ends."
+    },
+    {
+      "Name": "Life Seeking Arrow",
+      "ActionCost": 2,
+      "Tags": [ "ranged attack 10", "+1 boon", "pierce" ],
+      "Hit": "50% of the foe's max HP.",
+      "Miss": "25% of the foe's max HP.",
+      "CriticalHit": "Deals 75% of the foe's max HP instead.",
+      "Effect": "Ignores cover. Cannot target adjacent characters.",
+      "SpecialRecharge": "Recharges only if Nock is used."
+    }
+  ]
+}

@@ -1,14 +1,8 @@
 {
   "Name": "Heliolite",
   "Inherits": "Wight",
-  "Type": "UniqueFoe",
   "Chapter": 2,
-  "Traits": [
-    {
-      "Name": "Counter",
-      "Description": "Deal 2 damage to your attacker after being attacked, hit or miss."
-    }
-  ],
+  "Traits": [ "Counter" ],
   "Actions": [
     {
       "Name": "Redondo",
@@ -18,7 +12,7 @@
     {
       "Name": "Swipe",
       "ActionCost": 0,
-      "Description": "Adjacent foes take fray damage."
+      "Description": "Adjacent foes take [fray] damage."
     },
     {
       "Name": "Javelin",

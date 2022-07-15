@@ -1,13 +1,7 @@
 {
   "Name": "Arc Ghul",
   "Inherits": "Ghul",
-  "Type": "UniqueFoe",
-  "Traits": [
-    {
-      "Name": "Living Lightning",
-      "Description": "Electrifies foes it moves through. Foes that are already electrified take 2 damage, but only the first time on a turn. Allied spaces cost 0 movement to pass through."
-    }
-  ],
+  "Traits": [ "Living Lightning" ],
   "Actions": [
     {
       "Name": "Soul Shift",

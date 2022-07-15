@@ -1,13 +1,7 @@
 {
   "Name": "Arkivist",
   "Inherits": "Necrosavant",
-  "Type": "UniqueFoe",
-  "Traits": [
-    {
-      "Name": "Aura of the Endless Legion",
-      "Description": "Aura 2. when any relict is defeated in the aura, summon a husk in a free space in the aura."
-    }
-  ],
+  "Traits": [ "Aura of the Endless Legion" ],
   "Actions": [
     {
       "Name": "Call the Lost",

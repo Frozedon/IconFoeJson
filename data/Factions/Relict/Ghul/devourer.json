@@ -1,7 +1,6 @@
 {
   "Name": "Devourer",
   "Inherits": "Ghul",
-  "Type": "UniqueFoe",
   "Chapter": 2,
   "Actions": [
     {

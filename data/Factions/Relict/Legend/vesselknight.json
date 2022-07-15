@@ -1,0 +1,106 @@
+{
+  "Name": "Vessel Knight",
+  "Inherits": [ "Relict", "Legend" ],
+  "Class": "Heavy",
+  "Vitality": 10,
+  "Speed": 4,
+  "Defense": 6,
+  "FrayDamage": 4,
+  "DamageDie": 6,
+  "Traits": [ "Armor 3", "Defiance", "Malice", "Beyond Death", "Black Sun Ritual" ],
+  "BodyParts": [
+    {
+      "Name": "Heart",
+      "HP": 4,
+      "HPMultiplyByPlayers": true,
+      "Description": "Prevents the Vessel Knight from rising again due to Black Sun Ritual and disables Defiance."
+    },
+    {
+      "Name": "Shield",
+      "HP": 4,
+      "HPMultiplyByPlayers": true,
+      "Description": "Can no longer shove foes. 2 Dust if destroyed."
+    },
+    {
+      "Name": "Darklight Blade Hilt",
+      "HP": 4,
+      "HPMultiplyByPlayers": true,
+      "Description": "The broken hilt can be sold for 3 Dust."
+    }
+  ],
+  "Actions": [
+    {
+      "Name": "Darklight Cleaver",
+      "ActionCost": 1,
+      "Tags": [ "melee attack 2", "true strike" ],
+      "Hit": "[fray].",
+      "Miss": "-.",
+      "Effect": "Foe gains a stack of Malice.",
+      "Combos": [
+        {
+          "Name": "Darklight Splitter",
+          "ActionCost": 1,
+          "Tags": [ "melee attack 2", "line 5", "true strike" ],
+          "Hit": "[fray] and target gains a stack of Malice.",
+          "Miss": "-.",
+          "AreaEffect": "-.",
+          "Effect": "All foes in the area gain a stack of Malice."
+        },
+        {
+          "Name": "Darklight Crusher",
+          "ActionCost": 2,
+          "Tags": [ "melee attack 2", "+1 curse", "true strike", "divine" ],
+          "Hit": "2[D]+[fray].",
+          "Miss": "[D]+[fray]."
+        }
+      ]
+    },
+    {
+      "Name": "Great Bash",
+      "ActionCost": 1,
+      "Tags": [ "repeatable" ],
+      "Description": "Dash forward up to 3 spaces, then an adjacent foe is shoved 3 spaces.",
+      "Collide": "Foe is stunned."
+    }
+  ],
+  "PhasesDescription": "The Knight switches to phase 2 when bloodied.",
+  "Phases": [
+    {
+      "Name": "",
+      "Actions": [
+        {
+          "Name": "Rage of Iz",
+          "ActionCost": 1,
+          "Tags": [ "terrain effect" ],
+          "Effect": "The Vessel roars, and its foe feels the ground trembling beneath their feet. At the end of that character's turn, the knight summons either a pit or a height 1 terrain piece under that foe. The ground erupts in a blast 1 area effect centered on this terrain, dealing 3 damage to all characters."
+        },
+        {
+          "Name": "Damocles",
+          "ActionCost": 0,
+          "Tags": [ "1/round" ],
+          "Description": "The knight chooses a character in range 3. At the end of the very next turn, if that character is still in range 3 of the knight, it teleports adjacent to them and may make the next of its Darklight attack series against them."
+        }
+      ]
+    },
+    {
+      "Name": "",
+      "Traits": [ "Spectral Form" ],
+      "Interrupts": [
+        {
+          "Name": "Dispersal",
+          "Tags": [ "2/round" ],
+          "Trigger": "The knight is damaged by an ability.",
+          "Effect": "The knight may teleport up to 4 spaces."
+        }
+      ],
+      "Actions": [
+        {
+          "Name": "Soul Cleaver",
+          "ActionCost": 0,
+          "Tags": [ "2/round" ],
+          "Effect": "All foes in Aura 2 of the knight take 2 divine damage. Each time this ability is used again this combat, increase its damage by +2."
+        }
+      ]
+    }
+  ]
+}

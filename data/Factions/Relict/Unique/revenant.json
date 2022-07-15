@@ -1,0 +1,44 @@
+{
+  "Name": "Revenant",
+  "Inherits": "Relict",
+  "Class": "Skirmisher",
+  "Chapter": 2,
+  "Vitality": 10,
+  "Speed": 3,
+  "Defense": 5,
+  "FrayDamage": 3,
+  "DamageDie": 10,
+  "Traits": [ "Skirmisher", "Dodge", "Shed Flesh" ],
+  "Actions": [
+    {
+      "Name": "Life Drain",
+      "ActionCost": 0,
+      "Description": "A bloodied foe in range 3 must save or lose all vigor, then takes [D].",
+      "Slay": "The Revenant gains 2 vigor."
+    },
+    {
+      "Name": "Slice and Dice",
+      "ActionCost": 1,
+      "Tags": [ "melee attack or ranged attack 5" ],
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "Effect": "May dash 1 before and after attack."
+    },
+    {
+      "Name": "Rake",
+      "ActionCost": 1,
+      "Tags": [ "line 3", "repeatable" ],
+      "AreaEffect": "Foes in the area take [fray] damage.",
+      "Effect": "The Revenant may teleport to any space in the area after this action resolves."
+    },
+    {
+      "Name": "Horrify",
+      "ActionCost": 2,
+      "Recharge": 6,
+      "Tags": [ "close blast 1", "special interrupt" ],
+      "Description": "The Revenant releases a bone chilling scream.",
+      "AreaEffect": "Characters in the area must save or take 4[D], or 2[D] on a successful save. Reduce this damage by [D] for every character past the first in the area.",
+      "SpecialInterrupt": "The Revenant can take this action as an interrupt when bloodied."
+    }
+  ]
+}

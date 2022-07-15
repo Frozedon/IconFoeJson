@@ -3,12 +3,7 @@
   "Inherits": "Wight",
   "Type": "UniqueFoe",
   "Chapter": 3,
-  "Traits": [
-    {
-      "Name": "Counter",
-      "Description": "Deal 2 damage to your attacker after being attacked, hit or miss."
-    }
-  ],
+  "Traits": [ "Counter" ],
   "Actions": [
     {
       "Name": "Legion's Advance",

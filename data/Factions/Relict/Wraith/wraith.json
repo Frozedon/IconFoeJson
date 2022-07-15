@@ -9,41 +9,12 @@
   "Armor": 0,
   "FrayDamage": 2,
   "DamageDie": 8,
-  "EncounterBudget": 0.5,
-  "Traits": [
-    {
-      "Name": "Overdrive 4",
-      "Description": "Attacks are all critical hits on hit at round 4 or later."
-    },
-    {
-      "Name": "Flying",
-      "Description": "Ignores all terrain and terrain effects other than impassable terrain, and ignores engagement and obstruction."
-    },
-    {
-      "Name": "Legion",
-      "Description": "Up to two foes with Legion can take their turns at the same time.",
-      "DescriptionNonessential": "A foe with this trait has reduced stats but costs half the encounter points."
-    },
-    {
-      "Name": "Ethereal",
-      "Description": "Has phasing and resistance unless there's an adjacent foe."
-    },
-    {
-      "Name": "Eternal Rage",
-      "Description": "When defeated, instead become intangible until the end of their next turn. At the end of that turn, become defeated."
-    }
-  ],
+  "Traits": [ "Overdrive 4", "Flying", "Legion", "Ethereal" ],
   "Actions": [
     {
       "Name": "Phase Shift",
       "ActionCost": 1,
-      "Description": "Teleport 4.",
-      "ChapterChange": [
-        {
-          "Chapter": 2,
-          "ActionCost": 0
-        }
-      ]
+      "Description": "Teleport 4."
     },
     {
       "Name": "Shock",
@@ -58,5 +29,18 @@
       "Miss": "1 damage.",
       "AreaEffect": "A foe in range 3 from the attack target must save or take [D]. If they fail the save, this effect repeats, choosing a new foe in range 3 of them instead. A character can be hit multiple times by this effect and it can 'bounce' back and forth."
     }
-  ]
+  ],
+  "Chapter2": {
+    "RemoveActions": "Phase Shift",
+    "Actions": [
+      {
+        "Name": "Phase Shift",
+        "ActionCost": 0,
+        "Description": "Teleport 4."
+      }
+    ]
+  },
+  "Chapter3": {
+    "Traits": [ "Eternal Rage" ]
+  }
 }

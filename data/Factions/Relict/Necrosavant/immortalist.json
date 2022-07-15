@@ -1,14 +1,8 @@
 {
   "Name": "Immortalist",
   "Inherits": "Necrosavant",
-  "Type": "UniqueFoe",
   "Chapter": 3,
-  "Traits": [
-    {
-      "Name": "Eternal War",
-      "Description": "While the Immortalist is on the battlefield and not defeated, all relict gain Rise Again: This character has a chance to rise again when defeated. Roll 1d6 at the start of each round. On a 4+, this character gets back up at 25% hp. If all characters with this trait are defeated, it deactivates."
-    }
-  ],
+  "Traits": [ "Eternal War" ],
   "Actions": [
     {
       "Name": "Entombment of Iz",

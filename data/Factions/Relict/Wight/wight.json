@@ -1,42 +1,20 @@
 {
   "Name": "Wight",
   "Inherits": "Relict",
-  "UsesClass": "Heavy",
+  "Class": "Heavy",
   "Vitality": 5,
   "Speed": 3,
-  "Dash": 0,
   "Defense": 5,
-  "Armor": 3,
   "FrayDamage": 2,
   "DamageDie": 6,
-  "EncounterBudget": 0.5,
-  "Traits": [
-    {
-      "Name": "Fortify",
-      "Description": "At the end of their turn, they gain Vigilance 1."
-    },
-    {
-      "Name": "Legion",
-      "Description": "Up to two foes with Legion can take their turns at the same time.",
-      "DescriptionNonessential": "A foe with this trait has reduced stats but costs half the encounter points."
-    },
-    {
-      "Name": "Shambling",
-      "Description": "Cannot dash."
-    },
-    {
-      "Name": "Rise Again",
-      "Chapter": 3,
-      "Description": "This character has a chance to rise again when defeated. Roll 1d6 at the start of each round. On a 4+, this character gets back up at 25% hp. If all characters with this trait are defeated, it deactivates."
-    }
-  ],
+  "Traits": [ "Armor 3", "Legion", "Shambling" ],
   "Actions": [
     {
       "Name": "Soul Slash",
       "ActionCost": 1,
       "Tags": [ "true strike", "melee attack" ],
-      "Hit": "[D]+[fray].",
-      "Miss": "[fray].",
+      "Hit": "[D]+[fray] and foe is winded.",
+      "Miss": "[fray] damage.",
       "Effect": "All foes adjacent to the target take [fray] damage."
     },
     {
@@ -48,12 +26,18 @@
       "Name": "Death March",
       "ActionCost": 1,
       "Description": "The Wight and all adjacent allies may move 1 space in the same direction, ignoring engagement, then each may deal [fray] damage to an adjacent foe."
-    },
-    {
-      "Name": "Formation",
-      "Chapter": 2,
-      "ActionCost": 0,
-      "Description": "Shove all allies in range 2 1 space towards this character."
     }
-  ]
+  ],
+  "Chapter2": {
+    "Actions": [
+      {
+        "Name": "Formation",
+        "ActionCost": 0,
+        "Description": "Shove all allies in range 2 1 space towards this character."
+      }
+    ]
+  },
+  "Chapter3": {
+    "Traits": [ "Rise Again" ]
+  }
 }

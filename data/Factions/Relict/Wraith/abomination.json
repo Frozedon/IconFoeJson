@@ -1,14 +1,8 @@
 {
   "Name": "Abomination",
   "Inherits": "Wraith",
-  "Type": "UniqueFoe",
   "Chapter": 2,
-  "Traits": [
-    {
-      "Name": "Unstable",
-      "Description": "When defeated, explodes in a blast 1 explosion centered on the wraith. Characters inside take 2[D] piercing damage as an area effect. The wraith is then removed from the battlefield."
-    }
-  ],
+  "Traits": [ "Unstable" ],
   "Actions": [
     {
       "Name": "Scouring Beam",

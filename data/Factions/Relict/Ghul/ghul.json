@@ -1,43 +1,14 @@
 {
   "Name": "Ghul",
   "Inherits": "Relict",
-  "UsesClass": "Skirmisher",
+  "Class": "Skirmisher",
   "Vitality": 4,
   "HPMultiplier": 3,
   "Speed": 4,
-  "Dash": 4,
   "Defense": 12,
-  "Armor": 0,
   "FrayDamage": 2,
   "DamageDie": 10,
-  "EncounterBudget": 0.5,
-  "Traits": [
-    {
-      "Name": "Skirmisher",
-      "Description": "Can move diagonally and dash action is full speed."
-    },
-    {
-      "Name": "Dodge",
-      "Description": "Immune to damage from successful saves, area effects, or missed attacks."
-    },
-    {
-      "Name": "Phasing",
-      "Description": "Can ignore obstruction and pass through, but not end your turn in, terrain or characters."
-    },
-    {
-      "Name": "Legion",
-      "Description": "Up to two foes with Legion can take their turns at the same time.",
-      "DescriptionNonessential": "A foe with this trait has reduced stats but costs half the encounter points."
-    }
-  ],
-  "Interrupts": [
-    {
-      "Name": "Unstable Reality",
-      "Chapter": 3,
-      "Trigger": "When damaged by an ability.",
-      "Effect": "This character teleports 1 space after the triggering ability resolves. This interrupt can be taken any number of times a round."
-    }
-  ],
+  "Traits": [ "Skirmisher", "Dodge", "Phasing", "Legion" ],
   "Actions": [
     {
       "Name": "Life Drain",
@@ -57,13 +28,26 @@
       "Hit": "[D].",
       "Miss": "1 damage.",
       "Effect": "On hit, until the end of their next turn, foe takes 1 piercing damage for each space they move."
-    },
-    {
-      "Name": "Arc Whip",
-      "Chapter": 2,
-      "ActionCost": 1,
-      "Recharge": 4,
-      "Description": "A character in range 4 must save. On a failed save, they take [D], are slowed, and are electrified. Electrified characters fail the save."
     }
-  ]
+  ],
+  "Chapter2": {
+    "Actions": [
+      {
+        "Name": "Arc Whip",
+        "Chapter": 2,
+        "ActionCost": 1,
+        "Recharge": 4,
+        "Description": "A character in range 4 must save. On a failed save, they take [D], are slowed, and are electrified. Electrified characters fail the save."
+      }
+    ]
+  },
+  "Chapter3": {
+    "Interrupts": [
+      {
+        "Name": "Unstable Reality",
+        "Trigger": "When damaged by an ability.",
+        "Effect": "This character teleports 1 space after the triggering ability resolves. This interrupt can be taken any number of times a round."
+      }
+    ]
+  }
 }

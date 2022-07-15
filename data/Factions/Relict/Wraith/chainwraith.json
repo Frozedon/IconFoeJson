@@ -1,7 +1,6 @@
 {
   "Name": "Chain Wraith",
   "Inherits": "Wraith",
-  "Type": "UniqueFoe",
   "Actions": [
     {
       "Name": "Bind",

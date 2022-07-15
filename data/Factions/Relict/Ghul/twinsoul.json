@@ -2,14 +2,6 @@
   "Name": "Twinsoul",
   "Inherits": "Ghul",
   "Type": "UniqueFoe",
-  "Interrupts": [
-    {
-      "Name": "Twirl",
-      "Count": 1,
-      "Trigger": "The Twinsoul takes damage from an ability.",
-      "Effect": "The Twinsoul teleports 3 after the ability resolves, then gains evasion until the end of its next turn."
-    }
-  ],
   "RemoveActions": "Hamstring",
   "Actions": [
     {
@@ -17,6 +9,14 @@
       "ActionCost": 1,
       "Tags": [ "melee attack" ],
       "Description": "Dash 1, then effect: adjacent foes take [fray] damage. Dash 1, then repeat the effect, then dash 1, then repeat the effect."
+    }
+  ],
+  "Interrupts": [
+    {
+      "Name": "Twirl",
+      "Count": 1,
+      "Trigger": "The Twinsoul takes damage from an ability.",
+      "Effect": "The Twinsoul teleports 3 after the ability resolves, then gains evasion until the end of its next turn."
     }
   ]
 }

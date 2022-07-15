@@ -1,13 +1,7 @@
 {
   "Name": "Tomb Guard",
   "Inherits": "Wight",
-  "Type": "UniqueFoe",
-  "Traits": [
-    {
-      "Name": "Duty of Death",
-      "Description": "Adjacent allies to the Tomb Guard without this trait have dodge."
-    }
-  ],
+  "Traits": [ "Duty of Death" ],
   "Actions": [
     {
       "Name": "Bash",

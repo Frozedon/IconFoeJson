@@ -1,34 +1,14 @@
 {
   "Name": "Silent One",
   "Inherits": "Relict",
-  "UsesClass": "Leader",
+  "Class": "Leader",
   "Vitality": 10,
   "Speed": 6,
-  "Dash": 3,
   "Defense": 8,
-  "Armor": 0,
   "FrayDamage": 3,
   "DamageDie": 6,
-  "Traits": [
-    {
-      "Name": "Flying",
-      "Description": "Ignores all terrain and terrain effects other than impassable terrain, and ignores engagement and obstruction."
-    },
-    {
-      "Name": "Shelter",
-      "Description": "+1 boon on saves."
-    },
-    {
-      "Name": "Ethereal",
-      "Description": "Has phasing and resistance unless there's an adjacent foe."
-    }
-  ],
+  "Traits": [ "Flying", "Shelter", "Diaga", "Ethereal" ],
   "Actions": [
-    {
-      "Name": "Diaga",
-      "ActionCost": 1,
-      "Description": "An ally in range 4 can save, ending a mark, status, or blight on a successful save. If that ally is bloodied, they also gain vigor 1."
-    },
     {
       "Name": "Mournful Wail",
       "ActionCost": 1,

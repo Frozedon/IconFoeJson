@@ -1,28 +1,13 @@
 {
   "Name": "Automata",
   "Inherits": "Relict",
-  "UsesClass": "Artillery",
+  "Class": "Artillery",
   "Vitality": 6,
   "Speed": 2,
-  "Dash": 1,
   "Defense": 6,
-  "Armor": 2,
   "FrayDamage": 4,
   "DamageDie": 8,
-  "Traits": [
-    {
-      "Name": "Overdrive 4",
-      "Description": "Attacks are all critical hits on hit at round 4 or later."
-    },
-    {
-      "Name": "Aetherwall",
-      "Description": "Cover from ranged attacks further away than range 2."
-    },
-    {
-      "Name": "Automata",
-      "Description": "This character always attempts to attack and focus on the closest foe at the start of its turn."
-    }
-  ],
+  "Traits": [ "Armor 2", "Overdrive 4", "Aetherwall", "Automata" ],
   "Actions": [
     {
       "Name": "Lightning Bolter",
@@ -30,7 +15,7 @@
       "Tags": [ "ranged attack 8" ],
       "Hit": "[D]+[fray] and electrify.",
       "Miss": "[fray].",
-      "Effect": "Foes in range 2 of the target take fray damage."
+      "Effect": "Foes in range 2 of the target take [fray] damage."
     },
     {
       "Name": "Discharge Bolt",

@@ -1,19 +1,8 @@
 {
   "Name": "Relict",
-  "Group": "Relict",
-  "Type": "Template",
+  "Faction": "Relict",
   "IsBasicTemplate": true,
-  "FactionBlight": "Electrified",
-  "Traits": [
-    {
-      "Name": "Defiance",
-      "Description": "Prevents hit points from being reduced past 1 hp. When this triggers, remove this effect and character becomes immune to all damage for the rest of the current turn."
-    },
-    {
-      "Name": "Shuffle",
-      "Description": "All Relict can move 1 space forward at the start of their turn as a free action. When they do this, they can also move any relicts that are contiguously connected to them via adjacency. When shuffle activates for mobs, it activates for all five simultaneously."
-    }
-  ],
+  "Traits": [ "Shuffle" ],
   "SetupTraits": [
     {
       "Name": "Monsters",

@@ -1,13 +1,7 @@
 {
   "Name": "Rift Wraith",
   "Inherits": "Wraith",
-  "Type": "UniqueFoe",
-  "Traits": [
-    {
-      "Name": "Open Rift",
-      "Description": "Create a pit under any character hit by the wraith's attacks."
-    }
-  ],
+  "Traits": [ "Open Rift" ],
   "Actions": [
     {
       "Name": "Boiling Curse",

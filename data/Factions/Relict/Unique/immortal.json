@@ -1,0 +1,30 @@
+{
+  "Name": "Immortal",
+  "Inherits": "Relict",
+  "Class": "Heavy",
+  "Chapter": 3,
+  "Vitality": 12,
+  "Speed": 3,
+  "FrayDamage": 4,
+  "DamageDie": 6,
+  "Traits": [ "Armor 4", "Fortify", "Sturdy", "Defiance", "Immortal Disregard", "Beyond Death", "Aura of Immortality", "Rise Again" ],
+  "Actions": [
+    {
+      "Name": "Persecute",
+      "ActionCost": 2,
+      "Tags": [ "melee attack 2", "true strike", "multiattack" ],
+      "Hit": "[D].",
+      "Miss": "0 damage.",
+      "Effect": "Shove 1. Deals added damage, hit or miss, equal to 2 times the round number."
+    },
+    {
+      "Name": "Impale",
+      "ActionCost": 2,
+      "Recharge": 5,
+      "Tags": [ "melee attack", "true strike" ],
+      "Hit": "2[D]+[fray] ahd shove 4. The immortal dashes after the target, following it.",
+      "Miss": "[D]+[fray] and shove 2.",
+      "Collide": "Foe is also dazed and winded."
+    }
+  ]
+}

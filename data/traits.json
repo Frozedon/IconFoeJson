@@ -1,0 +1,233 @@
+[
+  {
+    "Name": "Aetherwall",
+    "Description": "Cover from ranged attacks further away than range 2."
+  },
+  {
+    "Name": "Amalgamate",
+    "Description": "While this character is not incapacitated, whenever a relict is defeated anywhere on the battlefield, another relict of the Grafter's choice gains vigor 1."
+  },
+  {
+    "Name": "Amorphous",
+    "Description": "Can share space with other characters. Any characters that start their turn inside its space take [fray] damage."
+  },
+  {
+    "Name": "Arkentech Shock Shield",
+    "Description": "Has resistance to all damage from closest foe. If multiple foes are equidistant, this trait applies to all of them."
+  },
+  {
+    "Name": "Armor [X]",
+    "Description": "Reduce all damage taken by [X]."
+  },
+  {
+    "Name": "Aura of Immortality",
+    "Description": "While Immortal is undefeated, it has Aura 2. Relict inside without this trait cannot be reduced past 1 HP."
+  },
+  {
+    "Name": "Aura of Rot",
+    "Description": "Aura 2. Foes that end their turn in the aura lose all vigor, then take 2 piercing damage."
+  },
+  {
+    "Name": "Aura of the Endless Legion",
+    "Description": "Aura 2. When any relict is defeated in the aura, summon a relict husk mob in a free space in the aura."
+  },
+  {
+    "Name": "Automata",
+    "Description": "This character always attempts to attack and focus on the closest foe at the start of its turn."
+  },
+  {
+    "Name": "Beyond Death",
+    "Description": "When defiance activates, roll a d6. On a 4+, the Immortal immediately regains defiance. Attacks with True Strike bypass this trait."
+  },
+  {
+    "Name": "Black Sun Ritual",
+    "Description": "A Vessel Knight rises again after 4d6 days unless its heart is destroyed."
+  },
+  {
+    "Name": "Counter",
+    "Description": "Deal 2 damage to your attacker after being attacked, hit or miss."
+  },
+  {
+    "Name": "Defiance",
+    "Description": "Prevents hit points from being reduced past 1 hp. When this triggers, remove this effect and character becomes immune to all damage for the rest of the current turn."
+  },
+  {
+    "Name": "Diaga",
+    "Actions": [
+      {
+        "Name": "Diaga",
+        "ActionCost": 1,
+        "Description": "An ally in range 4 can save, ending a mark, status, or blight on a successful save. If that ally is bloodied, they also gain vigor 1."
+      }
+    ]
+  },
+  {
+    "Name": "Dodge",
+    "Description": "Immune to damage from successful saves, area effects, or missed attacks."
+  },
+  {
+    "Name": "Duty of Death",
+    "Description": "Adjacent allies to this character without this trait have dodge."
+  },
+  {
+    "Name": "Elite",
+    "Description": "Takes 2 turns.",
+    "EncounterBudget": 2
+  },
+  {
+    "Name": "Eternal",
+    "Actions": [
+      {
+        "Name": "Eternal",
+        "ActionCost": 0,
+        "Tags": [ "1/round" ],
+        "Description": "Clear a status, mark, or all blights affecting either the Lich's Body or Soul."
+      }
+    ]
+  },
+  {
+    "Name": "Eternal Rage",
+    "Description": "When defeated, instead become intangible until the end of their next turn. At the end of that turn, become defeated."
+  },
+  {
+    "Name": "Eternal War",
+    "Description": "While the Immortalist is on the battlefield and not defeated, all relict gain Rise Again: This character has a chance to rise again when defeated. Roll 1d6 at the start of each round. On a 4+, this character gets back up at 25% hp. If all characters with this trait are defeated, it deactivates."
+  },
+  {
+    "Name": "Ethereal",
+    "Description": "Has phasing and resistance unless there's an adjacent foe."
+  },
+  {
+    "Name": "Flying",
+    "Description": "Ignores all terrain and terrain effects other than impassable terrain, and ignores engagement and obstruction."
+  },
+  {
+    "Name": "Fortify",
+    "Description": "This character gains Vigilance 1 at the end of their turn."
+  },
+  {
+    "Name": "Hollow",
+    "Description": "The Stutterghast has aura 1. While there is exactly 1 other character in hollow's aura, it has have evasion and stealth. This aura has no effect if no other characters, or 2 or more other characters are inside, and its effects (including stealth) turn off it if deactivates."
+  },
+  {
+    "Name": "Immortal Disregard",
+    "Description": "Attacks never miss the Immortal.",
+    "Defense": 0
+  },
+  {
+    "Name": "Juggernaut",
+    "Actions": [
+      {
+        "Name": "Juggernaut",
+        "ActionCost": 0,
+        "Tags": [ "1/round" ],
+        "Description": "Clear a status, mark, or all blights."
+      }
+    ]
+  },
+  {
+    "Name": "Legend",
+    "Description": "Takes 1 turn after every player character turn. If slow, only one of its turns is affected."
+  },
+  {
+    "Name": "Legion",
+    "Description": "A foe with this trait has reduced stats but costs half the encounter points. Up to two foes with Legion can take their turns at the same time.",
+    "EncounterBudget": 0.5
+  },
+  {
+    "Name": "Living Lightning",
+    "Description": "Electrifies foes it moves through. Foes that are already electrified take 2 damage, but only the first time on a turn. Allied spaces cost 0 movement to pass through."
+  },
+  {
+    "Name": "Living Statue",
+    "Description": "Cannot dash. When defeated, becomes a height 2 piece of terrain.",
+    "DashMultiplier": 0
+  },
+  {
+    "Name": "Malice",
+    "Description": "After attacking this character, a foe is marked, gaining a stack of malice. Malice stacks indefinitely. This character gains +1 boon on attacks and deals +[D] on hit or miss against a foe for each stack of malice. Malice can also be inflicted by other means. If a character suffering from Malice doesn't attack during their turn, at the end of their turn clear all stacks of Malice. It can also be cleared by anything that clears a mark, but doing so only clears one at a time."
+  },
+  {
+    "Name": "Mob",
+    "Description": "This character doesn't trigger slay effects.",
+    "EncounterBudget": 0.2
+  },
+  {
+    "Name": "Open Rift",
+    "Description": "Create a pit under any character hit by the wraith's attacks."
+  },
+  {
+    "Name": "Overdrive [X]",
+    "Description": "Attacks are all critical hits on hit at round [X] or later."
+  },
+  {
+    "Name": "Phasing",
+    "Description": "Can ignore obstruction and pass through, but not end your turn in, terrain or characters."
+  },
+  {
+    "Name": "Plasma Bomb",
+    "Description": "At the start of the round, the Warmech fires a plasma bomb into the air, targeted on any visible space. The bomb marks a blast 2 area visible to all characters. At the end of the round, the bomb comes down as an area effect. Characters in the area must save or take 2[D]+[fray] and become stunned, or [D]+[fray] on a successful save. The targeted space then becomes a pit. The Warmech is immune to its own bombs."
+  },
+  {
+    "Name": "Release Passengers",
+    "Description": "When defeated, summon 5 relict husk mobs in or adjacent to its space."
+  },
+  {
+    "Name": "Rise Again",
+    "Description": "This character has a chance to rise again when defeated. Roll 1d6 at the start of each round. On a 4+, this character gets back up at 25% hp. If all characters with this trait are defeated, it deactivates."
+  },
+  {
+    "Name": "Shambling",
+    "Description": "Cannot dash.",
+    "DashMultiplier": 0
+  },
+  {
+    "Name": "Shed Flesh",
+    "Description": "When bloodied, immediately recharges and uses Horrify. For the rest of combat, becomes phasing and flying."
+  },
+  {
+    "Name": "Shelter",
+    "Description": "+1 boon on saves."
+  },
+  {
+    "Name": "Shuffle",
+    "Description": "All relict can move 1 space forward at the start of their turn as a free action. When they do this, they can also move any relict with this trait that are contiguously connected to them via adjacency. When shuffle activates for mobs, it activates for all five simultaneously."
+  },
+  {
+    "Name": "Size [X]",
+    "Description": "This character takes up a [X] by [X] area of spaces."
+  },
+  {
+    "Name": "Skirmisher",
+    "Description": "Can move diagonally and dash action is full speed.",
+    "DashMultiplier": 1
+  },
+  {
+    "Name": "Soul Mastery",
+    "Description": "The Lich occupies two size 1 entities, which are functionally the same character but track statuses separately. One is the Lich's body, the other is its soul. When the lich makes movement or takes action, it can do so with either its body or soul.\n- The Lich's body is sturdy, cannot dash, and has Aetherwall.\n- The Lich's soul has flying and speed 6.\nAt the start of combat, the Lich's soul is intangible. At the start of round 2, this switches, and the Lich's body becomes intangible (while its soul loses this status). This continues to swap until the Lich is defeated."
+  },
+  {
+    "Name": "Spectral Form",
+    "Description": "Loses all armor, but gains phasing, flying, and speed 6."
+  },
+  {
+    "Name": "Stoneskin",
+    "Description": "While adjacent to a piece of created terrain, has resistance."
+  },
+  {
+    "Name": "Sturdy",
+    "Description": "Immune to shove, dazed, and stunned."
+  },
+  {
+    "Name": "Stutter",
+    "Description": "When a foe takes an action in range 3 of the ghast, it may teleport 1 and deal 1 damage to an adjacent foe."
+  },
+  {
+    "Name": "Surreality",
+    "Description": "Starts at 50% hp with vigor 1."
+  },
+  {
+    "Name": "Unstable",
+    "Description": "When defeated, explodes in a blast 1 explosion centered on the wraith. Characters inside take 2[D] piercing damage as an area effect. The wraith is then removed from the battlefield."
+  }
+]

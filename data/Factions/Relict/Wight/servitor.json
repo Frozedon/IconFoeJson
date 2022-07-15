@@ -1,7 +1,6 @@
 {
   "Name": "Servitor",
   "Inherits": "Wight",
-  "Type": "UniqueFoe",
   "Actions": [
     {
       "Name": "Hookspear",

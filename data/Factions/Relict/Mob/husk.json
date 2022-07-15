@@ -1,0 +1,19 @@
+{
+  "Name": "Husk",
+  "Inherits": [ "Relict", "Mob" ],
+  "Traits": [ "Shambling" ],
+  "Actions": [
+    {
+      "Name": "Latch On",
+      "ActionCost": 2,
+      "Description": "The Husk moves up to 3 spaces in a straight line, then an adjacent character becomes immobile until the Husk is no longer adjacent or is defeated."
+    },
+    {
+      "Name": "Lurching Grab",
+      "ActionCost": 2,
+      "Tags": [ "melee attack" ],
+      "Description": "Dash 1, then",
+      "AutoHit": "1 damage. If another Husk is adjacent to the target, increase damage to 3 piercing."
+    }
+  ]
+}

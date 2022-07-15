@@ -1,14 +1,7 @@
 {
   "Name": "Embalmer",
   "Inherits": "Necrosavant",
-  "Type": "UniqueFoe",
-  "Armor": 2,
-  "Traits": [
-    {
-      "Name": "Aura of Rot",
-      "Description": "The Embalmer has aura 2. Foes that end their turn in the aura lose all vigor, then take 2 piercing damage."
-    }
-  ],
+  "Traits": [ "Armor 2", "Aura of Rot" ],
   "Actions": [
     {
       "Name": "Despoil",

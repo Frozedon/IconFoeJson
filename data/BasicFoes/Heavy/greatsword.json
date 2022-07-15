@@ -1,0 +1,33 @@
+{
+  "Name": "Greatsword",
+  "Inherits": "Heavy",
+  "Type": "Foe",
+  "UsesTemplate": true,
+  "Traits": [ "Armor 3" ],
+  "Interrupts": [
+    {
+      "Name": "Withstand",
+      "Count": 1,
+      "Trigger": "When self or an adjacent ally is target by an attack.",
+      "Effect": "Grant resistance against that attack."
+    }
+  ],
+  "Actions": [
+    {
+      "Name": "Great Slice",
+      "ActionCost": 2,
+      "Tags": [ "melee attack", "line 3", "true strike" ],
+      "Hit": "2[D]+[fray].",
+      "Miss": "[fray].",
+      "AreaEffect": "[fray]."
+    },
+    {
+      "Name": "Split Foe",
+      "ActionCost": 2,
+      "Recharge": 6,
+      "Tags": [ "melee attack", "true strike", "+1 curse" ],
+      "Hit": "Deal [D]+[fray] three times.",
+      "Miss": "Deal damage once."
+    }
+  ]
+}

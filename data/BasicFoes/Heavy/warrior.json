@@ -1,0 +1,28 @@
+{
+  "Name": "Warrior",
+  "Inherits": "Heavy",
+  "Type": "Foe",
+  "UsesTemplate": true,
+  "Traits": [ "Armor 3" ],
+  "Actions": [
+    {
+      "Name": "Redondo",
+      "ActionCost": 0,
+      "Description": "Swap places with an adjacent ally."
+    },
+    {
+      "Name": "Cleave",
+      "ActionCost": 2,
+      "Tags": [ "melee attack", "true strike" ],
+      "Hit": "2[D]+[fray].",
+      "Miss": "[fray].",
+      "AreaEffect": "All foes adjacent to the attack target take [D]."
+    },
+    {
+      "Name": "Hilt Strike",
+      "ActionCost": 1,
+      "Tags": [ "repeatable" ],
+      "Description": "An adjacent foe is dazed. Dazed foes take [fray] damage."
+    }
+  ]
+}

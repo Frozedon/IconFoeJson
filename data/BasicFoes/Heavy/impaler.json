@@ -1,0 +1,25 @@
+{
+  "Name": "Impaler",
+  "Inherits": "Heavy",
+  "Type": "Foe",
+  "UsesTemplate": true,
+  "Traits": [ "Armor 3" ],
+  "Actions": [
+    {
+      "Name": "Pike",
+      "ActionCost": 2,
+      "Tags": [ "melee attack 2", "true strike" ],
+      "Hit": "2[D]+[fray] and shove 2.",
+      "Miss": "[fray] and shove 1."
+    },
+    {
+      "Name": "Impale",
+      "ActionCost": 2,
+      "Recharge": 5,
+      "Tags": [ "melee attack 2", "true strike" ],
+      "Hit": "2[D]+[fray] and shove 4. The Impaler dashes after the target, following it. ",
+      "Miss": "[fray] and shove 2.",
+      "Collide": "Foe is also dazed and winded."
+    }
+  ]
+}

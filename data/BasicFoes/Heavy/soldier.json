@@ -1,0 +1,28 @@
+{
+  "Name": "Soldier",
+  "Inherits": "Heavy",
+  "Type": "Foe",
+  "UsesTemplate": true,
+  "Traits": [ "Armor 3" ],
+  "Actions": [
+    {
+      "Name": "Slash",
+      "ActionCost": 1,
+      "Tags": [ "melee attack", "true strike" ],
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray]."
+    },
+    {
+      "Name": "Bash",
+      "ActionCost": 1,
+      "Tags": [ "repeatable" ],
+      "Description": "An adjacent foe is shoved 1 and must save or become winded.",
+      "Collide": "Foe fails the save."
+    },
+    {
+      "Name": "Valiant",
+      "ActionCost": 2,
+      "Description": "The soldier dashes up to 4 spaces in a straight line, then may use Bash as a free action."
+    }
+  ]
+}

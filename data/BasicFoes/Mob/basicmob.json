@@ -1,0 +1,19 @@
+{
+  "Name": "Basic Mob",
+  "TitleName": "Mob",
+  "Inherits": "Mob",
+  "Type": "Foe",
+  "Actions": [
+    {
+      "Name": "Rabble",
+      "ActionCost": 2,
+      "Tags": [ "melee attack or ranged attack 3" ],
+      "AutoHit": "1 damage. If an ally is adjacent to the target, deal 3 damage instead."
+    },
+    {
+      "Name": "Rush",
+      "ActionCost": 2,
+      "Description": "Dash 2, then deal 1 damage to an adjacent foe, then shove an adjacent foe 1 space. A foe can only be shoved this way once on the same turn."
+    }
+  ]
+}

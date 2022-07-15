@@ -1,0 +1,24 @@
+{
+  "Name": "Sentinel",
+  "Inherits": "Heavy",
+  "Type": "Foe",
+  "UsesTemplate": true,
+  "Traits": [ "Defiance", "Hold the Line" ],
+  "Actions": [
+    {
+      "Name": "Sweep",
+      "ActionCost": 2,
+      "Tags": [ "melee attack 2", "true strike" ],
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "Effect": "All foes in range 2 of the Sentinel take 2 damage and are shoved 1."
+    },
+    {
+      "Name": "Bash",
+      "ActionCost": 1,
+      "Tags": [ "range 2", "repeatable" ],
+      "Description": "An adjacent foe is shoved 1 and must save or become winded.",
+      "Collide": "Foe fails the save."
+    }
+  ]
+}

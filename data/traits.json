@@ -44,6 +44,10 @@
     "Description": "A Vessel Knight rises again after 4d6 days unless its heart is destroyed."
   },
   {
+    "Name": "Bullheaded",
+    "Description": "Has resistance unless suffering from a status."
+  },
+  {
     "Name": "Counter",
     "Description": "Deal 2 damage to your attacker after being attacked, hit or miss."
   },
@@ -75,6 +79,10 @@
     "EncounterBudget": 2
   },
   {
+    "Name": "Enrage",
+    "Description": "While bloody, gain +1 action."
+  },
+  {
     "Name": "Eternal",
     "Actions": [
       {
@@ -104,6 +112,18 @@
   {
     "Name": "Fortify",
     "Description": "This character gains Vigilance 1 at the end of their turn."
+  },
+  {
+    "Name": "Grit",
+    "Description": "Sturdy when bloodied."
+  },
+  {
+    "Name": "Heavy Armor",
+    "Description": "Resistant to abilities used from adjacent spaces."
+  },
+  {
+    "Name": "Hold the Line",
+    "Description": "If the Sentinel ends any turn without attacking, they gain Sturdy until the start of their next turn and Vigilance 3."
   },
   {
     "Name": "Hollow",

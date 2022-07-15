@@ -1,0 +1,10 @@
+{
+  "Name": "Heavy",
+  "Class": "Heavy",
+  "Vitality": 10,
+  "Speed": 3,
+  "Defense": 6,
+  "FrayDamage": 4,
+  "DamageDie": 6,
+  "Traits": "Fortify"
+}

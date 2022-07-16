@@ -23,7 +23,7 @@
       "Recharge": 6,
       "Tags": [ "summon" ],
       "Description": "The Aerothurge chooses any two free spaces on the battlefield and links them with glowing portals.",
-      "Summon": {
+      "Summons": {
         "Name": "Portal",
         "Tags": [ "size 1 object" ],
         "Effect": "Any character adjacent to a portal can spend 1 space of movement to teleport adjacent to the other portal, or vice versa."

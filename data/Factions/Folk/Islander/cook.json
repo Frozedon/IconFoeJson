@@ -15,8 +15,8 @@
       "Name": "Flapjack",
       "ActionCost": 1,
       "Tags": [ "summon", "repeatable" ],
-      "Description": "The cook summons a flapjack in range 4",
-      "Summon": {
+      "Description": "The cook summons a flapjack in range 4.",
+      "Summons": {
         "Name": "Flapjack",
         "Tags": [ "size 1 summon", "intangible" ],
         "Effect": "A character moving into the flapjack's space can pick it up, removing it. That character gains defiance. A character that already has defiance gains vigor 1. A character with vigor becomes unstoppable until the end of their next turn."

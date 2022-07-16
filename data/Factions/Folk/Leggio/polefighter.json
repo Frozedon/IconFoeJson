@@ -1,0 +1,34 @@
+{
+  "Name": "Pole Fighter",
+  "Inherits": [ "Islander", "Heavy" ],
+  "Type": "Foe",
+  "Traits": "Slam",
+  "Actions": [
+    {
+      "Name": "Pole Slam",
+      "ActionCost": 1,
+      "Tags": [ "melee attack", "line 3" ],
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "AreaEffect": "[fray].",
+      "Effect": "Shove all characters 1."
+    },
+    {
+      "Name": "Rebound",
+      "ActionCost": 1,
+      "Description": "The Pole Fighter pushes off an adjacent character. They shove that character 1 space, then dash 1."
+    },
+    {
+      "Name": "High Flyer",
+      "ActionCost": 2,
+      "Tags": [ "stance", "combo" ],
+      "Description": "The Pole Fighter balances on their pole and uses it to move, ignoring all terrain penalties and engagement. While in this stance, any time they end a dash, they can shove an adjacent character 1 space, then deal fray damage to them.",
+      "Combos": {
+        "Name": "Dive Kick",
+        "ActionCost": 2,
+        "Tags": "end turn",
+        "Description": "The Pole fighter dashes 1, ending this stance. An adjacent foe is stunned and must save or take 3[D]+[fray], or [D]+[fray] on a successful save."
+      }
+    }
+  ]
+}

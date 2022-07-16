@@ -20,7 +20,7 @@
       "ActionCost": 1,
       "Tags": [ "summon", "end turn" ],
       "Description": "The Shopkeep opens their shop, a size 1 object summoning it in an adjacent space. It lasts until the shopkeep is defeated or this ability is used again.",
-      "Summon": {
+      "Summons": {
         "Name": "Shop",
         "Tags": [ "size 1 object" ],
         "Effect": "Aura 1. No fighting in the shop. Characters in the aura are pacified+. While the shop is active, any character in the aura can use the Rummage action, which ignores pacified.",

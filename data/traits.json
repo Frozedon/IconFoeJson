@@ -1,5 +1,15 @@
 [
   {
+    "Name": "Acrobatics",
+    "Actions": [
+      {
+        "Name": "Acrobatics",
+        "ActionCost": 0,
+        "Description": "Dash 2. This action can interrupt and split up other actions or movement."
+      }
+    ]
+  },
+  {
     "Name": "Aerial Acrobat",
     "Description": "If an attack misses this character, they may deal 2 damage to the attacker, then fly 2."
   },
@@ -269,6 +279,15 @@
     "EncounterBudget": 0.2
   },
   {
+    "Name": "Monster Riding",
+    "Description": "The Rider starts combat riding a trained monster, and can also mount it as an action or by spending its standard move. While riding, the rider shares space with the monster and moves when it moves. If the two are separated, this effect ends until the monster is remounted.",
+    "Summons": {
+      "Name": "Tame Monster",
+      "Tags": [ "summon", "20 HP", "6 defense", "10 VIT" ],
+      "Effect": "During the rider's turn, can dash 4, then either shove a character 1 space or deal 2 damage to them."
+    }
+  },
+  {
     "Name": "Nimble",
     "Description": "Has evasion unless suffering from a status."
   },
@@ -279,6 +298,10 @@
   {
     "Name": "Overdrive [X]",
     "Description": "Attacks are all critical hits on hit at round [X] or later."
+  },
+  {
+    "Name": "Partner Work",
+    "Description": "Aura 2. When the Acrobat dashes, an ally in the aura may also dash 1."
   },
   {
     "Name": "Phasing",
@@ -335,6 +358,10 @@
     "DashMultiplier": 1
   },
   {
+    "Name": "Slam",
+    "Description": "When a character collides from this character's shoves, they are dazed. Dazed characters also take [D]+[fray]."
+  },
+  {
     "Name": "Slippery",
     "Description": "Has evasion while bloodied."
   },
@@ -388,6 +415,10 @@
   {
     "Name": "The Old Blood",
     "Description": "Immune to blights."
+  },
+  {
+    "Name": "Tumbling",
+    "Description": "Moving up terrain costs no movement. Can phase through characters and doing so costs 0 movement."
   },
   {
     "Name": "Unstable",

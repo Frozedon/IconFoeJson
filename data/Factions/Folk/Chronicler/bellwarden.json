@@ -22,7 +22,7 @@
       "Tags": [ "summon", "end turn", "delay" ],
       "Description": "The Bell Warden ends their turn and gains",
       "Delay": "Their next turn must be slow. At the start of that turn, summon a temple bell in an adjacent space.",
-      "Summon": {
+      "Summons": {
         "Name": "Temple Bell",
         "Tags": [ "size 1", "object" ],
         "Effect": "When summoned, or when a character collides with it, releases a massive ringing. All characters in range 2 except the Bellkeeper must save or become dazed. Dazed characters take [D]+[fray] damage. This effect can't trigger more than once a round. Multiple bells can be summoned at once."

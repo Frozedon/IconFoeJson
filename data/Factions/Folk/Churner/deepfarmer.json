@@ -22,7 +22,7 @@
       "ActionCost": 1,
       "Tags": [ "summon" ],
       "Description": "The Deep Farmer chooses a space in range 2. At the end of their turn, this space grows into a mushroom object.",
-      "Summon": {
+      "Summons": {
         "Name": "Mushroom",
         "Tags": [ "size 1 object" ],
         "Effect": "Aura 1. Characters in the aura other than the Deep Farmer are winded."

@@ -43,7 +43,7 @@
           "ActionCost": 2,
           "Recharge": 4,
           "Description": "Destroy one brood summon and replace it with Great Brood.",
-          "Summon": {
+          "Summons": {
             "Name": "Great Brood",
             "Tags": [ "20 HP", "Defense 8", "Sturdy" ],
             "Effect": "1/round during the Brood Lord's turn, it can move 3 spaces and attack an adjacent character (true strike, melee attack, on hit: [D]+[fray] and shove 1, miss: [fray])."

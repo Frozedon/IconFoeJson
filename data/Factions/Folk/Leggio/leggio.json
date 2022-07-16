@@ -1,0 +1,6 @@
+{
+  "Name": "Leggio",
+  "Inherits": "Folk",
+  "Type": "Template",
+  "Traits": [ "Acrobatics" ]
+}

@@ -8,7 +8,8 @@
       "Name": "Razor Wind",
       "ActionCost": 1,
       "Tags": [ "melee attack" ],
-      "Description": "Dash 1, then effect: adjacent foes take [fray] damage. Dash 1, then repeat the effect, then dash 1, then repeat the effect."
+      "Description": "Repeat the following effect three times:",
+      "Effect": "Dash 1, then deal 2 damage to all adjacent foes. Cannot pass through a space more than once during this movement."
     }
   ],
   "Interrupts": [

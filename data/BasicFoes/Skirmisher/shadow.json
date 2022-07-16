@@ -1,0 +1,27 @@
+{
+  "Name": "Shadow",
+  "Inherits": "Skirmisher",
+  "Type": "Foe",
+  "UsesTemplate": true,
+  "Actions": [
+    {
+      "Name": "Umbra",
+      "ActionCost": 1,
+      "Tags": [ "ranged attack 4", "+1 boon" ],
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "Effect": "If made from stealth, blinds foe, is a critical hit (+[D]), and ignores cover."
+    },
+    {
+      "Name": "Dark Arts",
+      "ActionCost": 1,
+      "Description": "Swap places with an ally in range 2, teleporting."
+    },
+    {
+      "Name": "Nocturne",
+      "ActionCost": 2,
+      "Tags": [ "end turn" ],
+      "Description": "Teleport 8, then gain stealth and evasion until the start of the shadow's next turn."
+    }
+  ]
+}

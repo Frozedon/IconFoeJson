@@ -1,0 +1,29 @@
+{
+  "Name": "Hellion",
+  "Inherits": "Skirmisher",
+  "Type": "Foe",
+  "UsesTemplate": true,
+  "Traits": [ "Flying" ],
+  "Actions": [
+    {
+      "Name": "Rake",
+      "ActionCost": 1,
+      "Tags": [ "melee attack", "Line 4" ],
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "Effect": "Hellion can fly to any point on the line after the attack. Foes in the area must save or be blinded."
+    },
+    {
+      "Name": "Pinions",
+      "ActionCost": 1,
+      "Description": "Deal 2 damage 4 times to foes in range 4. Each foe in range must be hit at least once before being hit by another pinion."
+    },
+    {
+      "Name": "Swoop",
+      "ActionCost": 2,
+      "Recharge": 4,
+      "Tags": [ "end turn" ],
+      "Description": "Leave the battlefield. Return to the battlefield in a visible free space at start of next turn with stealth."
+    }
+  ]
+}

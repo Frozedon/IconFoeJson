@@ -1,0 +1,28 @@
+{
+  "Name": "Dervish",
+  "Inherits": "Skirmisher",
+  "Type": "Foe",
+  "UsesTemplate": true,
+  "Traits": [ "Nimble" ],
+  "Actions": [
+    {
+      "Name": "Razor Wind",
+      "ActionCost": 1,
+      "Tags": [ "melee attack" ],
+      "Description": "Repeat the following effect three times:",
+      "Effect": "Dash 1, then deal 2 damage to all adjacent foes. Cannot pass through a space more than once during this movement."
+    },
+    {
+      "Name": "Gust",
+      "ActionCost": 1,
+      "Description": "The Dervish or an ally in range 2 may fly 2."
+    },
+    {
+      "Name": "Thousand Cuts",
+      "ActionCost": 2,
+      "Recharge": 5,
+      "Description": "Repeat the following effect four times:",
+      "Effect": "Teleport 1, then deal 2 damage to all adjacent foes. Must teleport to a different space each time."
+    }
+  ]
+}

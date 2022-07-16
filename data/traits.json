@@ -173,6 +173,10 @@
     "EncounterBudget": 0.2
   },
   {
+    "Name": "Nimble",
+    "Description": "Has evasion unless suffering from a status."
+  },
+  {
     "Name": "Open Rift",
     "Description": "Create a pit under any character hit by the wraith's attacks."
   },
@@ -221,6 +225,10 @@
     "Name": "Skirmisher",
     "Description": "Can move diagonally and dash action is full speed.",
     "DashMultiplier": 1
+  },
+  {
+    "Name": "Slippery",
+    "Description": "While bloodied, has evasion."
   },
   {
     "Name": "Soul Mastery",

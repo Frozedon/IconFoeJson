@@ -3,7 +3,7 @@
   "Inherits": "Heavy",
   "Type": "Foe",
   "UsesTemplate": true,
-  "Traits": [ "Armor 3", "Heavy Armor" ],
+  "Traits": [ "Heavy Armor" ],
   "Actions": [
     {
       "Name": "Overpower",

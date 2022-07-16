@@ -36,6 +36,10 @@
     "Description": "Aura 1. The abjurer and allies in the area have dodge."
   },
   {
+    "Name": "Aura of Surefootedness",
+    "Description": "Aura 1. The Guide and allies in the aura are immune to terrain effects, pits, difficult, and dangerous terrain."
+  },
+  {
     "Name": "Aura of the Endless Legion",
     "Description": "Aura 2. When any relict is defeated in the aura, summon a relict husk mob in a free space in the aura."
   },
@@ -158,6 +162,10 @@
     "Description": "Sturdy and +1 action while bloodied."
   },
   {
+    "Name": "Great Faith",
+    "Description": "If the Chronicler ends their turn with any unused actions, they can clear all statuses and blight affecting them. If they are bloodied, they also gain vigor 1."
+  },
+  {
     "Name": "Greenwalker",
     "Description": "Immune to difficult terrain."
   },
@@ -277,6 +285,10 @@
     "Description": "This character has a chance to rise again when defeated. Roll 1d6 at the start of each round. On a 4+, this character gets back up at 25% hp. If all characters with this trait are defeated, it deactivates."
   },
   {
+    "Name": "Roppo",
+    "Description": "The first time on any turn a foe takes an action in range 2, the Yaman may dash 2, then deal 2 damage to an adjacent foe."
+  },
+  {
     "Name": "Shambling",
     "Description": "Cannot dash.",
     "DashMultiplier": 0
@@ -313,6 +325,10 @@
   {
     "Name": "Spectral Form",
     "Description": "Loses all armor, but gains phasing, flying, and speed 6."
+  },
+  {
+    "Name": "Stack Dice",
+    "Description": "Once a combat, when the Churner would roll a random d6 as part of an ability, they can choose which number to roll."
   },
   {
     "Name": "Strength",

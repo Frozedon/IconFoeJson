@@ -3,7 +3,6 @@
   "Inherits": "Heavy",
   "Type": "Foe",
   "UsesTemplate": true,
-  "Traits": [ "Armor 3" ],
   "Actions": [
     {
       "Name": "Redondo",

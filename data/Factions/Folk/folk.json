@@ -1,0 +1,10 @@
+{
+  "Name": "Folk",
+  "Faction": "Folk",
+  "SetupTraits": [
+    {
+      "Name": "Kin",
+      "Description": "Folk are Kin.\n• Motivations: Kin usually fight for their ideals, usually to protect something they care about (even if that something is something as simple as their own survival).\n• Flee: Folk value their own lives and will usually surrender or flee if there's no chance of winning a fight. Martial-minded cultures like Islanders, Leggio, or Guilders might put up more of a fight."
+    }
+  ]
+}

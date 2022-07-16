@@ -3,7 +3,7 @@
   "Inherits": "Heavy",
   "Type": "Foe",
   "UsesTemplate": true,
-  "Traits": [ "Armor 3", "Grit" ],
+  "Traits": [ "Grit" ],
   "Actions": [
     {
       "Name": "Headbutt",

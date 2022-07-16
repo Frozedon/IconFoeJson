@@ -3,7 +3,7 @@
   "Inherits": "Heavy",
   "Type": "Foe",
   "UsesTemplate": true,
-  "Traits": [ "Size 2", "Armor 3" ],
+  "Traits": [ "Size 2" ],
   "Actions": [
     {
       "Name": "Clobber",

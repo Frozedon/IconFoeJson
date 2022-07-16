@@ -1,0 +1,6 @@
+{
+  "Name": "Churner",
+  "Inherits": "Folk",
+  "Type": "Template",
+  "Traits": [ "Stack Dice" ]
+}

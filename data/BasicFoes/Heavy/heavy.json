@@ -6,5 +6,5 @@
   "Defense": 6,
   "FrayDamage": 4,
   "DamageDie": 6,
-  "Traits": "Fortify"
+  "Traits": [ "Fortify", "Armor 3" ]
 }

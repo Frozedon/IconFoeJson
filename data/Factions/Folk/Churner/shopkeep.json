@@ -1,0 +1,66 @@
+{
+  "Name": "Shopkeep",
+  "Inherits": [ "Churner", "Leader" ],
+  "Type": "Foe",
+  "Actions": [
+    {
+      "Name": "Ban From the Shop",
+      "ActionCost": 1,
+      "Tags": [ "ranged attack 4", "multimark" ],
+      "AutoHit": "1 damage. Foe is marked.",
+      "Mark": "While marked, if they end their turn in the shop's aura, they are stunned and take [fray] divine damage."
+    },
+    {
+      "Name": "Chastise",
+      "ActionCost": 1,
+      "Effect": "A character in range 6 takes 1 piercing damage. If that character attacks before the end of their next turn, they take [D] piercing damage and this effect ends."
+    },
+    {
+      "Name": "Open Shop",
+      "ActionCost": 1,
+      "Tags": [ "summon", "end turn" ],
+      "Description": "The Shopkeep opens their shop, a size 1 object summoning it in an adjacent space. It lasts until the shopkeep is defeated or this ability is used again.",
+      "Summon": {
+        "Name": "Shop",
+        "Tags": [ "size 1 object" ],
+        "Effect": "Aura 1. No fighting in the shop. Characters in the aura are pacified+. While the shop is active, any character in the aura can use the Rummage action, which ignores pacified.",
+        "Actions": {
+          "Name": "Rummage",
+          "ActionCost": 1,
+          "Description": "The character rummages in the shop and throws something at a foe in range 3. Roll 1d6.",
+          "Rolls": [
+            {
+              "Values": 1,
+              "Name": "10 Foot Pole",
+              "Description": "The target takes 2 damage and is shoved 2."
+            },
+            {
+              "Values": 2,
+              "Name": "Lantern",
+              "Description": "The target takes [fray] damage and becomes electrified."
+            },
+            {
+              "Values": 3,
+              "Name": "Ration",
+              "Description": "The target takes 1 damage. Place the ration in an adjacent space. A character can eat it by entering its space and using 1 action to gain vigor 1."
+            },
+            {
+              "Values": 4,
+              "Name": "Bomb",
+              "AreaEffect": "Blast 1 centered on the target, deals [D]+[fray] damage and inflicts burning."
+            },
+            {
+              "Values": 5,
+              "Name": "Strange Mushroom",
+              "Description": "The target takes [fray] damage, becomes poisoned and branded."
+            },
+            {
+              "Values": 6,
+              "Description": "Choose two."
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

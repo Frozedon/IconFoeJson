@@ -1,0 +1,29 @@
+{
+  "Name": "Inquisitor",
+  "Inherits": [ "Chronicler", "Artillery" ],
+  "Type": "Foe",
+  "Actions": [
+    {
+      "Name": "Lightning Spear",
+      "ActionCost": 2,
+      "Tags": [ "ranged attack 8" ],
+      "Hit": "2[D]+[fray].",
+      "Miss": "[fray].",
+      "Effect": "Foe is vulnerable and electrified. Ignores cover against electrified foes."
+    },
+    {
+      "Name": "Deluge",
+      "ActionCost": 1,
+      "Tags": [ "repeatable" ],
+      "Description": "The inquisitor dashes 2, then deals 2 piercing damage to a foe in range 6."
+    },
+    {
+      "Name": "Expurgation",
+      "ActionCost": 1,
+      "Tags": [ "end turn", "delay" ],
+      "Description": "The inquisitor ends their turn, chooses a blast 2 area in range 6, and gains",
+      "Delay": "Their next turn must be slow. At the start of that turn, that area erupts with lightning.",
+      "DelayAreaEffect": "Characters inside must save or take piercing fray damage, once, for every character in the area, or just once on a successful save. Electrified foes fail the save."
+    }
+  ]
+}

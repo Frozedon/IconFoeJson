@@ -1,0 +1,31 @@
+{
+  "Name": "Farmer",
+  "Inherits": [ "Yeokin", "Heavy" ],
+  "Type": "Foe",
+  "Traits": "Common Strength",
+  "Actions": [
+    {
+      "Name": "Righteous Fist",
+      "ActionCost": 1,
+      "Tags": [ "melee attack", "true strike" ],
+      "Hit": "[D]+[fray] and shove 2.",
+      "Miss": "[fray] and shove 1."
+    },
+    {
+      "Name": "Formation",
+      "ActionCost": 1,
+      "Description": "Shove all allies in range 2 1 space towards this character."
+    },
+    {
+      "Name": "Bale",
+      "ActionCost": 1,
+      "Description": "The Farmer uses a pitchfork, shovel, or sheer strength and picks up an adjacent foe size 1 or smaller, removing them from the battlefield and placing them in an adjacent space, then shoving them."
+    },
+    {
+      "Name": "On the Chin",
+      "ActionCost": 1,
+      "Tags": "stance",
+      "Description": "The Farmer gains aura 1. The farmer and allies in the aura are sturdy, and the farmer gains vigilance 1 at the end of their turn."
+    }
+  ]
+}

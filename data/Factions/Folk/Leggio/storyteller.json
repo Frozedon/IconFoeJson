@@ -1,6 +1,6 @@
 {
-  "Name": "Cook",
-  "Inherits": [ "Islander", "Leader" ],
+  "Name": "Storyteller",
+  "Inherits": [ "Leggio", "Leader" ],
   "Type": "Foe",
   "Actions": [
     {

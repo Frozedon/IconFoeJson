@@ -1,0 +1,18 @@
+{
+  "Name": "Villager",
+  "Inherits": [ "Yeokin", "Mob" ],
+  "Type": "Foe",
+  "Actions": [
+    {
+      "Name": "Improvised Weapon",
+      "ActionCost": 2,
+      "Tags": [ "melee attack or ranged attack 3" ],
+      "AutoHit": "2 damage."
+    },
+    {
+      "Name": "Take Heart",
+      "ActionCost": 2,
+      "Description": "An adjacent character can end a status or blight. Then, if they are bloodied, they may gain vigor 1."
+    }
+  ]
+}

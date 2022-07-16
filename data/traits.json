@@ -92,6 +92,10 @@
     "Description": "Has resistance unless suffering from a status."
   },
   {
+    "Name": "Camaraderie",
+    "Description": "+1 boon on attacks and saves for every adjacent ally."
+  },
+  {
     "Name": "Cataclysm",
     "Description": "At the start and end of the round create 2 rock spires, height 1 objects, in free space within range 2 of a foe."
   },
@@ -103,6 +107,10 @@
     "Name": "Command Aura [X]",
     "DisplayName": "Command Aura",
     "Description": "Aura [X]. Allies in the aura have +1 boon on attacks."
+  },
+  {
+    "Name": "Common Strength",
+    "Description": "This character's abilities have Collide: [fray] damage and foe is dazed. Dazed foes take [D]+[fray] instead."
   },
   {
     "Name": "Counter",

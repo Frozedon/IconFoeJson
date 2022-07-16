@@ -1,6 +1,6 @@
 {
   "Name": "Pole Fighter",
-  "Inherits": [ "Islander", "Heavy" ],
+  "Inherits": [ "Leggio", "Heavy" ],
   "Type": "Foe",
   "Traits": "Slam",
   "Actions": [

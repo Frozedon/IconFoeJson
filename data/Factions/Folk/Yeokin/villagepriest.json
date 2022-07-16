@@ -1,0 +1,32 @@
+{
+  "Name": "Village Priest",
+  "Inherits": [ "Yeokin", "Leader" ],
+  "Type": "Foe",
+  "Actions": [
+    {
+      "Name": "Greenwrath",
+      "ActionCost": 1,
+      "Tags": [ "melee attack or ranged attack 6" ],
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "Effect": "Deals bonus damage and inflicts branded if a character is inside dangerous or difficult terrain."
+    },
+    {
+      "Name": "Sow",
+      "ActionCost": 1,
+      "Tags": [ "multimark", "combo" ],
+      "Description": "The village priest marks a foe in range 4. That foe is poisoned and takes 1 piercing damage.",
+      "Combos": {
+        "Name": "Reap",
+        "ActionsCost": 1,
+        "Description": "All foes marked by Sow take [fray] piercing damage."
+      }
+    },
+    {
+      "Name": "Sanctify",
+      "ActionCost": 2,
+      "Tags": [ "terrain effect" ],
+      "Description": "The village priest scatters salt in a close blast 1 area. Foes that end their turn in the area become pacified and burning. Allies that end their turn in the area can end a status or blight, then gain vigor 1 if they are bloodied. The area persists until this action is taken again."
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 {
-  "Name": "Monster Rider",
-  "Inherits": [ "Islander", "Skirmisher" ],
+  "Name": "Acrobat",
+  "Inherits": [ "Leggio", "Skirmisher" ],
   "Type": "Foe",
   "Traits": [ "Tumbling", "Partner Work" ],
   "Actions": [

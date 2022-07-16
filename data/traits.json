@@ -28,6 +28,10 @@
     "Description": "Aura 2. Foes that end their turn in the aura lose all vigor, then take 2 piercing damage."
   },
   {
+    "Name": "Aura of Shielding",
+    "Description": "Aura 1. The abjurer and allies in the area have dodge."
+  },
+  {
     "Name": "Aura of the Endless Legion",
     "Description": "Aura 2. When any relict is defeated in the aura, summon a relict husk mob in a free space in the aura."
   },
@@ -48,6 +52,10 @@
     "Description": "Has resistance unless suffering from a status."
   },
   {
+    "Name": "Command Aura [X]",
+    "Description": "Aura [X]. Allies in the aura have +1 boon on attacks."
+  },
+  {
     "Name": "Counter",
     "Description": "Deal 2 damage to your attacker after being attacked, hit or miss."
   },
@@ -64,6 +72,10 @@
         "Description": "An ally in range 4 can save, ending a mark, status, or blight on a successful save. If that ally is bloodied, they also gain vigor 1."
       }
     ]
+  },
+  {
+    "Name": "Divine Presence",
+    "Description": "Immune to stun"
   },
   {
     "Name": "Dodge",
@@ -112,6 +124,10 @@
   {
     "Name": "Fortify",
     "Description": "This character gains Vigilance 1 at the end of their turn."
+  },
+  {
+    "Name": "Greenwalker",
+    "Description": " Immune to difficult terrain."
   },
   {
     "Name": "Grit",
@@ -166,6 +182,10 @@
   {
     "Name": "Malice",
     "Description": "After attacking this character, a foe is marked, gaining a stack of malice. Malice stacks indefinitely. This character gains +1 boon on attacks and deals +[D] on hit or miss against a foe for each stack of malice. Malice can also be inflicted by other means. If a character suffering from Malice doesn't attack during their turn, at the end of their turn clear all stacks of Malice. It can also be cleared by anything that clears a mark, but doing so only clears one at a time."
+  },
+  {
+    "Name": "Martyrdom",
+    "Description": "When defeated, grants vigor 1 to all allies in range 2."
   },
   {
     "Name": "Mob",

@@ -1,0 +1,25 @@
+{
+  "Name": "Diviner",
+  "Inherits": "Leader",
+  "Type": "Foe",
+  "UsesTemplate": true,
+  "Actions": [
+    {
+      "Name": "Wild Card",
+      "ActionCost": 1,
+      "Tags": [ "ranged attack 5", "multimark" ],
+      "AutoHit": "1 damage and the foe is marked.",
+      "Mark": "A card attaches to the target. The next time the target is hit by an attack, the card explodes in a blast 1 AoE explosion centered on them for [D]+[fray]. Foes within must save or become branded. Then, the mark clears."
+    },
+    {
+      "Name": "Weaken",
+      "ActionCost": 1,
+      "Description": "A foe in range 5 is pacified."
+    },
+    {
+      "Name": "Bend Fate",
+      "ActionCost": 1,
+      "Description": "The Abjurer chooses an ally in range 5. Until the end of their next turn, attacks gain +1 curse against that ally, and that ally gains +1 boon on attacks."
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "Name": "Abjurer",
+  "Inherits": "Leader",
+  "Type": "Foe",
+  "UsesTemplate": true,
+  "Traits": [ "Aura of Shielding" ],
+  "Actions": [
+    {
+      "Name": "Cleansing Bolt",
+      "ActionCost": 1,
+      "Tags": [ "ranged attack 5", "cross 1" ],
+      "AutoHit": "[fray].",
+      "AreaEffect": "[fray].",
+      "Effect": "Does not damage allies. Deals bonus damage for each ally caught in its area of effect."
+    },
+    {
+      "Name": "Cleansing Charm",
+      "ActionCost": 1,
+      "Tags": [ "terrain effect" ],
+      "Description": "The Abjurer places a charm in a free space in range 3 that lasts until the start of its next turn. Allies that end their turn adjacent to the charm can clear a status or blight."
+    },
+    {
+      "Name": "Empower Shield",
+      "ActionCost": 1,
+      "Tags": [ "stance" ],
+      "Description": "The Abjurer becomes immobile, but their aura of shielding increases to aura 2 and also grants cover. They can exit this stance as an action, and also exit if shoved or stunned."
+    }
+  ]
+}

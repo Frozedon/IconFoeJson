@@ -1,0 +1,10 @@
+{
+  "Name": "Leader",
+  "Class": "Leader",
+  "Vitality": 10,
+  "Speed": 4,
+  "Defense": 8,
+  "FrayDamage": 3,
+  "DamageDie": 6,
+  "Traits": [ "Shelter", "Diaga" ]
+}

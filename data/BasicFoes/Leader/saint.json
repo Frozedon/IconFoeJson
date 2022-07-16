@@ -1,0 +1,27 @@
+{
+  "Name": "Saint",
+  "Inherits": "Leader",
+  "Type": "Foe",
+  "UsesTemplate": true,
+  "Traits": [ "Defiance", "Martyrdom" ],
+  "Actions": [
+    {
+      "Name": "Starcall",
+      "ActionCost": 1,
+      "Tags": [ "ranged attack", "arc 6 + blast 1" ],
+      "AutoHit": "[D] and foe is branded.",
+      "AreaEffect": "[fray]."
+    },
+    {
+      "Name": "Gentleness",
+      "ActionCost": 2,
+      "Description": "The Saint becomes immobile and gains aura 2 until the start of is next turn. All damage dealt from characters inside the aura is reduced to 1."
+    },
+    {
+      "Name": "Immaculate",
+      "ActionCost": 2,
+      "Recharge": 6,
+      "Description": "An ally in range 5 becomes Intangible until the end of its next turn."
+    }
+  ]
+}

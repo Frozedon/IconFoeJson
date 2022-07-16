@@ -1,0 +1,30 @@
+{
+  "Name": "Priest",
+  "Inherits": "Leader",
+  "Type": "Foe",
+  "UsesTemplate": true,
+  "Traits": [ "Divine Presence" ],
+  "Actions": [
+    {
+      "Name": "Holy",
+      "ActionCost": 2,
+      "Tags": [ "ranged attack 4", "blast 1" ],
+      "AutoHit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "AreaEffect": "[fray].",
+      "Effect": "Foes inside are branded. Branded foes must save or become pacified."
+    },
+    {
+      "Name": "Redempta",
+      "ActionCost": 2,
+      "Tags": [ "1/combat" ],
+      "Description": "Target defeated ally in range 4 and return them to the battlefield with 50% hp. They can act normally starting next round."
+    },
+    {
+      "Name": "Shield of Faith",
+      "ActionCost": 2,
+      "Tags": [ "mark" ],
+      "Description": "Allied character in range 3 becomes marked, and gains sturdy and resistance while marked."
+    }
+  ]
+}

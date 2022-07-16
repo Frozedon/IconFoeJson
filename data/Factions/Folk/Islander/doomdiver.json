@@ -1,0 +1,27 @@
+{
+  "Name": "Doom Diver",
+  "Inherits": [ "Islander", "Skirmisher" ],
+  "Type": "Foe",
+  "Traits": "Nimble",
+  "Actions": [
+    {
+      "Name": "Spear Slash",
+      "ActionCost": 1,
+      "Tags": [ "melee attack 2", "+1 boon" ],
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "Effect": "Deals bonus damage to foes at range 2."
+    },
+    {
+      "Name": "Slide",
+      "ActionCost": 1,
+      "Tags": "repeatable",
+      "Description": "The Diver dashes 4 with phasing, dealing 2 damage to all characters it passes through."
+    },
+    {
+      "Name": "Dive",
+      "ActionCost": 2,
+      "Description": "The Diver chooses a foe in range 4, then removes themselves from the battlefield. At the end of that foe's next turn, that foe must save as the Diver descends, dealing [D] four times on a failed save, or twice on a successful save. Lower this damage by [D] for every adjacent ally of the target, which could cause it to do no damage. Then, place the Diver in any free space in range 2."
+    }
+  ]
+}

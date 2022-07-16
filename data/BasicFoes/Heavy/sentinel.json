@@ -4,7 +4,7 @@
   "Type": "Foe",
   "UsesTemplate": true,
   "RemoveTraits": [ "Armor 3" ],
-  "Traits": [ "Defiance", "Hold the Line" ],
+  "Traits": [ "Defiance", "Hold the Line 3" ],
   "Actions": [
     {
       "Name": "Sweep",

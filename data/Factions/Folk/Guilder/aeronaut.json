@@ -1,0 +1,32 @@
+{
+  "Name": "Aeronaut",
+  "Inherits": [ "Guilder", "Skirmisher" ],
+  "Type": "Foe",
+  "Traits": [ "Aerial Acrobat" ],
+  "Actions": [
+    {
+      "Name": "Slice and Dice",
+      "ActionCost": 1,
+      "Tags": [ "melee attack or ranged attack 4" ],
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "Effect": "May dash 1 before or after attack."
+    },
+    {
+      "Name": "Double Tap",
+      "ActionCost": 1,
+      "Description": "The Aeronaut flies 3 spaces in a straight line. At the start and end of their movement, they may deal fray damage to two different characters in range 3."
+    },
+    {
+      "Name": "Blinding Grenade",
+      "ActionCost": 1,
+      "Description": "A foe in range 3 is blinded. Blinded foes take [fray] damage."
+    },
+    {
+      "Name": "Takeoff",
+      "ActionCost": 1,
+      "Tags": [ "stance" ],
+      "Description": "The Aeronaut launches into the air. While in this stance, they are flying and have evasion. They lose this stance if they are hit by an attack."
+    }
+  ]
+}

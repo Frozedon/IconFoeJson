@@ -1,0 +1,31 @@
+{
+  "Name": "Sky Knight",
+  "Inherits": [ "Guilder", "Heavy" ],
+  "Type": "Foe",
+  "Traits": [ "Sturdy" ],
+  "Actions": [
+    {
+      "Name": "Oath Sword",
+      "ActionCost": 1,
+      "Tags": [ "melee attack", "true strike" ],
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "Effect": "Deals bonus damage and winds on hit if the knight is bloody."
+    },
+    {
+      "Name": "Shield Bash",
+      "ActionCost": 1,
+      "Description": "An adjacent foe is dazed. Dazed foes take [fray] damage."
+    },
+    {
+      "Name": "Stinger",
+      "ActionCost": 1,
+      "Description": "The Sky knight dashes 2 spaces in a straight line, then deals 3 damage, twice, to an adjacent foe. This action can only be taken if there are no foes adjacent."
+    },
+    {
+      "Name": "Valiant",
+      "ActionCost": 2,
+      "Description": "The Sky Knight dashes up to 6 spaces in a straight line, phasing through characters. Foes they pass through take [D], are dazed, then shoved 1 to either side."
+    }
+  ]
+}

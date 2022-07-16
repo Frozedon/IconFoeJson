@@ -1,0 +1,31 @@
+{
+  "Name": "Harpooner",
+  "Inherits": [ "Islander", "Artillery" ],
+  "Type": "Foe",
+  "Actions": [
+    {
+      "Name": "Spear",
+      "ActionCost": 1,
+      "Tags": [ "ranged attack 6", "pierce" ],
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "Effect": "No ranged attack penalties for adjacent foes. If attacking an adjacent foe, is a critical hit (+[D])."
+    },
+    {
+      "Name": "Backflip",
+      "ActionCost": 1,
+      "Tags": "repeatable",
+      "Description": "The Harpooner dashes 1. If there is an adjacent foe, increase this dash to 3, and shove that foe 1."
+    },
+    {
+      "Name": "Net",
+      "ActionCost": 1,
+      "Description": "The Harpooner creates a net terrain effect in a free space range 6. The net space is treated as a pit."
+    },
+    {
+      "Name": "Main Harpoon",
+      "ActionCost": 2,
+      "Description": "A foe in range 6 must save or take 2[D]+[fray], become shattered, and be shoved until adjacent to the Harpooner. On a success, the foe takes [D]+[fray] and is shoved 1 towards the harpooner instead."
+    }
+  ]
+}

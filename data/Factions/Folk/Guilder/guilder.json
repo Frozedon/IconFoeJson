@@ -1,0 +1,6 @@
+{
+  "Name": "Guilder",
+  "Inherits": "Folk",
+  "Type": "Template",
+  "Traits": [ "Strive" ]
+}

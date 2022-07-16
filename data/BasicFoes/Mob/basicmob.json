@@ -1,6 +1,6 @@
 {
   "Name": "Basic Mob",
-  "TitleName": "Mob",
+  "DisplayName": "Mob",
   "Inherits": "Mob",
   "Type": "Foe",
   "Actions": [

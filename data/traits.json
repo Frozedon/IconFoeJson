@@ -1,5 +1,9 @@
 [
   {
+    "Name": "Aerial Acrobat",
+    "Description": "If an attack misses this character, they may deal 2 damage to the attacker, then fly 2."
+  },
+  {
     "Name": "Aetherwall",
     "Description": "Cover from ranged attacks further away than range 2."
   },
@@ -56,6 +60,16 @@
     "Description": "A Vessel Knight rises again after 4d6 days unless its heart is destroyed."
   },
   {
+    "Name": "Bravado",
+    "Actions": [
+      {
+        "Name": "Bravado",
+        "ActionCost": 0,
+        "Description": "This character takes damage equal to 50% of their max hp, but immediately gains +1 action. If this would defeat them, it reduces them to 1 hp instead."
+      }
+    ]
+  },
+  {
     "Name": "Brood Legion",
     "Description": "When starting combat in this phase, or when entering it, summon 5 of its brood summons per player character, which can be placed in any space on the battlefield not within range 2 of players."
   },
@@ -77,6 +91,7 @@
   },
   {
     "Name": "Command Aura [X]",
+    "DisplayName": "Command Aura",
     "Description": "Aura [X]. Allies in the aura have +1 boon on attacks."
   },
   {
@@ -186,8 +201,9 @@
     "Description": "Resistant to abilities used from adjacent spaces."
   },
   {
-    "Name": "Hold the Line",
-    "Description": "If the Sentinel ends any turn without attacking, they gain Sturdy until the start of their next turn and Vigilance 3."
+    "Name": "Hold the Line [X]",
+    "DisplayName": "Hold the Line",
+    "Description": "If this character ends any turn without attacking, they gain Sturdy until the start of their next turn and Vigilance [X]."
   },
   {
     "Name": "Hollow",
@@ -289,6 +305,10 @@
     "Description": "The first time on any turn a foe takes an action in range 2, the Yaman may dash 2, then deal 2 damage to an adjacent foe."
   },
   {
+    "Name": "Salty",
+    "Description": "When the Sailor deals self damage, they gain vigor 1 after taking the damage."
+  },
+  {
     "Name": "Shambling",
     "Description": "Cannot dash.",
     "DashMultiplier": 0
@@ -333,6 +353,17 @@
   {
     "Name": "Strength",
     "Description": "The Demolisher's abilities have Collide: Foe is dazed. Dazed foes take [D]."
+  },
+  {
+    "Name": "Strive",
+    "Actions": [
+      {
+        "Name": "Strive",
+        "ActionCost": 0,
+        "Tags": [ "1/combat" ],
+        "Description": "Until the start of their next turn, the Guilder increases the distance of any dash, teleport or flight by +3."
+      }
+    ]
   },
   {
     "Name": "Stoneskin",

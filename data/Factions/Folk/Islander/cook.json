@@ -1,0 +1,31 @@
+{
+  "Name": "Cook",
+  "Inherits": [ "Islander", "Leader" ],
+  "Type": "Foe",
+  "Actions": [
+    {
+      "Name": "Hot Griddle",
+      "ActionCost": 1,
+      "Tags": [ "melee attack" ],
+      "Hit": "[D]+[fray] and foe is burning.",
+      "Miss": "[fray].",
+      "Effect": "Foe is branded. Critical hit (+[D]) against burning foes."
+    },
+    {
+      "Name": "Flapjack",
+      "ActionCost": 1,
+      "Tags": [ "summon", "repeatable" ],
+      "Description": "The cook summons a flapjack in range 4",
+      "Summon": {
+        "Name": "Flapjack",
+        "Tags": [ "size 1 summon", "intangible" ],
+        "Effect": "A character moving into the flapjack's space can pick it up, removing it. That character gains defiance. A character that already has defiance gains vigor 1. A character with vigor becomes unstoppable until the end of their next turn."
+      }
+    },
+    {
+      "Name": "Cook Up a Storm",
+      "ActionCost": 2,
+      "Description": "The Cook creates a blast 2 terrain effect until the start of their next turn. Foes in the area are shoved outside the of area when it is created. The area is dangerous terrain for foes, provides cover for allies, and allies that end their turn in the area may end a status or blight, then gain vigor 1 if they are bloodied."
+    }
+  ]
+}

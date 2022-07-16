@@ -1,0 +1,25 @@
+{
+  "Name": "Storm Caller",
+  "Inherits": "Artillery",
+  "Type": "Foe",
+  "UsesTemplate": true,
+  "Traits": [ "Flying" ],
+  "Actions": [
+    {
+      "Name": "Geyser",
+      "ActionCost": 1,
+      "Tags": [ "ranged attack 8", "cross 1", "pierce" ],
+      "Hit": "[D]+[fray] and inflict frostbite.",
+      "Miss": "[fray].",
+      "AreaEffect": "[fray].",
+      "Effect": "Summon a pit in a free space in the area. Frosbitten characters are vulnerable."
+    },
+    {
+      "Name": "Summon Storm",
+      "ActionCost": 1,
+      "Recharge": 6,
+      "Tags": [ "terrain effect" ],
+      "Description": "Summon a blast 1 terrain effect in range 8. While inside, characters are vulnerable+ and the area is difficult terrain. The storm caller can redirect any of its storms with 1 action, moving them up to 3 spaces, then dealing [fray] damage to any characters in their area."
+    }
+  ]
+}

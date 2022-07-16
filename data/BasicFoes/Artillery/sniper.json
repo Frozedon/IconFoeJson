@@ -1,0 +1,21 @@
+{
+  "Name": "Sniper",
+  "Inherits": "Artillery",
+  "Type": "Foe",
+  "UsesTemplate": true,
+  "Actions": [
+    {
+      "Name": "Aim",
+      "ActionCost": 2,
+      "Description": " Next ranged attack increases all damage by [D], gains +1 boon, ignores cover, and doubles its range."
+    },
+    {
+      "Name": "Heart Seeker",
+      "ActionCost": 1,
+      "Tags": [ "ranged attack 6", "pierce" ],
+      "Hit": "2[D]+[fray].",
+      "Miss": "[fray].",
+      "Effect": "Cannot target adjacent characters."
+    }
+  ]
+}

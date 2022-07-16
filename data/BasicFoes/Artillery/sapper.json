@@ -1,0 +1,23 @@
+{
+  "Name": "Sapper",
+  "Inherits": "Artillery",
+  "Type": "Foe",
+  "UsesTemplate": true,
+  "Actions": [
+    {
+      "Name": "Lob",
+      "ActionCost": 1,
+      "Tags": [ "ranged attack 8", "pierce", "ignores cover" ],
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "Effect": "A different foe in range 4 from the target foe also takes [D]."
+    },
+    {
+      "Name": "Fell Shot",
+      "ActionCost": 1,
+      "Tags": [ "repeatable" ],
+      "Description": "Mark an unoccupied space in range 8.",
+      "AreaEffect": "Characters that enter that space or start their turn there are struck by a projectile, taking [D] damage, and ending this effect."
+    }
+  ]
+}

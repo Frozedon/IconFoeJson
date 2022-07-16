@@ -1,0 +1,30 @@
+{
+  "Name": "Alchemist",
+  "Inherits": "Artillery",
+  "Type": "Foe",
+  "UsesTemplate": true,
+  "Traits": [ "Insulated" ],
+  "Actions": [
+    {
+      "Name": "Spray",
+      "ActionCost": 1,
+      "Tags": [ "ranged attack", "close blast 2" ],
+      "Hit": "[D]+[fray] and inflict poisoned.",
+      "Miss": "[fray].",
+      "AreaEffect": "[fray].",
+      "Effect": "Attack target explodes shoving adjacent characters 1 away from them and dealing [fray] piercing damage to them."
+    },
+    {
+      "Name": "Volatile Mix",
+      "ActionCost": 1,
+      "Description": "The Alchemist chooses a foe in range 6. At the end of that foe's next turn, they explode, taking 2 piercing damage and dealing 2 piercing damage to all other characters in range 2."
+    },
+    {
+      "Name": "Sticky Solution",
+      "ActionCost": 1,
+      "Recharge": 5,
+      "Tags": [ "close blast 1" ],
+      "Description": "Area becomes difficult terrain for the rest of combat."
+    }
+  ]
+}

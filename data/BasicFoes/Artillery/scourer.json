@@ -1,0 +1,22 @@
+{
+  "Name": "Scourer",
+  "Inherits": "Artillery",
+  "Type": "Foe",
+  "UsesTemplate": true,
+  "Actions": [
+    {
+      "Name": "Scour",
+      "ActionCost": 1,
+      "Tags": [ "ranged attack 8", "pierce", "mark" ],
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "Mark": "Mark the target. Attacks against the marked target for the rest of combat deal +[D] damage and inflict shattered. This effect does not stack."
+    },
+    {
+      "Name": "Lance",
+      "ActionCost": 1,
+      "Tags": [ "line 8" ],
+      "AreaEffect": "Characters in the area taking [fray] piercing damage. Ignores and pierces through cover."
+    }
+  ]
+}

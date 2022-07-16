@@ -1,0 +1,27 @@
+{
+  "Name": "Blaster",
+  "Inherits": "Artillery",
+  "Type": "Foe",
+  "UsesTemplate": true,
+  "Actions": [
+    {
+      "Name": "Blast",
+      "ActionCost": 2,
+      "Tags": [ "ranged attack 8", "blast 1", "pierce" ],
+      "Hit": "2[D] and inflict burning.",
+      "Miss": "1 damage.",
+      "AreaEffect": "1 damage.",
+      "Effect": "Deal 2 piercing damage again to all characters for each character caught in the area. If attack targets a burning character, increase blast size to 2."
+    },
+    {
+      "Name": "Slip",
+      "ActionCost": 2,
+      "Description": "Teleport 2."
+    },
+    {
+      "Name": "Flash",
+      "ActionCost": 1,
+      "Description": "A character in range 8 is vulnerable. Vulnerable foes take 2 piercing damage and become burning."
+    }
+  ]
+}

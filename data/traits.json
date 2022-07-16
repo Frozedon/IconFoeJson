@@ -151,6 +151,10 @@
     "Defense": 0
   },
   {
+    "Name": "Insulated",
+    "Description": "Immune to damage from terrain and terrain effects."
+  },
+  {
     "Name": "Juggernaut",
     "Actions": [
       {
@@ -260,7 +264,7 @@
   },
   {
     "Name": "Stoneskin",
-    "Description": "While adjacent to a piece of created terrain, has resistance."
+    "Description": "Resistance when adjacent to an object."
   },
   {
     "Name": "Sturdy",
@@ -273,6 +277,10 @@
   {
     "Name": "Surreality",
     "Description": "Starts at 50% hp with vigor 1."
+  },
+  {
+    "Name": "The Old Blood",
+    "Description": "Immune to blights."
   },
   {
     "Name": "Unstable",

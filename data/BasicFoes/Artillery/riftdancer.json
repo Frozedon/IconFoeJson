@@ -1,0 +1,30 @@
+{
+  "Name": "Rift Dancer",
+  "Inherits": "Artillery",
+  "Type": "Foe",
+  "UsesTemplate": true,
+  "Actions": [
+    {
+      "Name": "Dissonant Bolt",
+      "ActionCost": 1,
+      "Tags": [ "ranged attack", "line 6", "pierce" ],
+      "Hit": "[D]+[fray] and inflict electrified.",
+      "Miss": "[fray].",
+      "AreaEffect": "[fray].",
+      "Effect": "Teleport any character in the area to any point on the line. Electrified characters can be teleported 2 in any direction."
+    },
+    {
+      "Name": "Flash Step",
+      "ActionCost": 1,
+      "Tags": [ "repeatable" ],
+      "Description": "Teleport 3, then deal 2 piercing damage to a foe in range 3."
+    },
+    {
+      "Name": "Crackling Wall",
+      "ActionCost": 1,
+      "Recharge": 6,
+      "Tags": [ "terrain effect" ],
+      "Description": "The Rift Dancer creates a line 3 dangerous terrain effect in range 4."
+    }
+  ]
+}

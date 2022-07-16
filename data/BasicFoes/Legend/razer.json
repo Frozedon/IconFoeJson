@@ -1,0 +1,71 @@
+{
+  "Name": "Razer",
+  "Inherits": "Legend",
+  "Type": "Foe",
+  "Class": "Artillery",
+  "Vitality": 8,
+  "HP": 32,
+  "Speed": 4,
+  "Defense": 6,
+  "FrayDamage": 4,
+  "DamageDie": 8,
+  "UsesTemplate": true,
+  "Traits": [ "Overdrive 6", "Aetherwall", "Flying" ],
+  "PhasesDescription": "Starts in Phase I, then moves up a phase each around, looping back to Phase I after III.",
+  "Phases": [
+    {
+      "Traits": [ "Cataclysm" ],
+      "Actions": [
+        {
+          "Name": "Raze",
+          "ActionCost": 1,
+          "Tags": [ "melee attack", "arc 4" ],
+          "Hit": "2[D]+[fray].",
+          "Miss": "[fray].",
+          "AreaEffect": "[fray].",
+          "Effect": "Attack target is vulnerable."
+        },
+        {
+          "Name": "Swat",
+          "ActionCost": 1,
+          "Description": "An adjacent foe must save or be shoved 3 and shattered. On a successful save, they are shoved 1.",
+          "Collide": "Also stunned."
+        },
+        {
+          "Name": "Aether Split",
+          "ActionCost": 1,
+          "Description": "Deal 2 damage to all adjacent foes, then teleport 2."
+        },
+        {
+          "Name": "Eruption",
+          "ActionCost": 1,
+          "Tags": [ "2/round", "terrain effect" ],
+          "Description": "A Rock spire in range 5 emits a close blast 1 pool of blight, which becomes dangerous and difficult terrain."
+        }
+      ]
+    },
+    {
+      "Description": "As phase I, but:",
+      "Actions": [
+        {
+          "Name": "Soar",
+          "ActionCost": 0,
+          "Tags": [ "2/round" ],
+          "Description": "Fly 3 spaces in a straight line."
+        },
+        {
+          "Name": "Scorch",
+          "ActionCost": 1,
+          "Tags": [ "2/round" ],
+          "Description": "Choose a character in range 6. At the end of that character's turn, the Razer shoots an energy blast at them for a blast 1 explosion.",
+          "AreaEffect": "Characters within must save. On a successful save, they take [D]+[fray]. On a failed save they take 2[D]+[fray]. Rock spires in the area are destroyed."
+        }
+      ]
+    },
+    {
+      "Name": "God of Destruction",
+      "Description": "As phase I and II, but:",
+      "Traits": [ "Radiance", "Elden Chaos", "Aftermath" ]
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "Name": "Demolisher",
+  "Inherits": "Legend",
+  "Type": "Foe",
+  "Class": "Heavy",
+  "Vitality": 10,
+  "HP": 40,
+  "Speed": 3,
+  "Defense": 6,
+  "FrayDamage": 4,
+  "DamageDie": 6,
+  "UsesTemplate": true,
+  "Traits": [ "Fortify", "Armor 3", "Size 2", "Heavy", "Strength" ],
+  "Actions": [
+    {
+      "Name": "Hurl Boulder",
+      "ActionCost": 1,
+      "Tags": [ "terrain effect", "repeatable" ],
+      "Effect": "A foe in range 3 takes 2 damage and is shoved 1, then create a height 1 boulder object next to them."
+    },
+    {
+      "Name": "Lash",
+      "ActionCost": 1,
+      "Description": "The Demolisher whips a chain, hook, or tongue around a foe in range 5, shoving them 3 spaces towards the Demolisher."
+    },
+    {
+      "Name": "Charge",
+      "ActionCost": 1,
+      "Tags": [ "1/round" ],
+      "Description": "Dash 4 in a straight line. All characters it passes over are shoved 1 to the side and take [fray] damage."
+    }
+  ],
+  "PhasesDescription": "Starts in Phase I and enters Phase II when bloodied.",
+  "Phases": [
+    {
+      "Actions": [
+        {
+          "Name": "Pound",
+          "ActionCost": 1,
+          "Tags": [ "melee attack 2", "true strike", "combo" ],
+          "Hit": "[D]+[fray].",
+          "Miss": "[fray].",
+          "Effect": "Deals bonus damage against winded, dazed, or stunned characters.",
+          "Combos": [
+            {
+              "Name": "Roar",
+              "ActionCost": 1,
+              "Tags": [ "end turn" ],
+              "Description": "Characters in range 3 take 3 damage, and are shoved 1 towards the Demolisher."
+            },
+            {
+              "Name": "Smash",
+              "ActionCost": 2,
+              "Tags": [ "melee attack", "close blast 1" ],
+              "Hit": "3[D]+[fray].",
+              "Miss": "[fray].",
+              "AreaEffect": "[fray].",
+              "Effect": "Attack target is stunned."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Traits": [ "Tantrum", "Great Enrage" ],
+      "Actions": [
+        {
+          "Name": "Pound",
+          "ActionCost": 1,
+          "Tags": [ "melee attack 2", "true strike", "combo" ],
+          "Hit": "[D]+[fray].",
+          "Miss": "[fray].",
+          "Effect": "Deals bonus damage against winded, dazed, or stunned characters.",
+          "Combos": [
+            {
+              "Name": "Smash",
+              "ActionCost": 2,
+              "Tags": [ "melee attack", "close blast 1" ],
+              "Hit": "3[D]+[fray].",
+              "Miss": "[fray].",
+              "AreaEffect": "[fray].",
+              "Effect": "Attack target is stunned."
+            }
+          ]
+        },
+        {
+          "Name": "Great Lash",
+          "ActionCost": 1,
+          "Tags": [ "1/round" ],
+          "Description": "The Demolisher whips a chain, hook, or tongue around all foes in range 5. They are shoved 3 spaces towards the demolisher."
+        }
+      ]
+    }
+  ]
+}

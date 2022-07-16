@@ -1,0 +1,78 @@
+{
+  "Name": "Nocturnal",
+  "Inherits": "Legend",
+  "Type": "Foe",
+  "Class": "Skirmisher",
+  "Vitality": 8,
+  "HP": 32,
+  "Speed": 4,
+  "Defense": 12,
+  "FrayDamage": 3,
+  "DamageDie": 10,
+  "UsesTemplate": true,
+  "Traits": [ "Skirmisher", "Dodge", "Hunter in the Mist" ],
+  "Actions": [
+    {
+      "Name": "Rake",
+      "ActionCost": 1,
+      "Tags": [ "line 4", "repeatable" ],
+      "AreaEffect": "Foes in the area take [fray] damage. The Nocturnal may teleport to any space in the area after this action resolves."
+    },
+    {
+      "Name": "The Horror",
+      "ActionCost": 1,
+      "Tags": [ "melee attack" ],
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "Effect": "May teleport up to 3 spaces before or after the attack."
+    },
+    {
+      "Name": "Disappear",
+      "ActionCost": 2,
+      "Tags": [ "1/round" ],
+      "Description": "Remove the Nocturnal from the battlefield and place them in any free space."
+    }
+  ],
+  "PhasesDescription": "Phase change triggers at the start of the Nocturnal's first turn each round past the first. The Nocturnal starts in phase II and can shift up or down one phase (so it can't shift from I to III for example). It must shift phases.",
+  "Phases": [
+    {
+      "Traits": [ "Clinging Mists" ],
+      "Actions": [
+        {
+          "Name": "Amygdala",
+          "ActionCost": 1,
+          "Tags": [ "multimark", "1/round" ],
+          "Description": "All foes in range 3 are forced to flee. They must save or be marked and shoved 2 in a direction of the Nocturnal's choice. While marked, at the start of their turns, the Nocturnal can shove them 2 in a direction of its choice. They can save at the end of their turns to end this mark."
+        }
+      ]
+    },
+    {
+      "Traits": [ "Blood Drain" ],
+      "Actions": [
+        {
+          "Name": "Fell Shot",
+          "ActionCost": 1,
+          "Tags": [ "2/round" ],
+          "Description": "Mark two unoccupied spaces in range 4.",
+          "Effect": "Characters other than the Nocturnal that enter that space are struck by a projectile, taking [D]. The spaces last until triggered."
+        }
+      ]
+    },
+    {
+      "Actions": [
+        {
+          "Name": "Embrace",
+          "ActionCost": 2,
+          "Tags": [ "1/round" ],
+          "Description": "An adjacent foe must save. On a successful save, they are shoved 1 and take [D]+fray. On a failed save, they take divine damage equal to 50% of their max hp. Either way, this attack can't take them below 1 hp."
+        },
+        {
+          "Name": "Open Wound",
+          "ActionCost": 1,
+          "Tags": [ "multimark" ],
+          "Description": "A foe in range 4 is marked. While marked, when that foe is shoved, they take 2 damage. A foe can save against this effect at the end of their turn, ending the mark."
+        }
+      ]
+    }
+  ]
+}

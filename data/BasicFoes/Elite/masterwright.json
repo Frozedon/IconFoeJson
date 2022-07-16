@@ -1,0 +1,43 @@
+{
+  "Name": "Master Wright",
+  "Inherits": "Elite",
+  "Type": "Foe",
+  "Class": "Artillery",
+  "Vitality": 8,
+  "Speed": 3,
+  "Defense": 6,
+  "FrayDamage": 4,
+  "DamageDie": 8,
+  "UsesTemplate": true,
+  "Traits": [ "Flying", "Overdrive 4", "Aetherwall", "Unstable Reality" ],
+  "Actions": [
+    {
+      "Name": "Annihilate",
+      "ActionCost": 2,
+      "Tags": [ "ranged attack 10", "blast 1", "pierce", "terrain effect" ],
+      "Hit": "2[D]+[fray].",
+      "Miss": "[fray].",
+      "AreaEffect": "[fray].",
+      "Effect": "Attack target becomes vulnerable and burning. Attacks against a burning foe increase the area size to blast 2.",
+      "TerrainEffect": "After attack resolves, summon a height 1 boulder object in the area."
+    },
+    {
+      "Name": "Great Slip",
+      "ActionCost": 1,
+      "Description": "Teleport 3."
+    },
+    {
+      "Name": "Fell Shot ",
+      "ActionCost": 1,
+      "Tags": [ "repeatable" ],
+      "Description": "Mark an unoccupied space in range 8.",
+      "AreaEffect": "Characters that enter that space are struck by a projectile, taking [D] damage and ending this effect."
+    },
+    {
+      "Name": "Liminal Arrows",
+      "ActionCost": 1,
+      "Recharge": 5,
+      "Description": "Choose a foe in line of sight and range 10. At the end of that character's turn, it takes [D] piercing damage 3 times if not in cover from the Master wright. Then this effect ends."
+    }
+  ]
+}

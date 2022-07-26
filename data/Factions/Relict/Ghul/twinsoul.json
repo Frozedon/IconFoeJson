@@ -9,7 +9,7 @@
       "ActionCost": 1,
       "Tags": [ "melee attack" ],
       "Description": "Repeat the following effect three times:",
-      "Effect": "Dash 1, then deal 2 damage to all adjacent foes. Cannot pass through a space more than once during this movement."
+      "Effects": "Dash 1, then deal 2 damage to all adjacent foes. Must move in the same direction."
     }
   ],
   "Interrupts": [
@@ -17,7 +17,7 @@
       "Name": "Twirl",
       "Count": 1,
       "Trigger": "The Twinsoul takes damage from an ability.",
-      "Effect": "The Twinsoul teleports 3 after the ability resolves, then gains evasion until the end of its next turn."
+      "Effects": "The Twinsoul teleports 3 after the ability resolves, then gains evasion until the start of its next turn."
     }
   ]
 }

@@ -11,7 +11,7 @@
       "Tags": [ "melee attack" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
-      "Effect": "Foe is branded. Shove 3 against branded characters.",
+      "Effects": "Foe is branded. Shove 3 against branded characters.",
       "Collide": "Foe is stunned."
     },
     {

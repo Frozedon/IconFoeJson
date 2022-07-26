@@ -8,7 +8,7 @@
       "Name": "Parry",
       "Count": 1,
       "Trigger": "The Fencer is targeted by an attack.",
-      "Effect": "The Fencer immediately gains evasion against that attack."
+      "Effects": "The Fencer immediately gains evasion against that attack."
     }
   ],
   "Actions": [
@@ -18,7 +18,7 @@
       "Tags": [ "melee attack" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
-      "Effect": "May dash 1 before and after the attack."
+      "Effects": "May dash 1 before and after the attack."
     },
     {
       "Name": "Skewer",

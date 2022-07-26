@@ -9,7 +9,7 @@
       "Tags": [ "ranged attack 8" ],
       "Hit": "2[D]+[fray].",
       "Miss": "[fray].",
-      "Effect": "Foe is vulnerable and electrified. Ignores cover against electrified foes."
+      "Effects": "Foe is vulnerable and electrified. Ignores cover against electrified foes."
     },
     {
       "Name": "Deluge",

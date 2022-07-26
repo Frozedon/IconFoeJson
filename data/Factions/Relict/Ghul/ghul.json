@@ -1,53 +1,35 @@
 {
   "Name": "Ghul",
-  "Inherits": "Relict",
-  "Class": "Skirmisher",
-  "Vitality": 4,
-  "HPMultiplier": 3,
-  "Speed": 4,
-  "Defense": 12,
-  "FrayDamage": 2,
-  "DamageDie": 10,
-  "Traits": [ "Skirmisher", "Dodge", "Phasing", "Legion" ],
+  "Inherits": [ "Relict", "Skirmisher" ],
+  "Traits": "Phasing",
   "Actions": [
     {
+      "Name": "Hamstring",
+      "ActionCost": 1,
+      "Tags": [ "melee attack", "+1 boon" ],
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "Effects": "On hit, until the end of their next turn, foe takes 2 damage for each space they move."
+    },
+    {
       "Name": "Life Drain",
-      "ActionCost": 0,
-      "Description": "A bloodied foe in range 3 must save or lose all vigor, then takes [D].",
-      "Slay": "The Ghul gains 2 vigor."
+      "ActionCost": 1,
+      "Effects": "A foe in range 3 takes [fray] damage, ignoring vigor. If they are bloodied, they take fray damage twice instead, ignoring vigor."
     },
     {
       "Name": "Terrorize",
       "ActionCost": 1,
-      "Description": "A foe in range 4 must save or become blinded+ and gains +1 curse on all attacks and saves until it ends a turn adjacent to an ally. Bloodied foes fail the save."
-    },
-    {
-      "Name": "Hamstring",
-      "ActionCost": 1,
-      "Tags": [ "+1 boon", "melee attack" ],
-      "Hit": "[D].",
-      "Miss": "1 damage.",
-      "Effect": "On hit, until the end of their next turn, foe takes 1 piercing damage for each space they move."
+      "Effects": "A foe in range 4 must save or become blinded+ and gains +1 curse on all attacks and saves until it ends a turn adjacent to an ally. On a successful save, they are only blinded. Blinded or Bloodied foes fail the save."
     }
   ],
   "Chapter2": {
-    "Actions": [
-      {
-        "Name": "Arc Whip",
-        "Chapter": 2,
-        "ActionCost": 1,
-        "Recharge": 4,
-        "Description": "A character in range 4 must save. On a failed save, they take [D], are slowed, and are electrified. Electrified characters fail the save."
-      }
-    ]
+    "Actions": {
+      "Name": "Arc Whip",
+      "ActionCost": 1,
+      "Effects": "A character in range 4 must save or become slowed and electrified. Electrified characters take [fray] damage."
+    }
   },
   "Chapter3": {
-    "Interrupts": [
-      {
-        "Name": "Unstable Reality",
-        "Trigger": "When damaged by an ability.",
-        "Effect": "This character teleports 1 space after the triggering ability resolves. This interrupt can be taken any number of times a round."
-      }
-    ]
+    "Traits": "Unstable Reality"
   }
 }

@@ -1,46 +1,37 @@
 {
   "Name": "Wraith",
-  "Inherits": "Relict",
-  "Class": "Artillery",
-  "Vitality": 4,
-  "Speed": 3,
-  "Dash": 2,
-  "Defense": 6,
-  "Armor": 0,
-  "FrayDamage": 2,
-  "DamageDie": 8,
-  "Traits": [ "Overdrive 4", "Flying", "Legion", "Ethereal" ],
+  "Inherits": [ "Relict", "Artillery" ],
+  "RemoveTraits": "Aetherwall",
+  "Traits": [ "Flying", "Ethereal" ],
   "Actions": [
     {
-      "Name": "Phase Shift",
+      "Name": "Chain Lightning",
+      "ActionCost": 2,
+      "Tags": [ "ranged attack 8", "pierce" ],
+      "Hit": "2[D]+[fray].",
+      "Miss": "[fray].",
+      "AreaEffect": "A foe in range 3 from the attack target also takes [fray] damage, then must save. If they fail the save, this effect repeats, choosing a new foe in range 3 of them instead. A character can only be chosen once by this effect, but it can chain any number of times. Electrified characters take +1 curse on this save."
+    },
+    {
+      "Name": "Shift",
       "ActionCost": 1,
-      "Description": "Teleport 4."
+      "Description": "Teleport 2."
     },
     {
       "Name": "Shock",
       "ActionCost": 1,
-      "Description": "A foe in range 6 is shattered."
-    },
-    {
-      "Name": "Chain Lightning",
-      "ActionCost": 1,
-      "Tags": [ "ranged attack 8", "pierce" ],
-      "Hit": "[D] and foe is electrified.",
-      "Miss": "1 damage.",
-      "AreaEffect": "A foe in range 3 from the attack target must save or take [D]. If they fail the save, this effect repeats, choosing a new foe in range 3 of them instead. A character can be hit multiple times by this effect and it can 'bounce' back and forth."
+      "Description": "A character in range 8 is vulnerable. Vulnerable foes take piercing fray damage and become electrified."
     }
   ],
   "Chapter2": {
-    "RemoveActions": "Phase Shift",
-    "Actions": [
-      {
-        "Name": "Phase Shift",
-        "ActionCost": 0,
-        "Description": "Teleport 4."
-      }
-    ]
+    "RemoveActions": "Shift",
+    "Actions": {
+      "Name": "Shift",
+      "ActionCost": 0,
+      "Description": "Teleport 2."
+    }
   },
   "Chapter3": {
-    "Traits": [ "Eternal Rage" ]
+    "Traits": "Eternal Rage"
   }
 }

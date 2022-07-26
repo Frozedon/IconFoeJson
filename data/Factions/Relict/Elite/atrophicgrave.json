@@ -1,0 +1,38 @@
+{
+  "Name": "Atrophic Grave",
+  "Inherits": [ "Relict", "Elite", "Heavy" ],
+  "Type": "Foe",
+  "Chapter": 3,
+  "Traits": [ "Sturdy", "Size 3", "Defiance", "Soul Mass", "Drag Under", "Shed Mass" ],
+  "Actions": [
+    {
+      "Name": "Hungry Dead",
+      "ActionCost": 2,
+      "Tags": [ "melee attack", "true strike" ],
+      "Hit": "2[D]+[fray].",
+      "Miss": "[fray].",
+      "Effects": "All foes in range 2 are shoved 2 towards the grave, which could shove them inside of it."
+    },
+    {
+      "Name": "Vortex",
+      "ActionCost": 1,
+      "Description": "Characters in range 2 of the Grave are shoved 1 towards it, which could move them inside the Grave."
+    },
+    {
+      "Name": "Vomit Lightning ",
+      "ActionCost": 1,
+      "Description": "A foe in range 4 takes [fray] damage and is electrified. Electrified characters must save or be winded."
+    },
+    {
+      "Name": "One Hundred Hands",
+      "ActionCost": 1,
+      "Tags": [ "end turn", "combo" ],
+      "Description": "The Grave dashes 2 spaces.",
+      "Combos": {
+        "Name": "Cacophonous Consumption",
+        "ActionCost": 2,
+        "Description": "Characters inside the Grave must save or take [fray] damage five times, or twice on a failed save."
+      }
+    }
+  ]
+}

@@ -37,7 +37,7 @@
       "Tags": [ "close blast 1", "1/round" ],
       "Description": "The Lich releases a horrible shriek.",
       "AreaEffect": "Characters in the area must save or become winded.",
-      "Effect": "Any non-relict character in the area takes fray damage three times at the end of their turn, then this effect ends. They can ignore this effect by ending their turn adjacent to an ally."
+      "Effects": "Any non-relict character in the area takes fray damage three times at the end of their turn, then this effect ends. They can ignore this effect by ending their turn adjacent to an ally."
     },
     {
       "Name": "Unholy",
@@ -46,7 +46,7 @@
       "Hit": "2[D]+[fray] and foe is shattered.",
       "Miss": "[fray].",
       "AreaEffect": "[D].",
-      "Effect": "This action can also be made as a close blast 1 melee attack."
+      "Effects": "This action can also be made as a close blast 1 melee attack."
     },
     {
       "Name": "Vile",
@@ -66,7 +66,7 @@
       "Tags": [ "ranged attack 8"],
       "Hit": "6[D].",
       "Miss": "3[D].",
-      "Effect": "This attack can't lower a character past 1 hp."
+      "Effects": "This attack can't lower a character past 1 hp."
     }
   ],
   "PhasesDescription": "The lich progress through its three phases in order (I>III, then back to I), starting with phase I, then swapping to the next phase each round.",

@@ -2,13 +2,20 @@
   "Name": "Tomb Guard",
   "Inherits": "Wight",
   "Type": "Foe",
-  "Traits": [ "Duty of Death" ],
+  "Interrupts": [
+    {
+      "Name": "Withstand",
+      "Count": 1,
+      "Trigger": "When self or an adjacent ally is targeted by an attack.",
+      "Effects": "Grant resistance against that attack."
+    }
+  ],
   "Actions": [
     {
       "Name": "Bash",
       "ActionCost": 1,
       "Tags": [ "repeatable" ],
-      "Description": "An adjacent foe is shoved 1 and must save or become winded. Winded foes take [D].",
+      "Description": "An adjacent foe is shoved 1 and must save or become winded.",
       "Collide": "Foe fails the save."
     }
   ]

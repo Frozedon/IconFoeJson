@@ -9,7 +9,7 @@
       "Tags": [ "melee attack 2", "true strike" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
-      "Effect": "All foes in range 2 take 2 damage."
+      "Effects": "All foes in range 2 take 2 damage."
     },
     {
       "Name": "Swing Shovel",

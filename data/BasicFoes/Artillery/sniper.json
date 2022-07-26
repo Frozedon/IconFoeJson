@@ -15,7 +15,7 @@
       "Tags": [ "ranged attack 6", "pierce" ],
       "Hit": "2[D]+[fray].",
       "Miss": "[fray].",
-      "Effect": "Cannot target characters in range 2."
+      "Effects": "Cannot target characters in range 2."
     }
   ]
 }

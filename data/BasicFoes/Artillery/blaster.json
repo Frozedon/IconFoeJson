@@ -11,7 +11,7 @@
       "Hit": "2[D].",
       "Miss": "1 damage.",
       "AreaEffect": "1 damage.",
-      "Effect": [
+      "Effects": [
         "Deal 2 piercing damage again to all characters for each character caught in the area.",
         "Attack target is burning. If attack targets a burning character, increase blast size to 2."
       ]

@@ -9,7 +9,7 @@
       "Tags": [ "melee attack" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
-      "Effect": "Becomes a critical hit (+[D]) against dazed foes."
+      "Effects": "Becomes a critical hit (+[D]) against dazed foes."
     },
     {
       "Name": "Roundhouse Kick",

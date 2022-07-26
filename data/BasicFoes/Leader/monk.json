@@ -8,7 +8,7 @@
       "Name": "Intervention",
       "Count": 1,
       "Trigger": "An ally in range 3 is targeted by an ability.",
-      "Effect": "The ally gains resistance against that ability. The monk may then teleport adjacent to that ally."
+      "Effects": "The ally gains resistance against that ability. The monk may then teleport adjacent to that ally."
     }
   ],
   "Actions": [
@@ -18,7 +18,7 @@
       "Tags": [ "melee attack" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
-      "Effect": "Becomes a critical hit (+[D]) against pacified foes."
+      "Effects": "Becomes a critical hit (+[D]) against pacified foes."
     },
     {
       "Name": "Pressure Point",

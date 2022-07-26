@@ -6,14 +6,13 @@
     {
       "Name": "Hookspear",
       "ActionCost": 1,
-      "Tags": [ "repeatable" ],
-      "Description": "A foe in range 3 takes [fray] damage, is electrified, and is is shoved 2 towards the Servitor, then must save or become winded. Electrified characters fail the save."
+      "Description": "A foe in range 2 takes [fray] damage, is electrified, and is is shoved 1 towards the Servitor, then must save or become winded. Electrified characters fail the save."
     },
     {
       "Name": "Impaling Jab",
       "ActionCost": 0,
-      "Tags": [ "true strike", "line 3" ],
-      "AreaEffect": "Characters take [fray] damage."
+      "Tags": [ "line 3", "true strike" ],
+      "AreaEffect": "Characters take 2 damage."
     }
   ]
 }

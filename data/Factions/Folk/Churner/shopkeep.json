@@ -13,7 +13,7 @@
     {
       "Name": "Chastise",
       "ActionCost": 1,
-      "Effect": " A character in range 6 takes 1 piercing damage. If that character attacks before the end of their next turn, they take [D] piercing damage and this effect ends."
+      "Effects": " A character in range 6 takes 1 piercing damage. If that character attacks before the end of their next turn, they take [D] piercing damage and this effect ends."
     },
     {
       "Name": "Open Shop",

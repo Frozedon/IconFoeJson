@@ -9,7 +9,7 @@
       "Tags": [ "melee attack" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
-      "Effect": "Critical hit if made from stealth (+[D])."
+      "Effects": "Critical hit if made from stealth (+[D])."
     },
     {
       "Name": "Blackjack",

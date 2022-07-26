@@ -6,8 +6,9 @@
   "Actions": [
     {
       "Name": "Soul Flay",
-      "ActionCost": 0,
-      "Description": "A visible foe has their soul shoved out of their body and summoned in a location of the Soul Flayer's choice within range 5 of the target. While their soul is out, the character is pacified+. The Flayer can only have this effect active on one character at once. The soul doesn't take action on its own, but can be targeted as if it was the original character for abilities and effects. Damage taken via a character's soul becomes Divine damage. A character can re-unite with their soul by moving into and ending their turn in its space, ending this effect."
+      "ActionCost": 1,
+      "Tags": "end turn",
+      "Description": "A visible foes has their soul shoved out of their body and summoned in a location of the Soul Flayer's choice within range 3 of the target. While their soul is out, the character is pacified+. The Flayer can only have this effect active on one character at once. The soul doesn't take action on its own, but can be targeted as if it was the original character, transferring any damage or effects to the primary foe. Damage taken via a character's soul becomes Divine damage. A character can re-unite with their soul by moving into and ending their turn in its space, ending this effect."
     }
   ]
 }

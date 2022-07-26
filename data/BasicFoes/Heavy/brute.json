@@ -11,7 +11,7 @@
       "Tags": [ "melee attack", "true strike" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
-      "Effect": "Foe is dazed. If already dazed, they must save or become stunned."
+      "Effects": "Foe is dazed. If already dazed, they must save or become stunned."
     },
     {
       "Name": "Hurl",

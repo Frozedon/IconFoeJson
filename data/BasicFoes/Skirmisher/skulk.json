@@ -11,7 +11,7 @@
       "Tags": [ "melee attack" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
-      "Effect": "Attack is a critical hit (+[D]) if made against a blinded or slow character."
+      "Effects": "Attack is a critical hit (+[D]) if made against a blinded or slow character."
     },
     {
       "Name": "Throw Knife",

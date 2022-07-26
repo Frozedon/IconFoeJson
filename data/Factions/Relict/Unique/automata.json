@@ -1,14 +1,10 @@
 {
   "Name": "Automata",
-  "Inherits": "Relict",
+  "Inherits": [ "Relict", "Artillery" ],
   "Type": "Foe",
-  "Class": "Artillery",
-  "Vitality": 6,
   "Speed": 2,
-  "Defense": 6,
-  "FrayDamage": 4,
-  "DamageDie": 8,
-  "Traits": [ "Armor 2", "Overdrive 4", "Aetherwall", "Automata" ],
+  "RemoveTraits": "Slip",
+  "Traits": "Automata",
   "Actions": [
     {
       "Name": "Lightning Bolter",
@@ -16,7 +12,7 @@
       "Tags": [ "ranged attack 8" ],
       "Hit": "[D]+[fray] and electrify.",
       "Miss": "[fray].",
-      "Effect": "Foes in range 2 of the target take [fray] damage."
+      "Effects": "Foes in range 2 of the target take [fray] damage."
     },
     {
       "Name": "Discharge Bolt",
@@ -27,7 +23,7 @@
       "Name": "Full Auto",
       "ActionCost": 2,
       "Tags": [ "stance" ],
-      "Description": "While in this stance, this character is immobile, but all their attacks deal +[D] hit or miss, pierce, ignore cover, and gain +1 boon. They lose this stance if they are shoved or moved for any reason."
+      "Description": "While in this stance, the this character's is immobile, but all their attacks deal bonus damage, pierce, ignore cover, and gain +1 boon. They lose this stance if they are shoved or moved for any reason."
     },
     {
       "Name": "Speed Clip",

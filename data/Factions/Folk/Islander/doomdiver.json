@@ -10,7 +10,7 @@
       "Tags": [ "melee attack 2", "+1 boon" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
-      "Effect": "Deals bonus damage to foes at range 2."
+      "Effects": "Deals bonus damage to foes at range 2."
     },
     {
       "Name": "Slide",

@@ -9,7 +9,7 @@
       "Tags": [ "ranged attack 6", "pierce" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
-      "Effect": "No ranged attack penalties for adjacent foes. If attacking an adjacent foe, deals bonus damage."
+      "Effects": "No ranged attack penalties for adjacent foes. If attacking an adjacent foe, deals bonus damage."
     },
     {
       "Name": "Backflip",

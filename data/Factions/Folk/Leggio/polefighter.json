@@ -11,7 +11,7 @@
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
       "AreaEffect": "[fray].",
-      "Effect": "Shove all characters 1."
+      "Effects": "Shove all characters 1."
     },
     {
       "Name": "Rebound",

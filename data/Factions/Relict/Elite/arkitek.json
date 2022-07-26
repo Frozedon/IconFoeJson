@@ -1,15 +1,9 @@
 {
   "Name": "Arkitek",
-  "Inherits": [ "Relict", "Elite" ],
+  "Inherits": [ "Relict", "Elite", "Leader" ],
   "Type": "Foe",
-  "Class": "Leader",
   "Chapter": 2,
-  "Vitality": 10,
-  "Speed": 4,
-  "Defense": 8,
-  "FrayDamage": 3,
-  "DamageDie": 6,
-  "Traits": [ "Armor 1", "Shelter", "Diaga", "Stoneskin" ],
+  "Traits": [ "Defiance", "Stoneskin" ],
   "Actions": [
     {
       "Name": "Deep Call",
@@ -17,24 +11,36 @@
       "Tags": [ "ranged attack 6" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
-      "Effect": "The Arkitek may summon a height 1 terrain piece adjacent to its target, and the target must save or become branded."
+      "Effects": "The Arkitek may summon a height 1 dungeon ruin object adjacent to its target, and the target must save or become branded."
     },
     {
       "Name": "Reconfigure",
       "ActionCost": 1,
-      "Description": "The Arkitek teleports any number of created terrain pieces in range 4 to any other free space in range 4. Characters standing on the terrain or trapped inside are also moved with them."
+      "Description": "The Arkitek teleports any number of objects created by it or another character in range 2 to any other free space in range 2. Characters standing on or trapped inside an object are moved with them."
     },
     {
       "Name": "Pillar of Iz",
       "ActionCost": 1,
       "Recharge": 5,
-      "Description": "The Arkitek summons a height 1 destructible terrain piece in range 5, a pylon, with 10 hp. Characters on the terrain when it's created are pushed up on top of it. The Pylon has aura 1. Inside the aura, relict characters have resistance."
+      "Tags": "summon",
+      "Description": "The Arkitek summons a Pillar of Iz in range 5, pushing up characters if it's summoned under them.",
+      "Summons": {
+        "Name": "Pillar of Iz",
+        "Tags": [ "Height 2 Object", "Destructible (10 HP)" ],
+        "Effects": "Aura 1. Inside the aura, relict characters have resistance."
+      }
     },
     {
       "Name": "Entombment of Iz",
       "ActionCost": 1,
       "Recharge": 6,
-      "Description": "The Arkitek entombs a character in a magical sarcophagus. While inside, they take [D] piercing damage at the start of their turns, are winded+, immobile, and blinded, but can otherwise be targeted normally. The Sarcophagus is a height 1 terrain piece with 10 hp that is destructible. Attacks automatically hit and it is destroyed when it reaches 0. It has resistance to damage from the character inside it."
+      "Tags": "summon",
+      "Description": "The Arkitek entombs a character in a magical sarcophagus, summoning it in their space.",
+      "Summons": {
+        "Name": "Sarcophagus of Iz",
+        "Tags": [ "Object", "Destructible (10 HP)" ],
+        "Effects": "Shares space with a character. While inside, they take 3 piercing damage at the start of their turns and are immobile, but can otherwise be targeted normally. The Sarcophagus has resistance against the character inside it."
+      }
     }
   ]
 }

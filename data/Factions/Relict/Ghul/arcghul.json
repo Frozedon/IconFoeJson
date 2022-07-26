@@ -2,7 +2,7 @@
   "Name": "Arc Ghul",
   "Inherits": "Ghul",
   "Type": "Foe",
-  "Traits": [ "Living Lightning" ],
+  "Traits": "Living Lightning",
   "Actions": [
     {
       "Name": "Soul Shift",

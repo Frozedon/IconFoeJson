@@ -11,7 +11,7 @@
       "Tags": [ "melee attack 2", "true strike" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
-      "Effect": "All foes in range 2 of the Sentinel take 2 damage and are shoved 1."
+      "Effects": "All foes in range 2 of the Sentinel take 2 damage and are shoved 1."
     },
     {
       "Name": "Bash",

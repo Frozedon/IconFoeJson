@@ -2,17 +2,16 @@
   "Name": "Wailer",
   "Inherits": "Ghul",
   "Type": "Foe",
-  "RemoveActions": "Terrorize",
   "Actions": [
     {
       "Name": "Shriek",
       "ActionCost": 1,
-      "Description": "All foes in range 2 must save or be forced to flee, shoving them 3 spaces in a direction of the Feeder's choice."
+      "Description": "All foes in range 2 must save or be forced to flee, shoving them 3 spaces in a direction of the Wailer's choice, or 1 space on a successful save."
     },
     {
       "Name": "Pounce",
       "ActionCost": 0,
-      "Tags": [ "mark" ],
+      "Tags": [ "mark", "end turn" ],
       "Description": "The Wailer gains stealth. Choose a foe in range 3. If, at the end of that foe's next turn, they are still in range 3 of the Wailer, it may teleport adjacent to them and deal [D], ending this effect."
     }
   ]

@@ -12,7 +12,7 @@
       "Hit": "[D]+[fray] and inflict poisoned.",
       "Miss": "[fray].",
       "AreaEffect": "[fray].",
-      "Effect": "Attack target explodes shoving adjacent characters 1 away from them and dealing [fray] piercing damage to them."
+      "Effects": "Attack target explodes shoving adjacent characters 1 away from them and dealing [fray] piercing damage to them."
     },
     {
       "Name": "Volatile Mix",

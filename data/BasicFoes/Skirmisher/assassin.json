@@ -8,7 +8,7 @@
       "Name": "Shadow Slip",
       "Tags": [ "requires a shadow clone" ],
       "Trigger": "When targeted by an attack.",
-      "Effect": "Gain evasion against that attack, then after the attack resolves, teleport to the space of a shadow clone and replace it, removing the clone and gaining stealth. This interrupt can be repeated as long as there is at least one shadow clone."
+      "Effects": "Gain evasion against that attack, then after the attack resolves, teleport to the space of a shadow clone and replace it, removing the clone and gaining stealth. This interrupt can be repeated as long as there is at least one shadow clone."
     }
   ],
   "Actions": [
@@ -18,7 +18,7 @@
       "Tags": [ "melee attack", "+1 boon" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
-      "Effect": "Teleport 1 and gain stealth. If made from stealth, can dash 2 before and after the action."
+      "Effects": "Teleport 1 and gain stealth. If made from stealth, can dash 2 before and after the action."
     },
     {
       "Name": "Shadow Clone",

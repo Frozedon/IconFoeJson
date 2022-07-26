@@ -12,7 +12,7 @@
       "Tags": [ "melee attack" ],
       "Hit": "[D]+[fray] and shove 1.",
       "Miss": "[fray].",
-      "Effect": "May teleport up to 3 spaces before or after the attack."
+      "Effects": "May teleport up to 3 spaces before or after the attack."
     },
     {
       "Name": "Rake",
@@ -54,7 +54,7 @@
           "ActionCost": 1,
           "Tags": [ "2/round" ],
           "Description": "Mark two unoccupied spaces in range 8.",
-          "Effect": "Characters that enter that space or start their turn there are struck by a projectile, taking 3 damage twice, and ending this effect. This area lasts until triggered."
+          "Effects": "Characters that enter that space or start their turn there are struck by a projectile, taking 3 damage twice, and ending this effect. This area lasts until triggered."
         }
       ]
     },

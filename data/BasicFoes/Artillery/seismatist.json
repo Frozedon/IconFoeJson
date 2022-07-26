@@ -12,7 +12,7 @@
       "Hit": "2[D]+[fray].",
       "Miss": "[fray].",
       "AreaEffect": "[fray].",
-      "Effect": [
+      "Effects": [
         "Deals damage for every adjacent object or pit.",
         "Attack target is poisoned. Poisoned foes are shattered."
       ]

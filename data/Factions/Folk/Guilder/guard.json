@@ -8,7 +8,7 @@
       "Name": "Get Down!",
       "Count": 1,
       "Trigger": "An ally takes damage that would reduce them to 0 hp.",
-      "Effect": "The Guard can dash 3. If that puts them adjacent to their ally, that ally goes to 1 hp instead, and the guard takes divine damage equal to 25% of their max hp."
+      "Effects": "The Guard can dash 3. If that puts them adjacent to their ally, that ally goes to 1 hp instead, and the guard takes divine damage equal to 25% of their max hp."
     }
   ],
   "Actions": [

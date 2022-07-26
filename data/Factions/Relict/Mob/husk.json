@@ -2,7 +2,6 @@
   "Name": "Husk",
   "Inherits": [ "Relict", "Mob" ],
   "Type": "Foe",
-  "Traits": [ "Shambling" ],
   "Actions": [
     {
       "Name": "Latch On",

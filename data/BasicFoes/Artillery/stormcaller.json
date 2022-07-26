@@ -12,7 +12,7 @@
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
       "AreaEffect": "[fray].",
-      "Effect": [
+      "Effects": [
         "Summon a pit in a free space in the area.",
         "Attack target is frostbitten. Frosbitten characters are shattered."
       ]

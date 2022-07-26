@@ -11,7 +11,7 @@
       "Tags": [ "ranged attack 5", "cross 1" ],
       "AutoHit": "[fray].",
       "AreaEffect": "[fray].",
-      "Effect": "Does not damage allies. Deals bonus damage for each ally caught in its area of effect."
+      "Effects": "Does not damage allies. Deals bonus damage for each ally caught in its area of effect."
     },
     {
       "Name": "Cleansing Charm",

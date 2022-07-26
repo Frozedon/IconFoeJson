@@ -9,7 +9,7 @@
       "Tags": [ "ranged attack 6", "pierce" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
-      "Effect": "Dash 2, then deal [fray] piercing damage to a different character in range 6."
+      "Effects": "Dash 2, then deal [fray] piercing damage to a different character in range 6."
     },
     {
       "Name": "Carnivale",

@@ -1,34 +1,32 @@
 {
   "Name": "Necrosavant",
-  "Inherits": "Relict",
-  "Class": "Leader",
-  "Vitality": 10,
-  "Speed": 4,
-  "Defense": 8,
-  "FrayDamage": 3,
-  "DamageDie": 6,
-  "Traits": [ "Shelter", "Diaga" ],
+  "Inherits": [ "Relict", "Leader" ],
   "Actions": [
     {
       "Name": "Unholy",
-      "ActionCost": 1,
+      "ActionCost": 2,
       "Tags": [ "ranged attack 6", "blast 1" ],
-      "Hit": "[D]+[fray] and foe is branded.",
+      "Hit": "2[D]+[fray].",
       "Miss": "[fray].",
       "AreaEffect": "[fray].",
-      "Effect": "This action can also be made as a close blast 1 melee attack."
+      "Effects": "Attack target is branded. This action can also be made as a close blast 1 melee attack."
     },
     {
       "Name": "Fear",
       "ActionCost": 1,
       "Tags": [ "multimark", "repeatable" ],
-      "Description": "Mark a foe in range 6. While marked, that foe gains +1 curse on attacks and saves unless adjacent to an ally. If they end their turn adjacent to an ally, they can pass a save to clear this mark."
+      "Description": "Mark a foe in range 6. While marked, that foe gains +1 curse on attacks and saves unless adjacent to an ally. If they end their turn adjacent to an ally, they can clear this mark."
+    },
+    {
+      "Name": "Grasping Dead",
+      "ActionCost": 1,
+      "Description": "A foe in range 6 takes 2 damage, then must save. On a failed save, spectral hands grab and immobilize them until the end of their next turn. That character or an adjacent ally can use an action to end this effect, freeing them."
     },
     {
       "Name": "Raise Dead",
       "ActionCost": 2,
       "Tags": [ "1/combat" ],
-      "Description": "Restore a defeated Relict in range 6 to 50% hp and remove incapacitated."
+      "Description": "Target defeated ally in range 4 and remove incapacitated. They stop being defeated and return with 50% hp. They can act normally and take a turn starting next round."
     }
   ],
   "Chapter2": {
@@ -36,7 +34,6 @@
       {
         "Name": "Soul Shred",
         "ActionCost": 1,
-        "Chapter": 2,
         "Recharge": 4,
         "Tags": [ "multimark" ],
         "Description": "Mark a foe in range 6. While marked, that foe gains Aura 1. Allies of that foe that end their turn in the aura take [fray] piercing damage."
@@ -49,7 +46,7 @@
         "Name": "Radiance of the Black Sun",
         "ActionCost": 2,
         "Tags": [ "1/combat" ],
-        "Description": "This character becomes immobile but gains Aura 2 until the start of its next turn. While the aura is active, Relict in the area cannot be reduced past 1 hp. This Aura also deactivates if this character is stunned."
+        "Description": "This character becomes immobile but gains Aura 2 until the start of its next turn. While the aura is active, Relict other than this character in the area cannot be reduced past 1 hp. This Aura also deactivates if this character is stunned."
       }
     ]
   }

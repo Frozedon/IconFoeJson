@@ -9,7 +9,7 @@
       "ActionCost": 1,
       "Tags": [ "melee attack" ],
       "AutoHit": "[fray] damage and shove 1.",
-      "Effect": "All other adjacent foes are shoved 1."
+      "Effects": "All other adjacent foes are shoved 1."
     },
     {
       "Name": "Shoulder check",
@@ -23,7 +23,7 @@
       "Tags": [ "melee attack", "true strike" ],
       "Hit": "3[D]+[fray] and foe is stunned and shoved 1.",
       "Miss": "[fray] damage and foe is dazed.",
-      "Effect": "+1 boon against dazed characters."
+      "Effects": "+1 boon against dazed characters."
     }
   ]
 }

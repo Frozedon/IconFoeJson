@@ -10,7 +10,7 @@
       "Tags": [ "melee attack 2", "+1 boon" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
-      "Effect": "Becomes a critical hit (+[D]) against bloodied foes."
+      "Effects": "Becomes a critical hit (+[D]) against bloodied foes."
     },
     {
       "Name": "Hurl Boulder",

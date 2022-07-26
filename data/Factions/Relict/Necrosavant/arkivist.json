@@ -2,12 +2,12 @@
   "Name": "Arkivist",
   "Inherits": "Necrosavant",
   "Type": "Foe",
-  "Traits": [ "Aura of the Endless Legion" ],
+  "Traits": "Aura of the Endless Legion",
   "Actions": [
     {
       "Name": "Call the Lost",
       "ActionCost": 1,
-      "Description": "Summon 3 husks adjacent to a foe in range 8. That character must save or become branded."
+      "Description": "Summon 3 husks adjacent to a foe in range 8."
     }
   ]
 }

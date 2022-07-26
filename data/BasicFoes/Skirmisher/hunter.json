@@ -10,7 +10,7 @@
       "Tags": [ "ranged attack 6", "+1 boon" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
-      "Effect": "Has no maximum range against marked targets. Deals bonus damage when made from stealth."
+      "Effects": "Has no maximum range against marked targets. Deals bonus damage when made from stealth."
     },
     {
       "Name": "Prowl",

@@ -10,7 +10,7 @@
       "Hit": "[fray] damage, three times.",
       "Miss": "[fray].",
       "AreaEffect": "[fray].",
-      "Effect": "Can target one end of a portal. If so, the attack travels through the portal and is then retargeted to a new space or character within range 3 of the other end of the portal."
+      "Effects": "Can target one end of a portal. If so, the attack travels through the portal and is then retargeted to a new space or character within range 3 of the other end of the portal."
     },
     {
       "Name": "Whisk",

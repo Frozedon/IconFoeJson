@@ -9,7 +9,7 @@
       "Name": "Reality Break",
       "Count": 1,
       "Trigger": "The Stutterghast is Bloodied.",
-      "Effect": "The stutterghast becomes intangible until the end of its next turn."
+      "Effects": "The stutterghast becomes intangible until the end of its next turn."
     }
   ]
 }

@@ -10,7 +10,7 @@
       "ActionCost": 1,
       "Tags": [ "melee attack" ],
       "Description": "Repeat the following effect three times.",
-      "Effect": "Dash 1, then deal 2 damage to all adjacent foes. Must move in the same direction."
+      "Effects": "Dash 1, then deal 2 damage to all adjacent foes. Must move in the same direction."
     },
     {
       "Name": "Gust",
@@ -22,7 +22,7 @@
       "ActionCost": 2,
       "Recharge": 5,
       "Description": "Repeat the following effect four times.",
-      "Effect": "Teleport 1, then deal 2 damage to all adjacent foes. Must teleport to a different space each time."
+      "Effects": "Teleport 1, then deal 2 damage to all adjacent foes. Must teleport to a different space each time."
     }
   ]
 }

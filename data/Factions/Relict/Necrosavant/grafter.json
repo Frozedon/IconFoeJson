@@ -2,13 +2,13 @@
   "Name": "Grafter",
   "Inherits": "Necrosavant",
   "Type": "Foe",
-  "Traits": [ "Amalgamate" ],
+  "Traits": "Amalgamate",
   "Interrupts": [
     {
       "Name": "Split Suffering",
       "Count": 1,
       "Trigger": "A relict takes damage in range 3 of the Grafter.",
-      "Effect": "That character gains Resistance. The Grafter or a different relict in range 3 from the Grafter takes [D]."
+      "Effects": "That character gains Resistance. The Grafter or a different relict in range 3 from the Grafter takes [D]."
     }
   ]
 }

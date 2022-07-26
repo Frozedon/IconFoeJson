@@ -1,31 +1,24 @@
 {
   "Name": "Wight",
-  "Inherits": "Relict",
-  "Class": "Heavy",
-  "Vitality": 5,
-  "Speed": 3,
-  "Defense": 5,
-  "FrayDamage": 2,
-  "DamageDie": 6,
-  "Traits": [ "Armor 3", "Legion", "Shambling" ],
+  "Inherits": [ "Relict", "Heavy" ],
   "Actions": [
     {
-      "Name": "Soul Slash",
+      "Name": "Overpower",
       "ActionCost": 1,
-      "Tags": [ "true strike", "melee attack" ],
-      "Hit": "[D]+[fray] and foe is winded.",
-      "Miss": "[fray] damage.",
-      "Effect": "All foes adjacent to the target take [fray] damage."
+      "Tags": [ "melee attack", "true strike" ],
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "AreaEffect": "All foes adjacent to the target take 2 damage."
     },
     {
-      "Name": "Hilt Strike",
+      "Name": "Strike",
       "ActionCost": 1,
-      "Description": "An adjacent foe is dazed."
+      "Description": "An adjacent foe must save or become dazed. Dazed foes take [fray] damage."
     },
     {
       "Name": "Death March",
       "ActionCost": 1,
-      "Description": "The Wight and all adjacent allies may move 1 space in the same direction, ignoring engagement, then each may deal [fray] damage to an adjacent foe."
+      "Description": "The Wight and all adjacent allies may move 1 space in the same direction, ignoring engagement, then each may deal 2 damage to an adjacent foe."
     }
   ],
   "Chapter2": {
@@ -38,6 +31,6 @@
     ]
   },
   "Chapter3": {
-    "Traits": [ "Rise Again" ]
+    "Traits": "Defiance"
   }
 }

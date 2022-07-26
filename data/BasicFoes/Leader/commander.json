@@ -11,7 +11,7 @@
       "Tags": [ "melee attack" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
-      "Effect": "Up to two allies in range 3 can dash 2 spaces."
+      "Effects": "Up to two allies in range 3 can dash 2 spaces."
     },
     {
       "Name": "Coordinate Strikes",

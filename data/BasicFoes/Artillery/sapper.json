@@ -10,7 +10,7 @@
       "Tags": [ "ranged attack 8", "pierce" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
-      "Effect": "Ignores cover. One or two different foes in range 4 from the target foe also take [fray] damage."
+      "Effects": "Ignores cover. One or two different foes in range 4 from the target foe also take [fray] damage."
     },
     {
       "Name": "Flash",

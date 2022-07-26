@@ -3,7 +3,7 @@
   "Inherits": "Wight",
   "Type": "Foe",
   "Chapter": 2,
-  "Traits": [ "Counter" ],
+  "Traits": "Counter",
   "Actions": [
     {
       "Name": "Redondo",
@@ -18,10 +18,13 @@
     {
       "Name": "Javelin",
       "ActionCost": 1,
-      "Tags": [ "true strike", "ranged attack 3" ],
-      "Hit": "[D], electrify, and foe must save or become winded.",
-      "Miss": "1 damage.",
-      "Effect": "Has no maximum range against electrified characters."
+      "Tags": [ "ranged attack 5", "true strike" ],
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "Effects": [
+        "Electrify foe, and foe must save or become winded.",
+        "Has no maximum range against electrified characters."
+      ]
     }
   ]
 }

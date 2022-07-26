@@ -9,7 +9,7 @@
     {
       "Name": "Disappearing Act",
       "Trigger": "When bloodied.",
-      "Effect": "May teleport 4, then gain stealth."
+      "Effects": "May teleport 4, then gain stealth."
     }
   ],
   "Actions": [
@@ -19,7 +19,7 @@
       "Tags": [ "melee attack", "+1 boon" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
-      "Effect": [
+      "Effects": [
         "Critical hit (+[D]) against bloodied characters.",
         "Dash 1 before and after the attack."
       ]

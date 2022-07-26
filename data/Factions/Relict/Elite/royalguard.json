@@ -1,27 +1,23 @@
 {
   "Name": "Royal Guard",
-  "Inherits": [ "Relict", "Elite" ],
+  "Inherits": [ "Relict", "Elite", "Heavy" ],
   "Type": "Foe",
-  "Class": "Heavy",
-  "Vitality": 10,
-  "Speed": 3,
-  "Defense": 5,
-  "FrayDamage": 4,
-  "DamageDie": 6,
-  "Traits": [ "Armor 3", "Fortify", "Sturdy", "Size 2" ],
+  "Traits": "Size 2",
   "Actions": [
     {
       "Name": "Battalion of Limbs",
       "ActionCost": 1,
-      "Tags": [ "melee attack", "multiattack", "true strike" ],
-      "Hit": "[D]+[fray].",
+      "Tags": [ "melee attack", "true strike", "multimark" ],
+      "Hit": "[D]+[fray] and foe is marked.",
       "Miss": "[fray].",
-      "Effect": "After the royal guard damages a foe with this attack, they mark that foe. This mark can be placed on any number of characters and stacks indefinitely. For each stack of the mark, this attack deals +[D] on hit or miss. A character can save against this mark at the end of their turn to clear all stacks, but only if they are not adjacent to the royal guard."
+      "Effects": "The Royal Guard deals [fray] damage to all adjacent foes.",
+      "Mark": "This mark can be placed more than once and stacks indefinitely. For each stack of the mark, this attack deals +[D] on hit or miss. A character can save against this mark at the end of their turn to clear all stacks, but only if they are not adjacent to the royal guard."
     },
     {
       "Name": "Ball Lightning",
       "ActionCost": 1,
-      "Description": "A character in range 6 must save. On a failed save, they take [D]+fray and are electrified, then as an area effect any of their allies in range 2 of them take fray damage."
+      "Tags": "true strike",
+      "Description": "A character in range 6 must save. On a failed save, they take [D]+[fray] and are electrified, then as an area effect any of their allies in range 2 of them take [fray] damage."
     },
     {
       "Name": "Vortex",
@@ -33,7 +29,7 @@
       "ActionCost": 2,
       "Recharge": 5,
       "Description": "Repeat this effect three times:",
-      "Effect": "The Royal Guard dashes 2, then deals [D] to all adjacent characters, then shoves them 1. It gains phasing during this action."
+      "Effects": "The Royal Guard dashes 2, then deals [D] to all adjacent characters, then shoves them 1. It gains phasing during this action and must take each of these dashes in the same direction."
     }
   ]
 }

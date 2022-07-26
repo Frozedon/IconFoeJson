@@ -10,7 +10,7 @@
       "Tags": [ "ranged attack 5", "+1 boon" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
-      "Effect": "May dash 1 before and after the attack. Ignores cover and deals bonus damage against bloodied foes."
+      "Effects": "May dash 1 before and after the attack. Ignores cover and deals bonus damage against bloodied foes."
     },
     {
       "Name": "Glare",
@@ -24,7 +24,7 @@
       "Tags": [ "ranged attack 5" ],
       "Hit": "Deal 2 damage five times.",
       "Miss": "Two times.",
-      "Effect": "Ignores cover."
+      "Effects": "Ignores cover."
     }
   ]
 }

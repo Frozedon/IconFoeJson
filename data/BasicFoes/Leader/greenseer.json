@@ -11,7 +11,7 @@
       "Tags": [ "melee attack or ranged attack 6" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
-      "Effect": "Deals bonus damage and inflicts branded if a character is inside dangerous or difficult terrain."
+      "Effects": "Deals bonus damage and inflicts branded if a character is inside dangerous or difficult terrain."
     },
     {
       "Name": "Vine Lash",

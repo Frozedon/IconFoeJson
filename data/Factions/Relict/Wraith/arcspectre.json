@@ -11,7 +11,7 @@
       "Hit": "[D] three times.",
       "Miss": "[D].",
       "AreaEffect": "[D].",
-      "Effect": "All foes must save or become electrified and vulnerable. Electrified characters fail the save."
+      "Effects": "All foes must save or become electrified and vulnerable. Electrified characters fail the save."
     }
   ]
 }

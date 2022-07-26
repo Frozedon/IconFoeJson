@@ -29,7 +29,7 @@
       "ActionCost": 2,
       "Tags": "true strike",
       "Description": "The Sailor winds up for a massive blow. An adjacent foe must save or take 3[D]+[fray] and become dazed, or just [D]+[fray] on a successful save.",
-      "Effect": "The Sailor takes damage equal to 25% of their max hp."
+      "Effects": "The Sailor takes damage equal to 25% of their max hp."
     }
   ]
 }

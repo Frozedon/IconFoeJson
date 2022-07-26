@@ -3,13 +3,18 @@
   "Inherits": "Necrosavant",
   "Type": "Foe",
   "Chapter": 3,
-  "Traits": [ "Eternal War" ],
+  "Traits": "Eternal War",
   "Actions": [
     {
       "Name": "Entombment of Iz",
       "ActionCost": 1,
       "Recharge": 6,
-      "Description": "The Immortalist entombs a character in a magical sarcophagus. While inside, they are immobile, winded+, and are blinded, but can otherwise be targeted normally. The Sarcophagus is a height 1 terrain piece with 10 hp that is destructible. Attacks automatically hit and it is destroyed when it reaches 0. It has resistance to damage from the character inside it."
+      "Description": "The Immortalist entombs a character in a magical sarcophagus, summoning it in their space.",
+      "Summons": {
+        "Name": "Sarcophagus of Iz",
+        "Tags": [ "Object", "Destructible (10 HP)" ],
+        "Effects": "Shares space with a character. While inside, they take 3 piercing damage at the start of their turns and are immobile, but can otherwise be targeted normally. The Sarcophagus has resistance against the character inside it."
+      }
     }
   ]
 }

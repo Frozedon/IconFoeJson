@@ -10,7 +10,7 @@
       "Tags": [ "ranged attack 8" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
-      "Effect": "All characters in range 2 of the foe are shoved 1 towards or away from that character (Disruptor chooses)."
+      "Effects": "All characters in range 2 of the foe are shoved 1 towards or away from that character (Disruptor chooses)."
     },
     {
       "Name": "Anchor",

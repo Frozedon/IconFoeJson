@@ -24,7 +24,7 @@
           "Tags": [ "melee attack", "pierce" ],
           "Hit": "[D].",
           "Miss": "1 damage.",
-          "Effect": "Deals 1 additional piercing damage once for every minion adjacent to the target."
+          "Effects": "Deals 1 additional piercing damage once for every minion adjacent to the target."
         },
         {
           "Name": "Great Puppeteer",

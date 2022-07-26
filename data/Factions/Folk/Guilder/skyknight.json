@@ -9,7 +9,7 @@
       "Tags": [ "melee attack", "true strike" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
-      "Effect": "Deals bonus damage and winds on hit if the knight is bloody."
+      "Effects": "Deals bonus damage and winds on hit if the knight is bloody."
     },
     {
       "Name": "Strike",

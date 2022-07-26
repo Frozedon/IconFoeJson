@@ -1,14 +1,8 @@
 {
   "Name": "Silent One",
-  "Inherits": "Relict",
+  "Inherits": [ "Relict", "Leader" ],
   "Type": "Foe",
-  "Class": "Leader",
-  "Vitality": 10,
-  "Speed": 6,
-  "Defense": 8,
-  "FrayDamage": 3,
-  "DamageDie": 6,
-  "Traits": [ "Flying", "Shelter", "Diaga", "Ethereal" ],
+  "Traits": [ "Defiance", "Ethereal" ],
   "Actions": [
     {
       "Name": "Mournful Wail",

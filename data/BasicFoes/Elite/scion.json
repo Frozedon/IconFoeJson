@@ -12,7 +12,7 @@
       "Hit": "2[D]+[fray].",
       "Miss": "[fray].",
       "AreaEffect": "[fray].",
-      "Effect": "Foes inside are branded. Branded foes must save or become pacified."
+      "Effects": "Foes inside are branded. Branded foes must save or become pacified."
     },
     {
       "Name": "Denial",

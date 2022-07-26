@@ -10,7 +10,7 @@
       "Tags": [ "melee attack" ],
       "Hit": "[D].",
       "Miss": "1 damage.",
-      "Effect": "The rider and an ally in range 3 can each dash 1, then deal 2 damage to an adjacent foe."
+      "Effects": "The rider and an ally in range 3 can each dash 1, then deal 2 damage to an adjacent foe."
     },
     {
       "Name": "Taunt",

@@ -11,7 +11,7 @@
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
       "AreaEffect": "[fray].",
-      "Effect": "Attack target is electrified. Electrified characters can be teleported 1."
+      "Effects": "Attack target is electrified. Electrified characters can be teleported 1."
     },
     {
       "Name": "Flash Step",

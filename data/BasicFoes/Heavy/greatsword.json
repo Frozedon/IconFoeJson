@@ -8,7 +8,7 @@
       "Name": "Withstand",
       "Count": 1,
       "Trigger": "When self or an adjacent ally is target by an attack.",
-      "Effect": "Grant resistance against that attack."
+      "Effects": "Grant resistance against that attack."
     }
   ],
   "Actions": [

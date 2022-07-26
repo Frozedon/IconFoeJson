@@ -11,7 +11,7 @@
       "Tags": [ "melee attack", "line 4" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
-      "Effect": "Hellion can fly to any point on the line after the attack. Foes in the area must save or be blinded."
+      "Effects": "Hellion can fly to any point on the line after the attack. Foes in the area must save or be blinded."
     },
     {
       "Name": "Pinions",

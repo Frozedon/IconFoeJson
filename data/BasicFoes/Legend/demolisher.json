@@ -12,7 +12,7 @@
       "Tags": [ "melee attack 2", "true strike", "combo" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
-      "Effect": " Deals bonus damage for each: character is winded, dazed, or stunned.",
+      "Effects": " Deals bonus damage for each: character is winded, dazed, or stunned.",
       "Combos": [
         {
           "Name": "Battle Shout",
@@ -27,7 +27,7 @@
           "Hit": "3[D]+[fray].",
           "Miss": "[fray].",
           "AreaEffect": "[fray].",
-          "Effect": "Attack target must save or be stunned."
+          "Effects": "Attack target must save or be stunned."
         }
       ]
     },
@@ -35,7 +35,7 @@
       "Name": "Hurl Boulder",
       "ActionCost": 1,
       "Tags": [ "terrain effect", "repeatable" ],
-      "Effect": "A foe in range 3 takes 2 damage and is shoved 1, then create a height 1 boulder object next to them."
+      "Effects": "A foe in range 3 takes 2 damage and is shoved 1, then create a height 1 boulder object next to them."
     },
     {
       "Name": "Lash",

@@ -3,17 +3,20 @@
   "Inherits": "Wraith",
   "Type": "Foe",
   "Chapter": 2,
-  "Traits": [ "Unstable" ],
+  "Traits": "Unstable",
   "Actions": [
     {
       "Name": "Scouring Beam",
       "ActionCost": 2,
       "Recharge": 6,
       "Tags": [ "ranged attack", "line 10", "pierce" ],
-      "Hit": "[D] twice.",
-      "Miss": "[D].",
-      "AreaEffect": "[D].",
-      "Effect": "All foes in the area are shattered. All terrain height 1 or lower in the path is destroyed."
+      "Hit": "[D]+[fray] twice.",
+      "Miss": "[fray], twice.",
+      "AreaEffect": "[fray], twice.",
+      "Effects": [
+        "All foes in the area are shattered.",
+        "All terrain height 1 or lower in the path is destroyed."
+      ]
     }
   ]
 }

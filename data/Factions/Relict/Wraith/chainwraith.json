@@ -7,7 +7,7 @@
       "Name": "Bind",
       "ActionCost": 0,
       "Recharge": 4,
-      "Description": "The Wraith chooses two characters in range 6 of the wraith, then teleports them adjacent to each other."
+      "Description": "The Wraith chooses two characters in range 4 of the wraith and each other, then teleports them adjacent to each other."
     },
     {
       "Name": "Split Ionize",

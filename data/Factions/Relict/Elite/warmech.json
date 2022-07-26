@@ -1,14 +1,9 @@
 {
   "Name": "Warmech",
-  "Inherits": [ "Relict", "Elite" ],
+  "Inherits": [ "Relict", "Elite", "Artillery" ],
   "Type": "Foe",
-  "Class": "Artillery",
-  "Vitality": 6,
-  "Speed": 4,
-  "Defense": 6,
-  "FrayDamage": 4,
-  "DamageDie": 8,
-  "Traits": [ "Armor 2", "Overdrive 4", "Sturdy", "Size 2", "Plasma Bomb", "Arkentech Shock Shield", "Automata" ],
+  "RemoveTraits": [ "Aetherwall", "Slip" ],
+  "Traits": [ "Size 2", "Plasma Bomb", "Arkentech Shock Shield", "Automata" ],
   "Actions": [
     {
       "Name": "Long Range Beam",
@@ -17,26 +12,25 @@
       "Hit": "2[D]+[fray].",
       "Miss": "[fray].",
       "AreaEffect": "[fray].",
-      "Effect": "Ignores cover. Electrifies characters. Electrified characters take +[D], hit or miss."
+      "Effects": "Electrifies characters. Ignores cover. Critically hits electrified characters (+[D])."
     },
     {
       "Name": "Charge Boost",
       "ActionCost": 1,
-      "Description": "The Warmech flies 4. When it lands, adjacent characters are shoved 1 and electrified."
+      "Description": "The Warmech flies 4. When it lands, adjacent characters are shoved 1 and electrified. Electrified characters are teleported 1."
+    },
+    {
+      "Name": "Seekers",
+      "ActionCost": 1,
+      "Description": "All foes in range 4 take 2 piercing damage."
     },
     {
       "Name": "Perimeter Beams",
       "ActionCost": 1,
-      "Tags": [ "melee attack", "close blast 1", "pierce" ],
-      "Hit": "[D]+[fray].",
-      "Miss": "[fray].",
-      "AreaEffect": "[fray].",
-      "Effect": "Foes are shoved 2 and must save or become shattered."
-    },
-    {
-      "Name": "Seekers",
-      "ActionCost": 0,
-      "Description": "Foes in range 3 take [fray] piercing damage."
+      "Recharge": 4,
+      "Tags": [ "close blast 1", "pierce" ],
+      "AreaEffect": "Foes are shoved 2 and must save or become shattered.",
+      "Collide": "Foe takes [fray] damage and fails the save."
     }
   ]
 }

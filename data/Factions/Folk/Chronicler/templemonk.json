@@ -8,7 +8,7 @@
       "Name": "Sacrifice",
       "Count": 1,
       "Trigger": "An ally would take damage in range 6.",
-      "Effect": "This character takes damage equal to 25% of their HP. That ally gains vigor 1 before the damage is applied."
+      "Effects": "This character takes damage equal to 25% of their HP. That ally gains vigor 1 before the damage is applied."
     }
   ],
   "Actions": [
@@ -18,7 +18,7 @@
       "Tags": [ "ranged attack 6 or melee attack" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
-      "Effect": "Target must save or be shoved 3, or shoved 1 on a successful save."
+      "Effects": "Target must save or be shoved 3, or shoved 1 on a successful save."
     },
     {
       "Name": "Forbiddance",

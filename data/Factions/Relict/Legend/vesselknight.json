@@ -36,7 +36,7 @@
       "Tags": [ "melee attack 2", "true strike" ],
       "Hit": "[fray].",
       "Miss": "-.",
-      "Effect": "Foe gains a stack of Malice.",
+      "Effects": "Foe gains a stack of Malice.",
       "Combos": [
         {
           "Name": "Darklight Splitter",
@@ -45,7 +45,7 @@
           "Hit": "[fray] and target gains a stack of Malice.",
           "Miss": "-.",
           "AreaEffect": "-.",
-          "Effect": "All foes in the area gain a stack of Malice."
+          "Effects": "All foes in the area gain a stack of Malice."
         },
         {
           "Name": "Darklight Crusher",
@@ -73,7 +73,7 @@
           "Name": "Rage of Iz",
           "ActionCost": 1,
           "Tags": [ "terrain effect" ],
-          "Effect": "The Vessel roars, and its foe feels the ground trembling beneath their feet. At the end of that character's turn, the knight summons either a pit or a height 1 terrain piece under that foe. The ground erupts in a blast 1 area effect centered on this terrain, dealing 3 damage to all characters."
+          "Effects": "The Vessel roars, and its foe feels the ground trembling beneath their feet. At the end of that character's turn, the knight summons either a pit or a height 1 terrain piece under that foe. The ground erupts in a blast 1 area effect centered on this terrain, dealing 3 damage to all characters."
         },
         {
           "Name": "Damocles",
@@ -91,7 +91,7 @@
           "Name": "Dispersal",
           "Tags": [ "2/round" ],
           "Trigger": "The knight is damaged by an ability.",
-          "Effect": "The knight may teleport up to 4 spaces."
+          "Effects": "The knight may teleport up to 4 spaces."
         }
       ],
       "Actions": [
@@ -99,7 +99,7 @@
           "Name": "Soul Cleaver",
           "ActionCost": 0,
           "Tags": [ "2/round" ],
-          "Effect": "All foes in Aura 2 of the knight take 2 divine damage. Each time this ability is used again this combat, increase its damage by +2."
+          "Effects": "All foes in Aura 2 of the knight take 2 divine damage. Each time this ability is used again this combat, increase its damage by +2."
         }
       ]
     }

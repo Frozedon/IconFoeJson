@@ -2,7 +2,7 @@
   "Name": "Rift Wraith",
   "Inherits": "Wraith",
   "Type": "Foe",
-  "Traits": [ "Open Rift" ],
+  "Traits": "Open Rift",
   "Actions": [
     {
       "Name": "Boiling Curse",

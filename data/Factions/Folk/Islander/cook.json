@@ -9,7 +9,7 @@
       "Tags": [ "melee attack" ],
       "Hit": "[D]+[fray] and foe is burning.",
       "Miss": "[fray].",
-      "Effect": "Foe is branded. Critical hit (+[D]) against burning foes."
+      "Effects": "Foe is branded. Critical hit (+[D]) against burning foes."
     },
     {
       "Name": "Flapjack",

@@ -11,7 +11,7 @@
       "Tags": [ "melee attack", "true strike" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
-      "Effect": [
+      "Effects": [
         "Deals 2 damage to all foes adjacent to the archon or their target.",
         "Gains +1 boon and deals bonus damage for each of the following: character is stunned, dazed, or winded."
       ]

@@ -2,7 +2,7 @@
   "Name": "Relict",
   "Faction": "Relict",
   "Type": "Template",
-  "Traits": [ "Shuffle" ],
+  "Traits": "Legion of the Dead",
   "SetupTraits": [
     {
       "Name": "Monsters",

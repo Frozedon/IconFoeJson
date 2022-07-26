@@ -39,7 +39,7 @@
           "Summons": {
             "Name": "Great Minion",
             "Tags": [ "Size 1", "20 HP", "Defense 8", "Sturdy" ],
-            "Action": "1/round during the Master's turn, it can move 3 spaces and attack an adjacent character (true strike, melee attack, on hit: [D]+[fray] and shove 1, miss: [fray])."
+            "Actions": "1/round during the Master's turn, it can move 3 spaces and attack an adjacent character (true strike, melee attack, on hit: [D]+[fray] and shove 1, miss: [fray])."
           }
         }
       ]
@@ -66,7 +66,7 @@
           "Summons": {
             "Name": "Rally Point",
             "Tags": [ "Size 1 object", "destructible (10 HP)" ],
-            "Effect": "Aura 1. Minions in the aura are immune to all damage and Minion Assault against characters in the area deals maximum damage."
+            "Effects": "Aura 1. Minions in the aura are immune to all damage and Minion Assault against characters in the area deals maximum damage."
           }
         }
       ]

@@ -2,7 +2,7 @@
   "Name": "Guide",
   "Inherits": [ "Churner", "Leader" ],
   "Type": "Foe",
-  "Traits": [ "Aura of Surefootedness" ],
+  "Traits": "Aura of Freedom",
   "Actions": [
     {
       "Name": "Tranquilize",
@@ -17,7 +17,7 @@
     },
     {
       "Name": "Double Time",
-      "ActionCost": 2,
+      "ActionCost": 1,
       "Description": "Roll 1d6. The Guide chooses a number of allies equal to half that number, then shoves them a number of spaces equal to that number in any direction."
     }
   ]

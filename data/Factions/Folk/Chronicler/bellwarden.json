@@ -14,7 +14,7 @@
     {
       "Name": "Roundhouse Kick",
       "ActionCost": 1,
-      "Description": "An adjacent foe is shoved 1 in any direction."
+      "Description": "An adjacent foe is shoved 1 in any direction, including diagonally."
     },
     {
       "Name": "Temple Bell",
@@ -24,8 +24,8 @@
       "Delay": "Their next turn must be slow. At the start of that turn, summon a temple bell in an adjacent space.",
       "Summons": {
         "Name": "Temple Bell",
-        "Tags": [ "size 1", "object" ],
-        "Effect": "When summoned, or when a character collides with it, releases a massive ringing. All characters in range 2 except the Bellkeeper must save or become dazed. Dazed characters take [D]+[fray] damage. This effect can't trigger more than once a round. Multiple bells can be summoned at once."
+        "Tags": [ "Size 1 object" ],
+        "Effects": "When summoned, or when a character collides with it, releases a massive ringing. All characters in range 2 except the Bellkeeper must save or become dazed. Dazed characters take [D]+fray damage. This effect can't trigger more than once a round. Multiple bells can be summoned at once."
       }
     }
   ]

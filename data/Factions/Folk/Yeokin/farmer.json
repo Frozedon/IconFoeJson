@@ -2,7 +2,7 @@
   "Name": "Farmer",
   "Inherits": [ "Yeokin", "Heavy" ],
   "Type": "Foe",
-  "Traits": "Common Strength",
+  "Traits": "Strength",
   "Actions": [
     {
       "Name": "Righteous Fist",

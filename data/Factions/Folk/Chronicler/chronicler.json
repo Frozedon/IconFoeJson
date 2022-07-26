@@ -2,5 +2,5 @@
   "Name": "Chronicler",
   "Inherits": "Folk",
   "Type": "Template",
-  "Traits": [ "Great Faith" ]
+  "Traits": "Great Faith"
 }

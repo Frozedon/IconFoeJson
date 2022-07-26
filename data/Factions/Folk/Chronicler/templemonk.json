@@ -2,7 +2,7 @@
   "Name": "Temple Monk",
   "Inherits": [ "Chronicler", "Leader" ],
   "Type": "Foe",
-  "Traits": [ "Defiance" ],
+  "Traits": "Defiance",
   "Interrupts": [
     {
       "Name": "Sacrifice",
@@ -30,7 +30,7 @@
       "ActionCost": 1,
       "Tags": [ "end turn", "delay" ],
       "Description": "Usable only while bloodied. The temple monk ends their turn and gains",
-      "Delay": "Their next turn must be slow. At the start of that turn, this character and all adjacent allies gain vigor 1."
+      "Delay": "Their next turn must be slow. At the start of that turn, this character and all adjacent allies gain vigor 1 and can clear a status or blight."
     }
   ]
 }

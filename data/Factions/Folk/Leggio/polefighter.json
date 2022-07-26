@@ -22,7 +22,7 @@
       "Name": "High Flyer",
       "ActionCost": 2,
       "Tags": [ "stance", "combo" ],
-      "Description": "The Pole Fighter balances on their pole and uses it to move, ignoring all terrain penalties and engagement. While in this stance, any time they end a dash, they can shove an adjacent character 1 space, then deal fray damage to them.",
+      "Description": "The Pole Fighter balances on their pole and uses it to move, ignoring all terrain penalties and engagement. While in this stance, any time they end a dash, they can shove an adjacent character 1 space, then deal [fray] damage to them.",
       "Combos": {
         "Name": "Dive Kick",
         "ActionCost": 2,

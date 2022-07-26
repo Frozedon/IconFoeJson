@@ -10,7 +10,7 @@
       "Hit": "[fray] damage, three times.",
       "Miss": "[fray].",
       "AreaEffect": "[fray].",
-      "Effect": "Can target one end of a portal. If so, the attack travels through the portal and is then retargeted to a new space or character within range 3 of the other end of the portal"
+      "Effect": "Can target one end of a portal. If so, the attack travels through the portal and is then retargeted to a new space or character within range 3 of the other end of the portal."
     },
     {
       "Name": "Whisk",
@@ -25,8 +25,8 @@
       "Description": "The Aerothurge chooses any two free spaces on the battlefield and links them with glowing portals.",
       "Summons": {
         "Name": "Portal",
-        "Tags": [ "size 1 object" ],
-        "Effect": "Any character adjacent to a portal can spend 1 space of movement to teleport adjacent to the other portal, or vice versa."
+        "Tags": [ "Size 1 object" ],
+        "Effects": "Any character adjacent to a portal can spend 1 space of movement to teleport adjacent to the other linked portal, or vice versa."
       }
     }
   ]

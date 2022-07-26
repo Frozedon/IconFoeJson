@@ -2,5 +2,5 @@
   "Name": "Islander",
   "Inherits": "Folk",
   "Type": "Template",
-  "Traits": [ "Bravado" ]
+  "Traits": "Bravado"
 }

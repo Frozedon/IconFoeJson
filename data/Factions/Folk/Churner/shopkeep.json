@@ -7,13 +7,13 @@
       "Name": "Ban From the Shop",
       "ActionCost": 1,
       "Tags": [ "ranged attack 4", "multimark" ],
-      "AutoHit": "1 damage. Foe is marked.",
-      "Mark": "While marked, if they end their turn in the shop's aura, they are stunned and take [fray] divine damage."
+      "AutoHit": "[fray] damage. Foe is marked.",
+      "Mark": "While marked, if they end their turn in the shop's aura, they take [D]+[fray] divine damage."
     },
     {
       "Name": "Chastise",
       "ActionCost": 1,
-      "Effect": "A character in range 6 takes 1 piercing damage. If that character attacks before the end of their next turn, they take [D] piercing damage and this effect ends."
+      "Effect": " A character in range 6 takes 1 piercing damage. If that character attacks before the end of their next turn, they take [D] piercing damage and this effect ends."
     },
     {
       "Name": "Open Shop",
@@ -22,8 +22,11 @@
       "Description": "The Shopkeep opens their shop, a size 1 object summoning it in an adjacent space. It lasts until the shopkeep is defeated or this ability is used again.",
       "Summons": {
         "Name": "Shop",
-        "Tags": [ "size 1 object" ],
-        "Effect": "Aura 1. No fighting in the shop. Characters in the aura are pacified+. While the shop is active, any character in the aura can use the Rummage action, which ignores pacified.",
+        "Tags": [ "Size 1 object" ],
+        "Effects": [
+          "No fighting in the shop. Aura 1. Characters in the area are pacified+.",
+          "While the shop is active, any character in the aura can use the Rummage action, which ignores pacified."
+        ],
         "SpecialActions": {
           "Name": "Rummage",
           "ActionCost": 1,

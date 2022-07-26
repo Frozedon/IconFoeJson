@@ -2,7 +2,7 @@
   "Name": "Yaman",
   "Inherits": [ "Chronicler", "Skirmisher" ],
   "Type": "Foe",
-  "Traits": [ "Roppo" ],
+  "Traits": "Roppo",
   "Actions": [
     {
       "Name": "Axe Kick",

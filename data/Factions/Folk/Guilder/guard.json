@@ -2,7 +2,7 @@
   "Name": "Guard",
   "Inherits": [ "Guilder", "Heavy" ],
   "Type": "Foe",
-  "Traits": [ "Hold the Line 1" ],
+  "Traits": "Hold the Line 1",
   "Interrupts": [
     {
       "Name": "Get Down!",
@@ -20,7 +20,7 @@
       "Miss": "[fray]."
     },
     {
-      "Name": "Bash",
+      "Name": "Shield Strike",
       "ActionCost": 1,
       "Tags": [ "repeatable" ],
       "Description": "An adjacent foe is shoved 1 and must save or become winded. Winded foes take [D].",

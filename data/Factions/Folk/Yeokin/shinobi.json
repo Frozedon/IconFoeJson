@@ -4,7 +4,7 @@
   "Type": "Foe",
   "Actions": [
     {
-      "Name": "Whirling Blade ",
+      "Name": "Whirling Blade",
       "ActionCost": 1,
       "Tags": [ "ranged attack 4", "+1 boon" ],
       "Hit": "[D]+[fray].",
@@ -20,7 +20,7 @@
       "Summons": {
         "Name": "Shadow Clone",
         "Tags": [ "size 1", "intangible" ],
-        "Effect": "Foes adjacent to a shadow clone at the start of their turn take [fray] damage from the clone."
+        "Effects": "Foes adjacent to a shadow clone at the start of their turn take [fray] damage from the clone."
       }
     },
     {

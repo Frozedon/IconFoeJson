@@ -19,7 +19,7 @@
       "Summons": {
         "Name": "Bomb",
         "Tags": [ "1 HP", "attacks against autohit" ],
-        "Effect": " Can be shoved. When taking any amount of damage, explodes for a blast 1 area effect explosion. Characters within become vulnerable, then must save or take [D]+[fray] to characters within and become burning, or just [fray] damage."
+        "Effects": "Can be shoved. When taking any amount of damage, explodes for a blast 1 area effect explosion. Characters within become vulnerable, then must save or take [D]+[fray] to characters within and become burning, or just [fray] damage."
       }
     },
     {

@@ -11,7 +11,7 @@
   },
   {
     "Name": "Aerial Acrobat",
-    "Description": "If an attack misses this character, they may deal 2 damage to the attacker, then fly 2."
+    "Description": "If an attack misses the Aeronaut, they may deal 2 damage to the attacker, then fly 2."
   },
   {
     "Name": "Aetherwall",
@@ -46,12 +46,12 @@
     "Description": "Aura 2. Foes that end their turn in the aura lose all vigor, then take 2 piercing damage."
   },
   {
-    "Name": "Aura of Shielding",
-    "Description": "Aura 1. The abjurer and allies in the area have dodge."
+    "Name": "Aura of Freedom",
+    "Description": "Aura 1. The Guide and allies in the aura are immune to terrain effects, pits, difficult, and dangerous terrain."
   },
   {
-    "Name": "Aura of Surefootedness",
-    "Description": "Aura 1. The Guide and allies in the aura are immune to terrain effects, pits, difficult, and dangerous terrain."
+    "Name": "Aura of Shielding",
+    "Description": "Aura 1. The abjurer and allies in the area have dodge."
   },
   {
     "Name": "Aura of the Endless Legion",
@@ -95,10 +95,6 @@
     "Name": "Command Aura [X]",
     "DisplayName": "Command Aura",
     "Description": "Aura [X]. Allies in the aura have +1 boon on attacks."
-  },
-  {
-    "Name": "Common Strength",
-    "Description": "This character's abilities have Collide: [fray] damage and foe is dazed. Dazed foes take [D]+[fray] instead."
   },
   {
     "Name": "Counter",
@@ -180,7 +176,7 @@
   },
   {
     "Name": "Great Faith",
-    "Description": "If the Chronicler ends their turn with any unused actions, they can clear all statuses and blight affecting them. If they are bloodied, they also gain vigor 1."
+    "Description": "If the Chronicler ends their turn with any un-used actions, they can clear all statuses and blight affecting them. If they are bloodied, they also gain vigor 1."
   },
   {
     "Name": "Greenwalker",
@@ -259,8 +255,8 @@
     "Description": "The Rider starts combat riding a trained monster, and can also mount it as an action or by spending its standard move. While riding, the rider shares space with the monster and moves when it moves. If the two are separated, this effect ends until the monster is remounted.",
     "Summons": {
       "Name": "Tame Monster",
-      "Tags": [ "summon", "20 HP", "6 defense", "10 VIT" ],
-      "Effect": "During the rider's turn, can dash 4, then either shove a character 1 space or deal 2 damage to them."
+      "Tags": [ "Summon", "20 HP", "Defense 6", "10 VIT" ],
+      "Actions": "During the rider's turn, can dash 4, then either shove a character 1 space or deal 2 damage to them."
     }
   },
   {
@@ -361,7 +357,16 @@
   },
   {
     "Name": "Stack Dice",
-    "Description": "Once a combat, when the Churner would roll a random d6 as part of an ability, they can choose which number to roll."
+    "Description": "Once a combat, when the Churner would roll a random d6 as part of an ability, they can choose which number to roll.",
+    "Actions": {
+      "Name": "Stack Dice Move",
+      "ActionCost": 1,
+      "Description": "Roll 1d6 and move (not dash) that many spaces."
+    }
+  },
+  {
+    "Name": "Strength",
+    "Description": "This character's abilities have Collide: [fray] damage and foe is dazed. Dazed foes take [D]+[fray] instead."
   },
   {
     "Name": "Strive",

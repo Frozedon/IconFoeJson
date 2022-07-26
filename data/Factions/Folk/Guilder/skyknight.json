@@ -2,7 +2,6 @@
   "Name": "Sky Knight",
   "Inherits": [ "Guilder", "Heavy" ],
   "Type": "Foe",
-  "Traits": [ "Sturdy" ],
   "Actions": [
     {
       "Name": "Oath Sword",
@@ -13,7 +12,7 @@
       "Effect": "Deals bonus damage and winds on hit if the knight is bloody."
     },
     {
-      "Name": "Shield Bash",
+      "Name": "Strike",
       "ActionCost": 1,
       "Description": "An adjacent foe is dazed. Dazed foes take [fray] damage."
     },

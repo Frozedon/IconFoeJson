@@ -25,7 +25,7 @@
     {
       "Name": "Wild Gamble",
       "ActionCost": 1,
-      "Description": "Roll 1d6. Dash exactly that many spaces in a straight line, then deal that much damage, twice, to an adjacent foe. If no foes are adjacent, deal no damage."
+      "Description": "Roll 1d6. Dash exactly that many spaces in a straight line, or as far as possible, then deal damage equal to the spaces moved, twice, to an adjacent foe. If no foes are adjacent, deal no damage."
     }
   ]
 }

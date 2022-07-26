@@ -26,7 +26,7 @@
       "Name": "Sanctify",
       "ActionCost": 2,
       "Tags": [ "terrain effect" ],
-      "Description": "The village priest scatters salt in a close blast 1 area. Foes that end their turn in the area become pacified and burning. Allies that end their turn in the area can end a status or blight, then gain vigor 1 if they are bloodied. The area persists until this action is taken again."
+      "TerrainEffect": "The village priest scatters salt in a close blast 1 area. Foes that end their turn in the area become pacified and burning. Allies that end their turn in the area can end a status or blight, then gain vigor 1 if they are bloodied. The area persists until this action is taken again."
     }
   ]
 }

@@ -3,7 +3,7 @@
   "Inherits": "Leader",
   "Type": "Foe",
   "UsesTemplate": true,
-  "Traits": [ "Aura of Shielding" ],
+  "Traits": "Aura of Shielding",
   "Actions": [
     {
       "Name": "Cleansing Bolt",

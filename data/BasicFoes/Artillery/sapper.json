@@ -7,17 +7,22 @@
     {
       "Name": "Lob",
       "ActionCost": 1,
-      "Tags": [ "ranged attack 8", "pierce", "ignores cover" ],
+      "Tags": [ "ranged attack 8", "pierce" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
-      "Effect": "A different foe in range 4 from the target foe also takes [D]."
+      "Effect": "Ignores cover. One or two different foes in range 4 from the target foe also take [fray] damage."
+    },
+    {
+      "Name": "Flash",
+      "ActionCost": 1,
+      "Description": "A character in range 8 is vulnerable. Vulnerable foes take 2 piercing damage and become burning."
     },
     {
       "Name": "Fell Shot",
       "ActionCost": 1,
       "Tags": [ "repeatable" ],
       "Description": "Mark an unoccupied space in range 8.",
-      "AreaEffect": "Characters that enter that space or start their turn there are struck by a projectile, taking [D] damage, and ending this effect."
+      "AreaEffect": "Characters that enter that space or start their turn there are struck by a projectile, taking 2 piercing damage twice, and ending this effect."
     }
   ]
 }

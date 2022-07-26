@@ -18,7 +18,7 @@
       "AreaEffect": "All foes adjacent to the attack target take [D]."
     },
     {
-      "Name": "Hilt Strike",
+      "Name": "Strike",
       "ActionCost": 1,
       "Tags": [ "repeatable" ],
       "Description": "An adjacent foe is dazed. Dazed foes take [fray] damage."

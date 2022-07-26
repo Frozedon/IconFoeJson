@@ -3,7 +3,7 @@
   "Inherits": "Leader",
   "Type": "Foe",
   "UsesTemplate": true,
-  "Traits": [ "Sturdy" ],
+  "Traits": "Sturdy",
   "Actions": [
     {
       "Name": "Justice Fist",
@@ -11,10 +11,11 @@
       "Tags": [ "melee attack" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
-      "Effect": "Foe is branded. Shove 3 against branded characters."
+      "Effect": "Foe is branded. Shove 3 against branded characters.",
+      "Collide": "Foe is stunned."
     },
     {
-      "Name": "Seal",
+      "Name": "Chastise",
       "ActionCost": 1,
       "Description": "A character in range 6 takes 1 piercing damage. If that character attacks before the end of their next turn, they take [D] piercing damage and this effect ends."
     },
@@ -22,7 +23,7 @@
       "Name": "Shrine of Sanctuary",
       "ActionCost": 2,
       "Recharge": 6,
-      "Description": "Summon a height 1 shrine object (10 HP, attacks automatically hit). While adjacent to the shrine allies have resistance."
+      "Description": "Summon a height 1 shrine object (10 HP, attacks automatically hit). While adjacent to the shrine, allies have resistance."
     }
   ]
 }

@@ -3,16 +3,19 @@
   "Inherits": "Artillery",
   "Type": "Foe",
   "UsesTemplate": true,
-  "Traits": [ "Stoneskin" ],
+  "Traits": "Stoneskin",
   "Actions": [
     {
       "Name": "Rumble",
       "ActionCost": 2,
       "Tags": [ "ranged attack", "arc 6 + blast 1", "pierce" ],
-      "Hit": "2[D]+[fray] and inflict poisoned.",
+      "Hit": "2[D]+[fray].",
       "Miss": "[fray].",
       "AreaEffect": "[fray].",
-      "Effect": "Deals damage for every adjacent object or pit. Poisoned foes are shattered."
+      "Effect": [
+        "Deals damage for every adjacent object or pit.",
+        "Attack target is poisoned. Poisoned foes are shattered."
+      ]
     },
     {
       "Name": "Seismic Crusher",

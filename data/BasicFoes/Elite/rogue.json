@@ -1,15 +1,10 @@
 {
   "Name": "Rogue",
-  "Inherits": "Elite",
+  "Inherits": [ "Elite", "Skirmisher" ],
   "Type": "Foe",
-  "Class": "Skirmisher",
-  "Vitality": 6,
   "Speed": 5,
-  "Defense": 14,
-  "FrayDamage": 3,
-  "DamageDie": 10,
   "UsesTemplate": true,
-  "Traits": [ "Skimrisher", "Dodge", "Slippery" ],
+  "Traits": "Slippery",
   "Interrupts": [
     {
       "Name": "Disappearing Act",
@@ -24,12 +19,15 @@
       "Tags": [ "melee attack", "+1 boon" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
-      "Effect": "Critical hit (+[D]) against bloodied characters. Dash 1 before and after the attack."
+      "Effect": [
+        "Critical hit (+[D]) against bloodied characters.",
+        "Dash 1 before and after the attack."
+      ]
     },
     {
       "Name": "Vile",
       "ActionCost": 1,
-      "Description": "A foe in range 5 is slowed, and must save or take take 1 piercing damage for each space they move until the end of their next turn. Slowed foes fail the save."
+      "Description": "A foe in range 5 is slowed, and must save or take take 1 piercing damage for each space they move until the end of their next turn."
     },
     {
       "Name": "Danse Macabre",

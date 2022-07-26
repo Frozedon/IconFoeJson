@@ -30,12 +30,6 @@
         "Tags": [ "size 1", "intangible", "immobile" ],
         "Effect": "Foes adjacent to a shadow clone at the start of their turn take [fray] damage from the clone."
       }
-    },
-    {
-      "Name": "Nocturne",
-      "ActionCost": 2,
-      "Tags": [ "end turn" ],
-      "Description": "Teleport 8, then gain stealth and evasion until the start of the shadow's next turn."
     }
   ]
 }

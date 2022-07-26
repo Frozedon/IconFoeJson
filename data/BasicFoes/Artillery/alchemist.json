@@ -3,7 +3,7 @@
   "Inherits": "Artillery",
   "Type": "Foe",
   "UsesTemplate": true,
-  "Traits": [ "Insulated" ],
+  "Traits": "Insulated",
   "Actions": [
     {
       "Name": "Spray",

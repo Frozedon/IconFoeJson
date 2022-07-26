@@ -3,7 +3,7 @@
   "Inherits": "Skirmisher",
   "Type": "Foe",
   "UsesTemplate": true,
-  "Traits": [ "Slippery" ],
+  "Traits": "Slippery",
   "Actions": [
     {
       "Name": "Stab",

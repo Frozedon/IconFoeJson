@@ -1,20 +1,15 @@
 {
   "Name": "Razer",
-  "Inherits": "Legend",
+  "Inherits": [ "Legend", "Artillery" ],
   "Type": "Foe",
-  "Class": "Artillery",
-  "Vitality": 8,
   "HP": 32,
-  "Speed": 4,
-  "Defense": 6,
-  "FrayDamage": 4,
-  "DamageDie": 8,
   "UsesTemplate": true,
-  "Traits": [ "Overdrive 6", "Aetherwall", "Flying" ],
-  "PhasesDescription": "Starts in Phase I, then moves up a phase each around, looping back to Phase I after III.",
+  "RemoveTraits": "Overdrive 4",
+  "Traits": [ "Overdrive 6", "Flying" ],
+  "PhasesDescription": "Starts in Phase I, then moves up a phase at the start of each around, looping back to Phase I after III.",
   "Phases": [
     {
-      "Traits": [ "Cataclysm" ],
+      "Traits": "Cataclysm",
       "Actions": [
         {
           "Name": "Raze",
@@ -28,19 +23,20 @@
         {
           "Name": "Swat",
           "ActionCost": 1,
-          "Description": "An adjacent foe must save or be shoved 3 and shattered. On a successful save, they are shoved 1.",
+          "Description": "A foe in range 2 must save or be shoved 3 and shattered. On a successful save, they are shoved 1.",
           "Collide": "Also stunned."
         },
         {
           "Name": "Aether Split",
           "ActionCost": 1,
-          "Description": "Deal 2 damage to all adjacent foes, then teleport 2."
+          "Tags": "close blast 1",
+          "AreaEffect": "Deal 2 damage to all foes, then teleport 2."
         },
         {
           "Name": "Eruption",
           "ActionCost": 1,
-          "Tags": [ "2/round", "terrain effect" ],
-          "Description": "A Rock spire in range 5 emits a close blast 1 pool of blight, which becomes dangerous and difficult terrain."
+          "Tags": [ "1/round" ],
+          "Description": "A Rock spire in range 5 emits a close blast 1 pool of blight. Adjacent characters take 2 damage. The spire gains aura 1, which is difficult terrain."
         }
       ]
     },
@@ -57,13 +53,12 @@
           "Name": "Scorch",
           "ActionCost": 1,
           "Tags": [ "2/round" ],
-          "Description": "Choose a character in range 6. At the end of that character's turn, the Razer shoots an energy blast at them for a blast 1 explosion.",
+          "Description": "Choose a character in range 6. At the end of that character's turn, the Razer shoots an energy blast at them for a blast 1 explosion area effect.",
           "AreaEffect": "Characters within must save. On a successful save, they take [D]+[fray]. On a failed save they take 2[D]+[fray]. Rock spires in the area are destroyed."
         }
       ]
     },
     {
-      "Name": "God of Destruction",
       "Description": "As phase I and II, but:",
       "Traits": [ "Radiance", "Elden Chaos", "Aftermath" ]
     }

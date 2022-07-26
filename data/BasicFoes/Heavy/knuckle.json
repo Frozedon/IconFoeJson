@@ -3,7 +3,7 @@
   "Inherits": "Heavy",
   "Type": "Foe",
   "UsesTemplate": true,
-  "Traits": [ "Heavy Armor" ],
+  "Traits": [ "Rook", "Heavy Armor" ],
   "Actions": [
     {
       "Name": "Overpower",
@@ -11,7 +11,7 @@
       "Tags": [ "melee attack", "true strike" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
-      "AreaEffect": "All foes adjacent to the knuckle take 2 damage."
+      "AreaEffect": "All foes adjacent to the target take 2 damage."
     },
     {
       "Name": "Crushing Advance",

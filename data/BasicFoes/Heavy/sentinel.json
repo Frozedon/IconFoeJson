@@ -3,8 +3,7 @@
   "Inherits": "Heavy",
   "Type": "Foe",
   "UsesTemplate": true,
-  "RemoveTraits": [ "Armor 3" ],
-  "Traits": [ "Defiance", "Hold the Line 3" ],
+  "Traits": [ "Defiance", "Hold the Line 2" ],
   "Actions": [
     {
       "Name": "Sweep",
@@ -17,8 +16,8 @@
     {
       "Name": "Bash",
       "ActionCost": 1,
-      "Tags": [ "range 2", "repeatable" ],
-      "Description": "An adjacent foe is shoved 1 and must save or become winded.",
+      "Tags": [ "repeatable" ],
+      "Description": "A foe in range 2 is shoved 1 and must save or become winded.",
       "Collide": "Foe fails the save."
     }
   ]

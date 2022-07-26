@@ -1,0 +1,63 @@
+[
+  {
+    "Name": "Frothing Mad",
+    "Description": "Attacks gain +1 boon and can critical hit (+[D]). Always attempts to focus on the closest foe. Can choose if multiple characters are close."
+  },
+  {
+    "Name": "Great Strength",
+    "Description": "The Demolisher's abilities have Collide: Foe is dazed. Dazed foes take [D]."
+  },
+
+  {
+    "Name": "Blood Drain",
+    "Description": "Attacks ignore vigor against bloodied foes and gain +1 boon."
+  },
+  {
+    "Name": "Clinging Mists",
+    "Description": "The Nocturnal has aura 2. If there are no other characters in the aura, it gains stealth at the end of its turn, and has evasion."
+  },
+  {
+    "Name": "Hunter in the Mist",
+    "Description": "Attacks are a critical hit (+[D]) against characters with no allies or allied summons adjacent."
+  },
+  
+  {
+    "Name": "Looming Shadow",
+    "Description": "The Master has aura 1. The space is difficult terrain for hostile characters and allied characters spend 0 movement to cross spaces in the area."
+  },
+  {
+    "Name": "Lurk in the Shadows",
+    "Description": "The Master is intangible. Characters can pass through and end their turn in its space. If all its summons are destroyed, it is immediately forced into phase 2, placing any characters sharing its space into free adjacent spaces, or as close as possible."
+  },
+  {
+    "Name": "Summon Minion",
+    "Description": "When starting combat in this phase, or when entering it, summons 4 minions per player character, which can be placed in any space on the battlefield not adjacent to a character."
+  },
+  {
+    "Name": "Unique Minions",
+    "Description": "The Master summons Minions.",
+    "Summons": {
+      "Name": "Minion",
+      "Tags": [ "1 HP", "Defense 8" ],
+      "Action": "Once a round, at the start of the Master's turn, the Master may move all minions 3 spaces.",
+      "Effect": "Characters take 2 piercing damage, once, for every minion they start their turn adjacent to, then are shoved 1 in a direction of the Master's choice."
+    }
+  },
+
+  {
+    "Name": "Aftermath",
+    "Description": "After Elden Chaos activates, destroy all rock spires and clear all eruptions."
+  },
+  {
+    "Name": "Cataclysm",
+    "Description": "At the start and end of the round create 2 rock spires, height 1 objects, in free space within range 2 of a foe."
+  },
+  {
+    "Name": "Elden Chaos",
+    "Description": "At the end of the round, the Razer fires a beam of pure ancient chaos. The beam is a 3 wide line area effect that crosses through all obstacles, terrain, and goes across the whole battlefield. Characters in the area must save. On a failed save, they take 2[D]+fray, 3 times. On a successful save, then take it only once. Characters in cover gain +1 boon on the save. Effect: If overdrive has activated, this deals maximum damage."
+  },
+  {
+    "Name": "Radiance",
+    "Description": "When this phase triggers, remove the Razer from the battlefield, then place them in the center of the battlefield, or as close as possible. On their turn, they can dash 1 space, but otherwise can't make any other movement. All characters not in cover from the Razer take 3 Divine damage at the end of their turns."
+  }
+]

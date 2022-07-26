@@ -1,36 +1,28 @@
 {
-  "Name": "High Priest",
-  "Inherits": "Elite",
+  "Name": "Scion",
+  "Inherits": [ "Elite", "Leader" ],
   "Type": "Foe",
-  "Class": "Leader",
-  "Vitality": 10,
-  "Speed": 4,
-  "Defense": 8,
-  "FrayDamage": 3,
-  "DamageDie": 6,
   "UsesTemplate": true,
-  "Traits": [ "Shelter", "Diaga", "Gran Diaga" ],
-  "Interrupts": [
-    {
-      "Name": "Disappearing Act",
-      "Trigger": "When bloodied.",
-      "Effect": "May teleport 4, then gain stealth."
-    }
-  ],
+  "Traits": "Gran Diaga",
   "Actions": [
     {
       "Name": "Great Holy",
-      "ActionCost": 1,
+      "ActionCost": 2,
       "Tags": [ "ranged attack 6", "blast 2" ],
-      "Hit": "[D]+[fray].",
+      "Hit": "2[D]+[fray].",
       "Miss": "[fray].",
       "AreaEffect": "[fray].",
       "Effect": "Foes inside are branded. Branded foes must save or become pacified."
     },
     {
-      "Name": "Seal",
+      "Name": "Denial",
       "ActionCost": 1,
       "Description": "A foe in range 5 must save or become unable to attack until the end of their next turn. On a successful save, they take [fray] damage and are electrified instead. Electrified foes fail the save."
+    },
+    {
+      "Name": "Weaken",
+      "ActionCost": 1,
+      "Description": "A foe in range 5 is pacified."
     },
     {
       "Name": "Immaculate",
@@ -42,7 +34,7 @@
       "Name": "Gran Redempta",
       "ActionCost": 2,
       "Tags": [ "1/combat" ],
-      "Description": "All defeated allies in range 3 are returned to combat, with 25% hp. They can act as normal starting with the next round."
+      "Description": "All defeated allies in range 3 are revived, removing incapacitated. They stop being defeated and return with 50% hp. They can act normally and take a turn starting next round."
     }
   ]
 }

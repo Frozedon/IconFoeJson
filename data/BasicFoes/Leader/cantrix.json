@@ -24,7 +24,7 @@
     {
       "Name": "Escape",
       "ActionCost": 1,
-      "Description": "The Cantrix swaps place with its marked ally."
+      "Description": "The Cantrix swaps place with a marked ally."
     }
   ]
 }

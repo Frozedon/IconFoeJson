@@ -13,7 +13,7 @@
   ],
   "Actions": [
     {
-      "Name": "Reparte",
+      "Name": "Iron Kiss",
       "ActionCost": 1,
       "Tags": [ "melee attack" ],
       "Hit": "[D]+[fray].",
@@ -26,7 +26,7 @@
       "Description": "Dash up to 3 spaces, then deal damage to an adjacent foe equal to the number of spaces moved."
     },
     {
-      "Name": "Wit",
+      "Name": "Duel",
       "ActionCost": 1,
       "Tags": [ "mark" ],
       "Description": "Mark a character in range 3. Gain evasion against the marked character, and when the marked character takes an action, may dash 1 as an effect."

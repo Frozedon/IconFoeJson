@@ -1,17 +1,36 @@
 {
   "Name": "Demolisher",
-  "Inherits": "Legend",
+  "Inherits": [ "Legend", "Heavy" ],
   "Type": "Foe",
-  "Class": "Heavy",
-  "Vitality": 10,
   "HP": 40,
-  "Speed": 3,
-  "Defense": 6,
-  "FrayDamage": 4,
-  "DamageDie": 6,
   "UsesTemplate": true,
-  "Traits": [ "Fortify", "Armor 3", "Size 2", "Heavy", "Strength" ],
+  "Traits": [ "Size 2", "Sturdy", "Great Strength" ],
   "Actions": [
+    {
+      "Name": "Pound",
+      "ActionCost": 1,
+      "Tags": [ "melee attack 2", "true strike", "combo" ],
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "Effect": " Deals bonus damage for each: character is winded, dazed, or stunned.",
+      "Combos": [
+        {
+          "Name": "Battle Shout",
+          "ActionCost": 1,
+          "Tags": [ "end turn" ],
+          "Description": "Characters in range 3 take [fray] damage and are shoved 1 towards the Demolisher."
+        },
+        {
+          "Name": "Massive Impact",
+          "ActionCost": 2,
+          "Tags": [ "melee attack", "close blast 1" ],
+          "Hit": "3[D]+[fray].",
+          "Miss": "[fray].",
+          "AreaEffect": "[fray].",
+          "Effect": "Attack target must save or be stunned."
+        }
+      ]
+    },
     {
       "Name": "Hurl Boulder",
       "ActionCost": 1,
@@ -21,13 +40,7 @@
     {
       "Name": "Lash",
       "ActionCost": 1,
-      "Description": "The Demolisher whips a chain, hook, or tongue around a foe in range 5, shoving them 3 spaces towards the Demolisher."
-    },
-    {
-      "Name": "Charge",
-      "ActionCost": 1,
-      "Tags": [ "1/round" ],
-      "Description": "Dash 4 in a straight line. All characters it passes over are shoved 1 to the side and take [fray] damage."
+      "Description": "The Demolisher whips a chain, hook, or weapon around a foe in range 5, shoving them 3 spaces towards the Demolisher."
     }
   ],
   "PhasesDescription": "Starts in Phase I and enters Phase II when bloodied.",
@@ -35,59 +48,27 @@
     {
       "Actions": [
         {
-          "Name": "Pound",
+          "Name": "Charge",
           "ActionCost": 1,
-          "Tags": [ "melee attack 2", "true strike", "combo" ],
-          "Hit": "[D]+[fray].",
-          "Miss": "[fray].",
-          "Effect": "Deals bonus damage against winded, dazed, or stunned characters.",
-          "Combos": [
-            {
-              "Name": "Roar",
-              "ActionCost": 1,
-              "Tags": [ "end turn" ],
-              "Description": "Characters in range 3 take 3 damage, and are shoved 1 towards the Demolisher."
-            },
-            {
-              "Name": "Smash",
-              "ActionCost": 2,
-              "Tags": [ "melee attack", "close blast 1" ],
-              "Hit": "3[D]+[fray].",
-              "Miss": "[fray].",
-              "AreaEffect": "[fray].",
-              "Effect": "Attack target is stunned."
-            }
-          ]
+          "Tags": [ "1/round" ],
+          "Description": "Dash 4 in a straight line. All characters the Demolisher passes over are shoved 1 to the side and take [fray] damage."
         }
       ]
     },
     {
-      "Traits": [ "Tantrum", "Great Enrage" ],
+      "Traits": [ "Frothing Mad", "Great Enrage" ],
       "Actions": [
         {
-          "Name": "Pound",
+          "Name": "Charge",
           "ActionCost": 1,
-          "Tags": [ "melee attack 2", "true strike", "combo" ],
-          "Hit": "[D]+[fray].",
-          "Miss": "[fray].",
-          "Effect": "Deals bonus damage against winded, dazed, or stunned characters.",
-          "Combos": [
-            {
-              "Name": "Smash",
-              "ActionCost": 2,
-              "Tags": [ "melee attack", "close blast 1" ],
-              "Hit": "3[D]+[fray].",
-              "Miss": "[fray].",
-              "AreaEffect": "[fray].",
-              "Effect": "Attack target is stunned."
-            }
-          ]
+          "Tags": [ "3/round" ],
+          "Description": "Dash 4 in a straight line. All characters the Demolisher passes over are shoved 1 to the side and take [fray] damage."
         },
         {
           "Name": "Great Lash",
           "ActionCost": 1,
           "Tags": [ "1/round" ],
-          "Description": "The Demolisher whips a chain, hook, or tongue around all foes in range 5. They are shoved 3 spaces towards the demolisher."
+          "Description": "The Demolisher whips a chain or hook around all foes in range 5. They are shoved 3 spaces towards the Demolisher."
         }
       ]
     }

@@ -1,30 +1,24 @@
 {
   "Name": "Nocturnal",
-  "Inherits": "Legend",
+  "Inherits": [ "Legend", "Skirmisher" ],
   "Type": "Foe",
-  "Class": "Skirmisher",
-  "Vitality": 8,
-  "HP": 32,
-  "Speed": 4,
-  "Defense": 12,
-  "FrayDamage": 3,
-  "DamageDie": 10,
+  "HP": 24,
   "UsesTemplate": true,
-  "Traits": [ "Skirmisher", "Dodge", "Hunter in the Mist" ],
+  "Traits": "Hunter in the Mist",
   "Actions": [
+    {
+      "Name": "The Horror",
+      "ActionCost": 1,
+      "Tags": [ "melee attack" ],
+      "Hit": "[D]+[fray] and shove 1.",
+      "Miss": "[fray].",
+      "Effect": "May teleport up to 3 spaces before or after the attack."
+    },
     {
       "Name": "Rake",
       "ActionCost": 1,
       "Tags": [ "line 4", "repeatable" ],
       "AreaEffect": "Foes in the area take [fray] damage. The Nocturnal may teleport to any space in the area after this action resolves."
-    },
-    {
-      "Name": "The Horror",
-      "ActionCost": 1,
-      "Tags": [ "melee attack" ],
-      "Hit": "[D]+[fray].",
-      "Miss": "[fray].",
-      "Effect": "May teleport up to 3 spaces before or after the attack."
     },
     {
       "Name": "Disappear",
@@ -33,28 +27,34 @@
       "Description": "Remove the Nocturnal from the battlefield and place them in any free space."
     }
   ],
-  "PhasesDescription": "Phase change triggers at the start of the Nocturnal's first turn each round past the first. The Nocturnal starts in phase II and can shift up or down one phase (so it can't shift from I to III for example). It must shift phases.",
+  "PhasesDescription": "Phase change triggers at the start of each round. The Nocturnal starts in phase II and can shift up or down one phase (so it can't shift from I to III for example). It must shift phases.",
   "Phases": [
     {
-      "Traits": [ "Clinging Mists" ],
+      "Traits": "Clinging Mists",
       "Actions": [
+        {
+          "Name": "Paranoia",
+          "ActionCost": 1,
+          "Tags": [ "multimark", "1/round" ],
+          "Description": "A foe in range 6 is marked. While marked, they cannot target allies with abilities and effects. A character can save at the end of their turn to clear this mark, ending it on a success."
+        },
         {
           "Name": "Amygdala",
           "ActionCost": 1,
-          "Tags": [ "multimark", "1/round" ],
-          "Description": "All foes in range 3 are forced to flee. They must save or be marked and shoved 2 in a direction of the Nocturnal's choice. While marked, at the start of their turns, the Nocturnal can shove them 2 in a direction of its choice. They can save at the end of their turns to end this mark."
+          "Tags": [ "1/round" ],
+          "Description": "All foes in range 3 are forced to flee. They must save or be shoved 2 spaces in a direction of the Nocturnal's choice. At the start of their next turn, even if they saved successfully, the Nocturnal can shove them 2 in a direction of its choice."
         }
       ]
     },
     {
-      "Traits": [ "Blood Drain" ],
+      "Traits": "Blood Drain",
       "Actions": [
         {
-          "Name": "Fell Shot",
+          "Name": "Great Fell Shot",
           "ActionCost": 1,
           "Tags": [ "2/round" ],
-          "Description": "Mark two unoccupied spaces in range 4.",
-          "Effect": "Characters other than the Nocturnal that enter that space are struck by a projectile, taking [D]. The spaces last until triggered."
+          "Description": "Mark two unoccupied spaces in range 8.",
+          "Effect": "Characters that enter that space or start their turn there are struck by a projectile, taking 3 damage twice, and ending this effect. This area lasts until triggered."
         }
       ]
     },
@@ -69,8 +69,8 @@
         {
           "Name": "Open Wound",
           "ActionCost": 1,
-          "Tags": [ "multimark" ],
-          "Description": "A foe in range 4 is marked. While marked, when that foe is shoved, they take 2 damage. A foe can save against this effect at the end of their turn, ending the mark."
+          "Tags": [ "multimark", "1/round" ],
+          "Description": "A foe in range 4 is marked. While marked, when that foe is shoved, they take [fray] damage. A foe can save against this effect at the end of their turn, ending the mark."
         }
       ]
     }

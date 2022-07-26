@@ -3,15 +3,15 @@
   "Inherits": "Heavy",
   "Type": "Foe",
   "UsesTemplate": true,
-  "Traits": [ "Size 2" ],
+  "Traits": "Size 2",
   "Actions": [
     {
-      "Name": "Clobber",
+      "Name": "Backhand",
       "ActionCost": 1,
       "Tags": [ "melee attack", "true strike" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
-      "Effect": "Foe must save or become dazed. If already dazed, they are stunned instead on a failed save."
+      "Effect": "Foe is dazed. If already dazed, they must save or become stunned."
     },
     {
       "Name": "Hurl",

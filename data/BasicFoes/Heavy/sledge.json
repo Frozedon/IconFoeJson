@@ -14,12 +14,12 @@
     {
       "Name": "Shoulder check",
       "ActionCost": 1,
-      "Description": "Dash 1 and gain Vigilance 1. Smite recharges."
+      "Description": "Dash 1 and gain vigilance 1. Smite recharges."
     },
     {
       "Name": "Smite",
-      "ActionCost": 1,
-      "Recahrge": 6,
+      "ActionCost": 2,
+      "Recharge": 6,
       "Tags": [ "melee attack", "true strike" ],
       "Hit": "3[D]+[fray] and foe is stunned and shoved 1.",
       "Miss": "[fray] damage and foe is dazed.",

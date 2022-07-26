@@ -13,7 +13,7 @@
   ],
   "Actions": [
     {
-      "Name": "Fist of Punishment",
+      "Name": "Punishment",
       "ActionCost": 1,
       "Tags": [ "melee attack" ],
       "Hit": "[D]+[fray].",

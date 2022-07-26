@@ -8,13 +8,13 @@
       "Name": "Bolt",
       "ActionCost": 1,
       "Tags": [ "ranged attack 8" ],
-      "Hit": "[D]+[fray] and inflict poisoned.",
+      "Hit": "[D]+[fray].",
       "Miss": "[fray]."
     },
     {
-      "Name": "Piercing Shard",
+      "Name": "Vile",
       "ActionCost": 1,
-      "Description": "A character in range 8 is vulnerable and must save. On a failed save, they take 1 piercing damage for each space they move until the end of their next turn."
+      "Description": "A foe in range 5 is vulnerable, and must save or take take 1 piercing damage for each space they move until the end of their next turn."
     },
     {
       "Name": "Riven",

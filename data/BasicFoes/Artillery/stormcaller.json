@@ -3,16 +3,25 @@
   "Inherits": "Artillery",
   "Type": "Foe",
   "UsesTemplate": true,
-  "Traits": [ "Flying" ],
+  "Traits": "Flying",
   "Actions": [
     {
       "Name": "Geyser",
       "ActionCost": 1,
       "Tags": [ "ranged attack 8", "cross 1", "pierce" ],
-      "Hit": "[D]+[fray] and inflict frostbite.",
+      "Hit": "[D]+[fray].",
       "Miss": "[fray].",
       "AreaEffect": "[fray].",
-      "Effect": "Summon a pit in a free space in the area. Frosbitten characters are vulnerable."
+      "Effect": [
+        "Summon a pit in a free space in the area.",
+        "Attack target is frostbitten. Frosbitten characters are shattered."
+      ]
+    },
+    {
+      "Name": "Frozen Spear",
+      "ActionCost": 1,
+      "Tags": [ "range 6", "line 4" ],
+      "Description": "Foes take 2 piercing damage and one foe is frostbitten. Frostbitten foes take 2 piercing damage, twice."
     },
     {
       "Name": "Summon Storm",

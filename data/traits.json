@@ -15,7 +15,7 @@
   },
   {
     "Name": "Aetherwall",
-    "Description": "Cover from ranged attacks further away than range 2."
+    "Description": "Gains automatic cover against all attacks that originate outside of range 2 from them. (Cover grants resistance against ranged attacks, reducing it by 1/2)"
   },
   {
     "Name": "Aftermath",
@@ -80,14 +80,6 @@
     ]
   },
   {
-    "Name": "Brood Legion",
-    "Description": "When starting combat in this phase, or when entering it, summon 5 of its brood summons per player character, which can be placed in any space on the battlefield not within range 2 of players."
-  },
-  {
-    "Name": "Brood Minions",
-    "Description": "The Broodlord has a set of unique Brood Minions. It can summon any combination of the following minions, which all have defense 8 and 1 hp by default. They can move 3 spaces at the start of the Brood Lord's turn, otherwise cannot take actions by themselves unless specified.\n• Clawing Brood: Foes treat spaces adjacent clawing brood as engagement.\n• Grappler Brood: Characters that start their turn next to a Grappler brood are shoved 2 in a direction of the Brood Lord's choice.\n• Crusher Brood: Characters that start their turn adjacent to 1 or more crusher brood take [D] piercing damage."
-  },
-  {
     "Name": "Bullheaded",
     "Description": "Has resistance unless suffering from a status."
   },
@@ -98,10 +90,6 @@
   {
     "Name": "Cataclysm",
     "Description": "At the start and end of the round create 2 rock spires, height 1 objects, in free space within range 2 of a foe."
-  },
-  {
-    "Name": "Clinging Mists",
-    "Description": "The Nocturnal gains stealth at the end of its turn and has evasion if there are no other characters in range 2."
   },
   {
     "Name": "Command Aura [X]",
@@ -126,25 +114,21 @@
       {
         "Name": "Diaga",
         "ActionCost": 1,
-        "Description": "An ally in range 4 can save, ending a mark, status, or blight on a successful save. If that ally is bloodied, they also gain vigor 1."
+        "Description": "An ally in range 4 can end a status or blight. If that ally is bloodied, they also gain vigor 1."
       }
     ]
   },
   {
     "Name": "Divine Presence",
-    "Description": "Immune to stun"
+    "Description": "Immune to stun."
   },
   {
     "Name": "Dodge",
-    "Description": "Immune to damage from successful saves, area effects, or missed attacks."
+    "Description": " Immune to damage from missed attacks, area effects, and successful saves."
   },
   {
     "Name": "Duty of Death",
     "Description": "Adjacent allies to this character without this trait have dodge."
-  },
-  {
-    "Name": "Elden Chaos",
-    "Description": "At the end of the round, the Razer fires a beam of pure ancient chaos. The beam is a 3 wide line area effect that crosses through all obstacles, terrain, and goes across the whole battlefield. Characters in the area must save. On a failed save, they take 2[D]+[fray], 3 times. On a successful save, then take it only once. Characters in cover gain +1 boon on the save. Effect: If overdrive has activated, this deals maximum damage."
   },
   {
     "Name": "Elite",
@@ -184,11 +168,11 @@
   },
   {
     "Name": "Fortify",
-    "Description": "This character gains Vigilance 1 at the end of their turn."
+    "Description": "At the end of their turn, gains vigilance 1."
   },
   {
     "Name": "Gran Diaga",
-    "Description": "Aura 1. At the start of this character's turn, allies in the aura can end a status affecting them."
+    "Description": "Aura 1. At the start of this character's turn, allies in the aura can end a status or blight affecting them. If they are bloodied, they also gain vigor 1."
   },
   {
     "Name": "Great Enrage",
@@ -205,14 +189,6 @@
   {
     "Name": "Grit",
     "Description": "Sturdy when bloodied."
-  },
-  {
-    "Name": "Hunter in the Mist",
-    "Description": "Attacks are a critical hit (+[D]) against characters with no allies or allied summons adjacent."
-  },
-  {
-    "Name": "Heavy",
-    "Description": "Immune to shove."
   },
   {
     "Name": "Heavy Armor",
@@ -243,13 +219,13 @@
         "Name": "Juggernaut",
         "ActionCost": 0,
         "Tags": [ "1/round" ],
-        "Description": "Clear a status, mark, or all blights."
+        "Description": "Clear a status, mark, or all blights affecting this character."
       }
     ]
   },
   {
     "Name": "Legend",
-    "Description": "Takes 1 turn after every player character turn. If slow, only one of its turns is affected."
+    "Description": "Takes 1 turn after every player character takes a turn. If slow, only one of its turns is affected."
   },
   {
     "Name": "Legion",
@@ -264,14 +240,6 @@
     "Name": "Living Statue",
     "Description": "Cannot dash. When defeated, becomes a height 2 piece of terrain.",
     "DashMultiplier": 0
-  },
-  {
-    "Name": "Looming Shadow",
-    "Description": "The Brood Lord's space is difficult terrain for hostile characters and allied characters spend 0 movement to cross spaces in the area."
-  },
-  {
-    "Name": "Lurk",
-    "Description": "The Brood Lord is intangible. Characters can pass through and end their turn in its space. If all its summons are destroyed, it is immediately forced into phase II, placing any characters sharing its space into free adjacent spaces, or as close as possible."
   },
   {
     "Name": "Malice",
@@ -305,7 +273,7 @@
   },
   {
     "Name": "Overdrive [X]",
-    "Description": "Attacks are all critical hits on hit at round [X] or later."
+    "Description": "All attacks after round [X] are critical hits on hit [+D]."
   },
   {
     "Name": "Partner Work",
@@ -320,16 +288,16 @@
     "Description": "At the start of the round, the Warmech fires a plasma bomb into the air, targeted on any visible space. The bomb marks a blast 2 area visible to all characters. At the end of the round, the bomb comes down as an area effect. Characters in the area must save or take 2[D]+[fray] and become stunned, or [D]+[fray] on a successful save. The targeted space then becomes a pit. The Warmech is immune to its own bombs."
   },
   {
-    "Name": "Radiance",
-    "Description": "Immobile. All characters not in cover from the Razer take 3 Divine damage at the end of their turns."
-  },
-  {
     "Name": "Release Passengers",
     "Description": "When defeated, summon 5 relict husk mobs in or adjacent to its space."
   },
   {
     "Name": "Rise Again",
     "Description": "This character has a chance to rise again when defeated. Roll 1d6 at the start of each round. On a 4+, this character gets back up at 25% hp. If all characters with this trait are defeated, it deactivates."
+  },
+  {
+    "Name": "Rook",
+    "Description": "Grants cover to adjacent allies."
   },
   {
     "Name": "Roppo",
@@ -361,8 +329,8 @@
     "Description": "This character takes up a [X] by [X] area of spaces."
   },
   {
-    "Name": "Skirmisher",
-    "Description": "Can move diagonally and dash action is full speed.",
+    "Name": "Skirmish",
+    "Description": "Can move diagonally, and dash moves full speed.",
     "DashMultiplier": 1
   },
   {
@@ -370,8 +338,18 @@
     "Description": "When a character collides from this character's shoves, they are dazed. Dazed characters also take [D]+[fray]."
   },
   {
+    "Name": "Slip",
+    "Actions": [
+      {
+        "Name": "Slip",
+        "ActionCost": 1,
+        "Description": "Remove self from the battlefield, then return within 1 space."
+      }
+    ]
+  },
+  {
     "Name": "Slippery",
-    "Description": "Has evasion while bloodied."
+    "Description": "While bloodied, has evasion."
   },
   {
     "Name": "Soul Mastery",
@@ -384,10 +362,6 @@
   {
     "Name": "Stack Dice",
     "Description": "Once a combat, when the Churner would roll a random d6 as part of an ability, they can choose which number to roll."
-  },
-  {
-    "Name": "Strength",
-    "Description": "The Demolisher's abilities have Collide: Foe is dazed. Dazed foes take [D]."
   },
   {
     "Name": "Strive",
@@ -415,10 +389,6 @@
   {
     "Name": "Surreality",
     "Description": "Starts at 50% hp with vigor 1."
-  },
-  {
-    "Name": "Tantrum",
-    "Description": "Gain hatred of the closest character at the start of each of its turns. Can choose if multiple characters are close."
   },
   {
     "Name": "The Old Blood",

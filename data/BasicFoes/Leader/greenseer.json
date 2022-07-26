@@ -3,10 +3,10 @@
   "Inherits": "Leader",
   "Type": "Foe",
   "UsesTemplate": true,
-  "Traits": [ "Greenwalker" ],
+  "Traits": "Greenwalker",
   "Actions": [
     {
-      "Name": "Wild Strike",
+      "Name": "Greenwrath",
       "ActionCost": 1,
       "Tags": [ "melee attack or ranged attack 6" ],
       "Hit": "[D]+[fray].",
@@ -22,6 +22,7 @@
       "Name": "Wild Growth",
       "ActionCost": 1,
       "Recharge": 6,
+      "Tags": "terrain effect",
       "TerrainEffect": "Create a blast 1 area in range 6 of difficult terrain. The difficult terrain provides cover for allies."
     }
   ]

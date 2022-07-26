@@ -8,10 +8,10 @@
       "Name": "Dissonant Bolt",
       "ActionCost": 1,
       "Tags": [ "ranged attack", "line 6", "pierce" ],
-      "Hit": "[D]+[fray] and inflict electrified.",
+      "Hit": "[D]+[fray].",
       "Miss": "[fray].",
       "AreaEffect": "[fray].",
-      "Effect": "Teleport any character in the area to any point on the line. Electrified characters can be teleported 2 in any direction."
+      "Effect": "Attack target is electrified. Electrified characters can be teleported 1."
     },
     {
       "Name": "Flash Step",
@@ -24,7 +24,7 @@
       "ActionCost": 1,
       "Recharge": 6,
       "Tags": [ "terrain effect" ],
-      "Description": "The Rift Dancer creates a line 3 dangerous terrain effect in range 4."
+      "Description": "The Rift Dancer creates a line 3 dangerous terrain effect in range 4. Electrified characters must save when attempting to pass into the space or be unable to move into it for the rest of the turn."
     }
   ]
 }

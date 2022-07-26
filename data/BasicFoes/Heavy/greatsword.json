@@ -25,8 +25,8 @@
       "ActionCost": 2,
       "Recharge": 6,
       "Tags": [ "melee attack", "true strike", "+1 curse" ],
-      "Hit": "Deal [D]+[fray] three times.",
-      "Miss": "Deal damage once."
+      "Hit": "Deal [D]+[fray], 3 times.",
+      "Miss": "[D]+[fray]."
     }
   ]
 }

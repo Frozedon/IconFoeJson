@@ -3,12 +3,12 @@
   "Inherits": "Skirmisher",
   "Type": "Foe",
   "UsesTemplate": true,
-  "Traits": [ "Flying" ],
+  "Traits": "Flying",
   "Actions": [
     {
       "Name": "Rake",
       "ActionCost": 1,
-      "Tags": [ "melee attack", "Line 4" ],
+      "Tags": [ "melee attack", "line 4" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
       "Effect": "Hellion can fly to any point on the line after the attack. Foes in the area must save or be blinded."

@@ -10,7 +10,7 @@
       "Tags": [ "ranged attack 4", "+1 boon" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
-      "Effect": "If made from stealth, blinds foe, is a critical hit (+[D]), and ignores cover."
+      "Effect": "If made from stealth, this attack blinds the foe, is a critical hit (+[D]), and ignores cover."
     },
     {
       "Name": "Dark Arts",

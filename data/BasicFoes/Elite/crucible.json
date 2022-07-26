@@ -1,15 +1,10 @@
 {
-  "Name": "Master Wright",
-  "Inherits": "Elite",
+  "Name": "Crucible",
+  "Inherits": [ "Elite", "Artillery" ],
   "Type": "Foe",
-  "Class": "Artillery",
-  "Vitality": 8,
-  "Speed": 3,
-  "Defense": 6,
-  "FrayDamage": 4,
-  "DamageDie": 8,
   "UsesTemplate": true,
-  "Traits": [ "Flying", "Overdrive 4", "Aetherwall", "Unstable Reality" ],
+  "RemoveTraits": "Slip",
+  "Traits": [ "Flying", "Unstable Reality" ],
   "Actions": [
     {
       "Name": "Annihilate",
@@ -24,20 +19,20 @@
     {
       "Name": "Great Slip",
       "ActionCost": 1,
-      "Description": "Teleport 3."
+      "Description": "Remove self from the battlefield, then return in a free space in range 3."
     },
     {
       "Name": "Fell Shot ",
       "ActionCost": 1,
       "Tags": [ "repeatable" ],
       "Description": "Mark an unoccupied space in range 8.",
-      "AreaEffect": "Characters that enter that space are struck by a projectile, taking [D] damage and ending this effect."
+      "AreaEffect": "Characters that enter that space or start their turn there are struck by a projectile, taking 2 piercing damage twice, and ending this effect."
     },
     {
       "Name": "Liminal Arrows",
       "ActionCost": 1,
       "Recharge": 5,
-      "Description": "Choose a foe in line of sight and range 10. At the end of that character's turn, it takes [D] piercing damage 3 times if not in cover from the Master wright. Then this effect ends."
+      "Description": "Choose a foe in line of sight and range 10. At the end of that character's turn, it takes [D] piercing damage 3 times if not in cover from the crucible, or just [fray] piercing damage if it's in cover. Then this effect ends."
     }
   ]
 }

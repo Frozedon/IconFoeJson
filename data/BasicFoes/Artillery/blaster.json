@@ -8,15 +8,19 @@
       "Name": "Blast",
       "ActionCost": 2,
       "Tags": [ "ranged attack 8", "blast 1", "pierce" ],
-      "Hit": "2[D] and inflict burning.",
+      "Hit": "2[D].",
       "Miss": "1 damage.",
       "AreaEffect": "1 damage.",
-      "Effect": "Deal 2 piercing damage again to all characters for each character caught in the area. If attack targets a burning character, increase blast size to 2."
+      "Effect": [
+        "Deal 2 piercing damage again to all characters for each character caught in the area.",
+        "Attack target is burning. If attack targets a burning character, increase blast size to 2."
+      ]
     },
     {
-      "Name": "Slip",
-      "ActionCost": 2,
-      "Description": "Teleport 2."
+      "Name": "Embers",
+      "ActionCost": 1,
+      "Tags": [ "range 6", "blast 1" ],
+      "AreaEffect": "2 piercing damage and one foe in the area becomes burning. Burning foes take 2 piercing damage, twice."
     },
     {
       "Name": "Flash",

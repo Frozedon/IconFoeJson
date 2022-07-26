@@ -1,15 +1,9 @@
 {
   "Name": "Archon",
-  "Inherits": "Elite",
+  "Inherits": [ "Elite", "Heavy" ],
   "Type": "Foe",
-  "Class": "Heavy",
-  "Vitality": 10,
-  "Speed": 3,
-  "Defense": 6,
-  "FrayDamage": 4,
-  "DamageDie": 6,
   "UsesTemplate": true,
-  "Traits": [ "Fortify", "Armor 3", "Great Enrage" ],
+  "Traits": "Great Enrage",
   "Actions": [
     {
       "Name": "Blackheart",
@@ -17,7 +11,10 @@
       "Tags": [ "melee attack", "true strike" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
-      "Effect": "Deals 2 damage to all foes adjacent to the archon or their target. Gains +1 boon and true strike if character is stunned, dazed, or winded."
+      "Effect": [
+        "Deals 2 damage to all foes adjacent to the archon or their target.",
+        "Gains +1 boon and deals bonus damage for each of the following: character is stunned, dazed, or winded."
+      ]
     },
     {
       "Name": "Iron Fist",
@@ -26,9 +23,9 @@
       "Description": "An adjacent foe must save or become dazed, if they are already dazed, they are also winded."
     },
     {
-      "Name": "Great Bash",
+      "Name": "Great Slam",
       "ActionCost": 1,
-      "Description": "Dash 2 spaces, then an adjacent foe is shoved 1 space.",
+      "Description": "Dash 2 spaces, then all adjacent foes are shoved 1 space.",
       "Collide": "Foe is stunned."
     },
     {
@@ -36,7 +33,7 @@
       "ActionCost": 1,
       "Recharge": 5,
       "Tags": [ "stance" ],
-      "Description": "While in this stance, becomes immobile, but self and adjacent allies gain resistance. Ends at the start of the Archon's next turn."
+      "Description": "While in this stance, becomes immobile, but self and adjacent allies gain resistance. Ends at the start of the Archon’s next turn."
     }
   ]
 }

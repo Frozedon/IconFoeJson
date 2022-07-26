@@ -3,7 +3,7 @@
   "Inherits": "Leader",
   "Type": "Foe",
   "UsesTemplate": true,
-  "Traits": [ "Divine Presence" ],
+  "Traits": "Divine Presence",
   "Actions": [
     {
       "Name": "Holy",
@@ -18,7 +18,7 @@
       "Name": "Redempta",
       "ActionCost": 2,
       "Tags": [ "1/combat" ],
-      "Description": "Target defeated ally in range 4 and return them to the battlefield with 50% hp. They can act normally starting next round."
+      "Description": "Target defeated ally in range 4 and remove incapacitated. They stop being defeated and return with 50% hp. They can act normally and take a turn starting next round."
     },
     {
       "Name": "Shield of Faith",

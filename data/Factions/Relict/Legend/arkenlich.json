@@ -1,108 +1,73 @@
 {
   "Name": "Arkenlich",
-  "Inherits": [ "Relict", "Legend" ],
+  "Inherits": [ "Relict", "Legend", "Artillery" ],
   "Type": "Foe",
-  "Class": "Artillery",
   "Chapter": 2,
-  "Vitality": 8,
-  "Speed": 6,
-  "Defense": 6,
-  "FrayDamage": 4,
-  "DamageDie": 8,
-  "Traits": [ "Overdrive 6", "Eternal", "Soul Mastery" ],
-  "RemoveTraits": [ "Juggernaut" ],
-  "BodyParts": [
-    {
-      "Name": "Heart Gem",
-      "HP": 6,
-      "HPMultiplyByPlayers": true,
-      "Description": "Lich skips its next turn if destroyed. Repeatedly destructible."
-    },
-    {
-      "Name": "Staff of Command",
-      "HP": 4,
-      "HPMultiplyByPlayers": true,
-      "Description": "The Lich can no longer use Master of Death."
-    }
-  ],
+  "HP": 32,
+  "RemoveTraits": [ "Juggernaut", "Overdrive 4" ],
+  "Traits": [ "Overdrive 6", "Eternal", "Master of Life and Death" ],
   "Actions": [
     {
-      "Name": "Puppet Strings",
-      "ActionCost": 0,
-      "Description": "A foe in range 6 is shoved 2 in a direction of the Lich's choice."
-    },
-    {
-      "Name": "Wail of Terror",
-      "ActionCost": 0,
-      "Tags": [ "close blast 1", "1/round" ],
-      "Description": "The Lich releases a horrible shriek.",
-      "AreaEffect": "Characters in the area must save or become winded.",
-      "Effects": "Any non-relict character in the area takes fray damage three times at the end of their turn, then this effect ends. They can ignore this effect by ending their turn adjacent to an ally."
-    },
-    {
-      "Name": "Unholy",
+      "Name": "Lesser Unholy",
       "ActionCost": 1,
-      "Tags": [ "ranged attack 8", "blast 1" ],
-      "Hit": "2[D]+[fray] and foe is shattered.",
+      "Tags": [ "ranged attack 6", "blast 1" ],
+      "Hit": "[D]+[fray].",
       "Miss": "[fray].",
-      "AreaEffect": "[D].",
-      "Effects": "This action can also be made as a close blast 1 melee attack."
+      "AreaEffect": "[fray].",
+      "Effects": "Attack target is vulnerable. This action can also be made as a close blast 1 melee attack."
     },
     {
-      "Name": "Vile",
+      "Name": "Puppet Strings",
       "ActionCost": 1,
-      "Description": "A foe in range 5 must save or become vulnerable, and until the end of their next turn, they take 1 piercing damage for each space they move."
-    },
-    {
-      "Name": "Master of Death",
-      "ActionCost": 1,
-      "Tags": [ "repeatable" ],
-      "Description": "Summon 3 relict husk mobs in free spaces in range 4."
+      "Description": "A foe in range 6 is shoved 3 in a direction of the Lich's choice."
     },
     {
       "Name": "Finger of Death",
       "ActionCost": 2,
-      "Recharge": 6,
-      "Tags": [ "ranged attack 8"],
+      "Tags": [ "ranged attack 8", "1/round" ],
       "Hit": "6[D].",
       "Miss": "3[D].",
       "Effects": "This attack can't lower a character past 1 hp."
+    },
+    {
+      "Name": "Paralyze with Fear",
+      "ActionCost": 1,
+      "Tags": "1/round",
+      "Description": "The Lich releases a horrible shriek, a close blast 1 area effect. One character in the area must save or become immobile until the end of their next turn. Effect: Any non-relict character in the area takes fray damage three times at the end of their turn, then this effect ends. They can ignore this effect by ending their turn adjacent to an ally."
+    },
+    {
+      "Name": "Vile",
+      "ActionCost": 1,
+      "Tags": "1/round",
+      "Description": "A foe in range 5 is vulnerable, and must save or take take 1 piercing damage for each space they move until the end of their next turn."
+    },
+    {
+      "Name": "Master of Death",
+      "ActionCost": 1,
+      "Tags": "1/round",
+      "Description": "Summon 5 husks in free spaces in range 4."
     }
   ],
   "PhasesDescription": "The lich progress through its three phases in order (I>III, then back to I), starting with phase I, then swapping to the next phase each round.",
   "Phases": [
     {
-      "Name": "",
-      "Actions": [
-        {
-          "Name": "Soul Sacrifice",
-          "ActionCost": 0,
-          "Tags": [ "start of phase only" ],
-          "Description": "At the start of this phase, all visible foes have their soul shoved out of their body and summoned in a location of the lich's choice within range 5 of them. The soul doesn't take action on its own, but can be targeted as if it was the original character for abilities and effects. Damage taken via a character's soul becomes Divine damage. A character can re-unite with their soul by moving into and ending their turn in its space, ending this effect."
-        }
-      ]
+      "Traits": "Soul Sacrifice"
     },
     {
-      "Name": "",
-      "Actions": [
-        {
-          "Name": "Entombment of Iz",
-          "ActionCost": 1,
-          "Recharge": 6,
-          "Description": "The Lich entombs a character in a magical sarcophagus. While inside, they take [D] piercing damage at the start of their turns, are winded+, immobile, and blinded, but can otherwise be targeted normally. The Sarcophagus is a height 1 terrain piece with 10 hp that is destructible. Attacks automatically hit and it is destroyed when it reaches 0. It has resistance to damage from the character inside it."
+      "Actions": {
+        "Name": "Entombment of Iz",
+        "ActionCost": 1,
+        "Tags": "1/round",
+        "Description": "The Lich entombs a character in a magical sarcophagus, summoning it in their space.",
+        "Summons": {
+          "Name": "Sarcophagus of Iz",
+          "Tags": [ "Object", "Destructible (10 HP)" ],
+          "Effects": "Shares space with a character. While inside, they take 3 piercing damage at the start of their turns and are immobile, but can otherwise be targeted normally. The Sarcophagus has resistance against the character inside it."
         }
-      ]
+      }
     },
     {
-      "Name": "",
-      "Actions": [
-        {
-          "Name": "Utterances of the Crawling Dead",
-          "ActionCost": 0,
-          "Tags": [ "start of phase only" ],
-          "Description": "The lich begins incanting. It marks out an area 2 spaces around its body, which is visible to all characters, and becomes immobile. Every other part of the battlefield is filled with shifting darkness. At the end of the round, all spaces outside the area marked by Utterances of the Crawling Dead erupt. Foes inside must save or take 100% of their max hp as piercing damage, or 50% on a successful save. This damage cannot reduce a character past 1 hp.\nIf overdrive has activated, Utterances of the Crawling Dead does not mark a safe area."
-        }
-      ]
+      "Traits": "Utterances of the Crawling Dead"
     }
   ]
 }

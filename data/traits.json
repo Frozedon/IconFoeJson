@@ -140,17 +140,6 @@
     "Description": "While bloody, gain +1 action."
   },
   {
-    "Name": "Eternal",
-    "Actions": [
-      {
-        "Name": "Eternal",
-        "ActionCost": 0,
-        "Tags": [ "1/round" ],
-        "Description": "Clear a status, mark, or all blights affecting either the Lich's Body or Soul."
-      }
-    ]
-  },
-  {
     "Name": "Eternal Rage",
     "Description": "When defeated, instead remain at 1 hp and become intangible until the end of their next turn. At the end of that turn, become defeated."
   },
@@ -239,10 +228,6 @@
     "Name": "Living Statue",
     "Description": "Cannot dash. When defeated, becomes a height 2 piece of terrain.",
     "DashMultiplier": 0
-  },
-  {
-    "Name": "Malice",
-    "Description": "After attacking this character, a foe is marked, gaining a stack of malice. Malice stacks indefinitely. This character gains +1 boon on attacks and deals +[D] on hit or miss against a foe for each stack of malice. Malice can also be inflicted by other means. If a character suffering from Malice doesn't attack during their turn, at the end of their turn clear all stacks of Malice. It can also be cleared by anything that clears a mark, but doing so only clears one at a time."
   },
   {
     "Name": "Martyrdom",
@@ -349,10 +334,6 @@
   {
     "Name": "Soul Mass",
     "Description": "Can share space with other characters. Foes treat the space as difficult terrain, are dazed+ while inside, and have cover from the outside, but are otherwise targetable normally. Any foes that start their turn inside its space take [fray] damage. Foes that attempt to leave the Grave's space by any means must save or become unable to exit it until the end of the current turn."
-  },
-  {
-    "Name": "Spectral Form",
-    "Description": "Loses all armor, but gains phasing, flying, and speed 6."
   },
   {
     "Name": "Stack Dice",

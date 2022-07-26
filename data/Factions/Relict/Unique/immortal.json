@@ -3,7 +3,6 @@
   "Inherits": [ "Relict", "Heavy" ],
   "Type": "Foe",
   "Chapter": 2,
-  "Defense": 1,
   "Traits": [ "Defiance", "Sturdy", "Immortal Disregard", "Beyond Death", "Aura of Immortality" ],
   "Actions": [
     {

@@ -18,10 +18,6 @@
     "Description": "Gains automatic cover against all attacks that originate outside of range 2 from them. (Cover grants resistance against ranged attacks, reducing it by 1/2)"
   },
   {
-    "Name": "Aftermath",
-    "Description": "After Elden Chaos activates, destroy all rock spires and clear all eruptions."
-  },
-  {
     "Name": "Amalgamate",
     "Description": "Once a round, while the Grafter is not incapacitated, whenever a relict is defeated anywhere on the battlefield, another relict of the Grafter's choice gains vigor 1."
   },
@@ -64,10 +60,6 @@
   {
     "Name": "Beyond Death",
     "Description": "When defiance activates, roll a d6. On a 4+, this character immediately regains defiance. Attacks with True Strike bypass this trait."
-  },
-  {
-    "Name": "Black Sun Ritual",
-    "Description": "A Vessel Knight rises again after 4d6 days unless its heart is destroyed."
   },
   {
     "Name": "Bravado",
@@ -195,7 +187,7 @@
   {
     "Name": "Immortal Disregard",
     "Description": "Attacks never miss the Immortal.",
-    "Defense": 0
+    "Defense": 1
   },
   {
     "Name": "Insulated",

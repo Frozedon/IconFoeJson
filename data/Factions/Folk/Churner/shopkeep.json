@@ -24,7 +24,7 @@
         "Name": "Shop",
         "Tags": [ "size 1 object" ],
         "Effect": "Aura 1. No fighting in the shop. Characters in the aura are pacified+. While the shop is active, any character in the aura can use the Rummage action, which ignores pacified.",
-        "Actions": {
+        "SpecialActions": {
           "Name": "Rummage",
           "ActionCost": 1,
           "Description": "The character rummages in the shop and throws something at a foe in range 3. Roll 1d6.",

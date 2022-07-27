@@ -1,0 +1,21 @@
+{
+  "Name": "Nightcloak",
+  "Inherits": "Looter",
+  "Type": "Foe",
+  "Chapter": 3,
+  "Traits": [ "Phasing", "Curse the Eyeless" ],
+  "RemoveActions": [ "Smoke Bomb", "Mug" ],
+  "Actions": [
+    {
+      "Name": "Jet Cloak",
+      "ActionCost": 1,
+      "Tags": "terrain effect",
+      "Description": "Create a blast 1 terrain effect. Characters inside are blinded+. This area lasts until this ability is used again or until the end of combat. The Nightcloak may teleport 4 before or after creating this area."
+    },
+    {
+      "Name": "Steal Sight",
+      "ActionCost": 1,
+      "Description": "An adjacent foe is blinded+. They can end this condition by picking up a valuables token, or ending a turn adjacent to an ally."
+    }
+  ]
+}

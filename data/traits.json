@@ -101,6 +101,10 @@
     "Description": "Has resistance unless suffering from a status."
   },
   {
+    "Name": "Bully",
+    "Description": "This character always treats bloodied foes as if they have a valuables token."
+  },
+  {
     "Name": "Camaraderie",
     "Description": "+1 boon on attacks and saves for every adjacent ally."
   },
@@ -113,6 +117,10 @@
     "Description": "The Gigantapede occupies an arc 6 space instead of a normal space for its size. Only its first and last space are attackable or can be used to make attacks or abilities, but its entire body causes obstruction and engagement. Keep track of which is the head, and which is the tail. Only one space can be hit if both are included in the area of an attack or ability (attacker chooses which). When it moves, move its head, then rearrange its body in any valid configuration."
   },
   {
+    "Name": "Collect Paycheck",
+    "Description": "All actions have Slay: Gain +1 action."
+  },
+  {
     "Name": "Command Aura [X]",
     "DisplayName": "Command Aura",
     "Description": "Aura [X]. Allies in the aura have +1 boon on attacks."
@@ -120,6 +128,14 @@
   {
     "Name": "Counter",
     "Description": "Each time a foe deals damage to you with an ability, deal 2 damage back."
+  },
+  {
+    "Name": "Consumptive Greed",
+    "Description": "Toe-takers always attempt to focus on the closest foe with a valuables token at the start of their turn."
+  },
+  {
+    "Name": "Curse the Eyeless",
+    "Description": " Evasion against blinded or slowed characters."
   },
   {
     "Name": "Cursed Deeps",
@@ -217,8 +233,25 @@
     "Description": "At the end of their turn, gains vigilance 1."
   },
   {
-    "Name": "Gran Diaga",
-    "Description": "Aura 1. At the start of this character's turn, allies in the aura can end a status or blight affecting them. If they are bloodied, they also gain vigor 1."
+    "Name": "Gilded Armor",
+    "Description": "Drops 1 valuables token when bloodied. Gains vigor 1 when picking up a valuables token."
+  },
+  {
+    "Name": "Gilded Armor",
+    "Description": "Drops 1 valuables token when bloodied. Gains vigor 1 when picking up a valuables token."
+  },
+  {
+    "Name": "Golden Burden",
+    "Description": "Has evasion against characters carrying valuables."
+  },
+  {
+    "Name": "Golden Step",
+    "Description": "The first time a round this character picks up a valuables token, may dash 2, then deal [fray] damage to an adjacent foe."
+  },
+  {
+    "Name": "Golden Step (Improved)",
+    "DisplayName": "Golden Step",
+    "Description": "Any time this character picks up a valuables token, they may dash 3, then deal [fray] damage to an adjacent foe."
   },
   {
     "Name": "Great Enrage",
@@ -233,12 +266,20 @@
     "Description": "Ignores height movement penalties. When moving from a higher elevation to a lower one, may fly until the movement ends."
   },
   {
+    "Name": "Greed",
+    "Description": "If a Scavenger is holding a valuables token, their attacks can critical hit (+[D]). Many other scavenger abilities become more powerful if they have a valuables token."
+  },
+  {
     "Name": "Greenwalker",
     "Description": "Immune to difficult terrain."
   },
   {
     "Name": "Grit",
     "Description": "Sturdy when bloodied."
+  },
+  {
+    "Name": "Guard Loot",
+    "Description": "Doesn't pick up valuables tokens. Instead, counts as holding any valuables tokens it is standing on, and has resistance while standing on at least one."
   },
   {
     "Name": "Heavy Armor",
@@ -454,6 +495,10 @@
     "Description": "While bloodied, has evasion."
   },
   {
+    "Name": "Sneak Attack",
+    "Description": "Attacks from Stealth are critical hits (+[D])."
+  },
+  {
     "Name": "Soul Mass",
     "Description": "Can share space with other characters. Foes treat the space as difficult terrain, are dazed+ while inside, and have cover from the outside, but are otherwise targetable normally. Any foes that start their turn inside its space take [fray] damage. Foes that attempt to leave the Grave's space by any means must save or become unable to exit it until the end of the current turn."
   },
@@ -465,6 +510,10 @@
       "ActionCost": 1,
       "Description": "Roll 1d6 and move (not dash) that many spaces."
     }
+  },
+  {
+    "Name": "Street Fighter",
+    "Description": "Has resistance while adjacent to two or more foes."
   },
   {
     "Name": "Strength",
@@ -504,6 +553,10 @@
   {
     "Name": "The Old Blood",
     "Description": "Immune to blights."
+  },
+  {
+    "Name": "Thiefcraft",
+    "Description": "Gains stealth at the start and end of their turn if holding a valuables token."
   },
   {
     "Name": "True Enrage",

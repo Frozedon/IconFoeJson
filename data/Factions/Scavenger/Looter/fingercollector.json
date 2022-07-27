@@ -1,0 +1,24 @@
+{
+  "Name": "Finger Collector",
+  "Inherits": "Looter",
+  "Type": "Foe",
+  "Chapter": 2,
+  "Actions": [
+    {
+      "Name": "Serrated Bolt",
+      "ActionCost": 1,
+      "Effects": "Deal [fray] damage to a character in range 6. Becomes a free action against foes with valuables tokens."
+    },
+    {
+      "Name": "Collect Bounty",
+      "ActionCost": 1,
+      "Tags": "ranged attack 6",
+      "Hit": "2[D]+[fray].",
+      "Miss": "[fray].",
+      "CustomComponents": {
+        "Name": "Greed",
+        "Description": "Deals bonus damage and gains +1 boon per valuables token the target is holding."
+      }
+    }
+  ]
+}

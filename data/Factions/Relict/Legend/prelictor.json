@@ -21,7 +21,7 @@
       "Hit": "50% of the character's max hp.",
       "Miss": "25%.",
       "AreaEffect": "25%.",
-      "Effect": "Area becomes difficult terrain for the rest of combat."
+      "Effects": "Area becomes difficult terrain for the rest of combat."
     },
     {
       "Name": "Fear",

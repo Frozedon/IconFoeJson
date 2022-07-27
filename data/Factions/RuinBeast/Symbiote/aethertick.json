@@ -6,7 +6,7 @@
     "Name": "Turn Bolts",
     "Count": 1,
     "Trigger": "The Aethertick or its host is targeted by a ranged attack.",
-    "Effect": "The target gains evasion against the triggering attack."
+    "Effects": "The target gains evasion against the triggering attack."
   },
   "RemoveActions": "Spur", 
   "Actions": {

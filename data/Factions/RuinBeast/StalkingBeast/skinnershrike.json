@@ -8,7 +8,7 @@
     "Name": "Stalking Retreat",
     "Count": 1,
     "Trigger": "When damaged by an ability.",
-    "Effect": "After the triggering ability resolves, dash 2, then gain stealth."
+    "Effects": "After the triggering ability resolves, dash 2, then gain stealth."
   },
   "Actions": {
     "Name": "Fowl Play",

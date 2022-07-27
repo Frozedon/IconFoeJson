@@ -86,7 +86,7 @@
           "Name": "Soul Edge",
           "Count": 1,
           "Trigger": "The Incarnate's target starts or ends their turn adjacent to it.",
-          "Effect": "That character must save or instantly take a wound. This could cause them to die."
+          "Effects": "That character must save or instantly take a wound. This could cause them to die."
         }
       }
     ]

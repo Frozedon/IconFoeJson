@@ -1,0 +1,11 @@
+{
+  "Name": "Horned Rooter",
+  "Inherits": "Brawler Beast",
+  "Type": "Foe",
+  "Traits": "Earthbreaker",
+  "Actions": {
+    "Name": "Mighty Headbutt",
+    "ActionCost": 0,
+    "Description": "An adjacent foe is shoved 1. If either the Rooter or its target are bloodied, increase this shove to 3."
+  }
+}

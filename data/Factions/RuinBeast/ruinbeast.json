@@ -1,0 +1,12 @@
+{
+  "Name": "Ruin Beast",
+  "Faction": "Ruin Beast",
+  "Type": "Template",
+  "Traits": "Enrage",
+  "SetupTraits": [
+    {
+      "Name": "Monsters",
+      "Description": "Beasts do not negotiate. They might flee if losing a fight badly."
+    }
+  ]
+}

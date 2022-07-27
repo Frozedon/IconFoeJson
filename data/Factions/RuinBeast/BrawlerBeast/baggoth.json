@@ -1,0 +1,29 @@
+{
+  "Name": "Baggoth",
+  "Inherits": "Brawler Beast",
+  "Type": "Foe",
+  "Chapter": 3,
+  "Traits": "Size 3",
+  "Actions": [
+    {
+      "Name": "Rancor",
+      "ActionCost": 0,
+      "Tags": "mark",
+      "Description": "The Baggoth marks an adjacent foe. While marked, any time that foe ends their turn adjacent to the Baggoth, as an effect they take [D]+[fray]."
+    },
+    {
+      "Name": "Hurl",
+      "ActionCost": 0,
+      "Tags": "usably only while bloodied",
+      "Description": "The Baggoth picks up an adjacent character or summon and shoves them 3.",
+      "Collide": "Character is dazed"
+    },
+    {
+      "Name": "Break Bones",
+      "ActionCost": 1,
+      "Recharge": 6,
+      "Tags": "end turn",
+      "Description": "An adjacent foe must save or be picked up in a crushing hug by the Baggoth, making them immobile. They fail the save if they are winded or dazed. At the end of that foe's next turn, if they're still adjacent, they take damage equal to 100% of their max hp. This damage is reduced by 25% for every character other than the Baggoth adjacent to the targeted character, and the effect ends if either break adjacency."
+    }
+  ]
+}

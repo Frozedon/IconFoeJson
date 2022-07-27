@@ -1,0 +1,25 @@
+{
+  "Name": "Howler",
+  "Inherits": "Brawler Beast",
+  "Type": "Foe",
+  "Chapter": 2,
+  "Actions": [
+    {
+      "Name": "Howl",
+      "ActionCost": 2,
+      "Recharge": 6,
+      "Description": "All non-howler characters in a close blast 1 area effect must save or take [D]+[fray] and be stunned.",
+      "Effects": "Can be used as an Interrupt when bloodied."
+    },
+    {
+      "Name": "Iron Grip",
+      "ActionCost": 1,
+      "Description": "The Howler dashes 3 spaces in any direction. An adjacent foe when it starts moving must save or be dragged them with it, shoving its target towards it until its adjacent. Bloodied foes fail the save."
+    },
+    {
+      "Name": "Body Slam",
+      "ActionCost": 0,
+      "Description": "The Howler flies into the air and comes slamming back down. Adjacent characters must choose: be shoved 1, or take [fray] damage."
+    }
+  ]
+}

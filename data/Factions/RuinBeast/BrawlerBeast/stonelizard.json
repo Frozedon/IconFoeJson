@@ -1,0 +1,6 @@
+{
+  "Name": "Stone Lizard",
+  "Inherits": "Brawler Beast",
+  "Type": "Foe",
+  "Traits": [ "Heavy Armor", "Rolling Boulder" ]
+}

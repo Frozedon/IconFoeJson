@@ -1,0 +1,28 @@
+{
+  "Name": "Landshark",
+  "Inherits": [ "Ruin Beast", "Skirmisher" ],
+  "Type": "Foe",
+  "Chapter": 2,
+  "Traits": [ "Landswim", "Dart" ],
+  "Actions": [
+    {
+      "Name": "Gnaw",
+      "ActionCost": 1,
+      "Tags": [ "melee atttack" ],
+      "Hit": "[fray] damage three times.",
+      "Miss": "[fray]."
+    },
+    {
+      "Name": "Sand Blast",
+      "ActionCost": 1,
+      "Tags": "repeatable",
+      "Description": "A foe in range 3 is blinded. Blinded foes take fray damage."
+    },
+    {
+      "Name": "Anklebiter",
+      "ActionCost": 1,
+      "Tags": "close blast 1",
+      "AreaEffect": "All foes in the area not standing on an object take [fray] damage and must save or become slowed. Slowed foes take [fray] damage again on a failed save."
+    }
+  ]
+}

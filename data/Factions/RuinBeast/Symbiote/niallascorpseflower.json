@@ -3,7 +3,7 @@
   "Inherits": "Symbiote",
   "Type": "Foe",
   "Chapter": 3,
-  "Traits": "Acid Burst",
+  "Traits": "Acid Burst (Latch)",
   "Actions": [ 
     {
       "Name": "Pacifying Spores",

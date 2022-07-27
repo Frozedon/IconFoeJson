@@ -1,0 +1,35 @@
+{
+  "Name": "Harpy",
+  "Inherits": [ "Ruin Beast", "Leader" ],
+  "Type": "Foe",
+  "Traits": "Flying",
+  "Actions": [
+    {
+      "Name": "Sonic Screech",
+      "ActionCost": 1,
+      "Tags": [ "ranged attack", "line 6" ],
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "AreaEffect": "[fray].",
+      "Effects": "Characters gain +1 curse on saves until the end of their next turn."
+    },
+    {
+      "Name": "Shriek",
+      "ActionCost": 1,
+      "Tags": "repeatable",
+      "Description": "All foes in range 2 must save or be forced to flee, shoving them 3 spaces in a direction of the Harpy's choice."
+    },
+    {
+      "Name": "Ear Splitting Song",
+      "ActionCost": 1,
+      "Recharge": 5,
+      "Description": "Foes in range 2 of the Harpy must save or become branded and lose all stances."
+    },
+    {
+      "Name": "Song of Deadly Soothing",
+      "ActionCost": 1,
+      "Tags": "stance",
+      "Description": "The Harpy gains aura 3. Foes that end their turn in the aura must save or become shoved as far as possible towards the harpy and pacified."
+    }
+  ]
+}

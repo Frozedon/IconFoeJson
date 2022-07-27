@@ -1,0 +1,37 @@
+{
+  "Name": "Hellhound",
+  "Inherits": [ "Ruin Beast", "Elite", "Artillery" ],
+  "Type": "Foe",
+  "Traits": [ "Size 2" ],
+  "Actions": [
+    {
+      "Name": "Blast",
+      "ActionCost": 1,
+      "Tags": [ "ranged attack 8", "blast 1", "pierce" ],
+      "Hit": "[D]+[fray] and character is poisoned.",
+      "Miss": "[fray].",
+      "AreaEffect": "[fray].",
+      "Effects": "If a character is poisoned they are also shattered on hit."
+    },
+    {
+      "Name": "Deluge",
+      "ActionCost": 1,
+      "Tags": "repeatable",
+      "Description": "The Hellhound dashes 2, then deals [fray] piercing damage to a foe in range 6."
+    },
+    {
+      "Name": "Corrosive Gas",
+      "ActionCost": 1,
+      "Tags": [ "repeatable", "terrain effect" ],
+      "Description": "The Hellhound creates a terrain effect space in a free area in range 6. Characters that enter or exit the space, or start their turn there, become vulnerable, burning, and poisoned. The area lasts for the rest of combat."
+    },
+    {
+      "Name": "Spitfire",
+      "ActionCost": 0,
+      "Recharge": 4,
+      "Tags": [ "pierce", "multimark" ],
+      "Description": "Mark a character in range 6.",
+      "Mark": "At the end of that character's turn, if that character is still marked, the Hellhound shoots a fiery blast for a blast 1 explosion area effect. Characters within must save. On a successful save, they take fray damage. On a failed save they take [D]+fray and are poisoned and burning. If the explosion would hit an area of corrosive gas, it detonates the area, destroying it but increases the area to blast 2 and all damage by +[D]."
+    }
+  ]
+}

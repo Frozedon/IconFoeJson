@@ -1,7 +1,12 @@
 [
   {
     "Name": "Acid Burst",
-    "Description": "When the Flower or its host take damage, all adjacent foes take 1 piercing damage. Increase this damage to 2 piercing against poisoned characters. This effect can trigger any number of times a round."
+    "Description": "When this character takes damage, all adjacent foes take 1 piercing damage. Increase this damage to 2 piercing against poisoned characters. This effect can trigger any number of times a round."
+  },
+  {
+    "Name": "Acid Burst (Latch)",
+    "DisplayName": "Acid Burst",
+    "Description": "When this character or its host takes damage, all adjacent foes take 1 piercing damage. Increase this damage to 2 piercing against poisoned characters. This effect can trigger any number of times a round."
   },
   {
     "Name": "Acid Splash",
@@ -22,6 +27,10 @@
     "Description": "If an attack misses the Aeronaut, they may deal 2 damage to the attacker, then fly 2."
   },
   {
+    "Name": "Aetherskin",
+    "Description": "When bloodied, becomes intangible until the end of its next turn."
+  },
+  {
     "Name": "Aetherwall",
     "Description": "Gains automatic cover against all attacks that originate outside of range 2 from them. (Cover grants resistance against ranged attacks, reducing it by 1/2)"
   },
@@ -31,7 +40,11 @@
   },
   {
     "Name": "Amorphous",
-    "Description": "Can share space with other characters. Any characters that start their turn inside its space take [fray] damage"
+    "Description": "Can share space with other characters. Any characters that start their turn inside its space take [fray] damage."
+  },
+  {
+    "Name": "Aquatic",
+    "Description": "Can move through all spaces of its own deep water areas normally, and moving through those spaces costs 0 movement for it."
   },
   {
     "Name": "Arkentech Shock Shield",
@@ -96,8 +109,8 @@
     "Description": "If this beast ends its turn adjacent to an object or or inside difficult terrain, it gains stealth."
   },
   {
-    "Name": "Cataclysm",
-    "Description": "At the start and end of the round create 2 rock spires, height 1 objects, in free space within range 2 of a foe."
+    "Name": "Chitinous Coil",
+    "Description": "The Gigantapede occupies an arc 6 space instead of a normal space for its size. Only its first and last space are attackable or can be used to make attacks or abilities, but its entire body causes obstruction and engagement. Keep track of which is the head, and which is the tail. Only one space can be hit if both are included in the area of an attack or ability (attacker chooses which). When it moves, move its head, then rearrange its body in any valid configuration."
   },
   {
     "Name": "Command Aura [X]",
@@ -106,7 +119,15 @@
   },
   {
     "Name": "Counter",
-    "Description": "Deal 2 damage to your attacker after being attacked, hit or miss."
+    "Description": "Each time a foe deals damage to you with an ability, deal 2 damage back."
+  },
+  {
+    "Name": "Cursed Deeps",
+    "Description": "When it enters the battlefield, creates four terrain effects, blast 1 areas of cursed deep water. The center space is a pit, and all other spaces are difficult terrain. None can be placed within range 4 of each other."
+  },
+  {
+    "Name": "Dart",
+    "Description": "At the start of its turn, the land shark shoves itself as far as possible towards the closest foe. If the closest foe is standing on an object, as soon as the shark would move onto the object's space, it collides with it and stops moving."
   },
   {
     "Name": "Defiance",
@@ -184,6 +205,10 @@
     "Description": "The fish and its host are immune to blights."
   },
   {
+    "Name": "Flip Over",
+    "Description": "When taking damage more than its armor total, loses all armor, becomes stunned, and all attacks against it are critical hits. These effects last until the end of its next turn."
+  },
+  {
     "Name": "Flying",
     "Description": "Ignores all terrain and terrain effects other than impassable terrain, and ignores engagement and obstruction."
   },
@@ -246,6 +271,10 @@
     "Description": "Immune to damage from terrain and terrain effects."
   },
   {
+    "Name": "Iron Scales",
+    "Description": "When either the head or the tail of the Gigantapede takes damage from an ability, after that ability resolves, that body part gains resistance until the other body part takes damage from an ability. This effect swaps between head and tail indefinitely."
+  },
+  {
     "Name": "Juggernaut",
     "Actions": [
       {
@@ -255,6 +284,10 @@
         "Description": "Clear a status, mark, or all blights affecting this character."
       }
     ]
+  },
+  {
+    "Name": "Landswim",
+    "Description": "The shark has evasion and phasing. The shark cannot move through objects. If the shark collides with an object, it is stunned and loses this trait until the end of its next turn."
   },
   {
     "Name": "Latch",
@@ -284,6 +317,10 @@
     "Name": "Living Statue",
     "Description": "Cannot dash. When defeated, becomes a height 2 piece of terrain.",
     "DashMultiplier": 0
+  },
+  {
+    "Name": "Lure",
+    "Description": "At the start of its turn as a free action, the Fisher puts a lure out in a space within range 3 of its location, or relocates its lure to a new space in that range if it's already active. The lure is a size 1 intangible summon."
   },
   {
     "Name": "Malicious Latch",
@@ -331,6 +368,10 @@
   {
     "Name": "Partner Work",
     "Description": "Aura 2. When the Acrobat dashes, an ally in the aura may also dash 1."
+  },
+  {
+    "Name": "Perfect Camouflage",
+    "Description": "The Fisher is intangible unless there's a character adjacent to its Lure."
   },
   {
     "Name": "Phasing",
@@ -457,6 +498,10 @@
     "Description": "Starts combat bloodied, but with vigor 1."
   },
   {
+    "Name": "Swarm",
+    "Description": "Has resistance to any damage not from area effects or attacks. Does not provide obstruction, but characters treat its space as difficult terrain."
+  },
+  {
     "Name": "The Old Blood",
     "Description": "Immune to blights."
   },
@@ -475,6 +520,10 @@
   {
     "Name": "Unstable",
     "Description": "When defeated, explodes in a blast 1 explosion centered on the wraith. Characters inside take [D] piercing damage, twice, as an area effect. The wraith is then removed from the battlefield. Create a pit in the area it vacated."
+  },
+  {
+    "Name": "Unstoppable",
+    "Description": "Immune to all statuses. Can't be immobilized, shoved, or teleported by foes."
   },
   {
     "Name": "Unstable Reality",

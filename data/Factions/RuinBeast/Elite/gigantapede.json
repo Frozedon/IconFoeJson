@@ -1,0 +1,43 @@
+{
+  "Name": "Gigantapede",
+  "Inherits": [ "Ruin Beast", "Elite", "Heavy" ],
+  "Type": "Foe",
+  "Chapter": 3,
+  "Traits": [ "Defiance", "Sturdy", "Chitinous Coil", "Iron Scales" ],
+  "Actions": [
+    {
+      "Name": "Thrash",
+      "ActionCost": 1,
+      "Tags": "melee attack",
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "Effects": "Foe must save or be stunned. Can be made from the head or tail."
+    },
+    {
+      "Name": "Spiny Body",
+      "ActionCost": 1,
+      "Tags": "repeatable",
+      "Description": "All foes adjacent to the Gigantapede take 2 damage."
+    },
+    {
+      "Name": "Acid Spray",
+      "ActionCost": 1,
+      "Tags": "line 4",
+      "AreaEffect": "Characters inside must save or take [fray] damage 3 times, or once on a successful save.",
+      "Effects": "Can only be made from the head."
+    },
+    {
+      "Name": "Stinger",
+      "ActionCost": 1,
+      "Tags": [ "multimark", "1/round" ],
+      "Description": "A character adjacent to the Gigantapede's tail must save or take [D]+[fray] and be marked.",
+      "Mark": "While marked, they are poisoned, burning, dazed+, and shoved 2 in a direction of the Gigantapede's choice at the start of their turn. A character can end this mark by hitting the Gigantapede with an attack."
+    },
+    {
+      "Name": "Burrow",
+      "ActionCost": 1,
+      "Tags": "end turn",
+      "Description": "All characters adjacent to the Gigantapede are shoved 1, then remove it from the battlefield. It's head then resurfaces in a new space in range 5. Place its body in any configuration."
+    }
+  ]
+}

@@ -50,7 +50,7 @@
             {
               "Values": 4,
               "Name": "Bomb",
-              "AreaEffect": "Blast 1 centered on the target, deals [D]+[fray] damage and inflicts burning."
+              "Description": "Blast 1 area effect centered on the target, deals [D]+[fray] damage and inflicts burning."
             },
             {
               "Values": 5,

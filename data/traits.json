@@ -1,5 +1,13 @@
 [
   {
+    "Name": "Acid Burst",
+    "Description": "When the Flower or its host take damage, all adjacent foes take 1 piercing damage. Increase this damage to 2 piercing against poisoned characters. This effect can trigger any number of times a round."
+  },
+  {
+    "Name": "Acid Splash",
+    "Description": "Attacks deal 1 piercing damage on hit or miss to all foes in range 2 of the target as an area effect."
+  },
+  {
     "Name": "Acrobatics",
     "Actions": [
       {
@@ -72,12 +80,20 @@
     ]
   },
   {
+    "Name": "Bubble Barrier",
+    "Description": "The fish and its host have cover from all directions. Any foe that ends its turn adjacent to the host is shoved 1 away from it."
+  },
+  {
     "Name": "Bullheaded",
     "Description": "Has resistance unless suffering from a status."
   },
   {
     "Name": "Camaraderie",
     "Description": "+1 boon on attacks and saves for every adjacent ally."
+  },
+  {
+    "Name": "Camouflage",
+    "Description": "If this beast ends its turn adjacent to an object or or inside difficult terrain, it gains stealth."
   },
   {
     "Name": "Cataclysm",
@@ -97,6 +113,10 @@
     "Description": "Prevents hit points from being reduced past 1 hp. When this triggers, remove this effect and character becomes immune to all damage for the rest of the current turn."
   },
   {
+    "Name": "Dig",
+    "Description": "Can phase through terrain and characters."
+  },
+  {
     "Name": "Diaga",
     "Actions": [
       {
@@ -105,6 +125,10 @@
         "Description": "An ally in range 4 can end a status or blight. If that ally is bloodied, they also gain vigor 1."
       }
     ]
+  },
+  {
+    "Name": "Distortion",
+    "Description": "Aura 1. Foes inside are blinded+."
   },
   {
     "Name": "Divine Presence",
@@ -121,6 +145,10 @@
   {
     "Name": "Duty of Death",
     "Description": "Adjacent allies to this character without this trait have dodge."
+  },
+  {
+    "Name": "Dweller in Dark",
+    "Description": "The Worm has the following abilities:\n- Immune to pits.\n- Immune to blinded.\n- May use its standard move to teleport from the area of any pit to any other pit.\n- Has resistance while inside a pit."
   },
   {
     "Name": "Earthbreaker",
@@ -148,6 +176,14 @@
     "Description": "Phasing, and has resistance unless there's an adjacent foe."
   },
   {
+    "Name": "Explosive Demise",
+    "Description": "When defeated, explodes in a blast 1 area effect centered on it. Foes inside are shoved 1 away from the origin space and must save or take [D]+[fray], or [fray] on a successful save."
+  },
+  {
+    "Name": "Filter",
+    "Description": "The fish and its host are immune to blights."
+  },
+  {
     "Name": "Flying",
     "Description": "Ignores all terrain and terrain effects other than impassable terrain, and ignores engagement and obstruction."
   },
@@ -166,6 +202,10 @@
   {
     "Name": "Great Faith",
     "Description": "If the Chronicler ends their turn with any un-used actions, they can clear all statuses and blight affecting them. If they are bloodied, they also gain vigor 1."
+  },
+  {
+    "Name": "Great Leap",
+    "Description": "Ignores height movement penalties. When moving from a higher elevation to a lower one, may fly until the movement ends."
   },
   {
     "Name": "Greenwalker",
@@ -189,6 +229,14 @@
     "Description": "The Stutterghast has aura 1. While there is exactly 1 other character in hollow's aura, it has have evasion and stealth. This aura has no effect if no other characters, or 2 or more other characters are inside, and its effects (including stealth) turn off it if deactivates."
   },
   {
+    "Name": "Hyperactive",
+    "Description": "When overdrive triggers, this beast gains +1 action for the rest of combat."
+  },
+  {
+    "Name": "Hyperactive (Improved)",
+    "Description": "When overdrive triggers, this beast gains +1 action and removes all recharges from its abilities for the rest of combat."
+  },
+  {
     "Name": "Immortal Disregard",
     "Description": "Attacks never miss the Immortal.",
     "Defense": 1
@@ -209,6 +257,18 @@
     ]
   },
   {
+    "Name": "Latch",
+    "Description": "Starts combat sharing the same space as another ally the same size or larger. While latched on, can't move, but instead moves with its host. Being moved out of its host's space end this effect. If the Symbiote is shoved or teleported away, it can pass a save to avoid the effect and become immune to shove or teleports until the end of the current turn. Can latch on to a new adjacent allied character with 1 action or its standard move."
+  },
+  {
+    "Name": "Latch Enrage",
+    "Description": "If latched on and enraged, also grants +1 action to its host. This doesn't stack with a host's enrage."
+  },
+  {
+    "Name": "Latch Defiance",
+    "Description": "While latched on to a character, that character gains defiance at the start of each of its turns."
+  },
+  {
     "Name": "Legend",
     "Description": "Takes 1 turn after every player character takes a turn. If slow, only one of its turns is affected."
   },
@@ -224,6 +284,10 @@
     "Name": "Living Statue",
     "Description": "Cannot dash. When defeated, becomes a height 2 piece of terrain.",
     "DashMultiplier": 0
+  },
+  {
+    "Name": "Malicious Latch",
+    "Description": "Can latch on to an adjacent foe as an action or by using its standard move. A foe can pass a save to avoid this effect, and can repeat the save at the end of their turns, ending it on a success and shoving the ape into a free adjacent space. While latched on to a foe, the foe is pacified+."
   },
   {
     "Name": "Martyrdom",
@@ -254,6 +318,15 @@
   {
     "Name": "Overdrive [X]",
     "Description": "All attacks after round [X] are critical hits on hit [+D]."
+  },
+  {
+    "Name": "Pack Tactics",
+    "Description": "Gains +1 boon on attacks if an ally is adjacent to their target."
+  },
+  {
+    "Name": "Pack Tactics (Improved)",
+    "DisplayName": "Pack Tactics",
+    "Description": "Gains +1 boon on attacks if an ally is adjacent to their target and bonus damage for ever ally adjacent to their target."
   },
   {
     "Name": "Partner Work",
@@ -320,6 +393,10 @@
   {
     "Name": "Slam",
     "Description": "When a character collides from this character's shoves, they are dazed. Dazed characters also take [D]+[fray]."
+  },
+  {
+    "Name": "Slimy Skin",
+    "Description": "When damaged, may dash 1 as an effect."
   },
   {
     "Name": "Slip",
@@ -390,6 +467,10 @@
   {
     "Name": "Tumbling",
     "Description": "Moving up terrain costs no movement. Can phase through characters and doing so costs 0 movement."
+  },
+  {
+    "Name": "Tunnel",
+    "Description": "When the Red Worm ends its turn, create a pit underneath it."
   },
   {
     "Name": "Unstable",

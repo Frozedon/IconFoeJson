@@ -1,0 +1,35 @@
+{
+  "Name": "Stalking Beast",
+  "Inherits": [ "Ruin Beast", "Skirmisher" ],
+  "Traits": "Camouflage",
+  "Actions": [
+    {
+      "Name": "Ambush",
+      "ActionCost": 1,
+      "Tags": [ "melee attack" ],
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "Effects": "Against a bloodied foe, becomes a critical hit, and blinds on hit."
+    },
+    {
+      "Name": "Prowl",
+      "ActionCost": 1,
+      "Tags": "end turn",
+      "Effects": "Dash 1 and gain stealth."
+    },
+    {
+      "Name": "Rake",
+      "ActionCost": 1,
+      "Tags": [ "line 3", "repeatable" ],
+      "AreaEffect": " Foes in the area take [fray] damage.",
+      "Effects": "The Stalking Beast may teleport to any space in the area after this action resolves."
+    }
+  ],
+  "Chapter2": {
+    "Traits": "Pack Tactics"
+  },
+  "Chapter3": {
+    "RemoveTraits": "Pack Tactics",
+    "Traits": "Pack Tactics (Improved)"
+  }
+}

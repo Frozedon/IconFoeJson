@@ -1,0 +1,35 @@
+{
+  "Name": "Blight Beast",
+  "Inherits": [ "Ruin Beast", "Artillery" ],
+  "Actions": [
+    {
+      "Name": "Biotic",
+      "ActionCost": 2,
+      "Tags": [ "ranged attack 8", "cross 2", "pierce" ],
+      "Hit": "2[D]+[fray].",
+      "Miss": "[fray].",
+      "AreaEffect": "[fray].",
+      "Effects": "On hit, foe is shattered and poisoned. Shatters foe even on miss if they are poisoned."
+    },
+    {
+      "Name": "Deluge",
+      "ActionCost": 1,
+      "Tags": "repeatable",
+      "Description": "The beast dashes 2, then deals 2 piercing damage to a foe in range 6."
+    },
+    {
+      "Name": "Blight Lob",
+      "ActionCost": 1,
+      "Recharge": 4,
+      "Tags": [ "terrain effect", "end turn" ],
+      "Description": "The Beast creates a blast 1 area of difficult terrain. Characters standing in the area are vulnerable+. The area lasts for the rest of combat, or until this beast uses this ability again."
+    }
+  ],
+  "Chapter2": {
+    "Traits": "Hyperactive"
+  },
+  "Chapter3": {
+    "RemoveTraits": "Hyperactive",
+    "Traits": "Hyperactive (Improved)"
+  }
+}

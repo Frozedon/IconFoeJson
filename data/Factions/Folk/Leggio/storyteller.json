@@ -12,7 +12,7 @@
     {
       "Name": "Felicity",
       "ActionCost": 1,
-      "Tags": [ "multimark", "combo" ],
+      "Tags": [ "multimark" ],
       "Description": "An ally in range 4 is marked. When marked, and at the start of the storyteller's turn, the marked ally may dash 1.",
       "Combos": {
         "Name": "Fleet",

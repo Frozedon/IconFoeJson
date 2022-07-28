@@ -5,20 +5,17 @@
   "Class": "Unique",
   "Vitality": 10,
   "HP": 40,
+  "HPText": "[HP] per player characters [MIN]. Heads each have 1/3 of its max HP, rounded up.",
   "Speed": 4,
   "Defense": 8,
   "FrayDamage": 3,
   "DamageDie": 6,
   "RemoveTraits": "Enrage",
-  "Traits":[ "Size 3", "Monstrous Heads" ],
+  "Traits": [ "Size 3", "Monstrous Heads" ],
   "SetupTraits": [
     {
       "Name": "Chimaera Heads",
       "Description": "To determine which heads the Chimaera has, roll a d10 3 times, reroll repeats, or pick 3."
-    },
-    {
-      "Name": "Heads HP",
-      "Description": "Each head has its own HP equal to 1/3 of its max HP, rounded up."
     }
   ],
   "Actions": [
@@ -223,7 +220,7 @@
           "Hit": "[D]+[fray].",
           "Miss": "[fray].",
           "AreaEffect": "[fray].",
-          "Effects": " Attack target must save or become vulnerable."
+          "Effects": "Attack target must save or become vulnerable."
         },
         {
           "Name": "Polaris",
@@ -240,7 +237,7 @@
       ]
     },
     {
-      "Name": "8. Chicken",
+      "Name": "9. Chicken",
       "Actions": [
         {
           "Name": "Peck",

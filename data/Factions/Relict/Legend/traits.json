@@ -20,7 +20,7 @@
   },
   {
     "Name": "Master of Life and Death",
-    "Description": "The Lich occupies two size 1 entities, which are functionally the same character but track statuses separately. One is the Lich's body, the other is its soul. When the lich makes movement or takes action, it can do so with either its body or soul.\n- The Lich's body is sturdy, cannot dash, and has Aetherwall.\n- The Lich's soul has flying and speed 6 At the start of combat, the Lich's soul is intangible.\nAt the start of round 2, this switches, and the Lich's body becomes intangible (while its soul loses this status). This continues to swap back and forth until the Lich is defeated."
+    "Description": "The Lich occupies two size 1 entities, which are functionally the same character but track statuses separately. One is the Lich's body, the other is its soul. When the lich makes movement or takes action, it can do so with either its body or soul.\n- The Lich's body is sturdy, cannot dash, and has Aetherwall.\n- The Lich's soul has flying and speed 6.\nAt the start of combat, the Lich's soul is intangible.\nAt the start of round 2, this switches, and the Lich's body becomes intangible (while its soul loses this status). This continues to swap back and forth until the Lich is defeated."
   },
   {
     "Name": "Soul Sacrifice",

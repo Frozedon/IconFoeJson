@@ -23,7 +23,7 @@
       "Tags": [ "end turn", "delay" ],
       "Description": "The inquisitor ends their turn, chooses a blast 2 area in range 6, and gains",
       "Delay": "Their next turn must be slow. At the start of that turn, that area erupts with lightning.",
-      "DelayAreaEffect": "Characters inside must save or take [fray] piercing damage, once, for every character in the area, or just once on a successful save. Electrified foes fail the save."
+      "PostAreaEffect": "Characters inside must save or take [fray] piercing damage, once, for every character in the area, or just once on a successful save. Electrified foes fail the save."
     }
   ]
 }

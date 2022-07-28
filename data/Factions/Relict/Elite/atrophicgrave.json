@@ -26,7 +26,7 @@
     {
       "Name": "One Hundred Hands",
       "ActionCost": 1,
-      "Tags": [ "end turn", "combo" ],
+      "Tags": [ "end turn" ],
       "Description": "The Grave dashes 2 spaces.",
       "Combos": {
         "Name": "Cacophonous Consumption",

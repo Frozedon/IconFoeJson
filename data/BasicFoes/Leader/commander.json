@@ -3,7 +3,7 @@
   "Inherits": "Leader",
   "Type": "Foe",
   "UsesTemplate": true,
-  "Traits": [ "Command Aura 2" ],
+  "Traits": [ "Command Aura" ],
   "Actions": [
     {
       "Name": "Leader's Strike",

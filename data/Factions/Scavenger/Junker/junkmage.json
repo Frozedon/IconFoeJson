@@ -1,0 +1,17 @@
+{
+  "Name": "Junk Mage",
+  "Inherits": "Junker",
+  "Type": "Foe",
+  "Actions": [
+    {
+      "Name": "Junk Form",
+      "ActionCost": 1,
+      "Description": "The Junk Mage transforms into junk, then swaps places with any free valuables token."
+    },
+    {
+      "Name": "Animate Valuables",
+      "ActionCost": 1,
+      "Description": "The Junk Mage chooses a character in range 8. That character takes 3 piercing damage once for each loose valuables token in range 3 of them."
+    }
+  ]
+}

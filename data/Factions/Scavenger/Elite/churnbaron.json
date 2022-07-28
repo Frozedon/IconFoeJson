@@ -1,0 +1,71 @@
+{
+  "Name": "Churn Baron",
+  "Inherits": [ "Scavenger", "Elite", "Leader" ],
+  "Type": "Foe",
+  "Chapter": 3,
+  "Traits": [ "Arkentech Hover Chair", "Assets" ],
+  "Interrupts": {
+    "Name": "Too Rich to Care",
+    "Count": 1,
+    "Tags": "costs 3 Assets",
+    "Trigger": "The Baron or an ally in range 3 is targeted by an ability.",
+    "Effects": "The target gains resistance and unstoppable against the ability."
+  },
+  "Actions": [
+    {
+      "Name": "Lucky Day",
+      "ActionCost": 0,
+      "Tags": "costs 1 Assets",
+      "Description": "A character in range 6 gains a valuables token."
+    },
+    {
+      "Name": "Fortune Maker",
+      "ActionCost": 1,
+      "Tags": [ "costs 2 Assets", "multimark", "1/round" ],
+      "Description": "The Baron chooses an ally or allied summon in range 4 and motivates them with promises of extreme wealth. That ally is marked and gains +1 boon on all attacks and saves while marked."
+    },
+    {
+      "Name": "Problem Solver",
+      "ActionCost": 1,
+      "Tags": [ "costs 2 Assets", "1/round" ],
+      "Description": "The Baron summons an Arkentech Mercenary.",
+      "Summons": {
+        "Name": "Arkentech Mercenary",
+        "Tags": [ "Size 1", "Sturdy", "20 HP", "Defense 8" ],
+        "Effects": "When summoned, or on the baron's turn, may move 4 spaces, then takes one of the following summon actions:",
+        "SpecialActions": [
+          {
+            "Name": "Arkentech Rifle",
+            "Tags": [ "ranged attack 6", "pierce" ],
+            "Hit": "[D].",
+            "Miss": "1 damage."
+          },
+          {
+            "Name": "Arkentech Explosives",
+            "Tags": [ "range 4", "blast 1" ],
+            "AreaEffect": "2 piercing damage, shove 1."
+          }
+        ]
+      }
+    },
+    {
+      "Name": "Arkentech Force Beam",
+      "ActionCost": 1,
+      "Tags": [ "ranged attack 3", "pierce" ],
+      "AutoHit": "[fray].",
+      "Effects": "All foes in range 3 of the Baron take [fray] damage. Shove all affected foes 1 either away from or towards the Baron."
+    },
+    {
+      "Name": "Pay Off",
+      "ActionCost": 1,
+      "Tags": "mark",
+      "Description": "The Baron gives a foe in range 6 a valuables token. That foe must then save or become marked. While marked and holding at least one valuables token, they are pacified+."
+    },
+    {
+      "Name": "Count Money",
+      "ActionCost": 2,
+      "Tags": [ "end turn", "1/turn" ],
+      "Description": "The Baron gains 6 Assets, gains resistance, and becomes unstoppable until the start of their next turn."
+    }
+  ]
+}

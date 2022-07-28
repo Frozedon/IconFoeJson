@@ -1,0 +1,76 @@
+[
+  {
+    "Name": "Blood Luck",
+    "Description": "When a Blood Brother picks up a valuables token, all their abilities recharge."
+  },
+  {
+    "Name": "Blood Brother",
+    "Description": "The Band has four Brothers. Each Brother is a separate entity, tracking hp and effects separately. The Band is only defeated when all Brothers are defeated.\nOn each of the Band's turns, the Band acts with a different brother, until all have acted at least once. Ability recharge and interrupts are checked for each brother separately.\nEach Brother has unique actions and a Bloodbound Blessing."
+  },
+  {
+    "Name": "Blessing Boots",
+    "DisplayName": "Blessing",
+    "Description": "All remaining Brothers become sturdy and gain The Boot ability."
+  },
+  {
+    "Name": "Iron Fist",
+    "Description": "Attacks against bloodied foes daze them, hit or miss."
+  },
+  {
+    "Name": "Blessing Fixer",
+    "DisplayName": "Blessing",
+    "Description": "One brother can use Garrote once per round."
+  },
+  {
+    "Name": "Venom Blade",
+    "Description": "Attacks inflict poisoned, ignore vigor, and deal bonus damage against bloodied characters."
+  },
+  {
+    "Name": "Blessing Filth",
+    "DisplayName": "Blessing",
+    "Description": "All remaining Brothers gain the Venom Blade trait."
+  },
+  {
+    "Name": "Blessing Cats",
+    "DisplayName": "Blessing",
+    "Description": "All Brothers gain one use of the Feline Felicity interrupt."
+  },
+  {
+    "Name": "Cheaper Trick",
+    "Description": "When missed by an attack, shove foe 2, teleport 2, and deal 2 damage."
+  },
+  {
+    "Name": "Blessing Sharkie",
+    "DisplayName": "Blessing",
+    "Description": "All Brothers gain Swindle."
+  },
+  {
+    "Name": "Blessing Pale",
+    "DisplayName": "Blessing",
+    "Description": "All Brothers go to speed 6 and gain phasing."
+  },
+  {
+    "Name": "Blessing Sharp",
+    "DisplayName": "Blessing",
+    "Description": "All Brothers gain the Overdrive 4 trait."
+  },
+  {
+    "Name": "Blessing Fanatic",
+    "DisplayName": "Blessing",
+    "Description": "One brother can use Spark once a round."
+  },
+  {
+    "Name": "Blood Pact",
+    "Description": "This character gains defiance at the start of their turn if there is a bloody character in range 3."
+  },
+  {
+    "Name": "Blessing Broker",
+    "DisplayName": "Blessing",
+    "Description": "All Brothers gain Vigor 1 and Defiance."
+  },
+  {
+    "Name": "Blessing Monger",
+    "DisplayName": "Blessing",
+    "Description": "All foes are marked by Bounty Hunt."
+  }
+]

@@ -1,0 +1,35 @@
+{
+  "Name": "Judge",
+  "Inherits": [ "Scavenger", "Heavy" ],
+  "Type": "Foe",
+  "Traits": [ "Tithe-law", "Strength" ],
+  "Actions": [
+    {
+      "Name": "Long Arm of the Law",
+      "ActionCost": 2,
+      "Tags": [ "ranged attack", "line 3" ],
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "AreaEffect": "[fray].",
+      "Effects": "Ignores ranged attack penalties. Characters adjacent to the Judge in the area take double damage and are shoved 3."
+    },
+    {
+      "Name": "Lock",
+      "ActionCost": 1,
+      "Effects": "The judge throws a bola at a foe in range 6. That foe becomes immobile and dazed+. They can save against the bola at the end of their turn, ending both effects, or can use an action on their turn to free themselves."
+    },
+    {
+      "Name": "Stock",
+      "ActionCost": 1,
+      "Effects": "The judge shoves an adjacent foe 1 and deals them 2 damage, then dashes 1."
+    },
+    {
+      "Name": "Smoking Barrel",
+      "ActionCost": 2,
+      "Recharge": 6,
+      "Description": "Repeat the following effect three times:",
+      "Effects": "Dash 1, then",
+      "PostAreaEffect": "Close blast 1, [fray] damage and shove 1."
+    }
+  ]
+}

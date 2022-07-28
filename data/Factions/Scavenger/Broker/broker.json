@@ -1,0 +1,49 @@
+{
+  "Name": "Broker",
+  "Inherits": [ "Scavenger", "Leader" ],
+  "Actions": [
+    {
+      "Name": "Bolt of Law",
+      "ActionCost": 1,
+      "Tags": "ranged attack 6 or melee attack",
+      "Hit": "[D]+[fray] and foe is branded.",
+      "Miss": "[fray]."
+    },
+    {
+      "Name": "Swindle",
+      "ActionCost": 1,
+      "Tags": "greed",
+      "Description": "Swap places with a character in range 3, teleporting. Foes can save to avoid this effect.",
+      "CustomComponents": {
+        "Name": "Greed",
+        "Description": "Free action."
+      }
+    },
+    {
+      "Name": "Incentivize",
+      "ActionCost": 1,
+      "Tags": "end turn",
+      "Description": "The broker puts down a valuables token in range 3."
+    },
+    {
+      "Name": "Exact Price",
+      "ActionCost": 1,
+      "Tags": "special recharge",
+      "Effects": [
+        "A foe in range 6 becomes stunned and pacified. A foe can avoid this by taking divine damage equal to 25% of their max hp or by dropping a valuables token.",
+        "Only recharges if the Broker picks up a valuables token."
+      ]
+    }
+  ],
+  "Chapter2": {
+    "Actions": {
+      "Name": "Tit for Tat",
+      "ActionCost": 1,
+      "Tags": "mark",
+      "Description": "The Broker marks an ally in range 4. While marked, that character has counter and evasion."
+    }
+  },
+  "Chapter3": {
+    "Traits": "Equivalent Exchange"
+  }
+}

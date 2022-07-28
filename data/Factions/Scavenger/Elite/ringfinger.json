@@ -1,0 +1,36 @@
+{
+  "Name": "Ring Finger",
+  "Inherits": [ "Scavenger", "Elite", "Skirmisher" ],
+  "Type": "Foe",
+  "Chapter": 2,
+  "Traits": [ "Phasing", "Slippery", "Leave Tracks", "Master Cloak" ],
+  "Actions": [
+    {
+      "Name": "Pay the Ferryman",
+      "ActionCost": 2,
+      "Tags": [ "melee attack", "+1 boon" ],
+      "Hit": "2[D]+[fray].",
+      "Miss": "[fray].",
+      "Effects": [
+        "Deals bonus damage for each valuables token the Ring Finger is holding. If the finger is holding 3 or more, is automatically a critical hit on hit (+[D]).",
+        "The Ring Finger may teleport 2 spaces before and after the attack."
+      ]
+    },
+    {
+      "Name": "Mug",
+      "ActionCost": 1,
+      "Description": "An adjacent foe is slowed. If they have a valuables token, that foe takes [D], then the Ring Finger takes a valuables token."
+    },
+    {
+      "Name": "Blinding Bomb",
+      "ActionCost": 1,
+      "Description": "The Ring Finger throws a bomb at a cross 1 location in range 4. Characters within take fray damage and must save or become blinded."
+    },
+    {
+      "Name": "Drop Caltrops",
+      "ActionCost": 1,
+      "Tags": [ "terrain effect", "1/round" ],
+      "Description": "The Ring Finger creates a line 3 area of difficult terrain."
+    }
+  ]
+}

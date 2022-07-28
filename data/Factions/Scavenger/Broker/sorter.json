@@ -1,0 +1,24 @@
+{
+  "Name": "Sorter",
+  "Inherits": "Broker",
+  "Type": "Foe",
+  "RemoveActions": "Swindle",
+  "Actions": [
+    {
+      "Name": "Sort Spoils",
+      "ActionCost": 1,
+      "Tags": "greed",
+      "Description": "Swap the position of any number of characters in range 2 with an equivalent number of valuables tokens.",
+      "CustomComponents": {
+        "Name": "Greed",
+        "Description": "Free action."
+      }
+    },
+    {
+      "Name": "Promise Payment",
+      "ActionCost": 1,
+      "Tags": "greed",
+      "Description": "An ally in range 4 gains vigor equal to 1+ the number of valuables tokens the sorter is carrying, but then loses all vigor after they take damage from an attack or ability."
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "Name": "Junker",
+  "Inherits": [ "Scavenger", "Artillery" ],
+  "Traits": "Junk Armor",
+  "Actions": [
+    {
+      "Name": "Scrap Storm",
+      "ActionCost": 2,
+      "Tags": [ "ranged attack 8", "cross 2", "greed" ],
+      "Hit": "2[D]+[fray] and foe becomes vulnerable.",
+      "Miss": "[fray].",
+      "AreaEffect": "[fray].",
+      "CustomComponents": {
+        "Name": "Greed",
+        "Description": "Deals bonus damage for each valuables token this character holds."
+      }
+    },
+    {
+      "Name": "Scrap Turret",
+      "ActionCost": 1,
+      "Tags": "summon",
+      "Description": " The Tinker summons a turret in range 6.",
+      "Summons": {
+        "Name": "Scrap Turret",
+        "Tags": [ "Size 1", "Immobile", "1 HP" ],
+        "Effects": "When a foe in range 3 from the turret takes damage, the turret deals 1 piercing damage to them. The Junker can When a foe in range 3 from the turret takes damage, the turret deals 1 piercing damage to them. The Junker can"
+      }
+    },
+    {
+      "Name": "Pile It Up",
+      "ActionCost": 1,
+      "Description": "The Junker creates a height 1 or 2 scrap pile object in a space in range 6. Characters adjacent to it when it is created are shoved 1. If created under a character, it pushes them up on top of it instead."
+    },
+    {
+      "Name": "Disassemble",
+      "ActionCost": 0,
+      "Tags": "1/combat",
+      "Description": "The Junker destroys all objects and Scrap Turrets in range 2, turning them into valuables tokens. Objects that can't normally be destroyed are instead un-summoned and removed from the battlefield."
+    }
+  ],
+  "Chapter2": {
+    "Actions": {
+      "Name": "Scrap Blast",
+      "ActionCost": 1,
+      "Tags": "greed",
+      "Description": "A foe in range 8 is shattered and shoved 1.",
+      "Collide": "They also take [D] piercing.",
+      "CustomComponents": {
+        "Name": "Greed",
+        "Description": "Can only be used if holding a valuables token."
+      }
+    }
+  },
+  "Chapter3": {
+    "Traits": "Smelt"
+  }
+}

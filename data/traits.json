@@ -66,6 +66,10 @@
     "Description": "On Critical Hit or Slay, gains +1 action."
   },
   {
+    "Name": "Boiling Shroud",
+    "Description": "While bloodied, has aura 1. All characters in the aura have permanent stealth and are blinded+, but only while inside the aura."
+  },
+  {
     "Name": "Brace",
     "Description": "When adjacent to terrain height 1 or higher, increase the range of all abilities with a listed range by +4, and attacks ignore cover."
   },
@@ -190,6 +194,10 @@
     "Description": "At the end of their turn, gains vigilance 1."
   },
   {
+    "Name": "Frenzy",
+    "Description": "When hitting with an attack, immediately gain +1 action."
+  },
+  {
     "Name": "Great Enrage",
     "Description": "Sturdy and +1 action while bloodied."
   },
@@ -212,6 +220,10 @@
   {
     "Name": "Heavy Metal Shield",
     "Description": "Has resistance against abilities from the closest foe. If multiple foes are equidistant, this trait applies to all of them."
+  },
+  {
+    "Name": "Hellforged",
+    "Description": "Immune to difficult and dangerous terrain."
   },
   {
     "Name": "Hold the Line [X]",
@@ -295,7 +307,7 @@
   },
   {
     "Name": "Overdrive [X]",
-    "Description": "All attacks after round [X] are critical hits on hit ([+D])."
+    "Description": "All attacks after round [X] are critical hits on hit (+[D])."
   },
   {
     "Name": "Pack Tactics",
@@ -317,6 +329,10 @@
   {
     "Name": "Primal Strength",
     "Description": "This character's abilities have Collide: Character takes [fray] damage and is dazed."
+  },
+  {
+    "Name": "Ranged Master",
+    "Description": "Ignores ranged attack penalties for adjacent foes."
   },
   {
     "Name": "Rook",

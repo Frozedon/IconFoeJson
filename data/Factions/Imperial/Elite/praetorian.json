@@ -1,0 +1,34 @@
+{
+  "Name": "Praetorian",
+  "Inherits": [ "Imperial", "Elite", "Heavy" ],
+  "Type": "Foe",
+  "Traits": "Heavy Armor",
+  "Actions": [
+    {
+      "Name": "Inspire Dread",
+      "ActionCost": 0,
+      "Tags": "1/round",
+      "Description": "An imperial ally in range 3 immediately recharges an ability."
+    },
+    {
+      "Name": "Heavy Mace",
+      "ActionCost": 1,
+      "Tags": [ "melee attack", "+1 curse", "true strike" ],
+      "Hit": "[D]+[fray] and foe is dazed.",
+      "Miss": "[fray].",
+      "CriticalHit": "(+[D]) and foe is stunned.",
+      "Effects": "Deals bonus damage per adjacent character to the target. All adjacent characters take [fray] damage."
+    },
+    {
+      "Name": "Rocket Jump",
+      "ActionCost": 1,
+      "Description": "The Praetorian flies 3 spaces in a straight line. All adjacent foes when it lands are dazed and shoved 1."
+    },
+    {
+      "Name": "Arkentech Repulser Shield",
+      "ActionCost": 2,
+      "Recharge": 6,
+      "Description": "The Praetorian gains aura 2 until the end of its next turn. The Praetorian and any of its allies inside the aura have resistance against abilities originating from characters inside the aura. Multiple shields of this type extend the area instead of overlapping it."
+    }
+  ]
+}

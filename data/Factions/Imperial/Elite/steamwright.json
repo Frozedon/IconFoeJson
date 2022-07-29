@@ -1,0 +1,29 @@
+{
+  "Name": "Steam Wright",
+  "Inherits": [ "Imperial", "Elite", "Skirmisher" ],
+  "Type": "Foe",
+  "Traits": [ "Boiling Shroud", "Blood Rush", "Acrobatics" ],
+  "Actions": [
+    {
+      "Name": "Steam Hammer",
+      "ActionCost": 2,
+      "Tags": [ "melee attack 2", "blast 1" ],
+      "Hit": "2[D]+[fray].",
+      "Miss": "[fray].",
+      "AreaEffect": "[fray].",
+      "CriticalHit": "(+[D]) and gain +1 action."
+    },
+    {
+      "Name": "Excel",
+      "ActionCost": 1,
+      "Tags": "end turn",
+      "Description": "The Steam Wright revs the Steam Hammer, granting it +1 boon, bonus damage, and increasing its range and blast radius by 1 for the rest of combat. This effect stacks twice."
+    },
+    {
+      "Name": "Steam Blast",
+      "ActionCost": 1,
+      "Tags": [ "range 3", "cross 1", "repeatable" ],
+      "AreaEffect": "[fray] damage and inflict burning. Burning characters must save or become blinded. Burning and blinded characters take [fray] damage twice instead."
+    }
+  ]
+}

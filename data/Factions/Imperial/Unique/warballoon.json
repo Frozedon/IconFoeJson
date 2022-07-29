@@ -1,0 +1,35 @@
+{
+  "Name": "War Balloon",
+  "Inherits": "Imperial",
+  "Type": "Foe",
+  "Class": "Unique",
+  "Chapter": 3,
+  "Vitality": 12,
+  "Speed": 4,
+  "Defense": 5,
+  "FrayDamage": 4,
+  "DamageDie": 8,
+  "Traits": [ "Size 2", "Sturdy", "Flying", "Deflate", "Ranged Master", "Battle Platform", "Vantage Point" ],
+  "Actions": [
+    {
+      "Name": "Side Guns",
+      "ActionCost": 1,
+      "Tags": [ "ranged attack 6", "cross 1" ],
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "AreaEffect": "[fray]."
+    },
+    {
+      "Name": "Drop Bomb",
+      "ActionCost": 1,
+      "Description": "The Balloon flies 5 in a straight line. It drops a blast 1 area effect below it over any space it moved over. Characters in the area take fray damage and become vulnerable. The character in the center space must save or become stunned."
+    },
+    {
+      "Name": "High Altitude",
+      "ActionCost": 1,
+      "Recharge": 6,
+      "Tags": "end turn",
+      "Description": "The Balloon and any of its passengers drift high up, removing them from the battlefield. They all return in any valid space on the battlefield at the end of the current round."
+    }
+  ]
+}

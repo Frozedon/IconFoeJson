@@ -1,0 +1,45 @@
+{
+  "Name": "Trooper",
+  "Inherits": [ "Imperial", "Heavy" ],
+  "Traits": "Vengeance",
+  "Interrupts": {
+    "Name": "Counter-strike",
+    "Count": 1,
+    "Trigger": "This character or an adjacent ally is hit or miss by a melee attack.",
+    "Effects": "The attacker is shoved 1 and must save. On a failed save, they take fray damage and are dazed."
+  },
+  "Actions": [
+    {
+      "Name": "Brutal Slash",
+      "ActionCost": 1,
+      "Tags": [ "melee attack", "true strike" ],
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "CriticalHit": "Foe is stunned."
+    },
+    {
+      "Name": "Blunderbuss",
+      "ActionCost": 1,
+      "Tags": [ "line 3", "repeatable" ],
+      "AreaEffect": "This character fires a heavy sidearm in the area. Foes inside are shoved 1 and take 2 damage."
+    },
+    {
+      "Name": "Hold the Line!",
+      "ActionCost": 2,
+      "Recharge": 6,
+      "Description": "This character gains aura 2 until the end of its next turn. This character and any of its allies inside the aura have resistance against melee attacks."
+    }
+  ],
+  "Chapter2": {
+    "Traits": "Gunblade"
+  },
+  "Chapter3": {
+    "RemoveActions": "Hold the Line!",
+    "Actions": {
+      "Name": "Hold the Line!",
+      "ActionCost": 2,
+      "Recharge": 6,
+      "Description": "This character gains aura 2 until the end of its next turn. This character and any of its allies inside the aura have resistance against melee attacks. Foes in the aura are dazed+."
+    }
+  }
+}

@@ -1,0 +1,18 @@
+[
+  {
+    "Name": "Arkentech Power Armor",
+    "Description": "Start combat with vigor 1."
+  },
+  {
+    "Name": "Gunblade",
+    "Description": "All melee attacks gain On Hit: may deal 2 piercing damage to a foe in range 4 as an effect."
+  },
+  {
+    "Name": "Imperial Command Aura",
+    "Description": "Aura 3. Allies in the aura gain +1 boon on attacks and can randomly critically hit (+[D])."
+  },
+  {
+    "Name": "Receive Orders",
+    "Description": "When an imperial starts its turn in range of an imperial command aura, it recharges all its abilities."
+  }
+]

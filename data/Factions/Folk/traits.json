@@ -1,15 +1,5 @@
 [
   {
-    "Name": "Acrobatics",
-    "Actions": [
-      {
-        "Name": "Acrobatics",
-        "ActionCost": 0,
-        "Description": "Dash 2. This action can interrupt and split up other actions or movement."
-      }
-    ]
-  },
-  {
     "Name": "Bravado",
     "Actions": [
       {

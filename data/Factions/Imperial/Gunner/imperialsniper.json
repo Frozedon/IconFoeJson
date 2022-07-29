@@ -1,0 +1,11 @@
+{
+  "Name": "Imperial Sniper",
+  "Inherits": "Gunner",
+  "Type": "Foe",
+  "Traits": "Brace",
+  "Actions": {
+    "Name": "Deploy Barricade",
+    "ActionCost": 1,
+    "Description": "The sniper creates a height 1 barricade object in an adjacent space."
+  }
+}

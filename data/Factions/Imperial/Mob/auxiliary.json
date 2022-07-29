@@ -1,0 +1,19 @@
+{
+  "Name": "Auxiliary",
+  "Inherits": [ "Imperial", "Mob" ],
+  "Type": "Foe",
+  "Speed": 3,
+  "Defense": 8,
+  "Interrupts": {
+    "Name": "Get Down Sir!",
+    "Count": 1,
+    "Trigger": "An adjacent ally takes damage from an ability.",
+    "Effects": "The Auxiliary is defeated. The ally gains resistance to that ability."
+  },
+  "Actions": {
+    "Name": "Arquebus",
+    "ActionCost": 2,
+    "Tags": "ranged attack 8",
+    "AutoHit": "Deal 1 piercing damage. Increase to 2 piercing if in an imperial command aura or if the target is burning."
+  }
+}

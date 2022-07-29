@@ -1,0 +1,27 @@
+{
+  "Name": "Gunwright",
+  "Inherits": "Gunner",
+  "Type": "Foe", 
+  "Chapter": 3,
+  "RemoveActions": "Reload Rifle",
+  "Actions": [
+    {
+      "Name": "Reload Rifle",
+      "ActionCost": 0,
+      "Description": "Heavy Arquebus recharges. Then, dash 2."
+    },
+    {
+      "Name": "Suppressive Fire",
+      "ActionCost": 1,
+      "Tags": "mark",
+      "Description": "The Gunwright marks a foe in range 8.",
+      "Mark": "While marked, that foe take 2 piercing damage every time they take an action, as long as they are not in cover from the Gunwright."
+    },
+    {
+      "Name": "Overwatch",
+      "ActionCost": 1,
+      "Tags": [ "stance", "end turn" ],
+      "Description": "While in this stance, the Gunwright targets a blast 1 area anywhere on the battlefield. Any foe that ends their turn in the area must save, taking [D]+[fray] piercing damage from the Gunwright on a failed save. Using this ability again retargets the area. If the Gunwright is shoved, blinded, or stunned, this stance ends."
+    }
+  ]
+}

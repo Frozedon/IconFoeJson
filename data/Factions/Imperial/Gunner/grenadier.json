@@ -1,0 +1,19 @@
+{
+  "Name": "Grenadier",
+  "Inherits": "Gunner",
+  "Type": "Foe", 
+  "Actions": [
+    {
+      "Name": "Flame Grenade",
+      "ActionCost": 1,
+      "Description": "A foe in range 6 is shattered and burning. Burning foes take [D]."
+    },
+    {
+      "Name": "Thumper Grenade",
+      "ActionCost": 1,
+      "Tags": [ "range 6", "cross 1" ],
+      "AreaEffect": "[fray] damage.",
+      "Effects": "Create a pit in the center space."
+    }
+  ]
+}

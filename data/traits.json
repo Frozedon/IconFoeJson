@@ -8,6 +8,16 @@
     "Description": "Attacks deal 1 piercing damage on hit or miss to all foes in range 2 of the target as an area effect."
   },
   {
+    "Name": "Acrobatics",
+    "Actions": [
+      {
+        "Name": "Acrobatics",
+        "ActionCost": 0,
+        "Description": "Dash 2. This action can interrupt and split up other actions or movement."
+      }
+    ]
+  },
+  {
     "Name": "Aerial Acrobat",
     "Description": "If an attack misses this character, they may deal 2 damage to the attacker, then fly 2."
   },
@@ -36,6 +46,10 @@
     "Description": "Aura 1. This character and allies in the aura are immune to terrain effects, pits, difficult, and dangerous terrain."
   },
   {
+    "Name": "Aura of Resilience",
+    "Description": "Aura 2. Self and allies in the aura gain +1 boon on saves and are immune to critical hits. (downgrade critical hits to regular hits)"
+  },
+  {
     "Name": "Aura of Shielding",
     "Description": "Aura 1. This character and allies in the aura have dodge. (Immune to damage from missed attacks, area effects, and successful saves)"
   },
@@ -46,6 +60,14 @@
   {
     "Name": "Beyond Death",
     "Description": "When defiance activates, roll a d6. On a 4+, this character immediately regains defiance. Attacks with True Strike bypass this trait."
+  },
+  {
+    "Name": "Blood Rush",
+    "Description": "On Critical Hit or Slay, gains +1 action."
+  },
+  {
+    "Name": "Brace",
+    "Description": "When adjacent to terrain height 1 or higher, increase the range of all abilities with a listed range by +4, and attacks ignore cover."
   },
   {
     "Name": "Bullheaded",
@@ -188,6 +210,10 @@
     "Description": "Resistant to abilities used from adjacent spaces."
   },
   {
+    "Name": "Heavy Metal Shield",
+    "Description": "Has resistance against abilities from the closest foe. If multiple foes are equidistant, this trait applies to all of them."
+  },
+  {
     "Name": "Hold the Line [X]",
     "DisplayName": "Hold the Line",
     "Description": "If this character ends any turn without attacking, they gain Sturdy until the start of their next turn and Vigilance [X]."
@@ -230,13 +256,20 @@
     "Description": "Electrifies foes it moves through. Foes that are already electrified must save or become slowed. Allied spaces cost 0 movement to pass through."
   },
   {
-    "Name": "Living Statue",
-    "Description": "Cannot dash. When defeated, becomes a height 2 piece of terrain.",
-    "DashMultiplier": 0
+    "Name": "Lone Wolf",
+    "Description": "When ending their turn with no enemies or allies in range 2, gains stealth."
+  },
+  {
+    "Name": "Low Profile",
+    "Description": "Has evasion against ranged attacks."
   },
   {
     "Name": "Martyrdom",
     "Description": "When defeated, grants vigor 1 to all allies in range 2."
+  },
+  {
+    "Name": "Master of Strategy",
+    "Description": "Before combat starts, may move every character to any space up to 2 spaces in any direction from their starting location"
   },
   {
     "Name": "Mob",
@@ -262,7 +295,7 @@
   },
   {
     "Name": "Overdrive [X]",
-    "Description": "All attacks after round [X] are critical hits on hit [+D]."
+    "Description": "All attacks after round [X] are critical hits on hit ([+D])."
   },
   {
     "Name": "Pack Tactics",
@@ -370,6 +403,14 @@
     "Description": "Has resistance to any damage not from area effects or attacks. Does not provide obstruction, but characters treat its space as difficult terrain."
   },
   {
+    "Name": "Tactics Aura",
+    "Description": "Aura 2. Foes in the aura take +1 curse on saves. Foes suffering from a status in the aura take bonus damage from all sources."
+  },
+  {
+    "Name": "Terrainwalking",
+    "Description": "Ignores movement penalties for height and terrain."
+  },
+  {
     "Name": "The Old Blood",
     "Description": "Immune to blights."
   },
@@ -396,6 +437,10 @@
   {
     "Name": "Unstable Reality",
     "Description": "1/turn, teleports 1 when damaged by an ability."
+  },
+  {
+    "Name": "Vengeance",
+    "Description": "When bloodied, next attack becomes a critical hit on hit (+[D])."
   },
   {
     "Name": "Wayfinding",

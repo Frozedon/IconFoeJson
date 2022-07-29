@@ -1,0 +1,6 @@
+{
+  "Name": "Evocatus",
+  "Inherits": "Sergeant",
+  "Type": "Foe",
+  "Traits": "Tactics Aura"
+}

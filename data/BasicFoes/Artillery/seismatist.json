@@ -20,7 +20,7 @@
     {
       "Name": "Seismic Crusher",
       "ActionCost": 1,
-      "Tags": [ "line 6" ],
+      "Tags": "line 6",
       "Description": "Non-flying characters are shoved to either side of the line.",
       "Collide": "[fray]."
     },

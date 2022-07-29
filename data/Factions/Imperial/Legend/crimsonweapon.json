@@ -1,6 +1,6 @@
 {
   "Name": "Crimson Weapon",
-  "Inherits": [ "Imperial", "Legend", "Heavy" ],
+  "Inherits": [ "Imperial", "Legendary Heavy" ],
   "Type": "Foe",
   "HP": 60,
   "Speed": 5,

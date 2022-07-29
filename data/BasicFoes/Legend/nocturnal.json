@@ -1,6 +1,6 @@
 {
   "Name": "Nocturnal",
-  "Inherits": [ "Legend", "Skirmisher" ],
+  "Inherits": "Legendary Skirmisher",
   "Type": "Foe",
   "HP": 24,
   "UsesTemplate": true,

@@ -1,6 +1,6 @@
 {
   "Name": "Prelictor",
-  "Inherits": [ "Relict", "Legend", "Leader" ],
+  "Inherits": [ "Relict", "Legendary Leader" ],
   "Type": "Foe",
   "Chapter": 3,
   "HP": 40,

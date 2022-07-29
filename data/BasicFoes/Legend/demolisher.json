@@ -1,6 +1,6 @@
 {
   "Name": "Demolisher",
-  "Inherits": [ "Legend", "Heavy" ],
+  "Inherits": "Legendary Heavy",
   "Type": "Foe",
   "HP": 40,
   "UsesTemplate": true,

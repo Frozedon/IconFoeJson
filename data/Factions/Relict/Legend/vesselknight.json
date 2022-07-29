@@ -1,6 +1,6 @@
 {
   "Name": "Vessel Knight",
-  "Inherits": [ "Relict", "Legend", "Heavy" ],
+  "Inherits": [ "Relict", "Legendary Heavy" ],
   "Type": "Foe",
   "HP": 40,
   "Traits": [ "Size 2", "Defiance", "Malice", "Beyond Death" ],

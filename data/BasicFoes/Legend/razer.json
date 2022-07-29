@@ -1,11 +1,10 @@
 {
   "Name": "Razer",
-  "Inherits": [ "Legend", "Artillery" ],
+  "Inherits": "Legendary Artillery",
   "Type": "Foe",
   "HP": 32,
   "UsesTemplate": true,
-  "RemoveTraits": "Overdrive 4",
-  "Traits": [ "Overdrive 6", "Flying" ],
+  "Traits": "Flying",
   "PhasesDescription": "Starts in Phase I, then moves up a phase at the start of each around, looping back to Phase I after III.",
   "Phases": [
     {

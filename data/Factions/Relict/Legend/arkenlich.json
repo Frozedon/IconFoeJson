@@ -1,11 +1,11 @@
 {
   "Name": "Arkenlich",
-  "Inherits": [ "Relict", "Legend", "Artillery" ],
+  "Inherits": [ "Relict", "Legendary Artillery" ],
   "Type": "Foe",
   "Chapter": 2,
   "HP": 32,
-  "RemoveTraits": [ "Juggernaut", "Overdrive 4" ],
-  "Traits": [ "Overdrive 6", "Eternal", "Master of Life and Death" ],
+  "RemoveTraits": "Juggernaut",
+  "Traits": [ "Eternal", "Master of Life and Death" ],
   "Actions": [
     {
       "Name": "Lesser Unholy",

@@ -1,13 +1,13 @@
 {
   "Name": "Azurian Weapon",
-  "Inherits": [ "Imperial", "Legend", "Artillery" ],
+  "Inherits": [ "Imperial", "Legendary Artillery" ],
   "Type": "Foe",
   "Chapter": 2,
   "HP": 32,
   "Speed": 0,
-  "RemoveTraits": [ "Overdrive 4", "Slip", "Receive Orders" ],
+  "RemoveTraits": [ "Legendary Slip", "Aetherwall", "Receive Orders" ],
   "RemoveSetupTraits": "Commanding Officer",
-  "Traits": [ "Overdrive 6", "Ranged Master", "Advanced Scopes", "Arkentech Artillery", "Landship" ],
+  "Traits": [ "Ranged Master", "Advanced Scopes", "Arkentech Artillery", "Landship" ],
   "Actions": [
     {
       "Name": "Turret Fire",
@@ -58,7 +58,7 @@
       }
     }
   ],
-  "PhasesDescription": "The Azruian Weapon enters Phase II when bloodied.",
+  "PhasesDescription": "The Azurian Weapon enters Phase II when bloodied.",
   "Phases": [
     {
       "Description": "No changes."

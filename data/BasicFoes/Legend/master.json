@@ -1,6 +1,6 @@
 {
   "Name": "Master",
-  "Inherits": [ "Legend", "Leader" ],
+  "Inherits": "Legendary Leader",
   "Type": "Foe",
   "HP": 20,
   "UsesTemplate": true,

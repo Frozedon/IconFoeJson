@@ -264,6 +264,32 @@
     "EncounterBudget": -1.0
   },
   {
+    "Name": "Legendary Vigilance",
+    "Description": "Can use Vigilance twice a round."
+  },
+  {
+    "Name": "Legendary Diaga",
+    "Actions": [
+      {
+        "Name": "Diaga",
+        "ActionCost": 1,
+        "Tags": "1/round",
+        "Description": "An ally in range 4 can end a status or blight. If that ally is bloodied, they also gain vigor 1."
+      }
+    ]
+  },
+  {
+    "Name": "Legendary Slip",
+    "Actions": [
+      {
+        "Name": "Slip",
+        "ActionCost": 0,
+        "Tags": "1/round",
+        "Description": "Remove self from the battlefield, then return in a free space in range 5."
+      }
+    ]
+  },
+  {
     "Name": "Living Lightning",
     "Description": "Electrifies foes it moves through. Foes that are already electrified must save or become slowed. Allied spaces cost 0 movement to pass through."
   },

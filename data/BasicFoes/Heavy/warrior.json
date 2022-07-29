@@ -15,7 +15,7 @@
       "Tags": [ "melee attack", "true strike" ],
       "Hit": "2[D]+[fray].",
       "Miss": "[fray].",
-      "AreaEffect": "All foes adjacent to the attack target take [D]."
+      "AreaEffect": "All foes adjacent to the attack target take [fray]."
     },
     {
       "Name": "Strike",

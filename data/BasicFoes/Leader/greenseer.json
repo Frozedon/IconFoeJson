@@ -23,7 +23,7 @@
       "ActionCost": 1,
       "Recharge": 6,
       "Tags": "terrain effect",
-      "TerrainEffect": "Create a blast 1 area in range 6 of difficult terrain. The difficult terrain provides cover for allies."
+      "TerrainEffect": "Create a blast 1 area of difficult terrain in range 6. The difficult terrain provides cover for allies."
     }
   ]
 }

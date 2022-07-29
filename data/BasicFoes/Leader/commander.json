@@ -3,12 +3,12 @@
   "Inherits": "Leader",
   "Type": "Foe",
   "UsesTemplate": true,
-  "Traits": [ "Command Aura" ],
+  "Traits": "Command Aura",
   "Actions": [
     {
       "Name": "Leader's Strike",
       "ActionCost": 1,
-      "Tags": [ "melee attack" ],
+      "Tags": "melee attack",
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
       "Effects": "Up to two allies in range 3 can dash 2 spaces."
@@ -16,14 +16,14 @@
     {
       "Name": "Coordinate Strikes",
       "ActionCost": 1,
-      "Tags": [ "mark" ],
-      "Description": "A foe in range4 is marked. While marked, they can't benefit from stealth, and attacks against them gain true strike."
+      "Tags": "mark",
+      "Description": "A foe in range 4 is marked. While marked, they can't benefit from stealth, and attacks against them gain true strike."
     },
     {
       "Name": "Marching Orders",
       "ActionCost": 1,
-      "Tags": [ "stance" ],
-      "Description": "When Commander takes this stance, as an action while in this stance, and at start of each of the commander's turns, the commander and all allies in range 2 can dash 2 in the same direction."
+      "Tags": "stance",
+      "Description": "When the commander takes this stance, as an action while in this stance, and at start of each of the commander's turns, the commander and all allies in range 2 can dash 2 in the same direction."
     }
   ]
 }

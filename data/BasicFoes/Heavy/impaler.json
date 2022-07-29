@@ -5,7 +5,7 @@
   "UsesTemplate": true,
   "Actions": [
     {
-      "Name": "Pike",
+      "Name": "Spike",
       "ActionCost": 2,
       "Tags": [ "melee attack 2", "true strike" ],
       "Hit": "2[D]+[fray] and shove 2.",
@@ -15,7 +15,7 @@
       "Name": "Impale",
       "ActionCost": 2,
       "Recharge": 5,
-      "Tags": [ "melee attack 2", "true strike" ],
+      "Tags": [ "melee attack", "true strike" ],
       "Hit": "2[D]+[fray] and shove 4. The Impaler dashes after the target, following it.",
       "Miss": "[fray] and shove 2.",
       "Collide": "Foe is also dazed and winded."

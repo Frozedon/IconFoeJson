@@ -21,7 +21,7 @@
       "Name": "Frozen Spear",
       "ActionCost": 1,
       "Tags": [ "range 6", "line 4" ],
-      "Description": "Foes take 2 piercing damage and one foe is frostbitten. Frostbitten foes take 2 piercing damage, twice."
+      "AreaEffect": "Foes take 2 piercing damage and one foe is frostbitten. Frostbitten foes take 2 piercing damage, twice."
     },
     {
       "Name": "Summon Storm",

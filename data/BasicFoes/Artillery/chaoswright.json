@@ -8,7 +8,7 @@
     {
       "Name": "Chaos Shard",
       "ActionCost": 1,
-      "Tags": [ "ranged attack 6" ],
+      "Tags": "ranged attack 6",
       "Hit": "Character is inflicted with all four blights.",
       "Miss": "Character is inflicted with two blights of this wright's choice.",
       "Effects": "If already blighted, character takes 2 piercing damage once, then is shoved 1 space, once, for every blight they are inflicted with. The shoves can be in different directions."

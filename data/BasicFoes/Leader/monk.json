@@ -15,7 +15,7 @@
     {
       "Name": "Punishment",
       "ActionCost": 1,
-      "Tags": [ "melee attack" ],
+      "Tags": "melee attack",
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
       "Effects": "Becomes a critical hit (+[D]) against pacified foes."
@@ -23,7 +23,7 @@
     {
       "Name": "Pressure Point",
       "ActionCost": 1,
-      "Tags": [ "repeatable" ],
+      "Tags": "repeatable",
       "Description": "A foe in range 4 is branded. If already branded, they are pacified."
     }
   ]

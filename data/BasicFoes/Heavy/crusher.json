@@ -11,7 +11,10 @@
       "Tags": [ "melee attack" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
-      "Effects": "Foe most save or become winded. Critical hit (+[D]) against Grabbed foes."
+      "Effects": [ 
+        "Foe most save or become winded.",
+        "Critical hit (+[D]) against Grabbed foes."
+      ]
     },
     {
       "Name": "Grab",

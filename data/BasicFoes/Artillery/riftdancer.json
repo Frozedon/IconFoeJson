@@ -16,14 +16,14 @@
     {
       "Name": "Flash Step",
       "ActionCost": 1,
-      "Tags": [ "repeatable" ],
+      "Tags": "repeatable",
       "Description": "Teleport 3, then deal 2 piercing damage to a foe in range 3."
     },
     {
       "Name": "Crackling Wall",
       "ActionCost": 1,
       "Recharge": 6,
-      "Tags": [ "terrain effect" ],
+      "Tags": "terrain effect",
       "Description": "The Rift Dancer creates a line 3 dangerous terrain effect in range 4. Electrified characters must save when attempting to pass into the space or be unable to move into it for the rest of the turn."
     }
   ]

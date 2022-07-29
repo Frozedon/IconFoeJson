@@ -23,7 +23,7 @@
       "Name": "Sticky Solution",
       "ActionCost": 1,
       "Recharge": 5,
-      "Tags": [ "close blast 1" ],
+      "Tags": "close blast 1",
       "Description": "Area becomes difficult terrain for the rest of combat."
     }
   ]

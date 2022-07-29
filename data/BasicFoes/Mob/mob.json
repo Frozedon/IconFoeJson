@@ -4,7 +4,6 @@
   "Vitality": 1,
   "HP": 1,
   "Speed": 4,
-  "Dash": 2,
   "Defense": 6,
-  "Traits": [ "Mob" ]
+  "Traits": "Mob"
 }

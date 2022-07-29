@@ -20,7 +20,7 @@
     {
       "Name": "Fell Shot",
       "ActionCost": 1,
-      "Tags": [ "repeatable" ],
+      "Tags": "repeatable",
       "Description": "Mark an unoccupied space in range 8.",
       "AreaEffect": "Characters that enter that space or start their turn there are struck by a projectile, taking 2 piercing damage twice, and ending this effect."
     }

@@ -15,7 +15,7 @@
     {
       "Name": "Dark Arts",
       "ActionCost": 1,
-      "Description": "Swap places with an ally in range 2, teleporting."
+      "Description": "Swap places with an ally in range 3, teleporting."
     },
     {
       "Name": "Nocturne",

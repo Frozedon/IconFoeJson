@@ -1,0 +1,12 @@
+{
+  "Name": "Prowling Demon",
+  "Inherits": "Void Demon",
+  "Type": "Foe",
+  "Traits": "Phase Slip",
+  "Actions": {
+    "Name": "Dark Warp",
+    "ActionCost": 2,
+    "Recharge": 6,
+    "Description": "Teleport to any space, then create a void rift under this demon's space and under the space it vacated."
+  }
+}

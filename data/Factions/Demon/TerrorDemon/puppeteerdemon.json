@@ -1,0 +1,25 @@
+{
+  "Name": "Puppeteer Demon",
+  "Inherits": "Terror Demon",
+  "Type": "Foe",
+  "Chapter": 3,
+  "Actions": [
+    {
+      "Name": "White Strings",
+      "ActionCost": 1,
+      "Tags": "close blast 2",
+      "AreaEffect": "All allies in the area are teleported 2 in any direction (the Puppeteer can choose for each character)."
+    },
+    {
+      "Name": "Black Strings",
+      "ActionCost": 1,
+      "Recharge": 4,
+      "Description": "A foe in range 5 is branded and must save. On a failed save, they teleport up to 3 spaces to the nearest ally and deal [D]+[fray] to them as an effect."
+    },
+    {
+      "Name": "Unravel",
+      "ActionCost": 2,
+      "Description": "A foe at 25% hp or lower must save or be instantly defeated. On a successful save, they are instead reduced to 1 hp."
+    }
+  ]
+}

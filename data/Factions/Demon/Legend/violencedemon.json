@@ -1,0 +1,102 @@
+{
+  "Name": "Violence Demon",
+  "Inherits": [ "Demon", "Legendary Skirmisher" ],
+  "Type": "Foe",
+  "Chapter": 2,
+  "HP": 32,
+  "Speed": 5,
+  "Traits": [ "Flying", "Bloodthirsty Sword", "Blade of Agony", "Regard" ],
+  "Actions": [
+    {
+      "Name": "Sixfold Cut",
+      "ActionCost": 1,
+      "Tags": "melee attack",
+      "Hit": "Deal 1 piercing damage, six times.",
+      "Miss": "Three times.",
+      "Effects": "Summon a blade of agony."
+    },
+    {
+      "Name": "Call Blades",
+      "ActionCost": 1,
+      "Tags": "1/round",
+      "Description": "Summon three blades of agony from the void. Characters adjacent to them when they are summoned are shoved 1."
+    },
+    {
+      "Name": "Blade Storm",
+      "ActionCost": 2,
+      "Recharge": 6,
+      "Tags": "melee attack",
+      "Description": "Repeat the following effect six times. Each time, the demon must move in the same direction.",
+      "Effects": "The violence demon teleports 1, then deals 1 piercing damage to all other characters in a blast 1 area effect centered on it. Blades of Agony caught in the effect trigger their Blade Slash effect."
+    },
+    {
+      "Name": "Compel Duel",
+      "ActionCost": 0,
+      "Tags": "1/round",
+      "Description": "A character in range 6 from the Violence Demon must save or gain hatred of the violence demon and take +1 damage from Blades of Agony. Both effects last until saved against."
+    }
+  ],
+  "PhasesDescription": "The Violence Demon must swap phase at the start of each round. It starts in phase I.",
+  "Phases": [
+    {
+      "Name": "Heart Seeker",
+      "Traits": "Counter",
+      "Interrupts": {
+        "Name": "Blade Parry",
+        "Tags": "blade consume 1",
+        "Trigger": "The violence demon is targeted by an attack.",
+        "Effects": "The demon gains evasion against that attack."
+      },
+      "Actions": [
+        {
+          "Name": "Blade Pin",
+          "ActionCost": 0,
+          "Tags": "blade consume 1",
+          "Description": "A character in range 6 from the violence demon must save or be shoved 3.",
+          "Collide": "Character is pinned down by the blade, taking [D]+[fray] and becoming immobile. They can break the blade as an action, or break free at the end of their turn, ending this effect."
+        },
+        {
+          "Name": "Maddening Shift",
+          "ActionCost": 0,
+          "Description": "The violence demon dashes 4 with phasing."
+        }
+      ]
+    },
+    {
+      "Name": "Heart Eater",
+      "Actions": [
+        {
+          "Name": "Advance",
+          "ActionCost": 0,
+          "Tags": "2/round",
+          "Description": "The violence demon teleports up to 3 spaces, but must end adjacent to a foe."
+        },
+        {
+          "Name": "Split Foe",
+          "ActionCost": 2,
+          "Tags": [ "melee attack", "line 6", "1/round" ],
+          "Hit": "2[D]+[fray] and foe must save or become stunned.",
+          "Miss": "[fray].",
+          "Effects": [
+            "Deals +[D], hit or miss, against bloodied foes.",
+            "Summon two blades of agony."
+          ]
+        },
+        {
+          "Name": "Garuda",
+          "ActionCost": 0,
+          "Tags": [ "mark", "blade consume 3" ],
+          "Description": "A foe in range 6 must save or become impaled by 3 blades and marked.",
+          "Mark": "At the start of their turn, a blade rips themselves out of them, dealing [D] damage and summoning a blade of agony adjacent to them. Once this effect has triggered three times, it and the mark end. If the mark is removed early, summon the remaining blades in adjacent spaces to that character."
+        },
+        {
+          "Name": "Universal Violence",
+          "ActionCost": 2,
+          "Tags": [ "melee attack 3", "+1 boon", "blade consume 6" ],
+          "Hit": "Foe takes [D] damage, six times.",
+          "Miss": "Three times."
+        }
+      ]
+    }
+  ]
+}

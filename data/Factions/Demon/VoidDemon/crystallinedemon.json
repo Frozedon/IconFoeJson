@@ -1,0 +1,14 @@
+{
+  "Name": "Crystalline Demon",
+  "Inherits": "Void Demon",
+  "Type": "Foe",
+  "Chapter": 3,
+  "Traits": [ "Crystal Dagger", "Vengeance" ],
+  "Actions": {
+    "Name": "Crystallize",
+    "ActionCost": 1,
+    "Tags": "mark",
+    "Description": "A foe in range 4 turns partly to crystal and is marked.",
+    "Mark": "While marked, they take 1 divine damage each time they take an action. If they miss with an attack, they additionally take [D] divine damage."
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "Name": "Demon",
+  "Faction": "Demon",
+  "Traits": "Devour",
+  "SetupTraits": [
+    {
+      "Name": "Monsters",
+      "Description": "Demons do not flee or negotiate."
+    },
+    {
+      "Name": "Legion",
+      "Description": "When fighting demons, at the start of combat, place 5 Natals, this faction's special mob, on the map in unoccupied space somewhere outside of range 2 of players. These don't count for the total encounter budget."
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "Name": "Horn Demon",
+  "Inherits": "Battle Demon",
+  "Type": "Foe",
+  "Chapter": 3,
+  "Traits": "Aura of Bloodlust",
+  "Actions": [
+    {
+      "Name": "Earth Breaker",
+      "ActionCost": 1,
+      "Description": "Create a height 1 debris object in range 3. Characters adjacent take 2 damage and are shoved 1. Effect: Becomes a free action while bloodied."
+    },
+    {
+      "Name": "Hurl",
+      "ActionCost": 1,
+      "Tags": "repeatable",
+      "Description": "The Horn Demon picks up an adjacent character or summon and shoves them 3.",
+      "Collide": "Character is dazed."
+    }
+  ]
+}

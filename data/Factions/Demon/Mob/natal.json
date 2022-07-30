@@ -1,0 +1,21 @@
+{
+  "Name": "Natal",
+  "Inherits": [ "Demon", "Mob" ],
+  "Type": "Foe",
+  "Speed": 3,
+  "Defense": 5,
+  "RemoveTraits": "Devour",
+  "Traits": "Summon",
+  "Actions": [
+    {
+      "Name": "Squirm",
+      "ActionCost": 1,
+      "Description": "Dash 2, then deal 1 piercing damage to all adjacent foes."
+    },
+    {
+      "Name": "Void Vomit",
+      "ActionCost": 1,
+      "Description": "Deal 1 piercing damage as an effect to a character in range 3. If that character is adjacent to another demon, increase damage to 2."
+    }
+  ]
+}

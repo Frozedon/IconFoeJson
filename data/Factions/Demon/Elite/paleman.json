@@ -1,0 +1,39 @@
+{
+  "Name": "Pale Man",
+  "Inherits": [ "Demon", "Elite", "Artillery" ],
+  "Type": "Foe",
+  "Chapter": 2,
+  "Speed": 2,
+  "RemoveTraits": "Slip",
+  "Traits": [ "Size 2", "Eyes Within Eyes", "Lidless Gaze", "Ceaseless Shrieking" ],
+  "Actions": [
+    {
+      "Name": "Void Bolt",
+      "ActionCost": 1,
+      "Tags": [ "ranged attack", "gaze area", "pierce" ],
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "AreaEffect": "[fray].",
+      "Effects": "Summon a height 1 debris object in the area."
+    },
+    {
+      "Name": "Fatal Thaum",
+      "ActionCost": 1,
+      "Tags": "multimark",
+      "Description": "Mark a character in range 10.",
+      "Mark": "At the end of that character's turn, shoot a bolt of energy at that character, creating a blast 1 area effect centered on them. Deals [D] to that character, destroys or un-summons all created objects in the area and shoves all other characters 1 away from that character. Then, end this mark."
+    },
+    {
+      "Name": "Destabilize",
+      "ActionCost": 1,
+      "Description": "A foe in range 6 becomes vulnerable. If that foe moves more than 1 space on its next turn, it also takes [fray] damage."
+    },
+    {
+      "Name": "Annihilate Flesh",
+      "ActionCost": 2,
+      "Recharge": 6,
+      "Tags": [ "gaze target", "pierce" ],
+      "Description": "The Pale man chooses the target of its gaze, then focuses its eyes on them. At the end of that character's turn, they take [D] five times. Reduce the number of times this deals damage by [D] for each other character or piece of created terrain in the area, to a minimum of [D]."
+    }
+  ]
+}

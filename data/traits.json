@@ -38,6 +38,10 @@
     "Description": "Reduce all damage taken by [X]."
   },
   {
+    "Name": "Aura of Bloodlust",
+    "Description": "Aura 1. Foes that end their turn in the Aura must save or gain hatred of this character."
+  },
+  {
     "Name": "Aura of Rot",
     "Description": "Aura 2. Foes that start or end their turn in the aura lose all vigor, then take 2 piercing damage."
   },
@@ -52,6 +56,10 @@
   {
     "Name": "Aura of Shielding",
     "Description": "Aura 1. This character and allies in the aura have dodge. (Immune to damage from missed attacks, area effects, and successful saves)"
+  },
+  {
+    "Name": "Aura of Terror",
+    "Description": "Aura 1. Foes that end their turn in the aura must save or become pacified and shoved 1."
   },
   {
     "Name": "Automata",
@@ -107,8 +115,16 @@
     "Description": "This character starts combat with 5 mob allies, regardless of encounter budget."
   },
   {
+    "Name": "Crystal Dagger",
+    "Description": "When this character teleports, it may deal 1 damage to a foe in range 3."
+  },
+  {
     "Name": "Curse the Eyeless",
     "Description": "Evasion against blinded or slowed characters. (Roll a d6 when targeted by an attack. On a 4+, the attack automatically misses. Check before the attack roll)"
+  },
+  {
+    "Name": "Death Whistle",
+    "Description": "When this character attacks, other characters in range 2 of it must save or lose any stances they are holding."
   },
   {
     "Name": "Defiance",
@@ -170,8 +186,14 @@
     "Description": "When defeated, instead remain at 1 hp and become intangible until the end of their next turn. At the end of that turn, become defeated."
   },
   {
-    "Name": "Ethereal",
+    "Name": "Ethereal (Resistance)",
+    "DisplayName": "Ethereal",
     "Description": "Phasing, and has resistance unless there's an adjacent foe."
+  },
+  {
+    "Name": "Ethereal (Evasion)",
+    "DisplayName": "Ethereal",
+    "Description": "Phasing, and has evasion unless there's an adjacent foe."
   },
   {
     "Name": "Evasion",
@@ -180,6 +202,10 @@
   {
     "Name": "Explosive Demise",
     "Description": "When defeated, explodes in a blast 1 area effect centered on it. Foes inside are shoved 1 away from the origin space and must save or take [D]+[fray], or [fray] on a successful save."
+  },
+  {
+    "Name": "Eyeless",
+    "Description": "Immune to blinded."
   },
   {
     "Name": "Flip Over",
@@ -246,6 +272,10 @@
   {
     "Name": "Insulated",
     "Description": "Immune to damage from terrain and terrain effects."
+  },
+  {
+    "Name": "Isolation",
+    "Description": "Has resistance to damage dealt by characters with no allies adjacent."
   },
   {
     "Name": "Juggernaut",
@@ -345,8 +375,16 @@
     "Description": "Gains +1 boon on attacks if an ally is adjacent to their target and bonus damage for every ally adjacent to their target."
   },
   {
+    "Name": "Painwrack",
+    "Description": "Characters that collide with this character take [fray] damage."
+  },
+  {
     "Name": "Partner Work",
     "Description": "Aura 2. When this character dashes, an ally in the aura may also dash 1."
+  },
+  {
+    "Name": "Phase Slip",
+    "Description": "After being damaged for the first time on any turn, become intangible until the start of the following turn."
   },
   {
     "Name": "Phasing",
@@ -359,6 +397,14 @@
   {
     "Name": "Ranged Master",
     "Description": "Ignores ranged attack penalties for adjacent foes."
+  },
+  {
+    "Name": "Regeneration",
+    "Description": "Gain vigor 1 at the end of your turn."
+  },
+  {
+    "Name": "Regenerator",
+    "Description": "Starts combat with vigor 1 and Regeneration. Starts combat bloodied. (Gain vigor 1 as the end of their turn)."
   },
   {
     "Name": "Rook",
@@ -435,6 +481,10 @@
   {
     "Name": "Stutter",
     "Description": "Once a turn, after a foe takes an action in range 2, this character may teleport 1 and deal 2 damage to an adjacent foe."
+  },
+  {
+    "Name": "Summon",
+    "Description": "Natals disappear when reduced to 0 hp and don't cause engagement."
   },
   {
     "Name": "Surreality",

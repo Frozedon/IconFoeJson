@@ -1,0 +1,21 @@
+{
+  "Name": "Cutter Demon",
+  "Inherits": "Void Demon",
+  "Type": "Foe",
+  "Actions": [
+    {
+      "Name": "Cut Through",
+      "ActionCost": 1,
+      "Tags": "line 4",
+      "AreaEffect": "[fray] damage.",
+      "Effects": "The Cutter Demon may teleport to any point on the line after this ability resolves."
+    },
+    {
+      "Name": "Hunt",
+      "ActionCost": 1,
+      "Tags": "mark",
+      "Description": "The Cutter Demon marks a foe in range 5.",
+      "Mark": "While marked, the demon deals bonus damage, gains +1 boon on attack rolls against that foe, and may teleport 1 every time that foe takes an action."
+    }
+  ]
+}

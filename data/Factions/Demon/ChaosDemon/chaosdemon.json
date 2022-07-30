@@ -1,0 +1,65 @@
+{
+  "Name": "Chaos Demon",
+  "Inherits": [ "Demon", "Artillery" ],
+  "Actions": [
+    {
+      "Name": "Chaos Cocoon",
+      "ActionCost": 0,
+      "Description": "The Chaos Demon summons a cocoon object in range 6.",
+      "Summons": {
+        "Name": "Cocoon",
+        "Tags": [ "Height 1", "10 HP", "Attacks automatically hit" ],
+        "Effects": [
+          "The cocoon also is destroyed if a character collides with it.",
+          "When the Cocoon is destroyed, summon 2 natals in free adjacent spaces."
+        ]
+      }
+    },
+    {
+      "Name": "Reality Razor",
+      "ActionCost": 1,
+      "Tags": [ "ranged attack 6", "pierce" ],
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "CriticalHit": "(+[D]) and gain +1 action."
+    },
+    {
+      "Name": "Mutate",
+      "ActionCost": 1,
+      "Description": "Foe in range 6 becomes vulnerable."
+    },
+    {
+      "Name": "Fatal Thaum",
+      "ActionCost": 1,
+      "Tags": "mark",
+      "Description": "Mark a character in range 10. ",
+      "Mark": "At the end of that character's turn, shoot a bolt of energy at that character, creating a blast 1 area effect centered on them. Deals [D] piercing to that character, destroys all created terrain in the area and shoves all other characters 1 away from that character. Then, end this mark."
+    },
+    {
+      "Name": "Flesh Warp",
+      "ActionCost": 1,
+      "Tags": "repeatable",
+      "Description": "A character in range 6 is torn into pieces and reassembled nearby. They take 1 piercing damage and are teleported 1",
+      "Effects": "Increase teleport distance and damage by +1 for each time this ability was used this turn."
+    }
+  ],
+  "Chapter2": {
+    "RemoveActions": "Chaos Cocoon",
+    "Actions": {
+      "Name": "Chaos Cocoon",
+      "ActionCost": 0,
+      "Description": "The Chaos Demon summons 3 cocoon objects in range 6.",
+      "Summons": {
+        "Name": "Cocoon",
+        "Tags": [ "Height 1", "10 HP", "Attacks automatically hit" ],
+        "Effects": [
+          "The cocoon also is destroyed if a character collides with it.",
+          "When the Cocoon is destroyed, summon 2 natals in free adjacent spaces."
+        ]
+      }
+    }
+  },
+  "Chapter3": {
+    "Traits": "Shed Space"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "Name": "Warping Demon",
+  "Inherits": "Terror Demon",
+  "Type": "Foe",
+  "Chapter": 2,
+  "Traits": [ "Flying", "Isolation" ],
+  "Actions": {
+    "Name": "Paranoia",
+    "ActionCost": 1,
+    "Recharge": 4,
+    "Tags": "mark",
+    "Description": "A foe in range 6 is marked.",
+    "Mark": "While marked, they cannot target allies with abilities and effects. The mark ends if they hit this demon with an attack."
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "Name": "Bulging Demon",
+  "Inherits": "Terror Demon",
+  "Type": "Foe",
+  "Traits": [ "Regenerator", "Disgorge", "Last Revenge" ]
+}

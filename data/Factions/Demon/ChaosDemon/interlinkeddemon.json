@@ -1,0 +1,18 @@
+{
+  "Name": "Interlinked Demon",
+  "Inherits": "Chaos Demon",
+  "Type": "Foe",
+  "Chapter": 3,
+  "Interrupts": {
+    "Name": "Reality Splinter",
+    "Count": 1,
+    "Trigger": "The demon is damaged by a foe's ability.",
+    "Effects": "After the ability resolves, the foe swaps places with the demon, teleporting."
+  },
+  "Actions": {
+    "Name": "Invert",
+    "ActionCost": 2,
+    "Recharge": 6,
+    "Description": "A character in range 6 is inverted. At the end of that character's turn, their HP total becomes their total missing hp instead. If they are at full hp, this action has no effect."
+  }
+}

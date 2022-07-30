@@ -1,0 +1,18 @@
+{
+  "Name": "Armor Demon",
+  "Inherits": "Battle Demon",
+  "Type": "Foe",
+  "Actions": [
+    {
+      "Name": "Crushing Advance",
+      "ActionCost": 1,
+      "Description": "Dash 1 space, shove all adjacent characters 1 space, then become sturdy until the start of next turn."
+    },
+    {
+      "Name": "Hone",
+      "ActionCost": 1,
+      "Tags": "end turn",
+      "Description": "The next attack from this character becomes a critical hit on hit (+[D])."
+    }
+  ]
+}

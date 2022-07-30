@@ -1,0 +1,33 @@
+{
+  "Name": "Great Bell Demon",
+  "Inherits": [ "Demon", "Elite", "Heavy" ],
+  "Type": "Foe",
+  "DamageDie": 8,
+  "Traits": [ "Size 2", "Black Temple Bell" ],
+  "Actions": [
+    {
+      "Name": "Flatten Mortal",
+      "ActionCost": 2,
+      "Tags": [ "melee attack", "close blast 1", "1/round" ],
+      "Hit": "4[D]+[fray] and foe is stunned.",
+      "Miss": "[D]+[fray].",
+      "AreaEffect": "[D]+[fray]."
+    },
+    {
+      "Name": "Bell Sweep",
+      "ActionCost": 1,
+      "AreaEffect": "All adjacent foes to the demon are shoved 1 and take [fray] damage."
+    },
+    {
+      "Name": "Swat",
+      "ActionCost": 1,
+      "Description": "An adjacent foe is shoved 3.",
+      "Collide": "Doe is winded"
+    },
+    {
+      "Name": "CLANG",
+      "ActionCost": 1,
+      "Description": "Every foe in range 2 of the demon takes 2 damage and must save or be dazed."
+    }
+  ]
+}

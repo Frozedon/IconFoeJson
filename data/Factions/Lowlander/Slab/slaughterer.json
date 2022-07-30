@@ -1,0 +1,21 @@
+{
+  "Name": "Slaughtere",
+  "Inherits": "Slab",
+  "Type": "Foe",
+  "Chapter": 3,
+  "Traits": "Bloodwhetter",
+  "Actions": [
+    {
+      "Name": "Swipe",
+      "ActionCost": 0,
+      "Description": "Deal 2 damage to all adjacent foes."
+    },
+    {
+      "Name": "Whirlwind",
+      "ActionCost": 1,
+      "Recharge": 5,
+      "Description": "Repeat this effect three times:",
+      "Effects": "Dash 1, then deal 2 damage to an adjacent foe and shove them 1."
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "Name": "Blightlands Brawn",
+    "Description": "When bloodied, becomes sturdy, Kidnap has no recharge, and goes +2 more spaces. (Can't be stunned or dazed, and reduce the distance of all shoves by 1)"
+  },
+  {
+    "Name": "Great Kidnap",
+    "Description": "The Slab can spend 2 actions on Kidnap to increase its distance to 6 spaces."
+  },
+  {
+    "Name": "Lowlander Toxin",
+    "Description": "All attacks by lowlanders gain on hit: inflict lowlander toxin. A character afflicted by lowlander toxin loses 2 hp at the end of their turn, ignoring resistance, armor, and vigor. This effect cannot be removed in any way, only ends when combat ends or the character is defeated, and cannot reduce a character past 1 hp. Does not stack."
+  },
+  {
+    "Name": "Suddenly!",
+    "Description": "At the start of any round, the GM can spring a lowlander trap in any unoccupied space not adjacent to a player character. The trap is a pit with one of the following effects:\n• Snare trap - A character in range 2 of the trap must save or be shoved until inside the trap.\n• Stake trap - Trap is also dangerous terrain.\n• Poison trap - Characters that end their turn in the trap are poisoned and inflicted with lowlander toxin.\nAll traps can be disarmed by a character taking the interact action adjacent, removing it. Lowlanders and any of their allies are not affected by their own traps, or their effects, and can move over them normally. Traps remain even if deactivated."
+  },
+  {
+    "Name": "Toxic Revenge",
+    "Description": "Area Effect: When defeated, explodes with venom, inflicting [D]+[fray], poisoning and inflicting lowlander toxin on all adjacent foes."
+  }
+]

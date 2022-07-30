@@ -1,0 +1,36 @@
+{
+  "Name": "Slab",
+  "Inherits": [ "Lowlander", "Heavy" ],
+  "Actions": [
+    {
+      "Name": "Raze",
+      "ActionCost": 1,
+      "Tags": [ "melee attack 2", "true strike" ],
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "Effects": "All foes in range 2 take 2 damage."
+    },
+    {
+      "Name": "Mancatcher",
+      "ActionCost": 0,
+      "Description": "A character in range 2 is shoved 1 towards the Enforcer."
+    },
+    {
+      "Name": "Bolas",
+      "ActionCost": 1,
+      "Description": "A foe in range 3 is winded. Winded foes must save or become stunned."
+    },
+    {
+      "Name": "Kidnap",
+      "ActionCost": 1,
+      "Recharge": 4,
+      "Description": "The enforcer dashes in a straight line 3 spaces, phasing through characters. The first character it encounters is shoved along with the Enforcer to the end of the line, then shoved 1."
+    }
+  ],
+  "Chapter2": {
+    "Traits": "Great Kidnap"
+  },
+  "Chapter3": {
+    "Traits": "Entrench"
+  }
+}

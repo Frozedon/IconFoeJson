@@ -74,6 +74,10 @@
     "Description": "On Critical Hit or Slay, gains +1 action."
   },
   {
+    "Name": "Bloodwhetter",
+    "Description": "When this character is damaged by an ability they may deal 2 damage to an adjacent foe. This happens each time this character is damaged."
+  },
+  {
     "Name": "Boiling Shroud",
     "Description": "While bloodied, has aura 1. All characters in the aura have permanent stealth and are blinded+, but only while inside the aura."
   },
@@ -178,6 +182,10 @@
     "Description": "While bloody, gain +1 action."
   },
   {
+    "Name": "Entrench",
+    "Description": "Unstoppable while inside a pit."
+  },
+  {
     "Name": "Equivalent Exchange",
     "Description": "Aura 1. Once a round, when an ally in the Aura is defeated, deal divine damage to any foe on the battlefield equal to 25% of their max hp."
   },
@@ -225,7 +233,7 @@
   },
   {
     "Name": "Great Enrage",
-    "Description": "Sturdy and +1 action while bloodied."
+    "Description": "Sturdy and +1 action while bloodied. (Can't be stunned or dazed, and reduce the distance of all shoves by 1)"
   },
   {
     "Name": "Great Leap",
@@ -237,7 +245,7 @@
   },
   {
     "Name": "Grit",
-    "Description": "Sturdy when bloodied."
+    "Description": "Sturdy when bloodied. (Can't be stunned or dazed, and reduce the distance of all shoves by 1)"
   },
   {
     "Name": "Heavy Armor",
@@ -254,7 +262,7 @@
   {
     "Name": "Hold the Line [X]",
     "DisplayName": "Hold the Line",
-    "Description": "If this character ends any turn without attacking, they gain Sturdy until the start of their next turn and Vigilance [X]."
+    "Description": "If this character ends any turn without attacking, they gain Sturdy until the start of their next turn and Vigilance [X]. (Can't be stunned or dazed, and reduce the distance of all shoves by 1)"
   },
   {
     "Name": "Hollow",
@@ -463,6 +471,10 @@
     "Description": "Attacks from Stealth are critical hits (+[D])."
   },
   {
+    "Name": "Stench",
+    "Description": "Melee attacks against this character have +1 curse. Characters starting their turns in an adjacent space are poisoned. Poisoned foes treat the area as dangerous terrain."
+  },
+  {
     "Name": "Stoneskin",
     "Description": "Has resistance while adjacent to an object."
   },
@@ -476,7 +488,7 @@
   },
   {
     "Name": "Sturdy",
-    "Description": "Immune to shove, dazed, and stunned."
+    "Description": "Can't be stunned or dazed, and reduce the distance of all shoves by 1."
   },
   {
     "Name": "Stutter",
@@ -495,8 +507,12 @@
     "Description": "Has resistance to any damage not from area effects or attacks. Does not provide obstruction, but characters treat its space as difficult terrain."
   },
   {
-    "Name": "Tactics Aura",
-    "Description": "Aura 2. Foes in the aura take +1 curse on saves. Foes suffering from a status in the aura take bonus damage from all sources."
+    "Name": "Terrain Expert",
+    "Description": "Ignores movement, damage, and attack penalties from all kinds of terrain."
+  },
+  {
+    "Name": "Terrainwalking",
+    "Description": "Ignores movement penalties for height and terrain."
   },
   {
     "Name": "Terrainwalking",

@@ -1,5 +1,5 @@
 {
-  "Name": "Imperial Sniper",
+  "Name": "Sharpshooter",
   "Inherits": "Gunner",
   "Type": "Foe",
   "Traits": "Brace",

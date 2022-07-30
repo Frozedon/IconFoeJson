@@ -22,7 +22,7 @@
       "Name": "Hone",
       "ActionCost": 1,
       "Tags": "end turn",
-      "Description": "The next attack from this character becomes a critical hit on hit (+ [D])."
+      "Description": "The next attack from this character becomes a critical hit on hit (+[D])."
     }
   ]
 }

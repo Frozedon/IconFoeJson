@@ -2,7 +2,7 @@
   "Name": "Silent One",
   "Inherits": [ "Relict", "Leader" ],
   "Type": "Foe",
-  "Traits": [ "Defiance", "Ethereal" ],
+  "Traits": [ "Defiance", "Ethereal (Resistance)" ],
   "Actions": [
     {
       "Name": "Mournful Wail",

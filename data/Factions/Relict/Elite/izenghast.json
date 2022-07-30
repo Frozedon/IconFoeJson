@@ -3,7 +3,7 @@
   "Inherits": [ "Relict", "Elite", "Skirmisher" ],
   "Type": "Foe",
   "Chapter": 2,
-  "Traits": [ "Surreality", "Stutter", "Ethereal" ],
+  "Traits": [ "Surreality", "Stutter", "Ethereal (Resistance)" ],
   "Actions": [
     {
       "Name": "Soul Rip",

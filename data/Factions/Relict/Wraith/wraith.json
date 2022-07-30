@@ -2,7 +2,7 @@
   "Name": "Wraith",
   "Inherits": [ "Relict", "Artillery" ],
   "RemoveTraits": "Aetherwall",
-  "Traits": [ "Flying", "Ethereal" ],
+  "Traits": [ "Flying", "Ethereal (Resistance)" ],
   "Actions": [
     {
       "Name": "Chain Lightning",

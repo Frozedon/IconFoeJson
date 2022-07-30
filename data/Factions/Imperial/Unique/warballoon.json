@@ -8,7 +8,7 @@
   "Speed": 4,
   "Defense": 5,
   "FrayDamage": 4,
-  "DamageDie": 8,
+  "DamageDie": 6,
   "Traits": [ "Size 2", "Sturdy", "Flying", "Deflate", "Ranged Master", "Battle Platform", "Vantage Point" ],
   "Actions": [
     {

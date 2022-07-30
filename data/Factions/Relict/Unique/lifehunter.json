@@ -1,10 +1,10 @@
 {
   "Name": "Life Hunter",
-  "Inherits": [ "Relict", "Heavy" ],
+  "Inherits": [ "Relict", "Artillery" ],
   "Type": "Foe",
   "Chapter": 2,
   "RemoveTraits": "Aetherwall",
-  "Traits": "Ethereal",
+  "Traits": "Ethereal (Resistance)",
   "Actions": [
     {
       "Name": "Shift",

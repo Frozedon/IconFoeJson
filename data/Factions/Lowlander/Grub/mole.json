@@ -1,0 +1,20 @@
+{
+  "Name": "Mole",
+  "Inherits": "Grub",
+  "Type": "Foe",
+  "Chapter": 2,
+  "Actions": [
+    {
+      "Name": "Collapse Tunnel",
+      "ActionCost": 2,
+      "Description": "The Mole creates a line 4 area effect of difficult terrain. Characters standing in the area when it is created must save or be slowed. If a pit is caught in the space, it explodes with a blast 1 area effect, dealing [D]+[fray] to characters within but destroying the pit."
+    },
+    {
+      "Name": "Dig Down",
+      "ActionCost": 1,
+      "Recharge": 6,
+      "Tags": "end turn",
+      "Description": "Remove the Mole from the battlefield. Return them to any unoccupied space on the battlefield at the start of their next turn."
+    }
+  ]
+}

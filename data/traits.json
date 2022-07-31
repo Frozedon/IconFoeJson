@@ -153,6 +153,10 @@
     "Description": "Aura 1. Foes inside are blinded+."
   },
   {
+    "Name": "Dirty Fighting",
+    "Description": "+1 boon on attacks and bonus damage to characters inside pits."
+  },
+  {
     "Name": "Divine Presence",
     "Description": "Immune to stun."
   },
@@ -345,7 +349,7 @@
   },
   {
     "Name": "Master of Strategy",
-    "Description": "Before combat starts, may move every character to any space up to 2 spaces in any direction from their starting location"
+    "Description": "Before combat starts, may move every character to any space up to 2 spaces in any direction from their starting location."
   },
   {
     "Name": "Mob",
@@ -364,6 +368,10 @@
   {
     "Name": "Nimble",
     "Description": "Has evasion unless suffering from a status."
+  },
+  {
+    "Name": "Noxious Censer",
+    "Description": "The priest has Aura 2. Poisoned foes in the aura get +1 curse on attacks and saves."
   },
   {
     "Name": "Open Rift",
@@ -423,6 +431,10 @@
     "Description": "The first time on any turn a foe takes an action in range 2, the Yaman may dash 2, then deal 2 damage to an adjacent foe."
   },
   {
+    "Name": "Saddle Up",
+    "Description": "An adjacent ally can mount or dismount this character as a free action, entering and sharing its space. Whiled mounted, attacks take +1 curse against a rider. Allies can start any combat already riding this character. This character has room for two size 1 characters. If this character is defeated, characters dismount."
+  },
+  {
     "Name": "Salty",
     "Description": "When this character deals self damage, they gain vigor 1 after taking the damage."
   },
@@ -447,6 +459,10 @@
   {
     "Name": "Slam",
     "Description": "This character's abilities have Collide: Character is dazed. Dazed characters also take [D]+[fray]."
+  },
+  {
+    "Name": "Slime Trail",
+    "Description": "Aura 1. Any foe that starts their turn in the aura slips and is shoved 2. Collide: Foe takes [fray] damage."
   },
   {
     "Name": "Slimy Skin",
@@ -507,6 +523,10 @@
     "Description": "Has resistance to any damage not from area effects or attacks. Does not provide obstruction, but characters treat its space as difficult terrain."
   },
   {
+    "Name": "Swarm Shroud",
+    "Description": "Aura 2. Ranged attacks against this character and allies in the aura gain +1 curse, and foes that start their turn in the aura take 1 piercing damage."
+  },
+  {
     "Name": "Terrain Expert",
     "Description": "Ignores movement, damage, and attack penalties from all kinds of terrain."
   },
@@ -549,6 +569,10 @@
   {
     "Name": "Vengeance",
     "Description": "When bloodied, next attack becomes a critical hit on hit (+[D])."
+  },
+  {
+    "Name": "Venom Blade",
+    "Description": "Attacks inflict poisoned, ignore vigor, and deal bonus damage against bloodied characters."
   },
   {
     "Name": "Wayfinding",

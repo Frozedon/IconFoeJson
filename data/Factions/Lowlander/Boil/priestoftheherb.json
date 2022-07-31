@@ -1,0 +1,16 @@
+{
+  "Name": "Priest of the Herb",
+  "Inherits": "Boil",
+  "Type": "Foe",
+  "Actions": {
+    "Name": "Purifying Censer",
+    "ActionCost": 2,
+    "Tags": "summon",
+    "Description": "The Apothecary summons a censer in range 3.",
+    "Summons": {
+      "Name": "Herbal Censer",
+      "Tags": "Height 1 object",
+      "Effects": "The censer has aura 1. Allies that end their turn inside the censer's aura may save. On a successful save, they end all statuses, blights, and marks of their choice affecting them."
+    }
+  }
+}

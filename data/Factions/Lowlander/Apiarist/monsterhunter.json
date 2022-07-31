@@ -1,0 +1,23 @@
+{
+  "Name": "Monster Hunter",
+  "Inherits": "Boil",
+  "Type": "Foe",
+  "RemoveActions": "Summon the Swarm",
+  "Actions": [
+    {
+      "Name": "Hunting Glaive",
+      "ActionCost": 1,
+      "Tags": "ranged attack 6",
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "CriticalHit": "(+[D]) and all allies in range 2 of the target may dash 2.",
+      "Effects": "Deals bonus damage for each ally adjacent to the target."
+    },
+    {
+      "Name": "Hone",
+      "ActionCost": 1,
+      "Tags": "end turn",
+      "Description": "The next attack from the monster hunter becomes a critical hit on hit."
+    }
+  ]
+}

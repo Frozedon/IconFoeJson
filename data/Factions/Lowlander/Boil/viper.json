@@ -1,0 +1,12 @@
+{
+  "Name": "Viper",
+  "Inherits": "Boil",
+  "Type": "Foe",
+  "Actions": {
+    "Name": "Deep Well Poison",
+    "ActionCost": 1,
+    "Tags": "mark",
+    "Description": "A foe in range 5 is marked.",
+    "Mark": "While marked, they gain no benefit from being sturdy or unstoppable. At the start of their turn, the Viper may shove them 1 space as an effect."
+  }
+}

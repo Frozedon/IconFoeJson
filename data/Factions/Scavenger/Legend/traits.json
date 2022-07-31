@@ -22,10 +22,6 @@
     "Description": "One brother can use Garrote once per round."
   },
   {
-    "Name": "Venom Blade",
-    "Description": "Attacks inflict poisoned, ignore vigor, and deal bonus damage against bloodied characters."
-  },
-  {
     "Name": "Blessing Filth",
     "DisplayName": "Blessing",
     "Description": "All remaining Brothers gain the Venom Blade trait."

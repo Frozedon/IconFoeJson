@@ -1,0 +1,11 @@
+{
+  "Name": "Scab",
+  "Inherits": "Grub",
+  "Type": "Foe",
+  "Traits": "Venom Blade",
+  "Actions": {
+    "Name": "Throw Knife",
+    "ActionCost": 1,
+    "Description": "A foe in range 3 takes [fray] damage. If that foe is bloodied, they take [fray] damage twice."
+  }
+}

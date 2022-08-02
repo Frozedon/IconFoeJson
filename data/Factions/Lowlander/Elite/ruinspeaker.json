@@ -1,0 +1,33 @@
+{
+  "Name": "Ruin Speaker",
+  "Inherits": [ "Lowlander", "Elite", "Artillery" ],
+  "Type": "Foe",
+  "Traits": "Call Ruin",
+  "Actions": [
+    {
+      "Name": "Landwrack",
+      "ActionCost": 2,
+      "Tags": "ranged attack 8",
+      "Hit": "2[D]+[fray].",
+      "Miss": "[fray].",
+      "Effects": "Create a height 1 ruin object adjacent to the character."
+    },
+    {
+      "Name": "Entropus",
+      "ActionCost": 1,
+      "Tags": "multimark",
+      "Description": "A character in range 6 of the ruin speaker is marked and starts to petrify.",
+      "Mark": "While marked, they take [D] piercing damage at the end of their turns if they end their turn adjacent to or inside an object or terrain effect."
+    },
+    {
+      "Name": "Earthglide",
+      "ActionCost": 1,
+      "Description": "Dash 3. Gain phasing and become intangible while moving."
+    },
+    {
+      "Name": "Welcome",
+      "ActionCost": 1,
+      "Description": "The Ruin Speaker creates a lowlander trap in a free space in range 6."
+    }
+  ]
+}

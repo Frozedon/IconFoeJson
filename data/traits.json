@@ -66,6 +66,10 @@
     "Description": "This character always attempts to attack and focus on the closest foe at the start of its turn."
   },
   {
+    "Name": "Battle Platform",
+    "Description": "Characters can mount or dismount this character with their standard move, placing them adjacent when dismounting. Allies can start the battle mounted on this character. While mounted, place them inside a free space in this character (size 2 characters has space for 4 size 1 characters, while size 3 characters has space for 9). They share its space, move when it moves, and have cover. Characters hostile to this character must pass a save to mount it. Characters mounting it when it is defeated are placed adjacent and stunned."
+  },
+  {
     "Name": "Beyond Death",
     "Description": "When defiance activates, roll a d6. On a 4+, this character immediately regains defiance. Attacks with True Strike bypass this trait."
   },
@@ -577,5 +581,9 @@
   {
     "Name": "Wayfinding",
     "Description": "Immune to terrain effects and difficult terrain."
+  },
+  {
+    "Name": "Zipline Dismount",
+    "Description": "Characters mounted on this character can fly 5 and dismount it as free action."
   }
 ]

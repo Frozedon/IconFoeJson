@@ -1,0 +1,72 @@
+{
+  "Name": "Head Lopper",
+  "Inherits": [ "Lowlander", "Legendary Heavy" ],
+  "Type": "Foe",
+  "Chapter": 2,
+  "HP": 40,
+  "RemoveTraits": "Suddenly!",
+  "Traits": "Walking Cataclysm",
+  "Actions": [
+    {
+      "Name": "Earth Breaker",
+      "ActionCost": 1,
+      "Tags": [ "melee attack", "close blast 1", "true strike" ],
+      "Hit": "[D]+[fray] and foe is winded.",
+      "Miss": "[fray].",
+      "AreaEffect": "[fray].",
+      "Effects": "Create a height 1 boulder object under the attack space. Increase the height of any existing terrain spaces in the area by +1.",
+      "Combos": {
+        "Name": "Massive Overhead",
+        "ActionCost": 2,
+        "Tags": [ "melee attack", "close blast 1", "true strike", "+1 curse" ],
+        "Hit": "3[D]+[fray] and foe must save or be stunned.",
+        "Miss": "[fray].",
+        "AreaEffect": "[fray].",
+        "Effects": "Create a pit under the attack space. Lower all terrain in the area by 1 space."
+      }
+    },
+    {
+      "Name": "Spinning Lariat",
+      "ActionCost": 1,
+      "Tags": "repeatable",
+      "Description": "The Head Lopper dashes 3. All foes it passes by are shoved 1.",
+      "Collide": "Foe takes [fray] damage and is dazed."
+    },
+    {
+      "Name": "Mighty Leap",
+      "ActionCost": 1,
+      "Tags": "repeatable",
+      "Description": "The Head Lopper flies 2 spaces in a straight line. Adjacent foes when they land are shoved 1.",
+      "Collide": "Foe is dazed. If this action is made from a higher elevation to a lower one, foes also take [fray] damage and the flight becomes 4 spaces."
+    },
+    {
+      "Name": "Grab",
+      "ActionCost": 0,
+      "Tags": [ "2/round", "end turn" ],
+      "Description": "An foe in range 2 must save. On a failed save, the Head Lopper dashes until adjacent, then grabs the foe, immobilizing them. If the Head Lopper or the targeted foe are separated, this effect ends. Otherwise, at the end of the very next turn, the Head Lopper performs one of the following moves, ending this effect:",
+      "ExtraItems": [
+        {
+          "Name": "DDT",
+          "Description": "The foe is stunned, winded, dazed, and shoved 1."
+        },
+        {
+          "Name": "Spinning Piledriver",
+          "Description": "The Head Lopper and the foe fly 2 together, then the foe takes [fray] damage and has a pit created underneath them."
+        },
+        {
+          "Name": "Backbreaker",
+          "Description": "The foe becomes immobile for their next turn."
+        }
+      ]
+    }
+  ],
+  "PhasesDescription": "The Headlopper changes phases when bloodied.",
+  "Phases": [
+    {
+      "Traits": "Havoc"
+    },
+    {
+      "Traits": [ "Enrage", "God Waster" ]
+    }
+  ]
+}

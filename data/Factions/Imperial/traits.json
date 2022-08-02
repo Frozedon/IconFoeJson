@@ -4,10 +4,6 @@
     "Description": "Start combat with vigor 1."
   },
   {
-    "Name": "Battle Platform",
-    "Description": "Characters can mount or dismount this character with their standard move, placing them adjacent when dismounting. Imperials can start the battle mounted on this character. While mounted, place them inside a free space in this character (so it has space for 4 size 1 characters). They share its space, move when it moves, and have cover. Characters hostile to this character must pass a save to mount it. Characters mounting it when it is defeated are placed adjacent and stunned."
-  },
-  {
     "Name": "Cannon Strike",
     "Description": "At the start of each round, may designate a blast 1 area to be hit by off-battlefield artillery. At the end of the round, any characters in the area must save or take 2[D]+[fray], or [fray] damage on a successful save. Any character standing in the center space is also stunned on a failed save."
   },

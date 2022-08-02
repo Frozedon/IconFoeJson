@@ -4,12 +4,20 @@
     "Description": "At the start of combat, the priest creates a blast 1 terrain effect in range 6. Characters that end their turn inside the terrain effect take piercing damage equal to the round number +2. The scion can redirect the terrain effect to any other point in range 6 as an action."
   },
   {
+    "Name": "Beastmaster",
+    "Description": "The Wrangler starts combat with 3 trained beasts. Place them within range 3. Each beast has a different ability (detailed in the Sic action)."
+  },
+  {
     "Name": "Blightbellow",
     "Description": "While bloodied, this character' areas of effect increase by +1, including active areas."
   },
   {
     "Name": "Blightlands Brawn",
     "Description": "When bloodied, becomes sturdy, Kidnap has no recharge, and goes +2 more spaces. (Can't be stunned or dazed, and reduce the distance of all shoves by 1)"
+  },
+  {
+    "Name": "Call Ruin",
+    "Description": "At the start of the round, the Ruin speaker chooses a space in range 6, that becomes known to all characters. At the end of the round, a ruin chunk surfaces in that space, a height 3 object. Spaces next to this terrain are difficult terrain. Any character occupying the space is pushed up on top of the ruin chunk but also takes 3[D]+[fray] and is stunned."
   },
   {
     "Name": "Great Kidnap",

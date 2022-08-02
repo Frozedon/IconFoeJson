@@ -1,0 +1,111 @@
+{
+  "Name": "Hurian Worm Rider",
+  "Inherits": [ "Lowlander", "Legendary Skirmisher" ],
+  "Type": "Foe",
+  "Chapter": 3,
+  "HP": 12,
+  "HPText": "Each partner has [HP] hp per player [MIN]",
+  "RemoveTraits": [ "Suddenly!", "Dodge", "Skirmish" ],
+  "Traits": [ "Worm and Rider", "Wormspore Bond" ],
+  "PhasesDescription": "The phase changes at round 4 and later.",
+  "Characters": [
+    {
+      "Name": "Rider",
+      "Traits": [ "Dodge", "Skirmish", "Worm Riding", "Skewer" ],
+      "ComplexActions": [
+        {
+          "Name": "Wormhunter Spear",
+          "ActionCost": 1,
+          "Tags": [ "melee attack or ranged attack 4", "+1 boon" ],
+          "Hit": "[D]+[fray].",
+          "Miss": "[fray].",
+          "Effects": "On hit, until the end of their next turn, foe takes 1 damage for each space they move. Bloodied foes take 2 damage instead.",
+          "Combos": {
+            "Name": "Spear Strike",
+            "ActionCost": 2,
+            "Tags": [ "melee attack", "line 4" ],
+            "Hit": "2[D]+[fray].",
+            "Miss": "[fray].",
+            "AreaEffect": "[fray].",
+            "Effects": "The Rider may dash 4 spaces before or after this attack."
+          }
+        },
+        {
+          "Name": "Burrow",
+          "ActionCost": 1,
+          "Tags": "end turn",
+          "Description": "The Rider teleports adjacent to the Worms' space, then creates a pit in the space it left."
+        },
+        {
+          "Name": "Serrated Trap",
+          "ActionCost": 1,
+          "Tags": [ "2/round", "summon" ],
+          "Description": "The Rider springs a trap adjacent to a foe.",
+          "Summons": {
+            "Name": "Trap",
+            "Tags": [ "Size 1", "5 HP", "Immobile", "Automatically hit by attacks" ],
+            "Effects": "That foe becomes immobile until the trap is destroyed. They can also save at the end of their turn, destroying the trap on a successful save."
+          }
+        },
+        {
+          "Name": "Wormlure",
+          "ActionCost": 1,
+          "Tags": [ "1/round", "terrain effect" ],
+          "Description": "The Rider puts out a worm lure, a 1 space terrain effect. If any foe ends its turn adjacent to the worm lure, if the Worm is active it may immediately teleport adjacent to the lure, destroying it, then use its Massive Jaws attack, ignoring the attack limit. The lure remains action until triggered."
+        },
+        {
+          "Name": "Hurian Dive",
+          "ActionCost": 2,
+          "Tags": "1/round",
+          "Description": "The Rider chooses a foe in range 6, then removes themselves from the battlefield. At the end of that foe's next turn, that foe must save as the Rider descends, dealing [D] four times on a failed save, or twice on a successful save. Lower this damage by [D] for every adjacent ally of the target, which could cause it to do no damage. Then, place the Rider in any free space in range 2."
+        }
+      ]
+    },
+    {
+      "Name": "Worm",
+      "Traits": [ "Sturdy", "Devour the Land" ],
+      "ComplexActions": [
+        {
+          "Name": "Massive Jaws",
+          "ActionCost": 1,
+          "Tags": [ "melee attack", "close blast 1" ],
+          "Hit": "[D]+[fray].",
+          "Miss": "[fray].",
+          "AreaEffect": "[fray].",
+          "Effects": [
+            "Becomes a critical hit on hit if only one for is caught in the area.",
+            "Bloodied characters are flung into the air, shoving them 3 in any direction"
+          ]
+        },
+        {
+          "Name": "Body Slam",
+          "ActionCost": 1,
+          "Tags": "line 4",
+          "AreaEffect": "Foes in the area must save or take [D]+[fray] and be shoved 1 to either side of the line. On a successful save, they only take [fray] damage."
+        },
+        {
+          "Name": "Burrow",
+          "ActionCost": 1,
+          "Tags": "end turn",
+          "Description": "Remove the worm from play, then place it back in any free space. Foes adjacent when it emerges take [fray] damage. Create a pit in one of the spaces it left."
+        },
+        {
+          "Name": "Swallow Whole",
+          "ActionCost": 1,
+          "Tags": "2/round",
+          "Description": "An adjacent character to the worm must save or be swallowed whole. Remove them from the battlefield. At the start of their turn, the worm spits them out, placing them in any adjacent space to the worm's current location, then shoving them 3 spaces. They are blinded.",
+          "Collide": "Character takes [D]+[fray] and is stunned."
+        }
+      ]
+    }
+  ],
+  "Phases": [
+    {
+      "Description": "Round 3 or lower."
+    },
+    {
+      "Description": "Round 4 or higher.",
+      "Traits": [ "Crumbling Earth", "Law of the Worm" ]
+    }
+  ]
+}

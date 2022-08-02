@@ -1,0 +1,29 @@
+{
+  "Name": "Aetnir",
+  "Inherits": [ "Jotunn", "Heavy" ],
+  "Type": "Foe",
+  "RemoveTraits": "Titanblood",
+  "Traits": [ "Size 2", "Exalt Erenhelion" ],
+  "Actions": [
+    {
+      "Name": "Titan Cut",
+      "ActionCost": 1,
+      "Tags": [ "melee attack", "line 4" ],
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "AreaEffect": "[fray]."
+    },
+    {
+      "Name": "Joyous Combat",
+      "ActionCost": 1,
+      "Description": "All adjacent foes must choose: be shoved 2, or take [D]+[fray] from the Aetnir."
+    },
+    {
+      "Name": "Great Leap",
+      "ActionCost": 1,
+      "Recharge": 4,
+      "Description": "The Aetnir flies 2, then shoves all adjacent characters 2 spaces.",
+      "Collide": "[D]+[fray] and character is dazed."
+    }
+  ]
+}

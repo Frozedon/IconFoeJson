@@ -1,0 +1,49 @@
+{
+  "Name": "Thannir",
+  "Inherits": [ "Jotunn", "Leader" ],
+  "Type": "Foe",
+  "Chapter": 2,
+  "RemoveTraits": "Titanblood",
+  "Traits": "Size 2",
+  "Actions": [
+    {
+      "Name": "Spirit Scythe",
+      "ActionCost": 1,
+      "Tags": [ "melee attack 2", "arc 4" ],
+      "AutoHit": "[fray].",
+      "AreaEffect": "[fray].",
+      "Effects": "Attack target is branded and shoved 1 in any direction. This effect also applies to frostbitten foes in the area."
+    },
+    {
+      "Name": "Lonely Dead",
+      "ActionCost": 1,
+      "Description": "The Thannir summons a lonely soul in range 4.",
+      "Summons": {
+        "Name": "Lonely Soul",
+        "Tags": [ "Size 1", "10 HP" ],
+        "Traits": "Phasing",
+        "Actions": "When summoned, or once a round on the Thannir's turn thereafter, may move 3 spaces and deal 2 piercing damage to an adjacent foe. If that foe is branded or marked, the soul can also then shove the foe 1."
+      }
+    },
+    {
+      "Name": "Rune of the Spring Flower",
+      "ActionCost": 1,
+      "Tags": "multimark",
+      "Description": "The Thannir marks an ally in range 4.",
+      "Mark": "After the marked ally takes damage, they gain vigor 1 and may dash 2. At the end of the round, or after this effect is triggered, remove this mark."
+    },
+    {
+      "Name": "Rune of the Grave",
+      "ActionCost": 1,
+      "Tags": "mark",
+      "Description": "A foe in range 6 must save or be marked. On a successful save, they are pacified.",
+      "Mark": "While marked, a character is frostbitten, cannot benefit from defiance, loses all vigor at the end of each turn, and cannot gain vigor."
+    },
+    {
+      "Name": "Lay To Rest",
+      "ActionCost": 2,
+      "Tags": "1/round",
+      "Description": "The Thannir chooses a foe in range 3 that is at 25% hp or less. That foe must save or be instantly defeated. On a successful save, they are reduced to 1 hp."
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "Name": "Nilfling",
+  "Inherits": [ "Jotunn", "Heavy" ],
+  "Type": "Foe",
+  "HPMultiplier": 4,
+  "RemoveTraits": [ "Titanblood", "Titanfall", "Elite" ],
+  "Traits": [ "Thinblood", "Eyeless", "Blood Scent" ],
+  "Actions": [
+    {
+      "Name": "Slaver",
+      "ActionCost": 1,
+      "Tags": [ "melee attack", "true strike" ],
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "Effects": "The Nilfling can dash 2 before this attack."
+    },
+    {
+      "Name": "Slam",
+      "ActionCost": 1,
+      "Description": "An adjacent foe takes [fray] damage and is shoved 1."
+    },
+    {
+      "Name": "Leap",
+      "ActionCost": 1,
+      "Tags": "repeatable",
+      "Description": "The Nilfling flies 2. When it lands, all adjacent characters are shoved 1."
+    },
+    {
+      "Name": "Finish Off",
+      "ActionCost": 1,
+      "Description": "The Nilfling deals a phenomenal blow to an adjacent bloodied character. That character must save or take 2[D]+[fray], become dazed, and become winded. On a successful save, they only take [D]+[fray] and are either dazed or winded (the Nilfling can choose)."
+    }
+  ]
+}

@@ -30,6 +30,20 @@
     "Description": "Foes do not save against conditions at the end of their turn while in the aura of the cauldron."
   },
   {
+    "Name": "Exalt Erenhelion",
+    "Description": "At the start of the Round, the Aetnir either chooses Crush Cowards or Break the Mighty. At the end of the round, the chosen effect occurs.",
+    "ExtraItems": [
+      { 
+        "Name": "Crush Cowards",
+        "Description": "The Aetnir raises its weapon. At the end of the round, it sweeps out with a massive slash, affecting a blast 3 area effect around it, with different effects depending on how close characters are. Foes 3 spaces away take 2[D]+[fray]. Foes 2 spaces away take [D]+[fray]. Adjacent foes take [fray] damage."
+      },
+      { 
+        "Name": "Break the Mighty",
+        "Description": "The Aetnir raises its shield. At the end of the round, it slams its shield down. Adjacent characters take 2[D]+[fray] and are shoved 2 spaces away. Collide: Characters take [D]+[fray] again and are stunned."
+      }
+    ]
+  },
+  {
     "Name": "Living Deeps",
     "Description": "Instead of a 2x2 space, this Jotunn occupies an Arc 4 space that can be placed in any configuration. When it moves, move either end space of the Arc, then re-place the Arc in any valid configuration. It can make attacks or use abilities from any of its spaces."
   },
@@ -49,6 +63,10 @@
     "Name": "Titan Armament",
     "Description": "This Jotunn is armed with Titansteel weaponry. They can take 1 extra turn a round, and 1/round may dash 2 as a free action, then deal [fray] damage to all adjacent foes.",
     "EncounterBudgetAdd": 1
+  },
+  {
+    "Name": "Thinblood",
+    "Description": "Size 1, and doesn't have the elite trait like other Jotunn."
   },
   {
     "Name": "Titanblood",

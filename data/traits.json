@@ -78,6 +78,10 @@
     "Description": "On Critical Hit or Slay, gains +1 action."
   },
   {
+    "Name": "Blood Scent",
+    "Description": "Always focuses on the closest bloody foe."
+  },
+  {
     "Name": "Bloodwhetter",
     "Description": "When this character is damaged by an ability they may deal 2 damage to an adjacent foe. This happens each time this character is damaged."
   },
@@ -310,10 +314,6 @@
     "EncounterBudget": -1.0
   },
   {
-    "Name": "Legendary Vigilance",
-    "Description": "Can use Vigilance twice a round."
-  },
-  {
     "Name": "Legendary Diaga",
     "Actions": [
       {
@@ -334,6 +334,10 @@
         "Description": "Remove self from the battlefield, then return in a free space in range 5."
       }
     ]
+  },
+  {
+    "Name": "Legendary Vigilance",
+    "Description": "Can use Vigilance twice a round."
   },
   {
     "Name": "Living Lightning",

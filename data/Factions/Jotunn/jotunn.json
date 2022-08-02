@@ -1,0 +1,33 @@
+{
+  "Name": "Jotunn",
+  "Faction": "Jotunn",
+  "SpecialClass": "Elite",
+  "Type": "Template",
+  "UsesSpecialTemplates": "Titan Armament",
+  "HPMultiplier": 8,
+  "Traits": [ "Elite", "Titanblood", "Titanfall" ],
+  "SetupTraits": [
+    {
+      "Name": "Kin", 
+      "Description": "Ancient Jotunn are kin, can be bargained with, and will flee or surrender if heavily losing a fight.",
+      "ExtraItems": [
+        {
+          "Name": "Motivations",
+          "Description": "Jotunn are motivated strongly by their negative emotions (sadness, anger, distrust, ennui, hunger, etc). Appeasing them or appealing to their feelings can soften them and make them open to negotiation."
+        },
+        {
+          "Name": "Flee",
+          "Description": "Jotunn typically don't flee but value their lives and will surrender if they see no chance of winning a fight."
+        }
+      ]
+    },
+    {
+      "Name": "Monsters",
+      "Description": "Blood Jotunn are infected with the Blood Rage. Born of the slaying of the Titans, they are driven only by their pain and rage. Treat them like monsters - they do not flee or negotiate. It might be possible to cure the Rage."
+    },
+    {
+      "Name": "Titan Armament",
+      "Description": "You can arm a Jotunn with Titansteel weaponry (Adding the Special Template). This increases a Jotunn's encounter budget cost by +1. If you do, they can take 1 extra turn a round, and 1/round may dash 2 as a free action, then deal fray damage to all adjacent foes."
+    }
+  ]
+}

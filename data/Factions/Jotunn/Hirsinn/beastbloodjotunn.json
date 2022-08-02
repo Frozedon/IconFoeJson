@@ -1,0 +1,18 @@
+{
+  "Name": "Beastblood Jotunn",
+  "Inherits": "Hirsinn",
+  "Type": "Foe",
+  "Actions": [
+    {
+      "Name": "Frost Bolt",
+      "ActionCost": 1,
+      "Description": "A foe in range 3 is winded and frostbitten."
+    },
+    {
+      "Name": "Frost Breath",
+      "ActionCost": 2,
+      "Tags": [ "close blast 1", "true strike" ],
+      "AreaEffect": "Characters within take [fray] damage, are inflicted with frostbite, and must save or become winded. Winded or frostbitten characters also take [D]+[fray] damage instead."
+    }
+  ]
+}

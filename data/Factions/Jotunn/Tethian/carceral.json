@@ -1,0 +1,28 @@
+{
+  "Name": "Carceral",
+  "Inherits": "Tethian",
+  "Type": "Foe",
+  "Chapter": 3,
+  "RemoveActions": "Dampen Time",
+  "Actions": [
+    {
+      "Name": "Torpor",
+      "ActionCost": 0,
+      "Tags": "1/round",
+      "Description": "A character in range 8 must save. On a failed save, until the end of their next turn, outside of their own turn, they are unable to take interrupts, use abilities, use traits, or activate effects. On a successful save, they are shattered."
+    },
+    {
+      "Name": "Sisyphus",
+      "ActionCost": 1,
+      "Tags": "mark",
+      "Description": "Mark a character put a marker on their current location.",
+      "Mark": "At the end of their turn, if they are still marked, remove them from the battlefield and return them to the marker (or as close possible if the area is occupied), then remove this mark."
+    },
+    {
+      "Name": "Imprisoned Time",
+      "ActionCost": 1,
+      "Tags": "terrain effect",
+      "Description": "The Carceral creates a blast 1 terrain effect in range 6. Characters other than Tethians that enter or exit the area immediately end their turn if it is their turn. Using this ability again moves the area rather than placing a new once."
+    }
+  ]
+}

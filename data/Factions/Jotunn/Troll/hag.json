@@ -1,0 +1,27 @@
+{
+  "Name": "Hag",
+  "Inherits": "Troll",
+  "Type": "Foe",
+  "Chapter": 3,
+  "Actions": [
+    {
+      "Name": "Bend Fate",
+      "ActionCost": 1,
+      "Tags": "mark",
+      "Description": "The Hag chooses an ally in range 5 and marks them. That ally gains defiance.",
+      "Mark": "While marked, attacks gain +1 curse against that ally, and that ally gains +1 boon on attacks."
+    },
+    {
+      "Name": "Inside Out",
+      "ActionCost": 2,
+      "Tags": "1/round",
+      "Description": "The Hag curses a foe with awful nausea. If that foe moves more than 1 space or takes more than 1 action on their next turn, they must save. On a failed save, they take damage equal to 50% of their maximum HP and are stunned. If they succeed on the save, they take damage equal to 25% of their maximum HP."
+    },
+    {
+      "Name": "Rotten Curse ",
+      "ActionCost": 2,
+      "Tags": "1/round",
+      "Description": "A foe in range 5 takes [fray] damage, once, for every condition or mark they are affected by."
+    }
+  ]
+}

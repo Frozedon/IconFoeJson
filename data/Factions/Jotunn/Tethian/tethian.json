@@ -1,0 +1,34 @@
+{
+  "Name": "Tethian",
+  "Inherits": [ "Jotunn", "Artillery" ],
+  "RemoveTraits": "Titanblood",
+  "Traits": "Size 2",
+  "Actions": [
+    {
+      "Name": "Third Eye",
+      "ActionCost": 1,
+      "Tags": [ "ranged attack 8", "arc 3" ],
+      "Hit": "[D]+[fray] and foe is shattered.",
+      "Miss": "[fray].",
+      "AreaEffect": "[fray]."
+    },
+    {
+      "Name": "Chains of Fate",
+      "ActionCost": 1,
+      "Tags": "1/round",
+      "Description": "The Tethian chains a foe in range 6 to an adjacent space. If they enter that space, they take [D]+fray and are stunned. At the end of their next turn, they are shoved up to 3 spaces towards that space, ending in it if possible, then this effect ends. A character can only be affected by one set of chains at a time."
+    },
+    {
+      "Name": "Chains of Fate",
+      "ActionCost": 1,
+      "Tags": "terrain effect",
+      "Description": "The Tethian creates a blast 1 terrain effect in range 6. While in the area, outside of their own turn, characters other than Tethians are unable to take interrupts, use abilities, use traits, or activate effects. Using this ability again moves the area rather than placing a new once."
+    }
+  ],
+  "Chapter2": {
+    "Traits": "Rune of Warding"
+  },
+  "Chapter3": {
+    "Traits": "Primal Aether"
+  }
+}

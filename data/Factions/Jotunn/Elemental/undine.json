@@ -1,0 +1,12 @@
+{
+  "Name": "Undine",
+  "Inherits": "Elemental",
+  "Type": "Foe",
+  "Traits": "Living Deeps",
+  "Actions": {
+    "Name": "Waterspout",
+    "ActionCost": 1,
+    "Tags": "repeatable",
+    "Description": "The Undine spurts water, blinding a foe in range 4 and inflicting frostbite. Blinded or frostbitten foes also take [fray] damage twice."
+  }
+}

@@ -1,0 +1,69 @@
+[
+  {
+    "Name": "Aetherstorm",
+    "Description": "The Quintessence's Raging Storm deals divine damage, and its allies are immune to its effects. In addition, when any character starts its turn in the area, the Quintessent can apply one of following effects.",
+    "ExtraItems": [
+      { 
+        "Name": "Earth",
+        "Description": "Create a pit under the character."
+      },
+      { 
+        "Name": "Fire",
+        "Description": "Character deals 2 piercing damage to all adjacent foes."
+      },
+      { 
+        "Name": "Air",
+        "Description": "Teleport character 2 spaces."
+      },
+      { 
+        "Name": "Water",
+        "Description": "End a mark, blight, or condition on the character."
+      }
+    ]
+  },
+  {
+    "Name": "Crystal Perfection",
+    "Description": "This Jotunn can use the average of its damage die (6) instead of rolling for damage."
+  },
+  {
+    "Name": "Cursed Cauldron",
+    "Description": "Foes do not save against conditions at the end of their turn while in the aura of the cauldron."
+  },
+  {
+    "Name": "Living Deeps",
+    "Description": "Instead of a 2x2 space, this Jotunn occupies an Arc 4 space that can be placed in any configuration. When it moves, move either end space of the Arc, then re-place the Arc in any valid configuration. It can make attacks or use abilities from any of its spaces."
+  },
+  {
+    "Name": "Primal Aether",
+    "Description": "This character's abilities do not trigger interrupts or activate effects from its foes."
+  },
+  {
+    "Name": "Rune of Warding",
+    "Description": "Aura 2. Foes that enter the aura take 2 piercing damage. They can only take this damage once round."
+  },
+  {
+    "Name": "Scouring Gaze",
+    "Description": "At the start of the round, the Cyclopean chooses a blast 1 area in range 6. At the end of the round, they shoot a massive bolt of energy at that area, dealing [D]+fray piercing damage as an area effect to characters within. If the Cyclopean is blinded, characters within take only 1 damage instead."
+  },
+  {
+    "Name": "Titan Armament",
+    "Description": "This Jotunn is armed with Titansteel weaponry. They can take 1 extra turn a round, and 1/round may dash 2 as a free action, then deal [fray] damage to all adjacent foes.",
+    "EncounterBudgetAdd": 1
+  },
+  {
+    "Name": "Titanblood",
+    "Description": "Increase size to 2 if not already 2. (This character takes up a 2 by 2 area of spaces)"
+  },
+  {
+    "Name": "Titanfall",
+    "Description": "When defeated, roll 1d6 and assign a compass direction (1-None, 2- N, 3-E, 4-S, 5-W, 6-GM choice). The Jotunn falls into a close blast 1 area to its space. Size 1 characters inside must save or take 6 damage, or 3 on a successful save. Move all characters out of the area into the closest available space and place the defeated Jotunn there. They count as a 2x2 space of height 1 terrain while defeated."
+  },
+  {
+    "Name": "True Titanblood",
+    "Description": "Gain resistance at 25% max hp or lower."
+  },
+  {
+    "Name": "Whirlgang",
+    "Description": "At the start of its turn, the Mistral and all allies in range 2 may fly 1 in the same direction."
+  }
+]

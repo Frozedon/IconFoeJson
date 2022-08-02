@@ -1,0 +1,13 @@
+{
+  "Name": "Mistral",
+  "Inherits": "Elemental",
+  "Type": "Foe",
+  "Chapter": 2,
+  "Traits": [ "Flying", "Whirlgang" ],
+  "Actions": {
+    "Name": "Sweep of the Wind",
+    "ActionCost": 1,
+    "Recharge": 6,
+    "Description": "The Mistral targets all characters in range 2, then removes itself and them from the battlefield, returning to any free space in range 6. It then returns all other characters to any space in range 2 of its new location and electrifies them. Foes can save to avoid this effect. Electrified foes fail the save."
+  }
+}

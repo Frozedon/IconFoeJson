@@ -547,6 +547,10 @@
     "Description": "Immune to blights."
   },
   {
+    "Name": "Time Lock",
+    "Description": "After taking damage, this character becomes intangible until the start of the following turn."
+  },
+  {
     "Name": "True Enrage",
     "Description": "Unstoppable and +1 action while bloodied."
   },
@@ -557,6 +561,10 @@
   {
     "Name": "Tunnel",
     "Description": "When this character ends its turn, create a pit underneath it."
+  },
+  {
+    "Name": "Two Heads",
+    "Description": "Saves at the start and the end of its turn to end conditions or other effects."
   },
   {
     "Name": "Unstable",

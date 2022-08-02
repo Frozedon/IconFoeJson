@@ -1,0 +1,11 @@
+{
+  "Name": "Wildblood",
+  "Inherits": "Troll",
+  "Type": "Foe",
+  "Interrupts": {
+    "Name": "Growing Season",
+    "Count": 1,
+    "Trigger": "When damaged by an ability.",
+    "Effects": "The Troll may drop a fruit, a 1 space terrain effect, in a space in range 2. Foes that end their turn adjacent to the fruit are poisoned and branded. Any ally that ends their turn adjacent to the fruit can pick it up, granting vigor 1 to themselves and destroying the fruit. This destroys it."
+  }
+}

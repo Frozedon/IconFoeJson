@@ -1,0 +1,22 @@
+{
+  "Name": "Alp",
+  "Inherits": "Elemental",
+  "Type": "Foe",
+  "RemoveActions": "Soar",
+  "Actions": [
+    {
+      "Name": "Rumble",
+      "ActionCost": 1,
+      "Description": "The Alp becomes intangible, then dashes 6 spaces."
+    },
+    {
+      "Name": "Ancient Geo",
+      "ActionCost": 2,
+      "Tags": [ "melee attack", "arc 4 + blast 1" ],
+      "Hit": "2[D]+[fray] and foe is slowed and poisoned.",
+      "Miss": "[fray].",
+      "AreaEffect": "[fray].",
+      "Effects": "Critical hit (+[D]) against poisoned foes."
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "Name": "Bloody Companion",
+  "Inherits": "Hirsinn",
+  "Type": "Foe",
+  "Chapter": 3,
+  "Traits": [ "Defiance", "True Enrage" ],
+  "Interrupts": {
+    "Name": "Counter-strike",
+    "Count": 1,
+    "Trigger": "The Jotunn or an adjacent ally is hit or miss by a melee attack.",
+    "Effects": "The attacker is shoved 1 and must save. On a failed save, they take fray damage and are dazed."
+  },
+  "Actions": {
+    "Name": "Bloody Fuller",
+    "ActionCost": 2,
+    "Tags": [ "melee attack 2", "multiattack", "true strike" ],
+    "Hit": "[D].",
+    "Miss": "-.",
+    "Effects": [
+      "Shove 1.",
+      "Deals added damage, hit or miss, equal to 2 times the round number."
+    ]
+  }
+}

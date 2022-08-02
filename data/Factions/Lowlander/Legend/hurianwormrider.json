@@ -8,11 +8,20 @@
   "RemoveTraits": [ "Suddenly!", "Dodge", "Skirmish" ],
   "Traits": [ "Worm and Rider", "Wormspore Bond" ],
   "PhasesDescription": "The phase changes at round 4 and later.",
-  "Characters": [
+  "Phases": [
+    {
+      "Description": "Round 3 or lower."
+    },
+    {
+      "Description": "Round 4 or higher.",
+      "Traits": [ "Crumbling Earth", "Law of the Worm" ]
+    }
+  ],
+  "ExtraAbilitysets": [
     {
       "Name": "Rider",
       "Traits": [ "Dodge", "Skirmish", "Worm Riding", "Skewer" ],
-      "ComplexActions": [
+      "Actions": [
         {
           "Name": "Wormhunter Spear",
           "ActionCost": 1,
@@ -64,7 +73,7 @@
     {
       "Name": "Worm",
       "Traits": [ "Sturdy", "Devour the Land" ],
-      "ComplexActions": [
+      "Actions": [
         {
           "Name": "Massive Jaws",
           "ActionCost": 1,
@@ -97,15 +106,6 @@
           "Collide": "Character takes [D]+[fray] and is stunned."
         }
       ]
-    }
-  ],
-  "Phases": [
-    {
-      "Description": "Round 3 or lower."
-    },
-    {
-      "Description": "Round 4 or higher.",
-      "Traits": [ "Crumbling Earth", "Law of the Worm" ]
     }
   ]
 }

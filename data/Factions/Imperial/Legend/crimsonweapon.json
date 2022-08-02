@@ -6,6 +6,7 @@
   "Speed": 5,
   "RemoveTraits": "Receive Orders",
   "RemoveSetupTraits": "Commanding Officer",
+  "RemoveUsesSpecialTemplates": "Imperial Officer",
   "Traits": [ "Size 2", "Hellforged", "Arkentech Munitions", "Arkentech Armor Plate" ],
   "Actions": [
     {

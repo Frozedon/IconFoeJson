@@ -2,6 +2,7 @@
   "Name": "Imperial",
   "Faction": "Imperial",
   "Type": "Template",
+  "UsesSpecialTemplates": "Imperial Officer",
   "Traits": "Receive Orders",
   "SetupTraits": [
     {

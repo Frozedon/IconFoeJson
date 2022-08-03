@@ -19,7 +19,7 @@
       "Name": "Open Shop",
       "ActionCost": 1,
       "Tags": [ "summon", "end turn" ],
-      "Description": "The Shopkeep opens their shop, a size 1 object summoning it in an adjacent space. It lasts until the shopkeep is defeated or this ability is used again.",
+      "Description": "The Shopkeep opens their shop, a size 1 object, summoning it in an adjacent space. It lasts until the shopkeep is defeated or this ability is used again.",
       "Summons": {
         "Name": "Shop",
         "IsObject": true,

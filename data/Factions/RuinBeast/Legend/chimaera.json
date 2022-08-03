@@ -46,6 +46,7 @@
   "ExtraAbilitySets": [
     {
       "Name": "1. Lion",
+      "Class": "Heavy",
       "Traits": "Lion's Pride",
       "Actions": [
         {
@@ -65,6 +66,7 @@
     },
     {
       "Name": "2. Bull",
+      "Class": "Heavy",
       "Traits": "Bull's Fortitude",
       "Actions": [
         {
@@ -85,6 +87,7 @@
     },
     {
       "Name": "3. Serpent",
+      "Class": "Skirmisher",
       "Actions": [
         {
           "Name": "Toxic Bite",
@@ -113,6 +116,7 @@
     },
     {
       "Name": "4. Crocodile",
+      "Class": "Artillery",
       "Actions": [
         {
           "Name": "Savage Bite",
@@ -139,6 +143,7 @@
     },
     {
       "Name": "5. Toad",
+      "Class": "Heavy",
       "Traits": "Noxious Venom",
       "Actions": [
         {
@@ -160,6 +165,7 @@
     },
     {
       "Name": "6. Baboon",
+      "Class": "Artillery",
       "Actions": [
         {
           "Name": "Fireball",
@@ -185,6 +191,7 @@
     },
     {
       "Name": "7. Wolf",
+      "Class": "Skirmisher",
       "Actions": [
         {
           "Name": "Savage Claw",
@@ -211,6 +218,7 @@
     },
     {
       "Name": "8. Goat",
+      "Class": "Artillery",
       "Traits": "Goat's Shield",
       "Actions": [
         {
@@ -238,6 +246,7 @@
     },
     {
       "Name": "9. Chicken",
+      "Class": "Leader",
       "Actions": [
         {
           "Name": "Peck",
@@ -261,6 +270,7 @@
     },
     {
       "Name": "10. Bear",
+      "Class": "Heavy",
       "Actions": [
         {
           "Name": "Ice Shards",

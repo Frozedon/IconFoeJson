@@ -51,6 +51,7 @@
   "PhasesDescription": "When the Prelictor loses a total of 40 hp (and every 40 thereafter), it ignores any excess damage, then becomes intangible until the start of its next turn. It then summons a Minor Incarnate at any edge of the battlefield, targeting a player character. A new player character must be chosen each time.",
   "ExtraAbilitySets": {
     "Name": "Soul Consume Actions",
+    "Class": "None",
     "Actions": [
       {
         "Name": "Detonate Dead",

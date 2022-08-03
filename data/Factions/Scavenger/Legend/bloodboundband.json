@@ -69,6 +69,7 @@
   "ExtraAbilitySets": [
     {
       "Name": "1. Boots",
+      "Class": "Heavy",
       "Traits": [ "Size 2", "Sturdy", "Fortify", "Armor 3", "Blessing Boots" ],
       "Interrupts": {
         "Name": "Dropkick",
@@ -87,6 +88,7 @@
     },
     {
       "Name": "2. Fixer",
+      "Class": "Heavy",
       "Traits": [ "Fortify", "Armor 3", "Iron Fist", "Blessing Fixer" ],
       "Actions": {
         "Name": "Garrote",
@@ -97,6 +99,7 @@
     },
     {
       "Name": "3. Filth",
+      "Class": "Skirmisher",
       "Traits": [ "Skirmish", "Dodge", "Venom Blade", "Blessing Filth" ],
       "Actions": {
         "Name": "Poison Gas",
@@ -108,6 +111,7 @@
     },
     {
       "Name": "4. Cats",
+      "Class": "Skirmisher",
       "Traits": [ "Skirmish", "Dodge", "Blessing Cats" ],
       "Interrupts": {
         "Name": "Feline Felicity",
@@ -125,6 +129,7 @@
     },
     {
       "Name": "5. Sharkie",
+      "Class": "Skirmisher",
       "Traits": [ "Skirmish", "Dodge", "Cheaper Trick", "Blessing Sharkie" ],
       "Actions": [
         {
@@ -142,6 +147,7 @@
     },
     {
       "Name": "6. Pale",
+      "Class": "Skirmisher",
       "Traits": [ "Skirmish", "Dodge", "Blessing Pale" ],
       "Actions": {
         "Name": "Nighthaunt",
@@ -161,6 +167,7 @@
     },
     {
       "Name": "7. Sharp",
+      "Class": "Artillery",
       "Traits": [ "Aetherwall", "Overdrive 4", "Blessing Sharp" ],
       "Actions": {
         "Name": "Ricochet Shot",
@@ -177,6 +184,7 @@
     },
     {
       "Name": "8. Fanatic",
+      "Class": "Artillery",
       "Traits": [ "Aetherwall", "Overdrive 3", "Blessing Fanatic" ],
       "Actions": [
         {
@@ -197,6 +205,7 @@
     },
     {
       "Name": "9. Broker",
+      "Class": "Leader",
       "Traits": [ "Shelter", "Diaga", "Blood Pact", "Blessing Broker" ],
       "Interrupts": {
         "Name": "Sacrifice",
@@ -207,6 +216,7 @@
     },
     {
       "Name": "10. Monger",
+      "Class": "Leader",
       "Traits": [ "Shelter", "Diaga", "Blessing Monger" ],
       "Actions": [
         {

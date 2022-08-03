@@ -8,10 +8,10 @@
       "ActionCost": 0,
       "Tags": "summon",
       "Description": "The Succubus summons a fruit in range 3. Only two of these fruits can be active at once.",
-      "Summon": {
+      "Summons": {
         "Name": "Tempting Fruit",
         "Tags": [ "Size 1", "Intangible" ],
-        "Effects": "Any character can consume a fruit by moving into its space. Consuming a fruit grants +1 action this turn, but also marks the character with Good Dog."
+        "SummonEffects": "Any character can consume a fruit by moving into its space. Consuming a fruit grants +1 action this turn, but also marks the character with Good Dog."
       }
     },
     {

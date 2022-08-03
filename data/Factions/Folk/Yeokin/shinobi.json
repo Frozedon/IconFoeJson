@@ -19,8 +19,9 @@
       "Description": "Summon a shadow clone in a free space in range 3. Clones disappear at the end of combat or if the Shinobi is defeated.",
       "Summons": {
         "Name": "Shadow Clone",
-        "Tags": [ "size 1", "intangible" ],
-        "Effects": "Foes adjacent to a shadow clone at the start of their turn take [fray] damage from the clone."
+        "Tags": [ "Size 1" ],
+        "Traits": "Intangible",
+        "SummonEffects": "Foes adjacent to a shadow clone at the start of their turn take [fray] damage from the clone."
       }
     },
     {

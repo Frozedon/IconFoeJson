@@ -31,7 +31,7 @@
       "Summons": {
         "Name": "Gun Turret",
         "Tags": [ "Size 1", "Immobile" ],
-        "Effects": "When a foe in range 4 from the emplacement is damaged by an attack or ability, the emplacement deals 1 piercing damage to that foe, ignoring cover. This effect can trigger any number of times a round."
+        "SummonEffects": "When a foe in range 4 from the emplacement is damaged by an attack or ability, the emplacement deals 1 piercing damage to that foe, ignoring cover. This effect can trigger any number of times a round."
       }
     }
   ],

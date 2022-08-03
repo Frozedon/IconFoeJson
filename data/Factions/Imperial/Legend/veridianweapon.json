@@ -55,8 +55,8 @@
           "Summons": {
             "Name": "Automaton Turret",
             "Tags": [ "Size 1", "10 HP", "Defense 8" ],
-            "Effects": "The Turret counts a height 1 object for abilities and grants cover. When summoned, or once on the turret's turn, the automaton can use the following attack:",
-            "SpecialActions": {
+            "SummonEffects": "The Turret counts a height 1 object for abilities and grants cover. When summoned, or once on the turret's turn, the automaton can use the following attack:",
+            "Actions": {
               "Name": "Automaton Gun",
               "ActionCost": -1,
               "Tags": "ranged attack 4",
@@ -64,7 +64,7 @@
               "Miss": "[fray]."
             }
           },
-          "Combos": {
+          "Combo": {
             "Name": "Tracking Missile",
             "ActionCost": 1,
             "Tags": "multimark",
@@ -100,9 +100,9 @@
           "Summons": {
             "Name": "Shield Automata",
             "Tags": [ "Size 1", "1 HP", "Defense 1" ],
-            "Effects": "The automata has aura 2. Characters inside the aura, including foes, have cover. When summoned and once on the aft turret's turn, may move up to 3 spaces."
+            "SummonEffects": "The automata has aura 2. Characters inside the aura, including foes, have cover. When summoned and once on the aft turret's turn, may move up to 3 spaces."
           },
-          "Combos": {
+          "Combo": {
             "Name": "Combat Automata",
             "ActionCost": 1,
             "Tags": "summon",
@@ -110,9 +110,9 @@
             "Summons": {
               "Name": "Combat Automata",
               "Tags": [ "Size 1", "10 HP", "Defense 8" ],
-              "Effects": "While in the aura of a Shield Automata, is immune to all damage, but can be destroyed by a Tracking Missile.",
-              "Actions": "When summoned, or on the turret's turn, can move 3, then make the following attack:",
-              "SpecialActions": {
+              "SummonEffects": "While in the aura of a Shield Automata, is immune to all damage, but can be destroyed by a Tracking Missile.",
+              "SummonActions": "When summoned, or on the turret's turn, can move 3, then make the following attack:",
+              "Actions": {
                 "Name": "Automaton Gun",
                 "ActionCost": -1,
                 "Tags": "ranged attack 4",

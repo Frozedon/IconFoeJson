@@ -38,7 +38,7 @@
       "Summons": {
         "Name": "Imperial Standard",
         "Tags": [ "Size 1", "Immobile", "Sturdy", "20 HP", "Defense 1" ],
-        "Effects": "Aura 2. Allies in the aura gain +1 boon on attacks and saves, and if they start their turn in the area they gain vigor 1. Foes in the aura gain +1 curse on attacks and saves, and if they start their turn in the area, lose all vigor. If the banner is destroyed, all imperials inside except the centurion must save or be stunned."
+        "SummonEffects": "Aura 2. Allies in the aura gain +1 boon on attacks and saves, and if they start their turn in the area they gain vigor 1. Foes in the aura gain +1 curse on attacks and saves, and if they start their turn in the area, lose all vigor. If the banner is destroyed, all imperials inside except the centurion must save or be stunned."
       }
     }
   ]

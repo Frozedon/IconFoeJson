@@ -32,8 +32,9 @@
       "Description": "The Wissan creates a lesser root in a free space in range 6.",
       "Summons": {
         "Name": "Lesser Root",
+        "IsObject": true,
         "Tags": [ "Size 1", "Immune to all damage and effects" ],
-        "Effects": [
+        "SummonEffects": [
           "The root emits aura 1 around it. Foes in the aura are vulnerable+.",
           "When a root is summoned, deal 1 damage, once, to any character in range 2 for every lesser root or deep root in range 2 of that character, including this one."
         ]

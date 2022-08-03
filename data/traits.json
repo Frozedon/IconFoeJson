@@ -394,8 +394,8 @@
     "Description": "This character starts combat riding a trained monster, and can also mount it as an action or by spending its standard move. While riding, the rider shares space with the monster and moves when it moves. If the two are separated, this effect ends until the monster is remounted.",
     "Summons": {
       "Name": "Tame Monster",
-      "Tags": [ "Summon", "20 HP", "Defense 6", "10 VIT" ],
-      "Actions": "During the rider's turn, can dash 4, then either shove a character 1 space or deal 2 damage to them."
+      "Tags": [ "Size 1", "20 HP", "Defense 6", "10 VIT" ],
+      "SummonActions": "During the rider's turn, can dash 4, then either shove a character 1 space or deal 2 damage to them."
     }
   },
   {

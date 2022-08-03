@@ -39,7 +39,7 @@
       "Summons": {
         "Name": "Torpedo",
         "Tags": [ "Size 1", "10 HP", "Defense 1" ],
-        "Effects": "At the start of the wagon's next turn, the torpedo submerges, burrows, and detonates under the closest foe for a blast 1 area effect, destroying it. Foes in the area must save or take [D]+[fray], or [fray] damage on a successful save. Then, create a pit in the area. The torpedo deactivates if destroyed early."
+        "SummonEffects": "At the start of the wagon's next turn, the torpedo submerges, burrows, and detonates under the closest foe for a blast 1 area effect, destroying it. Foes in the area must save or take [D]+[fray], or [fray] damage on a successful save. Then, create a pit in the area. The torpedo deactivates if destroyed early."
       }
     }
   ]

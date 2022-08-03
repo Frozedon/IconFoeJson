@@ -81,8 +81,8 @@
     "Description": "In any battle with the Mimic, place 5 decoys on the battlefield at the start of the battle.",
     "Summons": {
       "Name": "Decoy",
-      "Tags": [ "Size 1 Summon", "Immobile", "1 HP", "Defense 1" ],
-      "Effects": "The GM secretly picks one of the decoys that is actually the Mimic. When that decoy is targeted by an ability, before the ability is made, replace the decoy with the mimic and retarget the ability to the mimic. This reveals the mimic."
+      "Tags": [ "Size 1", "Immobile", "1 HP", "Defense 1" ],
+      "SummonEffects": "The GM secretly picks one of the decoys that is actually the Mimic. When that decoy is targeted by an ability, before the ability is made, replace the decoy with the mimic and retarget the ability to the mimic. This reveals the mimic."
     }
   },
   {

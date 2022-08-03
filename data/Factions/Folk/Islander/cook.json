@@ -18,8 +18,8 @@
       "Description": "The cook summons a flapjack in range 4.",
       "Summons": {
         "Name": "Flapjack",
-        "Tags": [ "Size 1 summon", "intangible" ],
-        "Effects": "A character moving into the flapjack's space can pick it up, removing it. That character gains defiance. A character that already has defiance gains vigor 1. A character with vigor becomes unstoppable until the end of their next turn."
+        "Tags": [ "Size 1", "Intangible" ],
+        "SummonEffects": "A character moving into the flapjack's space can pick it up, removing it. That character gains defiance. A character that already has defiance gains vigor 1. A character with vigor becomes unstoppable until the end of their next turn."
       }
     },
     {

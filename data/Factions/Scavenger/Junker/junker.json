@@ -23,7 +23,7 @@
       "Summons": {
         "Name": "Scrap Turret",
         "Tags": [ "Size 1", "Immobile", "1 HP" ],
-        "Effects": "When a foe in range 3 from the turret takes damage, the turret deals 1 piercing damage to them. The Junker can When a foe in range 3 from the turret takes damage, the turret deals 1 piercing damage to them. The Junker can"
+        "SummonEffects": "When a foe in range 3 from the turret takes damage, the turret deals 1 piercing damage to them. The Junker can When a foe in range 3 from the turret takes damage, the turret deals 1 piercing damage to them. The Junker can"
       }
     },
     {

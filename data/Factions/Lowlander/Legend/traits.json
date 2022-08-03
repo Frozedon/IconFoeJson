@@ -22,7 +22,7 @@
         "Class": "Mob",
         "Tags": [ "1 HP", "Defense 1", "Speed 3" ],
         "Traits": [ "Terrain Expert", "Lowlander Toxin", "Mob", "Mud Body (Lesser Clot)" ],
-        "ComplexActions": {
+        "Actions": {
           "Name": "Fetid Grasp",
           "ActionCost": 2,
           "Description": "Move 2 spaces and deal 1 damage to an adjacent foe. If that foe is standing in difficult or dangerous terrain, or adjacent to another clot, increase damage to 2 piercing."
@@ -33,7 +33,7 @@
         "Class": "Skirmisher",
         "Tags": [ "12 HP", "Defense 10", "Speed 4" ],
         "Traits": [ "Terrain Expert", "Lowlander Toxin", "Dodge", "Skirmish" ],
-        "ComplexActions": [
+        "Actions": [
           {
             "Name": "Blood Spiller",
             "ActionCost": 2,
@@ -57,7 +57,7 @@
         "Class": "Artillery",
         "Tags": [ "12 HP", "Defense 8", "Speed 4" ],
         "Traits": [ "Terrain Expert", "Lowlander Toxin", "Aetherwall" ],
-        "ComplexActions": {
+        "Actions": {
           "Name": "Blowdart",
           "ActionCost": 2,
           "Tags": "ranged attack 8",
@@ -74,7 +74,7 @@
         "Class": "Heavy",
         "Tags": [ "20 HP", "Defense 6", "Speed 3" ],
         "Traits": [ "Terrain Expert", "Lowlander Toxin", "Armor 2", "Fortify" ],
-        "ComplexActions": [
+        "Actions": [
           {
             "Name": "Crush",
             "ActionCost": 1,

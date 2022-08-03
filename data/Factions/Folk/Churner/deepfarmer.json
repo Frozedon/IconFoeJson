@@ -24,8 +24,9 @@
       "Description": "The Deep Farmer chooses a space in range 2. At the end of their turn, this space grows into a mushroom object.",
       "Summons": {
         "Name": "Mushroom",
-        "Tags": [ "Size 1 object" ],
-        "Effects": "Aura 1. Characters in the spore-filled aura other than the Deep Farmer choke and are winded."
+        "IsObject": true,
+        "Tags": [ "Size 1", "Height 1" ],
+        "SummonEffects": "Aura 1. Characters in the spore-filled aura other than the Deep Farmer choke and are winded."
       }
     },
     {

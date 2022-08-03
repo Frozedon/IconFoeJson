@@ -28,7 +28,7 @@
       "ActionCost": 1,
       "Tags": [ "end turn" ],
       "Description": "The Grave dashes 2 spaces.",
-      "Combos": {
+      "Combo": {
         "Name": "Cacophonous Consumption",
         "ActionCost": 2,
         "Description": "Characters inside the Grave must save or take [fray] damage five times, or twice on a failed save."

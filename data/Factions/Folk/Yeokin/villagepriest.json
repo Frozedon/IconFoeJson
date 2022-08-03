@@ -16,7 +16,7 @@
       "ActionCost": 1,
       "Tags": [ "multimark" ],
       "Description": "The village priest marks a foe in range 4. That foe is poisoned and takes 1 piercing damage.",
-      "Combos": {
+      "Combo": {
         "Name": "Reap",
         "ActionsCost": 1,
         "Description": "All foes marked by Sow take [fray] piercing damage."

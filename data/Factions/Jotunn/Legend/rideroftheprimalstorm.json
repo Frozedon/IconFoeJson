@@ -14,7 +14,7 @@
       "Miss": "[fray].",
       "AreaEffect": "[fray].",
       "Effects": "Shove all foes 1.",
-      "Combos": {
+      "Combo": {
         "Name": "Great Bolt",
         "ActionCost": 2,
         "Tags": [ "ranged attack", "line 10", "true strike" ],

@@ -32,8 +32,8 @@
       "Summons": {
         "Name": "Arkentech Mercenary",
         "Tags": [ "Size 1", "Sturdy", "20 HP", "Defense 8" ],
-        "Effects": "When summoned, or on the baron's turn, may move 4 spaces, then takes one of the following summon actions:",
-        "SpecialActions": [
+        "SummonEffects": "When summoned, or on the baron's turn, may move 4 spaces, then takes one of the following summon actions:",
+        "ListedActions": [
           {
             "Name": "Arkentech Rifle",
             "Tags": [ "ranged attack 6", "pierce" ],

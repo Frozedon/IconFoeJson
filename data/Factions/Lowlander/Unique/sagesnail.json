@@ -32,7 +32,7 @@
       "Summons": {
         "Name": "Pearlescent Bubble",
         "Tags": [ "Size 1", "1 HP", "Defense 1" ],
-        "Effects": "When a character collides with the bubble, it pops, pacifying them, shoving them 3 in any direction, and creating a space of difficult terrain. Pacified characters are stunned."
+        "SummonEffects": "When a character collides with the bubble, it pops, pacifying them, shoving them 3 in any direction, and creating a space of difficult terrain. Pacified characters are stunned."
       }
     }
   ]

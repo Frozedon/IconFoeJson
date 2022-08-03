@@ -13,7 +13,7 @@
     "Summons": {
       "Name": "Dancing Light",
       "Tags": [ "Size 1", "1 HP", "Defense 8" ],
-      "Effects": "When a foe starts or ends a turn adjacent to the light, it explodes in a blast 1 area effect centered on it. Characters inside must save or take [fray] damage twice, or once on a successful save. If the light is destroyed, it fizzles out without exploding."
+      "SummonEffects": "When a foe starts or ends a turn adjacent to the light, it explodes in a blast 1 area effect centered on it. Characters inside must save or take [fray] damage twice, or once on a successful save. If the light is destroyed, it fizzles out without exploding."
     }
   }
 }

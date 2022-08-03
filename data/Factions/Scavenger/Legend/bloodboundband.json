@@ -149,7 +149,7 @@
         "Recharge": 4,
         "Tags": "end turn",
         "Description": "Pale teleports 3, then becomes intangible and gains phasing until the start of their next turn. This action grants resistance instead if they are the only Brother active.",
-        "Combos": {
+        "Combo": {
           "Name": "Assassinate",
           "ActionCost": 2,
           "Tags": "melee attack",

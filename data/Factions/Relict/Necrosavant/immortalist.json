@@ -12,8 +12,9 @@
       "Description": "The Immortalist entombs a character in a magical sarcophagus, summoning it in their space.",
       "Summons": {
         "Name": "Sarcophagus of Iz",
-        "Tags": [ "Object", "Destructible (10 HP)" ],
-        "Effects": "Shares space with a character. While inside, they take 3 piercing damage at the start of their turns and are immobile, but can otherwise be targeted normally. The Sarcophagus has resistance against the character inside it."
+        "IsObject": true,
+        "Tags": [ "Destructible (10 HP)" ],
+        "SummonEffects": "Shares space with a character. While inside, they take 3 piercing damage at the start of their turns and are immobile, but can otherwise be targeted normally. The Sarcophagus has resistance against the character inside it."
       }
     }
   ]

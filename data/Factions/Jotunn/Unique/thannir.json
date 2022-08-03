@@ -21,8 +21,8 @@
       "Summons": {
         "Name": "Lonely Soul",
         "Tags": [ "Size 1", "10 HP" ],
-        "Traits": "Phasing",
-        "Actions": "When summoned, or once a round on the Thannir's turn thereafter, may move 3 spaces and deal 2 piercing damage to an adjacent foe. If that foe is branded or marked, the soul can also then shove the foe 1."
+        "SummonTraits": "Phasing",
+        "SummonActions": "When summoned, or once a round on the Thannir's turn thereafter, may move 3 spaces and deal 2 piercing damage to an adjacent foe. If that foe is branded or marked, the soul can also then shove the foe 1."
       }
     },
     {

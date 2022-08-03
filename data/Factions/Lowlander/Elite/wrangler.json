@@ -30,8 +30,8 @@
           "Name": "Hound Fly",
           "Tags": [ "Size 1", "20 HP" ],
           "Traits": [ "Flying", "Dodge" ],
-          "Actions": "May fly 3, then",
-          "ComplexActions": {
+          "SummonActions": "May fly 3, then",
+          "Actions": {
             "Name": "Attack",
             "Tags": [ "melee attack", "line 4", "pierce" ],
             "Hit": "[D]+[fray].",
@@ -43,8 +43,8 @@
           "Name": "Gorebeast",
           "Tags": [ "Size 1", "20 HP" ],
           "Traits": "Sturdy",
-          "Actions": "May dash 2, then",
-          "ComplexActions": {
+          "SummonActions": "May dash 2, then",
+          "Actions": {
             "Name": "Attack",
             "Tags": "melee attack",
             "Hit": "[D]+[fray].",
@@ -57,8 +57,8 @@
           "Name": "Spitter",
           "Tags": [ "Size 1", "20 HP" ],
           "Traits": "Aetherwall",
-          "Actions": "May move 2, then",
-          "ComplexActions": {
+          "SummonActions": "May move 2, then",
+          "Actions": {
             "Name": "Attack",
             "Tags": "ranged attack 8",
             "Hit": "[fray] damage 3 times.",

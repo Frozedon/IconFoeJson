@@ -72,9 +72,7 @@
       "Blightboost": "",
       "TerrainEffect": "",
       "Special": "",
-      "Combos": [
-        { } // Same variables as "Actions"
-      ],
+      "Combo": { }, // Same variables as "Actions"
       "PostAction": ""
     }
   ],

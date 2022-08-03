@@ -23,7 +23,7 @@
       "Summons": {
         "Name": "Torpedo",
         "Tags": [ "Size 1", "8 HP", "Defense 1" ],
-        "Effects": "At the start of the weapon's next turn, the torpedo submerges, burrows, and detonates under the closest foe for a blast 1 area effect, destroying it. Foes in the area must save or take [D]+[fray], or [fray] damage on a successful save. Then, create a pit in the area. The torpedo deactivates if destroyed early."
+        "SummonEffects": "At the start of the weapon's next turn, the torpedo submerges, burrows, and detonates under the closest foe for a blast 1 area effect, destroying it. Foes in the area must save or take [D]+[fray], or [fray] damage on a successful save. Then, create a pit in the area. The torpedo deactivates if destroyed early."
       }
     },
     {
@@ -53,7 +53,7 @@
       "Summons": {
         "Name": "Targeting Reticle",
         "Tags": [ "Size 1", "Intangible" ],
-        "Effects": "The reticle can share space with other characters. It moves 1 space towards the chosen character at the start of that character's turn, then 1 space whenever they take an action. When the reticle enters any character's space, the Weapon deals [D] piercing damage to that character a number of times equal to the round number +1."
+        "SummonEffects": "The reticle can share space with other characters. It moves 1 space towards the chosen character at the start of that character's turn, then 1 space whenever they take an action. When the reticle enters any character's space, the Weapon deals [D] piercing damage to that character a number of times equal to the round number +1."
       }
     }
   ],

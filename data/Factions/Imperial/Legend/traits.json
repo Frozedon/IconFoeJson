@@ -9,6 +9,7 @@
     "Description": "The weapon has four of these plates, which can only be blown off by explosions from Arkentech munitions. When a plate is blown off, the weapon's body takes double damage from all sources until the end of the current round. When all plates are blown off, this effect is permanent."
   },
 
+
   {
     "Name": "Advanced Scopes",
     "Description": "Immune to blinded."
@@ -22,6 +23,7 @@
     "Description": "During Phase I, the weapon is immobile, cannot be shoved or teleported, and does not occupy space normally. Instead, it occupies 1 space just outside the edge of one side of the battlefield (imagine it lined up along the edge). Run the weapon on a battlefield that is relatively small (10x10 or smaller). If it is removed from the battlefield, it returns in the same spot."
   },
   
+
   {
     "Name": "Airship",
     "Description": "This Veridian Weapon fight takes place on the Veridian Weapon, an airship that could be any shape, but is better run on a smaller, rectangular map of no more than 10 or 12 spaces on its longest side. The deck of the airship is treated as terrain and not a character (it's too heavily armored), but its three sections (see below) can be attacked to deal damage to it."
@@ -33,7 +35,30 @@
   {
     "Name": "Sections Veridian Weapon",
     "DisplayName": "Sections",
-    "Description": "The targetable parts of the Weapon are three separate sections: the Engine, the Forward Turret, and the Aft Turret.\n- Each section is a size 2 character that is immobile, immune to shove and teleport, and has 1/3 of the Weapon's total HP. If removed from the battlefield, it can only be placed in the same space.\n- Sections cannot be placed within range 2 of each other.\n- The Sections also count as height 2 objects. Other characters can move on them or use them as cover.\n- Each track statuses and damage separately.\n- When acting, the Weapon acts using the profile of only one of its section at a time.\n- When a section is reduced to 0 hp, it is destroyed. When all three are destroyed, the Weapon is defeated. When a section is destroyed, it no longer counts as terrain or provides cover.\n- Each section must act at least once in a round before any other section can take a turn."
+    "Description": "The targetable parts of the Weapon are three separate sections: the Engine, the Forward Turret, and the Aft Turret.",
+    "ExtraItems": [
+      {
+        "Description": "Each section is a size 2 character that is immobile, immune to shove and teleport, and has 1/3 of the Weapon's total HP. If removed from the battlefield, it can only be placed in the same space."
+      },
+      {
+        "Description": "Sections cannot be placed within range 2 of each other."
+      },
+      {
+        "Description": "The Sections also count as height 2 objects. Other characters can move on them or use them as cover."
+      },
+      {
+        "Description": "Each track statuses and damage separately."
+      },
+      {
+        "Description": "When acting, the Weapon acts using the profile of only one of its section at a time."
+      },
+      {
+        "Description": "When a section is reduced to 0 hp, it is destroyed. When all three are destroyed, the Weapon is defeated. When a section is destroyed, it no longer counts as terrain or provides cover."
+      },
+      {
+        "Description": "Each section must act at least once in a round before any other section can take a turn."
+      }
+    ]
   },
   {
     "Name": "Under-deck Rumbling",

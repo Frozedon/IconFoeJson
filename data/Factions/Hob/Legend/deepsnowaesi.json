@@ -19,7 +19,7 @@
       "AreaEffect": "[fray].",
       "Effects": "Shove 1.",
       "Collide": "For is vulnerable.",
-      "Combos": {
+      "Combo": {
         "Name": "Diamond Dust", 
         "ActionCost": 2, 
         "Tags": [ "ranged attack 6", "blast 1", "pierce" ],
@@ -27,7 +27,7 @@
         "Miss": "[fray].",
         "AreaEffect": "[fray].",
         "Effects": "Deals 1 damage, again, for every character in the area.",
-        "Combos": {
+        "Combo": {
           "Name": "Crystalline Lance",
           "ActionCost": 1,
           "Tags": [ "ranged attack 10", "pierce" ],

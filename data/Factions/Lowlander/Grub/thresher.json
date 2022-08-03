@@ -10,8 +10,8 @@
     "Summons": {
       "Name": "Pit Worm",
       "Tags": [ "Size 1", "Sturdy", "12 HP", "Defense 12" ],
-      "Actions": "When summoned, or during the Thresher's turn, the worm can teleport to any pit space, then make the following attack",
-      "ComplexActioncs": {
+      "SummonActions": "When summoned, or during the Thresher's turn, the worm can teleport to any pit space, then make the following attack",
+      "Actions": {
         "Name": "Spit Up",
         "Tags": "ranged attack 3",
         "Hit": "4 damage.",

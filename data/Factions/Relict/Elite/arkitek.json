@@ -26,8 +26,9 @@
       "Description": "The Arkitek summons a Pillar of Iz in range 5, pushing up characters if it's summoned under them.",
       "Summons": {
         "Name": "Pillar of Iz",
-        "Tags": [ "Height 2 Object", "Destructible (10 HP)" ],
-        "Effects": "Aura 1. Inside the aura, relict characters have resistance."
+        "IsObject": true,
+        "Tags": [ "Size 1", "Height 2", "Destructible (10 HP)" ],
+        "SummonEffects": "Aura 1. Inside the aura, relict characters have resistance."
       }
     },
     {
@@ -38,8 +39,9 @@
       "Description": "The Arkitek entombs a character in a magical sarcophagus, summoning it in their space.",
       "Summons": {
         "Name": "Sarcophagus of Iz",
-        "Tags": [ "Object", "Destructible (10 HP)" ],
-        "Effects": "Shares space with a character. While inside, they take 3 piercing damage at the start of their turns and are immobile, but can otherwise be targeted normally. The Sarcophagus has resistance against the character inside it."
+        "IsObject": true,
+        "Tags": [ "Destructible (10 HP)" ],
+        "SummonEffects": "Shares space with a character. While inside, they take 3 piercing damage at the start of their turns and are immobile, but can otherwise be targeted normally. The Sarcophagus has resistance against the character inside it."
       }
     }
   ]

@@ -27,8 +27,8 @@
     "Description": "At the start of the round, all visible foes have their soul shoved out of their body and summoned in a location of the lich's choice within range 5 of them.",
     "Summons": {
       "Name": "Soul Summon",
-      "Tags": [ "Size 1 Summon", "Intangible" ],
-      "Effects": "A character's soul can be targeted as if it was the original character, transferring all abilities and effects. Damage taken via a character's soul becomes Divine damage. A character can re-unite with their soul by moving into and ending their turn in its space, ending this effect."
+      "Tags": [ "Size 1", "Intangible" ],
+      "SummonEffects": "A character's soul can be targeted as if it was the original character, transferring all abilities and effects. Damage taken via a character's soul becomes Divine damage. A character can re-unite with their soul by moving into and ending their turn in its space, ending this effect."
     }
   },
   {
@@ -52,7 +52,7 @@
       {
         "Name": "1-2: Librarian",
         "Traits": "Curse of Absolute Silence",
-        "ComplexActions": {
+        "ListedActions": {
           "Name": "Summon Action: Soul Spear",
           "ActionCost": -1,
           "Tags": "line 3",
@@ -62,7 +62,7 @@
       {
         "Name": "3-4: Vile Haruspex",
         "Traits": "Curse of Decay",
-        "ComplexActions": {
+        "ListedActions": {
           "Name": "Summon Action: Rot Spray",
           "ActionCost": -1,
           "Tags": "close blast 1",
@@ -72,7 +72,7 @@
       {
         "Name": "5-6: Vile Cataloguer",
         "Traits": "Curse of Lethargy",
-        "ComplexActions": {
+        "ListedActions": {
           "Name": "Summon Action: Heavy Tome",
           "ActionCost": -1,
           "Description": "One or two adjacent foes take 2 piercing damage."
@@ -82,7 +82,7 @@
         "Name": "Minor Incarnate",
         "Tags": [ "Size 1", "Flying", "Phasing", "Intangible" ],
         "Effects": "This minor incarnate is tied to a specific character. It teleports 1 space towards that character whenever they take an action or make a standard move, and can only move closer to that character. The Incarnate can be shoved or teleported, but is otherwise immune to all other damage and effects. If a character ever starts or ends a turn adjacent to the Incarnate targeting them, the Incarnate uses Soul Edge. Summoned Incarnates disperse and disappear when the Predictor is defeated.",
-        "SpecialInterrupts": {
+        "ListedInterrupts": {
           "Name": "Soul Edge",
           "Count": 1,
           "Trigger": "The Incarnate's target starts or ends their turn adjacent to it.",

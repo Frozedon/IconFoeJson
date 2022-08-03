@@ -38,9 +38,9 @@
     "Description": "The Master summons Minions.",
     "Summons": {
       "Name": "Minion",
-      "Tags": [ "1 HP", "Defense 8" ],
-      "Actions": "Once a round, at the start of the Master's turn, the Master may move all minions 3 spaces.",
-      "Effects": "Characters take 2 piercing damage, once, for every minion they start their turn adjacent to, then are shoved 1 in a direction of the Master's choice."
+      "Tags": [ "Size 1", "1 HP", "Defense 8" ],
+      "SummonActions": "Once a round, at the start of the Master's turn, the Master may move all minions 3 spaces.",
+      "SummonEffects": "Characters take 2 piercing damage, once, for every minion they start their turn adjacent to, then are shoved 1 in a direction of the Master's choice."
     }
   },
 

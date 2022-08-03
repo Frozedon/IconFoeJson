@@ -26,8 +26,9 @@
       "Description": "Summon a height 1 shrine object in an adjacent space.",
       "Summons": {
         "Name": "Shrine",
-        "Tags": [ "Height 1 Object", "10 HP", "Attacks automatically hit" ],
-        "Effects": "Adjacent allies have resistance."
+        "IsObject": true,
+        "Tags": [ "Size 1", "Height 1", "10 HP", "Attacks automatically hit" ],
+        "SummonEffects": "Adjacent allies have resistance."
       }
     }
   ]

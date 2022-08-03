@@ -34,7 +34,7 @@
           "Description": "When a Forge effect ends, create a space of quicksilver adjacent to the Keeper."
         }
       ],
-      "Combos": [
+      "ExtraActions": [
         {
           "Name": "Forge Weapon",
           "ActionCost": 1,

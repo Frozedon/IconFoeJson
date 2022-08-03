@@ -1,7 +1,7 @@
 {
   "Name": "Mob Template",
   "DisplayName": "Mob",
-  "Type": "Special",
+  "Type": "SpecialTemplate",
   "Vitality": 1,
   "HP": 1,
   "Traits": [ "Mob" ],

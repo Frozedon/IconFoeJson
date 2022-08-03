@@ -22,12 +22,13 @@
       "Description": "The Shopkeep opens their shop, a size 1 object summoning it in an adjacent space. It lasts until the shopkeep is defeated or this ability is used again.",
       "Summons": {
         "Name": "Shop",
-        "Tags": [ "Size 1 object" ],
-        "Effects": [
+        "IsObject": true,
+        "Tags": [ "Size 1", "Height 1" ],
+        "SummonEffects": [
           "No fighting in the shop. Aura 1. Characters in the area are pacified+.",
           "While the shop is active, any character in the aura can use the Rummage action, which ignores pacified."
         ],
-        "SpecialActions": {
+        "ListedActions": {
           "Name": "Rummage",
           "ActionCost": 1,
           "Description": "The character rummages in the shop and throws something at a foe in range 3. Roll 1d6.",

@@ -32,7 +32,7 @@
       "Summons": {
         "Name": "Attack Insect",
         "Tags": [ "Size 1", "Flying", "16 HP", "Defense 8" ],
-        "Actions": "When summoned, or once on the Apiarist's turn thereafter, the insect may fly up to 2 spaces, then deal 2 piercing damage, twice, to a foe in range 4."
+        "SummonActions": "When summoned, or once on the Apiarist's turn thereafter, the insect may fly up to 2 spaces, then deal 2 piercing damage, twice, to a foe in range 4."
       }
     }
   ],
@@ -48,8 +48,8 @@
         "Summons": {
           "Name": "Attack Insect",
           "Tags": [ "Size 1", "Flying", "16 HP", "Defense 8" ],
-          "Actions": "When summoned, or once on the Apiarist's turn thereafter, the insect may fly up to 2 spaces, then deal 2 piercing damage, twice, to a foe in range 4.",
-          "Effects": "When it flies, the Apiarist or an ally can latch on and fly with it, mirrroing its movement."
+          "SummonActions": "When summoned, or once on the Apiarist's turn thereafter, the insect may fly up to 2 spaces, then deal 2 piercing damage, twice, to a foe in range 4.",
+          "SummonEffects": "When it flies, the Apiarist or an ally can latch on and fly with it, mirrroing its movement."
         }
       }
     },
@@ -64,8 +64,8 @@
         "Summons": {
           "Name": "Attack Insect",
           "Tags": [ "Size 1", "Flying", "16 HP", "Defense 8" ],
-          "Actions": "When summoned, or once on the Apiarist's turn thereafter, the insect may fly up to 2 spaces, then deal 2 piercing damage, twice, to a foe in range 4.",
-          "Effects": [
+          "SummonActions": "When summoned, or once on the Apiarist's turn thereafter, the insect may fly up to 2 spaces, then deal 2 piercing damage, twice, to a foe in range 4.",
+          "SummonEffects": [
             "When the insect flies, the Apiarist or an ally can latch on and fly with it, mirrroing its movement.",
             "The insect deals double damage to bloodied foes."
           ]

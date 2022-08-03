@@ -14,7 +14,7 @@
       "ActionCost": 1,
       "Tags": [ "multimark" ],
       "Description": "An ally in range 4 is marked. When marked, and at the start of the storyteller's turn, the marked ally may dash 1.",
-      "Combos": {
+      "Combo": {
         "Name": "Fleet",
         "ActionCost": 1,
         "Description": "An ally in range 4 may dash 4, ignoring all movement penalties and terrain effects."

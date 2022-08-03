@@ -14,7 +14,7 @@
       "Miss": "[fray].",
       "AreaEffect": "[fray].",
       "Effects": "Create a height 1 boulder object under the attack space. Increase the height of any existing terrain spaces in the area by +1.",
-      "Combos": {
+      "Combo": {
         "Name": "Massive Overhead",
         "ActionCost": 2,
         "Tags": [ "melee attack", "close blast 1", "true strike", "+1 curse" ],

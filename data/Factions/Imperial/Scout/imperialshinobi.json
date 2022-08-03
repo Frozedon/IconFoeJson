@@ -12,7 +12,7 @@
       "Summons": {
         "Name": "Shadow Clone",
         "Tags": [ "Size 1", "Intangible", "Immobile" ],
-        "Effects": "Foes adjacent to a shadow clone at the start of their turn take [fray] damage from the clone."
+        "SummonEffects": "Foes adjacent to a shadow clone at the start of their turn take [fray] damage from the clone."
       }
     },
     {

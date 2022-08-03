@@ -12,24 +12,22 @@
       "Hit": "[fray].",
       "Miss": "-.",
       "Effects": "Foe gains a stack of Malice.",
-      "Combos": [
-        {
-          "Name": "Darklight Splitter",
-          "ActionCost": 1,
-          "Tags": [ "melee attack 2", "line 5", "true strike" ],
-          "Hit": "[fray] and target gains a stack of Malice.",
-          "Miss": "-.",
-          "AreaEffect": "-.",
-          "Effects": "All foes in the area gain a stack of Malice."
-        },
-        {
+      "Combo": {
+        "Name": "Darklight Splitter",
+        "ActionCost": 1,
+        "Tags": [ "melee attack 2", "line 5", "true strike" ],
+        "Hit": "[fray] and target gains a stack of Malice.",
+        "Miss": "-.",
+        "AreaEffect": "-.",
+        "Effects": "All foes in the area gain a stack of Malice.",
+        "Combo": {
           "Name": "Darklight Crusher",
           "ActionCost": 2,
           "Tags": [ "melee attack 2", "+1 curse", "true strike", "divine" ],
           "Hit": "2[D]+[fray].",
           "Miss": "[D]+[fray]."
         }
-      ]
+      }
     },
     {
       "Name": "Dark Strength",
@@ -46,7 +44,7 @@
         {
           "Name": "Rage of Iz",
           "ActionCost": 1,
-          "Tags": [ "terrain effect", "2/round" ],
+          "Tags": [ "2/round", "terrain effect" ],
           "Effects": "The Vessel roars, and a foe of its choice in range 6 feels the ground trembling beneath their feet. At the end of that character's turn, the knight summons either a pit (50%) or a height 1 dark light spire object (50%) under that foe. The ground erupts in a blast 1 area effect centered on this terrain, dealing [fray] damage to all characters."
         },
         {

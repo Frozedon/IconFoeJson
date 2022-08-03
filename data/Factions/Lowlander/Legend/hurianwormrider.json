@@ -29,7 +29,7 @@
           "Hit": "[D]+[fray].",
           "Miss": "[fray].",
           "Effects": "On hit, until the end of their next turn, foe takes 1 damage for each space they move. Bloodied foes take 2 damage instead.",
-          "Combos": {
+          "Combo": {
             "Name": "Spear Strike",
             "ActionCost": 2,
             "Tags": [ "melee attack", "line 4" ],
@@ -53,7 +53,7 @@
           "Summons": {
             "Name": "Trap",
             "Tags": [ "Size 1", "5 HP", "Immobile", "Automatically hit by attacks" ],
-            "Effects": "That foe becomes immobile until the trap is destroyed. They can also save at the end of their turn, destroying the trap on a successful save."
+            "SummonEffects": "That foe becomes immobile until the trap is destroyed. They can also save at the end of their turn, destroying the trap on a successful save."
           }
         },
         {

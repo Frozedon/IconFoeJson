@@ -13,14 +13,12 @@
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
       "Effects": " Deals bonus damage for each: character is winded, dazed, or stunned.",
-      "Combos": [
-        {
-          "Name": "Battle Shout",
-          "ActionCost": 1,
-          "Tags": [ "end turn" ],
-          "Description": "Characters in range 3 take [fray] damage and are shoved 1 towards the Demolisher."
-        },
-        {
+      "Combo": {
+        "Name": "Battle Shout",
+        "ActionCost": 1,
+        "Tags": "end turn",
+        "Description": "Characters in range 3 take [fray] damage and are shoved 1 towards the Demolisher.",
+        "Combo": {
           "Name": "Massive Impact",
           "ActionCost": 2,
           "Tags": [ "melee attack", "close blast 1" ],
@@ -29,7 +27,7 @@
           "AreaEffect": "[fray].",
           "Effects": "Attack target must save or be stunned."
         }
-      ]
+      }
     },
     {
       "Name": "Hurl Boulder",

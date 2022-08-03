@@ -13,8 +13,8 @@
       "Summons": {
         "Name": "Junk Golem",
         "Tags": [ "Size 1", "Sturdy", "16 HP", "Defense 8" ],
-        "Actions": "When summoned, or once on the hoarder's turn, the golem can move 3 spaces, then shove an adjacent foe 2. If that foe collides, they take [D] damage and are shattered.",
-        "Effects": "When the golem is defeated, drop 3 valuables in or adjacent to the space it occupied. When the golem passes over a valuables token, it absorbs it, gaining vigor 1 and giving its action bonus damage. It drops any tokens it picked up when it is defeated."
+        "SummonActions": "When summoned, or once on the hoarder's turn, the golem can move 3 spaces, then shove an adjacent foe 2. If that foe collides, they take [D] damage and are shattered.",
+        "SummonEffects": "When the golem is defeated, drop 3 valuables in or adjacent to the space it occupied. When the golem passes over a valuables token, it absorbs it, gaining vigor 1 and giving its action bonus damage. It drops any tokens it picked up when it is defeated."
       }
     },
     {

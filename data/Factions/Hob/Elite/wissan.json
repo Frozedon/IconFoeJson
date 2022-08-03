@@ -1,0 +1,43 @@
+{
+  "Name": "Wissan",
+  "Inherits": [ "Hob", "Elite", "Artillery" ],
+  "Type": "Foe",
+  "Chapter": 2,
+  "HPText": "[HP] (16 per root)",
+  "Traits": [ "Phasing", "Deep Rooted", "Tied to the Tree" ],
+  "Actions": [
+    {
+      "Name": "Ancient Bolt",
+      "ActionCost": 1,
+      "Tags": [ "ranged attack", "line 8", "pierce" ],
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "Effects": "Foes in the line are electrified. Electrified characters take 2 damage, once, for every adjacent character."
+    },
+    {
+      "Name": "Root Lash",
+      "ActionCost": 1,
+      "Effects": "A character in range 4 from a root summon or a deep root takes [fray] damage, then must save or be shoved as far as possible towards that root, or 1 space on a successful save."
+    },
+    {
+      "Name": "Ancient Dagon",
+      "ActionCost": 1,
+      "Tags": [ "line 6", "1/round", "pierce" ],
+      "AreaEffect": "Characters in the area take [fray] damage.",
+      "Delay": "The hob's next turn must be slow but at the start of that turn, a freezing weapon made of water coalesces at the end of the line, repeating the area. Characters in the area take [D]+[fray]."
+    },
+    {
+      "Name": "Summon Root",
+      "ActionCost": 1,
+      "Description": "The Wissan creates a lesser root in a free space in range 6.",
+      "Summons": {
+        "Name": "Lesser Root",
+        "Tags": [ "Size 1", "Immune to all damage and effects" ],
+        "Effects": [
+          "The root emits aura 1 around it. Foes in the aura are vulnerable+.",
+          "When a root is summoned, deal 1 damage, once, to any character in range 2 for every lesser root or deep root in range 2 of that character, including this one."
+        ]
+      }
+    }
+  ]
+}

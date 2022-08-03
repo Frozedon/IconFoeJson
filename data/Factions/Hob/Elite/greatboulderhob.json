@@ -1,0 +1,34 @@
+{
+  "Name": "Great Boulder Hob",
+  "Inherits": [ "Hob", "Elite", "Heavy" ],
+  "Type": "Foe",
+  "RemoveTraits": [ "Spirit Away", "Armor 3" ],
+  "Traits": [ "Sturdy", "Size 3", "Armor 12", "Lumbering", "Crumbling Body" ],
+  "Actions": [
+    {
+      "Name": "Ancient Geo",
+      "ActionCost": 1,
+      "Tags": [ "melee attack", "arc 4 + blast 1" ],
+      "Hit": "2[D] and foe is dazed.",
+      "Miss": "[D].",
+      "AreaEffect": "[D].",
+      "Effects": "Dazed foes take +[D] from either effect."
+    },
+    {
+      "Name": "Charged Stone Toss",
+      "ActionCost": 1,
+      "Description": "A foe in range 6 takes 2 damage and is shoved 1, then create a height 1 boulder object next to them."
+    },
+    {
+      "Name": "Earthforce",
+      "ActionCost": 1,
+      "Description": "An adjacent object is shoved 3. Characters in its path are shoved 1 to either side, then take fray damage and become dazed.",
+      "Collide": "Characters also take [D]."
+    },
+    {
+      "Name": "Hurl Self",
+      "ActionCost": 2,
+      "Description": "The Boulder hob reduces its max hp by 25%, hurling part of itself at a foe. A foe in range 5 must save or take 3[D]+fray, be shoved 3, and become stunned. On a successful save, they are shoved 1, dazed, and take [D]+fray. Then, create a height 1 boulder object adjacent to that foe. The hob can reduce its hp to 0 and defeat itself with this move."
+    }
+  ]
+}

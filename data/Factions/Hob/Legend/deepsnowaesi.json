@@ -1,0 +1,100 @@
+{
+  "Name": "Deep Snow Aesi",
+  "Inherits": [ "Hob", "Legendary Artillery" ],
+  "Type": "Foe",
+  "Chapter": 3,
+  "HP": 32,
+  "Traits": [ "Flying", "Phasing", "Creeping Cold" ],
+  "SetupTraits": {
+    "Name": "Suggested Battlefield",
+    "Description": "This legend is best fought in a battlefield that is 12x12 or a little larger."
+  },
+  "Actions": [
+    {
+      "Name": "Storm Whip",
+      "ActionCost": 1,
+      "Tags": [ "melee attack 4", "blast 1", "pierce" ],
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "AreaEffect": "[fray].",
+      "Effects": "Shove 1.",
+      "Collide": "For is vulnerable.",
+      "Combos": {
+        "Name": "Diamond Dust", 
+        "ActionCost": 2, 
+        "Tags": [ "ranged attack 6", "blast 1", "pierce" ],
+        "Hit": "2[D]+[fray].",
+        "Miss": "[fray].",
+        "AreaEffect": "[fray].",
+        "Effects": "Deals 1 damage, again, for every character in the area.",
+        "Combos": {
+          "Name": "Crystalline Lance",
+          "ActionCost": 1,
+          "Tags": [ "ranged attack 10", "pierce" ],
+          "Hit": "[D]+[fra]y.",
+          "Miss": "[fray].",
+          "Effects": "Foe must save or be shoved 6"
+        }
+      }
+    },
+    {
+      "Name": "Northern Winds",
+      "ActionCost": 0,
+      "Description": "The Aesi dashes 3. It becomes intangible and gains phasing while moving."
+    },
+    {
+      "Name": "Stiffen Limbs",
+      "ActionCost": 1,
+      "Tags": "1/round",
+      "Description": "The Aesi chooses up to three characters in range 6. During their next turn, those characters must end their turn at least 4 spaces from their starting location at the start of their turn, or else take [D]+fray and become stunned."
+    },
+    {
+      "Name": "Freeze Solid",
+      "ActionCost": 1,
+      "Tags": "1/round",
+      "Description": "A character in range 6 becomes shattered. At the end of that character's next turn, they must save. On a failed save, they are encased in ice, removing them from the battlefield and becoming replaced with a destructible (10 hp) height 1 frozen statue object. Until the is destroyed, they cannot take a turn. When it's destroyed, they are returned to the battlefield in the space they left and can take a turn as normal"
+    }
+  ],
+  "PhasesDescription": "On round 4, and every two rounds thereafter (6, 8, 10 etc), the Aesi uses Mortal Mockery.",
+  "Phases": [
+    {
+      "Actions": {
+        "Name": "Frozen Impaler",
+        "ActionCost": 1,
+        "Tags": "2/round",
+        "Description": "The Aesi chooses a character in range 6. At the end of that character's turn, an icicle coalesces and falls on that character for a blast 1 area effect centered on them. Characters inside take 2 damage, then create the icicle adjacent to the targeted character. The icicle is a height 2 destructible object (1o hp) that has aura 1. The aura has the following effects:",
+        "ExtraItems": [
+          {
+            "Description": "Foes that start their turn in the aura take 2 piercing damage."
+          },
+          {
+            "Description": "Foes are vulnerable+ while in the aura."
+          },
+          {
+            "Description": "The aura is difficult terrain."
+          }
+        ]
+      }
+    },
+    {
+      "Traits": "Icy Death",
+      "Actions": {
+        "Name": "Frozen Impaler",
+        "ActionCost": 0,
+        "Tags": "2/round",
+        "Description": "The Aesi chooses a character in range 6. At the end of that character's turn, an icicle coalesces and falls on that character for a blast 1 area effect centered on them. Characters inside take 2 damage, then create the icicle adjacent to the targeted character. The icicle is a height 2 destructible object (1o hp) that has aura 1. The aura has the following effects:",
+        "ExtraItems": [
+          {
+            "Description": "Foes that start their turn in the aura take 2 piercing damage."
+          },
+          {
+            "Description": "Foes are vulnerable+ while in the aura."
+          },
+          {
+            "Description": "The aura is difficult terrain."
+          }
+        ]
+      }
+    }
+  ]
+}

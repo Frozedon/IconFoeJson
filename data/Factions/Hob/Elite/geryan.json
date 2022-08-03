@@ -1,0 +1,119 @@
+{
+  "Name": "Geryan",
+  "Inherits": [ "Hob", "Elite", "Leader" ],
+  "Type": "Foe",
+  "Chapter": 2,
+  "Interrupts": [
+    {
+      "Name": "Bargain",
+      "Count": 1,
+      "Description": "As an interrupt, the Geryan can strike one of the following bargains with any foe. The bargain interrupts anything that's currently going on, and resolves immediately. Accepting a bargain is voluntary. If a character refuses a bargain, the Geryan regains this interrupt.",
+      "ExtraItems": [
+        {
+          "Name": "Luck",
+          "CustomComponents": [
+            {
+              "Name": "Trigger",
+              "Description": "The foe started their turn."
+            },
+            {
+              "Name": "Effect",
+              "Description": "The foe gains +1 boon on all attacks and saves this turn."
+            },
+            {
+              "Name": "Terms",
+              "Description": "The Geryan recharges all its abilities."
+            }
+          ]
+        },
+        {
+          "Name": "Immortality",
+          "CustomComponents": [
+            {
+              "Name": "Trigger",
+              "Description": "Foe just took a wound."
+            },
+            {
+              "Name": "Effect",
+              "Description": "The character can ignore the wound."
+            },
+            {
+              "Name": "Terms",
+              "Description": "The Geryan grants vigor 2 to itself and an ally in range 6."
+            }
+          ]
+        },
+        {
+          "Name": "Wealth",
+          "CustomComponents": [
+            {
+              "Name": "Trigger",
+              "Description": "The foe's turn started."
+            },
+            {
+              "Name": "Effect",
+              "Description": "Place a wealth token in a free space of the Geryan's choice in range 6. The wealth token is an intangible summon. It can be picked up if any character ends its turn adjacent with no other characters adjacent to the token, and is dropped in an adjacent space if a character is defeated. If a character ends combat with the wealth token, they gain 2 dust."
+            }
+          ]
+        },
+        {
+          "Name": "Beauty",
+          "CustomComponents": [
+            {
+              "Name": "Trigger",
+              "Description": "The foe just took damage."
+            },
+            {
+              "Name": "Effect",
+              "Description": "The foe reduces all that damage to 1. Their skin and hair/fur become clean and look amazing."
+            },
+            {
+              "Name": "Terms",
+              "Description": "Every ally of the Geryan in range 3 of that foe gains hatred of them and they become branded."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Wish",
+      "Count": 1,
+      "Recharge": 6,
+      "Trigger": "An ally in range 6 is reduced to 0 hp.",
+      "Effects": "That ally returns to 25% hp instead, then the the Geryan takes 25% of its max hp in damage, which could cause it to be defeated."
+    }
+  ],
+  "Actions": [
+    {
+      "Name": "Old Staff",
+      "ActionCost": 2,
+      "Tags": "melee attack 2",
+      "Hit": "2[D]+[fray] and foe is branded.",
+      "Miss": "[fray]."
+    },
+    {
+      "Name": "Chastise",
+      "ActionCost": 1,
+      "Tags": "repeatable",
+      "Effects": "A character in range 6 takes 1 piercing damage. If that character attacks before the end of their next turn, they take [D]+[fray] piercing damage and this effect ends."
+    },
+    {
+      "Name": "Misfortune",
+      "ActionCost": 1,
+      "Recharge": 5,
+      "Effects": "A character in range 10 gains +1 curse on all attack rolls and saves until the end of their next turn."
+    },
+    {
+      "Name": "Great Luck",
+      "ActionCost": 1,
+      "Recharge": 5,
+      "Description": "An ally in range 10 gains +1 boon on all attack rolls and saves until the end of their next turn."
+    },
+    {
+      "Name": "Ancient Reversa",
+      "ActionCost": 1,
+      "Recharge": 5,
+      "Description": "The Geryan gains aura 2 until the start of their next turn. While inside the aura, when any character (foe or ally) takes damage, roll a d6. On a 4+, that character is cured."
+    }
+  ]
+}

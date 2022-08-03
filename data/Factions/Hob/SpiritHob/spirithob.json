@@ -1,0 +1,57 @@
+{
+  "Name": "Spirit Hob",
+  "Inherits": [ "Hob", "Artillery" ],
+  "Traits": "Flying",
+  "Interrupts": {
+    "Name": "Spirit Trickery", 
+    "Count": 1,
+    "Trigger": "The hob is damaged by an ability, and the ability resolves.",
+    "Effects": "Teleport all adjacent characters 1, then teleport 1."
+  },
+  "Actions": [
+    {
+      "Name": "Spirit Orb",
+      "ActionCost": 2,
+      "Tags": [ "ranged attack 8", "cross 1", "pierce" ],
+      "Hit": "[D]+2, twice.",
+      "Miss": "[D]+2.",
+      "AreaEffect": "[D]+2.",
+      "Charge": "Teleport affected foes 1 space in any direction."
+    },
+    {
+      "Name": "Whisk",
+      "ActionCost": 1,
+      "Effects": "A foe in range 6 becomes vulnerable, then is teleported 1. Vulnerable foes are teleported 3 instead."
+    },
+    {
+      "Name": "Playful Pricking",
+      "ActionCost": 1,
+      "Tags": "mark",
+      "Description": "A character in range 6 of the spirit is marked.",
+      "Mark": "While marked, each time they teleport, they take 1 piercing damage. This damage cannot reduce them past 1 hp."
+    },
+    {
+      "Name": "Fell Spirit",
+      "ActionCost": 1,
+      "Tags": [ "pierce", "summon", "end turn" ],
+      "Description": "The spirit hob ends its turn and summons a spirit orb in range 6, an immobile, intangible summon.",
+      "Delay": "The hob's next turn must be slow. At the start of that turn, the orb explodes, destroying it and releasing a massive blast of sonic energy in a blast 1 area effect centered on it. Foes inside are shattered, then must save or take [D]+[fray] twice, or once on a successful save."
+    }
+  ],
+  "ConditionalAbilities": [
+    {
+      "Chapter": 2,
+      "RemoveInterrupts": "Spirit Trickery",
+      "Interrupts": {
+        "Name": "Spirit Trickery", 
+        "Count": 1,
+        "Trigger": "The hob is damaged by an ability, and the ability resolves.",
+        "Effects": "Teleport all adjacent characters 2, then teleport 2."
+      }
+    },
+    {
+      "Chapter": 3,
+      "Traits": "Spirit Shift"
+    }
+  ]
+}

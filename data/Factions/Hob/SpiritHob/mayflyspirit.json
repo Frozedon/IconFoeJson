@@ -1,0 +1,12 @@
+{
+  "Name": "Mayfly Spirit",
+  "Inherits": "Spirit Hob",
+  "Type": "Foe",
+  "Traits": "Thicket Dance",
+  "Actions": {
+    "Name": "Thorny Thicket",
+    "ActionCost": 1,
+    "Tags": [ "1/combat", "terrain effect" ],
+    "Description": "The spirit creates a line 3 area of dangerous terrain in range 6."
+  }
+}

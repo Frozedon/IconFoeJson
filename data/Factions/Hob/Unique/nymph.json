@@ -1,0 +1,35 @@
+{
+  "Name": "Nymph",
+  "Inherits": [ "Hob", "Artillery" ],
+  "Type": "Foe",
+  "Chapter": 2,
+  "RemoveTraits": "Aetherwall",
+  "Traits": "Aura of Glamour",
+  "Actions": [
+    {
+      "Name": "Yew Bow",
+      "ActionCost": 1,
+      "Tags": [ "ranged attack 6", "pierce" ],
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "Effects": "Deals bonus damage for every character adjacent to the target.",
+      "Charge": "Range 12."
+    },
+    {
+      "Name": "Enthrall",
+      "ActionCost": 1,
+      "Description": "The Nymph chooses a foe in range 8. That foe must save. On a successful save, they are vulnerable. On a failed save, they are vulnerable and Nymph controls their standard movement on their next turn. Already vulnerable characters fail the save."
+    },
+    {
+      "Name": "Riven",
+      "ActionCost": 1,
+      "Recharge": 4,
+      "Description": "The Nymph chooses a character in range 8. At the end of that character's turn, they take [D] piercing damage once for every 3 spaces of distance between them and the Nymph. Then, end this effect."
+    },
+    {
+      "Name": "Greenpath",
+      "ActionCost": 2,
+      "Description": "Remove the Nymph from play, then place them anywhere on the battlefield in free space. Clear all statuses from them."
+    }
+  ]
+}

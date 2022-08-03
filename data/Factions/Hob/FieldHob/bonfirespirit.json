@@ -1,0 +1,23 @@
+{
+  "Name": "Bonfire Spirit",
+  "Inherits": "Field Hob",
+  "Type": "Foe",
+  "Actions": [
+    {
+      "Name": "Fireworks",
+      "ActionCost": 2,
+      "Description": "All foes in range 2 take 3 damage and are branded."
+    },
+    {
+      "Name": "Bonfire Festival",
+      "ActionCost": 0,
+      "Tags": [ "1/combat", "terrain effect" ],
+      "Description": "The Bonfire spirit creates a height 1 bonfire object.",
+      "Summon": {
+        "Name": "Bonfire",
+        "Tags": "Height 1 object",
+        "Effects": "The area on top of the object is dangerous terrain, and the object emits aura 1. Allies in the aura gain the charged effects of all abilities, even on normal turns."
+      }
+    }
+  ]
+}

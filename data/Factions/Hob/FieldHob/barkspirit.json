@@ -1,0 +1,12 @@
+{
+  "Name": "Bark Spirit",
+  "Inherits": "Field Hob",
+  "Type": "Foe",
+  "Actions": {
+    "Name": "Curse of Thorns",
+    "ActionCost": 1,
+    "Tags": "mark",
+    "Description": "A character in range 5 from the Bark Spirit is cursed and marked.",
+    "Mark": "While marked, if that character ends their turn within range 2 of a hob or a hob summon, they take [D] piercing damage."
+  }
+}

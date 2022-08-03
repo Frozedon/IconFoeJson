@@ -1,0 +1,48 @@
+{
+  "Name": "White Beast",
+  "Inherits": [ "Hob", "Elite", "Artillery" ],
+  "Type": "Foe",
+  "Chapter": 3,
+  "RemoveTraits": [ "Slip", "Spirit Away" ],
+  "Traits": [ "Wild Hunt", "Bloom" ],
+  "Actions": [
+    {
+      "Name": "Wild Prance",
+      "ActionCost": 0,
+      "Tags": [ "1/round", "terrain effect" ],
+      "Description": "The beast flies 4 spaces, then creates a close blast 1 area of difficult terrain. It can only have three such areas active at once (choosing which to replace if so) and the areas can overlap."
+    },
+    {
+      "Name": "Primal Stars",
+      "ActionCost": 1,
+      "Tags": [ "ranged attack 10", "multiattack", "pierce" ],
+      "AutoHit": "4 damage."
+    },
+    {
+      "Name": "Breath of the Wild",
+      "ActionCost": 1,
+      "Tags": [ "ranged attack 5", "blast 2" ],
+      "Recharge": 6,
+      "Hit": "2[D]+[fray].",
+      "Miss": "[fray].",
+      "Effects": "All foes are shoved 1."
+    },
+    {
+      "Name": "Overgrow",
+      "ActionCost": 1,
+      "Tags": "1/round",
+      "Description": "The beast chooses a foe in range 6. At the end of that foe's turn, if they have not moved at least 4 spaces from their location at the start of their turn, they become immobile as the undergrowth grows over their feet. This effect ends when they take any amount of damage, or they or an adjacent character can hack the growth away as an action, dealing [D]+[fray] piercing damage to them but ending the effect."
+    },
+    {
+      "Name": "Horn Smash",
+      "ActionCost": 1,
+      "Description": "A foe in range 2 must save. On a successful save, they take fray damage. On a failed save, they take fray damage, are shattered, and additionally take 1 piercing damage for each space they move or are shoved before the end of their next turn."
+    },
+    {
+      "Name": "Pollen Haze",
+      "ActionCost": 1,
+      "Tags": [ "range 6", "blast 1" ],
+      "AreaEffect": "Foes in the area take 2 damage and must save or become vulnerable. If the area catches a tree in the area, foes in the area take 2 damage again."
+    }
+  ]
+}

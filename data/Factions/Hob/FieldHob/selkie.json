@@ -1,0 +1,19 @@
+{
+  "Name": "Selkie",
+  "Inherits": "Field Hob",
+  "Type": "Foe",
+  "Chapter": 2,
+  "Actions": [
+    {
+      "Name": "Chastise",
+      "ActionCost": 1,
+      "Effects": "A character in range 6 takes 1 piercing damage. If that character attacks before the end of their next turn, they take [D] piercing damage and this effect ends."
+    },
+    {
+      "Name": "Slip Clothes",
+      "ActionCost": 1,
+      "Tags": "stance",
+      "Description": "The Selkie disrobes and transforms into a spirit seal, dashing 1 and leaving its clothes in the space it vacated. While a seal, the Selkie has resistance and has phasing. A character can pick up the Selkie's clothes by spend an action while standing on their space, ending this effect. The Selkie is removed from the battlefield then placed back adjacent to its clothes space."
+    }
+  ]
+}

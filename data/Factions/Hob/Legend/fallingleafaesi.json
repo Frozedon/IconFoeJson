@@ -1,0 +1,89 @@
+{
+  "Name": "Falling Leaf Aesi",
+  "Inherits": [ "Hob", "Legendary Skirmisher" ],
+  "Type": "Foe",
+  "Chapter": 2,
+  "HP": 24,
+  "Traits": [ "Immortal Thievery", "Gust" ],
+  "Interrupts": {
+    "Name": "Steal Ability",
+    "Tags": [ "2/round", "thievery" ],
+    "Trigger": "A foe in range 2 uses an ability and the ability resolves.",
+    "Effects": "The foe loses the memory of that ability, becoming unable to use it until they pick up a memory. If the ability is a stance or aura, it has no effect for the duration."
+  },
+  "Actions": [
+    {
+      "Name": "Leaf Dance",
+      "ActionCost": 1,
+      "Tags": [ "melee attack", "multiattack", "+1 boon" ],
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "Effects": "Aesi may dash up to 5 spaces during any part of this attack, making attacks against any adjacent foes during its movement, but must move in a straight line. During this movement, they can shove any memories 1 to either side."
+    },
+    {
+      "Name": "Whirling Leaves",
+      "ActionCost": 1,
+      "Description": "Repeat the following effect three times.",
+      "Effects": "Teleport 1, then deal 2 damage to all adjacent foes and shove all adjacent foes and memories."
+    },
+    {
+      "Name": "Greenpath",
+      "ActionCost": 2,
+      "Tags": "1/round",
+      "Description": "Remove the Aesi from play, then place them anywhere on the battlefield in free space. Clear all statuses, marks and blights from them."
+    },
+    {
+      "Name": "Fae Thief",
+      "ActionCost": 1,
+      "Tags": [ "2/round", "thievery" ],
+      "Description": "The Aesi steals something from a foe in range 5. Roll 1d6 to see what. Picking up a memory removes an effect of the foe's choice. Re-roll repeat effects.",
+      "Rolls": [
+        {
+          "Values": 1,
+          "Name": "Friendship",
+          "Description": "Foe's abilities can't target allies and treat all allies as immune to their effects, including any active marks, stances, auras, etc."
+        },
+        {
+          "Values": 2,
+          "Name": "Sight",
+          "Description": "Foe is blinded+."
+        },
+        {
+          "Values": 3,
+          "Name": "Luck",
+          "Description": "Foe cannot gain boons or critically hit."
+        },
+        {
+          "Values": 4,
+          "Name": "Heart",
+          "Description": "Foe cannot gain vigor or benefit from defiance."
+        },
+        {
+          "Values": 5,
+          "Name": "Talent",
+          "Description": "Foe takes +1 curse on all attacks and saves."
+        },
+        {
+          "Values": 6,
+          "Name": "Youth",
+          "Description": "Foe cannot dash and is slowed+."
+        }
+      ]
+    },
+    {
+      "Name": "Wall of Thorns",
+      "ActionCost": 1,
+      "Tags": [ "1/round", "terrain effect" ],
+      "Description": "The Aesi creates a line 4 area of height 2 thorny wall objects. Each object is destructible (10 hp) and also considered dangerous terrain. Character that collide with it take 2 divine damage."
+    }
+  ],
+  "PhasesDescription": "On round 4, and every two rounds thereafter (6, 8, 10 etc), the Aesi uses Mortal Mockery.",
+  "Phases": [
+    {
+      "Description": "No changes."
+    },
+    {
+      "Traits": "Mortal Mockery"
+    }
+  ]
+}

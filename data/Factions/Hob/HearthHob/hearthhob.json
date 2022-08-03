@@ -1,0 +1,53 @@
+{
+  "Name": "Hearth Hob",
+  "Inherits": [ "Hob", "Skirmisher" ],
+  "Interrupts": {
+    "Name": "Snatch Memory", 
+    "Count": 1,
+    "Trigger": "A foe in range 2 uses an ability and the ability resolves.",
+    "Effects": "The foe must save or lose the memory of that ability, becoming unable to use it until after their entire following turn is over. If the ability is a stance or aura, it has no effect for the duration."
+  },
+  "Actions": [
+    {
+      "Name": "Beat Down",
+      "ActionCost": 1,
+      "Tags": [ "melee attack", "+1 boon" ],
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "Charge": "Deals bonus damage for every status a foe is suffering from."
+    },
+    {
+      "Name": "Steal Speed",
+      "ActionCost": 1,
+      "Effects": "An adjacent foe is slowed. Slowed foes take [fray] damage."
+    },
+    {
+      "Name": "Pilfer Luck",
+      "ActionCost": 1,
+      "Tags": "mark",
+      "Description": "The hob marks a foe in range 3.",
+      "Mark": "While marked the foe cannot gain boons. Instead, when the foe would gain a boon, the Hob gains +1 boon on all attacks and saves on its following turn."
+    },
+    {
+      "Name": "Cavort",
+      "ActionCost": 1,
+      "Tags": "end turn",
+      "Description": "The Hob ends its turn and gains",
+      "Delay": "It's next turn must be slow. At the start of that turn, At the start of that turn, it targets a close blast 2 area, then teleports adjacent to a foe 3 times, dealing [D] to that foe each time. A different foe must be chosen each time unless all foes in the area have been hit at least once by this ability."
+    }
+  ],
+  "ConditionalAbilities": [
+    {
+      "Chapter": 2,
+      "Traits": "Cheap Trick"
+    },
+    {
+      "Chapter": 3,
+      "Actions": {
+        "Name": "Steal Sight",
+        "ActionCost": 1,
+        "Description": "An adjacent foe is blinded+. They can end this condition by ending a turn adjacent to an ally."
+      }
+    }
+  ]
+}

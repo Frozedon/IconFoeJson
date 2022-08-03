@@ -144,7 +144,7 @@
         {
           "Name": "Tongue",
           "ActionCost": 1,
-          "Tags": [ "melee attack", "repeatable" ],
+          "Tags": [ "melee attack 3", "repeatable" ],
           "Hit": "[D]+[fray].",
           "Miss": "[fray].",
           "Effects": "The target is shoved 2 towards the chimaera."

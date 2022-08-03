@@ -1,0 +1,69 @@
+[
+  {
+    "Name": "Barely There",
+    "Description": "Spriggs are intangible and don't cause engagement. Characters can't collide with them and can share their space. They disappear when combat ends, or all other non-sprigg allies have been defeated."
+  },
+  {
+    "Name": "Bloom",
+    "Description": "At the start of its turns, the beast creates a height 3 blooming tree object adjacent to it."
+  },
+  {
+    "Name": "Deep Rooted",
+    "Description": "At the start of any combat, place 4 deep roots on the map, which are size 1 summons that cannot be moved in any way. The roots have aura 1. Foes in the aura are vulnerable+. All roots must be accessible to characters and placed within range 6 of another root. The Roots are considered to be the Wissan for purposes of targeting and each has 25% of its max hp. When a root is destroyed, remove it."
+  },
+  {
+    "Name": "Drag Under (Carp)",
+    "DisplayName": "Drag Under",
+    "Description": "When this Hob ends its turn, it can choose an adjacent foe, which must save. On a failed save, that foe takes [D]+[fray], and remove both the Hob and that foe from play as they dive into a pool of magicked water. Both return to play at the start of that foe's next turn, in any free space in range 3 of their original location."
+  },
+  {
+    "Name": "Greenwalker",
+    "Description": "Hobs ignore difficult terrain."
+  },
+  {
+    "Name": "Mist Form",
+    "Description": "The Hob is a character and also a space of dangerous and difficult terrain. Characters can share space with it, and it has resistance against any character inside of its space."
+  },
+  {
+    "Name": "Spirit Away",
+    "Actions": {
+      "Name": "Spirit Away",
+      "ActionCost": 0,
+      "Description": "The Hob swaps places with an adjacent character, teleporting both. If either character cannot teleport, this move cannot be made."
+    }
+  },
+  {
+    "Name": "Thicket Dance",
+    "Description": "At the start of its turn, before any delay effects activate, the Mayfly spirit and all characters in range 2 teleport 1 space in a direction of the spirit's choice. Foes can save to avoid this effect."
+  },
+  {
+    "Name": "Tied to the Tree",
+    "Description": "The Wissan's body is immune to all damage. When all four roots are destroyed, it is instantly defeated and disappears. It can teleport to any space adjacent to a root as a free action."
+  },
+  {
+    "Name": "Trickery",
+    "Description": "Like player characters, Hobs have charge abilities and can take slow turns."
+  },
+  {
+    "Name": "Wild Hunt",
+    "Description": "At the start of the round, the beast can choose an edge of the map. At the end of that round, a huge stampede of animals sweeps across the map from that end to the next.",
+    "ExtraItems": [
+      {
+        "Description": "Repeat this effect 3 times on all foes.",
+        "CustomComponents": [
+          {
+            "Name": "Effect",
+            "Description": "Foe takes 1 damage and are shoved 1 in the direciton of the herd."
+          },
+          {
+            "Name": "Collide",
+            "Description": "Foe is stunned."
+          }
+        ]
+      },
+      {
+        "Description": "Characters that are standing on the other side of objects or terrain as if they were in cover from this effect are immune to it."
+      }
+    ]
+  }
+]

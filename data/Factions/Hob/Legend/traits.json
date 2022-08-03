@@ -1,0 +1,95 @@
+[
+  {
+    "Name": "Divine Ambrosia",
+    "Description": "The Aegis's mere presence envelops the battlefield in a drunken haze. Give a d6 to all characters, representing their level of intoxication. Certain abilities Intoxicate foes, ticking the die up by 1. If a die would become 6, a character can't take any more. The must save or take 50% of their max hp as divine damage and spend their entire next turn incapacitated and throwing up, resetting the die to 1. On a successful save, lower the die by 3 but take no other negative effects."
+  },
+  {
+    "Name": "Haze of Ambrosia",
+    "Description": "At the start of their turn, all characters increase their intoxication by +1."
+  },
+  {
+    "Name": "Sober Up",
+    "Description": "A character can sober up at the start of their turn by rolling 1d6, taking one of the following effects and reducing their intoxication by 4, to a minimum of 1. Effects with a duration last until the start of the character's next turn.",
+    "Rolls": [
+      {
+        "Values": 1,
+        "Name": "Nonstop Singing",
+        "Description": "The character gains aura 1. Allies in the aura are dazed+."
+      },
+      {
+        "Values": 2,
+        "Name": "Stagger",
+        "Description": "The Aesi shoves the character 2.",
+        "CustomComponents": {
+          "Name": "Collide",
+          "Description": "Foe takes [D]+[fray]."
+        }
+      },
+      {
+        "Values": 3,
+        "Name": "Stand and Blink",
+        "Description": "The character becomes immobile."
+      },
+      {
+        "Values": 4,
+        "Name": "Clingy",
+        "Description": "The character can only use abilities if adjacent to an ally."
+      },
+      {
+        "Values": 5,
+        "Name": "Take a Nap",
+        "Description": "The character is winded. If already winded, they are stunned."
+      },
+      {
+        "Values": 6,
+        "Description": "No extra effects."
+      }
+    ]
+  },
+
+  
+  {
+    "Name": "Immortal Thievery",
+    "Description": "Some of the Aesi's abilities have the thievery tag. When an ability with this tag is used, the Aesi creates a memory as an intangible summon in any free space within range 4 of that character. Characters can end the thievery's effects on them by passing over and picking up a memory (any memory will do)."
+  },
+  {
+    "Name": "Gust",
+    "Description": "At the start of each round, the Aesi puts down a space of swirling wind in its space. Characters that enter the space, including the Aesi, can fly 3 spaces as an effect, but only once a round for each space. Spaces persist until the end of combat."
+  },
+  {
+    "Name": "Mortal Mockery",
+    "Description": " The Aesi transforms its physical form into a mockery of the closest foe. The effects depend on the foe's class. If the same effect would be chosen twice, the Aesi can choose a different one of its choice to apply.\nNaturally, all of these effects stack if the Aesi is allowed to use them again. Why be one class when you can be all of them?",
+    "ExtraItems": [
+      {
+        "Name": "Mock Stalwart",
+        "Description": "The Aesi gains armor 3 and the fortify trait. In addition, Leaf dance gains true strike."
+      },
+      {
+        "Name": "Mock Vagabond",
+        "Description": "The Aesi may split up all its movement with actions. In addition, Leaf dance gains the ability to critically hit, dealing (+[D]) on a crit."
+      },
+      {
+        "Name": "Mock Mendicant",
+        "Description": "The Aesi gains the shelter and diaga traits. In addition, Leaf Dance deals bonus damage."
+      },
+      {
+        "Name": "Mock Wright",
+        "Description": "The Aesi gains the Overdrive 6 and Aetherwall traits. In addition, Leaf Dance gains pierce."
+      }
+    ]
+  },
+  
+
+  {
+    "Name": "Creeping Cold",
+    "Description": "At the end of the first round round, the Aesi creates a Creeping Cold effect in every space along the edge of the map, a creeping black frost. This is a difficult terrain terrain effect that affects even flying characters. Characters that either start or end their turn in Creeping Cold must save or take 50% of their maximum hp as divine damage, or 25% on a successful save. At the end of every two rounds thereafter (3, 5, 7, etc), the effect creeps in by 1 space on all sides, shrinking the available battlefield space."
+  },
+  {
+    "Name": "Icy Death",
+    "Description": "A wind begins blowing from one side of the map, which the Aesi chooses at the start of each around. After taking any action, a foe is shoved 1 in the direction of the wind.",
+    "CustomComponents": {
+      "Name": "Collide",
+      "Description": "Character takes [D]+[fray]."
+    }
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "Name": "Nixie",
+  "Inherits": "Spirit Hob",
+  "Type": "Foe",
+  "RemoveInterrupts": "Spirit Trickery",
+  "Interrupts": {
+    "Name": "Spit Curses", 
+    "Count": 1,
+    "Trigger": "The hob is damaged by an ability, and the ability resolves.",
+    "Effects": "The ability's owner gains +1 curse on saves until the end of its next turn."
+  }
+}

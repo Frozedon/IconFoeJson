@@ -1,0 +1,13 @@
+{
+  "Name": "Great Carp Hob",
+  "Inherits": "Forest Hob",
+  "Type": "Foe",
+  "Chapter": 2,
+  "Traits": "Drag Under (Carp)",
+  "Actions": {
+    "Name": "Summon Pool",
+    "ActionCost": 0,
+    "Tags": [ "1/combat", "terrain effect" ],
+    "Description": "The Carp Hobb creates a pit in a free space in range 3."
+  }
+}

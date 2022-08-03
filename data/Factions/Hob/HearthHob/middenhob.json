@@ -1,0 +1,6 @@
+{
+  "Name": "Midden Hob",
+  "Inherits": "Hearth Hob",
+  "Type": "Foe",
+  "Traits": "Overwhelming Stench"
+}

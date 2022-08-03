@@ -1,0 +1,21 @@
+{
+  "Name": "Sprigg",
+  "Inherits": [ "Hob", "Mob" ],
+  "HP": 0,
+  "Speed": 3,
+  "Defense": 0,
+  "RemoveTraits": "Spirit Away",
+  "Traits": [ "Phasing", "Skirmish", "Barely There" ],
+  "Actions": [
+    {
+      "Name": "Frolic",
+      "ActionCost": 2,
+      "Description": "The Sprigg swaps places with an ally in range 3, teleporting."
+    },
+    {
+      "Name": "Mischief",
+      "ActionCost": 2,
+      "Description": "The Sprigg swaps the places of two other characters in range 2 of the Sprigg, teleporting both of them. Foes take 1 damage. If either cannot teleport, this move cannot be made."
+    }
+  ]
+}

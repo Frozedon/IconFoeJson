@@ -19,7 +19,7 @@
       "Description": "Characters in range 2 of the Grave are shoved 1 towards it, which could move them inside the Grave."
     },
     {
-      "Name": "Vomit Lightning ",
+      "Name": "Vomit Lightning",
       "ActionCost": 1,
       "Description": "A foe in range 4 takes [fray] damage and is electrified. Electrified characters must save or be winded."
     },

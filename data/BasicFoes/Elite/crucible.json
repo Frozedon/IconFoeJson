@@ -22,7 +22,7 @@
       "Description": "Remove self from the battlefield, then return in a free space in range 3."
     },
     {
-      "Name": "Fell Shot ",
+      "Name": "Fell Shot",
       "ActionCost": 1,
       "Tags": [ "repeatable" ],
       "Description": "Mark an unoccupied space in range 8.",

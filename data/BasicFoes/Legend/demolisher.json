@@ -12,7 +12,7 @@
       "Tags": [ "melee attack 2", "true strike" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
-      "Effects": " Deals bonus damage for each: character is winded, dazed, or stunned.",
+      "Effects": "Deals bonus damage for each: character is winded, dazed, or stunned.",
       "Combo": {
         "Name": "Battle Shout",
         "ActionCost": 1,

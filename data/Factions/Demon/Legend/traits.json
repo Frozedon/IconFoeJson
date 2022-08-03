@@ -26,7 +26,17 @@
     "Summons": {
       "Name": "Blade of Agony",
       "Tags": [ "Size 1", "Immune to all damage and effects" ],
-      "SummonEffects": "A blade is a summon that causes obstruction. Although it's immune to all damage character can shatter an adjacent blade by attacking it, destroying it. It also has the following effects.\n• Blade Slash: Whenever a blade is summoned, all blades, including the one that was just summoned, slash every space adjacent to them, dealing 1 piercing damage as an effect. A character can be hit by multiple blades at once. The violence demon is immune to its own blades.\n• Blade consume X: Certain actions must consume X blades of agony to be used. Blades are consumed at the start of the action and must be in range 3 of the demon to be valid. This destroys the blades, removing them from the battlefield."
+      "SummonEffects": "A blade is a summon that causes obstruction. Although it's immune to all damage character can shatter an adjacent blade by attacking it, destroying it. It also has the following effects.",
+      "ListedItems": [
+        {
+          "Name": "Blade Slash",
+          "Description": "Whenever a blade is summoned, all blades, including the one that was just summoned, slash every space adjacent to them, dealing 1 piercing damage as an effect. A character can be hit by multiple blades at once. The violence demon is immune to its own blades."
+        },
+        {
+          "Name": "Blade Consume X",
+          "Description": "Certain actions must consume X blades of agony to be used. Blades are consumed at the start of the action and must be in range 3 of the demon to be valid. This destroys the blades, removing them from the battlefield."
+        }
+      ]
     }
   },
   {
@@ -68,7 +78,13 @@
         "Name": "Flagellant Knight", 
         "Tags": [ "Size 1", "40 HP", "Defense 5" ],
         "SummonEffects": "The first time a round any character (including player characters) adjacent to the Knight takes damage that wasn't dealt by a Knight, the Knight takes it instead.",
-        "SummonActions": "When summoned, or once a round on the demon's turn thereafter, moves 2 and makes attack: On hit: [D]+[fray], Miss: [fray]. Effect: Shove 1."
+        "SummonActions": "When summoned, or once a round on the demon's turn thereafter, moves 2 and makes attack:",
+        "Actions": {
+          "Tags": "melee attack",
+          "Hit": "[D]+[fray].",
+          "Miss": "[fray].",
+          "Effects": "Shove 1."
+        }
       }
     ]
   },

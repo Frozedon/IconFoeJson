@@ -41,6 +41,7 @@
     "Description": "At the start of the round, the Rider creates a number of blast 1 area effects equal to the round number anywhere on the battlefield, which cannot overlap, targeting foes if possible. At the end of the round, massive bolts of lightning strike these spaces. Foes in the area take [D]+[fray] damage."
   },
   
+
   {
     "Name": "Volatile Ember", 
     "Description": "At the start of the round, the Keeper creates 1 Volatile Ember in any space within range 2 of a character until there are six Embers active. A Volatile Ember is a special terrain effect that may be picked up by a character moving into its space. A character carrying embers takes 1 divine damage, once, at the end of their turn for every ember they are carrying. The Keeper's abilities become stronger against character carrying embers.\nHowever, carrying an ember fills a character and their weapons with godly power and has the following benefits:",
@@ -68,7 +69,7 @@
     "Description": "At the end of the round, all embers that haven't been picked up explode, destroying them and dealing 1 divine damage to all foes as an effect."
   },
   {
-    "Name": "Primal Levin", 
+    "Name": "Blade of Creation", 
     "Description": "The Keeper gains aura 1. When the Keeper ends its turn, it draws in any quicksilver in the area, destroying it. At the end the round, it makes the following attack:",
     "ExtraActions": {
       "Name": "Blade of Creation",

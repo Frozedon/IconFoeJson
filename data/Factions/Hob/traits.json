@@ -1,5 +1,9 @@
 [
   {
+    "Name": "Aura of Alacrity",
+    "Description": "Aura 1. Allies in the aura can use the charged effects of abilities even on normal turns."
+  },
+  {
     "Name": "Barely There",
     "Description": "Spriggs are intangible and don't cause engagement. Characters can't collide with them and can share their space. They disappear when combat ends, or all other non-sprigg allies have been defeated."
   },
@@ -15,10 +19,6 @@
     "Name": "Drag Under (Carp)",
     "DisplayName": "Drag Under",
     "Description": "When this Hob ends its turn, it can choose an adjacent foe, which must save. On a failed save, that foe takes [D]+[fray], and remove both the Hob and that foe from play as they dive into a pool of magicked water. Both return to play at the start of that foe's next turn, in any free space in range 3 of their original location."
-  },
-  {
-    "Name": "Greenwalker",
-    "Description": "Hobs ignore difficult terrain."
   },
   {
     "Name": "Mist Form",

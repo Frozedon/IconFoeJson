@@ -63,7 +63,18 @@
       "Description": "No changes."
     },
     {
-      "Description": "As phase I, but in Phase II:\n• Submerge becomes 2/round.\n• Arkentech Artillery does not end on a quadrant of the map once that quadrant is chosen (meaning it will eventually cover the whole map).\n• Rotary Cannon has no maximum number of targeting reticles."
+      "Description": "As phase I, but in phase II:",
+      "ListedItems": [
+        {
+          "Description": "Submerge becomes 2/round."
+        },
+        {
+          "Description": "Arkentech Artillery does not end on a quadrant of the map once that quadrant is chosen (meaning it will eventually cover the whole map)."
+        },
+        {
+          "Description": "Rotary Cannon has no maximum number of targeting reticles."
+        }
+      ]
     }
   ]
 }

@@ -9,6 +9,6 @@
     "ActionCost": 2,
     "Description": "All foes are shoved 2 in the same direction.",
     "Effects": "Poisoned foes are struck with overwhelming sickness and must save or become stunned.",
-    "Collide": "Character takes [D]+[fray]. "
+    "Collide": "Character takes [D]+[fray]."
   }
 }

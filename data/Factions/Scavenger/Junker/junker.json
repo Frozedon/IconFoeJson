@@ -19,7 +19,7 @@
       "Name": "Scrap Turret",
       "ActionCost": 1,
       "Tags": "summon",
-      "Description": " The Tinker summons a turret in range 6.",
+      "Description": "The Tinker summons a turret in range 6.",
       "Summons": {
         "Name": "Scrap Turret",
         "Tags": [ "Size 1", "Immobile", "1 HP" ],

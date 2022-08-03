@@ -1,5 +1,6 @@
 {
   "Name": "Elite Template",
+  "DisplayName": "Elite",
   "Inherits": "Elite",
   "Type": "SpecialTemplate",
   "RechargeMin": 5

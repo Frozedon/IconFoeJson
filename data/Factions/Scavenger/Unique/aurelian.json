@@ -6,7 +6,7 @@
   "Traits": [ "Tally", "Pay the Reaper" ],
   "Actions": [
     {
-      "Name": "Take Measure ",
+      "Name": "Take Measure",
       "ActionCost": 1,
       "Tags": [ "ranged attack 8", "blast 1" ],
       "Hit": "[D]+[fray] and increase Tally by 1.",

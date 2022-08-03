@@ -16,7 +16,7 @@
       "Effects": "Deals bonus damage for each foe in end spaces of the cross. If three or more foes are effected, becomes a critical hit (+[D])."
     },
     {
-      "Name": "Cheat Reality ",
+      "Name": "Cheat Reality",
       "ActionCost": 1,
       "Tags": "1/round",
       "Description": "The Maze Demon fixes it's Law of the Maze numbers to 13 (d20) and 6 (d10) for the rest of the round."
@@ -24,7 +24,7 @@
     {
       "Name": "Great Warp",
       "ActionCost": 1,
-      "Description": "A character in range 6 takes piercing [fray] damage and is teleported 2."
+      "Description": "A character in range 6 takes [fray] piercing damage and is teleported 2."
     },
     {
       "Name": "Fold Space",

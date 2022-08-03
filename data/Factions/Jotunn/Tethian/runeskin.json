@@ -6,7 +6,7 @@
     {
       "Name": "Great Warp",
       "ActionCost": 1,
-      "Description": "A character in range 6 takes piercing [fray] damage and is teleported 2."
+      "Description": "A character in range 6 takes [fray] piercing damage and is teleported 2."
     },
     {
       "Name": "Open Rune Gate",

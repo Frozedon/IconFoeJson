@@ -2,5 +2,5 @@
   "Name": "Shield Trooper",
   "Inherits": "Trooper",
   "Type": "Foe",
-  "Traits": [ "Couter", "Heavy Metal Shield" ]
+  "Traits": [ "Counter", "Heavy Metal Shield" ]
 }

@@ -17,7 +17,7 @@
       "Name": "Rake",
       "ActionCost": 1,
       "Tags": [ "line 3", "repeatable" ],
-      "AreaEffect": " Foes in the area take [fray] damage.",
+      "AreaEffect": "Foes in the area take [fray] damage.",
       "Effects": "The beast may teleport to any space in the area after this action resolves."
     },
     {

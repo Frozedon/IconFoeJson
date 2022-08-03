@@ -45,7 +45,7 @@
       "Description": "A character in range 4 takes [fray] damage. If they're bloodied, they take [fray] damage twice."
     },
     {
-      "Name": "First Blood ",
+      "Name": "First Blood",
       "ActionCost": 1,
       "Tags": "melee attack",
       "Hit": "[D]+[fray].",
@@ -220,7 +220,7 @@
       "Traits": [ "Shelter", "Diaga", "Blessing Monger" ],
       "Actions": [
         {
-          "Name": "Bounty Hunter ",
+          "Name": "Bounty Hunter",
           "ActionCost": 0,
           "Tags": "mark",
           "Description": "A foe in range 6 is marked. While marked, the target cannot benefit from evasion, dodge, or stealth, and allies gain +1 boon to attack the foe. Using this mark again transfers it."

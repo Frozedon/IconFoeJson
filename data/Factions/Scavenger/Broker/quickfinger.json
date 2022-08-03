@@ -6,7 +6,7 @@
     "Name": "Trick of the Light",
     "Count": 1,
     "Trigger": "An ally is targeted by an attack or ability from a foe.",
-    "Effects": " That ally gains evasion against that attack or ability. After it resolves, teleport that ally 2 spaces to their 'real' location."
+    "Effects": "That ally gains evasion against that attack or ability. After it resolves, teleport that ally 2 spaces to their 'real' location."
   },
   "RemoveActions": "Incentivize",
   "Actions": [

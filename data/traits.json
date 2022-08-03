@@ -27,7 +27,7 @@
   },
   {
     "Name": "Aetherwall",
-    "Description": "Gains automatic cover against all attacks that originate outside of range 2 from them. (Cover grants resistance against ranged attacks, reducing it by 1/2)"
+    "Description": "Gains automatic cover against all attacks that originate outside of range 2 from them. (Cover grants resistance against ranged attacks, reducing its damage by 1/2)"
   },
   {
     "Name": "Amorous Waltz",
@@ -103,7 +103,7 @@
   },
   {
     "Name": "Bullheaded",
-    "Description": "Has resistance unless suffering from a status."
+    "Description": "Has resistance unless suffering from a status. (Take 1/2 damage, rounded up)"
   },
   {
     "Name": "Camouflage",
@@ -129,6 +129,10 @@
   {
     "Name": "Counter",
     "Description": "Each time a foe deals damage to you with an ability, deal 2 damage back."
+  },
+  {
+    "Name": "Cowardly by Nature",
+    "Description": "This character surrenders and ends the fight if it's the only character left."
   },
   {
     "Name": "Cronies",
@@ -202,7 +206,7 @@
         "Description": "May use its standard move to teleport from the area of any pit to any other pit."
       },
       {
-        "Description": "Has resistance while inside a pit."
+        "Description": "Has resistance while inside a pit. (Take 1/2 damage, rounded up)"
       }
     ]
   },
@@ -221,7 +225,7 @@
   },
   {
     "Name": "Entrench",
-    "Description": "Unstoppable while inside a pit."
+    "Description": "Unstoppable while inside a pit. (Immune to all statuses. Can't be immobilized, shoved, or teleported by foes)"
   },
   {
     "Name": "Equivalent Exchange",
@@ -270,6 +274,10 @@
     "Description": "When hitting with an attack, immediately gain +1 action."
   },
   {
+    "Name": "Gran Diaga",
+    "Description": "Aura 1. At the start of this character's turn, allies in the aura can end a status or blight affecting them. If they are bloodied, they also gain vigor 1."
+  },
+  {
     "Name": "Great Enrage",
     "Description": "Sturdy and +1 action while bloodied. (Can't be stunned or dazed, and reduce the distance of all shoves by 1)"
   },
@@ -287,11 +295,11 @@
   },
   {
     "Name": "Heavy Armor",
-    "Description": "Resistant to abilities used from adjacent spaces."
+    "Description": "Resistant to abilities used from adjacent spaces. (Take 1/2 damage, rounded up)"
   },
   {
     "Name": "Heavy Metal Shield",
-    "Description": "Has resistance against abilities from the closest foe. If multiple foes are equidistant, this trait applies to all of them."
+    "Description": "Has resistance against abilities from the closest foe. If multiple foes are equidistant, this trait applies to all of them. (Take 1/2 damage, rounded up)"
   },
   {
     "Name": "Hellforged",
@@ -321,7 +329,7 @@
   },
   {
     "Name": "Isolation",
-    "Description": "Has resistance to damage dealt by characters with no allies adjacent."
+    "Description": "Has resistance to damage dealt by characters with no allies adjacent. (Take 1/2 damage, rounded up)"
   },
   {
     "Name": "Juggernaut",
@@ -333,6 +341,10 @@
         "Description": "Clear a status, mark, or all blights affecting this character."
       }
     ]
+  },
+  {
+    "Name": "Lead Astray",
+    "Description": "Aura 2. This character may teleport any other character that ends their turn in the aura 2 spaces in any direction."
   },
   {
     "Name": "Legend",
@@ -374,12 +386,17 @@
     "Description": "When defeated, becomes a height 2 object."
   },
   {
+    "Name": "Living Statue",
+    "Description": "Cannot dash. When defeated, becomes a height 2 piece of terrain.",
+    "DashMultiplier": 0
+  },
+  {
     "Name": "Lone Wolf",
     "Description": "When ending their turn with no enemies or allies in range 2, gains stealth."
   },
   {
     "Name": "Low Profile",
-    "Description": "Has evasion against ranged attacks."
+    "Description": "Has evasion against ranged attacks. (Roll a d6 when targeted by an attack. On a 4+, the attack automatically misses. Check before the attack roll)"
   },
   {
     "Name": "Lucky Feather",
@@ -414,7 +431,7 @@
   },
   {
     "Name": "Nimble",
-    "Description": "Has evasion unless suffering from a status."
+    "Description": "Has evasion unless suffering from a status. (Roll a d6 when targeted by an attack. On a 4+, the attack automatically misses. Check before the attack roll)"
   },
   {
     "Name": "Noxious Censer",
@@ -478,6 +495,10 @@
     "Description": "Starts combat with vigor 1 and Regeneration. Starts combat bloodied. (Gain vigor 1 as the end of their turn)."
   },
   {
+    "Name": "Resistance",
+    "Description": "Take 1/2 damage, rounded up."
+  },
+  {
     "Name": "Rook",
     "Description": "Grants cover to adjacent allies."
   },
@@ -535,7 +556,7 @@
   },
   {
     "Name": "Slippery",
-    "Description": "While bloodied, has evasion."
+    "Description": "Has evasion while bloodied. (Roll a d6 when targeted by an attack. On a 4+, the attack automatically misses. Check before the attack roll)"
   },
   {
     "Name": "Sneak Attack",
@@ -555,11 +576,11 @@
   },
   {
     "Name": "Stoneskin",
-    "Description": "Has resistance while adjacent to an object."
+    "Description": "Has resistance while adjacent to an object. (Take 1/2 damage, rounded up)"
   },
   {
     "Name": "Street Fighter",
-    "Description": "Has resistance while adjacent to two or more foes."
+    "Description": "Has resistance while adjacent to two or more foes. (Take 1/2 damage, rounded up)"
   },
   {
     "Name": "Strength",
@@ -583,19 +604,19 @@
   },
   {
     "Name": "Swarm",
-    "Description": "Has resistance to any damage not from area effects or attacks. Does not provide obstruction, but characters treat its space as difficult terrain."
+    "Description": "Has resistance to any damage not from area effects or attacks. Does not provide obstruction, but characters treat its space as difficult terrain. (Take 1/2 damage, rounded up)"
   },
   {
     "Name": "Swarm Shroud",
     "Description": "Aura 2. Ranged attacks against this character and allies in the aura gain +1 curse, and foes that start their turn in the aura take 1 piercing damage."
   },
   {
-    "Name": "Terrain Expert",
-    "Description": "Ignores movement, damage, and attack penalties from all kinds of terrain."
+    "Name": "Tactics Aura",
+    "Description": "Aura 2. Foes in the aura take +1 curse on saves. Foes suffering from a status in the aura take bonus damage from all sources."
   },
   {
-    "Name": "Terrainwalking",
-    "Description": "Ignores movement penalties for height and terrain."
+    "Name": "Terrain Expert",
+    "Description": "Ignores movement, damage, and attack penalties from all kinds of terrain."
   },
   {
     "Name": "Terrainwalking",
@@ -611,7 +632,7 @@
   },
   {
     "Name": "True Enrage",
-    "Description": "Unstoppable and +1 action while bloodied."
+    "Description": "Unstoppable and +1 action while bloodied. (Immune to all statuses. Can't be immobilized, shoved, or teleported by foes)"
   },
   {
     "Name": "Tumbling",

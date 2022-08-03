@@ -87,7 +87,7 @@
           {
             "Name": "Pound",
             "ActionCost": 1,
-            "Description": " Dash 2 spaces.",
+            "Description": "Dash 2 spaces.",
             "AreaEffect": "Characters take [fray] damage and are shoved 1."
           }
         ]
@@ -128,7 +128,11 @@
   {
     "Name": "Manifestations (Phase II)",
     "DisplayName": "Manifestations",
-    "Description": "As phase I, but also creates the following:\n• Pit of Sacrifice: Create a pit. Characters in the pit take double damage and cannot benefit from defiance."
+    "Description": "As phase I, but also creates the following:",
+    "ListedItems": {
+      "Name": "Pit of Sacrifice",
+      "Description": "Create a pit. Characters in the pit take double damage and cannot benefit from defiance."
+    }
   },
   {
     "Name": "Worshippers (Phase II)",

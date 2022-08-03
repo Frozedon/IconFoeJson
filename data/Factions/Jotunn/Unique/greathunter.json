@@ -19,7 +19,7 @@
       "Name": "Bounding Leaps",
       "ActionCost": 1,
       "Description": "The Great Hunter flies 4.",
-      "Effects": " If it lands on an object, it can repeat this flight once more."
+      "Effects": "If it lands on an object, it can repeat this flight once more."
     },
     {
       "Name": "Hunter Arrow",

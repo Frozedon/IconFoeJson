@@ -31,7 +31,25 @@
       "Name": "Master Steal",
       "ActionCost": 1,
       "Tags": "end turn",
-      "Description": "An adjacent foe has something stolen. They can recover the stolen item by hitting the Scum with an attack, forcing the Scum to drop it in a free adjacent space. They can pick it up by entering that space or any space adjacent to that space, ending this effect. Until they do, they suffer the following effects. The Scum can only steal one of each item, but can steal from a different character each time, and never picks up dropped items.\n• Weapon: Foe is pacified+.\n• Armor: Foe is shattered+.\n• Elixirs: Foe cannot gain vigor.\n• Boots: Foe is winded+."
+      "Description": "An adjacent foe has something stolen. They can recover the stolen item by hitting the Scum with an attack, forcing the Scum to drop it in a free adjacent space. They can pick it up by entering that space or any space adjacent to that space, ending this effect. Until they do, they suffer the following effects. The Scum can only steal one of each item, but can steal from a different character each time, and never picks up dropped items.",
+      "ListedItems": [
+        {
+          "Name": "Weapon",
+          "Description": "Foe is pacified+."
+        },
+        {
+          "Name": "Armor",
+          "Description": "Foe is shattered+."
+        },
+        {
+          "Name": "Elixirs",
+          "Description": "Foe cannot gain vigor."
+        },
+        {
+          "Name": "Boots",
+          "Description": "Foe is winded+."
+        }
+      ]
     }
   ]
 }

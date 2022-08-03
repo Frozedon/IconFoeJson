@@ -2,5 +2,5 @@
   "Name": "Canker",
   "Inherits": "Slab",
   "Type": "Foe",
-  "Traits": [ "Canker", "Toxic Revenge" ]
+  "Traits": [ "Stench", "Toxic Revenge" ]
 }

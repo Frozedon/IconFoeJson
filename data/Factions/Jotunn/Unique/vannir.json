@@ -27,7 +27,7 @@
     {
       "Name": "Rune of Destruction",
       "ActionCost": 1,
-      "Description": "The Vannir summons a glowing rune on a free ground space within range 4. The rune can be moved over freely. There can only be a maximum of three of these Runes at once (each could be from different Vannir), and the newest one created replaces the oldest rune if there are already three. At the end of any round in which a rune is not covered by a terrain piece, character, or summon, all foes take piercing [fray] damage for each active rune. Runes disappear at the end of combat."
+      "Description": "The Vannir summons a glowing rune on a free ground space within range 4. The rune can be moved over freely. There can only be a maximum of three of these Runes at once (each could be from different Vannir), and the newest one created replaces the oldest rune if there are already three. At the end of any round in which a rune is not covered by a terrain piece, character, or summon, all foes take [fray] piercing damage for each active rune. Runes disappear at the end of combat."
     },
     {
       "Name": "Aencraft",

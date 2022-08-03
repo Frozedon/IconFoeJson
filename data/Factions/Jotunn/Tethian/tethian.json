@@ -25,10 +25,14 @@
       "Description": "The Tethian creates a blast 1 terrain effect in range 6. While in the area, outside of their own turn, characters other than Tethians are unable to take interrupts, use abilities, use traits, or activate effects. Using this ability again moves the area rather than placing a new once."
     }
   ],
-  "Chapter2": {
-    "Traits": "Rune of Warding"
-  },
-  "Chapter3": {
-    "Traits": "Primal Aether"
-  }
+  "ConditionalAbilities": [
+    {
+      "Chapter": 2,
+      "Traits": "Rune of Warding"
+    },
+    {
+      "Chapter": 3,
+      "Traits": "Primal Aether"
+    }
+  ]
 }

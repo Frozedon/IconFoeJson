@@ -4,7 +4,6 @@
   "Type": "Foe",
   "Chapter": 2,
   "HP": 40,
-  "RemoveTraits": "Suddenly!",
   "Traits": "Walking Cataclysm",
   "Actions": [
     {

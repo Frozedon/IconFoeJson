@@ -34,17 +34,21 @@
       "AreaEffect": "Foes are slowed. Slowed foes become burning and take [fray] damage."
     }
   ],
-  "Chapter2": {
-    "RemoveActions": "Flash Bomb",
-    "Actions": {
-      "Name": "Flash Bomb",
-      "ActionCost": 1,
-      "Recharge": 6,
-      "Tags": [ "range 6", "cross 2" ],
-      "AreaEffect": "Foes are slowed. Slowed foes become burning and take [fray] damage."
+  "ConditionalAbilities": [
+    {
+      "Chapter": 2,
+      "RemoveActions": "Flash Bomb",
+      "Actions": {
+        "Name": "Flash Bomb",
+        "ActionCost": 1,
+        "Recharge": 6,
+        "Tags": [ "range 6", "cross 2" ],
+        "AreaEffect": "Foes are slowed. Slowed foes become burning and take [fray] damage."
+      }
+    },
+    {
+      "Chapter": 3,
+      "Traits": "Acrobatics"
     }
-  },
-  "Chapter3": {
-    "Traits": "Acrobatics"
-  }
+  ]
 }

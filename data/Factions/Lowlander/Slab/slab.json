@@ -27,10 +27,14 @@
       "Description": "The enforcer dashes in a straight line 3 spaces, phasing through characters. The first character it encounters is shoved along with the Enforcer to the end of the line, then shoved 1."
     }
   ],
-  "Chapter2": {
-    "Traits": "Great Kidnap"
-  },
-  "Chapter3": {
-    "Traits": "Entrench"
-  }
+  "ConditionalAbilities": [
+    {
+      "Chapter": 2,
+      "Traits": "Great Kidnap"
+    },
+    {
+      "Chapter": 3,
+      "Traits": "Entrench"
+    }
+  ]
 }

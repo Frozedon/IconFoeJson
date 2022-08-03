@@ -35,20 +35,24 @@
       }
     }
   ],
-  "Chapter2": {
-    "RemoveActions": "Grappling Hook",
-    "Actions": {
-      "Name": "Grappling Hook",
-      "ActionCost": 0,
-      "Description": "The Gunner teleports adjacent to a summon or object in range 3. Alternately, it can teleport adjacent to a foe in range, and that foe becomes shattered."
+  "ConditionalAbilities": [
+    {
+      "Chapter": 2,
+      "RemoveActions": "Grappling Hook",
+      "Actions": {
+        "Name": "Grappling Hook",
+        "ActionCost": 0,
+        "Description": "The Gunner teleports adjacent to a summon or object in range 3. Alternately, it can teleport adjacent to a foe in range, and that foe becomes shattered."
+      }
+    },
+    {
+      "Chapter": 3,
+      "Actions": {
+        "Name": "Hone",
+        "ActionCost": 1,
+        "Tags": "end turn",
+        "Description": "The next attack from this character becomes a critical hit on hit (+[D])."
+      }
     }
-  },
-  "Chapter3": {
-    "Actions": {
-      "Name": "Hone",
-      "ActionCost": 1,
-      "Tags": "end turn",
-      "Description": "The next attack from this character becomes a critical hit on hit (+[D])."
-    }
-  }
+  ]
 }

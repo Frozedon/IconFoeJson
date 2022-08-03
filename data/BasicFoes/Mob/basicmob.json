@@ -2,6 +2,7 @@
   "Name": "Basic Mob",
   "Inherits": "Mob",
   "Type": "Foe",
+  "UsesTemplate": true,
   "Actions": [
     {
       "Name": "Rabble",

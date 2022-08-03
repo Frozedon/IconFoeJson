@@ -29,20 +29,24 @@
       "Description": "The Elemental creates an elemental storm in range 3, a 1 space terrain effect. Elementals have evasion and permanent stealth inside the area. The area is dangerous terrain for all other characters and other characters are blinded+ while in the area. At the end of the round, all storms grow to a blast 1 area, or increase their blast size by +1, to a maximum of 3. Up to two storms can be active at once."
     }
   ],
-  "Chapter2": {
-    "Interrupts": {
-      "Name": "Reform",
-      "Count": 1,
-      "Trigger": "The Elemental is damaged by an ability and the ability resolves.",
-      "Effects": "Teleport 3."
+  "ConditionalAbilities": [
+    {
+      "Chapter": 2,
+      "Interrupts": {
+        "Name": "Reform",
+        "Count": 1,
+        "Trigger": "The Elemental is damaged by an ability and the ability resolves.",
+        "Effects": "Teleport 3."
+      }
+    },
+    {
+      "Chapter": 3,
+      "Actions": {
+        "Name": "Sink into Elements",
+        "ActionCost": 1,
+        "Tags": "end turn",
+        "Description": "The Elemental disperses into pure elements, removing it from the battlefield, then converges, placing it back on any space on the battlefield."
+      }
     }
-  },
-  "Chapter3": {
-    "Actions": {
-      "Name": "Sink into Elements",
-      "ActionCost": 1,
-      "Tags": "end turn",
-      "Description": "The Elemental disperses into pure elements, removing it from the battlefield, then converges, placing it back on any space on the battlefield."
-    }
-  }
+  ]
 }

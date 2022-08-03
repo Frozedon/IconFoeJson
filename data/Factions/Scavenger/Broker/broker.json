@@ -35,15 +35,19 @@
       ]
     }
   ],
-  "Chapter2": {
-    "Actions": {
-      "Name": "Tit for Tat",
-      "ActionCost": 1,
-      "Tags": "mark",
-      "Description": "The Broker marks an ally in range 4. While marked, that character has counter and evasion."
+  "ConditionalAbilities": [
+    {
+      "Chapter": 2,
+      "Actions": {
+        "Name": "Tit for Tat",
+        "ActionCost": 1,
+        "Tags": "mark",
+        "Description": "The Broker marks an ally in range 4. While marked, that character has counter and evasion."
+      }
+    },
+    {
+      "Chapter": 3,
+      "Traits": "Equivalent Exchange"
     }
-  },
-  "Chapter3": {
-    "Traits": "Equivalent Exchange"
-  }
+  ]
 }

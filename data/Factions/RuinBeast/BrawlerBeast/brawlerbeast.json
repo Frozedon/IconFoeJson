@@ -28,15 +28,19 @@
       ]
     }
   ],
-  "Chapter2": {
-    "Actions": {
-      "Name": "Bellow",
-      "ActionCost": 0,
-      "Description": " A foe in range 2 is shoved 1. If the beast is bloodied, all foes in range 2 are shoved 1 instead."
+  "ConditionalAbilities": [
+    {
+      "Chapter": 2,
+      "Actions": {
+        "Name": "Bellow",
+        "ActionCost": 0,
+        "Description": " A foe in range 2 is shoved 1. If the beast is bloodied, all foes in range 2 are shoved 1 instead."
+      }
+    },
+    {
+      "Chapter": 3,
+      "RemoveTraits": "Enrage",
+      "Traits": "True Enrage"
     }
-  },
-  "Chapter3": {
-    "RemoveTraits": "Enrage",
-    "Traits": "True Enrage"
-  }
+  ]
 }

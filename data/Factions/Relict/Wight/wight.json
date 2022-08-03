@@ -21,16 +21,20 @@
       "Description": "The Wight and all adjacent allies may move 1 space in the same direction, ignoring engagement, then each may deal 2 damage to an adjacent foe."
     }
   ],
-  "Chapter2": {
-    "Actions": [
-      {
-        "Name": "Formation",
-        "ActionCost": 0,
-        "Description": "Shove all allies in range 2 1 space towards this character."
-      }
-    ]
-  },
-  "Chapter3": {
-    "Traits": "Defiance"
-  }
+  "ConditionalAbilities": [
+    {
+      "Chapter": 2,
+      "Actions": [
+        {
+          "Name": "Formation",
+          "ActionCost": 0,
+          "Description": "Shove all allies in range 2 1 space towards this character."
+        }
+      ]
+    },
+    {
+      "Chapter": 3,
+      "Traits": "Defiance"
+    }
+  ]
 }

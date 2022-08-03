@@ -28,15 +28,19 @@
       "Description": "The Sergeant chooses a foe in range 8, then deals 2 piercing damage once to that foe, then once again for each ally in range 2 of the Sergeant."
     }
   ],
-  "Chapter2": {
-    "Traits": "Gunblade"
-  },
-  "Chapter3": {
-    "Actions": {
-      "Name": "Marching Orders",
-      "ActionCost": 1,
-      "Tags": "stance",
-      "Description": "When Sergeant takes this stance, as an action, and at start of each of their turns, the Sergeant and all allies in range 2 can dash 2 in the same direction."
+  "ConditionalAbilities": [
+    {
+      "Chapter": 2,
+      "Traits": "Gunblade"
+    },
+    {
+      "Chapter": 3,
+      "Actions": {
+        "Name": "Marching Orders",
+        "ActionCost": 1,
+        "Tags": "stance",
+        "Description": "When Sergeant takes this stance, as an action, and at start of each of their turns, the Sergeant and all allies in range 2 can dash 2 in the same direction."
+      }
     }
-  }
+  ]
 }

@@ -25,11 +25,15 @@
       "Effects": "The Stalking Beast may teleport to any space in the area after this action resolves."
     }
   ],
-  "Chapter2": {
-    "Traits": "Pack Tactics"
-  },
-  "Chapter3": {
-    "RemoveTraits": "Pack Tactics",
-    "Traits": "Pack Tactics (Improved)"
-  }
+  "ConditionalAbilities": [
+    {
+      "Chapter": 2,
+      "Traits": "Pack Tactics"
+    },
+    {
+      "Chapter": 3,
+      "RemoveTraits": "Pack Tactics",
+      "Traits": "Pack Tactics (Improved)"
+    }
+  ]
 }

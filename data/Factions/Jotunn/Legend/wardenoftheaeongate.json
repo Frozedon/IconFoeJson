@@ -5,9 +5,7 @@
   "Chapter": 3,
   "Vitality": 10,
   "HP": 30,
-  "RemoveTraits": [ "Elite", "Titanblood" ],
-  "RemoveSetupTraits": "Titan Armament",
-  "RemoveUsesSpecialTemplates": "Titan Armament",
+  "RemoveTraits": "Titanblood",
   "Traits": [ "Size 2", "Flying", "Divine Presence", "Sever Mortal Thread", "Time Heals All", "Eternal Star", "Unmoor" ],
   "Actions": [
     {

@@ -25,11 +25,15 @@
       "Description": "The Beast creates a blast 1 area of difficult terrain. Characters standing in the area are vulnerable+. The area lasts for the rest of combat, or until this beast uses this ability again."
     }
   ],
-  "Chapter2": {
-    "Traits": "Hyperactive"
-  },
-  "Chapter3": {
-    "RemoveTraits": "Hyperactive",
-    "Traits": "Hyperactive (Improved)"
-  }
+  "ConditionalAbilities": [
+    {
+      "Chapter": 2,
+      "Traits": "Hyperactive"
+    },
+    {
+      "Chapter": 3,
+      "RemoveTraits": "Hyperactive",
+      "Traits": "Hyperactive (Improved)"
+    }
+  ]
 }

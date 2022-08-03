@@ -37,10 +37,14 @@
       "Mark": "While marked, the effect of lowlander toxin on them is tripled."
     }
   ],
-  "Chapter2": {
-    "Traits": "Defiance"
-  },
-  "Chapter3": {
-    "Traits": "Toxic Revenge"
-  }
+  "ConditionalAbilities": [
+    {
+      "Chapter": 2,
+      "Traits": "Defiance"
+    },
+    {
+      "Chapter": 3,
+      "Traits": "Toxic Revenge"
+    }
+  ]
 }

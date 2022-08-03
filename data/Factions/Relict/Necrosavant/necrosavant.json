@@ -29,25 +29,29 @@
       "Description": "Target defeated ally in range 4 and remove incapacitated. They stop being defeated and return with 50% hp. They can act normally and take a turn starting next round."
     }
   ],
-  "Chapter2": {
-    "Actions": [
-      {
-        "Name": "Soul Shred",
-        "ActionCost": 1,
-        "Recharge": 4,
-        "Tags": [ "multimark" ],
-        "Description": "Mark a foe in range 6. While marked, that foe gains Aura 1. Allies of that foe that end their turn in the aura take [fray] piercing damage."
-      }
-    ]
-  },
-  "Chapter3": {
-    "Actions": [
-      {
-        "Name": "Radiance of the Black Sun",
-        "ActionCost": 2,
-        "Tags": [ "1/combat" ],
-        "Description": "This character becomes immobile but gains Aura 2 until the start of its next turn. While the aura is active, Relict other than this character in the area cannot be reduced past 1 hp. This Aura also deactivates if this character is stunned."
-      }
-    ]
-  }
+  "ConditionalAbilities": [
+    {
+      "Chapter": 2,
+      "Actions": [
+        {
+          "Name": "Soul Shred",
+          "ActionCost": 1,
+          "Recharge": 4,
+          "Tags": [ "multimark" ],
+          "Description": "Mark a foe in range 6. While marked, that foe gains Aura 1. Allies of that foe that end their turn in the aura take [fray] piercing damage."
+        }
+      ]
+    },
+    {
+      "Chapter": 3,
+      "Actions": [
+        {
+          "Name": "Radiance of the Black Sun",
+          "ActionCost": 2,
+          "Tags": [ "1/combat" ],
+          "Description": "This character becomes immobile but gains Aura 2 until the start of its next turn. While the aura is active, Relict other than this character in the area cannot be reduced past 1 hp. This Aura also deactivates if this character is stunned."
+        }
+      ]
+    }
+  ]
 }

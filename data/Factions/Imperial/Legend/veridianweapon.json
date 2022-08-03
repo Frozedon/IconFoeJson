@@ -7,8 +7,6 @@
   "HPText": "[HP] per player character [MIN]. Each section of the ship has 1/3 of its max HP, rounded up.",
   "Speed": 0,
   "RemoveTraits": [ "Legendary Diaga", "Shelter", "Receive Orders" ],
-  "RemoveSetupTraits": "Commanding Officer",
-  "RemoveUsesSpecialTemplates": "Imperial Officer",
   "Traits": [ "Ranged Master", "Airship", "Arkentech Megabomb", "Sections Veridian Weapon" ],
   "PhasesDescription": "When a section is destroyed, lower the Megabomb counter by 1. Each remaining section gains an ability depending on which section was destroyed.",
   "ExtraAbilitysets": [

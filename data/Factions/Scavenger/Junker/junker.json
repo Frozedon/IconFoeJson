@@ -38,20 +38,24 @@
       "Description": "The Junker destroys all objects and Scrap Turrets in range 2, turning them into valuables tokens. Objects that can't normally be destroyed are instead un-summoned and removed from the battlefield."
     }
   ],
-  "Chapter2": {
-    "Actions": {
-      "Name": "Scrap Blast",
-      "ActionCost": 1,
-      "Tags": "greed",
-      "Description": "A foe in range 8 is shattered and shoved 1.",
-      "Collide": "They also take [D] piercing.",
-      "CustomComponents": {
-        "Name": "Greed",
-        "Description": "Can only be used if holding a valuables token."
+  "ConditionalAbilities": [
+    {
+      "Chapter": 2,
+      "Actions": {
+        "Name": "Scrap Blast",
+        "ActionCost": 1,
+        "Tags": "greed",
+        "Description": "A foe in range 8 is shattered and shoved 1.",
+        "Collide": "They also take [D] piercing.",
+        "CustomComponents": {
+          "Name": "Greed",
+          "Description": "Can only be used if holding a valuables token."
+        }
       }
+    },
+    {
+      "Chapter": 3,
+      "Traits": "Smelt"
     }
-  },
-  "Chapter3": {
-    "Traits": "Smelt"
-  }
+  ]
 }

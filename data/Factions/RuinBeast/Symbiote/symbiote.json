@@ -27,10 +27,14 @@
       "Description": "The Symbiote's host becomes sturdy, gains +1 action, and gains +1 boon on all attacks and saves. These effects last until the end of the host's next turn."
     }
   ],
-  "Chapter2": {
-    "Traits": "Latch Enrage"
-  },
-  "Chapter3": {
-    "Traits": "Latch Defiance"
-  }
+  "ConditionalAbilities": [
+    {
+      "Chapter": 2,
+      "Traits": "Latch Enrage"
+    },
+    {
+      "Chapter": 3,
+      "Traits": "Latch Defiance"
+    }
+  ]
 }

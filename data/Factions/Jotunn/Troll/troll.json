@@ -62,59 +62,63 @@
       }
     }
   ],
-  "Chapter2": {
-    "RemoveActions": "Cauldron",
-    "Actions": {
-      "Name": "Cauldron",
-      "ActionCost": 1,
-      "Tags": "summon",
-      "Description": "The Troll summons a cauldron in range 2. Characters adjacent to the cauldron when it's summoned are shoved 1.",
-      "Summons": {
+  "ConditionalAbilities": [
+    {
+      "Chapter": 2,
+      "RemoveActions": "Cauldron",
+      "Actions": {
         "Name": "Cauldron",
-        "Tags": [ "Height 1 Object" ],
-        "Effects": "The Cauldron has aura 2. The troll and any of its allies in the aura gain +1 boon on saves, whereas foes gain +1 curse. The Troll gains additional actions when adjacent to its cauldron.",
-        "SpecialActions": [
-          {
-            "Name": "Strange Brew",
-            "ActionCost": 1,
-            "Description": "The Troll throws a potion at an ally in range 3, then rolls 1d6.",
-            "Rolls": [
-              {
-                "Values": 1,
-                "Description": "The brew explodes, stunning the ally."
-              },
-              {
-                "Values": 2,
-                "Description": "The ally increases in size by +1 for the rest of combat, up to a max of size 3."
-              },
-              {
-                "Values": 3,
-                "Description": "The ally gains Defiance."
-              },
-              {
-                "Values": 4,
-                "Description": "The ally is teleported 2."
-              },
-              {
-                "Values": 5,
-                "Description": "The ally gains vigor 1."
-              },
-              {
-                "Values": 6,
-                "Description": "The ally immediately clears all conditions, marks, and blights."
-              }
-            ]
-          },
-          {
-            "Name": "Cauldron Smash",
-            "ActionCost": 2,
-            "Description": "An adjacent foe is stunned and takes [fray] damage. Unsummon the cauldron."
-          }
-        ]
+        "ActionCost": 1,
+        "Tags": "summon",
+        "Description": "The Troll summons a cauldron in range 2. Characters adjacent to the cauldron when it's summoned are shoved 1.",
+        "Summons": {
+          "Name": "Cauldron",
+          "Tags": [ "Height 1 Object" ],
+          "Effects": "The Cauldron has aura 2. The troll and any of its allies in the aura gain +1 boon on saves, whereas foes gain +1 curse. The Troll gains additional actions when adjacent to its cauldron.",
+          "SpecialActions": [
+            {
+              "Name": "Strange Brew",
+              "ActionCost": 1,
+              "Description": "The Troll throws a potion at an ally in range 3, then rolls 1d6.",
+              "Rolls": [
+                {
+                  "Values": 1,
+                  "Description": "The brew explodes, stunning the ally."
+                },
+                {
+                  "Values": 2,
+                  "Description": "The ally increases in size by +1 for the rest of combat, up to a max of size 3."
+                },
+                {
+                  "Values": 3,
+                  "Description": "The ally gains Defiance."
+                },
+                {
+                  "Values": 4,
+                  "Description": "The ally is teleported 2."
+                },
+                {
+                  "Values": 5,
+                  "Description": "The ally gains vigor 1."
+                },
+                {
+                  "Values": 6,
+                  "Description": "The ally immediately clears all conditions, marks, and blights."
+                }
+              ]
+            },
+            {
+              "Name": "Cauldron Smash",
+              "ActionCost": 2,
+              "Description": "An adjacent foe is stunned and takes [fray] damage. Unsummon the cauldron."
+            }
+          ]
+        }
       }
+    },
+    {
+      "Chapter": 3,
+      "Traits": "Cursed Cauldron"
     }
-  },
-  "Chapter3": {
-    "Traits": "Cursed Cauldron"
-  }
+  ]
 }

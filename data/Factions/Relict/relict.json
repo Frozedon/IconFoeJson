@@ -2,11 +2,24 @@
   "Name": "Relict",
   "Faction": "Relict",
   "Type": "Template",
-  "Traits": "Legion of the Dead",
   "SetupTraits": [
     {
       "Name": "Monsters",
       "Description": "Relict do not flee or negotiate."
+    },
+    {
+      "Name": "Legion of the Dead",
+      "Description": "Relict are a legion of mindless husks, cursed with an undying existence. For every point of Relicts in an encounter, you can add two Husks to a fight."
+    }
+  ],
+  "ConditionalAbilities": [
+    {
+      "IsNotSpecialClasses": [ "Mob", "Legend" ],
+      "Traits": [ "Rise Again", "Shuffle" ]
+    },
+    {
+      "IsSpecialClasses": "Mob",
+      "Traits": "Shuffle (Mob)"
     }
   ]
 }

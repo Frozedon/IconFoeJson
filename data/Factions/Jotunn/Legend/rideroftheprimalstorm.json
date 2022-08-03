@@ -3,9 +3,7 @@
   "Inherits": [ "Jotunn", "Legendary Heavy" ],
   "Type": "Foe",
   "HP": 40,
-  "RemoveTraits": [ "Elite", "Titanblood" ],
-  "RemoveSetupTraits": "Titan Armament",
-  "RemoveUsesSpecialTemplates": "Titan Armament",
+  "RemoveTraits": "Titanblood",
   "Traits": [ "Size 2", "Divine Presence", "Static Charge", "Lingering Spark", "Judgement Bolt" ],
   "Actions": [
     {

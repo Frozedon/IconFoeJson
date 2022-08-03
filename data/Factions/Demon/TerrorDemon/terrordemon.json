@@ -31,21 +31,25 @@
       "Mark": "While marked, that foe gains +1 curse on attacks and saves unless adjacent to an ally. If they end their turn adjacent to an ally, they can clear this mark."
     }
   ],
-  "Chapter2": {
-    "Actions": {
-      "Name": "Demon Flay",
-      "ActionCost": 1,
-      "Recharge": 4,
-      "Description": "Target foe in range 4 takes [fray] damage. Summon a natal adjacent to them."
+  "ConditionalAbilities": [
+    {
+      "Chapter": 2,
+      "Actions": {
+        "Name": "Demon Flay",
+        "ActionCost": 1,
+        "Recharge": 4,
+        "Description": "Target foe in range 4 takes [fray] damage. Summon a natal adjacent to them."
+      }
+    },
+    {
+      "Chapter": 3,
+      "Actions": {
+        "Name": "Haste",
+        "ActionCost": 2,
+        "Tags": "mark",
+        "Description": "A demon in range 6 is marked.",
+        "Mark": "While marked, they gain +1 action and double their speed."
+      }
     }
-  },
-  "Chapter3": {
-    "Actions": {
-      "Name": "Haste",
-      "ActionCost": 2,
-      "Tags": "mark",
-      "Description": "A demon in range 6 is marked.",
-      "Mark": "While marked, they gain +1 action and double their speed."
-    }
-  }
+  ]
 }

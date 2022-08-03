@@ -1,6 +1,7 @@
 {
   "Name": "Demon",
   "Faction": "Demon",
+  "Type": "Template",
   "Traits": "Devour",
   "SetupTraits": [
     {

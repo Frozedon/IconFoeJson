@@ -24,10 +24,6 @@
     "Description": "While the Immortalist is on the battlefield and not defeated, all relict's Rise Again activates on a 2+."
   },
   {
-    "Name": "Legion of the Dead",
-    "Description": "Relict are a legion of mindless husks, cursed with an undying existence. This gives them the following traits:\n• This character has a chance to rise again when defeated. Roll 1d6 at the start of each round that this character is defeated. On a 4+, this character gets back up at 25% hp, returning it from defeated, and can take a turn normally this round. If defeated again, this character disintegrates and is removed from the battlefield. If all characters with this trait are defeated, it deactivates.\n• All Relict can shuffle and dash 1 space at the start of their turn as a free action. When they do this, all other relict in range 2 can also dash 1 space in the same direction, then deal 1 damage to an adjacent foe. For mobs, this shuffle activates for up to five of them simultaneously.\n• For every point of Relicts in an encounter, you can add two Husks to a fight."
-  },
-  {
     "Name": "Plasma Bomb",
     "Description": "At the start of the round, the Warmech fires a plasma bomb into the air, targeted on any visible space. The bomb marks a blast 2 area visible to all characters. At the end of the round, the bomb comes down as an area effect. Characters in the area must save or take 2[D]+[fray] and become electrified, or [D]+[fray] on a successful save. The targeted space then becomes a pit. The Warmech is immune to its own bombs."
   },
@@ -36,12 +32,25 @@
     "Description": "When defeated, summon 5 relict husk mobs in or adjacent to its space."
   },
   {
+    "Name": "Rise Again",
+    "Description": "Roll 1d6 at the start of each round that this character is defeated. On a 4+, this character gets back up at 25% hp, returning it from defeated, and can take a turn normally this round. If defeated again, this character disintegrates and is removed from the battlefield. If all characters with this trait are defeated, it deactivates."
+  },
+  {
     "Name": "Shed Flesh",
     "Description": "When bloodied, immediately recharges and uses Horrify. For the rest of combat, becomes phasing and flying."
   },
   {
     "Name": "Shed Mass",
     "Description": "1/turn, when the Grave takes damage, it summons a husk in a free adjacent space. When the Grave is bloodied, it summons 5 husks instead."
+  },
+  {
+    "Name": "Shuffle",
+    "Description": "Can dash 1 space at the start of their turn as a free action. When they do this, all other relict in range 2 can also dash 1 space in the same direction, then deal 1 damage to an adjacent foe."
+  },
+  {
+    "Name": "Shuffle (Mob)",
+    "DisplayName": "Shuffle",
+    "Description": "Five mobs can simultaneously dash 1 space at the start of their turn as a free action. When they do this, all other relict in range 2 can also dash 1 space in the same direction, then deal 1 damage to an adjacent foe."
   },
   {
     "Name": "Soul Mass",

@@ -23,15 +23,19 @@
       "Description": "A character in range 8 is vulnerable. Vulnerable foes take piercing fray damage and become electrified."
     }
   ],
-  "Chapter2": {
-    "RemoveActions": "Shift",
-    "Actions": {
-      "Name": "Shift",
-      "ActionCost": 0,
-      "Description": "Teleport 2."
+  "ConditionalAbilities": [
+    {
+      "Chapter": 2,
+      "RemoveActions": "Shift",
+      "Actions": {
+        "Name": "Shift",
+        "ActionCost": 0,
+        "Description": "Teleport 2."
+      }
+    },
+    {
+      "Chapter": 3,
+      "Traits": "Eternal Rage"
     }
-  },
-  "Chapter3": {
-    "Traits": "Eternal Rage"
-  }
+  ]
 }

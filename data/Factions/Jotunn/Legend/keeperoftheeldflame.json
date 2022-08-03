@@ -4,9 +4,7 @@
   "Type": "Foe",
   "Chapter": 2,
   "HP": 40,
-  "RemoveTraits": [ "Elite", "Titanblood", "Aetherwall", "Legendary Slip" ],
-  "RemoveSetupTraits": "Titan Armament",
-  "RemoveUsesSpecialTemplates": "Titan Armament",
+  "RemoveTraits": [ "Titanblood", "Aetherwall", "Legendary Slip" ],
   "Traits": [ "Size 2", "Divine Presence", "Volatile Ember", "Quicksilver" ],
   "Actions": [
     {

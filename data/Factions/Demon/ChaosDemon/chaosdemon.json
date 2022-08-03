@@ -43,23 +43,27 @@
       "Effects": "Increase teleport distance and damage by +1 for each time this ability was used this turn."
     }
   ],
-  "Chapter2": {
-    "RemoveActions": "Chaos Cocoon",
-    "Actions": {
-      "Name": "Chaos Cocoon",
-      "ActionCost": 0,
-      "Description": "The Chaos Demon summons 3 cocoon objects in range 6.",
-      "Summons": {
-        "Name": "Cocoon",
-        "Tags": [ "Height 1", "10 HP", "Attacks automatically hit" ],
-        "Effects": [
-          "The cocoon also is destroyed if a character collides with it.",
-          "When the Cocoon is destroyed, summon 2 natals in free adjacent spaces."
-        ]
+  "ConditionalAbilities": [
+    {
+      "Chapter": 2,
+      "RemoveActions": "Chaos Cocoon",
+      "Actions": {
+        "Name": "Chaos Cocoon",
+        "ActionCost": 0,
+        "Description": "The Chaos Demon summons 3 cocoon objects in range 6.",
+        "Summons": {
+          "Name": "Cocoon",
+          "Tags": [ "Height 1", "10 HP", "Attacks automatically hit" ],
+          "Effects": [
+            "The cocoon also is destroyed if a character collides with it.",
+            "When the Cocoon is destroyed, summon 2 natals in free adjacent spaces."
+          ]
+        }
       }
+    },
+    {
+      "Chapter": 3,
+      "Traits": "Shed Space"
     }
-  },
-  "Chapter3": {
-    "Traits": "Shed Space"
-  }
+  ]
 }

@@ -1,7 +1,8 @@
 {
   "Name": "Lowlander",
   "Faction": "Lowlander",
-  "Traits": [ "Terrain Expert", "Lowlander Toxin", "Suddenly!" ],
+  "Type": "Template",
+  "Traits": [ "Terrain Expert", "Lowlander Toxin" ],
   "SetupTraits": [
     {
       "Name": "Kin", 
@@ -16,6 +17,12 @@
           "Description": "Lowlanders are survivors and won't hesitate to back down from a fight they know they will lose - conversely, they won't hesitate to exploit weaknesses."
         }
       ]
+    }
+  ],
+  "ConditionalAbilities": [
+    {
+      "IsNotSpecialClasses": "Legend",
+      "Traits": "Suddenly!"
     }
   ]
 }

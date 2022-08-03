@@ -1,11 +1,8 @@
 {
   "Name": "Jotunn",
   "Faction": "Jotunn",
-  "SpecialClass": "Elite",
   "Type": "Template",
-  "UsesSpecialTemplates": "Titan Armament",
-  "HPMultiplier": 8,
-  "Traits": [ "Elite", "Titanblood", "Titanfall" ],
+  "Traits": [ "Titanblood", "Titanfall" ],
   "SetupTraits": [
     {
       "Name": "Kin", 
@@ -24,10 +21,22 @@
     {
       "Name": "Monsters",
       "Description": "Blood Jotunn are infected with the Blood Rage. Born of the slaying of the Titans, they are driven only by their pain and rage. Treat them like monsters - they do not flee or negotiate. It might be possible to cure the Rage."
+    }
+  ],
+  "ConditionalAbilities": [
+    {
+      "IsNotSpecialClasses": "Legend",
+      "UsesSpecialTemplates": "Titan Armament",
+      "SetupTraits": {
+        "Name": "Titan Armament",
+        "Description": "You can arm a Jotunn with Titansteel weaponry (Adding the Special Template). This increases a Jotunn's encounter budget cost by +1. If you do, they can take 1 extra turn a round, and 1/round may dash 2 as a free action, then deal fray damage to all adjacent foes."
+      }
     },
     {
-      "Name": "Titan Armament",
-      "Description": "You can arm a Jotunn with Titansteel weaponry (Adding the Special Template). This increases a Jotunn's encounter budget cost by +1. If you do, they can take 1 extra turn a round, and 1/round may dash 2 as a free action, then deal fray damage to all adjacent foes."
+      "IsSpecialClasses": "Normal",
+      "SpecialClass": "Elite",
+      "Traits": "Elite",
+      "HPMultiplier": 8
     }
   ]
 }

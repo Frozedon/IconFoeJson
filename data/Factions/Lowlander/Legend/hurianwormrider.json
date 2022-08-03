@@ -5,7 +5,7 @@
   "Chapter": 3,
   "HP": 12,
   "HPText": "Each partner has [HP] hp per player [MIN]",
-  "RemoveTraits": [ "Suddenly!", "Dodge", "Skirmish" ],
+  "RemoveTraits": [ "Dodge", "Skirmish" ],
   "Traits": [ "Worm and Rider", "Wormspore Bond" ],
   "PhasesDescription": "The phase changes at round 4 and later.",
   "Phases": [

@@ -31,25 +31,29 @@
       }
     }
   ],
-  "Chapter2": {
-    "Actions": {
-      "Name": "No Nonsense",
-      "ActionCost": 2,
-      "Tags": "stance",
-      "Description": "Can only be used while bloodied. The Scrapper gains vigor 1, then becomes unstoppable and gains counter while in this stance."
-    }
-  },
-  "Chapter3": {
-    "RemoveActions": "No Nonsense",
-    "Actions": {
-      "Name": "No Nonsense",
-      "ActionCost": 2,
-      "Tags": "stance",
-      "Description": "Can only be used while bloodied. The Scrapper gains vigor 1, then becomes unstoppable and gains counter while in this stance.",
-      "CustomComponents": {
-        "Name": "Greed",
-        "Description": "Free action."
+  "ConditionalAbilities": [
+    {
+      "Chapter": 2,
+      "Actions": {
+        "Name": "No Nonsense",
+        "ActionCost": 2,
+        "Tags": "stance",
+        "Description": "Can only be used while bloodied. The Scrapper gains vigor 1, then becomes unstoppable and gains counter while in this stance."
+      }
+    },
+    {
+      "Chapter": 3,
+      "RemoveActions": "No Nonsense",
+      "Actions": {
+        "Name": "No Nonsense",
+        "ActionCost": 2,
+        "Tags": "stance",
+        "Description": "Can only be used while bloodied. The Scrapper gains vigor 1, then becomes unstoppable and gains counter while in this stance.",
+        "CustomComponents": {
+          "Name": "Greed",
+          "Description": "Free action."
+        }
       }
     }
-  }
+  ]
 }

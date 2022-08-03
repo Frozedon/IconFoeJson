@@ -29,24 +29,28 @@
       "Effects": "Increase damage and teleport range by +1 for each time this ability was used this turn."
     }
   ],
-  "Chapter2": {
-    "RemoveActions": "Void Talon",
-    "Actions": {
-      "Name": "Void Talon",
-      "ActionCost": 1,
-      "Tags": [ "melee attack or ranged attack 3", "+1 boon" ],
-      "Hit": "[D]+[fray].",
-      "Miss": "[fray].",
-      "CriticalHit": "(+[D]) and gain +1 action.",
-      "Effects": "Critical hit (+[D]) on hit against bloodied foes."
+  "ConditionalAbilities": [
+    {
+      "Chapter": 2,
+      "RemoveActions": "Void Talon",
+      "Actions": {
+        "Name": "Void Talon",
+        "ActionCost": 1,
+        "Tags": [ "melee attack or ranged attack 3", "+1 boon" ],
+        "Hit": "[D]+[fray].",
+        "Miss": "[fray].",
+        "CriticalHit": "(+[D]) and gain +1 action.",
+        "Effects": "Critical hit (+[D]) on hit against bloodied foes."
+      }
+    },
+    {
+      "Chapter": 3,
+      "RemoveActions": "Tear Rift",
+      "Actions": {
+        "Name": "Tear Rift",
+        "ActionCost": 0,
+        "Description": "Create two void rifts in range 3."
+      }
     }
-  },
-  "Chapter3": {
-    "RemoveActions": "Tear Rift",
-    "Actions": {
-      "Name": "Tear Rift",
-      "ActionCost": 0,
-      "Description": "Create two void rifts in range 3."
-    }
-  }
+  ]
 }

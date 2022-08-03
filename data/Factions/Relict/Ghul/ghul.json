@@ -22,14 +22,18 @@
       "Effects": "A foe in range 4 must save or become blinded+ and gains +1 curse on all attacks and saves until it ends a turn adjacent to an ally. On a successful save, they are only blinded. Blinded or Bloodied foes fail the save."
     }
   ],
-  "Chapter2": {
-    "Actions": {
-      "Name": "Arc Whip",
-      "ActionCost": 1,
-      "Effects": "A character in range 4 must save or become slowed and electrified. Electrified characters take [fray] damage."
+  "ConditionalAbilities": [
+    {
+      "Chapter": 2,
+      "Actions": {
+        "Name": "Arc Whip",
+        "ActionCost": 1,
+        "Effects": "A character in range 4 must save or become slowed and electrified. Electrified characters take [fray] damage."
+      }
+    },
+    {
+      "Chapter": 3,
+      "Traits": "Unstable Reality"
     }
-  },
-  "Chapter3": {
-    "Traits": "Unstable Reality"
-  }
+  ]
 }

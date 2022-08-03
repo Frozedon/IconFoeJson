@@ -5,7 +5,7 @@
   "HP": 40,
   "Speed": 0,
   "Defense": 0,
-  "RemoveTraits": [ "Legendary Diaga", "Terrain Expert", "Lowlander Toxin", "Suddenly!" ],
+  "RemoveTraits": [ "Legendary Diaga", "Terrain Expert", "Lowlander Toxin" ],
   "Traits": [ "The Idol", "Aura of Sacrifice", "Manifestations (Base)", "Worshippers (Base)" ],
   "PhasesDescription": "The Idol changes phases when bloodied.",
   "Phases": [

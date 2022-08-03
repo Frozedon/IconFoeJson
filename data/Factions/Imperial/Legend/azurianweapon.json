@@ -6,8 +6,6 @@
   "HP": 32,
   "Speed": 0,
   "RemoveTraits": [ "Legendary Slip", "Aetherwall", "Receive Orders" ],
-  "RemoveSetupTraits": "Commanding Officer",
-  "RemoveUsesSpecialTemplates": "Imperial Officer",
   "Traits": [ "Ranged Master", "Advanced Scopes", "Arkentech Artillery", "Landship" ],
   "Actions": [
     {

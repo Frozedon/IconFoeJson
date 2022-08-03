@@ -1,0 +1,19 @@
+{
+  "Name": "Swarm Wright",
+  "Inherits": "Boil",
+  "Type": "Foe",
+  "Chapter": 3,
+  "Traits": [ "Flying", "Phasing", "Swarm Shroud" ],
+  "Interrupts": {
+    "Name": "Reform", 
+    "Count": 1,
+    "Trigger": "The Swarm Wright is damaged by an ability and the ability resolves.",
+    "Effects": "Teleport 3."
+  },
+  "Actions": {
+    "Name": "Thousand Maws",
+    "ActionCost": 2,
+    "Recharge": 4,
+    "Description": "The Swarm Wright becomes intangible, then dashes 6 spaces in a straight line. Foes they pass through take 1 damage five times. This damage becomes piercing against poisoned foes."
+  }
+}

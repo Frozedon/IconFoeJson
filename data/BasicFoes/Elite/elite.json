@@ -1,0 +1,6 @@
+{
+  "Name": "Elite",
+  "SpecialClass": "Elite",
+  "HPMultiplier": 8,
+  "Traits": [ "Elite" ]
+}

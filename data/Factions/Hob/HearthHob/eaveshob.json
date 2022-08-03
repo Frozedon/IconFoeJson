@@ -1,0 +1,21 @@
+{
+  "Name": "Eaves Hob",
+  "Inherits": "Hearth Hob",
+  "Type": "Foe",
+  "Chapter": 3,
+  "Traits": [ "Flying", "Lucky Feather" ],
+  "Actions": [
+    {
+      "Name": "Crow Storm",
+      "ActionCost": 1,
+      "Recharge": 6,
+      "Description": "The hob chooses a foe in range 4. At the end of that foe's next turn, a huge storm of crows descends on their location for a blast 1 area effect centered on them. That foe takes [fray] damage six times. Reduce this damage once for each other character in the area of effect."
+    },
+    {
+      "Name": "Bounding Leaps",
+      "ActionCost": 1,
+      "Description": "The hob flies 3.",
+      "Effects": "If it lands on an object or adjacent to a character, it can repeat this flight once more."
+    }
+  ]
+}

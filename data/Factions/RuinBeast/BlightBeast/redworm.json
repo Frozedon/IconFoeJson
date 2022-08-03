@@ -1,0 +1,7 @@
+{
+  "Name": "Red Worm",
+  "Inherits": "Blight Beast",
+  "Type": "Foe",
+  "Chapter": 3,
+  "Traits": [ "Dig", "Dweller in Dark", "Tunnel" ]
+}

@@ -1,0 +1,19 @@
+{
+  "Name": "Lurking Demon",
+  "Inherits": "Void Demon",
+  "Type": "Foe",
+  "Chapter": 2,
+  "Traits": "Chameleonic",
+  "Interrupts": {
+    "Name": "Scuttle",
+    "Count": 1,
+    "Trigger": "A foe moves adjacent to the Lurking Demon.",
+    "Effects": "The demon may dash 3."
+  },
+  "Actions": {
+    "Name": "Strangle",
+    "ActionCost": 1,
+    "Tags": [ "stance", "end turn" ],
+    "Description": "A foe in range 3 must save. On a failed save, that foe becomes immobile. This effect ends if either the Demon or their target moves or is moved or another character uses an action while standing adjacent to the target to break the target free. While being strangled, the target cannot gain vigor, loses all vigor at the start of their turn, and takes [D] at the start of their turn."
+  }
+}

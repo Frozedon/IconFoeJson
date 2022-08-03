@@ -1,0 +1,33 @@
+{
+  "Name": "Borer",
+  "Inherits": [ "Lowlander", "Elite", "Skirmisher" ],
+  "Type": "Foe",
+  "Traits": [ "Master of the Underway", "Dirty Fighting", "Tunnel" ],
+  "Actions": [
+    {
+      "Name": "Ambush",
+      "ActionCost": 1,
+      "Tags": "melee attack",
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "Effects": "If made from inside a pit, the Borer can dash 4 before the attack, becomes a critical hit (+[D]), and blinds on hit."
+    },
+    {
+      "Name": "Grapnel Pick",
+      "ActionCost": 1,
+      "Description": "A foe in range 3 takes [fray] damage. If the Borer is standing in a pit, that foe also must save or swap places with the Borer, teleporting."
+    },
+    {
+      "Name": "Vile",
+      "ActionCost": 1,
+      "Description": "A foe in range 5 is slowed, and must save or take take 1 piercing damage for each space they move until the end of their next turn. Slowed foes fail the save."
+    },
+    {
+      "Name": "Subterranean Abduction",
+      "ActionCost": 1,
+      "Tags": "end turn", 
+      "Recharge": 6,
+      "Description": "The Borer chooses a foe inside a pit, then removes both the Borer and them from the battlefield. The Borer and its victim both roll 1d6, re-rolling ties. If the victim rolls higher, at the start of their turn they take [fray] damage and may re-emerge from any pit of their choice at the start of their turn. If they lose the roll-off, they take [fray] damage three times instead, and the Borer chooses which pit they emerge from at the start of their turn. The Borer returns to any open pit of its choice at the start of its turn."
+    }
+  ]
+}

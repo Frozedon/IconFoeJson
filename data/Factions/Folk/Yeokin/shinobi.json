@@ -1,0 +1,39 @@
+{
+  "Name": "Shinobi",
+  "Inherits": [ "Yeokin", "Skirmisher" ],
+  "Type": "Foe",
+  "Actions": [
+    {
+      "Name": "Whirling Blade",
+      "ActionCost": 1,
+      "Tags": [ "ranged attack 4", "+1 boon" ],
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "Effects": "A different foe in range 3 takes [fray] damage.",
+      "CriticalHit": "All foes in range 3 take [fray] damage."
+    },
+    {
+      "Name": "Shadow Clone",
+      "ActionCost": 1,
+      "Tags": [ "summon" ],
+      "Description": "Summon a shadow clone in a free space in range 3. Clones disappear at the end of combat or if the Shinobi is defeated.",
+      "Summons": {
+        "Name": "Shadow Clone",
+        "Tags": [ "Size 1" ],
+        "Traits": "Intangible",
+        "SummonEffects": "Foes adjacent to a shadow clone at the start of their turn take [fray] damage from the clone."
+      }
+    },
+    {
+      "Name": "Shadow Swap",
+      "ActionCost": 0,
+      "Description": "The Shinobi swaps places with a shadow clone, teleporting."
+    },
+    {
+      "Name": "Raiton",
+      "ActionCost": 1,
+      "Recharge": 6,
+      "Description": "The Shinobi calls down lightning on a foe in range 6. At the end of that foe's turn, they take 3 damage, five times and are blinded. Reduce this damage by one time for every other non-summon character in range 2, which could cause it to do no damage."
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "Name": "War Beast",
+  "Inherits": [ "Imperial", "Heavy" ],
+  "Type": "Foe",
+  "Vitality": 12,
+  "RemoveTraits": "Armor 3",
+  "Traits": [ "Size 2", "Frenzy", "Enrage", "Leashed Beast" ],
+  "Actions": [
+    {
+      "Name": "Gnaw",
+      "ActionCost": 1,
+      "Tags": "melee attack",
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "CriticalHit": "The War Beast gains +1 action."
+    },
+    {
+      "Name": "Snap",
+      "ActionCost": 1,
+      "Tags": "repeatable",
+      "Description": "An adjacent foe takes 2 damage, then is shoved 1, then the War Beast may dash 1."
+    },
+    {
+      "Name": "Iron Jaw",
+      "ActionCost": 1,
+      "Recharge": 6,
+      "Description": "The War Beast dashes 3 spaces in any direction. An adjacent foe when it starts moving must save or be dragged them with it, shoving its target towards it until its adjacent. Bloodied foes fail the save."
+    }
+  ]
+}

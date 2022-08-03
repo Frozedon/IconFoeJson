@@ -1,0 +1,9 @@
+{
+  "Name": "Mob",
+  "SpecialClass": "Mob",
+  "Vitality": 1,
+  "HP": 1,
+  "Speed": 4,
+  "Defense": 6,
+  "Traits": "Mob"
+}

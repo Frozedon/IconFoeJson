@@ -1,0 +1,20 @@
+{
+  "Name": "Nialla's Corpseflower",
+  "Inherits": "Symbiote",
+  "Type": "Foe",
+  "Chapter": 3,
+  "Traits": "Acid Burst (Latch)",
+  "Actions": [ 
+    {
+      "Name": "Pacifying Spores",
+      "ActionCost": 2,
+      "Tags": [ "range 5", "blast 1" ],
+      "AreaEffect": "Foes must save or take [D]+[fray], become poisoned, and become pacified."
+    },
+    {
+      "Name": "Morpheus",
+      "ActionCost": 2,
+      "Description": "A foe in range 6 must save. On a successful save, they are pacified. On a failed save, they are incapacitated until they take damage from an ability or an adjacent character uses an action to shake them awake. At the end of their turn they can repeat the save to end this effect. After this effect ends, they become immune to this ability for the rest of combat."
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "Name": "Legatus",
+  "Inherits": "Sergeant",
+  "Type": "Foe",
+  "Chapter": 3,
+  "Traits": [ "Aura of Resilience", "Master of Strategy" ],
+  "RemoveActions": "Flare Gun",
+  "Actions": [
+    {
+      "Name": "Tactician's Advance",
+      "ActionCost": 0,
+      "Description": "Up to two allies anywhere on the battlefield may dash 2."
+    },
+    {
+      "Name": "Ultimate Weakness",
+      "ActionCost": 2,
+      "Tags": "mark",
+      "Description": "The Legatus marks a foe in range 8.",
+      "Mark": "While marked, the foe is branded+, cannot benefit from cover, stealth, or evasion, and every attack against the target becomes a critical hit on hit (+[D]). The mark lasts until the character is defeated (if bloodied) or becomes bloodied."
+    }
+  ]
+}

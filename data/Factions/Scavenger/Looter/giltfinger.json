@@ -1,0 +1,6 @@
+{
+  "Name": "Giltfinger",
+  "Inherits": "Looter",
+  "Type": "Foe",
+  "Traits": [ "Thiefcraft", "Sneak Attack" ]
+}

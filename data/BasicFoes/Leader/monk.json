@@ -1,0 +1,30 @@
+{
+  "Name": "Monk",
+  "Inherits": "Leader",
+  "Type": "Foe",
+  "UsesTemplate": true,
+  "Interrupts": [
+    {
+      "Name": "Intervention",
+      "Count": 1,
+      "Trigger": "An ally in range 3 is targeted by an ability.",
+      "Effects": "The ally gains resistance against that ability. The monk may then teleport adjacent to that ally."
+    }
+  ],
+  "Actions": [
+    {
+      "Name": "Punishment",
+      "ActionCost": 1,
+      "Tags": "melee attack",
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "Effects": "Becomes a critical hit (+[D]) against pacified foes."
+    },
+    {
+      "Name": "Pressure Point",
+      "ActionCost": 1,
+      "Tags": "repeatable",
+      "Description": "A foe in range 4 is branded. If already branded, they are pacified."
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "Name": "Barbudo",
+  "Inherits": "Hirsinn",
+  "Type": "Foe",
+  "Actions": {
+    "Name": "Great Leap",
+    "ActionCost": 1,
+    "Tags": "1/round",
+    "Description": "The Barbuda flies 2, then shoves all adjacent characters 1 spaces. Bloodied characters are shoved 3 spaces instead.",
+    "Collide": "Character takes [D]+[fray]."
+  }
+}

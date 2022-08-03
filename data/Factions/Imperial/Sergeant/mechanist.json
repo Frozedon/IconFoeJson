@@ -1,0 +1,23 @@
+{
+  "Name": "Mechanist",
+  "Inherits": "Sergeant",
+  "Type": "Foe",
+  "Chapter": 2,
+  "RemoveActions": "Volley Fire",
+  "Actions": [
+    {
+      "Name": "Line Breaker",
+      "ActionCost": 2,
+      "Tags": [ "end turn", "summon" ],
+      "Description": "The Mechanist summons an explosive charge, a size 1 summon with 1 hp, in range 6. The charge can be targeted by any character and is automatically hit by attacks. When the charge is destroyed, it explodes in a blast 2 area. Characters inside take [fray] damage, become burning, and are shoved 1 away from the center. Burning foes are stunned."
+    },
+    {
+      "Name": "Flame Hurler",
+      "ActionCost": 1,
+      "Recharge": 6,
+      "Tags": "multimark",
+      "Description": "The mechanist sprays flame in a line 3 area in range 5. Foes in the area are marked.",
+      "Mark": "While marked, they are branded+, burning, and cannot dash. They can end this mark through normal means, or alternately they or an adjacent ally can spend 1 action putting the flames out, ending the mark."
+    }
+  ]
+}

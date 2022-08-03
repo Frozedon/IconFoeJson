@@ -1,0 +1,6 @@
+{
+  "Name": "Unstable Demon",
+  "Inherits": "Chaos Demon",
+  "Type": "Foe",
+  "Traits": "Implode"
+}

@@ -1,0 +1,6 @@
+{
+  "Name": "Bubble Fish",
+  "Inherits": "Symbiote",
+  "Type": "Foe",
+  "Traits": [ "Filter", "Bubble Barrier" ]
+}

@@ -1,0 +1,27 @@
+{
+  "Name": "Disruptor",
+  "Inherits": "Artillery",
+  "Type": "Foe",
+  "UsesTemplate": true,
+  "Actions": [
+    {
+      "Name": "Magnetism",
+      "ActionCost": 1,
+      "Tags": "ranged attack 8",
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "Effects": "All characters in range 2 of the foe are shoved 1 towards or away from that character (Disruptor chooses)."
+    },
+    {
+      "Name": "Anchor",
+      "ActionCost": 1,
+      "Description": "An ally in range 6 is shoved 4 spaces towards the Disruptor with phasing."
+    },
+    {
+      "Name": "Disrupt",
+      "ActionCost": 1,
+      "Tags": [ "mark" ],
+      "Description": "A character in range 8 is marked. While marked, they take 2 piercing damage, once, for every adjacent character every time they end their turn."
+    }
+  ]
+}

@@ -1,0 +1,299 @@
+{
+  "Name": "Chimaera",
+  "Inherits": [ "Ruin Beast", "Legend" ],
+  "Type": "Foe",
+  "Class": "Unique",
+  "Vitality": 10,
+  "HP": 40,
+  "HPText": "[HP] per player characters [MIN]. Heads each have 1/3 of its max HP, rounded up.",
+  "Speed": 4,
+  "Defense": 8,
+  "FrayDamage": 3,
+  "DamageDie": 6,
+  "RemoveTraits": "Enrage",
+  "Traits": [ "Size 3", "Monstrous Heads" ],
+  "SetupTraits": [
+    {
+      "Name": "Chimaera Heads",
+      "Description": "To determine which heads the Chimaera has, roll a d10 3 times, reroll repeats, or pick 3."
+    }
+  ],
+  "Actions": [
+    {
+      "Name": "Pounce",
+      "ActionCost": 0,
+      "Tags": "2/round",
+      "Description": "The Chimaera flies 5 spaces. Characters under or adjacent to it when it lands are shoved 1 space and take [fray] damage as an area effect."
+    }
+  ],
+  "PhasesDescription": "Each time the Chimaera loses a head, its phase changes. The recharge for its heads' abilities depend on phase, and only roll for a head's abilities on turns that it takes.",
+  "Phases": [
+    {
+      "Name": "Three Heads",
+      "Description": "The recharges on all the head abilities are 6."
+    },
+    {
+      "Name": "Two Heads",
+      "Description": "The recharges on all the head abilities are 4+.",
+      "Traits": "Sturdy"
+    },
+    {
+      "Name": "One Head",
+      "Description": "The recharges on all the head abilities are 2+.",
+      "Traits": "Feral Rage"
+    }
+  ],
+  "ExtraAbilitySets": [
+    {
+      "Name": "1. Lion",
+      "Class": "Heavy",
+      "Traits": "Lion's Pride",
+      "Actions": [
+        {
+          "Name": "Savage Bite",
+          "ActionCost": 1,
+          "Tags": [ "melee attack", "true strike", "repeatable" ],
+          "Hit": "[D]+[fray].",
+          "Miss": "[fray]."
+        },
+        {
+          "Name": "Roar",
+          "ActionCost": 2,
+          "Tags": [ "recharge" ],
+          "Description": "Adjacent characters take [fray] damage, are shoved 1 and become dazed. Dazed foes must save or become stunned."
+        }
+      ]
+    },
+    {
+      "Name": "2. Bull",
+      "Class": "Heavy",
+      "Traits": "Bull's Fortitude",
+      "Actions": [
+        {
+          "Name": "Headbutt",
+          "ActionCost": 1,
+          "Tags": [ "melee attack", "true strike", "repeatable" ],
+          "Hit": "[D]+[fray] and shove 1.",
+          "Miss": "[fray].",
+          "Effects": "The Chimaera can dash 2 spaces before making this attack."
+        },
+        {
+          "Name": "Charge",
+          "ActionCost": 1,
+          "Tags": [ "end turn", "recharge" ],
+          "Description": "The beast chooses a foe in range 2. At the end of that foe's next turn, the beast dashes up to 5 spaces towards that foe, phasing through characters. Characters the beast passes through are shoved 1 to either side and take [fray] damage. If the beasts ends this movement adjacent to their foe, that foe must save or take 2[D]+[fray] and become stunned, or [D]+[fray] only on a successful save."
+        }
+      ]
+    },
+    {
+      "Name": "3. Serpent",
+      "Class": "Skirmisher",
+      "Actions": [
+        {
+          "Name": "Toxic Bite",
+          "ActionCost": 1,
+          "Tags": [ "melee attack", "multimark" ],
+          "Hit": "[D]+[fray].",
+          "Miss": "[fray].",
+          "Effects": "The character is marked. While marked, attacks from the Chimaera ignore vigor."
+        },
+        {
+          "Name": "Poison Spit",
+          "ActionCost": 1,
+          "Tags": "repeatable",
+          "Description": "A character in range 6 takes 2 damage and is poisoned. Poisoned characters take 4 damage."
+        },
+        {
+          "Name": "Poison Breath",
+          "ActionCost": 2,
+          "Tags": [ "ranged attack 4", "blast 2", "recharge" ],
+          "Hit": "2[D]+[fray].",
+          "Miss": "[fray].",
+          "AreaEffect": "[fray].",
+          "Effects": "All characters are poisoned. Poisoned characters are blinded."
+        }
+      ]
+    },
+    {
+      "Name": "4. Crocodile",
+      "Class": "Artillery",
+      "Actions": [
+        {
+          "Name": "Savage Bite",
+          "ActionCost": 1,
+          "Tags": [ "melee attack", "pierce", "repeatable" ],
+          "Hit": "[D]+[fray].",
+          "Miss": "[fray]."
+        },
+        {
+          "Name": "Fling",
+          "ActionCost": 1,
+          "Description": "An adjacent character is shoved 3.",
+          "Collide": "[D]+[fray]."
+        },
+        {
+          "Name": "Sun Beam",
+          "ActionCost": 2,
+          "Tags": [ "ranged attack", "line 10", "pierce", "recharge" ],
+          "Hit": "3[D]+[fray] and foe is shattered.",
+          "Miss": "[D]+[fray].",
+          "AreaEffect": "[D]+[fray]."
+        }
+      ]
+    },
+    {
+      "Name": "5. Toad",
+      "Class": "Heavy",
+      "Traits": "Noxious Venom",
+      "Actions": [
+        {
+          "Name": "Tongue",
+          "ActionCost": 1,
+          "Tags": [ "melee attack 3", "repeatable" ],
+          "Hit": "[D]+[fray].",
+          "Miss": "[fray].",
+          "Effects": "The target is shoved 2 towards the chimaera."
+        },
+        {
+          "Name": "Swallow Whole",
+          "ActionCost": 1,
+          "Tags": "recharge",
+          "Description": "An adjacent character must save or be swallowed whole. Remove them from the battlefield. At the start of their turn, the toad spits them out, placing them in any adjacent space to the chimaera's current location, then shoving them 3 spaces. They are winded.",
+          "Collide": "Character takes [D]+[fray] and is stunned."
+        }
+      ]
+    },
+    {
+      "Name": "6. Baboon",
+      "Class": "Artillery",
+      "Actions": [
+        {
+          "Name": "Fireball",
+          "ActionCost": 2,
+          "Tags": [ "ranged attack 6", "blast 1" ],
+          "Hit": "2[D]+[fray] and inflict burning.",
+          "Miss": "[fray].",
+          "AreaEffect": "[fray].",
+          "Effects": "Critical hit against burning foes."
+        },
+        {
+          "Name": "Inhale",
+          "ActionCost": 1,
+          "Description": "The next action this head takes increases all areas of effect by 1."
+        },
+        {
+          "Name": "Pyroclast",
+          "ActionCost": 1,
+          "Tags": [ "range 8", "blast 1", "recharge" ],
+          "Description": "Characters in the area must save or take [D] and become stunned. Summon a height 3 rock spire object in the area."
+        }
+      ]
+    },
+    {
+      "Name": "7. Wolf",
+      "Class": "Skirmisher",
+      "Actions": [
+        {
+          "Name": "Savage Claw",
+          "ActionCost": 1,
+          "Tags": [ "melee attack", "arc 3", "repeatable" ],
+          "Hit": "[D]+[fray].",
+          "Miss": "[fray].",
+          "AreaEffect": "[fray].",
+          "Effects": "Critical hit against blinded foes."
+        },
+        {
+          "Name": "Great Prowl",
+          "ActionCost": 1,
+          "Description": "The chimaera dashes 3 and gains stealth. It also gains evasion until it loses stealth."
+        },
+        {
+          "Name": "Shadow Breath",
+          "ActionCost": 2,
+          "Tags": [ "close blast 1", "recharge" ],
+          "AreaEffect": "[D]+[fray].",
+          "Effects": "Characters in the area must save or become blinded."
+        }
+      ]
+    },
+    {
+      "Name": "8. Goat",
+      "Class": "Artillery",
+      "Traits": "Goat's Shield",
+      "Actions": [
+        {
+          "Name": "Cross Bolt",
+          "ActionCost": 1,
+          "Tags": [ "ranged attack 8", "cross 1" ],
+          "Hit": "[D]+[fray].",
+          "Miss": "[fray].",
+          "AreaEffect": "[fray].",
+          "Effects": "Attack target must save or become vulnerable."
+        },
+        {
+          "Name": "Polaris",
+          "ActionCost": 1,
+          "Tags": "repeatable",
+          "Description": "Mark a visible space. At the end of each turn past this one (foe or allied), roll a d6. On a 6, a meteor smashes into the space, inflicting [D]+[fray] and frostbite in a blast 1 area centered on the space to all characters within, then end this effect."
+        },
+        {
+          "Name": "Meteor",
+          "ActionCost": 2,
+          "Tags": "recharge",
+          "Description": "All characters not in cover from the Chimaera must save or take [fray] damage twice and become vulnerable, or once on a successful save. Then, summon a height 1 boulder object adjacent to any character affected."
+        }
+      ]
+    },
+    {
+      "Name": "9. Chicken",
+      "Class": "Leader",
+      "Actions": [
+        {
+          "Name": "Peck",
+          "ActionCost": 1,
+          "Tags": [ "melee attack", "true strike", "pierce", "repeatable" ],
+          "AutoHit": "[fray]."
+        },
+        {
+          "Name": "Gaze",
+          "ActionCost": -1,
+          "Tags": "all remaining actions",
+          "Description": "Until the start of the Chicken's next turn, characters that attack the chicken or any of the other heads while the chicken is alive take +1 curse on their attacks. They can choose to take +1 boon instead but instead must save against petrification (see below)."
+        },
+        {
+          "Name": "Petrification",
+          "ActionCost": 2,
+          "Tags": "recharge",
+          "Description": "A character in range 6 becomes pacified. At the end of that character's next turn, they must save. On a failed save, they are encased in stone, removing them from the battlefield and becoming replaced with a destructible (10 hp) height 1 object. Until the is destroyed, they cannot take a turn. When it's destroyed, they are returned to the battlefield in the space they left and can take a turn as normal."
+        }
+      ]
+    },
+    {
+      "Name": "10. Bear",
+      "Class": "Heavy",
+      "Actions": [
+        {
+          "Name": "Ice Shards",
+          "ActionCost": 1,
+          "Tags": [ "ranged attack 6", "multiattack" ],
+          "AutoHit": "[fray]."
+        },
+        {
+          "Name": "Cold Feet",
+          "ActionCost": 1,
+          "Tags": "repeatable",
+          "Description": "A character in range 8 has an encasing of ice cover their feet, which is a summon sharing their space that can't move or be moved in any way. While encased, the targeted foe is immobile. These effects only end if the ice is destroyed. The ice can be destroyed by taking any amount of damage, and has 6 defense. Immobile foes take [D]+[fray] damage instead."
+        },
+        {
+          "Name": "Freezing Breath",
+          "ActionCost": 2,
+          "Tags": [ "melee attack", "close blast 1", "recharge" ],
+          "Hit": "2[D]+[fray].",
+          "Miss": "[fray].",
+          "AreaEffect": "[fray].",
+          "Effects": "Characters are inflicted with frostbite. Frostbitten characters take +[D]. Immobile characters are stunned."
+        }
+      ]
+    }
+  ]
+}

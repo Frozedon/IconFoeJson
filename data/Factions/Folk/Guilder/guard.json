@@ -1,0 +1,36 @@
+{
+  "Name": "Guard",
+  "Inherits": [ "Guilder", "Heavy" ],
+  "Type": "Foe",
+  "Traits": "Hold the Line 1",
+  "Interrupts": [
+    {
+      "Name": "Get Down!",
+      "Count": 1,
+      "Trigger": "An ally takes damage that would reduce them to 0 hp.",
+      "Effects": "The Guard can dash 3. If that puts them adjacent to their ally, that ally goes to 1 hp instead, and the guard takes divine damage equal to 25% of their max hp."
+    }
+  ],
+  "Actions": [
+    {
+      "Name": "Mace",
+      "ActionCost": 1,
+      "Tags": [ "melee attack", "true strike" ],
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray]."
+    },
+    {
+      "Name": "Shield Strike",
+      "ActionCost": 1,
+      "Tags": [ "repeatable" ],
+      "Description": "An adjacent foe is shoved 1 and must save or become winded. Winded foes take [D].",
+      "Collide": "Foe fails the save."
+    },
+    {
+      "Name": "On the Spot",
+      "ActionCost": 1,
+      "Recharge": 6,
+      "Description": "The Guard chooses a space in range 3, which could be under themselves. While standing on the spot, the Guard has resistance. This effect lasts until this ability is used again."
+    }
+  ]
+}

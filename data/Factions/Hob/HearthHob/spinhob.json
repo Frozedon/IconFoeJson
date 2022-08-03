@@ -1,0 +1,12 @@
+{
+  "Name": "Spinhob",
+  "Inherits": "Hearth Hob",
+  "Type": "Foe",
+  "Actions": {
+    "Name": "Weave Garment",
+    "ActionCost": 1,
+    "Tags": "end turn",
+    "Recharge": 5,
+    "Description": "The Spinhob weaves an incredibly odd or ugly garment, placing it on a character in range 3. While under this effect, the character fails all saves. An adjacent ally of the character, but not the character themselves, can use an action to strip the garment off, destroying it and ending this effect."
+  }
+}

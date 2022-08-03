@@ -1,0 +1,41 @@
+{
+  "Name": "Grub",
+  "Inherits": [ "Lowlander", "Skirmisher" ],
+  "Traits": [ "Master of the Underway", "Dirty Fighting" ],
+  "Actions": [
+    {
+      "Name": "Strafe Shot",
+      "ActionCost": 1,
+      "Tags": [ "ranged attack 5", "+1 boon" ],
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "Effects": "May dash 1 before and after attack. Ignores cover and deals bonus damage against bloodied foes."
+    },
+    {
+      "Name": "Swindle",
+      "ActionCost": 1,
+      "Description": "Swap places with a character in range 3, teleporting. Foes can save to avoid this effect."
+    },
+    {
+      "Name": "Reveal Pit",
+      "ActionCost": 1,
+      "Tags": [ "terrain effect", "end turn" ],
+      "Description": "The Grub chooses a foe in range 6, then creates a pit underneath them. The chosen character can save to jump out of the way, moving themselves 1 space to a side of their choice on a successful save."
+    }
+  ],
+  "ConditionalAbilities": [
+    {
+      "Chapter": 2,
+      "RemoveTraits": "Master of the Underway",
+      "Traits": "Master of the Underway (Improved)"
+    },
+    {
+      "Chapter": 3,
+      "Actions": {
+        "Name": "Dig Tunnel",
+        "ActionCost": 1,
+        "Description": "The Grub chooses two pit spaces on the battlefield and connects them with a tunnel. Any character can use a free action to teleport from one end of the tunnel to the next, as long as the other end of the tunnel is unoccupied."
+      }
+    }
+  ]
+}

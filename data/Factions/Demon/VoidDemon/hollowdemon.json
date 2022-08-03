@@ -1,0 +1,11 @@
+{
+  "Name": "Hollow Demon",
+  "Inherits": "Void Demon",
+  "Type": "Foe",
+  "Traits": "Ethereal (Evasion)",
+  "Actions": {
+    "Name": "Void Caller",
+    "ActionCost": 2,
+    "Description": "Create a natal adjacent to every Void Rift."
+  }
+}

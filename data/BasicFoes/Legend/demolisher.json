@@ -1,0 +1,74 @@
+{
+  "Name": "Demolisher",
+  "Inherits": "Legendary Heavy",
+  "Type": "Foe",
+  "HP": 40,
+  "UsesTemplate": true,
+  "Traits": [ "Size 2", "Sturdy", "Great Strength" ],
+  "Actions": [
+    {
+      "Name": "Pound",
+      "ActionCost": 1,
+      "Tags": [ "melee attack 2", "true strike" ],
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "Effects": "Deals bonus damage for each: character is winded, dazed, or stunned.",
+      "Combo": {
+        "Name": "Battle Shout",
+        "ActionCost": 1,
+        "Tags": "end turn",
+        "Description": "Characters in range 3 take [fray] damage and are shoved 1 towards the Demolisher.",
+        "Combo": {
+          "Name": "Massive Impact",
+          "ActionCost": 2,
+          "Tags": [ "melee attack", "close blast 1" ],
+          "Hit": "3[D]+[fray].",
+          "Miss": "[fray].",
+          "AreaEffect": "[fray].",
+          "Effects": "Attack target must save or be stunned."
+        }
+      }
+    },
+    {
+      "Name": "Hurl Boulder",
+      "ActionCost": 1,
+      "Tags": [ "terrain effect", "repeatable" ],
+      "Effects": "A foe in range 3 takes 2 damage and is shoved 1, then create a height 1 boulder object next to them."
+    },
+    {
+      "Name": "Lash",
+      "ActionCost": 1,
+      "Description": "The Demolisher whips a chain, hook, or weapon around a foe in range 5, shoving them 3 spaces towards the Demolisher."
+    }
+  ],
+  "PhasesDescription": "Starts in Phase I and enters Phase II when bloodied.",
+  "Phases": [
+    {
+      "Actions": [
+        {
+          "Name": "Charge",
+          "ActionCost": 1,
+          "Tags": [ "1/round" ],
+          "Description": "Dash 4 in a straight line. All characters the Demolisher passes over are shoved 1 to the side and take [fray] damage."
+        }
+      ]
+    },
+    {
+      "Traits": [ "Frothing Mad", "Great Enrage" ],
+      "Actions": [
+        {
+          "Name": "Charge",
+          "ActionCost": 1,
+          "Tags": [ "3/round" ],
+          "Description": "Dash 4 in a straight line. All characters the Demolisher passes over are shoved 1 to the side and take [fray] damage."
+        },
+        {
+          "Name": "Great Lash",
+          "ActionCost": 1,
+          "Tags": [ "1/round" ],
+          "Description": "The Demolisher whips a chain or hook around all foes in range 5. They are shoved 3 spaces towards the Demolisher."
+        }
+      ]
+    }
+  ]
+}

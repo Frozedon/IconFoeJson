@@ -1,0 +1,23 @@
+{
+  "Name": "Burrower",
+  "Inherits": "Stalking Beast",
+  "Type": "Foe",
+  "Chapter": 2,
+  "Traits": "Dig",
+  "RemoveActions": "Rake",
+  "Actions": [
+    {
+      "Name": "Spit Rock",
+      "ActionCost": 1,
+      "Tags": [ "line 6", "repeatable" ],
+      "AreaEffect": "Foes take [fray] damage."
+    },
+    {
+      "Name": "Burrow",
+      "ActionCost": 1,
+      "Recharge": 6,
+      "Tags": [ "mark", "end turn" ],
+      "Description": "Mark a character in range 8. The Burrower digs down and becomes intangible. At the end of the marked character's turn, if that character is still marked, the Burrower teleports to a space adjacent to that character, dealing [fray] damage. If the character is flying, they take no damage. If the character has no other characters or terrain pieces adjacent, they take 3[D] instead and are slowed. Then, the mark and all associated effects end."
+    }
+  ]
+}

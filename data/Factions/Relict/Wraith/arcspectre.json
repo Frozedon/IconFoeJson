@@ -1,0 +1,17 @@
+{
+  "Name": "Arc Spectre",
+  "Inherits": "Wraith",
+  "Type": "Foe",
+  "Actions": [
+    {
+      "Name": "Storm of Wrath",
+      "ActionCost": 2,
+      "Recharge": 6,
+      "Tags": [ "ranged attack 8", "blast 2", "pierce" ],
+      "Hit": "[D] three times.",
+      "Miss": "[D].",
+      "AreaEffect": "[D].",
+      "Effects": "All foes must save or become electrified and vulnerable. Electrified characters fail the save."
+    }
+  ]
+}

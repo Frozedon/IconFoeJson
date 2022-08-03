@@ -1,0 +1,26 @@
+{
+  "Name": "Legionary",
+  "Inherits": "Wight",
+  "Type": "Foe",
+  "Chapter": 3,
+  "Traits": "Counter",
+  "Actions": [
+    {
+      "Name": "Legion's Advance",
+      "ActionCost": 0,
+      "Description": "All relict may move 1 space in the same direction, ignoring engagement, then may deal 2 damage to an adjacent foe."
+    },
+    {
+      "Name": "Turtle Shield",
+      "ActionCost": 1,
+      "Recharge": 4,
+      "Description": "All adjacent allies gain cover and dodge until the start of the Legionary's next turn. The Legionary becomes immobile and unstoppable for the same duration."
+    },
+    {
+      "Name": "Merciless Advance",
+      "ActionCost": 2,
+      "Recharge": 5,
+      "Description": "The Legionary activates Death March three times. It may choose different direction each time."
+    }
+  ]
+}

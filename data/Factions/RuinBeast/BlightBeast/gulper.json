@@ -1,0 +1,13 @@
+{
+  "Name": "Gulper",
+  "Inherits": "Blight Beast",
+  "Type": "Foe",
+  "Traits": "Slimy Skin",
+  "Actions": {
+    "Name": "Slime Spit",
+    "ActionCost": 2,
+    "Tags": "terrain effect",
+    "Description": "The Gulper creates a line 6 area of difficult terrain. Foes caught in the area when it is created are shoved 2.",
+    "Collide": "Foe takes [D]+[fray] and is shattered."
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "Name": "Spender",
+  "Inherits": "Broker",
+  "Type": "Foe",
+  "Chapter": 3,
+  "Traits": [ "Deep Pockets", "Aura of Wealth" ],
+  "Interrupts": {
+    "Name": "Golden Aplomb",
+    "Count": 1,
+    "Trigger": "The spender or an adjacent ally is targeted by an ability.",
+    "Effects": "The Spender drops a valuables token it is holding. The target gains resistance and unstoppable against the ability."
+  },
+  "Actions": {
+    "Name": "Pay Off",
+    "ActionCost": 1,
+    "Tags": "mark",
+    "Description": "The Spender gives a foe in range 6 a valuables token. That foe must then save or become marked. While marked and holding at least one valuables token, they are pacified+."
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "Name": "Sage Snail",
+  "Inherits": [ "Lowlander", "Leader" ],
+  "Type": "Foe",
+  "Chapter": 2,
+  "Traits": [ "Size 2", "Slime Trail" ],
+  "Actions": [
+    {
+      "Name": "Slime Stream",
+      "ActionCost": 1,
+      "Tags": "line 8 + blast 1",
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "Effects": "Foes in the area must save or become pacified and poisoned. Pacified foes take bonus damage."
+    },
+    {
+      "Name": "Polaris",
+      "ActionCost": 1,
+      "Description": "Mark a visible space. At the end of each turn past this one (foe or allied), roll a d6. On a 6, a meteor smashes into the space, inflicting [D]+[fray] in a blast 1 area effect on that space. This effect ends at the start of the snail's next turn, or when triggered."
+    },
+    {
+      "Name": "Bubble Shield",
+      "ActionCost": 1,
+      "Recharge": 5,
+      "Description": "The Snail gains Aura 2 until the start of its next turn. Characters in the aura gain resistance to abilities from outside the aura."
+    },
+    {
+      "Name": "Pearlescent Bubble",
+      "ActionCost": 1,
+      "Recharge": 5,
+      "Description": "The Snail spits out three bubbles in range 4.",
+      "Summons": {
+        "Name": "Pearlescent Bubble",
+        "Tags": [ "Size 1", "1 HP", "Defense 1" ],
+        "SummonEffects": "When a character collides with the bubble, it pops, pacifying them, shoving them 3 in any direction, and creating a space of difficult terrain. Pacified characters are stunned."
+      }
+    }
+  ]
+}

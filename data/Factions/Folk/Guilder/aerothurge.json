@@ -1,0 +1,34 @@
+{
+  "Name": "Aerothurge",
+  "Inherits": [ "Guilder", "Artillery" ],
+  "Type": "Foe",
+  "Actions": [
+    {
+      "Name": "High Pressure",
+      "ActionCost": 2,
+      "Tags": [ "ranged attack 6", "blast 1" ],
+      "Hit": "[fray] damage, three times.",
+      "Miss": "[fray].",
+      "AreaEffect": "[fray].",
+      "Effects": "Can target one end of a portal. If so, the attack travels through the portal and is then retargeted to a new space or character within range 3 of the other end of the portal."
+    },
+    {
+      "Name": "Whisk",
+      "ActionCost": 1,
+      "Description": "A foe in range 6 becomes vulnerable, then is teleported 1. Vulnerable foes are teleported 3 instead."
+    },
+    {
+      "Name": "Aether Portal",
+      "ActionCost": 1,
+      "Recharge": 6,
+      "Tags": [ "summon" ],
+      "Description": "The Aerothurge chooses any two free spaces on the battlefield and links them with glowing portals.",
+      "Summons": {
+        "Name": "Portal",
+        "IsObject": true,
+        "Tags": [ "Size 1", "Height 1" ],
+        "SummonEffects": "Any character adjacent to a portal can spend 1 space of movement to teleport adjacent to the other linked portal, or vice versa."
+      }
+    }
+  ]
+}

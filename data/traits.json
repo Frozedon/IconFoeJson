@@ -1,0 +1,677 @@
+[
+  {
+    "Name": "Acid Burst",
+    "Description": "When this character takes damage, all adjacent foes take 1 piercing damage. Increase this damage to 2 piercing against poisoned characters. This effect can trigger any number of times a round."
+  },
+  {
+    "Name": "Acid Splash",
+    "Description": "Attacks deal 1 piercing damage on hit or miss to all foes in range 2 of the target as an area effect."
+  },
+  {
+    "Name": "Acrobatics",
+    "Actions": [
+      {
+        "Name": "Acrobatics",
+        "ActionCost": 0,
+        "Description": "Dash 2. This action can interrupt and split up other actions or movement."
+      }
+    ]
+  },
+  {
+    "Name": "Aerial Acrobat",
+    "Description": "If an attack misses this character, they may deal 2 damage to the attacker, then fly 2."
+  },
+  {
+    "Name": "Aetherskin",
+    "Description": "When bloodied, becomes intangible until the end of its next turn."
+  },
+  {
+    "Name": "Aetherwall",
+    "Description": "Gains automatic cover against all attacks that originate outside of range 2 from them. (Cover grants resistance against ranged attacks, reducing its damage by 1/2)"
+  },
+  {
+    "Name": "Amorous Waltz",
+    "Description": "Immune to all damage from pacified foes."
+  },
+  {
+    "Name": "Amorphous",
+    "Description": "Can share space with other characters. Any characters that start their turn inside its space take [fray] damage."
+  },
+  {
+    "Name": "Armor [X]",
+    "Description": "Reduce all damage taken by [X]."
+  },
+  {
+    "Name": "Aura of Bloodlust",
+    "Description": "Aura 1. Foes that end their turn in the Aura must save or gain hatred of this character."
+  },
+  {
+    "Name": "Aura of Freedom",
+    "Description": "Aura 1. This character and allies in the aura are immune to terrain effects, pits, difficult, and dangerous terrain."
+  },
+  {
+    "Name": "Aura of Glamour",
+    "Description": "Aura 1. Foes outside the aura cannot directly target this character with abilities."
+  },
+  {
+    "Name": "Aura of Resilience",
+    "Description": "Aura 2. Self and allies in the aura gain +1 boon on saves and are immune to critical hits. (downgrade critical hits to regular hits)"
+  },
+  {
+    "Name": "Aura of Rot",
+    "Description": "Aura 2. Foes that start or end their turn in the aura lose all vigor, then take 2 piercing damage."
+  },
+  {
+    "Name": "Aura of Shielding",
+    "Description": "Aura 1. This character and allies in the aura have dodge. (Immune to damage from missed attacks, area effects, and successful saves)"
+  },
+  {
+    "Name": "Aura of Terror",
+    "Description": "Aura 1. Foes that end their turn in the aura must save or become pacified and shoved 1."
+  },
+  {
+    "Name": "Automata",
+    "Description": "This character always attempts to attack and focus on the closest foe at the start of its turn."
+  },
+  {
+    "Name": "Battle Platform",
+    "Description": "Characters can mount or dismount this character with their standard move, placing them adjacent when dismounting. Allies can start the battle mounted on this character. While mounted, place them inside a free space in this character (size 2 characters has space for 4 size 1 characters, while size 3 characters has space for 9). They share its space, move when it moves, and have cover. Characters hostile to this character must pass a save to mount it. Characters mounting it when it is defeated are placed adjacent and stunned."
+  },
+  {
+    "Name": "Beyond Death",
+    "Description": "When defiance activates, roll a d6. On a 4+, this character immediately regains defiance. Attacks with True Strike bypass this trait."
+  },
+  {
+    "Name": "Blood Rush",
+    "Description": "On Critical Hit or Slay, gains +1 action."
+  },
+  {
+    "Name": "Blood Scent",
+    "Description": "Always focuses on the closest bloody foe."
+  },
+  {
+    "Name": "Bloodwhetter",
+    "Description": "When this character is damaged by an ability they may deal 2 damage to an adjacent foe. This happens each time this character is damaged."
+  },
+  {
+    "Name": "Boiling Shroud",
+    "Description": "While bloodied, has aura 1. All characters in the aura have permanent stealth and are blinded+, but only while inside the aura."
+  },
+  {
+    "Name": "Brace",
+    "Description": "When adjacent to terrain height 1 or higher, increase the range of all abilities with a listed range by +4, and attacks ignore cover."
+  },
+  {
+    "Name": "Bullheaded",
+    "Description": "Has resistance unless suffering from a status. (Take 1/2 damage, rounded up)"
+  },
+  {
+    "Name": "Camouflage",
+    "Description": "If this character ends its turn adjacent to an object or or inside difficult terrain, it gains stealth."
+  },
+  {
+    "Name": "Cheap Trick",
+    "Description": "When missed by an attack, may deal 1 damage to their attacker, then teleport 1."
+  },
+  {
+    "Name": "Collect Paycheck",
+    "Description": "All actions have Slay: Gain +1 action."
+  },
+  {
+    "Name": "Command Aura",
+    "DisplayName": "Command Aura",
+    "Description": "Aura 2. Allies in the aura have +1 boon on attacks."
+  },
+  {
+    "Name": "Cowerdly by Nature",
+    "Description": "This character surrenders and ends the fight if it's the only character left."
+  },
+  {
+    "Name": "Counter",
+    "Description": "Each time a foe deals damage to you with an ability, deal 2 damage back."
+  },
+  {
+    "Name": "Cowardly by Nature",
+    "Description": "This character surrenders and ends the fight if it's the only character left."
+  },
+  {
+    "Name": "Cronies",
+    "Description": "This character starts combat with 5 mob allies, regardless of encounter budget."
+  },
+  {
+    "Name": "Crumbling Body",
+    "Description": "Each time it would take damage from an action or ability, permanently reduce its armor by 1 for the rest of combat, even if that damage is reduced to 0. If it's armor is 0, it becomes vulnerable+."
+  },
+  {
+    "Name": "Crystal Dagger",
+    "Description": "When the demon teleports, it may deal 1 damage to a foe in range 3."
+  },
+  {
+    "Name": "Curse the Eyeless",
+    "Description": "Evasion against blinded or slowed characters. (Roll a d6 when targeted by an attack. On a 4+, the attack automatically misses. Check before the attack roll)"
+  },
+  {
+    "Name": "Death Whistle",
+    "Description": "When this character attacks, other characters in range 2 of it must save or lose any stances they are holding."
+  },
+  {
+    "Name": "Defiance",
+    "Description": "Prevents hit points from being reduced past 1 hp. When this triggers, remove this effect and character becomes immune to all damage for the rest of the current turn."
+  },
+  {
+    "Name": "Dig",
+    "Description": "Can phase through terrain and characters."
+  },
+  {
+    "Name": "Diaga",
+    "Actions": [
+      {
+        "Name": "Diaga",
+        "ActionCost": 1,
+        "Description": "An ally in range 4 can end a status or blight. If that ally is bloodied, they also gain vigor 1."
+      }
+    ]
+  },
+  {
+    "Name": "Distortion",
+    "Description": "Aura 1. Foes inside are blinded+."
+  },
+  {
+    "Name": "Dirty Fighting",
+    "Description": "+1 boon on attacks and bonus damage to characters inside pits."
+  },
+  {
+    "Name": "Divine Presence",
+    "Description": "Immune to stun."
+  },
+  {
+    "Name": "Dodge",
+    "Description": "Immune to damage from missed attacks, area effects, and successful saves."
+  },
+  {
+    "Name": "Duty of Death",
+    "Description": "Adjacent allies to this character without this trait have dodge."
+  },
+  {
+    "Name": "Dweller in Dark",
+    "Description": "This character has the following abilities:",
+    "ListedItems": [
+      {
+        "Description": "Immune to pits."
+      },
+      {
+        "Description": "Immune to blinded."
+      },
+      {
+        "Description": "May use its standard move to teleport from the area of any pit to any other pit."
+      },
+      {
+        "Description": "Has resistance while inside a pit. (Take 1/2 damage, rounded up)"
+      }
+    ]
+  },
+  {
+    "Name": "Earthbreaker",
+    "Description": "This character can phase through objects and destroys any objects it moves through this way. Objects that can't normally be destroyed are instead removed as if they were unsummoned."
+  },
+  {
+    "Name": "Elite",
+    "Description": "Takes 2 turns.",
+    "EncounterBudget": 2
+  },
+  {
+    "Name": "Enrage",
+    "Description": "While bloody, gain +1 action."
+  },
+  {
+    "Name": "Entrench",
+    "Description": "Unstoppable while inside a pit. (Immune to all statuses. Can't be immobilized, shoved, or teleported by foes)"
+  },
+  {
+    "Name": "Equivalent Exchange",
+    "Description": "Aura 1. Once a round, when an ally in the Aura is defeated, deal divine damage to any foe on the battlefield equal to 25% of their max hp."
+  },
+  {
+    "Name": "Eternal Rage",
+    "Description": "When defeated, instead remain at 1 hp and become intangible until the end of their next turn. At the end of that turn, become defeated."
+  },
+  {
+    "Name": "Ethereal (Resistance)",
+    "DisplayName": "Ethereal",
+    "Description": "Phasing, and has resistance unless there's an adjacent foe."
+  },
+  {
+    "Name": "Ethereal (Evasion)",
+    "DisplayName": "Ethereal",
+    "Description": "Phasing, and has evasion unless there's an adjacent foe."
+  },
+  {
+    "Name": "Evasion",
+    "Description": "Roll a d6 when targeted by an attack. On a 4+, the attack automatically misses. Check before the attack roll."
+  },
+  {
+    "Name": "Explosive Demise",
+    "Description": "When defeated, explodes in a blast 1 area effect centered on it. Foes inside are shoved 1 away from the origin space and must save or take [D]+[fray], or [fray] on a successful save."
+  },
+  {
+    "Name": "Eyeless",
+    "Description": "Immune to blinded."
+  },
+  {
+    "Name": "Flip Over",
+    "Description": "When taking damage more than its armor total, loses all armor, becomes stunned, and all attacks against it are critical hits. These effects last until the end of its next turn."
+  },
+  {
+    "Name": "Flying",
+    "Description": "Ignores all terrain and terrain effects other than impassable terrain, and ignores engagement and obstruction."
+  },
+  {
+    "Name": "Fortify",
+    "Description": "At the end of their turn, gains vigilance 1."
+  },
+  {
+    "Name": "Frenzy",
+    "Description": "When hitting with an attack, immediately gain +1 action."
+  },
+  {
+    "Name": "Gran Diaga",
+    "Description": "Aura 1. At the start of this character's turn, allies in the aura can end a status or blight affecting them. If they are bloodied, they also gain vigor 1."
+  },
+  {
+    "Name": "Great Enrage",
+    "Description": "Sturdy and +1 action while bloodied. (Can't be stunned or dazed, and reduce the distance of all shoves by 1)"
+  },
+  {
+    "Name": "Great Leap",
+    "Description": "Ignores height movement penalties. When moving from a higher elevation to a lower one, may fly until the movement ends."
+  },
+  {
+    "Name": "Greenwalker",
+    "Description": "Immune to difficult terrain."
+  },
+  {
+    "Name": "Grit",
+    "Description": "Sturdy when bloodied. (Can't be stunned or dazed, and reduce the distance of all shoves by 1)"
+  },
+  {
+    "Name": "Heavy Armor",
+    "Description": "Resistant to abilities used from adjacent spaces. (Take 1/2 damage, rounded up)"
+  },
+  {
+    "Name": "Heavy Metal Shield",
+    "Description": "Has resistance against abilities from the closest foe. If multiple foes are equidistant, this trait applies to all of them. (Take 1/2 damage, rounded up)"
+  },
+  {
+    "Name": "Hellforged",
+    "Description": "Immune to difficult and dangerous terrain."
+  },
+  {
+    "Name": "Hold the Line [X]",
+    "DisplayName": "Hold the Line",
+    "Description": "If this character ends any turn without attacking, they gain Sturdy until the start of their next turn and Vigilance [X]. (Can't be stunned or dazed, and reduce the distance of all shoves by 1)"
+  },
+  {
+    "Name": "Hollow",
+    "Description": "Aura 1. While there is exactly 1 other character in hollow's aura, it has have evasion and stealth. This aura has no effect if no other characters, or 2 or more other characters are inside, and its effects (including stealth) turn off it if deactivates."
+  },
+  {
+    "Name": "Immortal Disregard",
+    "Description": "Attacks never miss this character.",
+    "Defense": 1
+  },
+  {
+    "Name": "Immovable Object",
+    "Description": "Unstoppable. (Immune to all statuses. Can't be immobilized, shoved, or teleported by foes)"
+  },
+  {
+    "Name": "Insulated",
+    "Description": "Immune to damage from terrain and terrain effects."
+  },
+  {
+    "Name": "Isolation",
+    "Description": "Has resistance to damage dealt by characters with no allies adjacent. (Take 1/2 damage, rounded up)"
+  },
+  {
+    "Name": "Juggernaut",
+    "Actions": [
+      {
+        "Name": "Juggernaut",
+        "ActionCost": 0,
+        "Tags": [ "1/round" ],
+        "Description": "Clear a status, mark, or all blights affecting this character."
+      }
+    ]
+  },
+  {
+    "Name": "Lead Astray",
+    "Description": "Aura 2. This character may teleport any other character that ends their turn in the aura 2 spaces in any direction."
+  },
+  {
+    "Name": "Legend",
+    "Description": "Takes 1 turn after every player character takes a turn. If slow, only one of its turns is affected.",
+    "EncounterBudget": -1.0
+  },
+  {
+    "Name": "Legendary Diaga",
+    "Actions": [
+      {
+        "Name": "Diaga",
+        "ActionCost": 1,
+        "Tags": "1/round",
+        "Description": "An ally in range 4 can end a status or blight. If that ally is bloodied, they also gain vigor 1."
+      }
+    ]
+  },
+  {
+    "Name": "Legendary Slip",
+    "Actions": [
+      {
+        "Name": "Slip",
+        "ActionCost": 0,
+        "Tags": "1/round",
+        "Description": "Remove self from the battlefield, then return in a free space in range 5."
+      }
+    ]
+  },
+  {
+    "Name": "Legendary Vigilance",
+    "Description": "Can use Vigilance twice a round."
+  },
+  {
+    "Name": "Living Lightning",
+    "Description": "Electrifies foes it moves through. Foes that are already electrified must save or become slowed. Allied spaces cost 0 movement to pass through."
+  },
+  {
+    "Name": "Living Root",
+    "Description": "When defeated, becomes a height 2 object."
+  },
+  {
+    "Name": "Living Statue",
+    "Description": "Cannot dash. When defeated, becomes a height 2 piece of terrain.",
+    "DashMultiplier": 0
+  },
+  {
+    "Name": "Lone Wolf",
+    "Description": "When ending their turn with no enemies or allies in range 2, gains stealth."
+  },
+  {
+    "Name": "Low Profile",
+    "Description": "Has evasion against ranged attacks. (Roll a d6 when targeted by an attack. On a 4+, the attack automatically misses. Check before the attack roll)"
+  },
+  {
+    "Name": "Lucky Feather",
+    "Description": "When taking damage that would reduce this character to 0 hp, roll 1d6. On a 3+, become immune to all damage from the triggering ability. True strike bypasses this effect."
+  },
+  {
+    "Name": "Lumbering",
+    "Description": "Cannot dash. Only takes slow turns.",
+    "DashMultiplier": 0
+  },
+  {
+    "Name": "Martyrdom",
+    "Description": "When defeated, grants vigor 1 to all allies in range 2."
+  },
+  {
+    "Name": "Master of Strategy",
+    "Description": "Before combat starts, may move every character to any space up to 2 spaces in any direction from their starting location."
+  },
+  {
+    "Name": "Mob",
+    "Description": "This character doesn't trigger slay effects.",
+    "EncounterBudget": 0.2
+  },
+  {
+    "Name": "Monster Riding",
+    "Description": "This character starts combat riding a trained monster, and can also mount it as an action or by spending its standard move. While riding, the rider shares space with the monster and moves when it moves. If the two are separated, this effect ends until the monster is remounted.",
+    "Summons": {
+      "Name": "Tame Monster",
+      "Tags": [ "Size 1", "20 HP", "Defense 6", "10 VIT" ],
+      "SummonActions": "During the rider's turn, can dash 4, then either shove a character 1 space or deal 2 damage to them."
+    }
+  },
+  {
+    "Name": "Nimble",
+    "Description": "Has evasion unless suffering from a status. (Roll a d6 when targeted by an attack. On a 4+, the attack automatically misses. Check before the attack roll)"
+  },
+  {
+    "Name": "Noxious Censer",
+    "Description": "The priest has Aura 2. Poisoned foes in the aura get +1 curse on attacks and saves."
+  },
+  {
+    "Name": "Open Rift",
+    "Description": "Create a pit under any character hit by the wraith's attacks."
+  },
+  {
+    "Name": "Overdrive [X]",
+    "Description": "All attacks after round [X] are critical hits on hit (+[D])."
+  },
+  {
+    "Name": "Overwhelming Stench",
+    "Description": "Aura 1. Attackers in the aura gain +1 curse on attacks, and any character that ends their turn in the aura must save or become slow and poisoned. Poisoned characters treat the area as dangerous terrain."
+  },
+  {
+    "Name": "Pack Tactics",
+    "Description": "Gains +1 boon on attacks if an ally is adjacent to their target."
+  },
+  {
+    "Name": "Pack Tactics (Improved)",
+    "DisplayName": "Pack Tactics",
+    "Description": "Gains +1 boon on attacks if an ally is adjacent to their target and bonus damage for every ally adjacent to their target."
+  },
+  {
+    "Name": "Painwrack",
+    "Description": "Characters that collide with this character take [fray] damage."
+  },
+  {
+    "Name": "Partner Work",
+    "Description": "Aura 2. When this character dashes, an ally in the aura may also dash 1."
+  },
+  {
+    "Name": "Phase Slip",
+    "Description": "After being damaged for the first time on any turn, become intangible until the start of the following turn."
+  },
+  {
+    "Name": "Phasing",
+    "Description": "Can ignore obstruction and pass through, but not end your turn in, terrain or characters."
+  },
+  {
+    "Name": "Pixie Dust",
+    "Description": "Aura 2. Allies that start their turn in the aura gain flying until the end of their turn."
+  },
+  {
+    "Name": "Primal Strength",
+    "Description": "This character's abilities have Collide: Character takes [fray] damage and is dazed."
+  },
+  {
+    "Name": "Ranged Master",
+    "Description": "Ignores ranged attack penalties for adjacent foes."
+  },
+  {
+    "Name": "Regeneration",
+    "Description": "Gain vigor 1 at the end of your turn."
+  },
+  {
+    "Name": "Regenerator",
+    "Description": "Starts combat with vigor 1 and Regeneration. Starts combat bloodied. (Gain vigor 1 as the end of their turn)."
+  },
+  {
+    "Name": "Resistance",
+    "Description": "Take 1/2 damage, rounded up."
+  },
+  {
+    "Name": "Rook",
+    "Description": "Grants cover to adjacent allies."
+  },
+  {
+    "Name": "Roppo",
+    "Description": "The first time on any turn a foe takes an action in range 2, the Yaman may dash 2, then deal 2 damage to an adjacent foe."
+  },
+  {
+    "Name": "Saddle Up",
+    "Description": "An adjacent ally can mount or dismount this character as a free action, entering and sharing its space. Whiled mounted, attacks take +1 curse against a rider. Allies can start any combat already riding this character. This character has room for two size 1 characters. If this character is defeated, characters dismount."
+  },
+  {
+    "Name": "Salty",
+    "Description": "When this character deals self damage, they gain vigor 1 after taking the damage."
+  },
+  {
+    "Name": "Shambling",
+    "Description": "Cannot dash.",
+    "DashMultiplier": 0
+  },
+  {
+    "Name": "Shelter",
+    "Description": "+1 boon on saves."
+  },
+  {
+    "Name": "Size [X]",
+    "Description": "This character takes up a [X] by [X] area of spaces."
+  },
+  {
+    "Name": "Skirmish",
+    "Description": "Can move diagonally, and dash moves full speed.",
+    "DashMultiplier": 1
+  },
+  {
+    "Name": "Slam",
+    "Description": "This character's abilities have Collide: Character is dazed. Dazed characters also take [D]+[fray]."
+  },
+  {
+    "Name": "Slime Trail",
+    "Description": "Aura 1. Any foe that starts their turn in the aura slips and is shoved 2. Collide: Foe takes [fray] damage."
+  },
+  {
+    "Name": "Slimy Skin",
+    "Description": "When damaged, may dash 1 as an effect."
+  },
+  {
+    "Name": "Slip",
+    "Actions": [
+      {
+        "Name": "Slip",
+        "ActionCost": 1,
+        "Description": "Remove self from the battlefield, then return within 1 space."
+      }
+    ]
+  },
+  {
+    "Name": "Slippery",
+    "Description": "Has evasion while bloodied. (Roll a d6 when targeted by an attack. On a 4+, the attack automatically misses. Check before the attack roll)"
+  },
+  {
+    "Name": "Sneak Attack",
+    "Description": "Attacks from Stealth are critical hits (+[D])."
+  },
+  {
+    "Name": "Spirit Shift",
+    "Description": "This character is intangible and gains phasing while moving."
+  },
+  {
+    "Name": "Spiritfeed",
+    "Description": "All this character's abilities gain slay: gain +1 action."
+  },
+  {
+    "Name": "Stench",
+    "Description": "Melee attacks against this character have +1 curse. Characters starting their turns in an adjacent space are poisoned. Poisoned foes treat the area as dangerous terrain."
+  },
+  {
+    "Name": "Stoneskin",
+    "Description": "Has resistance while adjacent to an object. (Take 1/2 damage, rounded up)"
+  },
+  {
+    "Name": "Street Fighter",
+    "Description": "Has resistance while adjacent to two or more foes. (Take 1/2 damage, rounded up)"
+  },
+  {
+    "Name": "Strength",
+    "Description": "This character's abilities have Collide: [fray] damage and foe is dazed. Dazed foes take [D]+[fray] instead."
+  },
+  {
+    "Name": "Sturdy",
+    "Description": "Can't be stunned or dazed, and reduce the distance of all shoves by 1."
+  },
+  {
+    "Name": "Stutter",
+    "Description": "Once a turn, after a foe takes an action in range 2, this character may teleport 1 and deal 2 damage to an adjacent foe."
+  },
+  {
+    "Name": "Summon",
+    "Description": "Natals disappear when reduced to 0 hp and don't cause engagement."
+  },
+  {
+    "Name": "Surreality",
+    "Description": "Starts combat bloodied, but with vigor 1."
+  },
+  {
+    "Name": "Swarm",
+    "Description": "Has resistance to any damage not from area effects or attacks. Does not provide obstruction, but characters treat its space as difficult terrain. (Take 1/2 damage, rounded up)"
+  },
+  {
+    "Name": "Swarm Shroud",
+    "Description": "Aura 2. Ranged attacks against this character and allies in the aura gain +1 curse, and foes that start their turn in the aura take 1 piercing damage."
+  },
+  {
+    "Name": "Tactics Aura",
+    "Description": "Aura 2. Foes in the aura take +1 curse on saves. Foes suffering from a status in the aura take bonus damage from all sources."
+  },
+  {
+    "Name": "Terrain Expert",
+    "Description": "Ignores movement, damage, and attack penalties from all kinds of terrain."
+  },
+  {
+    "Name": "Terrainwalking",
+    "Description": "Ignores movement penalties for height and terrain."
+  },
+  {
+    "Name": "The Old Blood",
+    "Description": "Immune to blights."
+  },
+  {
+    "Name": "Time Lock",
+    "Description": "After taking damage, this character becomes intangible until the start of the following turn."
+  },
+  {
+    "Name": "True Enrage",
+    "Description": "Unstoppable and +1 action while bloodied. (Immune to all statuses. Can't be immobilized, shoved, or teleported by foes)"
+  },
+  {
+    "Name": "Tumbling",
+    "Description": "Moving up terrain costs no movement. Can phase through characters and doing so costs 0 movement."
+  },
+  {
+    "Name": "Tunnel",
+    "Description": "When this character ends its turn, create a pit underneath it."
+  },
+  {
+    "Name": "Two Heads",
+    "Description": "Saves at the start and the end of its turn to end conditions or other effects."
+  },
+  {
+    "Name": "Unstable",
+    "Description": "When defeated, explodes in a blast 1 explosion centered on this cgaracter. Characters inside take [D] piercing damage, twice, as an area effect. This character is then removed from the battlefield. Create a pit in the area it vacated."
+  },
+  {
+    "Name": "Unstoppable",
+    "Description": "Immune to all statuses. Can't be immobilized, shoved, or teleported by foes."
+  },
+  {
+    "Name": "Unstable Reality",
+    "Description": "1/turn, teleports 1 when damaged by an ability."
+  },
+  {
+    "Name": "Vengeance",
+    "Description": "When bloodied, next attack becomes a critical hit on hit (+[D])."
+  },
+  {
+    "Name": "Venom Blade",
+    "Description": "Attacks inflict poisoned, ignore vigor, and deal bonus damage against bloodied characters."
+  },
+  {
+    "Name": "Wayfinding",
+    "Description": "Immune to terrain effects and difficult terrain."
+  },
+  {
+    "Name": "Zipline Dismount",
+    "Description": "Characters mounted on this character can fly 5 and dismount it as free action."
+  }
+]

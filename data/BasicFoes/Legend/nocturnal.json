@@ -1,0 +1,78 @@
+{
+  "Name": "Nocturnal",
+  "Inherits": "Legendary Skirmisher",
+  "Type": "Foe",
+  "HP": 24,
+  "UsesTemplate": true,
+  "Traits": "Hunter in the Mist",
+  "Actions": [
+    {
+      "Name": "The Horror",
+      "ActionCost": 1,
+      "Tags": [ "melee attack" ],
+      "Hit": "[D]+[fray] and shove 1.",
+      "Miss": "[fray].",
+      "Effects": "May teleport up to 3 spaces before or after the attack."
+    },
+    {
+      "Name": "Rake",
+      "ActionCost": 1,
+      "Tags": [ "line 4", "repeatable" ],
+      "AreaEffect": "Foes in the area take [fray] damage. The Nocturnal may teleport to any space in the area after this action resolves."
+    },
+    {
+      "Name": "Disappear",
+      "ActionCost": 2,
+      "Tags": [ "1/round" ],
+      "Description": "Remove the Nocturnal from the battlefield and place them in any free space."
+    }
+  ],
+  "PhasesDescription": "Phase change triggers at the start of each round. The Nocturnal starts in phase II and can shift up or down one phase (so it can't shift from I to III for example). It must shift phases.",
+  "Phases": [
+    {
+      "Traits": "Clinging Mists",
+      "Actions": [
+        {
+          "Name": "Paranoia",
+          "ActionCost": 1,
+          "Tags": [ "multimark", "1/round" ],
+          "Description": "A foe in range 6 is marked. While marked, they cannot target allies with abilities and effects. A character can save at the end of their turn to clear this mark, ending it on a success."
+        },
+        {
+          "Name": "Amygdala",
+          "ActionCost": 1,
+          "Tags": [ "1/round" ],
+          "Description": "All foes in range 3 are forced to flee. They must save or be shoved 2 spaces in a direction of the Nocturnal's choice. At the start of their next turn, even if they saved successfully, the Nocturnal can shove them 2 in a direction of its choice."
+        }
+      ]
+    },
+    {
+      "Traits": "Blood Drain",
+      "Actions": [
+        {
+          "Name": "Great Fell Shot",
+          "ActionCost": 1,
+          "Tags": [ "2/round" ],
+          "Description": "Mark two unoccupied spaces in range 8.",
+          "Effects": "Characters that enter that space or start their turn there are struck by a projectile, taking 3 damage twice, and ending this effect. This area lasts until triggered."
+        }
+      ]
+    },
+    {
+      "Actions": [
+        {
+          "Name": "Embrace",
+          "ActionCost": 2,
+          "Tags": [ "1/round" ],
+          "Description": "An adjacent foe must save. On a successful save, they are shoved 1 and take [D]+[fray]. On a failed save, they take divine damage equal to 50% of their max hp. Either way, this attack can't take them below 1 hp."
+        },
+        {
+          "Name": "Open Wound",
+          "ActionCost": 1,
+          "Tags": [ "multimark", "1/round" ],
+          "Description": "A foe in range 4 is marked. While marked, when that foe is shoved, they take [fray] damage. A foe can save against this effect at the end of their turn, ending the mark."
+        }
+      ]
+    }
+  ]
+}

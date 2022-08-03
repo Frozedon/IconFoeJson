@@ -1,0 +1,75 @@
+[
+  {
+    "Name": "Acid Burst (Latch)",
+    "DisplayName": "Acid Burst",
+    "Description": "When this character or its host takes damage, all adjacent foes take 1 piercing damage. Increase this damage to 2 piercing against poisoned characters. This effect can trigger any number of times a round."
+  },
+  {
+    "Name": "Aquatic",
+    "Description": "Can move through all spaces of its own deep water areas normally, and moving through those spaces costs 0 movement for it."
+  },
+  {
+    "Name": "Bubble Barrier",
+    "Description": "The fish and its host have cover from all directions. Any foe that ends its turn adjacent to the host is shoved 1 away from it."
+  },
+  {
+    "Name": "Chitinous Coil",
+    "Description": "The Gigantapede occupies an arc 6 space instead of a normal space for its size. Only its first and last space are attackable or can be used to make attacks or abilities, but its entire body causes obstruction and engagement. Keep track of which is the head, and which is the tail. Only one space can be hit if both are included in the area of an attack or ability (attacker chooses which). When it moves, move its head, then rearrange its body in any valid configuration."
+  },
+  {
+    "Name": "Cursed Deeps",
+    "Description": "When it enters the battlefield, creates four terrain effects, blast 1 areas of cursed deep water. The center space is a pit, and all other spaces are difficult terrain. None can be placed within range 4 of each other."
+  },
+  {
+    "Name": "Dart",
+    "Description": "At the start of its turn, the land shark shoves itself as far as possible towards the closest foe. If the closest foe is standing on an object, as soon as the shark would move onto the object's space, it collides with it and stops moving."
+  },
+  {
+    "Name": "Filter",
+    "Description": "The fish and its host are immune to blights."
+  },
+  {
+    "Name": "Hyperactive",
+    "Description": "When overdrive triggers, this beast gains +1 action for the rest of combat."
+  },
+  {
+    "Name": "Hyperactive (Improved)",
+    "Description": "When overdrive triggers, this beast gains +1 action and removes all recharges from its abilities for the rest of combat."
+  },
+  {
+    "Name": "Iron Scales",
+    "Description": "When either the head or the tail of the Gigantapede takes damage from an ability, after that ability resolves, that body part gains resistance until the other body part takes damage from an ability. This effect swaps between head and tail indefinitely."
+  },
+  {
+    "Name": "Landswim",
+    "Description": "The shark has evasion and phasing. The shark cannot move through objects. If the shark collides with an object, it is stunned and loses this trait until the end of its next turn."
+  },
+  {
+    "Name": "Latch",
+    "Description": "Starts combat sharing the same space as another ally the same size or larger. While latched on, can't move, but instead moves with its host. Being moved out of its host's space end this effect. If the Symbiote is shoved or teleported away, it can pass a save to avoid the effect and become immune to shove or teleports until the end of the current turn. Can latch on to a new adjacent allied character with 1 action or its standard move."
+  },
+  {
+    "Name": "Latch Enrage",
+    "Description": "If latched on and enraged, also grants +1 action to its host. This doesn't stack with a host's enrage."
+  },
+  {
+    "Name": "Latch Defiance",
+    "Description": "While latched on to a character, that character gains defiance at the start of each of its turns."
+  },
+  {
+    "Name": "Lure",
+    "Description": "At the start of its turn as a free action, the Fisher puts a lure out in a space within range 3 of its location, or relocates its lure to a new space in that range if it's already active. The lure is a size 1 intangible summon."
+  },
+  {
+    "Name": "Malicious Latch",
+    "Description": "Can latch on to an adjacent foe as an action or by using its standard move. A foe can pass a save to avoid this effect, and can repeat the save at the end of their turns, ending it on a success and shoving the ape into a free adjacent space. While latched on to a foe, the foe is pacified+."
+  },
+  {
+    "Name": "Perfect Camouflage",
+    "Description": "The Fisher is intangible unless there's a character adjacent to its Lure."
+  },
+  {
+    "Name": "Rolling Boulder",
+    "Description": "Rampage goes 4 spaces, ignores all movement penalties, and the lizard can phase through characters during it."
+  }
+]

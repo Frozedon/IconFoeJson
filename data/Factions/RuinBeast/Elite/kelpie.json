@@ -1,0 +1,35 @@
+{
+  "Name": "Kelpie",
+  "Inherits": [ "Ruin Beast", "Elite", "Skirmisher" ],
+  "Type": "Foe",
+  "Vitality": 8,
+  "Traits": [ "Cursed Deeps", "Aquatic" ],
+  "Interrupts": {
+    "Name": "Adhere",
+    "Count": 1,
+    "Trigger": "When hit by a melee attack from an adjacent foe.",
+    "Effects": "That foe must make a save or be adhered to the kelpie's hide. While adhered, the foe cannot move more than 1 space from the kelpie, and when the kelpie moves or teleports, they are shoved with it, mirroring its movement and phasing through characters and obstacles. They can save to repeat this effect at the end of their turn. It also ends if they are moved out of adjacency for any reason."
+  },
+  "Actions": [
+    {
+      "Name": "Savage Fang",
+      "ActionCost": 1,
+      "Tags": [ "melee attack", "+1 boon", "multimark" ],
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "Effects": "Increase damage to 2[D]+[fray] against characters inside its water zones or adhered to the Kelpie."
+    },
+    {
+      "Name": "Waterspout",
+      "ActionCost": 1,
+      "Tags": "repeatable",
+      "Description": "The Kelpie spurts fetid water, blinding a foe in range 6. Blinded foes take [fray] damage."
+    },
+    {
+      "Name": "Sink",
+      "ActionCost": 1,
+      "Recharge": 6,
+      "Description": "The Kelpie disperses into seaweed and water and reappears in any space inside one of its deep water zones, teleporting, then gaining evasion until the start of its next turn."
+    }
+  ]
+}

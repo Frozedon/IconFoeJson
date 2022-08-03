@@ -1,0 +1,23 @@
+{
+  "Name": "Snork",
+  "Inherits": "Slab",
+  "Type": "Foe",
+  "Chapter": 2,
+  "Traits": [ "Sturdy", "Defiance" ],
+  "Actions": [
+    {
+      "Name": "Intimidate",
+      "ActionCost": 1,
+      "Tags": "mark",
+      "Description": "The Snork marks a foe outside of range 6.",
+      "Mark": "Each time that foe takes an action while marked, the Snork may dash 2 spaces towards the foe, shoving characters in their path out of the way. If the marked character starts their turn adjacent to the Snork, they become stunned and this mark ends."
+    },
+    {
+      "Name": "Flame Blast",
+      "ActionCost": 2,
+      "Tags": "close blast 2",
+      "Recharge": 6,
+      "AreaEffect": "Characters must save or take [D]+[fray] and be shoved 2, or [fray] and shove 1 on a failed save."
+    }
+  ]
+}

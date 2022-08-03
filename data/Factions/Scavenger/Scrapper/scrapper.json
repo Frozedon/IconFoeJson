@@ -1,0 +1,59 @@
+{
+  "Name": "Scrapper",
+  "Inherits": [ "Scavenger", "Heavy" ],
+  "Actions": [
+    {
+      "Name": "One-Two",
+      "ActionCost": 1,
+      "Tags": [ "melee attack", "true strike" ],
+      "Hit": "Deal [fray] damage twice.",
+      "Miss": "[fray]."
+    },
+    {
+      "Name": "That One!",
+      "ActionCost": 1,
+      "Tags": "mark",
+      "Description": "A foe in range 5 is marked. While marked, they count as holding a valuables token."
+    },
+    {
+      "Name": "Uppercut",
+      "ActionCost": 1,
+      "Description": "An adjacent character is dazed. If that character has a valuables token, they also take [fray] damage."
+    },
+    {
+      "Name": "Haymaker",
+      "ActionCost": 2,
+      "Tags": [ "true strike", "greed" ],
+      "Description": "An adjacent foe must save or take [D]+[fray] and become stunned and winded, or just winded on a successful save.",
+      "CustomComponents": {
+        "Name": "Greed",
+        "Description": "1 action."
+      }
+    }
+  ],
+  "ConditionalAbilities": [
+    {
+      "Chapter": 2,
+      "Actions": {
+        "Name": "No Nonsense",
+        "ActionCost": 2,
+        "Tags": "stance",
+        "Description": "Can only be used while bloodied. The Scrapper gains vigor 1, then becomes unstoppable and gains counter while in this stance."
+      }
+    },
+    {
+      "Chapter": 3,
+      "RemoveActions": "No Nonsense",
+      "Actions": {
+        "Name": "No Nonsense",
+        "ActionCost": 2,
+        "Tags": "stance",
+        "Description": "Can only be used while bloodied. The Scrapper gains vigor 1, then becomes unstoppable and gains counter while in this stance.",
+        "CustomComponents": {
+          "Name": "Greed",
+          "Description": "Free action."
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+[
+  {
+    "Name": "Bravado",
+    "Actions": [
+      {
+        "Name": "Bravado",
+        "ActionCost": 0,
+        "Description": "This character takes damage equal to 50% of their max hp, but immediately gains +1 action. If this would defeat them, it reduces them to 1 hp instead."
+      }
+    ]
+  },
+  {
+    "Name": "Camaraderie",
+    "Description": "+1 boon on attacks and saves for every adjacent ally."
+  },
+  {
+    "Name": "Great Faith",
+    "Description": "If the Chronicler ends their turn with any un-used actions, they can clear all statuses and blight affecting them. If they are bloodied, they also gain vigor 1."
+  },
+  {
+    "Name": "Stack Dice",
+    "Description": "Once a combat, when the Churner would roll a random d6 as part of an ability, they can choose which number to roll.",
+    "Actions": {
+      "Name": "Stack Dice Move",
+      "ActionCost": 1,
+      "Description": "Roll 1d6 and move (not dash) that many spaces."
+    }
+  },
+  {
+    "Name": "Strive",
+    "Actions": [
+      {
+        "Name": "Strive",
+        "ActionCost": 0,
+        "Tags": [ "1/combat" ],
+        "Description": "Until the start of their next turn, the Guilder increases the distance of any dash, teleport or flight by +3."
+      }
+    ]
+  }
+]

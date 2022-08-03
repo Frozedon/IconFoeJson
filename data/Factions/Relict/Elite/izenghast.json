@@ -1,45 +1,14 @@
 {
   "Name": "Izenghast",
-  "Inherits": [ "Relict", "Elite" ],
-  "Type": "UniqueFoe",
-  "Group": "Relict",
-  "UsesClass": "Skirmisher",
+  "Inherits": [ "Relict", "Elite", "Skirmisher" ],
+  "Type": "Foe",
   "Chapter": 2,
-  "Vitality": 8,
-  "HPMultiplier": 8,
-  "Speed": 5,
-  "Dash": 5,
-  "Defense": 12,
-  "Armor": 0,
-  "FrayDamage": 3,
-  "DamageDie": 10,
-  "Traits": [
-    {
-      "Name": "Skirmisher",
-      "Description": "Can move diagonally and dash action is full speed."
-    },
-    {
-      "Name": "Dodge",
-      "Description": "Immune to damage from successful saves, area effects, or missed attacks."
-    },
-    {
-      "Name": "Surreality",
-      "Description": "Starts at 50% hp with vigor 1."
-    },
-    {
-      "Name": "Stuttering Horror",
-      "Description": "The Izenghast teleports 1 in any direction after a foe takes an action."
-    },
-    {
-      "Name": "Ethereal",
-      "Description": "Phasing, and has evasion unless there's an adjacent foe."
-    }
-  ],
+  "Traits": [ "Surreality", "Stutter", "Ethereal (Resistance)" ],
   "Actions": [
     {
       "Name": "Soul Rip",
       "ActionCost": 1,
-      "Tags": [ "Divine melee attack", "Line 4", "+1 boon" ],
+      "Tags": [ "melee attack", "line 4", "+1 boon", "divine" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
       "AreaEffect": "[fray]."
@@ -47,14 +16,18 @@
     {
       "Name": "Life Drain",
       "ActionCost": 1,
-      "Description": "A foe in range 3 must save. On a failed save, they lose all vigor, and the Izenghast gains vigor 1. If that foe has no vigor, they take [D] on a successful save, or 2[D] on a failed save."
+      "Effects": "A foe in range 3 takes 2 damage, ignoring vigor. If they are bloodied, they take 2 damage twice instead, ignoring vigor."
     },
     {
       "Name": "Shriek",
+      "ActionCost": 1,
+      "Description": "All foes in range 2 must save or be forced to flee, shoving them 3 spaces in a direction of the Izenghast's choice, or 1 space on a successful save."
+    },
+    {
+      "Name": "Soul Drain",
       "ActionCost": 2,
-      "Recharge": 5,
-      "Tags": [ "interrupt" ],
-      "Description": "The Izenghast releases a horrible shriek, a close blast 1 area effect. Characters in the area must save or take 4[D], or 2[D] on a successful save. Reduce this damage by [D] for every character past the first in the area. The Izenghast can take this action as an interrupt if defiance triggers, even if it hasn't recharged."
+      "Recharge": 6,
+      "Description": "The Izenghast reduces an adjacent character to 25% of their maximum hp, then gains vigor 1. When the ghasts's vigor is broken, that character recovers 50% of their maximum hp, healing it."
     }
   ]
 }

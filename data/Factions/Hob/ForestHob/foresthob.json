@@ -1,0 +1,69 @@
+{
+  "Name": "Forest Hob",
+  "Inherits": [ "Hob", "Heavy" ],
+  "Interrupts": {
+    "Name": "Bounce", 
+    "Count": 1,
+    "Trigger": "This hob or an adjacent ally takes damage from an adjacent foe.",
+    "Effects": "That foe is shoved 1.",
+    "Collide": "Character takes [D]+[fray] and is dazed."
+  },
+  "Actions": [
+    {
+      "Name": "Pummel",
+      "ActionCost": 1,
+      "Tags": "melee attack",
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "Effects": "Attack target is dazed. Dazed foes take bonus damage.",
+      "Charge": "All foes in range 2 also take [fray] damage."
+    },
+    {
+      "Name": "Stone Toss",
+      "ActionCost": 1,
+      "Effects": "A foe in range 3 takes 2 damage and is shoved 1, then create a height 1 boulder object next to them.",
+      "Charge": "Range 6."
+    },
+    {
+      "Name": "Twist Leg",
+      "ActionCost": 1,
+      "Tags": "mark",
+      "Description": "A foe in range 3 is marked.",
+      "Mark": "While marked, each time that foe is shoved or gains a new status, they take 2 damage."
+    },
+    {
+      "Name": "Seismic Slam",
+      "ActionCost": 1,
+      "Tags": "end turn",
+      "Description": "The Hob ends its turn and gains",
+      "Delay": "it's next turn must be slow. At the start of that turn, all adjacent foes must save or take 2[D]+[fray] and be shoved 1, or [D]+[fray] on a successful save.",
+      "PostCollide": "Foe is stunned."
+    }
+  ],
+  "ConditionalAbilities": [
+    {
+      "Chapter": 2,
+      "RemoveActions": "Seismic Slam",
+      "Actions": {
+        "Name": "Seismic Slam",
+        "ActionCost": 1,
+        "Tags": [ "end turn", "delay" ],
+        "Description": "The Hob ends its turn and gains",
+        "Delay": "it's next turn must be slow. At the start of that turn, all adjacent foes must save or take 2[D]+[fray] and be shoved 1, or [D]+[fray] on a successful save. Deals bonus damage for every object adjacent to the hob.",
+        "PostCollide": "Foe is stunned."
+      }
+    },
+    {
+      "Chapter": 3,
+      "RemoveActions": "Seismic Slam",
+      "Actions": {
+        "Name": "Seismic Slam",
+        "ActionCost": 1,
+        "Tags": [ "end turn", "delay" ],
+        "Description": "The Hob ends its turn and gains",
+        "Delay": "it's next turn must be slow. At the start of that turn, all foes in range 2 must save or take 2[D]+[fray] and be shoved 1, or [D]+[fray] on a successful save. Deals bonus damage for every object in range 2 of the hob.",
+        "PostCollide": "Foe is stunned."
+      }
+    }
+  ]
+}

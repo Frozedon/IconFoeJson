@@ -1,0 +1,46 @@
+{
+  "Name": "Collector",
+  "Inherits": "Junker",
+  "Type": "Foe",
+  "Chapter": 2,
+  "Traits": "Great Junk Armor",
+  "Actions": [
+    {
+      "Name": "Rummage",
+      "ActionCost": 1,
+      "Description": "The collector goes through their collection to find something useful. Objects can be thrown at a space or character in range 6 as part of this action.",
+      "Rolls": [
+        {
+          "Values": 1,
+          "Name": "Grenade",
+          "Description": "Blast 1 area effect, [fray] damage."
+        },
+        {
+          "Values": 2,
+          "Name": "Jar of Hornets",
+          "Description": "Character takes 1 piercing damage 5 times."
+        },
+        {
+          "Values": 3,
+          "Name": "Arkentech Cube",
+          "Description": "Rapidly expands to creates a height 1 destructible object (10 HP). If created under a character, pushes them up."
+        },
+        {
+          "Values": 4,
+          "Name": "Gaudy Hat",
+          "Description": "Put the gaudy hat on a character. A character wearing a hat is vulnerable+. If an attack hits that character, they can throw it at the attacker, forcing the attacker to wear it."
+        },
+        {
+          "Values": 5,
+          "Name": "Demon Bone",
+          "Description": "Creates a pit. Characters that end their turn in the pit take 3 piercing damage."
+        },
+        {
+          "Values": 6,
+          "Name": "Arkentech Portal Device",
+          "Description": "Creates two spaces, both within range 6 of each other. Characters can spend 1 space of movement to teleport from one to the other, as long as the other end is unoccupied."
+        }
+      ]
+    }
+  ]
+}

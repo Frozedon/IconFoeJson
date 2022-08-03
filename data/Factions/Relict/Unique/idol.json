@@ -1,0 +1,27 @@
+{
+  "Name": "Idol",
+  "Inherits": [ "Relict", "Heavy" ],
+  "Type": "Foe",
+  "Traits": [ "Sturdy", "Size 2", "Heavy Armor", "Living Statue", "Automata" ],
+  "Actions": [
+    {
+      "Name": "Heavy Mace",
+      "ActionCost": 1,
+      "Tags": [ "melee attack 2", "+1 curse" ],
+      "Hit": "2[D]+[fray].",
+      "Miss": "[fray].",
+      "Effects": "Loses curse against electrified foes."
+    },
+    {
+      "Name": "Eye Beams",
+      "ActionCost": 1,
+      "Tags": [ "range 4", "arc 3" ],
+      "AreaEffect": "All foes are shoved 1 and take [fray] damage."
+    },
+    {
+      "Name": "Arm Sweep",
+      "ActionCost": 1,
+      "Description": "All adjacent foes are shoved 1 and dazed. Dazed foes also take [fray] damage."
+    }
+  ]
+}

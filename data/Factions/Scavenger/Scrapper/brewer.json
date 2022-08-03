@@ -1,0 +1,44 @@
+{
+  "Name": "Brewer",
+  "Inherits": "Scrapper",
+  "Type": "Foe",
+  "Chapter": 2,
+  "Actions": [
+    {
+      "Name": "Throw Bottle",
+      "ActionCost": 1,
+      "Tags": [ "range attack 5", "true strike" ],
+      "Hit": "[D]+[fray] and dazed.",
+      "Miss": "[fray]."
+    },
+    {
+      "Name": "Battle Brew",
+      "ActionCost": 0,
+      "Tags": [ "special recharge" ],
+      "Description": "The Brewer swigs a battle brew. Roll 1d6. The brew has random effects. When the Brewer picks up a valuables token, this ability recharges. Duplicate results instead move the result up by 1 category (from 2-3 to 4-5 for example).",
+      "Rolls": [
+        {
+          "Values": 1,
+          "Description": "Brew explodes in a blast 1 area effect centered on the brewer, dealing [D]+[fray] with true strike to everyone (including the Brewer!)"
+        },
+        {
+          "Values": [ 2, 3 ],
+          "Description": "Brewer gains counter for the rest of combat. Re-roll if they already have counter."
+        },
+        {
+          "Values": [ 4, 5 ],
+          "Description": "Brewer become sturdy for the rest of combat and gains vigor 1."
+        },
+        {
+          "Values": 6,
+          "Description": "Brewer becomes unstoppable for the rest of combat and gains vigor 1."
+        },
+        {
+          "Values": 7,
+          "Plus": true,
+          "Description": "Brewer's attacks are critical hits for the rest of combat."
+        }
+      ]
+    }
+  ]
+}

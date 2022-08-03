@@ -1,0 +1,46 @@
+{
+  "Name": "Brawler Beast",
+  "Inherits": [ "Ruin Beast", "Heavy" ],
+  "Traits": [ "Size 2", "Primal Strength" ],
+  "Actions": [
+    {
+      "Name": "Smash",
+      "ActionCost": 1,
+      "Tags": [ "melee attack", "true strike" ],
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "Effects": "Shove 1. If either foe or this character is bloodied, increase shove to 3."
+    },
+    {
+      "Name": "Rampage",
+      "ActionCost": 1,
+      "Tags": "repeatable",
+      "Effects": "The beast dashes up to 2 spaces. When it ends this movement, adjacent foes take 2 damage and is shoved 1."
+    },
+    {
+      "Name": "Charge",
+      "ActionCost": 1,
+      "Recharge": 4,
+      "Tags": "end turn",
+      "Effects": [
+        "The beast chooses a foe in range 2. At the end of that foe's next turn, the beast dashes up to 5 spaces towards that foe, phasing through characters. Characters the beast passes through are shoved 1 to either side and take [fray] damage. If the beasts ends this movement adjacent to their foe, that foe must save or take 2[D]+[fray] and become stunned, or [D]+[fray] only on a successful save.",
+        "This ability has no recharge if the beast is bloodied."
+      ]
+    }
+  ],
+  "ConditionalAbilities": [
+    {
+      "Chapter": 2,
+      "Actions": {
+        "Name": "Bellow",
+        "ActionCost": 0,
+        "Description": "A foe in range 2 is shoved 1. If the beast is bloodied, all foes in range 2 are shoved 1 instead."
+      }
+    },
+    {
+      "Chapter": 3,
+      "RemoveTraits": "Enrage",
+      "Traits": "True Enrage"
+    }
+  ]
+}

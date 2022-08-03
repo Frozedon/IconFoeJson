@@ -1,0 +1,26 @@
+{
+  "Name": "Acrobat",
+  "Inherits": [ "Leggio", "Skirmisher" ],
+  "Type": "Foe",
+  "Traits": [ "Tumbling", "Partner Work" ],
+  "Actions": [
+    {
+      "Name": "Spinning Kick",
+      "ActionCost": 1,
+      "Tags": [ "melee attack" ],
+      "Description": "Repeat the following effect three times:",
+      "Effects": "Dash 1, then deal 2 damage to all adjacent foes. Must move in the same direction."
+    },
+    {
+      "Name": "Cartwheel",
+      "ActionCost": 1,
+      "Description": "The Acrobat dashes up to 3 spaces, then deals damage to an adjacent foe equal to the number of spaces it dashed."
+    },
+    {
+      "Name": "Acrobatics",
+      "ActionCost": 2,
+      "Tags": [ "stance" ],
+      "Description": "The acrobat takes a nimble stance. While in this stance, they gain evasion, and when targeted by an ability, may dash 1 after the ability resolves."
+    }
+  ]
+}

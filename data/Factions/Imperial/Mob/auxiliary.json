@@ -1,24 +1,19 @@
 {
   "Name": "Auxiliary",
   "Inherits": [ "Imperial", "Mob" ],
-  "Type": "UniqueFoe",
-  "Group": "Imperial",
-  "HP": 1,
+  "Type": "Foe",
   "Speed": 3,
-  "Dash": 2,
   "Defense": 8,
-  "Traits": [
-    {
-      "Name": "Receive Orders",
-      "Description": "When the Imperial starts its turn in range of a command aura, it recharges all its abilities."
-    }
-  ],
-  "Actions": [
-    {
-      "Name": "Arquebus",
-      "ActionCost": 2,
-      "Tags": [ "superheavy ranged attack 8" ],
-      "AutoHit": "Deal 1 damage. Increase to 2 damage if in the command aura of an imperial officer."
-    }
-  ]
+  "Interrupts": {
+    "Name": "Get Down Sir!",
+    "Count": 1,
+    "Trigger": "An adjacent ally takes damage from an ability.",
+    "Effects": "The Auxiliary is defeated. The ally gains resistance to that ability."
+  },
+  "Actions": {
+    "Name": "Arquebus",
+    "ActionCost": 2,
+    "Tags": "ranged attack 8",
+    "AutoHit": "Deal 1 piercing damage. Increase to 2 piercing if in an imperial command aura or if the target is burning."
+  }
 }

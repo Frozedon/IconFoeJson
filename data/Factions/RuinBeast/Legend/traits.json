@@ -1,0 +1,26 @@
+[
+  {
+    "Name": "Monstrous Heads",
+    "Description": "The Chimaera has three heads, chosen or rolled for from the following list, each unique. Each head has a unique set of powers, shares the chimaera's space, is separately targetable, and has its own hit points (1/3 of its max HP, rounded up). Statuses, marks, or other effects only affect the currently acting head. Only one head is targetable at a time, even if an attack has area of effect. Damage that 'spills over' on one head is lost.\nEach time the Chimaera takes a turn, it takes a turn with only one of its heads. A different head must act from the last head that acted, unless there is only one head left. The Chimaera is only defeated when all three heads are defeated."
+  },
+  {
+    "Name": "Feral Rage",
+    "Description": "The Chimaera's remaining head gains +1 action and becomes unstoppable. (Immune to all statuses. Can't be immobilized, shoved, or teleported by foes)"
+  },
+  {
+    "Name": "Lion's Pride",
+    "Description": "At the end of its turn, gains vigilance 1. Can intercept attacks against other heads."
+  },
+  {
+    "Name": "Bull's Fortitude",
+    "Description": "All heads are Sturdy while the Bull head is alive. (Immune to shove, dazed, and stunned)"
+  },
+  {
+    "Name": "Noxious Venom",
+    "Description": "While the Toad head is alive, all heads have counter. (Each time a foe deals damage to you with an ability, deal 2 damage back)"
+  },
+  {
+    "Name": "Goat's Shield",
+    "Description": "While the goat is alive, the Chimaera's heads have Aetherwall. (Gains automatic cover against all attacks that originate outside of range 2 from them. Cover grants resistance against ranged attacks, reducing it by 1/2)"
+  }
+]

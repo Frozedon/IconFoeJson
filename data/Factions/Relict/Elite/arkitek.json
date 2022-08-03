@@ -1,68 +1,48 @@
 {
   "Name": "Arkitek",
-  "Inherits": [ "Relict", "Elite" ],
-  "Type": "UniqueFoe",
-  "Group": "Relict",
-  "UsesClass": "Leader",
+  "Inherits": [ "Relict", "Elite", "Leader" ],
+  "Type": "Foe",
   "Chapter": 2,
-  "Vitality": 10,
-  "HPMultiplier": 8,
-  "Speed": 4,
-  "Dash": 2,
-  "Defense": 8,
-  "Armor": 1,
-  "FrayDamage": 4,
-  "DamageDie": 6,
-  "Traits": [
-    {
-      "Name": "Shelter",
-      "Description": "+1 boon on saves."
-    },
-    {
-      "Name": "Life Link",
-      "Description": "All foes with this trait on the battlefield share the same health pool."
-    },
-    {
-      "Name": "Stoneskin",
-      "Description": "While adjacent to a piece of created terrain, has resistance."
-    }
-  ],
+  "Traits": [ "Defiance", "Stoneskin" ],
   "Actions": [
-    {
-      "Name": "Diaga",
-      "ActionCost": 1,
-      "Description": "An ally in range 4 can save, ending a mark, status, or blight on a successful save. If that ally is bloodied, they also gain vigor 1."
-    },
     {
       "Name": "Deep Call",
       "ActionCost": 1,
       "Tags": [ "ranged attack 6" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
-      "Effect": "1/round, the Arkitek may summon a height 1 terrain piece under its target, pushing it up, and the target must save or become branded."
+      "Effects": "The Arkitek may summon a height 1 dungeon ruin object adjacent to its target, and the target must save or become branded."
     },
     {
       "Name": "Reconfigure",
       "ActionCost": 1,
-      "Description": "The Arkitek teleports any number of created terrain pieces in range 4 to any other free space in range 4. Characters standing on the terrain or trapped inside are also moved with them."
+      "Description": "The Arkitek teleports any number of objects created by it or another character in range 2 to any other free space in range 2. Characters standing on or trapped inside an object are moved with them."
     },
     {
       "Name": "Pillar of Iz",
       "ActionCost": 1,
       "Recharge": 5,
-      "Description": "The Arkitek summons a height 1 terrain piece in range 5, a pylon, with 10 hp. Characters on the terrain when it's created are pushed up on top of it. The Pylon has aura 1. Inside the aura, relict characters have resistance to all damage."
+      "Tags": "summon",
+      "Description": "The Arkitek summons a Pillar of Iz in range 5, pushing up characters if it's summoned under them.",
+      "Summons": {
+        "Name": "Pillar of Iz",
+        "IsObject": true,
+        "Tags": [ "Size 1", "Height 2", "Destructible (10 HP)" ],
+        "SummonEffects": "Aura 1. Inside the aura, relict characters have resistance."
+      }
     },
     {
       "Name": "Entombment of Iz",
       "ActionCost": 1,
       "Recharge": 6,
-      "Description": "The Arkitek entombs a character in a magical sarcophagus. While inside, they are winded+, have their speed reduced to 0 and are blinded. The Sarcophagus is a height 1 terrain piece with 10 hp that is destructible. Attacks automatically hit and it is destroyed when it reaches 0. It has resistance to damage from the character inside it."
-    }
-  ],
-  "SetupTraits": [
-    {
-      "Name": "Life Link",
-      "Description": "All foes with this trait on the battlefield share the same health pool, which is all their health added together. Dealing damage to health (not vigor) with any foe with this trait damages this common health pool. If new characters are summoned with life link, it adds to this health pool. Foes with life link are only defeated if the total pool is reduced to 0, and are all defeated at once. If defiance triggers, it triggers on all linked foes at once."
+      "Tags": "summon",
+      "Description": "The Arkitek entombs a character in a magical sarcophagus, summoning it in their space.",
+      "Summons": {
+        "Name": "Sarcophagus of Iz",
+        "IsObject": true,
+        "Tags": [ "Destructible (10 HP)" ],
+        "SummonEffects": "Shares space with a character. While inside, they take 3 piercing damage at the start of their turns and are immobile, but can otherwise be targeted normally. The Sarcophagus has resistance against the character inside it."
+      }
     }
   ]
 }

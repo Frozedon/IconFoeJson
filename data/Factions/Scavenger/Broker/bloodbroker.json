@@ -1,0 +1,18 @@
+{
+  "Name": "Blood Broker",
+  "Inherits": "Broker",
+  "Type": "Foe",
+  "Chapter": 2,
+  "Interrupts": {
+    "Name": "Sacrifice",
+    "Count": 1,
+    "Trigger": "An ally would take damage in range 6.",
+    "Effects": "This character takes damage equal to 25% of their HP. That ally gains vigor 1 before the damage is applied."
+  },
+  "Actions": {
+    "Name": "Open Wound",
+    "ActionCost": 1,
+    "Tags": "mark",
+    "Description": "An adjacent foe is marked. While marked, each time they dash (even as part of an ability), they take 2 piercing damage."
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "Name": "Brute",
+  "Inherits": "Heavy",
+  "Type": "Foe",
+  "UsesTemplate": true,
+  "Traits": "Size 2",
+  "Actions": [
+    {
+      "Name": "Backhand",
+      "ActionCost": 1,
+      "Tags": [ "melee attack", "true strike" ],
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "Effects": "Foe is dazed. If already dazed, they must save or become stunned."
+    },
+    {
+      "Name": "Hurl",
+      "ActionCost": 1,
+      "Tags": [ "repeatable" ],
+      "Description": "The Brute picks up an adjacent character or object and shoves them 3.",
+      "Collide": "Character is dazed."
+    }
+  ]
+}

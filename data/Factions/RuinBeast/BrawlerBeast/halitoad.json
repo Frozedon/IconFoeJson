@@ -1,0 +1,12 @@
+{
+  "Name": "Halitoad",
+  "Inherits": "Brawler Beast",
+  "Type": "Foe",
+  "Traits": "Stench",
+  "Actions": {
+    "Name": "Tongue Lash",
+    "ActionCost": 1,
+    "Description": "A foe in range 4 takes [fray] damage, then must save or become poisoned and shoved as far as possible towards the Halitoad. Poisoned characters fail the save.",
+    "Effects": "Range 8 while bloodied."
+  }
+}

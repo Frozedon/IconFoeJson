@@ -1,0 +1,13 @@
+{
+  "Name": "Ettin",
+  "Inherits": "Hirsinn",
+  "Type": "Foe",
+  "Traits": "Two Heads",
+  "Actions": {
+    "Name": "Ground Pound",
+    "ActionCost": 2,
+    "Tags": [ "close blast 1", "true strike" ],
+    "Recharge": 6,
+    "AreaEffect": "Foes take [D] and must save or become winded. The area then becomes difficult terrain for the rest of combat."
+  }
+}

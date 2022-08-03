@@ -1,0 +1,26 @@
+{
+  "Name": "Tick",
+  "Inherits": "Grub",
+  "Type": "Foe",
+  "Chapter": 3,
+  "Traits": "Rusty Blade",
+  "Interrupts": {
+    "Name": "Scuttle",
+    "Count": 1,
+    "Trigger": "A foe moves adjacent to the Tick.",
+    "Effects": "The Tick may dash 3. If they move into a pit, they may also then teleport to any other pit space."
+  },
+  "Actions": [
+    {
+      "Name": "Lick Knife",
+      "ActionCost": 0,
+      "Recharge": 6,
+      "Description": "The Tick's abilities all have slay: gain +1 action this turn."
+    },
+    {
+      "Name": "Leg Trap",
+      "ActionCost": 2,
+      "Description": "The Tick chooses a foe in a pit. That foe becomes immobile. That foe can choose to take [D]+[fray] damage from the Tick to break themselves out of this effect as a free action on their turn, or else can save against this effect at the end of their turn, ending it on a success. If the foe is shoved or teleported out of the space, they also take [D]+[fray] from the Tick, but this effect ends."
+    }
+  ]
+}

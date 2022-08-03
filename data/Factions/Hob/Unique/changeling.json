@@ -1,0 +1,57 @@
+{
+  "Name": "Changeling",
+  "Inherits": [ "Hob", "Skirmisher" ],
+  "Type": "Foe",
+  "Chapter": 3,
+  "Interrupts": {
+    "Name": "Mummery",
+    "Count": 1,
+    "Trigger": "The changeling is targeted by an ability.",
+    "Effects": "Swap places with an ally in range 3. The attack targets that ally instead."
+  },
+  "Actions": [
+    {
+      "Name": "Stab",
+      "ActionCost": 1,
+      "Tags": [ "melee attack" ],
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "Effects": "Attack is a critical hit and deals +[D] if made against a blinded or slow character."
+    },
+    {
+      "Name": "Lesser Mortal Mockery",
+      "ActionCost": 0,
+      "Description": "The changeling transforms its physical form into a brief mockery of the closest foe. The effects depend on the foe's class.",
+      "ListedItems": [
+        {
+          "Name": "Stalwart",
+          "Description": "The Changeling becomes sturdy until the start of its next turn."
+        },
+        {
+          "Name": "Vagabond",
+          "Description": "The Changeling gains evasion until the start of its next turn."
+        },
+        {
+          "Name": "Mendicant",
+          "Description": "The Changeling may end a status or blight affecting it."
+        },
+        {
+          "Name": "Wright",
+          "Description": "The Changeling creates a height 1 aethershard object in range 3, then may teleport on top of it."
+        }
+      ]
+    },
+    {
+      "Name": "Pocket Dust",
+      "ActionCost": 1,
+      "Description": "A foe in range 2 must save or become blinded or slow (Changeling chooses). The Changeling then gains stealth."
+    },
+    {
+      "Name": "Warped Reflection",
+      "ActionCost": 1,
+      "Tags": "stance",
+      "Recharge": 4,
+      "Description": "The Changeling's appearance ripples. While in this stance, the next time a character would use ability against the Changeling, they must first roll 1d6. On a 4+, they can use the ability as normal. On a 1-3, the ability's target changes to the character targeting the changeling, then this effect ends."
+    }
+  ]
+}

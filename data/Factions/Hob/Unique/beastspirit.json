@@ -1,0 +1,35 @@
+{
+  "Name": "Beast Spirit",
+  "Inherits": "Hob",
+  "Class": "Unique",
+  "Type": "Foe",
+  "Vitality": 10,
+  "Speed": 4,
+  "Defense": 5,
+  "FrayDamage": 4,
+  "DamageDie": 6,
+  "RemoveTraits": "Spirit Away",
+  "Traits": [ "Phasing", "Enrage", "Saddle Up" ],
+  "Actions": [
+    {
+      "Name": "Majestic Galloping",
+      "ActionCost": 1,
+      "Description": "The beast spirit flies 3. If it has a rider, it can then fly 3 again."
+    },
+    {
+      "Name": "Wild Rage",
+      "ActionCost": 1,
+      "Tags": [ "melee attack", "true strike" ],
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "Effects": "Shove 1",
+      "Charge": "Shove 3 instead."
+    },
+    {
+      "Name": "Rampage",
+      "ActionCost": 1,
+      "Tags": "repeatable",
+      "Description": "The beast spirit dashes up to 2 spaces. When it ends this movement, adjacent foes take 2 damage and is shoved 1."
+    }
+  ]
+}

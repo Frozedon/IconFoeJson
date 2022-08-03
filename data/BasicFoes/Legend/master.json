@@ -1,0 +1,76 @@
+{
+  "Name": "Master",
+  "Inherits": "Legendary Leader",
+  "Type": "Foe",
+  "HP": 20,
+  "UsesTemplate": true,
+  "Traits": "Unique Minions",
+  "Actions": [
+    {
+      "Name": "Barrage",
+      "ActionCost": 1,
+      "Tags": [ "close blast 1" ],
+      "AreaEffect": "[fray] piercing damage. Allies are immune."
+    }
+  ],
+  "PhasesDescription": "The Master starts in Phase 1, and goes into Phase 2 until the end of the next round when all it's minions are defeated (Great minions do not count).",
+  "Phases": [
+    {
+      "Traits": [ "Summon Minion", "Lurk in the Shadows", "Looming Shadow" ],
+      "Actions": [
+        {
+          "Name": "Minion Assault",
+          "ActionCost": 0,
+          "Tags": [ "melee attack", "pierce" ],
+          "Hit": "[D].",
+          "Miss": "1 damage.",
+          "Effects": "Deals 1 additional piercing damage once for every minion adjacent to the target."
+        },
+        {
+          "Name": "Great Puppeteer",
+          "ActionCost": 1,
+          "Description": "All allies in a close blast 1 area of the Master may dash 3 spaces, then deal 1 piercing damage to an adjacent foe."
+        },
+        {
+          "Name": "Promote",
+          "ActionCost": 2,
+          "Tags": "2/round",
+          "Description": "Destroy one minion and replace it with a Great Minion.",
+          "Summons": {
+            "Name": "Great Minion",
+            "Tags": [ "Size 1", "20 HP", "Defense 8", "Sturdy" ],
+            "SummonActions": "1/round during the Master's turn, it can move 3 spaces and attack an adjacent character (true strike, melee attack, on hit: [D]+[fray] and shove 1, miss: [fray])."
+          }
+        }
+      ]
+    },
+    {
+      "Description": "When entering Phase II, the Master returns to phase I at the end of the next round.",
+      "Actions": [
+        {
+          "Name": "Aether Bomb",
+          "ActionCost": 1,
+          "Tags": [ "2/round" ],
+          "Description": "Summon a blast 1 terrain effect, which cannot overlap with another Aether bomb. When the Master changes phases, all aether bombs explode and are destroyed. Characters within must save or take 2[D]+[fray] damage, or [D]+[fray] on a successful save."
+        },
+        {
+          "Name": "Reposition",
+          "ActionCost": 1,
+          "Description": "Shove an adjacent character 1, then dash 2."
+        },
+        {
+          "Name": "Rally",
+          "ActionCost": 2,
+          "Tags": [ "1/round" ],
+          "Description": "The Master creates a height 1 Rally Point in range 3.",
+          "Summons": {
+            "Name": "Rally Point",
+            "IsObject": true,
+            "Tags": [ "Size 1", "Height 1", "10 HP" ],
+            "SummonEffects": "Aura 1. Minions in the aura are immune to all damage and Minion Assault against characters in the area deals maximum damage."
+          }
+        }
+      ]
+    }
+  ]
+}

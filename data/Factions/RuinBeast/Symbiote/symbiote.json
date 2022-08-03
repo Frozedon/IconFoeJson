@@ -1,0 +1,40 @@
+{
+  "Name": "Symbiote",
+  "Inherits": [ "Ruin Beast", "Leader" ],
+  "Traits": "Latch",
+  "Actions": [
+    {
+      "Name": "Scrabble",
+      "ActionCost": 1,
+      "Tags": [ "melee attack" ],
+      "AutoHit": "[fray]."
+    },
+    {
+      "Name": "Pheremones",
+      "ActionCost": 1,
+      "Description": "A foe in range 4 is branded. Branded foes are pacified."
+    },
+    {
+      "Name": "Spur",
+      "ActionCost": 1,
+      "Tags": "repeatable",
+      "Description": "The character the symbiote is latched on to dashes 3 and may deal [fray] damage to an adjacent character of the symbiote's choice."
+    },
+    {
+      "Name": "Berserk",
+      "ActionCost": 2,
+      "Recharge": 6,
+      "Description": "The Symbiote's host becomes sturdy, gains +1 action, and gains +1 boon on all attacks and saves. These effects last until the end of the host's next turn."
+    }
+  ],
+  "ConditionalAbilities": [
+    {
+      "Chapter": 2,
+      "Traits": "Latch Enrage"
+    },
+    {
+      "Chapter": 3,
+      "Traits": "Latch Defiance"
+    }
+  ]
+}

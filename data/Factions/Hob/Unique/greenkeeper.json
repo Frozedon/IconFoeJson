@@ -1,0 +1,34 @@
+{
+  "Name": "Greenkeeper",
+  "Inherits": [ "Hob", "Leader" ],
+  "Type": "Foe",
+  "RemoveTraits": "Spirit Away",
+  "Traits": [ "Size 2", "Living Root" ],
+  "Actions": [
+    {
+      "Name": "Hungry Forest",
+      "ActionCost": 2,
+      "Tags": [ "ranged attack 5", "blast 1" ],
+      "AutoHit": "[D]+[fray] and foe is branded.",
+      "AreaEffect": "[fray].",
+      "Delay": "The Greenkeeper's next turn must be slow. At the start of that turn, the area erupts again. Foes in the area take [fray] damage twice. Allies in the area gain vigor 1."
+    },
+    {
+      "Name": "Bloom",
+      "ActionCost": 1,
+      "Description": "The Greenkeeper creates a space of difficult terrain in range 4.",
+      "Charge": "Blast 1."
+    },
+    {
+      "Name": "Ancient Reversa",
+      "ActionCost": 1,
+      "Recharge": 5,
+      "Description": "The Greenkeeper gains aura 2 until the start of their next turn. While inside the aura, when any character (foe or ally) takes damage, roll a d6. On a 4+, that character is cured."
+    },
+    {
+      "Name": "Overgrow",
+      "ActionCost": 1,
+      "Description": "The Greenkeeper chooses a foe in range 6. At the end of that foe's turn, if they have not moved at least 4 spaces from their location at the start of their turn, they become immobile as the undergrowth grows over their feet. This effect ends when they take any amount of damage, or they or an adjacent character can hack the growth away as an action, dealing [D]+[fray] piercing damage to them but ending the effect."
+    }
+  ]
+}

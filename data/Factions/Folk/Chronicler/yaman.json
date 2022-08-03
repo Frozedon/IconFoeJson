@@ -1,0 +1,28 @@
+{
+  "Name": "Yaman",
+  "Inherits": [ "Chronicler", "Skirmisher" ],
+  "Type": "Foe",
+  "Traits": "Roppo",
+  "Actions": [
+    {
+      "Name": "Axe Kick",
+      "ActionCost": 1,
+      "Tags": [ "melee attack 2", "+1 boon" ],
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "Effects": "Becomes a critical hit (+[D]) against bloodied foes."
+    },
+    {
+      "Name": "Hurl Boulder",
+      "ActionCost": 1,
+      "Description": "A foe in range 4 takes [fray] damage, is slowed, and is shoved 1."
+    },
+    {
+      "Name": "Izuna Drop",
+      "ActionCost": 1,
+      "Tags": [ "end turn", "delay" ],
+      "Description": "The Yamen takes a pose, then gains",
+      "Delay": "Their next turn must be slow. At the start of that turn, they may dash 2. Then, if a foe is adjacent, they may remove themselves and that foe from the battlefield, then places both of them back in free spaces adjacent to each other in range 3. The foe is stunned and takes 2[D]+[fray]."
+    }
+  ]
+}

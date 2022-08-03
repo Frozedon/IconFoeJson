@@ -1,0 +1,15 @@
+{
+  "Name": "Buzz Trooper",
+  "Inherits": "Trooper",
+  "Type": "Foe",
+  "RemoveActions": "Brutal Slash",
+  "Actions": {
+    "Name": "Chain Slash",
+    "ActionCost": 1,
+    "Tags": [ "melee attack", "arc 3", "true strike" ],
+    "Hit": "[D]+[fray].",
+    "Miss": "[fray].",
+    "AreaEffect": "[fray].",
+    "CriticalHit": "Repeat the area effect."
+  }
+}

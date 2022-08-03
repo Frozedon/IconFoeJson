@@ -1,0 +1,22 @@
+{
+  "Name": "Scourer",
+  "Inherits": "Artillery",
+  "Type": "Foe",
+  "UsesTemplate": true,
+  "Actions": [
+    {
+      "Name": "Scour",
+      "ActionCost": 2,
+      "Tags": [ "ranged attack 8", "pierce", "mark" ],
+      "Hit": "2[D]+[fray].",
+      "Miss": "[fray].",
+      "Mark": "Mark the target. Attacks against the marked target for the rest of combat gain +1 boon, deal bonus damage, ignore cover, and inflict shattered. This effect does not stack."
+    },
+    {
+      "Name": "Boiling Bolus",
+      "ActionCost": 2,
+      "Tags": "terrain effect",
+      "AreaEffect": "Create a blast 1 terrain effect in range 6. Characters in the area take [fray] piercing damage as an area effect when the area is created. The area is difficult terrain and new objects cannot be created in the area. The area lasts until this ability is used again."
+    }
+  ]
+}

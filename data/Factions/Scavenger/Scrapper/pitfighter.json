@@ -1,0 +1,19 @@
+{
+  "Name": "Pit Fighter",
+  "Inherits": "Scrapper",
+  "Type": "Foe",
+  "RemoveActions": "Uppercut",
+  "Actions": [
+    {
+      "Name": "Rolling Punch",
+      "ActionCost": 1,
+      "Description": "Swap places with an adjacent foe. That foe is dazed. If they are holding a valuables token, they are then shoved 1."
+    },
+    {
+      "Name": "Golden Knuckles",
+      "ActionCost": 0,
+      "Tags": [ "true strike", "requires greed" ],
+      "Description": "Deal [fray] damage to an adjacent foe once for each valuables token the Pit Fighter is holding. A different foe could be targeted each time."
+    }
+  ]
+}

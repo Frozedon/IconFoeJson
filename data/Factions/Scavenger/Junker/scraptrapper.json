@@ -1,0 +1,14 @@
+{
+  "Name": "Scrap Trapper",
+  "Inherits": "Junker",
+  "Type": "Foe",
+  "Traits": "Wayfinding",
+  "Actions": [
+    {
+      "Name": "Spring Scrap Trap",
+      "ActionCost": 1,
+      "Tags": [ "terrain effect", "special recharge" ],
+      "Description": "The Tinker Summons a blast 1 area of difficult terrain in range 8. Recharges when picking up a valuables token."
+    }
+  ]
+}

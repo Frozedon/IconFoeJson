@@ -1,0 +1,6 @@
+{
+  "Name": "Legendary Artillery",
+  "Inherits": [ "Legend", "Artillery" ],
+  "RemoveTraits": [ "Overdrive 4", "Slip" ],
+  "Traits": "Legendary Slip"
+}

@@ -1,0 +1,19 @@
+{
+  "Name": "Fetid Idol",
+  "Inherits": [ "Lowlander", "Legendary Leader" ],
+  "Type": "Foe",
+  "HP": 40,
+  "Speed": 0,
+  "Defense": 0,
+  "RemoveTraits": [ "Legendary Diaga", "Terrain Expert", "Lowlander Toxin" ],
+  "Traits": [ "The Idol", "Aura of Sacrifice", "Manifestations (Base)", "Worshippers (Base)" ],
+  "PhasesDescription": "The Idol changes phases when bloodied.",
+  "Phases": [
+    {
+      "Traits": [ "Worshippers (Phase I)", "Manifestations (Phase I)" ]
+    },
+    {
+      "Traits": [ "Unholy Vapors", "Worshippers (Phase II)", "Manifestations (Phase II)" ]
+    }
+  ]
+}

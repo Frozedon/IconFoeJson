@@ -1,0 +1,55 @@
+{
+  "Name": "Scum",
+  "Inherits": [ "Scavenger", "Leader" ],
+  "Type": "Foe",
+  "Chapter": 2,
+  "Traits": [ "Dodge", "Golden Step", "Cowardly by Nature" ],
+  "Interrupts": {
+    "Name": "Misdirect",
+    "Count": 1,
+    "Trigger": "The Scum or one of its allies in range 3 is targeted by an attack.",
+    "Effects": "The attacker must save. On a failed save, the Scum chooses a different target for the attack within range 3 of the Scum, which could be an ally of the attacker."
+  },
+  "Actions": [
+    {
+      "Name": "Smack",
+      "ActionCost": 1,
+      "Tags": "melee attack",
+      "AutoHit": "[fray]."
+    },
+    {
+      "Name": "Cover Me!",
+      "ActionCost": 1,
+      "Description": "All allies in range 3 of the Scum may dash until adjacent."
+    },
+    {
+      "Name": "Drop Scraps",
+      "ActionCost": 1,
+      "Effects": "The Scum drops a valuables token in an adjacent space."
+    },
+    {
+      "Name": "Master Steal",
+      "ActionCost": 1,
+      "Tags": "end turn",
+      "Description": "An adjacent foe has something stolen. They can recover the stolen item by hitting the Scum with an attack, forcing the Scum to drop it in a free adjacent space. They can pick it up by entering that space or any space adjacent to that space, ending this effect. Until they do, they suffer the following effects. The Scum can only steal one of each item, but can steal from a different character each time, and never picks up dropped items.",
+      "ListedItems": [
+        {
+          "Name": "Weapon",
+          "Description": "Foe is pacified+."
+        },
+        {
+          "Name": "Armor",
+          "Description": "Foe is shattered+."
+        },
+        {
+          "Name": "Elixirs",
+          "Description": "Foe cannot gain vigor."
+        },
+        {
+          "Name": "Boots",
+          "Description": "Foe is winded+."
+        }
+      ]
+    }
+  ]
+}

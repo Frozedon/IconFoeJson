@@ -1,0 +1,18 @@
+{
+  "Name": "Imperial Demolitionist",
+  "Inherits": "Scout",
+  "Type": "Foe",
+  "Actions": [
+    {
+      "Name": "Arkentech Mine",
+      "ActionCost": 0,
+      "Description": "The Demolitionist places an intangible size 1 summon in a free space in range 3. If any character enters or exits a space on or adjacent to the mine, they must save. On a failed save, the mine explodes for [fray] damage in a blast 1 area effect and inflicts burning. Burning foes are slowed."
+    },
+    {
+      "Name": "Detonate Mines",
+      "ActionCost": 2,
+      "Recharge": 6,
+      "Description": "All mines laid by the demolitionist explode as if triggered."
+    }
+  ]
+}

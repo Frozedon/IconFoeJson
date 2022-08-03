@@ -1,0 +1,41 @@
+{
+  "Name": "Wraith",
+  "Inherits": [ "Relict", "Artillery" ],
+  "RemoveTraits": "Aetherwall",
+  "Traits": [ "Flying", "Ethereal (Resistance)" ],
+  "Actions": [
+    {
+      "Name": "Chain Lightning",
+      "ActionCost": 2,
+      "Tags": [ "ranged attack 8", "pierce" ],
+      "Hit": "2[D]+[fray].",
+      "Miss": "[fray].",
+      "AreaEffect": "A foe in range 3 from the attack target also takes [fray] damage, then must save. If they fail the save, this effect repeats, choosing a new foe in range 3 of them instead. A character can only be chosen once by this effect, but it can chain any number of times. Electrified characters take +1 curse on this save."
+    },
+    {
+      "Name": "Shift",
+      "ActionCost": 1,
+      "Description": "Teleport 2."
+    },
+    {
+      "Name": "Shock",
+      "ActionCost": 1,
+      "Description": "A character in range 8 is vulnerable. Vulnerable foes take [fray] piercing damage and become electrified."
+    }
+  ],
+  "ConditionalAbilities": [
+    {
+      "Chapter": 2,
+      "RemoveActions": "Shift",
+      "Actions": {
+        "Name": "Shift",
+        "ActionCost": 0,
+        "Description": "Teleport 2."
+      }
+    },
+    {
+      "Chapter": 3,
+      "Traits": "Eternal Rage"
+    }
+  ]
+}

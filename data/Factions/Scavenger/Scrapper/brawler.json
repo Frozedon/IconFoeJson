@@ -1,0 +1,11 @@
+{
+  "Name": "Brawler",
+  "Inherits": "Scrapper",
+  "Type": "Foe",
+  "Traits": "Street Fighter",
+  "Actions": {
+    "Name": "Hurl Loot",
+    "ActionCost": 1,
+    "Description": "The Brawler picks up an adjacent valuables token and throws it at a foe in range 3. That foe either picks up the token or becomes dazed. Dazed foes instead take [D]+[fray] damage."
+  }
+}

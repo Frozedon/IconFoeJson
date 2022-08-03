@@ -1,0 +1,45 @@
+{
+  "Name": "Centurion",
+  "Inherits": [ "Imperial", "Elite", "Leader" ],
+  "Type": "Foe",
+  "Chapter": 3,
+  "RemoveTraits": "Receive Orders",
+  "Traits": [ "Master of Strategy", "Imperial Command Aura", "Cannon Strike" ],
+  "Interrupts": {
+    "Name": "Tactician's Gambit",
+    "Count": 1,
+    "Trigger": "A character is about to make a save or attack roll.",
+    "Effects": "The Centurion also rolls a d20 and may replace the final result with the Centurion's roll instead of the original d20 roll."
+  },
+  "Actions": [
+    {
+      "Name": "Tactician's Advance",
+      "ActionCost": 0,
+      "Description": "Up to two allies anywhere on the battlefield may dash 2."
+    },
+    {
+      "Name": "Banner Sweep",
+      "ActionCost": 1,
+      "Tags": "melee attack 2",
+      "AutoHit": "[D] and shove 1.",
+      "Effects": "All foes in range 2 take [D] and are shoved 1."
+    },
+    {
+      "Name": "Advanced Flare Gun",
+      "ActionCost": 1,
+      "Tags": "repeatable",
+      "Description": "Ignores stealth. A foe in range 8 is branded, burning and loses stealth. Burning foes also take [fray] damage."
+    },
+    {
+      "Name": "Supreme Standard",
+      "ActionCost": 2,
+      "Tags": "summon",
+      "Description": "The Centurion plants a banner in an adjacent space. The centurion can only plant one of these banners at a time.",
+      "Summons": {
+        "Name": "Imperial Standard",
+        "Tags": [ "Size 1", "Immobile", "Sturdy", "20 HP", "Defense 1" ],
+        "SummonEffects": "Aura 2. Allies in the aura gain +1 boon on attacks and saves, and if they start their turn in the area they gain vigor 1. Foes in the aura gain +1 curse on attacks and saves, and if they start their turn in the area, lose all vigor. If the banner is destroyed, all imperials inside except the centurion must save or be stunned."
+      }
+    }
+  ]
+}

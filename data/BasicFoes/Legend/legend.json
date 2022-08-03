@@ -1,0 +1,6 @@
+{
+  "Name": "Legend",
+  "SpecialClass": "Legend",
+  "HPMultiplyByPlayers": true,
+  "Traits": [ "Legend", "Juggernaut" ]
+}

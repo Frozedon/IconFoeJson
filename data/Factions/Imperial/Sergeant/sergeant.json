@@ -1,0 +1,46 @@
+{
+  "Name": "Sergeant",
+  "Inherits": [ "Imperial", "Leader" ],
+  "Interrupts": {
+    "Name": "Discipline",
+    "Count": 1,
+    "Trigger": "An ally in range 2 misses with an attack.",
+    "Effects": "That ally re-rolls the attack roll with +1 boon, taking the second result as the final result."
+  },
+  "Actions": [
+    {
+      "Name": "Leader's Strike",
+      "ActionCost": 1,
+      "Tags": [ "melee attack or ranged attack 5", "repeatable" ],
+      "Hit": "[D].",
+      "Miss": "1 damage.",
+      "Effects": "An ally in range 3 can dash 2 spaces."
+    },
+    {
+      "Name": "Flare Gun",
+      "ActionCost": 1,
+      "Description": "Ignores stealth. A foe in range 5 is branded and loses stealth."
+    },
+    {
+      "Name": "Volley Fire",
+      "ActionCost": 1,
+      "Recharge": 6,
+      "Description": "The Sergeant chooses a foe in range 8, then deals 2 piercing damage once to that foe, then once again for each ally in range 2 of the Sergeant."
+    }
+  ],
+  "ConditionalAbilities": [
+    {
+      "Chapter": 2,
+      "Traits": "Gunblade"
+    },
+    {
+      "Chapter": 3,
+      "Actions": {
+        "Name": "Marching Orders",
+        "ActionCost": 1,
+        "Tags": "stance",
+        "Description": "When Sergeant takes this stance, as an action, and at start of each of their turns, the Sergeant and all allies in range 2 can dash 2 in the same direction."
+      }
+    }
+  ]
+}

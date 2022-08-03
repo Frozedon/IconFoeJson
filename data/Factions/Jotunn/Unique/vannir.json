@@ -1,0 +1,39 @@
+{
+  "Name": "Vannir",
+  "Inherits": [ "Jotunn", "Artillery" ],
+  "Type": "Foe",
+  "RemoveTraits": "Titanblood",
+  "Traits": "Size 2",
+  "Interrupts": {
+    "Name": "Master of Rune-Cunning",
+    "Count": 1,
+    "Trigger": "The Vannir is targeted by an attack.",
+    "Effects": "The attacker must save. On a failed save, the attack automatically misses."
+  },
+  "Actions": [
+    {
+      "Name": "Star Shower",
+      "ActionCost": 1,
+      "Tags": [ "ranged attack 10", "cross 3", "pierce" ],
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "AreaEffect": "[fray]."
+    },
+    {
+      "Name": "Rune-curse",
+      "ActionCost": 1,
+      "Description": "A foe in range 6 becomes vulnerable or shattered (Vannir's choice)."
+    },
+    {
+      "Name": "Rune of Destruction",
+      "ActionCost": 1,
+      "Description": "The Vannir summons a glowing rune on a free ground space within range 4. The rune can be moved over freely. There can only be a maximum of three of these Runes at once (each could be from different Vannir), and the newest one created replaces the oldest rune if there are already three. At the end of any round in which a rune is not covered by a terrain piece, character, or summon, all foes take [fray] piercing damage for each active rune. Runes disappear at the end of combat."
+    },
+    {
+      "Name": "Aencraft",
+      "ActionCost": 1,
+      "Recharge": 6,
+      "Description": "The Vannir summons 3 illusory duplicates in range 3, which are summons with 1 hp, then may swap places with one of them, teleporting. Characters don't know which is the real one, and the Vannir may move all of them when they move, and use abilities from any of their locations. If the Vannir takes this move and has duplicates remaining, it can summon until it has 3, then swap places again."
+    }
+  ]
+}

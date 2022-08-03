@@ -1,0 +1,26 @@
+{
+  "Name": "Crusher",
+  "Inherits": "Heavy",
+  "Type": "Foe",
+  "UsesTemplate": true,
+  "Traits": "Grit",
+  "Actions": [
+    {
+      "Name": "Headbutt",
+      "ActionCost": 1,
+      "Tags": [ "melee attack" ],
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "Effects": [ 
+        "Foe most save or become winded.",
+        "Critical hit (+[D]) against Grabbed foes."
+      ]
+    },
+    {
+      "Name": "Grab",
+      "ActionCost": 1,
+      "Tags": [ "stance" ],
+      "Description": "An adjacent foe must save or become grabbed by this character. If they're winded, they fail the save. While a foe is grabbed, the foe and the Crusher are immobile, and the grabbed foe takes [fray] damage at the start of their turns. If shoved or moved apart, or this ability is used again, the grab ends. A foe can save at the end of their turn to end a grab."
+    }
+  ]
+}

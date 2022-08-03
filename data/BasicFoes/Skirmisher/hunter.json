@@ -1,0 +1,28 @@
+{
+  "Name": "Hunter",
+  "Inherits": "Skirmisher",
+  "Type": "Foe",
+  "UsesTemplate": true,
+  "Actions": [
+    {
+      "Name": "Hunter Shot",
+      "ActionCost": 1,
+      "Tags": [ "ranged attack 6", "+1 boon" ],
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "Effects": "Has no maximum range against marked targets. Deals bonus damage when made from stealth."
+    },
+    {
+      "Name": "Prowl",
+      "ActionCost": 1,
+      "Tags": [ "end turn" ],
+      "Description": "Dash 1 and gain stealth."
+    },
+    {
+      "Name": "Hunt",
+      "ActionCost": 1,
+      "Tags": [ "mark" ],
+      "Description": "A character in range 8 must save or be marked. The target cannot benefit from cover, stealth, or evasion while marked."
+    }
+  ]
+}

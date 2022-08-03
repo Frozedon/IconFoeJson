@@ -1,0 +1,91 @@
+[
+  {
+    "Name": "Arkentech Hover Chair",
+    "Description": "Flying and Sturdy. Loses both when bloodied."
+  },
+  {
+    "Name": "Assets",
+    "Description": "The Baron has a d6 power die, starting at 6. They may tick the die down to spend some of their tremendous wealth to empower their abilities. The die ticks up by 1 at the start of their turn, or 2 every time they pick up a valuables token."
+  },
+  {
+    "Name": "Aura of Taxes",
+    "Description": "Aura 2. Foes that enter or exit the aura stop moving and become immobile until the end of the current turn. They can ignore this effect by immediately paying 1 valuables token to the Tollkin. If they have paid the toll, they ignore this trait for the rest of combat."
+  },
+  {
+    "Name": "Aura of Wealth",
+    "Description": "Aura 2. Characters inside count as holding 1 valuables token"
+  },
+  {
+    "Name": "Bully",
+    "Description": "This character always treats bloodied foes as if they have a valuables token."
+  },
+  {
+    "Name": "Consumptive Greed",
+    "Description": "Toe-takers always attempt to focus on the closest foe with a valuables token at the start of their turn."
+  },
+  {
+    "Name": "Deep Pockets",
+    "Description": "Starts with 1 valuables token."
+  },
+  {
+    "Name": "Gilded Armor",
+    "Description": "Drops 1 valuables token when bloodied. Gains vigor 1 when picking up a valuables token."
+  },
+  {
+    "Name": "Golden Burden",
+    "Description": "Has evasion against characters carrying valuables."
+  },
+  {
+    "Name": "Golden Step",
+    "Description": "The first time a round this character picks up a valuables token, may dash 2, then deal [fray] damage to an adjacent foe."
+  },
+  {
+    "Name": "Golden Step (Improved)",
+    "DisplayName": "Golden Step",
+    "Description": "Any time this character picks up a valuables token, they may dash 3, then deal [fray] damage to an adjacent foe."
+  },
+  {
+    "Name": "Great Junk Armor",
+    "Description": "The first and second time this character is damaged by an attack or ability in a combat, reduce all damage to 0 and summon 2 valuables tokens in spaces in range 2 from them."
+  },
+  {
+    "Name": "Greed",
+    "Description": "If a Scavenger is holding a valuables token, their attacks can critical hit (+[D]). Many other scavenger abilities become more powerful if they have a valuables token."
+  },
+  {
+    "Name": "Guard Loot",
+    "Description": "Doesn't pick up valuables tokens. Instead, counts as holding any valuables tokens it is standing on, and has resistance while standing on at least one."
+  },
+  {
+    "Name": "Junk Armor",
+    "Description": "The first time the Junker is damaged by an attack or ability in a combat, reduce all damage to 0 and summon 1 valuables token in a space in range 2 from them."
+  },
+  {
+    "Name": "Leave Tracks",
+    "Description": "At the start of their turn, the Ring Finger puts down a track in their space. A character that ends their turn in that space collects the track. When a track has been collected, the Ring Finger's Master Cloak trait deactivates until the end of the Finger's next turn."
+  },
+  {
+    "Name": "Master Cloak",
+    "Description": "While this trait is active, the Ring Finger cannot be directly targeted or attacked and their location is not revealed on the map. Instead, the GM secretly records their location. Auras, area effects, and other effects that can target a space affect them normally (taking into account dodge). This trait deactivates until the end of the Finger's next turn if a track is collected or after the Finger attacks."
+  },
+  {
+    "Name": "Pay the Reaper",
+    "Description": "May discard all valuables tokens as an effect at the start or end of any turn to gain defiance. While the Aurelian has defiance, they cannot pick up valuables tokens."
+  },
+  {
+    "Name": "Smelt",
+    "Description": "Reduce overdrive counter by 1 when picking up a valuables token."
+  },
+  {
+    "Name": "Tally",
+    "Description": "The Aurelian has a d10 power die and Aura 2. Whenever a foe uses an attack against the Aurelian or any of its allies in the aura, tick the die up by 1. Also Tick Tally up by 1 every time the Aurelian picks up a valuables token. Certain actions require higher or lower tally."
+  },
+  {
+    "Name": "Thiefcraft",
+    "Description": "Gains stealth at the start and end of their turn if holding a valuables token."
+  },
+  {
+    "Name": "Tithe-law",
+    "Description": "Characters can always avoid effects from the Judge by paying the Judge either 1 valuables token or taking divine damage equal to 25% of their hp."
+  }
+]

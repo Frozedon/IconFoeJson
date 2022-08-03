@@ -1,0 +1,31 @@
+{
+  "Name": "Doomcloak",
+  "Inherits": [ "Ruin Beast", "Heavy" ],
+  "Type": "Foe",
+  "Chapter": 3,
+  "Traits": [ "Flying", "Acid Burst" ],
+  "Actions": [
+    {
+      "Name": "Chasing Claw",
+      "ActionCost": 1,
+      "Tags": [ "melee atttack", "true strike" ],
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "Effects": "Shove 1, and Doomcloak can dash 1."
+    },
+    {
+      "Name": "Rake",
+      "ActionCost": 1,
+      "Tags": [ "line 3", "repeatable" ],
+      "AreaEffect": "Foes in the area take [fray] damage.",
+      "Effects": "The beast may teleport to any space in the area after this action resolves."
+    },
+    {
+      "Name": "Smother",
+      "ActionCost": 2,
+      "Recharge": 6,
+      "Tags": "stance",
+      "Description": "The Doomcloak gains vigor 1, then moves into an adjacent foe's space, sharing it. While in this stance, both this beast and its chosen foe are immobile. The smothered foe is poisoned, dazed and takes [D]+[fray] damage at the start of their turn, ignoring vigor, and cannot gain vigor while being smothered. When the Doomcloak takes at least 1 damage to hp, this stance ends, shoving it into an adjacent space."
+    }
+  ]
+}

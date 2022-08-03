@@ -1,33 +1,20 @@
 {
   "Name": "Natal",
-  "Inherits": [ "Mob" ],
-  "Type": "UniqueFoe",
-  "Group": "Demon",
-  "FactionBlight": "Any",
-  "HP": 1,
+  "Inherits": [ "Demon", "Mob" ],
+  "Type": "Foe",
   "Speed": 3,
-  "Dash": 2,
   "Defense": 5,
-  "SetupTraits": [
-    {
-      "Name": "Monsters",
-      "Description": "Demons do not flee or negotiate."
-    },
-    {
-      "Name": "Legion",
-      "Description": "When fighting demons, at the start of combat, place 5 Natals, this faction's special mob, on the map in unoccupied space somewhere outside of range 2 of players. These don't count for the total encounter budget."
-    }
-  ],
-  "Traits": [
-    {
-      "Name": "Summon",
-      "Description": "Natals disappear when reduced to 0 hp and don't cause engagement."
-    }
-  ],
+  "RemoveTraits": "Devour",
+  "Traits": "Summon",
   "Actions": [
     {
+      "Name": "Squirm",
+      "ActionCost": 1,
+      "Description": "Dash 2, then deal 1 piercing damage to all adjacent foes."
+    },
+    {
       "Name": "Void Vomit",
-      "ActionCost": 2,
+      "ActionCost": 1,
       "Description": "Deal 1 piercing damage as an effect to a character in range 3. If that character is adjacent to another demon, increase damage to 2."
     }
   ]

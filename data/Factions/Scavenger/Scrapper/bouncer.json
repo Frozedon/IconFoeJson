@@ -1,0 +1,6 @@
+{
+  "Name": "Bouncer",
+  "Inherits": "Scrapper",
+  "Type": "Foe",
+  "Traits": [ "Size 2", "Guard Loot" ]
+}

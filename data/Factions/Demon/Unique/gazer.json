@@ -1,0 +1,66 @@
+{
+  "Name": "Gazer",
+  "Inherits": [ "Demon", "Artillery" ],
+  "Type": "Foe",
+  "Chapter": 2,
+  "Traits": "Flying",
+  "Actions": [
+    {
+      "Name": "Behold",
+      "ActionCost": 2,
+      "Tags": [ "ranged attack 8", "blast 1", "pierce" ],
+      "Hit": "2[D]+[fray].",
+      "Miss": "[fray].",
+      "AreaEffect": "[fray].",
+      "Effects": "The Gazer rolls 1d6 and applies one of the following effects to the attack target, which last until the end of its next turn.",
+      "Rolls": [
+        {
+          "Values": 1,
+          "Name": "Scour Gravity",
+          "Description": "The target gains flying, but at the end of their turn, they fall, shattering them."
+        },
+        {
+          "Values": 2,
+          "Name": "Scour Friction",
+          "Description": "The target doubles its speed, but must move maximum speed when moving and cannot only move in one direction for each action."
+        },
+        {
+          "Values": 3,
+          "Name": "Scour Force",
+          "Description": "The target cannot deal damage, but also becomes immune to all damage for the duration."
+        },
+        {
+          "Values": 4,
+          "Name": "Scour Scale",
+          "Description": "The target increases its size to 3. It can share space with foes during this effect."
+        },
+        {
+          "Values": 5,
+          "Name": "Scour Time",
+          "Description": "The target immediately rolls a d20 and their class damage die. All of their results for any of those dice rolled during this turn become the respective rolled result (so, for example, if a 13 was rolled on the d20, all d20 rolls on their turn would be 13)."
+        },
+        {
+          "Values": 6,
+          "Name": "Scour Space",
+          "Description": "The target may teleport to any space for 1 action. However, for the duration, all characters may teleport to any space adjacent to this character for 1 action."
+        }
+      ]
+    },
+    {
+      "Name": "Shift",
+      "ActionCost": 1,
+      "Description": "Teleport 2."
+    },
+    {
+      "Name": "Shock",
+      "ActionCost": 1,
+      "Description": "A foe in range 6 takes 2 damage, then must save or become shattered."
+    },
+    {
+      "Name": "Nullify",
+      "ActionCost": 1,
+      "Tags": [ "stance", "terrain effect", "end turn" ],
+      "Description": "The Gazer becomes sturdy, and places down a blast 1 terrain effect in an adjacent area. These effects last both until the Gazer moves. While in the area, characters deal half damage."
+    }
+  ]
+}

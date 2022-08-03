@@ -1,0 +1,50 @@
+{
+  "Name": "Boil",
+  "Inherits": [ "Lowlander", "Leader" ],
+  "Actions": [
+    {
+      "Name": "Toxion",
+      "ActionCost": 1,
+      "Tags": "melee attack or ranged attack 5",
+      "Hit": "[D]+[fray] and foe is poisoned.",
+      "Miss": "[fray].",
+      "Effects": "Poisoned foes are shoved 2 in a direction of the Boil's choice."
+    },
+    {
+      "Name": "Sporeseed",
+      "ActionCost": 1,
+      "Description": "A foe in range 4 is branded."
+    },
+    {
+      "Name": "Noxious Cloud",
+      "ActionCost": 1,
+      "Recharge": 4,
+      "Tags": "terrain effect",
+      "Description": "The Boil creates a choking cloud, a blast 1 terrain effect, in range 4. Characters in the cloud have cover but the area is dangerous terrain and they take +1 curse on attack rolls. Lowlanders are immune to its effects. The cloud lasts until this ability is used again."
+    },
+    {
+      "Name": "Adrenalize",
+      "ActionCost": 1,
+      "Tags": "mark",
+      "Description": "An ally in range 5 is marked.",
+      "Mark": "While marked, they gain +1 boon on attacks and deal bonus damage with all abilities. If that ally is bloodied, they also gain regeneration."
+    },
+    {
+      "Name": "Catalyze",
+      "ActionCost": 1,
+      "Tags": "multimark",
+      "Description": "A character in range 5 must save. On a successful save, they are poisoned. On a failed save, they become marked by the Boil.",
+      "Mark": "While marked, the effect of lowlander toxin on them is tripled."
+    }
+  ],
+  "ConditionalAbilities": [
+    {
+      "Chapter": 2,
+      "Traits": "Defiance"
+    },
+    {
+      "Chapter": 3,
+      "Traits": "Toxic Revenge"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "Name": "Servitor",
+  "Inherits": "Wight",
+  "Type": "Foe",
+  "Actions": [
+    {
+      "Name": "Hookspear",
+      "ActionCost": 1,
+      "Description": "A foe in range 2 takes [fray] damage, is electrified, and is is shoved 1 towards the Servitor, then must save or become winded. Electrified characters fail the save."
+    },
+    {
+      "Name": "Impaling Jab",
+      "ActionCost": 0,
+      "Tags": [ "line 3", "true strike" ],
+      "AreaEffect": "Characters take 2 damage."
+    }
+  ]
+}

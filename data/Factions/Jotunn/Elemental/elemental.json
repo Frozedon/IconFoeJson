@@ -1,0 +1,52 @@
+{
+  "Name": "Elemental",
+  "Inherits": [ "Jotunn", "Skirmisher" ],
+  "RemoveTraits": "Titanblood",
+  "Traits": [ "Size 2", "Phasing", "Amorphous" ],
+  "Actions": [
+    {
+      "Name": "Elemental Smite",
+      "ActionCost": 1,
+      "Tags": [ "melee attack", "+1 boon" ],
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "Effects": "Foe must save or become slowed."
+    },
+    {
+      "Name": "Soar",
+      "ActionCost": 1,
+      "Description": "Fly up to 6 spaces in a straight line."
+    },
+    {
+      "Name": "Swirling Elements",
+      "ActionCost": 1,
+      "Description": "All foes in range 2 are teleported 1. Slowed or Blinded foes are teleported 2 instead."
+    },
+    {
+      "Name": "Raging Storm",
+      "ActionCost": 2,
+      "Tags": "terrain effect",
+      "Description": "The Elemental creates an elemental storm in range 3, a 1 space terrain effect. Elementals have evasion and permanent stealth inside the area. The area is dangerous terrain for all other characters and other characters are blinded+ while in the area. At the end of the round, all storms grow to a blast 1 area, or increase their blast size by +1, to a maximum of 3. Up to two storms can be active at once."
+    }
+  ],
+  "ConditionalAbilities": [
+    {
+      "Chapter": 2,
+      "Interrupts": {
+        "Name": "Reform",
+        "Count": 1,
+        "Trigger": "The Elemental is damaged by an ability and the ability resolves.",
+        "Effects": "Teleport 3."
+      }
+    },
+    {
+      "Chapter": 3,
+      "Actions": {
+        "Name": "Sink into Elements",
+        "ActionCost": 1,
+        "Tags": "end turn",
+        "Description": "The Elemental disperses into pure elements, removing it from the battlefield, then converges, placing it back on any space on the battlefield."
+      }
+    }
+  ]
+}

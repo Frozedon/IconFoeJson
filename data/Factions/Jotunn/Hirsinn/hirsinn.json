@@ -1,0 +1,49 @@
+{
+  "Name": "Hirsinn",
+  "Inherits": [ "Jotunn", "Heavy" ],
+  "RemoveTraits": "Titanblood",
+  "Traits": "Size 2",
+  "Actions": [
+    {
+      "Name": "Mighty Smite",
+      "ActionCost": 1,
+      "Tags": [ "melee attack", "line 4", "true strike" ],
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "AreaEffect": "[fray]."
+    },
+    {
+      "Name": "Beserkgang",
+      "ActionCost": 1,
+      "Description": "A foe in range 4 must save or gain hatred of the Jotunn. On a successful save, they are dazed."
+    },
+    {
+      "Name": "Joyous Combat",
+      "ActionCost": 1,
+      "Description": "All adjacent foes must choose: be shoved 2, or take [D] damage from the Jotunn.",
+      "Collide": "Foe is winded."
+    },
+    {
+      "Name": "Strength of the Storm",
+      "ActionCost": 2,
+      "Tags": [ "stance", "end turn" ],
+      "Description": "The Jotunn gains sturdy and counter but becomes immobile. The Jotunn and all its adjacent allies also gain resistance. This stance ends at the end of the Jotunn's next turn."
+    }
+  ],
+  "ConditionalAbilities": [
+    {
+      "Chapter": 2,
+      "Actions": {
+        "Name": "Hurl",
+        "ActionCost": 1,
+        "Tags": "repeatable",
+        "Description": "The Jotunn picks up an adjacent character or summon and shoves them 3.",
+        "Collide": "Character is dazed."
+      }
+    },
+    {
+      "Chapter": 3,
+      "Traits": "True Titanblood"
+    }
+  ]
+}

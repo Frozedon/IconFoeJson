@@ -1,51 +1,35 @@
 {
   "Name": "Royal Guard",
-  "Inherits": [ "Relict", "Elite" ],
-  "Type": "UniqueFoe",
-  "Group": "Relict",
-  "UsesClass": "Heavy",
-  "Chapter": 1,
-  "Vitality": 8,
-  "HPMultiplier": 8,
-  "Speed": 3,
-  "Dash": 2,
-  "Defense": 5,
-  "Armor": 5,
-  "FrayDamage": 4,
-  "DamageDie": 6,
-  "Traits": [
-    {
-      "Name": "Sturdy",
-      "Description": "Immune to shove, daze, and stun."
-    },
-    {
-      "Name": "Large",
-      "Description": "Size 2."
-    },
-    {
-      "Name": "Fortify",
-      "Description": "At the end of their turn, gains vigilance 1. Vigilance charges stack if a character gains more than one. A character can spend a charge of Vigilance for one of the following:\n- When an adjacent ally is targeted as part of an ability, shift all damage and effects to you instead of that ally, regardless of range.\n- Deal piercing fray damage to any foe that breaks adjacency with you for any reason during their turn.\nLose all vigilance charges at the start of your turn."
-    }
-  ],
+  "Inherits": [ "Relict", "Elite", "Heavy" ],
+  "Type": "Foe",
+  "Traits": "Size 2",
   "Actions": [
     {
       "Name": "Battalion of Limbs",
       "ActionCost": 1,
-      "Tags": [ "melee attack", "multiattack" ],
-      "Hit": "[D]+[fray].",
+      "Tags": [ "melee attack", "true strike", "multimark" ],
+      "Hit": "[D]+[fray] and foe is marked.",
       "Miss": "[fray].",
-      "Effect": "After the royal guard damages a foe with this attack, they mark that foe. This mark can be placed on any number of characters and stacks indefinitely. For each stack of the mark, this attack deals +[D] on hit or miss. A character can save against this mark at the end of their turn to clear all stacks, but only if they are not adjacent to the royal guard."
+      "Effects": "The Royal Guard deals [fray] damage to all adjacent foes.",
+      "Mark": "This mark can be placed more than once and stacks indefinitely. For each stack of the mark, this attack deals +[D] on hit or miss. A character can save against this mark at the end of their turn to clear all stacks, but only if they are not adjacent to the royal guard."
     },
     {
-      "Name": "Weapon Vortex",
+      "Name": "Ball Lightning",
       "ActionCost": 1,
-      "Description": "Foes in range 2 of the royal guard are shoved 1 towards it."
+      "Tags": "true strike",
+      "Description": "A character in range 6 must save. On a failed save, they take [D]+[fray] and are electrified, then as an area effect any of their allies in range 2 of them take [fray] damage."
+    },
+    {
+      "Name": "Vortex",
+      "ActionCost": 0,
+      "Description": "Characters in range 2 of the royal guard are shoved 1 towards it."
     },
     {
       "Name": "Wind of Obliteration",
       "ActionCost": 2,
       "Recharge": 5,
-      "Effect": "The Royal Guard dashes 2 with phasing, then deals [D] to all adjacent characters and shoves them 1. Then, repeat this effect twice."
+      "Description": "Repeat this effect three times:",
+      "Effects": "The Royal Guard dashes 2, then deals [D] to all adjacent characters, then shoves them 1. It gains phasing during this action and must take each of these dashes in the same direction."
     }
   ]
 }

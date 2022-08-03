@@ -1,0 +1,11 @@
+{
+  "Name": "Ruin Centipede",
+  "Inherits": "Blight Beast",
+  "Type": "Foe",
+  "Traits": "Acid Splash",
+  "Actions": {
+    "Name": "Vile",
+    "ActionCost": 1,
+    "Description": "A foe in range 5 becomes vulnerable. They must then save or until the end of their next turn, they take 1 piercing damage for each space they move."
+  }
+}

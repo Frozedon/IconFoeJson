@@ -1,0 +1,35 @@
+{
+  "Name": "Judge",
+  "Inherits": "Leader",
+  "Type": "Foe",
+  "UsesTemplate": true,
+  "Traits": "Sturdy",
+  "Actions": [
+    {
+      "Name": "Justice Fist",
+      "ActionCost": 1,
+      "Tags": [ "melee attack" ],
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "Effects": "Foe is branded. Shove 3 against branded characters.",
+      "Collide": "Foe is stunned."
+    },
+    {
+      "Name": "Chastise",
+      "ActionCost": 1,
+      "Effects": "A character in range 6 takes 1 piercing damage. If that character attacks before the end of their next turn, they take [D] piercing damage and this effect ends."
+    },
+    {
+      "Name": "Shrine of Sanctuary",
+      "ActionCost": 2,
+      "Recharge": 6,
+      "Description": "Summon a height 1 shrine object in an adjacent space.",
+      "Summons": {
+        "Name": "Shrine",
+        "IsObject": true,
+        "Tags": [ "Size 1", "Height 1", "10 HP", "Attacks automatically hit" ],
+        "SummonEffects": "Adjacent allies have resistance."
+      }
+    }
+  ]
+}

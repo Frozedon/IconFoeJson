@@ -1,0 +1,7 @@
+{
+  "Name": "Quintessent",
+  "Inherits": "Elemental",
+  "Type": "Foe",
+  "Chapter": 3,
+  "Traits": [ "Flying", "Crystal Perfection", "Aetherstorm" ]
+}

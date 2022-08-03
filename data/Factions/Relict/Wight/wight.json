@@ -1,0 +1,40 @@
+{
+  "Name": "Wight",
+  "Inherits": [ "Relict", "Heavy" ],
+  "Actions": [
+    {
+      "Name": "Overpower",
+      "ActionCost": 1,
+      "Tags": [ "melee attack", "true strike" ],
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "AreaEffect": "All foes adjacent to the target take 2 damage."
+    },
+    {
+      "Name": "Strike",
+      "ActionCost": 1,
+      "Description": "An adjacent foe must save or become dazed. Dazed foes take [fray] damage."
+    },
+    {
+      "Name": "Death March",
+      "ActionCost": 1,
+      "Description": "The Wight and all adjacent allies may move 1 space in the same direction, ignoring engagement, then each may deal 2 damage to an adjacent foe."
+    }
+  ],
+  "ConditionalAbilities": [
+    {
+      "Chapter": 2,
+      "Actions": [
+        {
+          "Name": "Formation",
+          "ActionCost": 0,
+          "Description": "Shove all allies in range 2 1 space towards this character."
+        }
+      ]
+    },
+    {
+      "Chapter": 3,
+      "Traits": "Defiance"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "Name": "Automata",
+  "Inherits": [ "Relict", "Artillery" ],
+  "Type": "Foe",
+  "Speed": 2,
+  "RemoveTraits": "Slip",
+  "Traits": "Automata",
+  "Actions": [
+    {
+      "Name": "Lightning Bolter",
+      "ActionCost": 1,
+      "Tags": [ "ranged attack 8" ],
+      "Hit": "[D]+[fray] and electrify.",
+      "Miss": "[fray].",
+      "Effects": "Foes in range 2 of the target take [fray] damage."
+    },
+    {
+      "Name": "Discharge Bolt",
+      "ActionCost": 1,
+      "Description": "The Automota shoots a line 8 area effect. Characters in the area are electrified. Electrified characters take [D]."
+    },
+    {
+      "Name": "Full Auto",
+      "ActionCost": 2,
+      "Tags": [ "stance" ],
+      "Description": "While in this stance, the this character's is immobile, but all their attacks deal bonus damage, pierce, ignore cover, and gain +1 boon. They lose this stance if they are shoved or moved for any reason."
+    },
+    {
+      "Name": "Speed Clip",
+      "ActionCost": 0,
+      "Recharge": 6,
+      "Description": "The Automata enters Full Auto."
+    }
+  ]
+}

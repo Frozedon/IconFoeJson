@@ -1,0 +1,80 @@
+{
+  "Name": "Azurian Weapon",
+  "Inherits": [ "Imperial", "Legendary Artillery" ],
+  "Type": "Foe",
+  "Chapter": 2,
+  "HP": 32,
+  "Speed": 0,
+  "RemoveTraits": [ "Legendary Slip", "Aetherwall", "Receive Orders" ],
+  "Traits": [ "Ranged Master", "Advanced Scopes", "Arkentech Artillery", "Landship" ],
+  "Actions": [
+    {
+      "Name": "Turret Fire",
+      "ActionCost": 1,
+      "Tags": [ "ranged attack 6", "pierce" ],
+      "Hit": "[D]+[fray] and shove 1.",
+      "Miss": "[fray]."
+    },
+    {
+      "Name": "Torpedo",
+      "ActionCost": 1,
+      "Tags": "summon",
+      "Description": "The Weapon summons a burrowing torpedo in a free space in range 6.",
+      "Summons": {
+        "Name": "Torpedo",
+        "Tags": [ "Size 1", "8 HP", "Defense 1" ],
+        "SummonEffects": "At the start of the weapon's next turn, the torpedo submerges, burrows, and detonates under the closest foe for a blast 1 area effect, destroying it. Foes in the area must save or take [D]+[fray], or [fray] damage on a successful save. Then, create a pit in the area. The torpedo deactivates if destroyed early."
+      }
+    },
+    {
+      "Name": "Heavy Arkentech Mine",
+      "ActionCost": 0,
+      "Tags": "end turn",
+      "Description": "The Weapon places a mine in a free space in range 6 not adjacent to any character. The mine is a 1 space terrain effect. If any character enters or exits a space on or adjacent to the mine, they must save. On a failed save, the mine explodes for [fray] damage in a blast 1 area effect, shoving all affected characters 3, and inflicts burning. Burning foes are vulnerable."
+    },
+    {
+      "Name": "Mortar",
+      "ActionCost": 0,
+      "Tags": "2/round",
+      "Description": "The Weapon chooses a character in range 6. At the end of that character's next turn, they explode for a blast 1 area effect centered on them, dealing [fray] damage to all characters and shoving all characters 1 space away from the target."
+    },
+    {
+      "Name": "Broadside",
+      "ActionCost": 1,
+      "Tags": "2/round",
+      "Description": "All foes in range 6 of the Weapon must save. On a successful save, they are shoved 1. On a failed save, they are shattered and shoved 3.",
+      "Collide": "They also take [D]+[fray]."
+    },
+    {
+      "Name": "Rotary Cannon",
+      "ActionCost": 1,
+      "Tags": [ "1/round", "summon" ],
+      "Description": "The Azurian weapon chooses a foe in range 8, then summons a targeting reticle 3 spaces from them. The weapon can have up to 3 targeting reticles, and can target a given character more than once with a reticle. Using this ability again with 3 reticles active resummons a reticle.",
+      "Summons": {
+        "Name": "Targeting Reticle",
+        "Tags": [ "Size 1", "Intangible" ],
+        "SummonEffects": "The reticle can share space with other characters. It moves 1 space towards the chosen character at the start of that character's turn, then 1 space whenever they take an action. When the reticle enters any character's space, the Weapon deals [D] piercing damage to that character a number of times equal to the round number +1."
+      }
+    }
+  ],
+  "PhasesDescription": "The Azurian Weapon enters Phase II when bloodied.",
+  "Phases": [
+    {
+      "Description": "No changes."
+    },
+    {
+      "Description": "As phase I, but in phase II:",
+      "ListedItems": [
+        {
+          "Description": "Submerge becomes 2/round."
+        },
+        {
+          "Description": "Arkentech Artillery does not end on a quadrant of the map once that quadrant is chosen (meaning it will eventually cover the whole map)."
+        },
+        {
+          "Description": "Rotary Cannon has no maximum number of targeting reticles."
+        }
+      ]
+    }
+  ]
+}

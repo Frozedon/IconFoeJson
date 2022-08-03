@@ -1,0 +1,15 @@
+{
+  "Name": "Color Demon",
+  "Inherits": "Chaos Demon",
+  "Type": "Foe",
+  "Chapter": 2,
+  "RemoveTraits": "Aetherwall",
+  "Traits": "Distorted Soul",
+  "Actions": {
+    "Name": "Distort Foe",
+    "ActionCost": 1,
+    "Tags": "mark",
+    "Description": "A foe in range 6 must save or become marked.",
+    "Mark": "While marked, the effects of Distorted Soul from this demon also apply to them. This mark is removed if the color demon is defeated."
+  }
+}

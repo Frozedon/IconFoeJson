@@ -1,0 +1,58 @@
+{
+  "Name": "Gunner",
+  "Inherits": [ "Imperial", "Artillery" ],
+  "Actions": [
+    {
+      "Name": "Heavy Arquebus",
+      "ActionCost": 2,
+      "Tags": [ "ranged attack 12", "pierce", "special recharge" ],
+      "Hit": "2[D]+[fray] and foe is vulnerable.",
+      "Miss": "[D]+[fray].",
+      "CriticalHit": "Damage becomes divine.",
+      "SpecialRecharge": "Only recharges by taking the reload action."
+    },
+    {
+      "Name": "Reload Rifle",
+      "ActionCost": 1,
+      "Description": "Heavy Arquebus recharges.",
+      "Effects": "Becomes a free action in an Imperial Command Aura."
+    },
+    {
+      "Name": "Grappling Hook",
+      "ActionCost": 1,
+      "Description": "The Gunner teleports adjacent to a summon or object in range 3. Alternately, it can teleport adjacent to a foe in range, and that foe becomes shattered."
+    },
+    {
+      "Name": "Suppressor Turret",
+      "ActionCost": 1,
+      "Recharge": 6,
+      "Tags": "summon",
+      "Description": "The Gunner summons a gun emplacement in range 4.",
+      "Summons": {
+        "Name": "Gun Turret",
+        "Tags": [ "Size 1", "Immobile" ],
+        "SummonEffects": "When a foe in range 4 from the emplacement is damaged by an attack or ability, the emplacement deals 1 piercing damage to that foe, ignoring cover. This effect can trigger any number of times a round."
+      }
+    }
+  ],
+  "ConditionalAbilities": [
+    {
+      "Chapter": 2,
+      "RemoveActions": "Grappling Hook",
+      "Actions": {
+        "Name": "Grappling Hook",
+        "ActionCost": 0,
+        "Description": "The Gunner teleports adjacent to a summon or object in range 3. Alternately, it can teleport adjacent to a foe in range, and that foe becomes shattered."
+      }
+    },
+    {
+      "Chapter": 3,
+      "Actions": {
+        "Name": "Hone",
+        "ActionCost": 1,
+        "Tags": "end turn",
+        "Description": "The next attack from this character becomes a critical hit on hit (+[D])."
+      }
+    }
+  ]
+}

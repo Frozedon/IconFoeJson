@@ -1,0 +1,60 @@
+{
+  "Name": "Succubus",
+  "Inherits": [ "Demon", "Leader" ],
+  "Type": "Foe",
+  "Actions": [
+    {
+      "Name": "Fruit of Temptation",
+      "ActionCost": 0,
+      "Tags": "summon",
+      "Description": "The Succubus summons a fruit in range 3. Only two of these fruits can be active at once.",
+      "Summons": {
+        "Name": "Tempting Fruit",
+        "Tags": [ "Size 1", "Intangible" ],
+        "SummonEffects": "Any character can consume a fruit by moving into its space. Consuming a fruit grants +1 action this turn, but also marks the character with Good Dog."
+      }
+    },
+    {
+      "Name": "Good Dog",
+      "ActionCost": 1,
+      "Tags": "multimark",
+      "Description": "A character in range 5 is marked. While marked, the Succubus can use any of the following effects as an Interrupt, once per round for each character. These effects may trigger after the marked character takes any action, and they may save to avoid them.",
+      "ListedItems": [
+        {
+          "Name": "Heel",
+          "Description": "Character becomes immobile until the end of the current turn."
+        },
+        {
+          "Name": "Play Nice",
+          "Description": "Character becomes pacified."
+        },
+        {
+          "Name": "Roll Over",
+          "Description": "Character dashes 3 in a direction of the succubus' choice."
+        },
+        {
+          "Name": "Sic",
+          "Description": "Character immediately deals [fray] damage to all adjacent characters, including allies."
+        },
+        {
+          "Name": "Play Dead",
+          "Description": "Character loses all vigor and cannot gain vigor this turn."
+        }
+      ]
+    },
+    {
+      "Name": "Flaying Tentacle",
+      "ActionCost": 1,
+      "Tags": "melee attack 3",
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "Effects": "Becomes a critical hit (+[D]) against foes marked by Good Dog."
+    },
+    {
+      "Name": "Corruptive Spray",
+      "ActionCost": 1,
+      "Tags": "terrain effect",
+      "Description": "The Succubus creates 3 spaces of dangerous terrain in range 3. Characters in the area are shoved 1 outside it when it is created."
+    }
+  ]
+}

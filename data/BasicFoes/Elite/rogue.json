@@ -1,0 +1,39 @@
+{
+  "Name": "Rogue",
+  "Inherits": [ "Elite", "Skirmisher" ],
+  "Type": "Foe",
+  "Speed": 5,
+  "UsesTemplate": true,
+  "Traits": "Slippery",
+  "Interrupts": [
+    {
+      "Name": "Disappearing Act",
+      "Trigger": "When bloodied.",
+      "Effects": "May teleport 4, then gain stealth."
+    }
+  ],
+  "Actions": [
+    {
+      "Name": "Wicked Slice",
+      "ActionCost": 1,
+      "Tags": [ "melee attack", "+1 boon" ],
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "Effects": [
+        "Critical hit (+[D]) against bloodied characters.",
+        "Dash 1 before and after the attack."
+      ]
+    },
+    {
+      "Name": "Vile",
+      "ActionCost": 1,
+      "Description": "A foe in range 5 is slowed, and must save or take take 1 piercing damage for each space they move until the end of their next turn."
+    },
+    {
+      "Name": "Danse Macabre",
+      "ActionCost": 2,
+      "Recharge": 5,
+      "Description": "Target a close blast 2 area. Teleport five times. May deal [D] to an adjacent foe each time. Must choose a different foe each time unless every foe has been targeted at least once by this ability."
+    }
+  ]
+}

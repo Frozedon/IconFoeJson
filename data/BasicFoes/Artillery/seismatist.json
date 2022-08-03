@@ -1,0 +1,33 @@
+{
+  "Name": "Seismatist",
+  "Inherits": "Artillery",
+  "Type": "Foe",
+  "UsesTemplate": true,
+  "Traits": "Stoneskin",
+  "Actions": [
+    {
+      "Name": "Rumble",
+      "ActionCost": 2,
+      "Tags": [ "ranged attack", "arc 6 + blast 1", "pierce" ],
+      "Hit": "2[D]+[fray].",
+      "Miss": "[fray].",
+      "AreaEffect": "[fray].",
+      "Effects": [
+        "Deals damage for every adjacent object or pit.",
+        "Attack target is poisoned. Poisoned foes are shattered."
+      ]
+    },
+    {
+      "Name": "Seismic Crusher",
+      "ActionCost": 1,
+      "Tags": "line 6",
+      "Description": "Non-flying characters are shoved to either side of the line.",
+      "Collide": "[fray]."
+    },
+    {
+      "Name": "Upheaval",
+      "ActionCost": 1,
+      "Description": "Summon a height 1 boulder object or a pit in a free space in range 6."
+    }
+  ]
+}

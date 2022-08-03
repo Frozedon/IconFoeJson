@@ -1,0 +1,42 @@
+{
+  "Name": "Kinfisher",
+  "Inherits": [ "Ruin Beast", "Elite", "Heavy" ],
+  "Type": "Foe",
+  "Chapter": 2,
+  "Vitality": 8,
+  "Speed": 1,
+  "Traits": [ "Size 2", "Sturdy", "Lure", "Perfect Camouflage" ],
+  "Actions": [
+    {
+      "Name": "Reel In",
+      "ActionCost": 0,
+      "Description": "The fisher moves its lure up to 4 spaces towards it, then shoves all adjacent characters to the lure the same amount."
+    },
+    {
+      "Name": "Spit Up",
+      "ActionCost": 1,
+      "Tags": "close blast 1",
+      "AreaEffect": "Characters take [fray] damage, are poisoned, and must save or become winded. Poisoned characters fail the save."
+    },
+    {
+      "Name": "The Maw",
+      "ActionCost": 1,
+      "Tags": [ "melee attack", "true strike" ],
+      "Hit": "3[D]+[fray].",
+      "Miss": "[D]+[fray].",
+      "Effects": "If more than one character is adjacent to the Kinfisher, it chooses targets randomly. It cannot target summons."
+    },
+    {
+      "Name": "Gnash",
+      "ActionCost": 1,
+      "Tags": "repeatable",
+      "Description": "The Kingfisher dashes 1 as it flops forward, then deals 2 damage to all adjacent foes."
+    },
+    {
+      "Name": "Submerge",
+      "ActionCost": 1,
+      "Recharge": 5,
+      "Description": "The Kinfisher submerges into the ground, teleporting 5 spaces, then resurfaces, even to an occupied area. When it resurfaces, characters in its area take [fray] damage, are placed in the closest adjacent space of its choice, then shoved 1."
+    }
+  ]
+}

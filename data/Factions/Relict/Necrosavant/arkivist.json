@@ -1,0 +1,13 @@
+{
+  "Name": "Arkivist",
+  "Inherits": "Necrosavant",
+  "Type": "Foe",
+  "Traits": "Aura of the Endless Legion",
+  "Actions": [
+    {
+      "Name": "Call the Lost",
+      "ActionCost": 1,
+      "Description": "Summon 3 husks adjacent to a foe in range 8."
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "Name": "Greenseer",
+  "Inherits": "Leader",
+  "Type": "Foe",
+  "UsesTemplate": true,
+  "Traits": "Greenwalker",
+  "Actions": [
+    {
+      "Name": "Greenwrath",
+      "ActionCost": 1,
+      "Tags": [ "melee attack or ranged attack 6" ],
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "Effects": "Deals bonus damage and inflicts branded if a character is inside dangerous or difficult terrain."
+    },
+    {
+      "Name": "Vine Lash",
+      "ActionCost": 1,
+      "Description": "A character in range 6 must save or be shoved 4 in any direction. On a successful save they are shoved 2. They take 1 piercing damage for every space they move through difficult terrain during this shove."
+    },
+    {
+      "Name": "Wild Growth",
+      "ActionCost": 1,
+      "Recharge": 6,
+      "Tags": "terrain effect",
+      "TerrainEffect": "Create a blast 1 area of difficult terrain in range 6. The difficult terrain provides cover for allies."
+    }
+  ]
+}

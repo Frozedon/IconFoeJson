@@ -1,0 +1,19 @@
+{
+  "Name": "Quickfinger",
+  "Inherits": "Broker",
+  "Type": "Foe",
+  "Interrupts": {
+    "Name": "Trick of the Light",
+    "Count": 1,
+    "Trigger": "An ally is targeted by an attack or ability from a foe.",
+    "Effects": "That ally gains evasion against that attack or ability. After it resolves, teleport that ally 2 spaces to their 'real' location."
+  },
+  "RemoveActions": "Incentivize",
+  "Actions": [
+    {
+      "Name": "Legerdemain",
+      "ActionCost": 0,
+      "Description": "The Broker places a fake valuables token down in range 3. It can't be picked up and only one can be placed at time, but characters standing in its space count as holding a token, which can't be dropped."
+    }
+  ]
+}

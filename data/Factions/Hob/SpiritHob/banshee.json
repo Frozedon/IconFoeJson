@@ -1,0 +1,16 @@
+{
+  "Name": "Banshee",
+  "Inherits": "Spirit Hob",
+  "Type": "Foe",
+  "Traits": "Spiritfeed",
+  "Actions": {
+    "Name": "Sonic Screech",
+    "ActionCost": 1,
+    "Tags": [ "ranged attack", "line 6" ],
+    "Hit": "[D]+[fray].",
+    "Miss": "[fray].",
+    "AreaEffect": "[fray].",
+    "Effects": "Characters gain +1 curse on saves until the end of their next turn.",
+    "Charge": "Line 6 + blast 1."
+  }
+}

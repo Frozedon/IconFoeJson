@@ -1,0 +1,12 @@
+{
+  "Name": "Starblood",
+  "Inherits": "Tethian",
+  "Type": "Foe",
+  "Traits": "Flying",
+  "Actions": {
+    "Name": "Meteor",
+    "ActionCost": 2,
+    "Recharge": 6,
+    "Description": "All foes not in cover from the Starblood must save or take [fray] damage three times and become vulnerable, or once on a successful save. Then, summon a height 1 meteor shard object adjacent to one character affected."
+  }
+}

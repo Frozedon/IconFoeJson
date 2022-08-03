@@ -1,0 +1,13 @@
+{
+  "Name": "Flame Trooper",
+  "Inherits": "Trooper",
+  "Type": "Foe",
+  "Actions": {
+    "Name": "Flame Bomb",
+    "ActionCost": 1,
+    "Recharge": 6,
+    "Tags": [ "close blast 1", "true strike" ],
+    "AreaEffect": "[D]+[fray] damage and become burning.",
+    "Effects": "Burning foes must save or become winded."
+  }
+}

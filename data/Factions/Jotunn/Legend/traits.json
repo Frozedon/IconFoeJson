@@ -1,0 +1,121 @@
+[
+  {
+    "Name": "Static Charge",
+    "Description": "At the start of combat, roll 1d6 for each foe (or flip a coin). On tails, or 1-3, the foe gains a negative charge. On a 4+, the foe gains a positive charge. These charges are ongoing effects:",
+    "ListedItems": [
+      {
+        "Description": "If a character ends their turn adjacent to a character with the same charge as them, both characters are shoved 2 away from each other."
+      },
+      {
+        "Description": "If a character ends their turn within range 2 of a character with an opposite charge, they are shoved towards that character until adjacent, then both characters become immobile until they are no longer adjacent. At the start of an affected characters' turn, they may save. On a successful save, they end the effect on both characters and can move normally. On a failed save, they remain immobile and can save at the start of their next turn."
+      }
+    ]
+  },
+  {
+    "Name": "Lingering Spark", 
+    "Tags": "1/round",
+    "Description": "The first time in a round the Titan attacks, create a Lingering Spark terrain effect adjacent to its attack target. A foe entering the spark's space can pick it up as part of their movement, taking [fray] damage but swapping their polarity. Otherwise, the Spark lasts until the end of combat."
+  },
+  {
+    "Name": "Judgement Bolt",
+    "Description": "At the start of the round, after Static Charge has been rolled, roll 1d6. At the end of the round, all foes are hit by divine lightning, the effect of which depends on the roll.",
+    "Rolls": [
+      {
+        "Values": [ 1, 2, 3 ],
+        "Name": "Judgement of Cowards",
+        "Description": "Foes take 2 damage. Increase this to 6 divine damage if they are adjacent to one of their allies."
+      },
+      {
+        "Values": [ 4, 5, 6 ],
+        "Name": "Judgement of the Brave",
+        "Description": "Foes take 2 damage. Increase this to 6 divine damage if they are not adjacent to one of their allies."
+      }
+    ]
+  },
+  {
+    "Name": "Call Steed", 
+    "Description": "The Rider gains a massive Titansteed, increasing it's speed to 5 and granting it flying for the rest of combat. In addition, the Rider may break up any of its movement with actions."
+  },
+  {
+    "Name": "Primal Levin", 
+    "Description": "At the start of the round, the Rider creates a number of blast 1 area effects equal to the round number anywhere on the battlefield, which cannot overlap, targeting foes if possible. At the end of the round, massive bolts of lightning strike these spaces. Foes in the area take [D]+[fray] damage."
+  },
+  
+
+  {
+    "Name": "Volatile Ember", 
+    "Description": "At the start of the round, the Keeper creates 1 Volatile Ember in any space within range 2 of a character until there are six Embers active. A Volatile Ember is a special terrain effect that may be picked up by a character moving into its space. A character carrying embers takes 1 divine damage, once, at the end of their turn for every ember they are carrying. The Keeper's abilities become stronger against character carrying embers.\nHowever, carrying an ember fills a character and their weapons with godly power and has the following benefits:",
+    "ListedItems": [
+      {
+        "Name": "1+",
+        "Description": "All attacks gain +1 boon and true strike."
+      },
+      {
+        "Name": "3+",
+        "Description": "Character's abilities ignore resistance."
+      },
+      {
+        "Name": "6+",
+        "Description": "Attacking the Keeper instantly destroys any vigor the Keeper has before damage is applied."
+      }
+    ]
+  },
+  {
+    "Name": "Quicksilver", 
+    "Description": "Certain abilities from the Keeper drop a pool of Quicksilver. Quicksilver is difficult terrain, which the Keeper ignores. Characters that end their turn in quicksilver quench their embers, getting rid of all of them."
+  },
+  {
+    "Name": "Great Ignition", 
+    "Description": "At the end of the round, all embers that haven't been picked up explode, destroying them and dealing 1 divine damage to all foes as an effect."
+  },
+  {
+    "Name": "Blade of Creation", 
+    "Description": "The Keeper gains aura 1. When the Keeper ends its turn, it draws in any quicksilver in the area, destroying it. At the end the round, it makes the following attack:",
+    "ExtraActions": {
+      "Name": "Blade of Creation",
+      "Tags": [ "special action", "melee attack 4", "blast 2", "divine", "true strike" ],
+      "Hit": "[D], once for each quicksilver pool picked up.",
+      "Miss": "2 damage, once for each pool picked up.",
+      "AreaEffect": "2 damage, once for each pool picked up."
+    }
+  },
+  
+  {
+    "Name": "Sever Mortal Thread", 
+    "Description": "At the end of round 4, and every 2 rounds thereafter, the Warden cuts the lifespan of all characters on the battlefield, reducing their current and maximum hp and vigor by 25%. This does not stack with wounds, and takes priority over any wounds a character has taken (so a character with 1 wound wouldn't lose any additional max hp). This HP reduction stacks (so 25%, 50%, 75%, etc). At the end of round 10, the Warden permanently severs the thread of all characters, instantly defeating them. This effect ends after combat."
+  },
+  {
+    "Name": "Time Heals All", 
+    "Description": "As a side effect of time distortion, after this fight, all characters heal all wounds."
+  },
+  {
+    "Name": "Tides of Time", 
+    "Description": "Many of the Warden's abilities create a Time effect. Time effects have a Time Die, which is a d6. The die is either rolled or starts at a fixed number. Each time a turn passes, at the end of that turn, including the warden's turns, tick the die down by 1. When the die is at 1 and would tick down to 0, remove the die and trigger the Time Effect. Time dice and their current number are visible to all characters."
+  },
+  {
+    "Name": "Eternal Star", 
+    "Description": "At the start of each round, the Warden summons an Eternal Star, a massive meteor. The star is a time effect with a d6 time die set to 6, targeted on any space. When the star comes down, all foes take divine damage depending on their distance from the star's space.",
+    "ListedItems": [
+      {
+        "Name": "0 (in the space)",
+        "Description": "100% of max hp."
+      },
+      {
+        "Name": "1",
+        "Description": "75% of max hp."
+      },
+      {
+        "Name": "2",
+        "Description": "25% of max hp."
+      },
+      {
+        "Name": "3+",
+        "Description": "1 damage."
+      }
+    ]
+  },
+  {
+    "Name": "Unmoor", 
+    "Description": "At the start combat, the Warden chooses a character, which gains aura 2 for the rest of the fight. When they end their turn, roll 1d6. On a 1-3, they reduce all time effects in the aura by 1. On a 4-6, they increase all time effects in the area by 1. A character can willingly pass this aura to another character as a free action on their turn, and it affects a new character (chosen by the Warden) if the currently affected character is defeated."
+  }
+]

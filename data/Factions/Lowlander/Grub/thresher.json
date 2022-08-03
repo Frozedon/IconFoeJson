@@ -1,0 +1,22 @@
+{
+  "Name": "Thresher",
+  "Inherits": "Grub",
+  "Type": "Foe",
+  "Actions": {
+    "Name": "Call Pit Worm",
+    "ActionCost": 1,
+    "Recharge": 6,
+    "Description": "The Thresher chooses a pit space in range 4 and summons a pit worm in it.",
+    "Summons": {
+      "Name": "Pit Worm",
+      "Tags": [ "Size 1", "Sturdy", "12 HP", "Defense 12" ],
+      "SummonActions": "When summoned, or during the Thresher's turn, the worm can teleport to any pit space, then make the following attack",
+      "Actions": {
+        "Name": "Spit Up",
+        "Tags": "ranged attack 3",
+        "Hit": "4 damage.",
+        "Miss": "1 damage."
+      }
+    }
+  }
+}

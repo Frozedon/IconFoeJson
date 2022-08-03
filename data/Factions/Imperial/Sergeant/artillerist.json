@@ -1,0 +1,13 @@
+{
+  "Name": "Artillerist",
+  "Inherits": "Sergeant",
+  "Type": "Foe",
+  "RemoveActions": "Flare Gun",
+  "Actions": {
+    "Name": "Spot",
+    "ActionCost": 1,
+    "Tags": "mark", 
+    "Description": "Mark a character in range 8 and line of sight.",
+    "Mark": "While marked, that foe is branded+ and cannot benefit from stealth, evasion, or cover. This effect ends if the character ends a turn adjacent to an ally."
+  }
+}

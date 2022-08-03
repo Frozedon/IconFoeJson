@@ -1,0 +1,39 @@
+{
+  "Name": "Deep Farmer",
+  "Inherits": [ "Churner", "Heavy" ],
+  "Type": "Foe",
+  "Actions": [
+    {
+      "Name": "Raze",
+      "ActionCost": 1,
+      "Tags": [ "melee attack 2", "true strike" ],
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "Effects": "All foes in range 2 take 2 damage."
+    },
+    {
+      "Name": "Swing Shovel",
+      "ActionCost": 1,
+      "Description": "Roll 1d6. An adjacent character takes that much damage, and is shoved half that number of spaces.",
+      "Collide": "Foe is stunned."
+    },
+    {
+      "Name": "Fertilize",
+      "ActionCost": 1,
+      "Tags": [ "summon" ],
+      "Description": "The Deep Farmer chooses a space in range 2. At the end of their turn, this space grows into a mushroom object.",
+      "Summons": {
+        "Name": "Mushroom",
+        "IsObject": true,
+        "Tags": [ "Size 1", "Height 1" ],
+        "SummonEffects": "Aura 1. Characters in the spore-filled aura other than the Deep Farmer choke and are winded."
+      }
+    },
+    {
+      "Name": "Pull Vegetable",
+      "ActionCost": 1,
+      "Tags": [ "end turn" ],
+      "Description": "The Deep farmer pulls out a massive vegetable by the roots. Its next attack deals bonus damage and stuns on hit. Stunned foes are critically hit (+[D])."
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "Name": "Assassin",
+  "Inherits": "Skirmisher",
+  "Type": "Foe",
+  "UsesTemplate": true,
+  "Interrupts": [
+    {
+      "Name": "Shadow Slip",
+      "Tags": [ "requires a shadow clone" ],
+      "Trigger": "When targeted by an attack.",
+      "Effects": "Gain evasion against that attack, then after the attack resolves, teleport to the space of a shadow clone and replace it, removing the clone and gaining stealth. This interrupt can be repeated as long as there is at least one shadow clone."
+    }
+  ],
+  "Actions": [
+    {
+      "Name": "Shadow Stab",
+      "ActionCost": 1,
+      "Tags": [ "melee attack", "+1 boon" ],
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "Effects": "Teleport 1 and gain stealth. If made from stealth, can dash 2 before and after the action."
+    },
+    {
+      "Name": "Shadow Clone",
+      "ActionCost": 1,
+      "Tags": [ "summon" ],
+      "Description": "Summon a shadow clone in a free space in range 3.",
+      "Summons": {
+        "Name": "Shadow Clone",
+        "Tags": [ "Size 1", "Intangible", "Immobile" ],
+        "SummonEffects": "Foes adjacent to a shadow clone at the start of their turn take [fray] damage from the clone."
+      }
+    }
+  ]
+}

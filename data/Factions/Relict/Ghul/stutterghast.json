@@ -1,0 +1,15 @@
+{
+  "Name": "Stutterghast",
+  "Inherits": "Ghul",
+  "Type": "Foe",
+  "Chapter": 3,
+  "Traits": [ "Stutter", "Hollow" ],
+  "Interrupts": [
+    {
+      "Name": "Reality Break",
+      "Count": 1,
+      "Trigger": "The Stutterghast is Bloodied.",
+      "Effects": "The stutterghast becomes intangible until the end of its next turn."
+    }
+  ]
+}

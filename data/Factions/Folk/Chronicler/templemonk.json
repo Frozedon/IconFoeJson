@@ -1,0 +1,36 @@
+{
+  "Name": "Temple Monk",
+  "Inherits": [ "Chronicler", "Leader" ],
+  "Type": "Foe",
+  "Traits": "Defiance",
+  "Interrupts": [
+    {
+      "Name": "Sacrifice",
+      "Count": 1,
+      "Trigger": "An ally would take damage in range 6.",
+      "Effects": "This character takes damage equal to 25% of their HP. That ally gains vigor 1 before the damage is applied."
+    }
+  ],
+  "Actions": [
+    {
+      "Name": "Peal of Reckoning",
+      "ActionCost": 1,
+      "Tags": [ "ranged attack 6 or melee attack" ],
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "Effects": "Target must save or be shoved 3, or shoved 1 on a successful save."
+    },
+    {
+      "Name": "Forbiddance",
+      "ActionCost": 1,
+      "Description": "The temple monk chooses a foe in range 4. That foe is branded and must save, or until the end of their next turn, they cannot make any movement that moves them closer to the Keeper."
+    },
+    {
+      "Name": "Prayer",
+      "ActionCost": 1,
+      "Tags": [ "end turn", "delay" ],
+      "Description": "Usable only while bloodied. The temple monk ends their turn and gains",
+      "Delay": "Their next turn must be slow. At the start of that turn, this character and all adjacent allies gain vigor 1 and can clear a status or blight."
+    }
+  ]
+}

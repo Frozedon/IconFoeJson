@@ -1,0 +1,30 @@
+{
+  "Name": "Pepperbox",
+  "Inherits": "Skirmisher",
+  "Type": "Foe",
+  "UsesTemplate": true,
+  "Actions": [
+    {
+      "Name": "Strafe Shot",
+      "ActionCost": 1,
+      "Tags": [ "ranged attack 5", "+1 boon" ],
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "Effects": "May dash 1 before and after the attack. Ignores cover and deals bonus damage against bloodied foes."
+    },
+    {
+      "Name": "Glare",
+      "ActionCost": 1,
+      "Description": "A foe in range 5 takes [fray] damage, then must save or become blinded."
+    },
+    {
+      "Name": "Riddle",
+      "ActionCost": 2,
+      "Recharge": 6,
+      "Tags": [ "ranged attack 5" ],
+      "Hit": "Deal 2 damage, five times.",
+      "Miss": "Two times.",
+      "Effects": "Ignores cover."
+    }
+  ]
+}

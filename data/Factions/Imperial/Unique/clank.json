@@ -1,0 +1,31 @@
+{
+  "Name": "Clank",
+  "Inherits": [ "Imperial", "Heavy" ],
+  "Type": "Foe",
+  "Traits": [ "Defiance", "Imperial Automata" ],
+  "Actions": [
+    {
+      "Name": "Thumper Gun",
+      "ActionCost": 1,
+      "Tags": [ "ranged attack 3", "true strike" ],
+      "Hit": "[D]+[fray] and shove 1.",
+      "Miss": "[fray].",
+      "Effects": "Ignores ranged attack penalties. A different foe in range 3 is shoved 1.",
+      "Collide": "Foe takes [fray] damage."
+    },
+    {
+      "Name": "Flame Bomb",
+      "ActionCost": 1,
+      "Recharge": 6,
+      "Tags": [ "close blast 1", "true strike" ],
+      "AreaEffect": "[D]+[fray] damage and burning.",
+      "Effects": "Burning foes must save or become winded."
+    },
+    {
+      "Name": "Self Destruct",
+      "ActionCost": 2,
+      "Tags": "end turn",
+      "Description": "The Clank begins shuddering. At the start of its next turn, it explodes, instantly defeating it and creating a blast 1 area effect on its location. Characters inside must save or take 2[D]+[fray] damage, or [D]+[fray] on a successful save."
+    }
+  ]
+}

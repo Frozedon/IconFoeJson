@@ -1,0 +1,10 @@
+{
+  "Name": "Centipede Tamer",
+  "Inherits": "Boil",
+  "Type": "Foe",
+  "Actions": {
+    "Name": "Agonizing Bite",
+    "ActionCost": 1,
+    "Description": "The tamer calls centipedes out of the earth to bite a foe, targeting a blast 2 area in range 6. For every pit in the area, a foe in the area takes 2 piercing damage, once. A poisoned foe can be hit multiple times by one use of this ability, otherwise it may only affect each foe once."
+  }
+}

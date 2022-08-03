@@ -1,0 +1,58 @@
+{
+  "Name": "Crimson Weapon",
+  "Inherits": [ "Imperial", "Legendary Heavy" ],
+  "Type": "Foe",
+  "HP": 60,
+  "Speed": 5,
+  "RemoveTraits": "Receive Orders",
+  "Traits": [ "Size 2", "Hellforged", "Arkentech Munitions", "Arkentech Armor Plate" ],
+  "Actions": [
+    {
+      "Name": "Weapon Blade",
+      "ActionCost": 1,
+      "Tags": [ "melee attack 2", "arc 3", "true strike" ],
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "Effects": "Deals bonus damage to dazed characters."
+    },
+    {
+      "Name": "Side Cannons",
+      "ActionCost": 1,
+      "Description": "All foes in range 2 of the Weapon take [fray] damage and are shoved 1. All munitions are shoved 1."
+    },
+    {
+      "Name": "Lumber",
+      "ActionCost": 0,
+      "Description": "Dash 2, then shove all adjacent foes and munitions 1."
+    },
+    {
+      "Name": "Ravage",
+      "ActionCost": 1,
+      "Tags": [ "true strike", "end turn", "1/round" ],
+      "Description": "The Crimson Weapon raises its blade and chooses a foe in range 4. At the end of that character's turn, it dashes up to 6 spaces towards them, shoving characters in its path 1 space to either side and detonating any munitions it passes through. That foe must save or take [D] a number of times times equal to the number of player characters or once on a successful save.",
+      "Effects": "They take [D] one less time for every nonsummon ally adjacent to them."
+    },
+    {
+      "Name": "Spitfire",
+      "ActionCost": 1,
+      "Tags": [ "multimark", "2/round" ],
+      "Description": "Mark a character in range 6.",
+      "Mark": "At the end of that character's turn, if that character is still marked, the Weapon shoots a fireball at them for a blast 1 explosion area effect. Characters within must save. On a successful save, they take [D]+[fray]. On a failed save they take 2[D]+[fray] and are burning. Burning characters fail the save."
+    }
+  ],
+  "PhasesDescription": "The Crimson Weapon changes phases when bloodied.",
+  "Phases": [
+    {
+      "Description": "No changes."
+    },
+    {
+      "Description": "As Phase I, but Ravage becomes 2/round and also gains the following action.",
+      "Actions": {
+        "Name": "Hellscape",
+        "ActionCost": 0,
+        "Tags": "1/round",
+        "Description": "The Weapon fills a blast 1 area in range 5 with searing hellfire. The area is dangerous terrain for the rest of combat. Munitions cannot be created in the area, and munitions that enter the area immediately explode. There is no maximum number of these zones that can be created, and they can overlap."
+      }
+    }
+  ]
+}

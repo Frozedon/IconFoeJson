@@ -1,0 +1,16 @@
+{
+  "Name": "Pixie",
+  "Inherits": "Field Hob",
+  "Type": "Foe",
+  "Traits": [ "Flying", "Pixie Dust" ],
+  "Actions": {
+    "Name": "Toad",
+    "ActionCost": 1,
+    "Description": "A character in range 6 is transformed into a frog. Remove that character from the battlefield and replace them with a 1 hp frog summon. When the frog is defeated, return the target to the battlefield. Until the frog is defeated, they cannot take a turn. The Hob can destroy the frog as a free action.",
+    "Summons": {
+      "Name": "Frog",
+      "Tags": [ "Size 1", "1 HP", "Defense 8" ],
+      "SummonActions": "Hops 1 space in a a direction of the hob's choice, then spends the rest of the turn croaking."
+    }
+  }
+}

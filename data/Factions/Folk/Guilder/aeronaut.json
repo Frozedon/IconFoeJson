@@ -1,0 +1,32 @@
+{
+  "Name": "Aeronaut",
+  "Inherits": [ "Guilder", "Skirmisher" ],
+  "Type": "Foe",
+  "Traits": "Aerial Acrobat",
+  "Actions": [
+    {
+      "Name": "Strafe Shot",
+      "ActionCost": 1,
+      "Tags": [ "ranged attack 5", "+1 boon" ],
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "Effects": "May dash 1 before and after the attack. Ignores cover and deals bonus damage against bloodied foes."
+    },
+    {
+      "Name": "Double Tap",
+      "ActionCost": 1,
+      "Description": "The Aeronaut flies 3 spaces in a straight line. At the start and end of their movement, they may deal [fray] damage to a character in range 3, choosing different characters each time."
+    },
+    {
+      "Name": "Blinding Grenade",
+      "ActionCost": 1,
+      "Description": "A foe in range 3 is blinded. Blinded foes take [fray] damage."
+    },
+    {
+      "Name": "Takeoff",
+      "ActionCost": 1,
+      "Tags": [ "stance" ],
+      "Description": "The Aeronaut launches into the air. While in this stance, they are flying and have evasion. They lose this stance if they are hit by an attack."
+    }
+  ]
+}

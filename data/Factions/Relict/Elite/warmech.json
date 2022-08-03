@@ -1,0 +1,36 @@
+{
+  "Name": "Warmech",
+  "Inherits": [ "Relict", "Elite", "Artillery" ],
+  "Type": "Foe",
+  "RemoveTraits": [ "Aetherwall", "Slip" ],
+  "Traits": [ "Size 2", "Plasma Bomb", "Arkentech Shock Shield", "Automata" ],
+  "Actions": [
+    {
+      "Name": "Long Range Beam",
+      "ActionCost": 2,
+      "Tags": [ "ranged attack", "line 10", "pierce" ],
+      "Hit": "2[D]+[fray].",
+      "Miss": "[fray].",
+      "AreaEffect": "[fray].",
+      "Effects": "Electrifies characters. Ignores cover. Critically hits electrified characters (+[D])."
+    },
+    {
+      "Name": "Charge Boost",
+      "ActionCost": 1,
+      "Description": "The Warmech flies 4. When it lands, adjacent characters are shoved 1 and electrified. Electrified characters are teleported 1."
+    },
+    {
+      "Name": "Seekers",
+      "ActionCost": 1,
+      "Description": "All foes in range 4 take 2 piercing damage."
+    },
+    {
+      "Name": "Perimeter Beams",
+      "ActionCost": 1,
+      "Recharge": 4,
+      "Tags": [ "close blast 1", "pierce" ],
+      "AreaEffect": "Foes are shoved 2 and must save or become shattered.",
+      "Collide": "Foe takes [fray] damage and fails the save."
+    }
+  ]
+}

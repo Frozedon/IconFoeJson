@@ -1,0 +1,17 @@
+{
+  "Name": "Executioner",
+  "Inherits": "Wight",
+  "Type": "Foe",
+  "Actions": [
+    {
+      "Name": "Lightning Axe",
+      "ActionCost": 2,
+      "Recharge": 5,
+      "Tags": [ "melee attack", "close blast 1", "true strike" ],
+      "Hit": "2[D]+[fray], shove 1, and electrify.",
+      "Miss": "[fray] and shove 1.",
+      "AreaEffect": "[fray] and shove 1.",
+      "Effects": "Teleport all electrified foes 1."
+    }
+  ]
+}

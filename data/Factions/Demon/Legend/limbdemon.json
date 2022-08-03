@@ -1,0 +1,57 @@
+{
+  "Name": "Limb Demon",
+  "Inherits": [ "Demon", "Legendary Heavy" ],
+  "Type": "Foe",
+  "HP": 20,
+  "Speed": 5,
+  "Traits": [ "Size 3", "Regeneration", "Crawling Chaos", "Heaving Mass", "Drag Down", "Demon Core" ],
+  "Actions": [
+    {
+      "Name": "Crush Body",
+      "ActionCost": 1,
+      "Tags": [ "melee attack", "close blast 1", "true strike" ],
+      "Hit": "[D]+[fray] and summon a crawling mass.",
+      "Miss": "[fray].",
+      "AreaEffect": "[fray].",
+      "Effects": "Attack target is dazed.",
+      "CriticalHit": "(+[D]) and summon another crawling mass."
+    },
+    {
+      "Name": "Thrash",
+      "ActionCost": 1,
+      "Description": "All adjacent foes take 2 damage and are shoved 1."
+    },
+    {
+      "Name": "Lumbering Charge",
+      "ActionCost": 1,
+      "Description": "Dash 3 with phasing. All characters it passes over are shoved 1 to the side and take [fray] damage."
+    },
+    {
+      "Name": "Swallow Whole",
+      "ActionCost": 1,
+      "Tags": "1/round",
+      "Description": "A adjacent character must save or be swallowed whole. Remove them from the battlefield. At the start of their turn, the demon spits them out, placing them in any adjacent space to the demon's current location, then shoving them 3 spaces. They are winded.",
+      "Collide": "Character takes [D]+[fray] and is stunned. If a character was swallowed last round, it becomes immune to this ability on the following round."
+    }
+  ],
+  "PhasesDescription": "The Demon starts in Phase I, then goes into Phase II every third turn (turn 3, 6, 9, etc).",
+  "Phases": [
+    {
+      "Interrupts": {
+        "Name": "Flinch",
+        "Tags": "1/round",
+        "Trigger": "The Demon is targeted by attack.",
+        "Effects": "The attacker can either choose to give the demon resistance to the attack OR summon two crawling masses after the attack resolves."
+      }
+    },
+    {
+      "Traits": "Absorb",
+      "Actions": {
+        "Name": "Limb From Limb",
+        "ActionCost": 2,
+        "Tags": [ "true strike", "end turn", "1/round" ],
+        "Description": "The Demon charges 6 spaces in a straight line with phasing. Characters in its path must save or take 2[D]+[fray] and be stunned, or [fray] damage on a successful save. When the demon passes through a character, it summons a crawling mass adjacent to them."
+      }
+    }
+  ]
+}

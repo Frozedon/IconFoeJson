@@ -1,0 +1,6 @@
+{
+  "Name": "Screaming Demon",
+  "Inherits": "Terror Demon",
+  "Type": "Foe",
+  "Traits": "Death Whistle"
+}

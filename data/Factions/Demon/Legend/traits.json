@@ -1,0 +1,127 @@
+[
+  {
+    "Name": "Absorb",
+    "Description": "The Demon has aura 2. When it ends its turn, it absorbs all crawling masses in the aura, destroying them, then deals 2 damage per mass, once, to all foes in the aura."
+  },
+  {
+    "Name": "Crawling Chaos",
+    "Description": "When the Demon hits with an attack or uses certain abilities, it summons a crawling mass of loose limbs in a free space in range 3 of its location. The mass counts as a pit and dangerous terrain to all characters but the demon."
+  },
+  {
+    "Name": "Demon Core",
+    "Description": "The Demon has a compressed core of flesh. When the demon is critically hit, the core becomes exposed until the end of the current round. If the demon is critically hit again, it becomes stunned and loses regeneration for the rest of the round."
+  },
+  {
+    "Name": "Drag Down",
+    "Description": "The demon critical hits any character it hits standing in a crawling mass."
+  },
+  {
+    "Name": "Heaving Mass",
+    "Description": "When the Demon's vigor is broken, summon a crawling mass in range 3."
+  },
+
+  {
+    "Name": "Blade of Agony",
+    "Description": "Many actions from this legend summon a blade of agony. Blades can be summoned in range 3 from the demon.",
+    "Summons": {
+      "Name": "Blade of Agony",
+      "Tags": [ "Size 1", "Immune to all damage and effects" ],
+      "SummonEffects": "A blade is a summon that causes obstruction. Although it's immune to all damage character can shatter an adjacent blade by attacking it, destroying it. It also has the following effects.",
+      "ListedItems": [
+        {
+          "Name": "Blade Slash",
+          "Description": "Whenever a blade is summoned, all blades, including the one that was just summoned, slash every space adjacent to them, dealing 1 piercing damage as an effect. A character can be hit by multiple blades at once. The violence demon is immune to its own blades."
+        },
+        {
+          "Name": "Blade Consume X",
+          "Description": "Certain actions must consume X blades of agony to be used. Blades are consumed at the start of the action and must be in range 3 of the demon to be valid. This destroys the blades, removing them from the battlefield."
+        }
+      ]
+    }
+  },
+  {
+    "Name": "Bloodthirsty Sword",
+    "Description": "The Violence demon's blades are so sharp they inflict pierce even though it is a skirmisher."
+  },
+  {
+    "Name": "Regard",
+    "Description": "Critically hitting the demon earns its regard until the end of the round. Earning the demons' regard inflicts it with its own Compel Duel ability (see below) until the end of the round. This effect doesn't stack."
+  },
+
+  {
+    "Name": "Court of the Covenant",
+    "Description": "At the start of combat, or at the start of the round, the Majesty Demon summons until it has the following set of summons active: The Sycophant, the Scepter Bearer, the Shrouded Lady, and the Maiden, and one Flagellant Knight per character. All summons are demons that must be placed within range 2 of a player character or the Majesty Demon and cannot be placed within range 2 of each other. When the Majesty Demon resummons one of these special summons, it takes damage equal to twice their maximum hp, which cannot be reduced in any way.",
+    "Summons": [
+      {
+        "Name": "The Sycophant", 
+        "Tags": [ "Size 1", "1 HP", "Defense 5", "Immobile" ],
+        "SummonEffects": "Counts as an ally for player abilities. Projects aura 2 around it. The aura reduces all damage to to player characters to 1 while it is inside. At the end of any turn or round in which the aura was used to reduce damage, the Sycophant is destroyed."
+      },
+      {
+        "Name": "The Scepter Bearer", 
+        "Tags": [ "Size 1", "10 HP", "Defense 5", "Flying" ],
+        "SummonEffects": "When defeated, drops its scepter in its space. Any character standing in or adjacent to the scepter space deals double damage with abilities (double all damage after rolling and adding [fray] damage). The scepter disappears when this summon is re-summoned.",
+        "SummonActions": "When summoned, and on each of the Majesty Demon's turns, flies 1. Cannot move unless it's within range 4 of a player character."
+      },
+      {
+        "Name": "The Shrouded Lady", 
+        "Tags": [ "Size 1", "Defense 5", "Flying" ],
+        "SummonEffects": "Immune to all damage and effects except shove and teleport. When shoved or teleported by another character, is moved twice as far. At the end of the round, deals 80 damage to all adjacent characters other than the Majesty Demon.",
+        "SummonActions": "Teleports 4 spaces when summoned, and at the start of each round towards the closest player character."
+      },
+      {
+        "Name": "The Maiden", 
+        "Tags": [ "Size 1", "10 HP", "Defense 5", "Immobile" ],
+        "SummonEffects": "Has aura 2. Characters other than the Maiden in the aura are pacified+, but have resistance."
+      },
+      {
+        "Name": "Flagellant Knight", 
+        "Tags": [ "Size 1", "40 HP", "Defense 5" ],
+        "SummonEffects": "The first time a round any character (including player characters) adjacent to the Knight takes damage that wasn't dealt by a Knight, the Knight takes it instead.",
+        "SummonActions": "When summoned, or once a round on the demon's turn thereafter, moves 2 and makes attack:",
+        "Actions": {
+          "Tags": "melee attack",
+          "Hit": "[D]+[fray].",
+          "Miss": "[fray].",
+          "Effects": "Shove 1."
+        }
+      }
+    ]
+  },
+  {
+    "Name": "Declare Will",
+    "Description": "At the start of any round in this phase, the Majesty Demon makes one of the following decrees (roll 1d6). All Decrees take effect immediately.",
+    "Rolls": [
+      {
+        "Values": 1,
+        "Name": "Decree of Penance",
+        "Description": "All foes deal 20 damage to themselves as an effect at the end of the round."
+      },
+      {
+        "Values": 2,
+        "Name": "Decree of Obesience",
+        "Description": "Foes must end their turn adjacent to one of the summons from Court of the Covenant, or else take 20 damage."
+      },
+      {
+        "Values": 3,
+        "Name": "Decree of Pain",
+        "Description": "Player characters cannot be reduced below 1 hp this round. Player characters at exactly 1 hp when the round ends regain hp to put them at 50% of maximum. Player characters not at exactly 1 hp become winded, dazed, slowed, and branded at the start of next round."
+      },
+      {
+        "Values": 4,
+        "Name": "Decree of Annihilation",
+        "Description": "One foe (chosen by the demon) takes 40 damage as an effect at the end of the round."
+      },
+      {
+        "Values": 5,
+        "Name": "Decree of Glory",
+        "Description": "All damage dealt this round is doubled."
+      },
+      {
+        "Values": 6,
+        "Name": "Decree of Haste",
+        "Description": "All movement, shoves, and teleportation is doubled this round."
+      }
+    ]
+  }
+]

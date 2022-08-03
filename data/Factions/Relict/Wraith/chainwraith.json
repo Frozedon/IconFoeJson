@@ -1,0 +1,19 @@
+{
+  "Name": "Chain Wraith",
+  "Inherits": "Wraith",
+  "Type": "Foe",
+  "Actions": [
+    {
+      "Name": "Bind",
+      "ActionCost": 0,
+      "Recharge": 4,
+      "Description": "The Wraith chooses two characters in range 4 of the wraith and each other, then teleports them adjacent to each other."
+    },
+    {
+      "Name": "Split Ionize",
+      "ActionCost": 1,
+      "Tags": [ "mark" ],
+      "Description": "A character in range 8 must save or become marked. Electrified characters fail this save. While marked, they are vulnerable and have aura 2. Any time they take damage, all allies in the aura take 1 piercing damage."
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "Name": "Arkentech Power Armor",
+    "Description": "Start combat with vigor 1."
+  },
+  {
+    "Name": "Cannon Strike",
+    "Description": "At the start of each round, may designate a blast 1 area to be hit by off-battlefield artillery. At the end of the round, any characters in the area must save or take 2[D]+[fray], or [fray] damage on a successful save. Any character standing in the center space is also stunned on a failed save."
+  },
+  {
+    "Name": "Deflate",
+    "Description": "If the War Balloon is prevented from flying, it becomes immobile until it can fly again."
+  },
+  {
+    "Name": "Gunblade",
+    "Description": "All melee attacks gain On Hit: may deal 2 piercing damage to a foe in range 4 as an effect."
+  },
+  {
+    "Name": "Imperial Automata",
+    "Description": "This character always attempts to attack and focus on the closest foe at the start of its turn unless it's inside a command aura."
+  },
+  {
+    "Name": "Imperial Command Aura",
+    "Description": "Aura 3. Allies in the aura gain +1 boon on attacks and can randomly critically hit (+[D])."
+  },
+  {
+    "Name": "Leashed Beast",
+    "Description": "If not in an imperial command aura, when bloodied considers all characters foes and will focus on the closest character, regardless of allegiance."
+  },
+  {
+    "Name": "Receive Orders",
+    "Description": "When an imperial starts its turn in range of an imperial command aura, it recharges all its abilities."
+  },
+  {
+    "Name": "Vantage Point",
+    "Description": "Characters mounted on this character have +1 boon on ranged attacks and increase the range of all their ranged attacks by +4."
+  }
+]

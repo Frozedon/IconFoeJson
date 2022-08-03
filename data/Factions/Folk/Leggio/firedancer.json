@@ -1,0 +1,32 @@
+{
+  "Name": "Fire Dancer",
+  "Inherits": [ "Leggio", "Artillery" ],
+  "Type": "Foe",
+  "Actions": [
+    {
+      "Name": "Flame Dance",
+      "ActionCost": 1,
+      "Tags": [ "ranged attack 6", "pierce" ],
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "Effects": "Dash 2, then deal [fray] piercing damage to a different character in range 6."
+    },
+    {
+      "Name": "Carnivale",
+      "ActionCost": 1,
+      "Tags": [ "summon", "end turn" ],
+      "Description": "The Fire dancer summons a bomb in range 4.",
+      "Summons": {
+        "Name": "Bomb",
+        "Tags": [ "1 HP", "Attacks automatically hit" ],
+        "SummonEffects": "Can be shoved. When taking any amount of damage, explodes for a blast 1 area effect explosion. Characters within become vulnerable, then must save or take [D]+[fray] to characters within and become burning, or just [fray] damage."
+      }
+    },
+    {
+      "Name": "Juggle",
+      "ActionCost": 2,
+      "Tags": "stance",
+      "Description": "The fire dancer starts juggling flames. While in this stance, at the end of their turn, or when they dash, they can deal [fray] piercing damage to a character in range 6."
+    }
+  ]
+}

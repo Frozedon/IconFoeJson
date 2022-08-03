@@ -1,0 +1,35 @@
+{
+  "Name": "Maze Demon",
+  "Inherits": [ "Demon", "Elite", "Artillery" ],
+  "Type": "Foe",
+  "Chapter": 3,
+  "Speed": 2,
+  "Traits": [ "Size 2", "Dissolving Reality", "Law of the Maze", "Pull of the Maze" ],
+  "Actions": [
+    {
+      "Name": "Diablo",
+      "ActionCost": 2,
+      "Tags": [ "ranged attack 8", "cross 1", "pierce" ],
+      "Hit": "2[D]+[fray].",
+      "Miss": "[fray].",
+      "AreaEffect": "[fray].",
+      "Effects": "Deals bonus damage for each foe in end spaces of the cross. If three or more foes are effected, becomes a critical hit (+[D])."
+    },
+    {
+      "Name": "Cheat Reality",
+      "ActionCost": 1,
+      "Tags": "1/round",
+      "Description": "The Maze Demon fixes it's Law of the Maze numbers to 13 (d20) and 6 (d10) for the rest of the round."
+    },
+    {
+      "Name": "Great Warp",
+      "ActionCost": 1,
+      "Description": "A character in range 6 takes [fray] piercing damage and is teleported 2."
+    },
+    {
+      "Name": "Fold Space",
+      "ActionCost": 1,
+      "Description": "The Maze Demon teleports all adjacent characters 1, then teleports 4."
+    }
+  ]
+}

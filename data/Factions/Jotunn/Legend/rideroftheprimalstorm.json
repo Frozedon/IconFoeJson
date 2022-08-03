@@ -1,0 +1,54 @@
+{
+  "Name": "Rider of the Primal Storm",
+  "Inherits": [ "Jotunn", "Legendary Heavy" ],
+  "Type": "Foe",
+  "HP": 40,
+  "RemoveTraits": "Titanblood",
+  "Traits": [ "Size 2", "Divine Presence", "Static Charge", "Lingering Spark", "Judgement Bolt" ],
+  "Actions": [
+    {
+      "Name": "Blade of the Storm Lord",
+      "ActionCost": 1,
+      "Tags": [ "melee attack", "arc 4", "true strike" ],
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "AreaEffect": "[fray].",
+      "Effects": "Shove all foes 1.",
+      "Combo": {
+        "Name": "Great Bolt",
+        "ActionCost": 2,
+        "Tags": [ "ranged attack", "line 10", "true strike" ],
+        "Hit": "2[D]+[fray].",
+        "Miss": "[fray].",
+        "AreaEffect": "[fray].",
+        "Effects": "Attack target crackles with a static charge. If they don't end their next turn adjacent to another character, they take [D]+[fray] again, then this effect ends."
+      }
+    },
+    {
+      "Name": "Jolt",
+      "ActionCost": 1,
+      "Description": "A foe in range 5 takes [fray] damage. They must then save or become winded and have their polarity flipped. Winded foes fail the save."
+    },
+    {
+      "Name": "Joyous Combat",
+      "ActionCost": 1,
+      "Tags": "2/round",
+      "Description": "All adjacent foes must choose: be shoved 2, or take [D]+[fray] from the Rider."
+    },
+    {
+      "Name": "Sturmreiten",
+      "ActionCost": 1,
+      "Tags": "1/round",
+      "Description": "The Rider becomes intangible, then flies 5 in a straight line with phasing. All characters they pass through take [fray] damage. Then, this effect ends."
+    }
+  ],
+  "PhasesDescription": "The Rider enters its second phase when bloodied.",
+  "Phases": [
+    {
+      "Description": "No changes."
+    },
+    {
+      "Traits": [ "Call Steed", "Primal Levin" ]
+    }
+  ]
+}

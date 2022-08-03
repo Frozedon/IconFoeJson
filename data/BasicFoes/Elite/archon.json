@@ -1,0 +1,39 @@
+{
+  "Name": "Archon",
+  "Inherits": [ "Elite", "Heavy" ],
+  "Type": "Foe",
+  "UsesTemplate": true,
+  "Traits": "Great Enrage",
+  "Actions": [
+    {
+      "Name": "Blackheart",
+      "ActionCost": 1,
+      "Tags": [ "melee attack", "true strike" ],
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "Effects": [
+        "Deals 2 damage to all foes adjacent to the archon or their target.",
+        "Gains +1 boon and deals bonus damage for each of the following: character is stunned, dazed, or winded."
+      ]
+    },
+    {
+      "Name": "Iron Fist",
+      "ActionCost": 1,
+      "Tags": [ "repeatable" ],
+      "Description": "An adjacent foe must save or become dazed, if they are already dazed, they are also winded."
+    },
+    {
+      "Name": "Great Slam",
+      "ActionCost": 1,
+      "Description": "Dash 2 spaces, then all adjacent foes are shoved 1 space.",
+      "Collide": "Foe is stunned."
+    },
+    {
+      "Name": "Great Shieldwall",
+      "ActionCost": 1,
+      "Recharge": 5,
+      "Tags": [ "stance" ],
+      "Description": "While in this stance, becomes immobile, but self and adjacent allies gain resistance. Ends at the start of the Archon’s next turn."
+    }
+  ]
+}

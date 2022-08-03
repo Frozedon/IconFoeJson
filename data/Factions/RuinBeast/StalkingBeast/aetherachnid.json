@@ -1,0 +1,21 @@
+{
+  "Name": "Aetherachnid",
+  "Inherits": "Stalking Beast",
+  "Type": "Foe",
+  "Traits": "Phasing",
+  "Actions": [
+    {
+      "Name": "Phase Shift",
+      "ActionCost": 1,
+      "Tags": "repeatable",
+      "Description": "Teleport 2 spaces."
+    },
+    {
+      "Name": "Teleporting Poison",
+      "ActionCost": 1,
+      "Tags": "mark",
+      "Description": "An adjacent foe must save or be poisoned, slowed, and marked. Poisoned characters fail the save.",
+      "Mark": "While marked, the first time on a turn that character takes damage, the arachnid can teleport them 1."
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "Name": "Looter",
+  "Inherits": [ "Scavenger", "Skirmisher" ],
+  "Traits": [ "Bully", "Golden Burden" ],
+  "Actions": [
+    {
+      "Name": "Slice and Dice",
+      "ActionCost": 1,
+      "Tags": [ "melee attack or ranged attack 4", "+1 boon" ],
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "Effects": "May dash 1 before or after attack."
+    },
+    {
+      "Name": "Smoke Bomb",
+      "ActionCost": 2,
+      "Tags": "end turn",
+      "Description": "Create a blast 1 area of difficult terrain in range 3. Characters in the area gain cover and characters other than Looters are blinded+. This area lasts until this ability is used again."
+    },
+    {
+      "Name": "Mug",
+      "ActionCost": 1,
+      "Description": "An adjacent foe is slowed. If that foe has a valuables token, they take [fray] damage, then the looter takes a valuables token from them."
+    },
+    {
+      "Name": "Swing Sack",
+      "ActionCost": 0,
+      "Tags": "greed",
+      "Description": "An adjacent character takes 2 damage once. Deal 2 damage again for each valuables token the Looter has."
+    }
+  ],
+  "ConditionalAbilities": [
+    {
+      "Chapter": 2,
+      "Traits": "Golden Step"
+    },
+    {
+      "Chapter": 3,
+      "RemoveTraits": "Golden Step",
+      "Traits": "Golden Step (Improved)"
+    }
+  ]
+}

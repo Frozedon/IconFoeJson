@@ -1,0 +1,29 @@
+{
+  "Name": "Immortal",
+  "Inherits": [ "Relict", "Heavy" ],
+  "Type": "Foe",
+  "Chapter": 2,
+  "Traits": [ "Defiance", "Sturdy", "Immortal Disregard", "Beyond Death", "Aura of Immortality" ],
+  "Actions": [
+    {
+      "Name": "Bloody Fuller",
+      "ActionCost": 2,
+      "Tags": [ "melee attack 2", "true strike" ],
+      "Hit": "[D].",
+      "Miss": "0 damage.",
+      "Effects": [
+        "Shove 1.",
+        "Deals added damage to all foes in range 2, hit or miss, equal to 2 times the round number."
+      ]
+    },
+    {
+      "Name": "Impale",
+      "ActionCost": 2,
+      "Recharge": 5,
+      "Tags": [ "melee attack", "true strike" ],
+      "Hit": "2[D]+[fray] ahd shove 4. The immortal dashes after the target, following it.",
+      "Miss": "[D]+[fray] and shove 2.",
+      "Collide": "Foe is also dazed and winded."
+    }
+  ]
+}

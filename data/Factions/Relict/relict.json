@@ -1,23 +1,25 @@
 {
   "Name": "Relict",
-  "Group": "Relict",
+  "Faction": "Relict",
   "Type": "Template",
-  "IsBasicTemplate": true,
-  "FactionBlight": "Electrified",
-  "Traits": [
-    {
-      "Name": "Defiance",
-      "Description": "Prevents hit points from being reduced past 1 hp. When this triggers, remove this effect and character becomes immune to all damage for the rest of the current turn."
-    },
-    {
-      "Name": "Shuffle",
-      "Description": "All Relict can move 1 space forward at the start of their turn as a free action. When they do this, they can also move any relicts that are contiguously connected to them via adjacency. When shuffle activates for mobs, it activates for all five simultaneously."
-    }
-  ],
   "SetupTraits": [
     {
       "Name": "Monsters",
       "Description": "Relict do not flee or negotiate."
+    },
+    {
+      "Name": "Legion of the Dead",
+      "Description": "Relict are a legion of mindless husks, cursed with an undying existence. For every point of Relicts in an encounter, you can add two Husks to a fight."
+    }
+  ],
+  "ConditionalAbilities": [
+    {
+      "IsNotSpecialClasses": [ "Mob", "Legend" ],
+      "Traits": [ "Rise Again", "Shuffle" ]
+    },
+    {
+      "IsSpecialClasses": "Mob",
+      "Traits": "Shuffle (Mob)"
     }
   ]
 }

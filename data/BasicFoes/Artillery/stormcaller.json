@@ -1,0 +1,34 @@
+{
+  "Name": "Storm Caller",
+  "Inherits": "Artillery",
+  "Type": "Foe",
+  "UsesTemplate": true,
+  "Traits": "Flying",
+  "Actions": [
+    {
+      "Name": "Geyser",
+      "ActionCost": 1,
+      "Tags": [ "ranged attack 8", "cross 1", "pierce" ],
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "AreaEffect": "[fray].",
+      "Effects": [
+        "Summon a pit in a free space in the area.",
+        "Attack target is frostbitten. Frosbitten characters are shattered."
+      ]
+    },
+    {
+      "Name": "Frozen Spear",
+      "ActionCost": 1,
+      "Tags": [ "range 6", "line 4" ],
+      "AreaEffect": "Foes take 2 piercing damage and one foe is frostbitten. Frostbitten foes take 2 piercing damage, twice."
+    },
+    {
+      "Name": "Summon Storm",
+      "ActionCost": 1,
+      "Recharge": 6,
+      "Tags": [ "terrain effect" ],
+      "Description": "Summon a blast 1 terrain effect in range 8. While inside, characters are vulnerable+ and the area is difficult terrain. The storm caller can redirect any of its storms with 1 action, moving them up to 3 spaces, then dealing [fray] damage to any characters in their area."
+    }
+  ]
+}

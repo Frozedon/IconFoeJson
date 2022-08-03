@@ -1,0 +1,28 @@
+{
+  "Name": "Barkeep",
+  "Inherits": [ "Yeokin", "Artillery" ],
+  "Type": "Foe",
+  "Actions": [
+    {
+      "Name": "Flaming Cocktail",
+      "ActionCost": 1,
+      "Tags": [ "ranged attack 6", "cross 1" ],
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "AreaEffect": "[fray]."
+    },
+    {
+      "Name": "Bar Brawler",
+      "ActionCost": 1,
+      "Tags": "stance",
+      "Description": "The Barkeep gains counter and sturdy. Any time a character ends their turn adjacent to the barkeep in this stance, they must save or take 2 piercing damage and be shoved 1. This stance ends at the start of the Barkeep's next turn."
+    },
+    {
+      "Name": "Barrel Roll",
+      "ActionCost": 1,
+      "Tags": [ "end turn", "delay" ],
+      "Description": "The Barkeep chooses a direction, ends their turn, then gains",
+      "Delay": "Their next turn must be slow. At the start of that turn, they roll a barrel in a line pattern drawn in that direction from 2-6 spaces. Characters the barrel passes through take [fray] piercing damage and are shoved 1 to either side. When the barrel ends its movement, it explodes for a blast 1 area effect, dealing [D]+[fray] piercing damage and shattering all characters within."
+    }
+  ]
+}

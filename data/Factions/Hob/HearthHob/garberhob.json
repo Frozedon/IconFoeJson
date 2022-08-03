@@ -1,0 +1,50 @@
+{
+  "Name": "Garberhob",
+  "Inherits": "Hearth Hob",
+  "Type": "Foe",
+  "Chapter": 2,
+  "Actions": [
+    {
+      "Name": "Steal Skill",
+      "ActionCost": 1,
+      "Description": "The Hob chooses a foe in range 3. Until the end of that foe's next turn, they treat all foes as having evasion and dodge."
+    },
+    {
+      "Name": "Lost Object",
+      "ActionCost": 1,
+      "Description": "The Hob produces and throws a lost object at a foe in range 4. Roll 1d6.",
+      "Rolls": [
+        {
+          "Values": 1,
+          "Name": "Elixir",
+          "Description": "Foe gains vigor 1."
+        },
+        {
+          "Values": 2,
+          "Name": "Kettle Full of Tea",
+          "Description": "Hot tea inflicts [fray] damage, burning and blinded."
+        },
+        {
+          "Values": 3,
+          "Name": "Portable Hole",
+          "Description": "Create a pit under the foe."
+        },
+        {
+          "Values": 4,
+          "Name": "Old Sandwich",
+          "Description": "Foe is slowed and poisoned, then must save or lose all vigor."
+        },
+        {
+          "Values": 5,
+          "Name": "Spare Sword",
+          "Description": "Foe takes [D]+[fray] damage."
+        },
+        {
+          "Values": 6,
+          "Name": "Bag of Hammers",
+          "Description": "Foe must save or take 3 damage five times, or just once on a successful save."
+        }
+      ]
+    }
+  ]
+}

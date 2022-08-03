@@ -1,49 +1,33 @@
 {
   "Name": "Ruin Speaker",
-  "Inherits": [ "Jotunn", "Elite" ],
-  "Type": "UniqueFoe",
-  "Group": "Lowlander",
-  "UsesClass": "Artillery",
-  "Chapter": 1,
-  "Vitality": 8,
-  "HPMultiplier": 8,
-  "Speed": 3,
-  "Dash": 2,
-  "Defense": 5,
-  "Armor": 1,
-  "FrayDamage": 4,
-  "DamageDie": 8,
-  "Traits": [
-    {
-      "Name": "Overdrive 4",
-      "Description": "Attacks are all critical hits on hit at round 4 or later."
-    }
-  ],
+  "Inherits": [ "Lowlander", "Elite", "Artillery" ],
+  "Type": "Foe",
+  "Traits": "Call Ruin",
   "Actions": [
     {
       "Name": "Landwrack",
-      "ActionCost": 1,
-      "Tags": [ "ranged attack 8" ],
-      "Hit": "[D]+fray.",
+      "ActionCost": 2,
+      "Tags": "ranged attack 8",
+      "Hit": "2[D]+[fray].",
       "Miss": "[fray].",
-      "Effect": "Summon a height 1 destructible terrain piece adjacent to the character."
+      "Effects": "Create a height 1 ruin object adjacent to the character."
     },
     {
       "Name": "Entropus",
       "ActionCost": 1,
-      "Description": "A character in range 6 of the ruin speaker is marked and starts to petrify. While marked, they take [D] piercing damage at the end of their turns if they end their turn adjacent to or inside a piece of terrain or terrain effect. The Ruin speaker can mark any number of characters with this ability."
+      "Tags": "multimark",
+      "Description": "A character in range 6 of the ruin speaker is marked and starts to petrify.",
+      "Mark": "While marked, they take [D] piercing damage at the end of their turns if they end their turn adjacent to or inside an object or terrain effect."
     },
     {
-      "Name": "Call Ruin",
+      "Name": "Earthglide",
       "ActionCost": 1,
-      "Recharge": 4,
-      "Description": "The Ruin speaker chooses a space in range 6, that becomes known to all characters, and must take a slow turn next round. At the start of the Ruin speaker's next turn, a ruin chunk surfaces in that space, a height 2 piece of terrain. Spaces next to this terrain are difficult terrain. Any character occupying the space is pushed up on top of the ruin chunk but is also stunned (no save)."
+      "Description": "Dash 3. Gain phasing and become intangible while moving."
     },
     {
       "Name": "Welcome",
       "ActionCost": 1,
-      "Recharge": 4,
-      "Description": "The Ruin Speaker re-arms all lowlander traps in range 3, then immediately re-triggers the effects of all lowlander traps in range."
+      "Description": "The Ruin Speaker creates a lowlander trap in a free space in range 6."
     }
   ]
 }

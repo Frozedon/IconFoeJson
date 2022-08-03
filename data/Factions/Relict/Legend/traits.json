@@ -1,0 +1,115 @@
+[
+  {
+    "Name": "Malice",
+    "Description": "After attacking a foe, the Vessel knight marks them, granting a stack of malice. Malice stacks indefinitely. This character gains +1 boon on attacks and deals +[D] on hit or miss against a foe for each stack of malice. If a character suffering from Malice doesn't attack during their turn, at the end of their turn, clear all stacks of Malice. It can also be cleared by anything that clears a mark, but doing so only clears one at a time."
+  },
+  {
+    "Name": "Spectral Form",
+    "Description": "Loses all armor, but become sturdy, gains phasing, flying, and speed 6."
+  },
+
+  
+  {
+    "Name": "Eternal",
+    "Actions": {
+      "Name": "Eternal",
+      "ActionCost": 0,
+      "Tags": [ "1/round" ],
+      "Description": "Clear a status, mark, or all blights affecting either the Lich's Body or Soul."
+    }
+  },
+  {
+    "Name": "Master of Life and Death",
+    "Description": "The Lich occupies two size 1 entities, which are functionally the same character but track statuses separately. One is the Lich's body, the other is its soul. When the lich makes movement or takes action, it can do so with either its body or soul.\nAt the start of combat, the Lich's soul is intangible. At the start of round 2, this switches, and the Lich's body becomes intangible (while its soul loses this status). This continues to swap back and forth until the Lich is defeated.",
+    "ListedItems": [
+      {
+        "Description": "The Lich's body is sturdy and cannot dash. (Can't be stunned or dazed, and reduce the distance of all shoves by 1)"
+      },
+      {
+        "Description": "The Lich's soul has flying and speed 6. (Ignores all terrain and terrain effects other than impassable terrain, and ignores engagement and obstruction)"
+      }
+    ]
+  },
+  {
+    "Name": "Soul Sacrifice",
+    "Description": "At the start of the round, all visible foes have their soul shoved out of their body and summoned in a location of the lich's choice within range 5 of them.",
+    "Summons": {
+      "Name": "Soul Summon",
+      "Tags": [ "Size 1", "Intangible" ],
+      "SummonEffects": "A character's soul can be targeted as if it was the original character, transferring all abilities and effects. Damage taken via a character's soul becomes Divine damage. A character can re-unite with their soul by moving into and ending their turn in its space, ending this effect."
+    }
+  },
+  {
+    "Name": "Utterances of the Crawling Dead",
+    "Description": "At the start of the round, the lich begins incanting. It marks out an area 2 spaces around its body, which is visible to all characters, and becomes immobile. Every other part of the battlefield is filled with shifting darkness. At the end of the round, all spaces outside the area marked by Utterances of the Crawling Dead erupt. Foes inside must save or take 100% of their max hp as divine damage, or 50% on a successful save. This damage cannot reduce a character past 1 hp.\nIf the round is 6 or higher, this does not mark a safe area."
+  },
+
+
+  {
+    "Name": "Disgorge the Dead",
+    "Description": "At the start of every player character turn, the Prelictor summons one of the summons below in range 3 of a player character (roll 1d6 for type)."
+  },
+  {
+    "Name": "Soul Consume X",
+    "Description": "The Prelictor can perform powerful actions by destroying X of its summons except an Incarnate (see phases below)."
+  },
+  {
+    "Name": "Prelictor Summons",
+    "DisplayName": "Summons",
+    "Description": "All summons are size 1, have 8 hp, 3 speed, 8 defense, and use the Prelictor's damage. When summoned, the summon uses its summon action, then remains on the battlefield until destroyed. When the Prelictor creates a new summon, it can move all its existing summons 1 space, then use a one additional summon action from one of other existing summons, if possible.",
+    "Summons": [
+      {
+        "Name": "1-2: Librarian",
+        "Traits": "Curse of Absolute Silence",
+        "ListedActions": {
+          "Name": "Summon Action: Soul Spear",
+          "ActionCost": -1,
+          "Tags": "line 3",
+          "AreaEffect": "2 piercing damage. Relict are immune."
+        }
+      },
+      {
+        "Name": "3-4: Vile Haruspex",
+        "Traits": "Curse of Decay",
+        "ListedActions": {
+          "Name": "Summon Action: Rot Spray",
+          "ActionCost": -1,
+          "Tags": "close blast 1",
+          "AreaEffect": "1 piercing damage. Relict are immune."
+        }
+      },
+      {
+        "Name": "5-6: Vile Cataloguer",
+        "Traits": "Curse of Lethargy",
+        "ListedActions": {
+          "Name": "Summon Action: Heavy Tome",
+          "ActionCost": -1,
+          "Description": "One or two adjacent foes take 2 piercing damage."
+        }
+      },
+      {
+        "Name": "Minor Incarnate",
+        "Tags": [ "Size 1", "Flying", "Phasing", "Intangible" ],
+        "Effects": "This minor incarnate is tied to a specific character. It teleports 1 space towards that character whenever they take an action or make a standard move, and can only move closer to that character. The Incarnate can be shoved or teleported, but is otherwise immune to all other damage and effects. If a character ever starts or ends a turn adjacent to the Incarnate targeting them, the Incarnate uses Soul Edge. Summoned Incarnates disperse and disappear when the Predictor is defeated.",
+        "ListedInterrupts": {
+          "Name": "Soul Edge",
+          "Count": 1,
+          "Trigger": "The Incarnate's target starts or ends their turn adjacent to it.",
+          "Effects": "That character must save or instantly take a wound. This could cause them to die."
+        }
+      }
+    ]
+  },
+  {
+    "Name": "Curse of Absolute Silence",
+    "Description": "Aura 1. Foes in the area are pacified+."
+  },
+  {
+    "Name": "Curse of Decay",
+    "Description": "Aura 1. Foes starting or ending their turn in the area take 2 piercing damage."
+  },
+  {
+    "Name": "Curse of Lethargy",
+    "Description": "Aura 1. Foes are winded+ while in the aura."
+  }
+]

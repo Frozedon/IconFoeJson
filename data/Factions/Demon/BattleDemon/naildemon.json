@@ -1,0 +1,23 @@
+{
+  "Name": "Nail Demon",
+  "Inherits": "Battle Demon",
+  "Type": "Foe",
+  "Chapter": 2,
+  "Traits": [ "Counter", "Sturdy", "Painwrack" ],
+  "Actions": [
+    {
+      "Name": "Embrace",
+      "ActionCost": 0,
+      "Description": "A character in range 3 is shoved 2 spaces towards the Nail Demon."
+    },
+    {
+      "Name": "Impale",
+      "ActionCost": 2,
+      "Recharge": 5,
+      "Tags": [ "melee attack", "true strike" ],
+      "Hit": "2[D]+[fray] and shove 4. The Nail Demon dashes after the target, following it.",
+      "Miss": "[D]+[fray] and shove 2.",
+      "Collide": "Foe is also dazed and winded."
+    }
+  ]
+}

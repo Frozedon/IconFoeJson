@@ -1,0 +1,19 @@
+{
+  "Name": "Skinner Shrike",
+  "Inherits": "Stalking Beast",
+  "Type": "Foe",
+  "Chapter": 3,
+  "Traits": "Nimble",
+  "Interrupts": {
+    "Name": "Stalking Retreat",
+    "Count": 1,
+    "Trigger": "When damaged by an ability.",
+    "Effects": "After the triggering ability resolves, dash 2, then gain stealth."
+  },
+  "Actions": {
+    "Name": "Fowl Play",
+    "ActionCost": 1,
+    "Recharge": 6,
+    "Description": "Target a close blast 2 area. Teleport five times. May deal 3 damage to an adjacent foe each time. Must choose a different foe each time unless every foe has been hit at least once."
+  }
+}

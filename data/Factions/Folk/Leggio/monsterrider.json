@@ -1,0 +1,27 @@
+{
+  "Name": "Monster Rider",
+  "Inherits": [ "Leggio", "Heavy" ],
+  "Type": "Foe",
+  "Traits": "Monster Riding",
+  "Actions": [
+    {
+      "Name": "Double Team",
+      "ActionCost": 1,
+      "Tags": [ "melee attack" ],
+      "Hit": "[D].",
+      "Miss": "1 damage.",
+      "Effects": "The rider and an ally in range 3 can each dash 1, then deal 2 damage to an adjacent foe."
+    },
+    {
+      "Name": "Taunt",
+      "ActionCost": 1,
+      "Description": "A foe in range 3 must save or be shoved towards the rider as far as possible, then gain hatred of the rider. On a successful save, they are shoved 1 towards the rider."
+    },
+    {
+      "Name": "Lancer's Splendor",
+      "ActionCost": 2,
+      "Tags": [ "stance" ],
+      "Description": "The rider takes a magnificent pose and gains aura 2. The rider and allies in the aura are sturdy and deal bonus damage with all abilities."
+    }
+  ]
+}

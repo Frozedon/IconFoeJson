@@ -1,0 +1,60 @@
+{
+  "Name": "Pariah",
+  "Inherits": [ "Lowlander", "Artillery" ],
+  "Type": "Foe",
+  "Chapter": 3,
+  "Interrupts": {
+    "Name": "Mutate",
+    "Count": 1,
+    "Trigger": "The Pariah is critically hit.",
+    "Effects": "The Pariah gains vigor 1 before damage is applied."
+  },
+  "Actions": [
+    {
+      "Name": "Flesh warp",
+      "ActionCost": 0,
+      "Description": "The Pariah rips itself apart, then reassembles. It teleports 2, then teleports 2. It can split up these teleports with another action."
+    },
+    {
+      "Name": "Chaos Beam",
+      "ActionCost": 2,
+      "Tags": [ "ranged attack", "line 10" ],
+      "Hit": "2[D]+[fray].",
+      "Miss": "[fray].",
+      "AreaEffect": "[fray].",
+      "Effects": "Roll 1d6 and apply the following effects to all characters within. Effects, except vigor and statuses, last until the end of the round.",
+      "Rolls": [
+        {
+          "Values": 1,
+          "Description": "Characters may teleport when they move."
+        },
+        {
+          "Values": 2,
+          "Description": "All characters grant cover to other characters until the end of next round."
+        },
+        {
+          "Values": 3,
+          "Description": "Characters that end their turn adjacent to at least one other character take 25% of their max hp as damage per adjacent character, then grants vigor 1 to each adjacent character."
+        },
+        {
+          "Values": 4,
+          "Description": "Characters are shattered and shoved 1."
+        },
+        {
+          "Values": 5,
+          "Description": "Characters are removed from the battlefield, then returned to play at the start of their next turn."
+        },
+        {
+          "Values": 6,
+          "Description": "Characters are reduced to 50% max hp if above 50% max hp. Characters below 50% max hp gain vigor 2."
+        }
+      ]
+    },
+    {
+      "Name": "Chaos Storm",
+      "ActionCost": 2,
+      "Tags": [ "range 6", "blast 1" ],
+      "Description": "Remove all characters in the area from the battlefield, then place them in any space within range 3 of their original location."
+    }
+  ]
+}

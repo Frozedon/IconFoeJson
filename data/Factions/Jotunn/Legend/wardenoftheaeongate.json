@@ -1,0 +1,73 @@
+{
+  "Name": "Warden of the Aeongate",
+  "Inherits": [ "Jotunn", "Legendary Artillery" ],
+  "Type": "Foe",
+  "Chapter": 3,
+  "Vitality": 10,
+  "HP": 30,
+  "RemoveTraits": "Titanblood",
+  "Traits": [ "Size 2", "Flying", "Divine Presence", "Sever Mortal Thread", "Time Heals All", "Eternal Star", "Unmoor" ],
+  "Actions": [
+    {
+      "Name": "Staff of Eternal Order",
+      "ActionCost": 1,
+      "Tags": "melee attack 3 or ranged attack 8",
+      "AutoHit": "[fray].",
+      "Effects": "Create a cross 2 area effect as a time effect, centered on the target and moving with them. Roll 1d6 for turns remaining. The effect deals [D]+[fray] damage when it triggers."
+    },
+    {
+      "Name": "Primal Polaris",
+      "ActionCost": 1,
+      "Tags": "divine",
+      "Description": "Mark a visible space with a d6 time effect. Roll 1d6 for turns remaining. When the effect goes off meteor smashes into the space, inflicting [D]+[fray] in a blast 1 area centered on the space to all characters within, then ending this effect."
+    },
+    {
+      "Name": "Slip Between Space",
+      "ActionCost": 1,
+      "Description": "Remove the Warden from the battlefield and place it in a new space in range 5."
+    },
+    {
+      "Name": "Primal Sisyphus",
+      "ActionCost": 1,
+      "Tags": "multimark",
+      "Description": "Mark a character with a d6 rolled time effect, and put a marker on their current location.",
+      "Mark": "When the time effect runs out, remove them from the battlefield and return them to the marker. Then end this mark."
+    },
+    {
+      "Name": "Primal Starseed",
+      "ActionCost": 1,
+      "Tags": [ "2/round", "summon" ],
+      "Description": "The Warden chooses a foe, then summons a primal star-seed 5 spaces away from them. The star seed is a size 1 summon that is immune to all damage that moves 1 space towards that character at the start of their turn, then 1 space towards them when they take an action. If the character starts or ends their turn adjacent to the star-seed, it explodes for a blast 2 area effect, destroying it. Foes inside must save or take 2[D]+[fray] on a failed save, or just [fray] damage on a successful save. The star-seed persists for the rest of combat, but if it it caught in the area of Primal Polaris or if it would more than 1 damage from an Eternal Star, it is destroyed and does not explode."
+    },
+    {
+      "Name": "Chains of Fate",
+      "ActionCost": 1,
+      "Tags": "1/round",
+      "Description": "The Warden chains a foe in range 6 to an adjacent space. If they enter that space, they take [D]+[fray] and are stunned. At the end of their next turn, they are shoved up to 4 spaces towards that space, ending in it if possible, then this effect ends. A character can only be affected by one set of chains at a time."
+    },
+    {
+      "Name": "The Sun",
+      "ActionCost": 2,
+      "Tags": "1/round",
+      "Description": "The Warden summons an Eternal Star."
+    }
+  ],
+  "PhasesDescription": "The Warden changes phases when reduced to 0 HP and defeated. It then alters time to a timeline where it wasn't defeated, then reduces its maximum hp. It is finally defeated when reduced to 0 HP in phase 3.",
+  "Phases": [
+    {
+      "Description": "No changes."
+    },
+    {
+      "Description": "The Warden is returned to 50% max and current hp. It summons two Eternal Stars instead of one at the start of each round. The Warden also gains the following actions.",
+      "Actions": {
+        "Name": "Key of Existence",
+        "ActionCost": 0,
+        "Tags": "1/round",
+        "Description": "Re-roll all time dice."
+      }
+    },
+    {
+      "Description": "The Warden is returned to 25% max and current hp. It takes no turns and takes no actions during this phase, but is immobile and unstoppable. At the start of each round, it summons one Eternal Star per active player character. These stars have no time die. Instead, after all players have acted, the stars land. This phase continues until the Warden or all player characters are defeated, in which case the fight ends."
+    }
+  ]
+}

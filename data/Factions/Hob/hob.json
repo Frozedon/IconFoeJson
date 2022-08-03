@@ -7,7 +7,7 @@
     {
       "Name": "Kin",
       "Description": "Hobs can (technically) be bargained with, and will occasionally flee or surrender when they are badly losing a fight. Unless greatly pressed, hobs that are considered kin will never kill characters intentionally, preferring to punish or humiliate.",
-      "ExtraItems": [
+      "ListedItems": [
         {
           "Name": "Motivations",
           "Description": "Hobs are usually strongly motivated by trespass or injury against the land. Some are motivated by some perceived slight or offense against some ancient bargain, rule, or compact. Still others are simply motivated by natural beauty or whimsy and don't see malice in their own actions."

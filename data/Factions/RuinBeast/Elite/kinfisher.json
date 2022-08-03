@@ -16,7 +16,7 @@
       "Name": "Spit Up",
       "ActionCost": 1,
       "Tags": "close blast 1",
-      "AreaEffect": "Characters take fray damage, are poisoned, and must save or become winded. Poisoned characters fail the save."
+      "AreaEffect": "Characters take [fray] damage, are poisoned, and must save or become winded. Poisoned characters fail the save."
     },
     {
       "Name": "The Maw",

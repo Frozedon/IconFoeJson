@@ -30,7 +30,25 @@
     {
       "Name": "Lesser Decree",
       "ActionCost": 0,
-      "Description": "used this turn. Lesser Decree (free action): The Emissary makes one of the following decrees, choosing a character in range 8. That character must follow the decree or else take [D]+[fray] divine damage and become stunned:\n- Decree of Anger: Attack this round.\n- Decree of Selfishness: Do not use abilities that target allies this round.\n- Decree of Paranoia: End turn without being adjacent to any other characters.\n- Decree of Rashness: End turn adjacent to a foe."
+      "Description": "The Emissary makes one of the following decrees, choosing a character in range 8. That character must follow the decree or else take [D]+[fray] divine damage and become stunned.",
+      "ListedItems": [
+        {
+          "Name": "Decree of Anger",
+          "Description": "Attack this round."
+        },
+        {
+          "Name": "Decree of Selfishness",
+          "Description": "Do not use abilities that target allies this round."
+        },
+        {
+          "Name": "Decree of Paranoia",
+          "Description": "End turn without being adjacent to any other characters."
+        },
+        {
+          "Name": "Decree of Rashness",
+          "Description": "End turn adjacent to a foe."
+        }
+      ]
     }
   ]
 }

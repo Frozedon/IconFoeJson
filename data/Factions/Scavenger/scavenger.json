@@ -7,7 +7,7 @@
     {
       "Name": "Kin", 
       "Description": "Scavengers are kin, can be bargained with, and will flee or surrender if heavily outnumbered or heavily losing a fight.",
-      "ExtraItems": [
+      "ListedItems": [
         {
           "Name": "Motivations",
           "Description": "Scavengers are typically after the wealth in the ruins and won't fight if terms can be reached."

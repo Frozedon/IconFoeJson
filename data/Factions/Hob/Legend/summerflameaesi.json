@@ -67,7 +67,7 @@
           "ActionCost": 1,
           "Tags": "1/round",
           "Description": "The Aesi chooses a foe in range 3 and tosses them a flagon.",
-          "ExtraItems": [
+          "ListedItems": [
             {
               "Description": "If that character chooses not to drink, the Aesi gains vigor 1 and clears all statuses and marks."
             },

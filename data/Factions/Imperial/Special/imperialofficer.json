@@ -1,5 +1,6 @@
 {
   "Name": "Imperial Officer",
   "Type": "SpecialTemplate",
+  "RemoveSetupTraits": "Commanding Officer",
   "Traits": [ "Arkentech Power Armor", "Imperial Command Aura" ]
 }

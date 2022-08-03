@@ -23,7 +23,7 @@
       "Name": "Pounce",
       "ActionCost": 0,
       "Tags": "2/round",
-      "Description": "The Chimaera flies 5 spaces. Characters under or adjacent to it when it lands are shoved 1 space and take fray damage as an area effect."
+      "Description": "The Chimaera flies 5 spaces. Characters under or adjacent to it when it lands are shoved 1 space and take [fray] damage as an area effect."
     }
   ],
   "PhasesDescription": "Each time the Chimaera loses a head, its phase changes. The recharge for its heads' abilities depend on phase, and only roll for a head's abilities on turns that it takes.",
@@ -240,7 +240,7 @@
           "Name": "Meteor",
           "ActionCost": 2,
           "Tags": "recharge",
-          "Description": "All characters not in cover from the Chimaera must save or take fray damage twice and become vulnerable, or once on a successful save. Then, summon a height 1 boulder object adjacent to any character affected."
+          "Description": "All characters not in cover from the Chimaera must save or take [fray] damage twice and become vulnerable, or once on a successful save. Then, summon a height 1 boulder object adjacent to any character affected."
         }
       ]
     },

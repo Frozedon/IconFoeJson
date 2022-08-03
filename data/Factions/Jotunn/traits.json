@@ -2,7 +2,7 @@
   {
     "Name": "Aetherstorm",
     "Description": "The Quintessence's Raging Storm deals divine damage, and its allies are immune to its effects. In addition, when any character starts its turn in the area, the Quintessent can apply one of following effects.",
-    "ExtraItems": [
+    "ListedItems": [
       { 
         "Name": "Earth",
         "Description": "Create a pit under the character."
@@ -32,7 +32,7 @@
   {
     "Name": "Exalt Erenhelion",
     "Description": "At the start of the Round, the Aetnir either chooses Crush Cowards or Break the Mighty. At the end of the round, the chosen effect occurs.",
-    "ExtraItems": [
+    "ListedItems": [
       { 
         "Name": "Crush Cowards",
         "Description": "The Aetnir raises its weapon. At the end of the round, it sweeps out with a massive slash, affecting a blast 3 area effect around it, with different effects depending on how close characters are. Foes 3 spaces away take 2[D]+[fray]. Foes 2 spaces away take [D]+[fray]. Adjacent foes take [fray] damage."
@@ -57,7 +57,7 @@
   },
   {
     "Name": "Scouring Gaze",
-    "Description": "At the start of the round, the Cyclopean chooses a blast 1 area in range 6. At the end of the round, they shoot a massive bolt of energy at that area, dealing [D]+fray piercing damage as an area effect to characters within. If the Cyclopean is blinded, characters within take only 1 damage instead."
+    "Description": "At the start of the round, the Cyclopean chooses a blast 1 area in range 6. At the end of the round, they shoot a massive bolt of energy at that area, dealing [D]+[fray] piercing damage as an area effect to characters within. If the Cyclopean is blinded, characters within take only 1 damage instead."
   },
   {
     "Name": "Titan Armament",

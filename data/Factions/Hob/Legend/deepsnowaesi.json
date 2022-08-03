@@ -46,7 +46,7 @@
       "Name": "Stiffen Limbs",
       "ActionCost": 1,
       "Tags": "1/round",
-      "Description": "The Aesi chooses up to three characters in range 6. During their next turn, those characters must end their turn at least 4 spaces from their starting location at the start of their turn, or else take [D]+fray and become stunned."
+      "Description": "The Aesi chooses up to three characters in range 6. During their next turn, those characters must end their turn at least 4 spaces from their starting location at the start of their turn, or else take [D]+[fray] and become stunned."
     },
     {
       "Name": "Freeze Solid",
@@ -63,7 +63,7 @@
         "ActionCost": 1,
         "Tags": "2/round",
         "Description": "The Aesi chooses a character in range 6. At the end of that character's turn, an icicle coalesces and falls on that character for a blast 1 area effect centered on them. Characters inside take 2 damage, then create the icicle adjacent to the targeted character. The icicle is a height 2 destructible object (1o hp) that has aura 1. The aura has the following effects:",
-        "ExtraItems": [
+        "ListedItems": [
           {
             "Description": "Foes that start their turn in the aura take 2 piercing damage."
           },
@@ -83,7 +83,7 @@
         "ActionCost": 0,
         "Tags": "2/round",
         "Description": "The Aesi chooses a character in range 6. At the end of that character's turn, an icicle coalesces and falls on that character for a blast 1 area effect centered on them. Characters inside take 2 damage, then create the icicle adjacent to the targeted character. The icicle is a height 2 destructible object (1o hp) that has aura 1. The aura has the following effects:",
-        "ExtraItems": [
+        "ListedItems": [
           {
             "Description": "Foes that start their turn in the aura take 2 piercing damage."
           },

@@ -2,7 +2,24 @@
   {
     "Name": "Arkentech Munitions",
     "Tags": [ "summon", "start of round" ],
-    "Description": "At the start of each round, the Weapon summons two Arkentech munitions, massive explosives.\n- Munitions are size 1 immobile summons with 1 hp that are automatically hit by attacks. They can be shoved or teleported.\n- A character can pick up a munition by passing through its space, and drop it as a free action. It shares their space and moves or teleports with them as long as they're holding it. If they take damage while holding a munition, it explodes.\n- When damaged, a munition explodes in a blast 2 area effect. Characters inside are dazed, then must save or take 2[D]+[fray] and become burning, or [fray] on a successful save.\n- If the munition catches the Weapon in its area of effect, it strips off an armor plate instead of dealing damage normally. If there are no armor plates remaining, it deals damage normally.\n- The Weapon can't target munitions unless it also targets a player character or summon with the same action."
+    "Description": "At the start of each round, the Weapon summons two Arkentech munitions, massive explosives.",
+    "ListedItems": [
+      {
+        "Description": "Munitions are size 1 immobile summons with 1 hp that are automatically hit by attacks. They can be shoved or teleported."
+      },
+      {
+        "Description": "A character can pick up a munition by passing through its space, and drop it as a free action. It shares their space and moves or teleports with them as long as they're holding it. If they take damage while holding a munition, it explodes."
+      },
+      {
+        "Description": "When damaged, a munition explodes in a blast 2 area effect. Characters inside are dazed, then must save or take 2[D]+[fray] and become burning, or [fray] on a successful save."
+      },
+      {
+        "Description": "If the munition catches the Weapon in its area of effect, it strips off an armor plate instead of dealing damage normally. If there are no armor plates remaining, it deals damage normally."
+      },
+      {
+        "Description": "The Weapon can't target munitions unless it also targets a player character or summon with the same action."
+      }
+    ]
   },
   {
     "Name": "Arkentech Armor Plate",
@@ -36,7 +53,7 @@
     "Name": "Sections Veridian Weapon",
     "DisplayName": "Sections",
     "Description": "The targetable parts of the Weapon are three separate sections: the Engine, the Forward Turret, and the Aft Turret.",
-    "ExtraItems": [
+    "ListedItems": [
       {
         "Description": "Each section is a size 2 character that is immobile, immune to shove and teleport, and has 1/3 of the Weapon's total HP. If removed from the battlefield, it can only be placed in the same space."
       },

@@ -94,7 +94,7 @@
         "Name": "Garrote",
         "ActionCost": 1,
         "Recharge": 6,
-        "Effects": "An adjacent foe must save. On a successful save, that foe takes fray damage twice. On a failed save, that foe and Fixer become immobile. At the end of the targeted foe's turn, they must save or take damage equal to 50% of their max hp. Bloodied characters fail this save. Then, this effect ends. It also ends early if Fixer or the targeted foe are moved apart. Only one character can be garroted at once."
+        "Effects": "An adjacent foe must save. On a successful save, that foe takes [fray] damage twice. On a failed save, that foe and Fixer become immobile. At the end of the targeted foe's turn, they must save or take damage equal to 50% of their max hp. Bloodied characters fail this save. Then, this effect ends. It also ends early if Fixer or the targeted foe are moved apart. Only one character can be garroted at once."
       }
     },
     {
@@ -199,7 +199,7 @@
         {
           "Name": "Spark",
           "ActionCost": 0,
-          "Description": "A foe in range 6 is marked. At the end of the marked character's turn, if they are still marked, they explode in a blast 1 area effect for [D]+fray. Summon a pit under them. If that foe is already standing in a pit, they instead take damage equal to 50% of their max hp. It explodes immediately if used against bloodied foes."
+          "Description": "A foe in range 6 is marked. At the end of the marked character's turn, if they are still marked, they explode in a blast 1 area effect for [D]+[fray]. Summon a pit under them. If that foe is already standing in a pit, they instead take damage equal to 50% of their max hp. It explodes immediately if used against bloodied foes."
         }
       ]
     },

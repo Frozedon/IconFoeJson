@@ -22,7 +22,7 @@
     {
       "Name": "Drop Bomb",
       "ActionCost": 1,
-      "Description": "The Balloon flies 5 in a straight line. It drops a blast 1 area effect below it over any space it moved over. Characters in the area take fray damage and become vulnerable. The character in the center space must save or become stunned."
+      "Description": "The Balloon flies 5 in a straight line. It drops a blast 1 area effect below it over any space it moved over. Characters in the area take [fray] damage and become vulnerable. The character in the center space must save or become stunned."
     },
     {
       "Name": "High Altitude",

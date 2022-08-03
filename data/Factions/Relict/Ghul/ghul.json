@@ -14,7 +14,7 @@
     {
       "Name": "Life Drain",
       "ActionCost": 1,
-      "Effects": "A foe in range 3 takes [fray] damage, ignoring vigor. If they are bloodied, they take fray damage twice instead, ignoring vigor."
+      "Effects": "A foe in range 3 takes [fray] damage, ignoring vigor. If they are bloodied, they take [fray] damage twice instead, ignoring vigor."
     },
     {
       "Name": "Terrorize",

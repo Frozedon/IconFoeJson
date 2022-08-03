@@ -64,7 +64,7 @@
           "Name": "Embrace",
           "ActionCost": 2,
           "Tags": [ "1/round" ],
-          "Description": "An adjacent foe must save. On a successful save, they are shoved 1 and take [D]+fray. On a failed save, they take divine damage equal to 50% of their max hp. Either way, this attack can't take them below 1 hp."
+          "Description": "An adjacent foe must save. On a successful save, they are shoved 1 and take [D]+[fray]. On a failed save, they take divine damage equal to 50% of their max hp. Either way, this attack can't take them below 1 hp."
         },
         {
           "Name": "Open Wound",

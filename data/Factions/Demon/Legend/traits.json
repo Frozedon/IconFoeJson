@@ -50,7 +50,7 @@
       {
         "Name": "The Scepter Bearer", 
         "Tags": [ "Size 1", "10 HP", "Defense 5", "Flying" ],
-        "SummonEffects": "When defeated, drops its scepter in its space. Any character standing in or adjacent to the scepter space deals double damage with abilities (double all damage after rolling and adding fray damage). The scepter disappears when this summon is re-summoned.",
+        "SummonEffects": "When defeated, drops its scepter in its space. Any character standing in or adjacent to the scepter space deals double damage with abilities (double all damage after rolling and adding [fray] damage). The scepter disappears when this summon is re-summoned.",
         "SummonActions": "When summoned, and on each of the Majesty Demon's turns, flies 1. Cannot move unless it's within range 4 of a player character."
       },
       {

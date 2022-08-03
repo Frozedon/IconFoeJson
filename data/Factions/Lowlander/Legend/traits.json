@@ -102,7 +102,7 @@
       {
         "Values": [ 1, 2 ],
         "Name": "Filthy Geyser",
-        "Description": "Create a pit. At the end of each round, the pit erupts. Characters in a blast 1 area effect centered on it take [D]+fray piercing damage and are poisoned."
+        "Description": "Create a pit. At the end of each round, the pit erupts. Characters in a blast 1 area effect centered on it take [D]+[fray] piercing damage and are poisoned."
       },
       {
         "Values": [ 3, 4 ],
@@ -152,7 +152,7 @@
   {
     "Name": "God Waster",
     "Description": "At the start of the round, the Head Lopper either chooses Raze Hell or Raze Heaven. At the end of the round, they unleash a massive storm of violence. As an effect, all foes take divine damage depending on a character's elevation.",
-    "ExtraItems": [
+    "ListedItems": [
       {
         "Name": "Raze Hell",
         "Description": "\n  • Pits: 100% of max hp.\n  • Ground: 50% of max hp.\n  • Height 1: 25% of max hp.\n  • Height 2 or higher: No effect."

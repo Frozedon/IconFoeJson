@@ -11,7 +11,7 @@
       "Tags": [ "ranged attack 5", "blast 1" ],
       "AutoHit": "[D]+[fray] and foe is branded.",
       "AreaEffect": "[fray].",
-      "Delay": "The Greenkeeper's next turn must be slow. At the start of that turn, the area erupts again. Foes in the area take fray damage twice. Allies in the area gain vigor 1."
+      "Delay": "The Greenkeeper's next turn must be slow. At the start of that turn, the area erupts again. Foes in the area take [fray] damage twice. Allies in the area gain vigor 1."
     },
     {
       "Name": "Bloom",

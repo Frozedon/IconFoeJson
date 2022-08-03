@@ -6,7 +6,7 @@
     "Name": "Counter-strike",
     "Count": 1,
     "Trigger": "This character or an adjacent ally is hit or miss by a melee attack.",
-    "Effects": "The attacker is shoved 1 and must save. On a failed save, they take fray damage and are dazed."
+    "Effects": "The attacker is shoved 1 and must save. On a failed save, they take [fray] damage and are dazed."
   },
   "Actions": [
     {

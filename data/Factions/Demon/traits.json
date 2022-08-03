@@ -9,7 +9,7 @@
   },
   {
     "Name": "Ceaseless Shrieking",
-    "Description": "If no foe is in line of sight of the Pale Man on its turn, it spends its entire turn shrieking. All foes take [D]+fray and must save or become stunned."
+    "Description": "If no foe is in line of sight of the Pale Man on its turn, it spends its entire turn shrieking. All foes take [D]+[fray] and must save or become stunned."
   },
   {
     "Name": "Chameleonic",
@@ -17,7 +17,25 @@
   },
   {
     "Name": "Decree",
-    "Description": "At the start of the round, the Judicator Demon makes one of the following decrees, making a different decree each round than the last one. Foes that do not follow the decree by the end of the round take 2[D]+fray damage as an effect and are stunned.\n- Decree of Anger: Attack this round.\n- Decree of Selfishness: Do not use abilities that target allies this round.\n- Decree of Paranoia: End turn without being adjacent to any other characters.\n- Decree of Rashness: End turn adjacent to a foe"
+    "Description": "At the start of the round, the Judicator Demon makes one of the following decrees, making a different decree each round than the last one. Foes that do not follow the decree by the end of the round take 2[D]+[fray] damage as an effect and are stunned.",
+    "ListedItems": [
+      {
+        "Name": "Decree of Anger",
+        "Description": "Attack this round."
+      },
+      {
+        "Name": "Decree of Selfishness",
+        "Description": "Do not use abilities that target allies this round."
+      },
+      {
+        "Name": "Decree of Paranoia",
+        "Description": "End turn without being adjacent to any other characters."
+      },
+      {
+        "Name": "Decree of Rashness",
+        "Description": "End turn adjacent to a foe."
+      }
+    ]
   },
   {
     "Name": "Devour",
@@ -46,7 +64,14 @@
   },
   {
     "Name": "Distorted Soul",
-    "Description": "• When not bloodied, gain resistance to all melee attacks. However, all ranged attacks against it becomes divine.\n• When bloodied, gain resistance to damage from any ranged attack. However, all melee attacks against it become divine."
+    "ListedItems": [
+      {
+        "Description": "When not bloodied, gain resistance to all melee attacks. However, all ranged attacks against it becomes divine."
+      },
+      {
+        "Description": "When bloodied, gain resistance to damage from any ranged attack. However, all melee attacks against it become divine."
+      }
+    ]
   },
   {
     "Name": "Eyes Within Eyes",

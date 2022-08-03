@@ -16,7 +16,7 @@
       "Name": "Sand Blast",
       "ActionCost": 1,
       "Tags": "repeatable",
-      "Description": "A foe in range 3 is blinded. Blinded foes take fray damage."
+      "Description": "A foe in range 3 is blinded. Blinded foes take [fray] damage."
     },
     {
       "Name": "Anklebiter",

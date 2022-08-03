@@ -47,7 +47,7 @@
   {
     "Name": "Wild Hunt",
     "Description": "At the start of the round, the beast can choose an edge of the map. At the end of that round, a huge stampede of animals sweeps across the map from that end to the next.",
-    "ExtraItems": [
+    "ListedItems": [
       {
         "Description": "Repeat this effect 3 times on all foes.",
         "CustomComponents": [

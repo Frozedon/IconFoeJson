@@ -70,7 +70,7 @@
             "Tags": "multimark",
             "Description": "A foe in range 8 is marked.",
             "Mark": " At the end of their turn, if they are still marked, the turret fires a missile at them. They must save or take 2[D]+[fray], or [D]+[fray] on a successful save, then the mark ends.",
-            "Effects": "If they are adjacent to an Overlock Piston or automaton, this missile hits the the piston or automaton instead, dealing only fray damage to the marked character and instantly destroying the automaton or piston."
+            "Effects": "If they are adjacent to an Overlock Piston or automaton, this missile hits the the piston or automaton instead, dealing only [fray] damage to the marked character and instantly destroying the automaton or piston."
           }
         },
         {

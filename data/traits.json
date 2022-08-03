@@ -135,12 +135,12 @@
     "Description": "This character starts combat with 5 mob allies, regardless of encounter budget."
   },
   {
-    "Name": "Cronies",
-    "Description": "This character starts combat with 5 mob allies, regardless of encounter budget."
-  },
-  {
     "Name": "Crumbling Body",
     "Description": "Each time it would take damage from an action or ability, permanently reduce its armor by 1 for the rest of combat, even if that damage is reduced to 0. If it's armor is 0, it becomes vulnerable+."
+  },
+  {
+    "Name": "Crystal Dagger",
+    "Description": "When the demon teleports, it may deal 1 damage to a foe in range 3."
   },
   {
     "Name": "Curse the Eyeless",
@@ -190,7 +190,21 @@
   },
   {
     "Name": "Dweller in Dark",
-    "Description": "This character has the following abilities:\n- Immune to pits.\n- Immune to blinded.\n- May use its standard move to teleport from the area of any pit to any other pit.\n- Has resistance while inside a pit."
+    "Description": "This character has the following abilities:",
+    "ListedItems": [
+      {
+        "Description": "Immune to pits."
+      },
+      {
+        "Description": "Immune to blinded."
+      },
+      {
+        "Description": "May use its standard move to teleport from the area of any pit to any other pit."
+      },
+      {
+        "Description": "Has resistance while inside a pit."
+      }
+    ]
   },
   {
     "Name": "Earthbreaker",

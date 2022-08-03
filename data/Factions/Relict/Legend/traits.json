@@ -20,7 +20,15 @@
   },
   {
     "Name": "Master of Life and Death",
-    "Description": "The Lich occupies two size 1 entities, which are functionally the same character but track statuses separately. One is the Lich's body, the other is its soul. When the lich makes movement or takes action, it can do so with either its body or soul.\n- The Lich's body is sturdy, cannot dash, and has Aetherwall.\n- The Lich's soul has flying and speed 6.\nAt the start of combat, the Lich's soul is intangible.\nAt the start of round 2, this switches, and the Lich's body becomes intangible (while its soul loses this status). This continues to swap back and forth until the Lich is defeated."
+    "Description": "The Lich occupies two size 1 entities, which are functionally the same character but track statuses separately. One is the Lich's body, the other is its soul. When the lich makes movement or takes action, it can do so with either its body or soul.\nAt the start of combat, the Lich's soul is intangible. At the start of round 2, this switches, and the Lich's body becomes intangible (while its soul loses this status). This continues to swap back and forth until the Lich is defeated.",
+    "ListedItems": [
+      {
+        "Description": "The Lich's body is sturdy and cannot dash. (Can't be stunned or dazed, and reduce the distance of all shoves by 1)"
+      },
+      {
+        "Description": "The Lich's soul has flying and speed 6. (Ignores all terrain and terrain effects other than impassable terrain, and ignores engagement and obstruction)"
+      }
+    ]
   },
   {
     "Name": "Soul Sacrifice",
@@ -33,8 +41,9 @@
   },
   {
     "Name": "Utterances of the Crawling Dead",
-    "Description": "At the start of the round, the lich begins incanting. It marks out an area 2 spaces around its body, which is visible to all characters, and becomes immobile. Every other part of the battlefield is filled with shifting darkness. At the end of the round, all spaces outside the area marked by Utterances of the Crawling Dead erupt. Foes inside must save or take 100% of their max hp as divine damage, or 50% on a successful save. This damage cannot reduce a character past 1 hp.\nIf overdrive has activated, Utterances of the Crawling Dead does not mark a safe area."
+    "Description": "At the start of the round, the lich begins incanting. It marks out an area 2 spaces around its body, which is visible to all characters, and becomes immobile. Every other part of the battlefield is filled with shifting darkness. At the end of the round, all spaces outside the area marked by Utterances of the Crawling Dead erupt. Foes inside must save or take 100% of their max hp as divine damage, or 50% on a successful save. This damage cannot reduce a character past 1 hp.\nIf the round is 6 or higher, this does not mark a safe area."
   },
+
 
   {
     "Name": "Disgorge the Dead",

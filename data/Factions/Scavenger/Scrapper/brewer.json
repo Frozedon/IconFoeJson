@@ -19,7 +19,7 @@
       "Rolls": [
         {
           "Values": 1,
-          "Description": "Brew explodes in a blast 1 area effect centered on the brewer, dealing [D]+fray with true strike to everyone (including the Brewer!)"
+          "Description": "Brew explodes in a blast 1 area effect centered on the brewer, dealing [D]+[fray] with true strike to everyone (including the Brewer!)"
         },
         {
           "Values": [ 2, 3 ],

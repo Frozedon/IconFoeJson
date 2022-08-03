@@ -22,13 +22,13 @@
     {
       "Name": "Earthforce",
       "ActionCost": 1,
-      "Description": "An adjacent object is shoved 3. Characters in its path are shoved 1 to either side, then take fray damage and become dazed.",
+      "Description": "An adjacent object is shoved 3. Characters in its path are shoved 1 to either side, then take [fray] damage and become dazed.",
       "Collide": "Characters also take [D]."
     },
     {
       "Name": "Hurl Self",
       "ActionCost": 2,
-      "Description": "The Boulder hob reduces its max hp by 25%, hurling part of itself at a foe. A foe in range 5 must save or take 3[D]+fray, be shoved 3, and become stunned. On a successful save, they are shoved 1, dazed, and take [D]+fray. Then, create a height 1 boulder object adjacent to that foe. The hob can reduce its hp to 0 and defeat itself with this move."
+      "Description": "The Boulder hob reduces its max hp by 25%, hurling part of itself at a foe. A foe in range 5 must save or take 3[D]+fray, be shoved 3, and become stunned. On a successful save, they are shoved 1, dazed, and take [D]+[fray]. Then, create a height 1 boulder object adjacent to that foe. The hob can reduce its hp to 0 and defeat itself with this move."
     }
   ]
 }

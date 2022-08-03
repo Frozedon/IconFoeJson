@@ -8,7 +8,7 @@
       "Name": "Bargain",
       "Count": 1,
       "Description": "As an interrupt, the Geryan can strike one of the following bargains with any foe. The bargain interrupts anything that's currently going on, and resolves immediately. Accepting a bargain is voluntary. If a character refuses a bargain, the Geryan regains this interrupt.",
-      "ExtraItems": [
+      "ListedItems": [
         {
           "Name": "Luck",
           "CustomComponents": [

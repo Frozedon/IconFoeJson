@@ -24,7 +24,7 @@
     {
       "Name": "Blinding Bomb",
       "ActionCost": 1,
-      "Description": "The Ring Finger throws a bomb at a cross 1 location in range 4. Characters within take fray damage and must save or become blinded."
+      "Description": "The Ring Finger throws a bomb at a cross 1 location in range 4. Characters within take [fray] damage and must save or become blinded."
     },
     {
       "Name": "Drop Caltrops",

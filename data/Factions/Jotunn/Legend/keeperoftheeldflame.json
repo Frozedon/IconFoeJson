@@ -26,7 +26,7 @@
       "ActionCost": 1,
       "Tags": [ "1/round", "end turn" ],
       "Description": "The Keeper gains vigor 1 and summons the Everforge, a 2x2 height 2 object. Character standing on the forge when it is summoned are pushed up on top of it. The Forge has 10 hp plus 10 per player character and is automatically hit by attacks. The Smith may use any of the Forge actions below as long as the Forge is active and the Keeper is within range 2. When the Keeper uses Forge, the area on and adjacent to the forge explodes for a 2 piercing damage area effect, and the forge takes 10 damage, potentially destroying it.",
-      "ExtraItems": [
+      "ListedItems": [
         {
           "Description": "The Keeper can only keep one of each unique effect active at once, including the forge itself."
         },

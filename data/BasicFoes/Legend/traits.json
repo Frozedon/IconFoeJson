@@ -54,7 +54,7 @@
   },
   {
     "Name": "Elden Chaos",
-    "Description": "At the end of the round, the Razer fires a beam of pure ancient chaos. The beam is a 3 wide line area effect that crosses through all obstacles, terrain, and goes across the whole battlefield. Characters in the area must save. On a failed save, they take 2[D]+fray, 3 times. On a successful save, then take it only once. Characters in cover gain +1 boon on the save. Effect: If overdrive has activated, this deals maximum damage."
+    "Description": "At the end of the round, the Razer fires a beam of pure ancient chaos. The beam is a 3 wide line area effect that crosses through all obstacles, terrain, and goes across the whole battlefield. Characters in the area must save. On a failed save, they take 2[D]+fray, 3 times. On a successful save, then take it only once. Characters in cover gain +1 boon on the save.\nIf the round is 6 or higher, this deals maximum damage."
   },
   {
     "Name": "Radiance",

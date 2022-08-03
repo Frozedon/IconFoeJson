@@ -43,7 +43,7 @@
       "ActionCost": 0,
       "Tags": [ "2/round", "end turn" ],
       "Description": "An foe in range 2 must save. On a failed save, the Head Lopper dashes until adjacent, then grabs the foe, immobilizing them. If the Head Lopper or the targeted foe are separated, this effect ends. Otherwise, at the end of the very next turn, the Head Lopper performs one of the following moves, ending this effect:",
-      "ExtraItems": [
+      "ListedItems": [
         {
           "Name": "DDT",
           "Description": "The foe is stunned, winded, dazed, and shoved 1."

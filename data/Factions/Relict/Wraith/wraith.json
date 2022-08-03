@@ -20,7 +20,7 @@
     {
       "Name": "Shock",
       "ActionCost": 1,
-      "Description": "A character in range 8 is vulnerable. Vulnerable foes take piercing fray damage and become electrified."
+      "Description": "A character in range 8 is vulnerable. Vulnerable foes take piercing [fray] damage and become electrified."
     }
   ],
   "ConditionalAbilities": [

@@ -23,7 +23,7 @@
     {
       "Name": "Side Cannons",
       "ActionCost": 1,
-      "Description": "All foes in range 2 of the Wagon take fray damage and are shoved 1."
+      "Description": "All foes in range 2 of the Wagon take [fray] damage and are shoved 1."
     },
     {
       "Name": "Lumber",

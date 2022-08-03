@@ -50,7 +50,7 @@
   {
     "Name": "Suddenly!",
     "Description": "At the start of any round, the GM can spring a lowlander trap in any unoccupied space not adjacent to a player character. All traps can be disarmed by a character taking the interact action adjacent, removing it. Lowlanders and any of their allies are not affected by their own traps, or their effects, and can move over them normally. Traps remain even if deactivated. The trap is a pit with one of the following effects:",
-    "ExtraItems": [
+    "ListedItems": [
       {
         "Name": "Snare Trap",
         "Description": "A character in range 2 of the trap must save or be shoved until inside the trap."

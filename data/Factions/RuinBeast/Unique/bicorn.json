@@ -17,7 +17,7 @@
     {
       "Name": "Destabilize",
       "ActionCost": 1,
-      "Description": "A foe in range 6 becomes vulnerable. If that foe moves more than 1 space on its next turn, it also takes fray damage."
+      "Description": "A foe in range 6 becomes vulnerable. If that foe moves more than 1 space on its next turn, it also takes [fray] damage."
     },
     {
       "Name": "Gallop",

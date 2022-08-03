@@ -59,7 +59,7 @@
   {
     "Name": "Mortal Mockery",
     "Description": " The Aesi transforms its physical form into a mockery of the closest foe. The effects depend on the foe's class. If the same effect would be chosen twice, the Aesi can choose a different one of its choice to apply.\nNaturally, all of these effects stack if the Aesi is allowed to use them again. Why be one class when you can be all of them?",
-    "ExtraItems": [
+    "ListedItems": [
       {
         "Name": "Mock Stalwart",
         "Description": "The Aesi gains armor 3 and the fortify trait. In addition, Leaf dance gains true strike."

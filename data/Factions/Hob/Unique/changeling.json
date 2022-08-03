@@ -22,7 +22,7 @@
       "Name": "Lesser Mortal Mockery",
       "ActionCost": 0,
       "Description": "The changeling transforms its physical form into a brief mockery of the closest foe. The effects depend on the foe's class.",
-      "ExtraItems": [
+      "ListedItems": [
         {
           "Name": "Stalwart",
           "Description": "The Changeling becomes sturdy until the start of its next turn."

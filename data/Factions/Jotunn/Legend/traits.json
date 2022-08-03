@@ -2,7 +2,7 @@
   {
     "Name": "Static Charge",
     "Description": "At the start of combat, roll 1d6 for each foe (or flip a coin). On tails, or 1-3, the foe gains a negative charge. On a 4+, the foe gains a positive charge. These charges are ongoing effects:",
-    "ExtraItems": [
+    "ListedItems": [
       {
         "Description": "If a character ends their turn adjacent to a character with the same charge as them, both characters are shoved 2 away from each other."
       },
@@ -14,7 +14,7 @@
   {
     "Name": "Lingering Spark", 
     "Tags": "1/round",
-    "Description": "The first time in a round the Titan attacks, create a Lingering Spark terrain effect adjacent to its attack target. A foe entering the spark's space can pick it up as part of their movement, taking fray damage but swapping their polarity. Otherwise, the Spark lasts until the end of combat."
+    "Description": "The first time in a round the Titan attacks, create a Lingering Spark terrain effect adjacent to its attack target. A foe entering the spark's space can pick it up as part of their movement, taking [fray] damage but swapping their polarity. Otherwise, the Spark lasts until the end of combat."
   },
   {
     "Name": "Judgement Bolt",
@@ -44,7 +44,7 @@
   {
     "Name": "Volatile Ember", 
     "Description": "At the start of the round, the Keeper creates 1 Volatile Ember in any space within range 2 of a character until there are six Embers active. A Volatile Ember is a special terrain effect that may be picked up by a character moving into its space. A character carrying embers takes 1 divine damage, once, at the end of their turn for every ember they are carrying. The Keeper's abilities become stronger against character carrying embers.\nHowever, carrying an ember fills a character and their weapons with godly power and has the following benefits:",
-    "ExtraItems": [
+    "ListedItems": [
       {
         "Name": "1+",
         "Description": "All attacks gain +1 boon and true strike."
@@ -94,7 +94,7 @@
   {
     "Name": "Eternal Star", 
     "Description": "At the start of each round, the Warden summons an Eternal Star, a massive meteor. The star is a time effect with a d6 time die set to 6, targeted on any space. When the star comes down, all foes take divine damage depending on their distance from the star's space.",
-    "ExtraItems": [
+    "ListedItems": [
       {
         "Name": "0 (in the space)",
         "Description": "100% of max hp."

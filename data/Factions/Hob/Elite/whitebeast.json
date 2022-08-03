@@ -36,7 +36,7 @@
     {
       "Name": "Horn Smash",
       "ActionCost": 1,
-      "Description": "A foe in range 2 must save. On a successful save, they take fray damage. On a failed save, they take fray damage, are shattered, and additionally take 1 piercing damage for each space they move or are shoved before the end of their next turn."
+      "Description": "A foe in range 2 must save. On a successful save, they take [fray] damage. On a failed save, they take [fray] damage, are shattered, and additionally take 1 piercing damage for each space they move or are shoved before the end of their next turn."
     },
     {
       "Name": "Pollen Haze",

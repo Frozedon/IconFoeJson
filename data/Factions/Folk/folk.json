@@ -5,7 +5,7 @@
     {
       "Name": "Kin", 
       "Description": "Folk are Kin.",
-      "ExtraItems": [
+      "ListedItems": [
         {
           "Name": "Motivations",
           "Description": "Kin usually fight for their ideals, usually to protect something they care about (even if that something is something as simple as their own survival)."

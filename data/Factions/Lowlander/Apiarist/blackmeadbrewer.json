@@ -1,6 +1,6 @@
 {
   "Name": "Black Mead Brewer",
-  "Inherits": "Boil",
+  "Inherits": "Apiarist",
   "Type": "Foe",
   "Chapter": 2,
   "Traits": [ "Defiance", "Regenerator" ],

@@ -1,6 +1,6 @@
 {
   "Name": "Initiate",
-  "Inherits": "Boil",
+  "Inherits": "Apiarist",
   "Type": "Foe",
   "Actions": {
     "Name": "Maddening Stinging",

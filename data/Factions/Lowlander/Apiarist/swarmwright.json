@@ -1,6 +1,6 @@
 {
   "Name": "Swarm Wright",
-  "Inherits": "Boil",
+  "Inherits": "Apiarist",
   "Type": "Foe",
   "Chapter": 3,
   "Traits": [ "Flying", "Phasing", "Swarm Shroud" ],

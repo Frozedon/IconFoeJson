@@ -1,6 +1,6 @@
 {
   "Name": "Monster Hunter",
-  "Inherits": "Boil",
+  "Inherits": "Apiarist",
   "Type": "Foe",
   "RemoveActions": "Summon the Swarm",
   "Actions": [

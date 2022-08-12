@@ -23,7 +23,7 @@
       "Summons": {
         "Name": "Scrap Turret",
         "Tags": [ "Size 1", "Immobile", "1 HP" ],
-        "SummonEffects": "When a foe in range 3 from the turret takes damage, the turret deals 1 piercing damage to them. The Junker can When a foe in range 3 from the turret takes damage, the turret deals 1 piercing damage to them. The Junker can"
+        "SummonEffects": "When a foe in range 3 from the turret takes damage, the turret deals 1 piercing damage to them. The Junker can only have one of these turrets active at once, and using this ability again while one is out resummons it to a new space."
       }
     },
     {

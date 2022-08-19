@@ -11,9 +11,9 @@
     {
       "Name": "Lurching Grab",
       "ActionCost": 2,
-      "Tags": [ "melee attack" ],
+      "Tags": "melee attack",
       "Description": "Dash 1, then",
-      "AutoHit": "1 damage. If another Husk is adjacent to the target, increase damage to 3 piercing."
+      "AutoHit": "1 damage. If the target started this turn immobile, then deal 3 piercing damage."
     }
   ]
 }

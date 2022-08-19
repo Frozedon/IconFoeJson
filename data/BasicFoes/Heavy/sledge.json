@@ -7,7 +7,7 @@
     {
       "Name": "Hilt Sweep",
       "ActionCost": 1,
-      "Tags": [ "melee attack" ],
+      "Tags": "melee attack",
       "AutoHit": "[fray] damage and shove 1.",
       "Effects": "All other adjacent foes are shoved 1."
     },

@@ -4,7 +4,7 @@
   "Type": "Foe",
   "Chapter": 2,
   "RemoveTraits": "Aetherwall",
-  "Traits": "Ethereal (Resistance)",
+  "Traits": [ "Hand Picked", "Ethereal (Resistance)" ],
   "Actions": [
     {
       "Name": "Shift",
@@ -19,8 +19,9 @@
     {
       "Name": "Liminal Darts",
       "ActionCost": 1,
-      "Tags": [ "mark" ],
-      "Description": "Mark a foe in line of sight and range 10. At the end of that character's turn, it takes [D] piercing damage if it's not in cover from the Life Hunter, or just 2 piercing damage if it is. Then this mark ends."
+      "Tags": "mark",
+      "Description": "Mark a foe in line of sight and range 10.", 
+      "Mark": "At the end of the marked character's turn, it takes [D] piercing damage if it's not in cover from the Life Hunter, or just 2 piercing damage if it is. Then this mark ends."
     },
     {
       "Name": "Life Seeking Arrow",
@@ -30,7 +31,7 @@
       "Miss": "25% of the foe's max HP.",
       "CriticalHit": "Deals 75% of the foe's max HP instead.",
       "Effects": "Ignores cover. Cannot target characters in range 2.",
-      "SpecialRecharge": "Recharges only if Nock is used."
+      "SpecialRecharge": "Recharges only if Nock is used. Starts combat uncharged."
     }
   ]
 }

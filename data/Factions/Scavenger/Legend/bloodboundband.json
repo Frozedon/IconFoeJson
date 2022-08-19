@@ -59,7 +59,7 @@
   "Phases": [
     {
       "Name": "2+ Brothers",
-      "Description": "When a Blood Brother is defeated, all active brothers grant their Bloodbound Blessing to all other active brothers, empowering them. Each brother has a different blessing."
+      "Description": "Each time a Blood Brother is defeated, all active brothers gain the Blood-bound Blessing of the fallen brother, empowering them. Each brother has a different blessing."
     },
     {
       "Name": "1 Brother",
@@ -168,7 +168,7 @@
     {
       "Name": "7. Sharp",
       "Class": "Artillery",
-      "Traits": [ "Aetherwall", "Overdrive 4", "Blessing Sharp" ],
+      "Traits": [ "Aetherwall", "Overdrive", "Blessing Sharp" ],
       "Actions": {
         "Name": "Ricochet Shot",
         "ActionCost": 1,
@@ -199,7 +199,9 @@
         {
           "Name": "Spark",
           "ActionCost": 0,
-          "Description": "A foe in range 6 is marked. At the end of the marked character's turn, if they are still marked, they explode in a blast 1 area effect for [D]+[fray]. Summon a pit under them. If that foe is already standing in a pit, they instead take damage equal to 50% of their max hp. It explodes immediately if used against bloodied foes."
+          "Tags": "mark",
+          "Description": "A foe in range 6 is marked.",
+          "Mark": "At the end of the marked character's turn, if they are still marked, they explode in a blast 1 area effect for [D]+[fray]. Summon a pit under them. If that foe is already standing in a pit, they instead take damage equal to 50% of their max hp. Then clear this mark. It explodes immediately if used against bloodied foes."
         }
       ]
     },
@@ -223,7 +225,8 @@
           "Name": "Bounty Hunter",
           "ActionCost": 0,
           "Tags": "mark",
-          "Description": "A foe in range 6 is marked. While marked, the target cannot benefit from evasion, dodge, or stealth, and allies gain +1 boon to attack the foe. Using this mark again transfers it."
+          "Description": "A foe in range 6 is marked.",
+          "Mark": "While marked, the target cannot benefit from evasion, dodge, or stealth, and allies gain +1 boon to attack the foe. Using this mark again transfers it."
         },
         {
           "Name": "Weaken",

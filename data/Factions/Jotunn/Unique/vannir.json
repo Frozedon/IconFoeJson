@@ -3,7 +3,7 @@
   "Inherits": [ "Jotunn", "Artillery" ],
   "Type": "Foe",
   "RemoveTraits": "Titanblood",
-  "Traits": "Size 2",
+  "Traits": "Size 1 OR Size 2",
   "Interrupts": {
     "Name": "Master of Rune-Cunning",
     "Count": 1,

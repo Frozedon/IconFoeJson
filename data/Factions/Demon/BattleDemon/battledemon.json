@@ -29,7 +29,7 @@
       "ActionCost": 1,
       "Tags": "mark",
       "Description": "Mark an adjacent foe.",
-      "Mark": "While marked, if that foe ends their turn adjacent to the Battle Demon, they take [D]+[fray] as an effect."
+      "Mark": "While marked, if that foe ends their turn adjacent to the Battle Demon, they take [D]+[fray] as an effect. A foe can end this effect by ending their turn more than 2 spaces from the Demon."
     }
   ],
   "ConditionalAbilities": [

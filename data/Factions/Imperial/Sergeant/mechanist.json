@@ -17,7 +17,7 @@
       "Recharge": 6,
       "Tags": "multimark",
       "Description": "The mechanist sprays flame in a line 3 area in range 5. Foes in the area are marked.",
-      "Mark": "While marked, they are branded+, burning, and cannot dash. They can end this mark through normal means, or alternately they or an adjacent ally can spend 1 action putting the flames out, ending the mark."
+      "Mark": "While marked, they are branded+, burning, and cannot dash. They or an adjacent ally can spend 1 action putting the flames out, ending the mark."
     }
   ]
 }

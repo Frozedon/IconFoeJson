@@ -32,8 +32,9 @@
       "Name": "Marry",
       "ActionCost": 1,
       "Tags": "multimark",
+      "Recharge": 5,
       "Description": "The Hob marks any two non-summon characters.",
-      "Mark": "Any time these characters are in range 3 of each other, both are pacified+."
+      "Mark": "Any time these characters are in within range 3 of each other, both are pacified+. A marked character can end this mark on both characters by using an action to blow a kiss at the other character, or by spending their entire turn not attacking."
     }
   ],
   "ConditionalAbilities": [

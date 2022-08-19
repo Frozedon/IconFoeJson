@@ -24,7 +24,7 @@
       "Name": "Death XIII",
       "ActionCost": 1,
       "Tags": "1/round",
-      "Description": "A character in range 6 pulses with dark energy. At the end of that character's turn, they take 20 damage. The character can reduce this damage to 10, then deal 10 damage to an adjacent character."
+      "Description": "A character in range 6 pulses with dark energy. At the end of that character's turn, they take 20 damage. The character can reduce this damage to 10, then deal 10 damage to an adjacent character, but only if there is an adjacent character available."
     },
     {
       "Name": "Comet Rain",
@@ -36,7 +36,7 @@
       "Name": "Wretched",
       "ActionCost": 2,
       "Tags": "1/round",
-      "Description": "A foe in range 8 must save or become winded, dazed, slowed, blinded, vulnerable, shattered, pacified, and branded. On a successful save, a character is affected by two of these statuses of the demon's choice. On a failed save, a character additionally becomes immune to this action for the rest of combat."
+      "Description": "A foe in range 8 must save or become winded, dazed, slowed, blinded, vulnerable, shattered, pacified, and branded. On a successful save, a character is affected by two of these statuses of the demon's choice. On a failed save, a character additionally becomes immune to a further use of this action for the rest of combat."
     }
   ],
   "PhasesDescription": "The Majesty Demon changes phases when bloodied.",

@@ -5,7 +5,7 @@
   "Traits": "Low Profile",
   "Actions": {
     "Name": "Cannon Strike",
-    "ActionCost": 1,
+    "ActionCost": 2,
     "Recharge": 6,
     "Tags": "end turn",
     "Description": "The Spotter marks a blast 1 area in range 8. At the end of the next round, a barrage of cannon fire hits that space as an area effect. Characters inside when the cannon fire comes down must save or take 2[D]+[fray] and be slowed on a failed save, or [D]+[fray] and no slow on a successful save."

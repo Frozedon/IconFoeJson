@@ -23,13 +23,15 @@
       "Name": "Weight of Conscience",
       "ActionCost": 1,
       "Tags": [ "mark", "requires 3+ tally" ],
-      "Description": "The Aurelian marks a foe in range 5. While marked, the foe cannot teleport and can only move a maximum of 3 spaces a round, no matter their abilities or speed."
+      "Description": "The Aurelian marks a foe in range 5.",
+      "Mark": "While marked, the foe cannot teleport and can only move a maximum of 3 spaces a round, no matter their abilities or speed. A foe can end this mark by not moving at all for their entire turn."
     },
     {
       "Name": "Lift Burdens",
       "ActionCost": 1,
       "Tags": [ "mark", "requires 6+ tally" ],
-      "Description": "The Aurelian marks an ally in range 5. While marked, the ally gains flying and evasion."
+      "Description": "The Aurelian marks an ally in range 5.",
+      "Mark": "While marked, the ally gains flying and evasion."
     },
     {
       "Name": "Collect",

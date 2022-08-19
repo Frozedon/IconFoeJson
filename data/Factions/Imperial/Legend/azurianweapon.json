@@ -6,7 +6,7 @@
   "HP": 32,
   "Speed": 0,
   "RemoveTraits": [ "Legendary Slip", "Aetherwall", "Receive Orders" ],
-  "Traits": [ "Ranged Master", "Advanced Scopes", "Arkentech Artillery", "Landship" ],
+  "Traits": [ "Legendary Landship", "Ranged Master", "Advanced Scopes", "Arkentech Artillery", "Landship" ],
   "Actions": [
     {
       "Name": "Turret Fire",
@@ -39,17 +39,23 @@
       "Description": "The Weapon chooses a character in range 6. At the end of that character's next turn, they explode for a blast 1 area effect centered on them, dealing [fray] damage to all characters and shoving all characters 1 space away from the target."
     },
     {
+      "Name": "Submerge",
+      "ActionCost": 1,
+      "Tags": "1/round",
+      "Description": "The Weapon moves clockwise to the next side of the battlefield."
+    },
+    {
       "Name": "Broadside",
       "ActionCost": 1,
       "Tags": "2/round",
-      "Description": "All foes in range 6 of the Weapon must save. On a successful save, they are shoved 1. On a failed save, they are shattered and shoved 3.",
+      "Description": "All foes in range 6 of the Weapon must save. On a successful save, they are shoved 1. On a failed save, they are shattered and shoved 3. ",
       "Collide": "They also take [D]+[fray]."
     },
     {
       "Name": "Rotary Cannon",
       "ActionCost": 1,
       "Tags": [ "1/round", "summon" ],
-      "Description": "The Azurian weapon chooses a foe in range 8, then summons a targeting reticle 3 spaces from them. The weapon can have up to 3 targeting reticles, and can target a given character more than once with a reticle. Using this ability again with 3 reticles active resummons a reticle.",
+      "Description": " The Azurian weapon chooses a foe in range 8, then summons a targeting reticle 3 spaces from them. The weapon can have up to 3 targeting reticles, and can target a given character more than once with a reticle. Using this ability again with 3 reticles active resummons a reticle.",
       "Summons": {
         "Name": "Targeting Reticle",
         "Tags": [ "Size 1", "Intangible" ],
@@ -57,7 +63,7 @@
       }
     }
   ],
-  "PhasesDescription": "The Azurian Weapon enters Phase II when bloodied.",
+  "PhasesDescription": "The Azurian Weapon begins in phase I and enters phase II when bloodied.",
   "Phases": [
     {
       "Description": "No changes."
@@ -66,13 +72,16 @@
       "Description": "As phase I, but in phase II:",
       "ListedItems": [
         {
-          "Description": "Submerge becomes 2/round."
+          "Name": "Submerge",
+          "Description": "Becomes 2/round."
         },
         {
-          "Description": "Arkentech Artillery does not end on a quadrant of the map once that quadrant is chosen (meaning it will eventually cover the whole map)."
+          "Name": "Arkentech Artillery",
+          "Description": "Does not end on a quadrant of the map once that quadrant is chosen (meaning it will eventually cover the whole map)."
         },
         {
-          "Description": "Rotary Cannon has no maximum number of targeting reticles."
+          "Name": "Rotary Cannon",
+          "Description": "Has no maximum number of targeting reticles."
         }
       ]
     }

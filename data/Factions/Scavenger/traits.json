@@ -50,7 +50,7 @@
   },
   {
     "Name": "Greed",
-    "Description": "If a Scavenger is holding a valuables token, their attacks can critical hit (+[D]). Many other scavenger abilities become more powerful if they have a valuables token."
+    "Description": "If a Scavenger is holding a valuables token, their attacks can randomly critical hit (+[D]). Many other scavenger abilities become more powerful if they have a valuables token."
   },
   {
     "Name": "Guard Loot",

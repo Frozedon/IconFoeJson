@@ -34,7 +34,7 @@
       "ActionCost": 1,
       "Tags": "mark",
       "Description": "Mark a character in range 10.",
-      "Mark": "At the end of that character's turn, shoot a bolt of energy at that character, creating a blast 1 area effect centered on them. Deals [D] piercing to that character, destroys all created terrain in the area and shoves all other characters 1 away from that character. Then, end this mark."
+      "Mark": "At the end of the marked character's turn, shoot a bolt of energy at that character, creating a blast 1 area effect centered on them. Deals [D] piercing to that character, destroys all created terrain in the area and shoves all other characters 1 away from that character. Then clear this mark."
     },
     {
       "Name": "Flesh Warp",

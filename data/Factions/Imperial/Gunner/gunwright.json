@@ -15,7 +15,7 @@
       "ActionCost": 1,
       "Tags": "mark",
       "Description": "The Gunwright marks a foe in range 8.",
-      "Mark": "While marked, that foe take 2 piercing damage every time they take an action, as long as they are not in cover from the Gunwright."
+      "Mark": "While marked, that foe take 2 piercing damage every time they take an action or interrupt, as long as they are not in cover from the Gunwright. If they don't take this damage for an entire turn, this mark ends."
     },
     {
       "Name": "Overwatch",

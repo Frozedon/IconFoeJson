@@ -28,7 +28,7 @@
       "ActionCost": 1,
       "Tags": "mark",
       "Description": "A character in range 6 of the spirit is marked.",
-      "Mark": "While marked, each time they teleport, they take 1 piercing damage. This damage cannot reduce them past 1 hp."
+      "Mark": "While marked, each time they teleport, they take 1 piercing damage. This damage cannot reduce them past 1 hp. A character can end this mark by not moving for their entire turn."
     },
     {
       "Name": "Fell Spirit",

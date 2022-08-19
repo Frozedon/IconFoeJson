@@ -7,6 +7,6 @@
     "ActionCost": 1,
     "Tags": "mark",
     "Description": "The Darter shoots a toxic dart at a foe in range 5, inflicting lowlander poison and marking them.",
-    "Mark": "Whiled marked, the foe is inflicted with a maddening toxin and must save at the start of their turn. On successful save, a foe is shoved 1 in a direction on the Darter's choice. On a failed save, the Darter controls that foe's standard movement that turn, then the mark ends."
+    "Mark": "While marked, the foe is inflicted with a maddening toxin and must save at the start of their turn. On successful save, a foe is shoved 1 in a direction on the Darter's choice. On a failed save, the Darter controls that foe's standard movement that turn, then the mark ends."
   }
 }

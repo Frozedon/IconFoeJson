@@ -29,7 +29,7 @@
       "ActionCost": 1,
       "Tags": "mark",
       "Description": "A foe in range 3 is marked.",
-      "Mark": "While marked, each time that foe is shoved or gains a new status, they take 2 damage."
+      "Mark": "While marked, each time that foe is shoved or gains a new status, they take 2 damage. A foe can end this mark by not moving for their entire turn."
     },
     {
       "Name": "Seismic Slam",

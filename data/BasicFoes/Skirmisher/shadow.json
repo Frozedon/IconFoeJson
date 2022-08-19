@@ -10,7 +10,7 @@
       "Tags": [ "ranged attack 4", "+1 boon" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
-      "Effects": "If made from stealth, this attack blinds the foe, is a critical hit (+[D]), and ignores cover."
+      "Effects": "If made from stealth, blinds the foe, is a critical hit (+[D]), and ignores cover."
     },
     {
       "Name": "Dark Arts",
@@ -20,7 +20,7 @@
     {
       "Name": "Nocturne",
       "ActionCost": 2,
-      "Tags": [ "end turn" ],
+      "Tags": "end turn",
       "Description": "Teleport 8, then gain stealth and evasion until the start of the shadow's next turn."
     }
   ]

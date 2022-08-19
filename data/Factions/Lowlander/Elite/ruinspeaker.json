@@ -17,7 +17,7 @@
       "ActionCost": 1,
       "Tags": "multimark",
       "Description": "A character in range 6 of the ruin speaker is marked and starts to petrify.",
-      "Mark": "While marked, they take [D] piercing damage at the end of their turns if they end their turn adjacent to or inside an object or terrain effect."
+      "Mark": "While marked, they take [D] piercing damage at the end of their turns if they end their turn adjacent to or inside an object or terrain effect. A character can clear this mark by not moving for their entire turn."
     },
     {
       "Name": "Earthglide",

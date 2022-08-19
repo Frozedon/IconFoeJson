@@ -4,12 +4,12 @@
   "Type": "Foe",
   "Chapter": 3,
   "Traits": [ "Sturdy", "Gilded Armor", "Collect Paycheck" ],
-  "Actions": [
-    {
-      "Name": "The Block",
-      "ActionCost": 1,
-      "Tags": [ "mark", "end turn", "special recharge" ],
-      "Description": "The splitter marks a foe in range 3. At the end of that foe's next turn, if they are still marked, the Splitter dashes up to 6 spaces towards them. They must save or take 3[D]+[fray], or [D]+[fray] on a successful save. This ability recharges only if the Splitter picks up a valuables token."
-    }
-  ]
+  "Actions": {
+    "Name": "The Block",
+    "ActionCost": 1,
+    "Tags": [ "mark", "end turn", "special recharge" ],
+    "Description": "The splitter marks a foe in range 3.",
+    "Mark": "At the end of that foe's next turn, if they are still marked, the Splitter dashes up to 6 spaces towards them. They must save or take 3[D]+[fray], or [D]+[fray] on a successful save. Either way, the mark ends.",
+    "SpecialRecharge": "This ability recharges only if the Splitter picks up a valuables token."
+  }
 }

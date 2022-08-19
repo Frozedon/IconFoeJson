@@ -21,7 +21,7 @@
   },
   {
     "Name": "Imperial Command Aura",
-    "Description": "Aura 3. Allies in the aura gain +1 boon on attacks and can randomly critically hit (+[D])."
+    "Description": "Aura 2. Allies in the aura gain +1 boon on attacks and can randomly critically hit (+[D])."
   },
   {
     "Name": "Leashed Beast",
@@ -29,7 +29,7 @@
   },
   {
     "Name": "Receive Orders",
-    "Description": "When an imperial starts its turn in range of an imperial command aura, it recharges all its abilities."
+    "Description": "When an imperial that's not a commanding officer starts its turn in range of an imperial command aura, it recharges all its abilities."
   },
   {
     "Name": "Vantage Point",

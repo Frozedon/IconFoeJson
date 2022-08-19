@@ -15,12 +15,12 @@
       "Tags": [ "melee attack", "true strike" ],
       "Hit": "2[D]+[fray].",
       "Miss": "[fray].",
-      "AreaEffect": "All foes adjacent to the attack target take [fray]."
+      "AreaEffect": "All foes adjacent to the attack target take [fray] damage."
     },
     {
       "Name": "Strike",
       "ActionCost": 1,
-      "Tags": [ "repeatable" ],
+      "Tags": "repeatable",
       "Description": "An adjacent foe is dazed. Dazed foes take [fray] damage."
     }
   ]

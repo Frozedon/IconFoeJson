@@ -14,7 +14,8 @@
       "Name": "Chant of Investiture",
       "ActionCost": 2,
       "Tags": [ "stance", "mark" ],
-      "Description": "An ally in range 8 is marked by the Cantrix and gains resistance, sturdy, and +1 boon on all attacks and saves while in range 8 of the Cantrix. While in this stance, the Cantrix is immobile and must spend 1 action during their turn to maintain this stance. It ends if the Cantrix is shoved or stunned."
+      "Description": "An ally in range 8 is marked by the Cantrix. While in this stance, the Cantrix is immobile and must spend 1 action during their turn to maintain this stance. It ends if the Cantrix is shoved or stunned.",
+      "Mark": "While marked, they gain resistance, sturdy, and +1 boon on all attacks and saves while in range 8 of the Cantrix."
     },
     {
       "Name": "Hypnogogia",
@@ -24,7 +25,7 @@
     {
       "Name": "Escape",
       "ActionCost": 1,
-      "Description": "The Cantrix swaps place with a marked ally."
+      "Description": "The Cantrix swaps places with a marked ally."
     }
   ]
 }

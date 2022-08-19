@@ -15,7 +15,7 @@
       "ActionCost": 1,
       "Tags": "mark",
       "Description": "The Cutter Demon marks a foe in range 5.",
-      "Mark": "While marked, the demon deals bonus damage, gains +1 boon on attack rolls against that foe, and may teleport 1 every time that foe takes an action."
+      "Mark": "While marked, the demon deals bonus damage, gains +1 boon on attack rolls against that foe, and may teleport 1 every time that foe takes an action. A marked foe can save against this mark at the end of their turns, ending it on a success."
     }
   ]
 }

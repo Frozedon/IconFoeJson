@@ -16,7 +16,7 @@
     {
       "Name": "Hurl",
       "ActionCost": 1,
-      "Tags": [ "repeatable" ],
+      "Tags": "repeatable",
       "Description": "The Brute picks up an adjacent character or object and shoves them 3.",
       "Collide": "Character is dazed."
     }

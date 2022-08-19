@@ -5,13 +5,11 @@
   "Speed": 5,
   "UsesTemplate": true,
   "Traits": "Slippery",
-  "Interrupts": [
-    {
-      "Name": "Disappearing Act",
-      "Trigger": "When bloodied.",
-      "Effects": "May teleport 4, then gain stealth."
-    }
-  ],
+  "Interrupts": {
+    "Name": "Disappearing Act",
+    "Trigger": "When bloodied.",
+    "Effects": "May teleport 4, then gain stealth."
+  },
   "Actions": [
     {
       "Name": "Wicked Slice",
@@ -30,10 +28,10 @@
       "Description": "A foe in range 5 is slowed, and must save or take take 1 piercing damage for each space they move until the end of their next turn."
     },
     {
-      "Name": "Danse Macabre",
+      "Name": "Foul Play",
       "ActionCost": 2,
       "Recharge": 5,
-      "Description": "Target a close blast 2 area. Teleport five times. May deal [D] to an adjacent foe each time. Must choose a different foe each time unless every foe has been targeted at least once by this ability."
+      "Description": "Teleport 3, then deal [D] to an adjacent foe. Can repeat this effect, but must choose a different foe each time unless no other foes are in range, or this effect has triggered four times."
     }
   ]
 }

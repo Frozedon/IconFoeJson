@@ -23,7 +23,8 @@
       "Name": "Consume",
       "ActionCost": 1,
       "Tags": "multimark",
-      "Description": "A foe inside the swarm's area is marked. While marked, they are dazed and winded+ while sharing space with the swarm and take [D]+[fray] for ending their turn inside it instead of just [fray] damage."
+      "Description": "A foe inside the swarm's area is marked.",
+      "Mark": "While marked, they are dazed+ and winded+ while sharing space with the swarm and take [D]+[fray] for ending their turn inside it instead of just [fray] damage."
     }
   ]
 }

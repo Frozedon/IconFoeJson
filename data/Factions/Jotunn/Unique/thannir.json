@@ -37,7 +37,7 @@
       "ActionCost": 1,
       "Tags": "mark",
       "Description": "A foe in range 6 must save or be marked. On a successful save, they are pacified.",
-      "Mark": "While marked, a character is frostbitten, cannot benefit from defiance, loses all vigor at the end of each turn, and cannot gain vigor."
+      "Mark": "While marked, a character is frostbitten, cannot benefit from defiance, loses all vigor at the end of each turn, and cannot gain vigor. A character can end this mark by spending an entire turn not attacking."
     },
     {
       "Name": "Lay To Rest",

@@ -2,7 +2,7 @@
   {
     "Name": "Arkentech Munitions",
     "Tags": [ "summon", "start of round" ],
-    "Description": "At the start of each round, the Weapon summons two Arkentech munitions, massive explosives.",
+    "Description": "At the start of each round, the Weapon summons two Arkentech munitions, massive explosives, within range 4 of its location.",
     "ListedItems": [
       {
         "Description": "Munitions are size 1 immobile summons with 1 hp that are automatically hit by attacks. They can be shoved or teleported."
@@ -11,7 +11,7 @@
         "Description": "A character can pick up a munition by passing through its space, and drop it as a free action. It shares their space and moves or teleports with them as long as they're holding it. If they take damage while holding a munition, it explodes."
       },
       {
-        "Description": "When damaged, a munition explodes in a blast 2 area effect. Characters inside are dazed, then must save or take 2[D]+[fray] and become burning, or [fray] on a successful save."
+        "Description": "When damaged, a munition explodes in a blast 2 area effect. Characters inside are dazed, then must save or take [D]+[fray] and become burning, or [fray] on a successful save."
       },
       {
         "Description": "If the munition catches the Weapon in its area of effect, it strips off an armor plate instead of dealing damage normally. If there are no armor plates remaining, it deals damage normally."
@@ -39,11 +39,15 @@
     "Name": "Landship",
     "Description": "During Phase I, the weapon is immobile, cannot be shoved or teleported, and does not occupy space normally. Instead, it occupies 1 space just outside the edge of one side of the battlefield (imagine it lined up along the edge). Run the weapon on a battlefield that is relatively small (10x10 or smaller). If it is removed from the battlefield, it returns in the same spot."
   },
+  {
+    "Name": "Legendary Landship",
+    "Description": "Sturdy and immune to shove."
+  },
   
 
   {
     "Name": "Airship",
-    "Description": "This Veridian Weapon fight takes place on the Veridian Weapon, an airship that could be any shape, but is better run on a smaller, rectangular map of no more than 10 or 12 spaces on its longest side. The deck of the airship is treated as terrain and not a character (it's too heavily armored), but its three sections (see below) can be attacked to deal damage to it."
+    "Description": "This Weapon fight takes place on the Weapon, an airship that could be any shape, but is better run on a smaller, rectangular map of no more than 10 or 12 spaces on its longest side. The deck of the airship is treated as terrain and not a character (it's too heavily armored), but its three sections (see below) can be attacked to deal damage to it."
   },
   {
     "Name": "Arkentech Megabomb",
@@ -55,7 +59,7 @@
     "Description": "The targetable parts of the Weapon are three separate sections: the Engine, the Forward Turret, and the Aft Turret.",
     "ListedItems": [
       {
-        "Description": "Each section is a size 2 character that is immobile, immune to shove and teleport, and has 1/3 of the Weapon's total HP. If removed from the battlefield, it can only be placed in the same space."
+        "Description": "Each section is a size 2 character that is immobile, immune to shove and teleport, and has 1/3 of the Weapon's total HP. If removed from the battlefield, can only be placed in the same space."
       },
       {
         "Description": "Sections cannot be placed within range 2 of each other."
@@ -83,7 +87,7 @@
   },
   {
     "Name": "Anti-boarder Napalm Flood",
-    "Description": "At the end of the round, all non automata characters not standing on an object height 1 or higher takes [fray] damage."
+    "Description": "At the end of the round, all non automata characters not standing on an object height 1 or higher take [fray] piercing damage."
   },
   {
     "Name": "Destruction Airship Engine",

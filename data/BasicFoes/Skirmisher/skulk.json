@@ -8,7 +8,7 @@
     {
       "Name": "Stab",
       "ActionCost": 1,
-      "Tags": [ "melee attack" ],
+      "Tags": "melee attack",
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
       "Effects": "Attack is a critical hit (+[D]) if made against a blinded or slow character."
@@ -21,7 +21,7 @@
     {
       "Name": "Pocket Dust",
       "ActionCost": 1,
-      "Tags": [ "end turn" ],
+      "Tags": "end turn",
       "Description": "An adjacent foe must save or become blinded or slow (Skulk chooses). The Skulk then gains stealth."
     }
   ]

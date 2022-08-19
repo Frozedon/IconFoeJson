@@ -68,5 +68,10 @@
   {
     "Name": "Toxic Revenge",
     "Description": "Area Effect: When defeated, explodes with venom, inflicting [D]+[fray], poisoning and inflicting lowlander toxin on all adjacent foes."
+  },
+  {
+    "Name": "Venom Blade (Scab)",
+    "DisplayName": "Venom Blade",
+    "Description": "Attacks inflict poisoned, ignore vigor, and deal bonus damage against bloodied characters."
   }
 ]

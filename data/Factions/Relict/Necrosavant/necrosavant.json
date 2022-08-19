@@ -14,8 +14,9 @@
     {
       "Name": "Fear",
       "ActionCost": 1,
-      "Tags": [ "multimark", "repeatable" ],
-      "Description": "Mark a foe in range 6. While marked, that foe gains +1 curse on attacks and saves unless adjacent to an ally. If they end their turn adjacent to an ally, they can clear this mark."
+      "Tags": "multimark",
+      "Description": "Mark a foe in range 6.",
+      "Mark": "While marked, that foe gains +1 curse on attacks and saves unless adjacent to an ally. If they end their turn adjacent to an ally, they can clear this mark."
     },
     {
       "Name": "Grasping Dead",
@@ -32,26 +33,23 @@
   "ConditionalAbilities": [
     {
       "Chapter": 2,
-      "Actions": [
-        {
-          "Name": "Soul Shred",
-          "ActionCost": 1,
-          "Recharge": 4,
-          "Tags": [ "multimark" ],
-          "Description": "Mark a foe in range 6. While marked, that foe gains Aura 1. Allies of that foe that end their turn in the aura take [fray] piercing damage."
-        }
-      ]
+      "Actions": {
+        "Name": "Soul Shred",
+        "ActionCost": 1,
+        "Recharge": 4,
+        "Tags": [ "multimark" ],
+        "Description": "Mark a foe in range 6.",
+        "Mark": "While marked, that foe gains Aura 1. Allies of that foe that end their turn in the aura take 3 piercing damage."
+      }
     },
     {
       "Chapter": 3,
-      "Actions": [
-        {
-          "Name": "Radiance of the Black Sun",
-          "ActionCost": 2,
-          "Tags": [ "1/combat" ],
-          "Description": "This character becomes immobile but gains Aura 2 until the start of its next turn. While the aura is active, Relict other than this character in the area cannot be reduced past 1 hp. This Aura also deactivates if this character is stunned."
-        }
-      ]
+      "Actions": {
+        "Name": "Radiance of the Black Sun",
+        "ActionCost": 2,
+        "Tags": "1/combat",
+        "Description": "This character becomes immobile but gains Aura 2 until the start of its next turn. While the aura is active, Relict other than this character in the area cannot be reduced past 1 hp. This Aura also deactivates if this character is stunned."
+      }
     }
   ]
 }

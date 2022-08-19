@@ -28,12 +28,12 @@
       "Name": "Immaculate",
       "ActionCost": 1,
       "Recharge": 6,
-      "Description": "An ally in range 5 becomes Intangible until the end of its next turn."
+      "Description": "An ally in range 5 becomes intangible until the end of its next turn."
     },
     {
       "Name": "Gran Redempta",
       "ActionCost": 2,
-      "Tags": [ "1/combat" ],
+      "Tags": "1/combat",
       "Description": "All defeated allies in range 3 are revived, removing incapacitated. They stop being defeated and return with 50% hp. They can act normally and take a turn starting next round."
     }
   ]

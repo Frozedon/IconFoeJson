@@ -18,7 +18,7 @@
           "Name": "Overlock Piston",
           "ActionCost": 0,
           "Tags": "1/round",
-          "Description": "The Engine pops a piston out of the deck in any space within range 4 of the engine, which becomes a targetable height 1 destructible object with 10 hp. When destroyed, it explodes for a blast 1 explosion centered on it, dealing [fray] damage to all characters within. If two or more pistons are active at the end of the round, all Engine parts gain +1 boon on all saves and attacks. If three or more are active, also increase the Megabomb counter by 1."
+          "Description": "The Engine pops a piston out of the deck in any space within range 4 of the engine, which becomes a targetable height 1 destructible object with 10 hp. When destroyed, it explodes for a blast 1 explosion centered on it, dealing fray damage to all characters within. If two or more pistons are active at the end of the round, all Engine parts gain +1 boon on all saves and attacks. If three or more are active, also increase the Megabomb counter by 1."
         },
         {
           "Name": "Steam Vent",
@@ -31,8 +31,8 @@
           "Name": "Lurch",
           "ActionCost": 1,
           "Tags": "repeatable",
-          "Description": "All characters are shoved 1 in the same direction as the ship speeds up or slows down.",
-          "Collide": "Characters also take [D]+[fray]."
+          "Description": "All characters are shoved 1 in the same direction as the ship speeds up or slows down. ",
+          "Collide": "Character takes 3 piercing damage instead of regular collide damage."
         }
       ]
     },
@@ -43,9 +43,10 @@
         {
           "Name": "Mega Gun Turret",
           "ActionCost": 1,
-          "Tags": "ranged attack 8",
-          "Hit": "[D]+[fray] and foe is branded.",
-          "Miss": "[fray]."
+          "Tags": [ "ranged attack 8", "cross 2" ],
+          "Hit": "[D]+[fray] and foe is branded and shoved 1.",
+          "Miss": "[fray].",
+          "AreaEffect": "[fray]."
         },
         {
           "Name": "Pop-up Turret",
@@ -58,7 +59,6 @@
             "SummonEffects": "The Turret counts a height 1 object for abilities and grants cover. When summoned, or once on the turret's turn, the automaton can use the following attack:",
             "Actions": {
               "Name": "Automaton Gun",
-              "ActionCost": -1,
               "Tags": "ranged attack 4",
               "Hit": "[D]+[fray].",
               "Miss": "[fray]."
@@ -70,14 +70,14 @@
             "Tags": "multimark",
             "Description": "A foe in range 8 is marked.",
             "Mark": "At the end of their turn, if they are still marked, the turret fires a missile at them. They must save or take 2[D]+[fray], or [D]+[fray] on a successful save, then the mark ends.",
-            "Effects": "If they are adjacent to an Overlock Piston or automaton, this missile hits the the piston or automaton instead, dealing only [fray] damage to the marked character and instantly destroying the automaton or piston."
+            "Effects": "If they are adjacent to an Overlock Piston or automaton, this missile hits the the piston or automaton instead, dealing only fray damage to the marked character and instantly destroying the automaton or piston."
           }
         },
         {
           "Name": "Deck Sweeper",
           "ActionCost": 1,
           "Tags": "1/round",
-          "Description": "Deal damage equal to the current round number +1 to all foes. Foes in cover from the turret or adjacent to an automaton take no damage."
+          "Description": "Deal damage equal to the current round number+1 to all foes. Foes in cover from the turret or adjacent to an automaton take no damage."
         }
       ]
     },
@@ -89,8 +89,8 @@
           "Name": "Rotary Cannons",
           "ActionCost": 1,
           "Tags": "ranged attack 6",
-          "AutoHit": "3 damage.",
-          "AreaEffect": "All foes in range 6 take 3 damage."
+          "AutoHit": "3 piercing damage.",
+          "AreaEffect": "All foes in range 6 take 3 piercing damage."
         },
         {
           "Name": "Shield Automata",
@@ -114,7 +114,6 @@
               "SummonActions": "When summoned, or on the turret's turn, can move 3, then make the following attack:",
               "Actions": {
                 "Name": "Automaton Gun",
-                "ActionCost": -1,
                 "Tags": "ranged attack 4",
                 "Hit": "[D]+[fray].",
                 "Miss": "[fray]."

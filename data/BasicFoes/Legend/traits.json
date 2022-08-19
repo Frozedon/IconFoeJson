@@ -8,6 +8,7 @@
     "Description": "The Demolisher's abilities have Collide: Foe is dazed. Dazed foes take [D]."
   },
 
+
   {
     "Name": "Blood Drain",
     "Description": "Attacks ignore vigor against bloodied foes and gain +1 boon."
@@ -21,13 +22,14 @@
     "Description": "Attacks are a critical hit (+[D]) against characters with no allies or allied summons adjacent."
   },
   
+
   {
     "Name": "Looming Shadow",
     "Description": "The Master has aura 1. The space is difficult terrain for hostile characters and allied characters spend 0 movement to cross spaces in the area."
   },
   {
     "Name": "Lurk in the Shadows",
-    "Description": "The Master is intangible. Characters can pass through and end their turn in its space. If all its summons are destroyed, it is immediately forced into phase 2, placing any characters sharing its space into free adjacent spaces, or as close as possible."
+    "Description": "The Master is intangible. Characters can pass through and end their turn in its space. If all its summons are destroyed, it is immediately forced into phase II, placing any characters sharing its space into free adjacent spaces, or as close as possible."
   },
   {
     "Name": "Summon Minion",
@@ -43,6 +45,7 @@
       "SummonEffects": "Characters take 2 piercing damage, once, for every minion they start their turn adjacent to, then are shoved 1 in a direction of the Master's choice."
     }
   },
+
 
   {
     "Name": "Aftermath",

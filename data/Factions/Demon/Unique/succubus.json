@@ -4,7 +4,7 @@
   "Type": "Foe",
   "Actions": [
     {
-      "Name": "Fruit of Temptation",
+      "Name": "Fruit of Delirium",
       "ActionCost": 0,
       "Tags": "summon",
       "Description": "The Succubus summons a fruit in range 3. Only two of these fruits can be active at once.",
@@ -15,29 +15,29 @@
       }
     },
     {
-      "Name": "Good Dog",
+      "Name": "Pleasant Haze",
       "ActionCost": 1,
       "Tags": "multimark",
       "Description": "A character in range 5 is marked. While marked, the Succubus can use any of the following effects as an Interrupt, once per round for each character. These effects may trigger after the marked character takes any action, and they may save to avoid them.",
       "ListedItems": [
         {
-          "Name": "Heel",
+          "Name": "Rest Now",
           "Description": "Character becomes immobile until the end of the current turn."
         },
         {
-          "Name": "Play Nice",
+          "Name": "Unstoppable Giggling",
           "Description": "Character becomes pacified."
         },
         {
-          "Name": "Roll Over",
+          "Name": "Frolic",
           "Description": "Character dashes 3 in a direction of the succubus' choice."
         },
         {
-          "Name": "Sic",
+          "Name": "Uncontrollable Rage",
           "Description": "Character immediately deals [fray] damage to all adjacent characters, including allies."
         },
         {
-          "Name": "Play Dead",
+          "Name": "Nightmare",
           "Description": "Character loses all vigor and cannot gain vigor this turn."
         }
       ]
@@ -48,7 +48,7 @@
       "Tags": "melee attack 3",
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
-      "Effects": "Becomes a critical hit (+[D]) against foes marked by Good Dog."
+      "Effects": "Becomes a critical hit (+[D]) against foes marked by Pleasant Haze."
     },
     {
       "Name": "Corruptive Spray",

@@ -10,7 +10,7 @@
     {
       "Name": "Reel In",
       "ActionCost": 0,
-      "Description": "The fisher moves its lure up to 4 spaces towards it, then shoves all adjacent characters to the lure the same amount."
+      "Description": "The fisher moves its lure up to 4 spaces towards it, then shoves all adjacent characters to the lure the same amount. Characters can pass a save to reduce this shove to 1."
     },
     {
       "Name": "Spit Up",
@@ -24,7 +24,7 @@
       "Tags": [ "melee attack", "true strike" ],
       "Hit": "3[D]+[fray].",
       "Miss": "[D]+[fray].",
-      "Effects": "If more than one character is adjacent to the Kinfisher, it chooses targets randomly. It cannot target summons."
+      "Effects": "If more than one character is adjacent to the Kinfisher, it chooses targets randomly. It cannot target summons. Then, the fisher's lure is shoved to 3 spaces away from it."
     },
     {
       "Name": "Gnash",

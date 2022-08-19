@@ -2,7 +2,7 @@
   "Name": "Scab",
   "Inherits": "Grub",
   "Type": "Foe",
-  "Traits": "Venom Blade",
+  "Traits": "Venom Blade (Scab)",
   "Actions": {
     "Name": "Throw Knife",
     "ActionCost": 1,

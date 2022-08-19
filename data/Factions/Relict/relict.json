@@ -15,11 +15,7 @@
   "ConditionalAbilities": [
     {
       "IsNotSpecialClasses": [ "Mob", "Legend" ],
-      "Traits": [ "Rise Again", "Shuffle" ]
-    },
-    {
-      "IsSpecialClasses": "Mob",
-      "Traits": "Shuffle (Mob)"
+      "Traits": "Rise Again"
     }
   ]
 }

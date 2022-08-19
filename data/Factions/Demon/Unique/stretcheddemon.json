@@ -1,0 +1,38 @@
+{
+  "Name": "Stretched Demon",
+  "Inherits": [ "Demon", "Skirmisher" ],
+  "Type": "Foe",
+  "Traits": "Spindly Limbs",
+  "Actions": [
+    {
+      "Name": "Clutch",
+      "ActionCost": 1,
+      "Tags": "melee attack",
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "Effects": [
+        "Critical hit (+[D]) against bloodied characters.",
+        "The demon sinks its claws into the target, grabbing them with elongated limbs. If that character ends their turn within range 3 of the demon, it pulls them in, removing them from the battlefield and placing them adjacent to the demon. They then take damage equal to 25% of their maximum hp. Either way, this effect ends at the end of the target's turn."
+      ]
+    },
+    {
+      "Name": "Stretch Flesh",
+      "ActionCost": 1,
+      "Description": "A foe in range 4 has their flesh warped across space. The character takes 2 damage, then is shoved 1 in any direction. They must then save or be shoved 2 again in any direction. Bloodied foes fail this save."
+    },
+    {
+      "Name": "Elongate",
+      "ActionCost": 1,
+      "Tags": "mark",
+      "Description": "The demon marks any character on the battleifled in line of sight.",
+      "Mark": "The demons warps a character's localized space, causing them to occupy a line 3 area instead of their normal space while marked."
+    },
+    {
+      "Name": "Yawning Void",
+      "ActionCost": 1,
+      "Tags": "terrain effect",
+      "Recharge": 5,
+      "Description": "The Demon creates a blast 1 area of non-space, a terrain effect, which lasts until the end of combat. When the demon creates the terrain, it removes all characters inside and places them adjacent to any edge. Characters and effects cannot occupy the space. Any character that enters the space for any reason can be removed by the demon and placed in any adjacent space. Foes can pass a save to choose which space they end up instead. On a failed save, they take [fray] damage and the demon can choose anyway."
+    }
+  ]
+}

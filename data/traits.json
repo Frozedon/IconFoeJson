@@ -51,7 +51,7 @@
   },
   {
     "Name": "Aura of Glamour",
-    "Description": "Aura 1. Foes outside the aura cannot directly target this character with abilities."
+    "Description": "Aura 2. Foes outside the aura cannot directly target this character with abilities."
   },
   {
     "Name": "Aura of Resilience",
@@ -118,8 +118,7 @@
     "Description": "All actions have Slay: Gain +1 action."
   },
   {
-    "Name": "Command Aura",
-    "DisplayName": "Command Aura",
+    "Name": "Commander's Aura",
     "Description": "Aura 2. Allies in the aura have +1 boon on attacks."
   },
   {
@@ -442,8 +441,12 @@
     "Description": "Create a pit under any character hit by the wraith's attacks."
   },
   {
+    "Name": "Overdrive",
+    "Description": "At the start of round 4, this character becomes powered up. All their attacks are critical hits on hit ([+D])."
+  },
+  {
     "Name": "Overdrive [X]",
-    "Description": "All attacks after round [X] are critical hits on hit (+[D])."
+    "Description": "At the start of round [X], this character becomes powered up. All their attacks are critical hits on hit ([+D])."
   },
   {
     "Name": "Overwhelming Stench",
@@ -480,7 +483,7 @@
   },
   {
     "Name": "Primal Strength",
-    "Description": "This character's abilities have Collide: Character takes [fray] damage and is dazed."
+    "Description": "When a brawler beast causes a character to collide, that character is dazed."
   },
   {
     "Name": "Ranged Master",
@@ -561,6 +564,10 @@
   {
     "Name": "Sneak Attack",
     "Description": "Attacks from Stealth are critical hits (+[D])."
+  },
+  {
+    "Name": "Spindly Limbs",
+    "Description": "Ignores engagement from other character, and spends no additional movement moving up or down terrain."
   },
   {
     "Name": "Spirit Shift",

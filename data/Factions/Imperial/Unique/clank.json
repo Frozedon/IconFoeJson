@@ -14,6 +14,12 @@
       "Collide": "Foe takes [fray] damage."
     },
     {
+      "Name": "Bullet Spray",
+      "ActionCost": 1,
+      "Tags": "close blast 1",
+      "AreaEffect": "[fray] damage."
+    },
+    {
       "Name": "Flame Bomb",
       "ActionCost": 1,
       "Recharge": 6,

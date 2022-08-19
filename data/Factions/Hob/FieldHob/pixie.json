@@ -6,7 +6,7 @@
   "Actions": {
     "Name": "Toad",
     "ActionCost": 1,
-    "Description": "A character in range 6 is transformed into a frog. Remove that character from the battlefield and replace them with a 1 hp frog summon. When the frog is defeated, return the target to the battlefield. Until the frog is defeated, they cannot take a turn. The Hob can destroy the frog as a free action.",
+    "Description": "A character in range 6 is transformed into a frog. Remove that character from the battlefield and replace them with a 1 hp frog summon. When the frog is defeated, return the target to the battlefield. Until the frog is defeated, they cannot take a turn. The Hob can destroy the frog as a free action. It can be targeted by any character.",
     "Summons": {
       "Name": "Frog",
       "Tags": [ "Size 1", "1 HP", "Defense 8" ],

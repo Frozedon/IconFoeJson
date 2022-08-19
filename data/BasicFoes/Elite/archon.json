@@ -19,7 +19,7 @@
     {
       "Name": "Iron Fist",
       "ActionCost": 1,
-      "Tags": [ "repeatable" ],
+      "Tags": "repeatable",
       "Description": "An adjacent foe must save or become dazed, if they are already dazed, they are also winded."
     },
     {
@@ -32,8 +32,8 @@
       "Name": "Great Shieldwall",
       "ActionCost": 1,
       "Recharge": 5,
-      "Tags": [ "stance" ],
-      "Description": "While in this stance, becomes immobile, but self and adjacent allies gain resistance. Ends at the start of the Archon’s next turn."
+      "Tags": "stance",
+      "Description": "While in this stance, becomes immobile, but self and adjacent allies gain resistance. Ends at the start of the Archon's next turn."
     }
   ]
 }

@@ -8,7 +8,7 @@
     {
       "Name": "Justice Fist",
       "ActionCost": 1,
-      "Tags": [ "melee attack" ],
+      "Tags": "melee attack",
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
       "Effects": "Foe is branded. Shove 3 against branded characters.",

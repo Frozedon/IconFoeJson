@@ -21,7 +21,7 @@
       "Name": "Immaculate",
       "ActionCost": 2,
       "Recharge": 6,
-      "Description": "An ally in range 5 becomes Intangible until the end of its next turn."
+      "Description": "An ally in range 5 becomes intangible until the end of its next turn."
     }
   ]
 }

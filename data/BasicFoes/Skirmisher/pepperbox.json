@@ -21,8 +21,8 @@
       "Name": "Riddle",
       "ActionCost": 2,
       "Recharge": 6,
-      "Tags": [ "ranged attack 5" ],
-      "Hit": "Deal 2 damage, five times.",
+      "Tags": "ranged attack 5",
+      "Hit": "Deal 3 damage, five times.",
       "Miss": "Two times.",
       "Effects": "Ignores cover."
     }

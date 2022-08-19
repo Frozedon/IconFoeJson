@@ -6,5 +6,5 @@
   "Defense": 8,
   "FrayDamage": 3,
   "DamageDie": 6,
-  "Traits": [ "Shelter", "Diaga" ]
+  "Traits": [ "Diaga", "Shelter" ]
 }

@@ -1,0 +1,34 @@
+{
+  "Name": "Kappa",
+  "Inherits": [ "Hob", "Heavy" ],
+  "Type": "Foe",
+  "Actions": [
+    {
+      "Name": "Body Slam",
+      "ActionCost": 1,
+      "Tags": "melee attack 5",
+      "Hit": "[fray] damage, twice.",
+      "Miss": "[fray].",
+      "Effects": "Foe is winded."
+    },
+    {
+      "Name": "Tidepool",
+      "ActionCost": 1,
+      "Description": "Shove all characters in range 2 1 space toward the Kappa."
+    },
+    {
+      "Name": "Great Suplex",
+      "ActionCost": 1,
+      "Recharge": 4,
+      "Description": "The Kappa grabs an adjacent foe, the removes both the Kappa and them from the battlefield. Return them in free space within range 3, adjacent to each other. The foe takes fray damage, is dazed, and then shoved 1."
+    },
+    {
+      "Name": "Spinning Geyser",
+      "ActionCost": 1,
+      "Tags": [ "end turn", "delay" ],
+      "Description": "The Kappa ends its turn and gain",
+      "Delay": "The Kappa's next turn must be slow. At the start of that turn, it summons a massive geyser underneath it. Adjacent characters are shoved 4. The Geyser becomes a pit space for the rest of combat. Whenever the Kappa uses this ability again, repeat the shove effect on all active geysers. The Kappa can choose whether or not to be shoved by this effect, and is immune to the pit space.",
+      "PostCollide": "Character is stunned and takes [D]+[fray] instead of the normal collide damage."
+    }
+  ]
+}

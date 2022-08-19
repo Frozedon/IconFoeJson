@@ -32,8 +32,8 @@
       {
         "Name": "Strive",
         "ActionCost": 0,
-        "Tags": [ "1/combat" ],
-        "Description": "Until the start of their next turn, the Guilder increases the distance of any dash, teleport or flight by +3."
+        "Tags": "1/combat",
+        "Description": "Until the start of their next turn, the Guilder increases the distance of any dash, teleport, or flight by +3."
       }
     ]
   }

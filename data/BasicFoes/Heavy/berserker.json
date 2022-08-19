@@ -16,13 +16,13 @@
     {
       "Name": "Swipe",
       "ActionCost": 1,
-      "Tags": [ "repeatable" ],
+      "Tags": "repeatable",
       "Description": "All foes adjacent to the berserker take 2 damage."
     },
     {
       "Name": "Leap",
       "ActionCost": 1,
-      "Tags": [ "repeatable" ],
+      "Tags": "repeatable",
       "Description": "The berserker flies 2. When it lands, all adjacent characters are shoved 1."
     }
   ]

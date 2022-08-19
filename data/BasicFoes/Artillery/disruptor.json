@@ -20,8 +20,9 @@
     {
       "Name": "Disrupt",
       "ActionCost": 1,
-      "Tags": [ "mark" ],
-      "Description": "A character in range 8 is marked. While marked, they take 2 piercing damage, once, for every adjacent character every time they end their turn."
+      "Tags": "mark",
+      "Description": "A character in range 8 is marked.",
+      "Mark": "While marked, they are vulnerable+ and take 2 piercing damage, once, for every adjacent character every time they end their turn. If they end their turn with no characters adjacent, end this mark."
     }
   ]
 }

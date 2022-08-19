@@ -22,7 +22,8 @@
       "Name": "Fortune Maker",
       "ActionCost": 1,
       "Tags": [ "costs 2 Assets", "multimark", "1/round" ],
-      "Description": "The Baron chooses an ally or allied summon in range 4 and motivates them with promises of extreme wealth. That ally is marked and gains +1 boon on all attacks and saves while marked."
+      "Description": "The Baron chooses an ally or allied summon in range 4 and motivates them with promises of extreme wealth. That ally is marked.",
+      "Mark": "While marked, they gain +1 boon on all attacks and saves."
     },
     {
       "Name": "Problem Solver",
@@ -59,7 +60,8 @@
       "Name": "Pay Off",
       "ActionCost": 1,
       "Tags": "mark",
-      "Description": "The Baron gives a foe in range 6 a valuables token. That foe must then save or become marked. While marked and holding at least one valuables token, they are pacified+."
+      "Description": "The Baron gives a foe in range 6 a valuables token. That foe must then save or become marked.",
+      "Mark": "While marked and holding at least one valuables token, they are pacified+."
     },
     {
       "Name": "Count Money",

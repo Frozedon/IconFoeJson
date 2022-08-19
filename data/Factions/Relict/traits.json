@@ -24,6 +24,10 @@
     "Description": "While the Immortalist is on the battlefield and not defeated, all relict's Rise Again activates on a 2+."
   },
   {
+    "Name": "Hand Picked",
+    "Description": "There can only ever be one Life Hunter on the battlefield."
+  },
+  {
     "Name": "Plasma Bomb",
     "Description": "At the start of the round, the Warmech fires a plasma bomb into the air, targeted on any visible space. The bomb marks a blast 2 area visible to all characters. At the end of the round, the bomb comes down as an area effect. Characters in the area must save or take 2[D]+[fray] and become electrified, or [D]+[fray] on a successful save. The targeted space then becomes a pit. The Warmech is immune to its own bombs."
   },
@@ -42,15 +46,6 @@
   {
     "Name": "Shed Mass",
     "Description": "1/turn, when the Grave takes damage, it summons a husk in a free adjacent space. When the Grave is bloodied, it summons 5 husks instead."
-  },
-  {
-    "Name": "Shuffle",
-    "Description": "Can dash 1 space at the start of their turn as a free action. When they do this, all other relict in range 2 can also dash 1 space in the same direction, then deal 1 damage to an adjacent foe."
-  },
-  {
-    "Name": "Shuffle (Mob)",
-    "DisplayName": "Shuffle",
-    "Description": "Five mobs can simultaneously dash 1 space at the start of their turn as a free action. When they do this, all other relict in range 2 can also dash 1 space in the same direction, then deal 1 damage to an adjacent foe."
   },
   {
     "Name": "Soul Mass",

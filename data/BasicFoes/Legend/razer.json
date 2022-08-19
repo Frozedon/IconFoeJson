@@ -34,7 +34,7 @@
         {
           "Name": "Eruption",
           "ActionCost": 1,
-          "Tags": [ "1/round" ],
+          "Tags": "1/round",
           "Description": "A Rock spire in range 5 emits a close blast 1 pool of blight. Adjacent characters take 2 damage. The spire gains aura 1, which is difficult terrain."
         }
       ]
@@ -45,13 +45,13 @@
         {
           "Name": "Soar",
           "ActionCost": 0,
-          "Tags": [ "2/round" ],
+          "Tags": "2/round",
           "Description": "Fly 3 spaces in a straight line."
         },
         {
           "Name": "Scorch",
           "ActionCost": 1,
-          "Tags": [ "2/round" ],
+          "Tags": "2/round",
           "Description": "Choose a character in range 6. At the end of that character's turn, the Razer shoots an energy blast at them for a blast 1 explosion area effect.",
           "AreaEffect": "Characters within must save. On a successful save, they take [D]+[fray]. On a failed save they take 2[D]+[fray]. Rock spires in the area are destroyed."
         }

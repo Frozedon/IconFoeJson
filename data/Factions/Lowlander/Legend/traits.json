@@ -145,6 +145,7 @@
     "Description": "Has dodge while inside difficult or dangerous terrain or adjacent to the Idol."
   },
 
+
   {
     "Name": "Walking Cataclysm",
     "Description": "At the start of each round, the Head Lopper chooses two spaces within range 3 of a different foe. At the end of the round, height 3 dungeon spire objects burst forth from the earth in those spaces, creating a blast 1 area effect around them when they emerge that daze and deals [fray] damage to characters within. Characters standing on them are pushed up on top of them."
@@ -168,9 +169,10 @@
     ]
   },
 
+
   {
     "Name": "Worm and Rider",
-    "Description": "This fight is made of two opponents, the worm and the rider. Each is separately targetable, has its own hp, and tracks statuses and effects separately. When this legend acts, it alternates turns between the Worm and Rider if possible (if both of them are active and on the battlefield)."
+    "Description": "This fight is made of two opponents, the worm and the rider. Each is separately targetable, has its own hp, and tracks statuses and effects separately. When this legend acts, it alternates turns between the Worm and Rider if possible (if both of them are active and on the battlefield - the Rider might not be from Hurian Dive)."
   },
   {
     "Name": "Wormspore Bond",

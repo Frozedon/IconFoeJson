@@ -6,5 +6,5 @@
   "Defense": 6,
   "FrayDamage": 4,
   "DamageDie": 8,
-  "Traits": [ "Overdrive 4", "Aetherwall", "Slip" ]
+  "Traits": [ "Overdrive", "Aetherwall", "Slip" ]
 }

@@ -16,7 +16,7 @@
       "ActionCost": 1,
       "Tags": "mark",
       "Description": "The Aesi marks a character in range 5. They grow donkey ears on the top of their head.",
-      "Mark": "While marked, when the character uses an ability, they first roll 1d6. On a 4+, the character can choose targets as normal. On a 1-3, the Aesi chooses the target of the attack for them, which could include an ally of the target, then this effect and markends."
+      "Mark": "While marked, when the character uses an ability, they first roll 1d6. On a 4+, the character can choose targets as normal. On a 1-3, the Aesi chooses the target of the ability for them, which could include an ally of the target, then this effect and mark ends."
     }
   ]
 }

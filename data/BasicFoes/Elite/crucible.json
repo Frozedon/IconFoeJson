@@ -24,7 +24,7 @@
     {
       "Name": "Fell Shot",
       "ActionCost": 1,
-      "Tags": [ "repeatable" ],
+      "Tags": "repeatable",
       "Description": "Mark an unoccupied space in range 8.",
       "AreaEffect": "Characters that enter that space or start their turn there are struck by a projectile, taking 2 piercing damage twice, and ending this effect."
     },
@@ -32,7 +32,7 @@
       "Name": "Liminal Arrows",
       "ActionCost": 1,
       "Recharge": 5,
-      "Description": "Choose a foe in line of sight and range 10. At the end of that character's turn, it takes [D] piercing damage 3 times if not in cover from the crucible, or just [fray] piercing damage if it's in cover. Then this effect ends."
+      "Description": "Choose a foe in line of sight and range 10. At the end of that character's turn, they take [D] piercing damage 3 times if not in cover from the crucible, or just [fray] piercing damage if it's in cover. Then this effect ends."
     }
   ]
 }

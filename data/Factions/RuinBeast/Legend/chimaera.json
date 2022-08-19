@@ -8,24 +8,20 @@
   "HPText": "[HP] per player characters [MIN]. Heads each have 1/3 of its max HP, rounded up.",
   "Speed": 4,
   "Defense": 8,
-  "FrayDamage": 3,
+  "FrayDamage": 4,
   "DamageDie": 6,
   "RemoveTraits": "Enrage",
-  "Traits": [ "Size 3", "Monstrous Heads" ],
-  "SetupTraits": [
-    {
-      "Name": "Chimaera Heads",
-      "Description": "To determine which heads the Chimaera has, roll a d10 3 times, reroll repeats, or pick 3."
-    }
-  ],
-  "Actions": [
-    {
-      "Name": "Pounce",
-      "ActionCost": 0,
-      "Tags": "2/round",
-      "Description": "The Chimaera flies 5 spaces. Characters under or adjacent to it when it lands are shoved 1 space and take [fray] damage as an area effect."
-    }
-  ],
+  "Traits": [ "Size 3", "Armor 3", "Monstrous Heads" ],
+  "SetupTraits": {
+    "Name": "Chimaera Heads",
+    "Description": "To determine which heads the Chimaera has, roll a d10 3 times, reroll repeats, or pick 3."
+  },
+  "Actions": {
+    "Name": "Pounce",
+    "ActionCost": 0,
+    "Tags": "2/round",
+    "Description": "The Chimaera flies 5 spaces. Characters under or adjacent to it when it lands are shoved 1 space and take [fray] damage as an area effect."
+  },
   "PhasesDescription": "Each time the Chimaera loses a head, its phase changes. The recharge for its heads' abilities depend on phase, and only roll for a head's abilities on turns that it takes.",
   "Phases": [
     {
@@ -59,7 +55,7 @@
         {
           "Name": "Roar",
           "ActionCost": 2,
-          "Tags": [ "recharge" ],
+          "Tags": "recharge",
           "Description": "Adjacent characters take [fray] damage, are shoved 1 and become dazed. Dazed foes must save or become stunned."
         }
       ]
@@ -95,7 +91,8 @@
           "Tags": [ "melee attack", "multimark" ],
           "Hit": "[D]+[fray].",
           "Miss": "[fray].",
-          "Effects": "The character is marked. While marked, attacks from the Chimaera ignore vigor."
+          "Effects": "The character is marked.",
+          "Mark": "While marked, attacks from the Chimaera ignore vigor."
         },
         {
           "Name": "Poison Spit",
@@ -129,7 +126,7 @@
           "Name": "Fling",
           "ActionCost": 1,
           "Description": "An adjacent character is shoved 3.",
-          "Collide": "[D]+[fray]."
+          "Collide": "[D]+[fray] instead of regular collide damage."
         },
         {
           "Name": "Sun Beam",
@@ -159,7 +156,7 @@
           "ActionCost": 1,
           "Tags": "recharge",
           "Description": "An adjacent character must save or be swallowed whole. Remove them from the battlefield. At the start of their turn, the toad spits them out, placing them in any adjacent space to the chimaera's current location, then shoving them 3 spaces. They are winded.",
-          "Collide": "Character takes [D]+[fray] and is stunned."
+          "Collide": "Character takes [D]+[fray] instead of regular collide damage and isstunned."
         }
       ]
     },
@@ -174,7 +171,7 @@
           "Hit": "2[D]+[fray] and inflict burning.",
           "Miss": "[fray].",
           "AreaEffect": "[fray].",
-          "Effects": "Critical hit against burning foes."
+          "Effects": "Critical hit (+[D]) against burning foes."
         },
         {
           "Name": "Inhale",
@@ -200,7 +197,7 @@
           "Hit": "[D]+[fray].",
           "Miss": "[fray].",
           "AreaEffect": "[fray].",
-          "Effects": "Critical hit against blinded foes."
+          "Effects": "Critical hit (+[D]) against blinded foes."
         },
         {
           "Name": "Great Prowl",
@@ -251,20 +248,19 @@
         {
           "Name": "Peck",
           "ActionCost": 1,
-          "Tags": [ "melee attack", "true strike", "pierce", "repeatable" ],
-          "AutoHit": "[fray]."
+          "Tags": [ "melee attack", "true strike", "repeatable" ],
+          "AutoHit": "[fray]. If the Chicken is the only head active, this attack deals [fray] damage twice instead, and becomes piercing."
         },
         {
           "Name": "Gaze",
-          "ActionCost": -1,
           "Tags": "all remaining actions",
-          "Description": "Until the start of the Chicken's next turn, characters that attack the chicken or any of the other heads while the chicken is alive take +1 curse on their attacks. They can choose to take +1 boon instead but instead must save against petrification (see below)."
+          "Description": "Until the start of the Chicken's next turn, characters that attack the chicken or any of the other heads while the chicken is alive take +1 curse on their attacks. Any character that hits any head while the Chicken is active with an attack must save or be affected by Petrification (see below)."
         },
         {
           "Name": "Petrification",
           "ActionCost": 2,
           "Tags": "recharge",
-          "Description": "A character in range 6 becomes pacified. At the end of that character's next turn, they must save. On a failed save, they are encased in stone, removing them from the battlefield and becoming replaced with a destructible (10 hp) height 1 object. Until the is destroyed, they cannot take a turn. When it's destroyed, they are returned to the battlefield in the space they left and can take a turn as normal."
+          "Description": "A character in range 6 becomes pacified. If they don't attack during their turn, the petrification effect ends, and they cease being pacified. Otherwise, at the end of that character's next turn, they must save. On a failed save, they are encased in stone, removing them from the battlefield and becoming replaced with a destructible (10 hp) height 1 object. Until the is destroyed, they cannot take a turn. When it's destroyed, they are returned to the battlefield in the space they left and can take a turn as normal."
         }
       ]
     },

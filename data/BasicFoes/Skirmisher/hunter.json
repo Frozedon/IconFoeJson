@@ -15,14 +15,14 @@
     {
       "Name": "Prowl",
       "ActionCost": 1,
-      "Tags": [ "end turn" ],
+      "Tags": "end turn",
       "Description": "Dash 1 and gain stealth."
     },
     {
       "Name": "Hunt",
       "ActionCost": 1,
-      "Tags": [ "mark" ],
-      "Description": "A character in range 8 must save or be marked. The target cannot benefit from cover, stealth, or evasion while marked."
+      "Tags": "mark",
+      "Description": "A character in range 8 must save or be marked. The target cannot benefit from cover, stealth, or evasion while marked. They can repeat the save at the end of their turn, ending it on a success."
     }
   ]
 }

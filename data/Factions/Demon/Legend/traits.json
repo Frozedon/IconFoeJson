@@ -20,6 +20,7 @@
     "Description": "When the Demon's vigor is broken, summon a crawling mass in range 3."
   },
 
+
   {
     "Name": "Blade of Agony",
     "Description": "Many actions from this legend summon a blade of agony. Blades can be summoned in range 3 from the demon.",
@@ -30,7 +31,7 @@
       "ListedItems": [
         {
           "Name": "Blade Slash",
-          "Description": "Whenever a blade is summoned, all blades, including the one that was just summoned, slash every space adjacent to them, dealing 1 piercing damage as an effect. A character can be hit by multiple blades at once. The violence demon is immune to its own blades."
+          "Description": "Whenever a blade is summoned, all blades, including the one that was just summoned, slash every space adjacent to them, dealing 1 irreducible damage as an effect. A character can hit by multiple blades at once. The violence demon is immune to its own blades."
         },
         {
           "Name": "Blade Consume X",
@@ -41,12 +42,13 @@
   },
   {
     "Name": "Bloodthirsty Sword",
-    "Description": "The Violence demon's blades are so sharp they inflict pierce even though it is a skirmisher."
+    "Description": "The Violence demon's blades are so sharp they cut the aether of the soul. Damage from a Blade of Agony (see below) cannot be reduced in any way (by armor, resistance, or otherwise)."
   },
   {
     "Name": "Regard",
     "Description": "Critically hitting the demon earns its regard until the end of the round. Earning the demons' regard inflicts it with its own Compel Duel ability (see below) until the end of the round. This effect doesn't stack."
   },
+
 
   {
     "Name": "Court of the Covenant",

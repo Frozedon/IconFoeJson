@@ -37,7 +37,7 @@
       "ActionCost": 1,
       "Tags": [ "multimark", "2/round" ],
       "Description": "Mark a character in range 6.",
-      "Mark": "At the end of that character's turn, if that character is still marked, the Weapon shoots a fireball at them for a blast 1 explosion area effect. Characters within must save. On a successful save, they take [D]+[fray]. On a failed save they take 2[D]+[fray] and are burning. Burning characters fail the save."
+      "Mark": "t the end of that character's turn, if that character is still marked, the Weapon shoots a fireball at them for a blast 1 explosion area effect. Characters within must save. On a successful save, they take [fray]. On a failed save they take [D]+[fray] and are burning. Burning characters fail the save. Either way, the mark ends."
     }
   ],
   "PhasesDescription": "The Crimson Weapon changes phases when bloodied.",

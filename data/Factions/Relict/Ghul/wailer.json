@@ -12,7 +12,8 @@
       "Name": "Pounce",
       "ActionCost": 0,
       "Tags": [ "mark", "end turn" ],
-      "Description": "The Wailer gains stealth. Choose a foe in range 3. If, at the end of that foe's next turn, they are still in range 3 of the Wailer, it may teleport adjacent to them and deal [D], ending this effect."
+      "Description": "The Wailer gains stealth. Mark a foe in range 3.",
+      "Mark": "At the end of the marked character's next turn, they are still in range 3 of the Wailer, the Wailer may teleport adjacent to them and deal [D]. Then this mark ends."
     }
   ]
 }

@@ -13,7 +13,7 @@
       "ActionCost": 1,
       "Tags": "mark",
       "Description": "The Ifrit marks a foe in range 3.",
-      "Mark": "While makred, that foe is burning, and at the start of that foe's turn, or when the Jotunn hits the target with an attack, they explode for a blast 1 area effect, dealing [fray] damage to all characters within."
+      "Mark": "While marked, that foe is burning+, and at the start of that foe's turn, or when the Jotunn hits the target with an attack, they explode for a blast 1 area effect, dealing [fray] damage to all characters within."
     }
   ]
 }

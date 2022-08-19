@@ -12,8 +12,9 @@
     {
       "Name": "Split Ionize",
       "ActionCost": 1,
-      "Tags": [ "mark" ],
-      "Description": "A character in range 8 must save or become marked. Electrified characters fail this save. While marked, they are vulnerable and have aura 2. Any time they take damage, all allies in the aura take 1 piercing damage."
+      "Tags": "mark",
+      "Description": "A character in range 8 must save or become marked. Electrified characters fail this save.",
+      "Mark": "While marked, they are vulnerable+ and have aura 2. Any time they take damage, all allies in the aura take 1 piercing damage."
     }
   ]
 }

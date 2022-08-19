@@ -32,7 +32,7 @@
     {
       "Name": "Hurl Boulder",
       "ActionCost": 1,
-      "Tags": [ "terrain effect", "repeatable" ],
+      "Tags": "terrain effect",
       "Effects": "A foe in range 3 takes 2 damage and is shoved 1, then create a height 1 boulder object next to them."
     },
     {
@@ -48,24 +48,24 @@
         {
           "Name": "Charge",
           "ActionCost": 1,
-          "Tags": [ "1/round" ],
+          "Tags": "1/round",
           "Description": "Dash 4 in a straight line. All characters the Demolisher passes over are shoved 1 to the side and take [fray] damage."
         }
       ]
     },
     {
-      "Traits": [ "Frothing Mad", "Great Enrage" ],
+      "Traits": [ "Frothing Mad", "Enrage" ],
       "Actions": [
         {
           "Name": "Charge",
           "ActionCost": 1,
-          "Tags": [ "3/round" ],
+          "Tags": "3/round",
           "Description": "Dash 4 in a straight line. All characters the Demolisher passes over are shoved 1 to the side and take [fray] damage."
         },
         {
           "Name": "Great Lash",
           "ActionCost": 1,
-          "Tags": [ "1/round" ],
+          "Tags": "1/round",
           "Description": "The Demolisher whips a chain or hook around all foes in range 5. They are shoved 3 spaces towards the Demolisher."
         }
       ]

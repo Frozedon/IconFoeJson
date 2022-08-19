@@ -22,7 +22,7 @@
       "Name": "Swoop",
       "ActionCost": 2,
       "Recharge": 4,
-      "Tags": [ "end turn" ],
+      "Tags": "end turn",
       "Description": "Leave the battlefield. Return to the battlefield in a visible free space at start of next turn with stealth."
     }
   ]

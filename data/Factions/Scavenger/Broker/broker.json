@@ -42,7 +42,8 @@
         "Name": "Tit for Tat",
         "ActionCost": 1,
         "Tags": "mark",
-        "Description": "The Broker marks an ally in range 4. While marked, that character has counter and evasion."
+        "Description": "The Broker marks an ally in range 4.",
+        "Mark": "While marked, that character has counter and evasion."
       }
     },
     {

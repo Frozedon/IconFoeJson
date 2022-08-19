@@ -11,7 +11,7 @@
       "Name": "Sixfold Cut",
       "ActionCost": 1,
       "Tags": "melee attack",
-      "Hit": "Deal 1 piercing damage, six times.",
+      "Hit": "Deal 1 irreducible damage six times.",
       "Miss": "Three times.",
       "Effects": "Summon a blade of agony."
     },
@@ -27,7 +27,7 @@
       "Recharge": 6,
       "Tags": "melee attack",
       "Description": "Repeat the following effect six times. Each time, the demon must move in the same direction.",
-      "Effects": "The violence demon teleports 1, then deals 1 piercing damage to all other characters in a blast 1 area effect centered on it. Blades of Agony caught in the effect trigger their Blade Slash effect."
+      "Effects": "The violence demon teleports 1, then deals 1 irreducible damage to all other adjacent characters. Blades of Agony caught in the effect trigger their Blade Slash effect."
     },
     {
       "Name": "Compel Duel",
@@ -45,7 +45,7 @@
         "Name": "Blade Parry",
         "Tags": "blade consume 1",
         "Trigger": "The violence demon is targeted by an attack.",
-        "Effects": "The demon gains evasion against that attack."
+        "Effects": "The demon gains evasion against that attack, then teleports 1."
       },
       "Actions": [
         {
@@ -58,7 +58,7 @@
         {
           "Name": "Maddening Shift",
           "ActionCost": 0,
-          "Description": "The violence demon dashes 4 with phasing."
+          "Description": "The violence demon removes itself from the battlefield, then re-appears in a space in range 3."
         }
       ]
     },
@@ -75,10 +75,10 @@
           "Name": "Split Foe",
           "ActionCost": 2,
           "Tags": [ "melee attack", "line 6", "1/round" ],
-          "Hit": "2[D]+[fray] and foe must save or become stunned.",
+          "Hit": "2[D]+[fray] and must save or become stunned.",
           "Miss": "[fray].",
           "Effects": [
-            "Deals +[D], hit or miss, against bloodied foes.",
+            "Critical hit (+[D]) against bloodied foes.",
             "Summon two blades of agony."
           ]
         },

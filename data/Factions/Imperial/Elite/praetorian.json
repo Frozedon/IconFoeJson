@@ -25,6 +25,11 @@
       "Description": "The Praetorian flies 3 spaces in a straight line. All adjacent foes when it lands are dazed and shoved 1."
     },
     {
+      "Name": "Shield Jumper",
+      "ActionCost": 1,
+      "Description": "An ally in range 2 of the Praetorian uses its shield as a springboard and can fly 4."
+    },
+    {
       "Name": "Arkentech Repulser Shield",
       "ActionCost": 2,
       "Recharge": 6,

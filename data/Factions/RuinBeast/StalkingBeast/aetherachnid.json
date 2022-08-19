@@ -15,7 +15,7 @@
       "ActionCost": 1,
       "Tags": "mark",
       "Description": "An adjacent foe must save or be poisoned, slowed, and marked. Poisoned characters fail the save.",
-      "Mark": "While marked, the first time on a turn that character takes damage, the arachnid can teleport them 1."
+      "Mark": "While marked, the next time the character takes damage, the aetherachnid can teleport them 4, then the mark ends."
     }
   ]
 }

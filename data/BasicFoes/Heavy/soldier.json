@@ -14,7 +14,7 @@
     {
       "Name": "Bash",
       "ActionCost": 1,
-      "Tags": [ "repeatable" ],
+      "Tags": "repeatable",
       "Description": "An adjacent foe is shoved 1 and must save or become winded.",
       "Collide": "Foe fails the save."
     },

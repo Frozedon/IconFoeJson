@@ -26,7 +26,7 @@
       "ActionCost": 1,
       "Tags": "mark",
       "Description": "The hob marks a foe in range 3.",
-      "Mark": "While marked the foe cannot gain boons. Instead, when the foe would gain a boon, the Hob gains +1 boon on all attacks and saves on its following turn."
+      "Mark": "While marked the foe cannot gain boons. Instead, when the foe would gain a boon, the Hob gains +1 boon on all attacks and saves on its following turn. A foe can end this mark by choosing to roll all attacks and saves with +1 curse for their entire turn. The mark then ends at the end of that turn."
     },
     {
       "Name": "Cavort",

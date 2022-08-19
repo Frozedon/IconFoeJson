@@ -20,7 +20,7 @@
   "ExtraAbilitysets": [
     {
       "Name": "Rider",
-      "Traits": [ "Dodge", "Skirmish", "Worm Riding", "Skewer" ],
+      "Traits": [ "Size 1", "Dodge", "Skirmish", "Worm Riding", "Skewer" ],
       "Actions": [
         {
           "Name": "Wormhunter Spear",
@@ -72,7 +72,7 @@
     },
     {
       "Name": "Worm",
-      "Traits": [ "Sturdy", "Devour the Land" ],
+      "Traits": [ "Size 2", "Sturdy", "Devour the Land" ],
       "Actions": [
         {
           "Name": "Massive Jaws",

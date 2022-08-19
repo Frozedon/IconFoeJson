@@ -13,6 +13,7 @@
     "Name": "Open Wound",
     "ActionCost": 1,
     "Tags": "mark",
-    "Description": "An adjacent foe is marked. While marked, each time they dash (even as part of an ability), they take 2 piercing damage."
+    "Description": "An adjacent foe is marked.",
+    "Mark": "While marked, each time they dash (even as part of an ability), they take 2 piercing damage."
   }
 }

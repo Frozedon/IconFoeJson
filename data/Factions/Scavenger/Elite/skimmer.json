@@ -22,13 +22,15 @@
       "Name": "That One!",
       "ActionCost": 1,
       "Tags": "mark",
-      "Description": "A foe in range 5 is marked. While marked, they count as holding a valuables token and are branded+."
+      "Description": "A foe in range 5 is marked.",
+      "Mark": "While marked, they count as holding a valuables token and are branded+."
     },
     {
       "Name": "Overtime",
       "ActionCost": 2,
       "Tags": "mark",
-      "Description": "The Skimmer marks an ally in range 6. While marked, the ally gains regeneration and is sturdy."
+      "Description": "The Skimmer marks an ally in range 6.",
+      "Mark": "While marked, the ally gains regeneration and is sturdy."
     },
     {
       "Name": "Gang Up",

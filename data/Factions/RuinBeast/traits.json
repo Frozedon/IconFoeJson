@@ -58,7 +58,7 @@
   },
   {
     "Name": "Lure",
-    "Description": "At the start of its turn as a free action, the Fisher puts a lure out in a space within range 3 of its location, or relocates its lure to a new space in that range if it's already active. The lure is a size 1 intangible summon."
+    "Description": "At the start of its turn as a free action, the Fisher puts a lure out in a space within range 3 of its location, or moves its current lure 1 space. The lure is a size 1 intangible summon. It cannot be placed or moved adjacent to the Kingfisher outside of the Fisher's reel action, and only one lure can be placed at once. If the Fisher moves further away from range 3 from its lure, unsummon it."
   },
   {
     "Name": "Malicious Latch",

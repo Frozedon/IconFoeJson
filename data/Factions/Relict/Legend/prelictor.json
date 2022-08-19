@@ -27,7 +27,8 @@
       "Name": "Fear",
       "ActionCost": 1,
       "Tags": "multimark",
-      "Description": "Mark a foe in range 6. While marked, that foe gains +1 curse on attacks and saves unless adjacent to an ally. If they end their turn adjacent to an ally, they can pass a save to clear this mark."
+      "Description": "Mark a foe in range 6.",
+      "Mark": "While marked, that foe gains +1 curse on attacks and saves unless adjacent to an ally. If they end their turn adjacent to an ally, they can clear this mark."
     },
     {
       "Name": "Shriek",

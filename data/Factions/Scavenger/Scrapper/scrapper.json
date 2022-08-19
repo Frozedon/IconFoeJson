@@ -13,7 +13,8 @@
       "Name": "That One!",
       "ActionCost": 1,
       "Tags": "mark",
-      "Description": "A foe in range 5 is marked. While marked, they count as holding a valuables token."
+      "Description": "A foe in range 5 is marked.",
+      "Mark": "While marked, they count as holding a valuables token."
     },
     {
       "Name": "Uppercut",

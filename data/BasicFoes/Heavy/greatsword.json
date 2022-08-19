@@ -3,14 +3,13 @@
   "Inherits": "Heavy",
   "Type": "Foe",
   "UsesTemplate": true,
-  "Interrupts": [
-    {
-      "Name": "Withstand",
-      "Count": 1,
-      "Trigger": "When self or an adjacent ally is target by an attack.",
-      "Effects": "Grant resistance against that attack."
-    }
-  ],
+  "Traits": "Sturdy",
+  "Interrupts": {
+    "Name": "Withstand",
+    "Count": 1,
+    "Trigger": "When self or an adjacent ally is target by an attack.",
+    "Effects": "Grant resistance against that attack."
+  },
   "Actions": [
     {
       "Name": "Great Slice",

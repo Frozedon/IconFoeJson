@@ -3,14 +3,12 @@
   "Inherits": "Leader",
   "Type": "Foe",
   "UsesTemplate": true,
-  "Interrupts": [
-    {
-      "Name": "Intervention",
-      "Count": 1,
-      "Trigger": "An ally in range 3 is targeted by an ability.",
-      "Effects": "The ally gains resistance against that ability. The monk may then teleport adjacent to that ally."
-    }
-  ],
+  "Interrupts": {
+    "Name": "Intervention",
+    "Count": 1,
+    "Trigger": "An ally in range 3 is targeted by an ability.",
+    "Effects": "The ally gains resistance against that ability. The monk may then teleport adjacent to that ally."
+  },
   "Actions": [
     {
       "Name": "Punishment",

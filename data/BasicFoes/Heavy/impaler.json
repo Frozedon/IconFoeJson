@@ -3,6 +3,7 @@
   "Inherits": "Heavy",
   "Type": "Foe",
   "UsesTemplate": true,
+  "Traits": "Sturdy",
   "Actions": [
     {
       "Name": "Spike",

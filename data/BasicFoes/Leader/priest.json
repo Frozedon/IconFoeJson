@@ -24,7 +24,8 @@
       "Name": "Shield of Faith",
       "ActionCost": 2,
       "Tags": "mark",
-      "Description": "Allied character in range 3 becomes marked, and gains sturdy and resistance while marked."
+      "Description": "Allied character in range 3 becomes marked.",
+      "Mark": "While marked, they gain sturdy and resistance while marked and in range 3 of the priest."
     }
   ]
 }

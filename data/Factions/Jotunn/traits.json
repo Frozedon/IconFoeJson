@@ -60,6 +60,10 @@
     "Description": "At the start of the round, the Cyclopean chooses a blast 1 area in range 6. At the end of the round, they shoot a massive bolt of energy at that area, dealing [D]+[fray] piercing damage as an area effect to characters within. If the Cyclopean is blinded, characters within take only 1 damage instead."
   },
   {
+    "Name": "Size 1 OR Size 2",
+    "Description": "This character takes up either a 1 by 1 or 2 by 2 area of spaces."
+  },
+  {
     "Name": "Titan Armament",
     "Description": "This Jotunn is armed with Titansteel weaponry. They can take 1 extra turn a round, and 1/round may dash 2 as a free action, then deal [fray] damage to all adjacent foes.",
     "EncounterBudgetAdd": 1

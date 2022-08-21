@@ -2,7 +2,6 @@
   "Name": "Kelpie",
   "Inherits": [ "Ruin Beast", "Elite", "Skirmisher" ],
   "Type": "Foe",
-  "Vitality": 8,
   "Traits": [ "Cursed Deeps", "Aquatic" ],
   "Interrupts": {
     "Name": "Adhere",

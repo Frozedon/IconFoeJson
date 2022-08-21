@@ -2,17 +2,5 @@
   "Name": "Embalmer",
   "Inherits": "Necrosavant",
   "Type": "Foe",
-  "Traits": [ "Heavy Armor", "Aura of Rot" ],
-  "Actions": [
-    {
-      "Name": "Despoil",
-      "ActionCost": 2,
-      "Recharge": 5,
-      "Tags": [ "ranged attack 6", "cross 2" ],
-      "Hit": "3[D]+[fray].",
-      "Miss": "[D]+[fray].",
-      "AreaEffect": "[D]+[fray].",
-      "Effects": "Foes must save or become pacified."
-    }
-  ]
+  "Traits": [ "Heavy Armor", "Aura of Rot" ]
 }

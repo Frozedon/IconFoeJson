@@ -5,6 +5,7 @@
   "Chapter": 3,
   "Vitality": 20,
   "HP": 120,
+  "RemoveTraits": "Devour",
   "Traits": [ "Size 2", "Flying", "Court of the Covenant" ],
   "Actions": [
     {
@@ -28,7 +29,7 @@
     },
     {
       "Name": "Comet Rain",
-      "ActionCost": 0,
+      "ActionCost": 1,
       "Tags": [ "range 6", "cross 2", "2/round" ],
       "AreaEffect": "[D]+[fray]. Then, create two height 1 comet objects placed adjacent to characters targeted. Characters in cover from the demon take half damage."
     },
@@ -45,7 +46,7 @@
       "Description": "No changes."
     },
     {
-      "Description": "As phase 1, but Death XIII can be used twice a round, and also has:",
+      "Description": "As phase I, but Death XIII can be used twice a round, and also has:",
       "Traits": "Declare Will" 
     }
   ]

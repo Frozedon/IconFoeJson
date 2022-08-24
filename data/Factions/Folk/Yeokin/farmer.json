@@ -19,7 +19,7 @@
     {
       "Name": "Bale",
       "ActionCost": 1,
-      "Description": "The Farmer uses a pitchfork, shovel, or sheer strength and picks up an adjacent foe size 1 or smaller, removing them from the battlefield and placing them in an adjacent space, then shoving them."
+      "Description": "The Farmer uses a pitchfork, shovel, or sheer strength and picks up an adjacent foe size 1 or smaller, removing them from the battlefield and placing them in an adjacent space, then shoving them 1."
     },
     {
       "Name": "On the Chin",

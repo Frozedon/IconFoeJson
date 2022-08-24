@@ -2,8 +2,6 @@
   "Name": "Imperial",
   "Faction": "Imperial",
   "Type": "Template",
-  "Traits": "Receive Orders",
-  "UsesSpecialTemplates": "Imperial Officer",
   "SetupTraits": [
     {
       "Name": "Kin", 
@@ -18,10 +16,15 @@
           "Description": "When the commanding officer of an Imperial detachment is defeated, there's a 1 in 6 chance (roll 1d6) at the start of each round the remaining imperials will attempt to flee or will surrender on the spot, ending the fight."
         }
       ]
-    },
-    {
+    }
+  ],
+  "ConditionalAbilities": {
+    "IsNotSpecialClasses": "Legend",
+    "UsesSpecialTemplates": "Imperial Officer",
+    "Traits": "Receive Orders",
+    "SetupTraits": {
       "Name": "Commanding Officer",
       "Description": "Designate one foe the commanding officer of the imperial detachment. They get a special template."
     }
-  ]
+  }
 }

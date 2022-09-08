@@ -61,7 +61,7 @@
   },
   {
     "Name": "Size 1 OR Size 2",
-    "Description": "This character takes up either a 1 by 1 or 2 by 2 area of spaces."
+    "Description": "This character takes up either a (1 by 1) or (2 by 2) area of spaces."
   },
   {
     "Name": "Titan Armament",

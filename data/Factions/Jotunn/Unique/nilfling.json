@@ -2,8 +2,7 @@
   "Name": "Nilfling",
   "Inherits": [ "Jotunn", "Heavy" ],
   "Type": "Foe",
-  "HPMultiplier": 4,
-  "RemoveTraits": [ "Titanblood", "Titanfall", "Elite" ],
+  "RemoveTraits": [ "Titanblood", "Titanfall" ],
   "Traits": [ "Thinblood", "Eyeless", "Blood Scent" ],
   "Actions": [
     {
@@ -29,6 +28,14 @@
       "Name": "Finish Off",
       "ActionCost": 1,
       "Description": "The Nilfling deals a phenomenal blow to an adjacent bloodied character. That character must save or take 2[D]+[fray], become dazed, and become winded. On a successful save, they only take [D]+[fray] and are either dazed or winded (the Nilfling can choose)."
+    }
+  ],
+  "ConditionalAbilities": [
+    {
+      "IsSpecialClasses": "Normal",
+      "SpecialClass": "Normal",
+      "RemoveTraits": "Elite",
+      "HPMultiplier": 4
     }
   ]
 }

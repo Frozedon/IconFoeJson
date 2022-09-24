@@ -1,6 +1,7 @@
 {
   "Name": "Necrosavant",
   "Inherits": [ "Relict", "Leader" ],
+  "Traits": "Defiance",
   "Actions": [
     {
       "Name": "Unholy",

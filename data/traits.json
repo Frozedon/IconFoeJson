@@ -316,7 +316,7 @@
   {
     "Name": "Immortal Disregard",
     "Description": "Attacks never miss this character.",
-    "Defense": 1
+    "Defense": 0
   },
   {
     "Name": "Immovable Object",

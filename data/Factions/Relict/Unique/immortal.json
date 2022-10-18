@@ -21,7 +21,7 @@
       "ActionCost": 2,
       "Recharge": 5,
       "Tags": [ "melee attack", "true strike" ],
-      "Hit": "2[D]+[fray] ahd shove 4. The immortal dashes after the target, following it.",
+      "Hit": "2[D]+[fray] and shove 4. The immortal dashes after the target, following it.",
       "Miss": "[D]+[fray] and shove 2.",
       "Collide": "Foe is also dazed and winded."
     }

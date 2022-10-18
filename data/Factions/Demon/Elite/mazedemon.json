@@ -9,7 +9,8 @@
     {
       "Name": "Diablo",
       "ActionCost": 2,
-      "Tags": [ "ranged attack 8", "cross 1", "pierce" ],
+      "RangedAttack": 8,
+      "Tags": [ "cross 1", "pierce" ],
       "Hit": "2[D]+[fray].",
       "Miss": "[fray].",
       "AreaEffect": "[fray].",

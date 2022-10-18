@@ -37,13 +37,15 @@
         "ListedActions": [
           {
             "Name": "Arkentech Rifle",
-            "Tags": [ "ranged attack 6", "pierce" ],
+            "RangedAttack": 6,
+      "Tags": [ "pierce" ],
             "Hit": "[D].",
             "Miss": "1 damage."
           },
           {
             "Name": "Arkentech Explosives",
-            "Tags": [ "range 4", "blast 1" ],
+            "Range": 4,
+            "Tags": [ "blast 1" ],
             "AreaEffect": "2 piercing damage, shove 1."
           }
         ]
@@ -52,7 +54,8 @@
     {
       "Name": "Arkentech Force Beam",
       "ActionCost": 1,
-      "Tags": [ "ranged attack 3", "pierce" ],
+      "RangedAttack": 3,
+      "Tags": [ "pierce" ],
       "AutoHit": "[fray].",
       "Effects": "All foes in range 3 of the Baron take [fray] damage. Shove all affected foes 1 either away from or towards the Baron."
     },

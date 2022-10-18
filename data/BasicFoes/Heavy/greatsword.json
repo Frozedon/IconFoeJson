@@ -14,7 +14,8 @@
     {
       "Name": "Great Slice",
       "ActionCost": 2,
-      "Tags": [ "melee attack", "line 3", "true strike" ],
+      "MeleeAttack": 1,
+      "Tags": [ "line 3", "true strike" ],
       "Hit": "2[D]+[fray].",
       "Miss": "[fray].",
       "AreaEffect": "[fray]."
@@ -23,7 +24,8 @@
       "Name": "Split Foe",
       "ActionCost": 2,
       "Recharge": 6,
-      "Tags": [ "melee attack", "true strike", "+1 curse" ],
+      "MeleeAttack": 1,
+      "Tags": [ "true strike", "+1 curse" ],
       "Hit": "Deal [D]+[fray], 3 times.",
       "Miss": "[D]+[fray]."
     }

@@ -11,7 +11,8 @@
     {
       "Name": "Thumper Grenade",
       "ActionCost": 1,
-      "Tags": [ "range 6", "cross 1" ],
+      "Range": 6,
+      "Tags": [ "cross 1" ],
       "AreaEffect": "[fray] damage.",
       "Effects": "Create a pit in the center space."
     }

@@ -6,7 +6,8 @@
   "Actions": {
     "Name": "Fury Strikes",
     "ActionCost": 1,
-    "Tags": [ "melee attack", "true strike", "mark" ],
+    "MeleeAttack": 1,
+      "Tags": [ "true strike", "mark" ],
     "Hit": "[D]+[fray].",
     "Miss": "[fray].",
     "Effects": "Mark the foe after the attack resolves.",

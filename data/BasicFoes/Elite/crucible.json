@@ -9,7 +9,8 @@
     {
       "Name": "Annihilate",
       "ActionCost": 2,
-      "Tags": [ "ranged attack 10", "blast 1", "pierce", "terrain effect" ],
+      "RangedAttack": 10,
+      "Tags": [ "blast 1", "pierce", "terrain effect" ],
       "Hit": "2[D]+[fray].",
       "Miss": "[fray].",
       "AreaEffect": "[fray].",

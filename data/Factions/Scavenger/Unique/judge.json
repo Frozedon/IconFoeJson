@@ -7,7 +7,8 @@
     {
       "Name": "Long Arm of the Law",
       "ActionCost": 2,
-      "Tags": [ "ranged attack", "line 3" ],
+      "RangedAttack": 1,
+      "Tags": [ "line 3" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
       "AreaEffect": "[fray].",

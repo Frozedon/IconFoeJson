@@ -8,7 +8,8 @@
     {
       "Name": "Rake",
       "ActionCost": 1,
-      "Tags": [ "melee attack", "line 4" ],
+      "MeleeAttack": 1,
+      "Tags": [ "line 4" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
       "Effects": "Hellion can fly to any point on the line after the attack. Foes in the area must save or be blinded."

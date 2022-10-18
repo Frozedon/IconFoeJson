@@ -21,7 +21,8 @@
     {
       "Name": "The Maw",
       "ActionCost": 1,
-      "Tags": [ "melee attack", "true strike" ],
+      "MeleeAttack": 1,
+      "Tags": [ "true strike" ],
       "Hit": "3[D]+[fray].",
       "Miss": "[D]+[fray].",
       "Effects": "If more than one character is adjacent to the Kinfisher, it chooses targets randomly. It cannot target summons. Then, the fisher's lure is shoved to 3 spaces away from it."

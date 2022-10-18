@@ -13,7 +13,8 @@
   "Actions": {
     "Name": "Bloody Fuller",
     "ActionCost": 2,
-    "Tags": [ "melee attack 2", "multiattack", "true strike" ],
+    "MeleeAttack": 2,
+      "Tags": [ "multiattack", "true strike" ],
     "Hit": "[D].",
     "Miss": "-.",
     "Effects": [

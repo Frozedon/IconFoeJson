@@ -8,7 +8,8 @@
     {
       "Name": "Cleansing Bolt",
       "ActionCost": 1,
-      "Tags": [ "ranged attack 5", "cross 1" ],
+      "RangedAttack": 5,
+      "Tags": [ "cross 1" ],
       "AutoHit": "[fray].",
       "AreaEffect": "[fray].",
       "Effects": "Does not damage allies. Deals bonus damage for each ally caught in its area of effect."

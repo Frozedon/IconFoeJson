@@ -8,7 +8,8 @@
     {
       "Name": "Geyser",
       "ActionCost": 1,
-      "Tags": [ "ranged attack 8", "cross 1", "pierce" ],
+      "RangedAttack": 8,
+      "Tags": [ "cross 1", "pierce" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
       "AreaEffect": "[fray].",
@@ -20,7 +21,8 @@
     {
       "Name": "Frozen Spear",
       "ActionCost": 1,
-      "Tags": [ "range 6", "line 4" ],
+      "Range": 6,
+      "Tags": [ "line 4" ],
       "AreaEffect": "Foes take 2 piercing damage and one foe is frostbitten. Frostbitten foes take 2 piercing damage, twice."
     },
     {

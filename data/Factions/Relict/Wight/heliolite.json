@@ -18,7 +18,8 @@
     {
       "Name": "Javelin",
       "ActionCost": 1,
-      "Tags": [ "ranged attack 5", "true strike" ],
+      "RangedAttack": 5,
+      "Tags": [ "true strike" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
       "Effects": [

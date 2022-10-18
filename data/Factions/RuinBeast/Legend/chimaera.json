@@ -48,7 +48,8 @@
         {
           "Name": "Savage Bite",
           "ActionCost": 1,
-          "Tags": [ "melee attack", "true strike", "repeatable" ],
+          "MeleeAttack": 1,
+      "Tags": [ "true strike", "repeatable" ],
           "Hit": "[D]+[fray].",
           "Miss": "[fray]."
         },
@@ -68,7 +69,8 @@
         {
           "Name": "Headbutt",
           "ActionCost": 1,
-          "Tags": [ "melee attack", "true strike", "repeatable" ],
+          "MeleeAttack": 1,
+      "Tags": [ "true strike", "repeatable" ],
           "Hit": "[D]+[fray] and shove 1.",
           "Miss": "[fray].",
           "Effects": "The Chimaera can dash 2 spaces before making this attack."
@@ -88,7 +90,8 @@
         {
           "Name": "Toxic Bite",
           "ActionCost": 1,
-          "Tags": [ "melee attack", "multimark" ],
+          "MeleeAttack": 1,
+      "Tags": [ "multimark" ],
           "Hit": "[D]+[fray].",
           "Miss": "[fray].",
           "Effects": "The character is marked.",
@@ -103,7 +106,8 @@
         {
           "Name": "Poison Breath",
           "ActionCost": 2,
-          "Tags": [ "ranged attack 4", "blast 2", "recharge" ],
+          "RangedAttack": 4,
+      "Tags": [ "blast 2", "recharge" ],
           "Hit": "2[D]+[fray].",
           "Miss": "[fray].",
           "AreaEffect": "[fray].",
@@ -118,7 +122,8 @@
         {
           "Name": "Savage Bite",
           "ActionCost": 1,
-          "Tags": [ "melee attack", "pierce", "repeatable" ],
+          "MeleeAttack": 1,
+      "Tags": [ "pierce", "repeatable" ],
           "Hit": "[D]+[fray].",
           "Miss": "[fray]."
         },
@@ -131,7 +136,8 @@
         {
           "Name": "Sun Beam",
           "ActionCost": 2,
-          "Tags": [ "ranged attack", "line 10", "pierce", "recharge" ],
+          "RangedAttack": 1,
+      "Tags": [ "line 10", "pierce", "recharge" ],
           "Hit": "3[D]+[fray] and foe is shattered.",
           "Miss": "[D]+[fray].",
           "AreaEffect": "[D]+[fray]."
@@ -146,7 +152,8 @@
         {
           "Name": "Tongue",
           "ActionCost": 1,
-          "Tags": [ "melee attack 3", "repeatable" ],
+          "MeleeAttack": 3,
+      "Tags": [ "repeatable" ],
           "Hit": "[D]+[fray].",
           "Miss": "[fray].",
           "Effects": "The target is shoved 2 towards the chimaera."
@@ -167,7 +174,8 @@
         {
           "Name": "Fireball",
           "ActionCost": 2,
-          "Tags": [ "ranged attack 6", "blast 1" ],
+          "RangedAttack": 6,
+      "Tags": [ "blast 1" ],
           "Hit": "2[D]+[fray] and inflict burning.",
           "Miss": "[fray].",
           "AreaEffect": "[fray].",
@@ -181,7 +189,8 @@
         {
           "Name": "Pyroclast",
           "ActionCost": 1,
-          "Tags": [ "range 8", "blast 1", "recharge" ],
+          "Range": 8,
+          "Tags": [ "blast 1", "recharge" ],
           "Description": "Characters in the area must save or take [D] and become stunned. Summon a height 3 rock spire object in the area."
         }
       ]
@@ -193,7 +202,8 @@
         {
           "Name": "Savage Claw",
           "ActionCost": 1,
-          "Tags": [ "melee attack", "arc 3", "repeatable" ],
+          "MeleeAttack": 1,
+      "Tags": [ "arc 3", "repeatable" ],
           "Hit": "[D]+[fray].",
           "Miss": "[fray].",
           "AreaEffect": "[fray].",
@@ -221,7 +231,8 @@
         {
           "Name": "Cross Bolt",
           "ActionCost": 1,
-          "Tags": [ "ranged attack 8", "cross 1" ],
+          "RangedAttack": 8,
+      "Tags": [ "cross 1" ],
           "Hit": "[D]+[fray].",
           "Miss": "[fray].",
           "AreaEffect": "[fray].",
@@ -248,7 +259,8 @@
         {
           "Name": "Peck",
           "ActionCost": 1,
-          "Tags": [ "melee attack", "true strike", "repeatable" ],
+          "MeleeAttack": 1,
+      "Tags": [ "true strike", "repeatable" ],
           "AutoHit": "[fray]. If the Chicken is the only head active, this attack deals [fray] damage twice instead, and becomes piercing."
         },
         {
@@ -271,7 +283,8 @@
         {
           "Name": "Ice Shards",
           "ActionCost": 1,
-          "Tags": [ "ranged attack 6", "multiattack" ],
+          "RangedAttack": 6,
+      "Tags": [ "multiattack" ],
           "AutoHit": "[fray]."
         },
         {
@@ -283,7 +296,8 @@
         {
           "Name": "Freezing Breath",
           "ActionCost": 2,
-          "Tags": [ "melee attack", "close blast 1", "recharge" ],
+          "MeleeAttack": 1,
+      "Tags": [ "close blast 1", "recharge" ],
           "Hit": "2[D]+[fray].",
           "Miss": "[fray].",
           "AreaEffect": "[fray].",

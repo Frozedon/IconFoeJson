@@ -9,7 +9,8 @@
     {
       "Name": "Spirit Scythe",
       "ActionCost": 1,
-      "Tags": [ "melee attack 2", "arc 4" ],
+      "MeleeAttack": 2,
+      "Tags": [ "arc 4" ],
       "AutoHit": "[fray].",
       "AreaEffect": "[fray].",
       "Effects": "Attack target is branded and shoved 1 in any direction. This effect also applies to frostbitten foes in the area."

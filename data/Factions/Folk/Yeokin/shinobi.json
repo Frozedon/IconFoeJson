@@ -6,7 +6,8 @@
     {
       "Name": "Whirling Blade",
       "ActionCost": 1,
-      "Tags": [ "ranged attack 4", "+1 boon" ],
+      "RangedAttack": 4,
+      "Tags": [ "+1 boon" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
       "Effects": "A different foe in range 3 takes [fray] damage.",

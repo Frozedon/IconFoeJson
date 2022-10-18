@@ -8,7 +8,8 @@
     {
       "Name": "Holy",
       "ActionCost": 2,
-      "Tags": [ "ranged attack 4", "blast 1" ],
+      "RangedAttack": 4,
+      "Tags": [ "blast 1" ],
       "AutoHit": "[D]+[fray].",
       "Miss": "[fray].",
       "AreaEffect": "[fray].",

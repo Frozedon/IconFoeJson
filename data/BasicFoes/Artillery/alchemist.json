@@ -8,7 +8,8 @@
     {
       "Name": "Spray",
       "ActionCost": 1,
-      "Tags": [ "ranged attack", "close blast 2" ],
+      "RangedAttack": 1,
+      "Tags": [ "close blast 2" ],
       "Hit": "[D]+[fray] and inflict poisoned.",
       "Miss": "[fray].",
       "AreaEffect": "[fray].",

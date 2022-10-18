@@ -8,7 +8,8 @@
     {
       "Name": "Brew Smash",
       "ActionCost": 1,
-      "Tags": [ "melee attack 3", "blast 1", "true strike" ],
+      "MeleeAttack": 3,
+      "Tags": [ "blast 1", "true strike" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
       "AreaEffect": "[fray].",

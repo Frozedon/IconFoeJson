@@ -19,7 +19,8 @@
     {
       "Name": "Howl of Terror",
       "ActionCost": 1,
-      "Tags": [ "range 3", "blast 1", "repeatable" ],
+      "Range": 3,
+      "Tags": [ "blast 1", "repeatable" ],
       "AreaEffect": "Foes take 2 damage.",
       "Effects": "Increase range and damage by +1 for each time this ability was used this turn."
     },

@@ -11,7 +11,9 @@
     {
       "Name": "Void Talon",
       "ActionCost": 1,
-      "Tags": [ "melee attack or ranged attack 3", "+1 boon" ],
+      "MeleeAttack": 1,
+      "RangedAttack": 3,
+      "Tags": [ "+1 boon" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
       "CriticalHit": "(+[D]) and gain +1 action."
@@ -36,7 +38,9 @@
       "Actions": {
         "Name": "Void Talon",
         "ActionCost": 1,
-        "Tags": [ "melee attack or ranged attack 3", "+1 boon" ],
+        "MeleeAttack": 1,
+        "RangedAttack": 3,
+        "Tags": [ "+1 boon" ],
         "Hit": "[D]+[fray].",
         "Miss": "[fray].",
         "CriticalHit": "(+[D]) and gain +1 action.",

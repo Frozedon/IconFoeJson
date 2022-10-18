@@ -53,7 +53,8 @@
         {
           "Name": "Splash Soup",
           "ActionCost": 1,
-          "Tags": [ "range 5", "arc 3" ],
+          "Range": 5,
+          "Tags": [ "arc 3" ],
           "AreaEffect": "[fray] damage."
         },
         {
@@ -118,7 +119,8 @@
             {
               "Name": "Splash Soup",
               "ActionCost": 1,
-              "Tags": [ "range 5", "arc 3" ],
+              "Range": 5,
+              "Tags": [ "arc 3" ],
               "AreaEffect": "[fray] damage."
             },
             {

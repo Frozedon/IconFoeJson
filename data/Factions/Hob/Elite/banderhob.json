@@ -14,7 +14,8 @@
     {
       "Name": "Savage Swipes",
       "ActionCost": 1,
-      "Tags": [ "melee attack", "multiattack" ],
+      "MeleeAttack": 1,
+      "Tags": [ "multiattack" ],
       "Hit": "[D].",
       "Miss": "1 damage.",
       "Effects": "If there's only one valid character in range, increase damage to 2[D]+[fray] on hit.",

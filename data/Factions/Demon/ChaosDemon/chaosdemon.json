@@ -19,7 +19,8 @@
     {
       "Name": "Reality Razor",
       "ActionCost": 1,
-      "Tags": [ "ranged attack 6", "pierce" ],
+      "RangedAttack": 6,
+      "Tags": [ "pierce" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
       "CriticalHit": "(+[D]) and gain +1 action."

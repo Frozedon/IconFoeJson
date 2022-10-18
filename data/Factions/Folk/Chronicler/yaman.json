@@ -7,7 +7,8 @@
     {
       "Name": "Axe Kick",
       "ActionCost": 1,
-      "Tags": [ "melee attack 2", "+1 boon" ],
+      "MeleeAttack": 2,
+      "Tags": [ "+1 boon" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
       "Effects": "Becomes a critical hit (+[D]) against bloodied foes."

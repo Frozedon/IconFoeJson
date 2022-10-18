@@ -78,7 +78,8 @@
           {
             "Name": "Crush",
             "ActionCost": 1,
-            "Tags": [ "melee attack", "true strike" ],
+            "MeleeAttack": 1,
+      "Tags": [ "true strike" ],
             "Hit": "[D]+[fray] and shove 3.",
             "Miss": "[fray] and shove 1.",
             "Effects": "Poisoned characters are shoved 2 more spaces.",

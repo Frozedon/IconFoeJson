@@ -11,7 +11,8 @@
     {
       "Name": "The Old Magic",
       "ActionCost": 1,
-      "Tags": [ "melee attack or ranged attack 3" ],
+      "MeleeAttack": 1,
+      "RangedAttack": 3,
       "Hit": "[D].",
       "Miss": "1 damage.",
       "Effects": "The Hob inflicts all statuses it is currently suffering from on its foe, then deals 2 damage, once, per status its foe is afflicted by."

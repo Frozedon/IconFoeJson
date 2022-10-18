@@ -13,7 +13,8 @@
     {
       "Name": "Storm Whip",
       "ActionCost": 1,
-      "Tags": [ "melee attack 4", "blast 1", "pierce" ],
+      "MeleeAttack": 4,
+      "Tags": [ "blast 1", "pierce" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
       "AreaEffect": "[fray].",
@@ -22,7 +23,8 @@
       "Combo": {
         "Name": "Diamond Dust", 
         "ActionCost": 2, 
-        "Tags": [ "ranged attack 6", "blast 1", "pierce" ],
+        "RangedAttack": 6,
+      "Tags": [ "blast 1", "pierce" ],
         "Hit": "2[D]+[fray].",
         "Miss": "[fray].",
         "AreaEffect": "[fray].",
@@ -30,7 +32,8 @@
         "Combo": {
           "Name": "Crystalline Lance",
           "ActionCost": 1,
-          "Tags": [ "ranged attack 10", "pierce" ],
+          "RangedAttack": 10,
+      "Tags": [ "pierce" ],
           "Hit": "[D]+[fra]y.",
           "Miss": "[fray].",
           "Effects": "Foe must save or be shoved 6"

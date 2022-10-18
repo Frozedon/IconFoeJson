@@ -11,7 +11,9 @@
     {
       "Name": "Leader's Strike",
       "ActionCost": 1,
-      "Tags": [ "melee attack or ranged attack 5", "repeatable" ],
+      "MeleeAttack": 1,
+      "RangedAttack": 5,
+      "Tags": [ "repeatable" ],
       "Hit": "[D].",
       "Miss": "1 damage.",
       "Effects": "An ally in range 3 can dash 2 spaces."

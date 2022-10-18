@@ -8,7 +8,8 @@
     {
       "Name": "Soul Rip",
       "ActionCost": 1,
-      "Tags": [ "melee attack", "line 4", "+1 boon", "divine" ],
+      "MeleeAttack": 1,
+      "Tags": [ "line 4", "+1 boon", "divine" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
       "AreaEffect": "[fray]."

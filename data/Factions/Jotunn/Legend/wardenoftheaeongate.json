@@ -11,7 +11,8 @@
     {
       "Name": "Staff of Eternal Order",
       "ActionCost": 1,
-      "Tags": "melee attack 3 or ranged attack 8",
+      "MeleeAttack": 3,
+      "RangedAttack": 8,
       "AutoHit": "[fray].",
       "Effects": "Create a cross 2 area effect as a time effect, centered on the target and moving with them. Roll 1d6 for turns remaining. The effect deals [D]+[fray] damage when it triggers."
     },

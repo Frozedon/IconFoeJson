@@ -10,7 +10,8 @@
     {
       "Name": "Void Bolt",
       "ActionCost": 1,
-      "Tags": [ "ranged attack", "gaze area", "pierce" ],
+      "RangedAttack": 1,
+      "Tags": [ "gaze area", "pierce" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
       "AreaEffect": "[fray].",

@@ -8,7 +8,8 @@
     {
       "Name": "Starcall",
       "ActionCost": 2,
-      "Tags": [ "ranged attack", "arc 6 + blast 1" ],
+      "RangedAttack": 1,
+      "Tags": [ "arc 6 + blast 1" ],
       "AutoHit": "[D]+[fray] and foe is branded.",
       "AreaEffect": "[fray]."
     },

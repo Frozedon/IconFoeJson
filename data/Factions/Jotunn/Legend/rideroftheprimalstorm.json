@@ -9,7 +9,8 @@
     {
       "Name": "Blade of the Storm Lord",
       "ActionCost": 1,
-      "Tags": [ "melee attack", "arc 4", "true strike" ],
+      "MeleeAttack": 1,
+      "Tags": [ "arc 4", "true strike" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
       "AreaEffect": "[fray].",
@@ -17,7 +18,8 @@
       "Combo": {
         "Name": "Great Bolt",
         "ActionCost": 2,
-        "Tags": [ "ranged attack", "line 10", "true strike" ],
+        "RangedAttack": 1,
+      "Tags": [ "line 10", "true strike" ],
         "Hit": "2[D]+[fray].",
         "Miss": "[fray].",
         "AreaEffect": "[fray].",

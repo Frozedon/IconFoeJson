@@ -5,7 +5,8 @@
     {
       "Name": "Heavy Arquebus",
       "ActionCost": 2,
-      "Tags": [ "ranged attack 12", "pierce", "special recharge" ],
+      "RangedAttack": 12,
+      "Tags": [ "pierce", "special recharge" ],
       "Hit": "2[D]+[fray] and foe is vulnerable.",
       "Miss": "[D]+[fray].",
       "CriticalHit": "Damage becomes divine.",

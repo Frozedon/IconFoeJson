@@ -7,7 +7,8 @@
     {
       "Name": "Third Eye",
       "ActionCost": 1,
-      "Tags": [ "ranged attack 8", "arc 3" ],
+      "RangedAttack": 8,
+      "Tags": [ "arc 3" ],
       "Hit": "[D]+[fray] and foe is shattered.",
       "Miss": "[fray].",
       "AreaEffect": "[fray]."

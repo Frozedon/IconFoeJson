@@ -172,7 +172,8 @@
       "Actions": {
         "Name": "Ricochet Shot",
         "ActionCost": 1,
-        "Tags": [ "ranged attack 10", "pierce" ],
+        "RangedAttack": 10,
+      "Tags": [ "pierce" ],
         "Hit": "[D]+[fray] and foe is shattered.",
         "CriticalHit": "Foe is stunned.",
         "Miss": "[fray].",
@@ -190,7 +191,8 @@
         {
           "Name": "Blood Pyre",
           "ActionCost": 2,
-          "Tags": [ "ranged attack 6", "blast 1" ],
+          "RangedAttack": 6,
+      "Tags": [ "blast 1" ],
           "Hit": "2[D]+[fray].",
           "Miss": "[fray].",
           "AreaEffect": "[fray].",

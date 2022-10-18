@@ -7,7 +7,8 @@
     {
       "Name": "Heavy Mace",
       "ActionCost": 1,
-      "Tags": [ "melee attack 2", "+1 curse" ],
+      "MeleeAttack": 2,
+      "Tags": [ "+1 curse" ],
       "Hit": "2[D]+[fray].",
       "Miss": "[fray].",
       "Effects": "Loses curse against electrified foes."
@@ -15,7 +16,8 @@
     {
       "Name": "Eye Beams",
       "ActionCost": 1,
-      "Tags": [ "range 4", "arc 3" ],
+      "Range": 4,
+      "Tags": [ "arc 3" ],
       "AreaEffect": "All foes are shoved 1 and take [fray] damage."
     },
     {

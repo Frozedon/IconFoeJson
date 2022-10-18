@@ -8,7 +8,8 @@
     {
       "Name": "Long Range Beam",
       "ActionCost": 2,
-      "Tags": [ "ranged attack", "line 10", "pierce" ],
+      "RangedAttack": 1,
+      "Tags": [ "line 10", "pierce" ],
       "Hit": "2[D]+[fray].",
       "Miss": "[fray].",
       "AreaEffect": "[fray].",

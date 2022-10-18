@@ -20,7 +20,8 @@
       "Name": "Smite",
       "ActionCost": 2,
       "Recharge": 6,
-      "Tags": [ "melee attack", "true strike" ],
+      "MeleeAttack": 1,
+      "Tags": [ "true strike" ],
       "Hit": "3[D]+[fray] and foe is stunned and shoved 1.",
       "Miss": "[fray] damage and foe is dazed.",
       "Effects": "+1 boon against dazed characters."

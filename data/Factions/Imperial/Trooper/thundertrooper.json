@@ -13,7 +13,8 @@
     {
       "Name": "Arkentech Mace",
       "ActionCost": 1,
-      "Tags": [ "melee attack", "multiattack", "+1 curse", "true strike" ],
+      "MeleeAttack": 1,
+      "Tags": [ "multiattack", "+1 curse", "true strike" ],
       "Hit": "[D]+[fray] and foe is dazed.",
       "Miss": "[fray].",
       "CriticalHit": "Foe is stunned."

@@ -9,7 +9,8 @@
     {
       "Name": "Yew Bow",
       "ActionCost": 1,
-      "Tags": [ "ranged attack 6", "pierce" ],
+      "RangedAttack": 6,
+      "Tags": [ "pierce" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
       "Effects": "Deals bonus damage for every character adjacent to the target.",

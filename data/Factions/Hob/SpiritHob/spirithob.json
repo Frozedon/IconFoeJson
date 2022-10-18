@@ -12,7 +12,8 @@
     {
       "Name": "Spirit Orb",
       "ActionCost": 2,
-      "Tags": [ "ranged attack 8", "cross 1", "pierce" ],
+      "RangedAttack": 8,
+      "Tags": [ "cross 1", "pierce" ],
       "Hit": "[D]+2, twice.",
       "Miss": "[D]+2.",
       "AreaEffect": "[D]+2.",

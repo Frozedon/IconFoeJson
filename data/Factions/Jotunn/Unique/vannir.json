@@ -14,7 +14,8 @@
     {
       "Name": "Star Shower",
       "ActionCost": 1,
-      "Tags": [ "ranged attack 10", "cross 3", "pierce" ],
+      "RangedAttack": 10,
+      "Tags": [ "cross 3", "pierce" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
       "AreaEffect": "[fray]."

@@ -11,7 +11,8 @@
     {
       "Name": "Slice and Dice",
       "ActionCost": 1,
-      "Tags": [ "melee attack or ranged attack 4" ],
+      "MeleeAttack": 1,
+      "RangedAttack": 4,
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
       "Effects": "May dash 1 before or after attack."

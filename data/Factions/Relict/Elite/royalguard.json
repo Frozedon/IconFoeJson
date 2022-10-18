@@ -7,7 +7,8 @@
     {
       "Name": "Battalion of Limbs",
       "ActionCost": 1,
-      "Tags": [ "melee attack", "true strike", "multimark" ],
+      "MeleeAttack": 1,
+      "Tags": [ "true strike", "multimark" ],
       "Hit": "[D]+[fray] and foe is marked.",
       "Miss": "[fray].",
       "Effects": "The Royal Guard deals [fray] damage to all adjacent foes.",

@@ -6,7 +6,8 @@
     {
       "Name": "Oath Sword",
       "ActionCost": 1,
-      "Tags": [ "melee attack", "true strike" ],
+      "MeleeAttack": 1,
+      "Tags": [ "true strike" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
       "Effects": "Deals bonus damage and winds on hit if the knight is bloody."

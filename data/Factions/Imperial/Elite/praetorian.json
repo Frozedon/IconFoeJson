@@ -13,7 +13,8 @@
     {
       "Name": "Heavy Mace",
       "ActionCost": 1,
-      "Tags": [ "melee attack", "+1 curse", "true strike" ],
+      "MeleeAttack": 1,
+      "Tags": [ "+1 curse", "true strike" ],
       "Hit": "[D]+[fray] and foe is dazed.",
       "Miss": "[fray].",
       "CriticalHit": "(+[D]) and foe is stunned.",

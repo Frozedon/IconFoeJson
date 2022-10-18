@@ -18,7 +18,8 @@
     {
       "Name": "Chaos Beam",
       "ActionCost": 2,
-      "Tags": [ "ranged attack", "line 10" ],
+      "RangedAttack": 1,
+      "Tags": [ "line 10" ],
       "Hit": "2[D]+[fray].",
       "Miss": "[fray].",
       "AreaEffect": "[fray].",
@@ -53,7 +54,8 @@
     {
       "Name": "Chaos Storm",
       "ActionCost": 2,
-      "Tags": [ "range 6", "blast 1" ],
+      "Range": 6,
+      "Tags": [ "blast 1" ],
       "Description": "Remove all characters in the area from the battlefield, then place them in any space within range 3 of their original location."
     }
   ]

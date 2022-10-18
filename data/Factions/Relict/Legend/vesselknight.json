@@ -8,14 +8,16 @@
     {
       "Name": "Darklight Cleaver",
       "ActionCost": 1,
-      "Tags": [ "melee attack 2", "true strike" ],
+      "MeleeAttack": 2,
+      "Tags": [ "true strike" ],
       "Hit": "[fray].",
       "Miss": "-.",
       "Effects": "Foe gains a stack of Malice.",
       "Combo": {
         "Name": "Darklight Splitter",
         "ActionCost": 1,
-        "Tags": [ "melee attack 2", "line 5", "true strike" ],
+        "MeleeAttack": 2,
+      "Tags": [ "line 5", "true strike" ],
         "Hit": "[fray] and target gains a stack of Malice.",
         "Miss": "-.",
         "AreaEffect": "-.",
@@ -23,7 +25,8 @@
         "Combo": {
           "Name": "Darklight Crusher",
           "ActionCost": 2,
-          "Tags": [ "melee attack 2", "+1 curse", "true strike", "divine" ],
+          "MeleeAttack": 2,
+      "Tags": [ "+1 curse", "true strike", "divine" ],
           "Hit": "2[D]+[fray].",
           "Miss": "[D]+[fray]."
         }

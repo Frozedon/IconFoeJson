@@ -14,7 +14,8 @@
     {
       "Name": "Side Guns",
       "ActionCost": 1,
-      "Tags": [ "ranged attack 6", "cross 1" ],
+      "RangedAttack": 6,
+      "Tags": [ "cross 1" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
       "AreaEffect": "[fray]."

@@ -5,7 +5,8 @@
     {
       "Name": "Summon the Swarm",
       "ActionCost": 2,
-      "Tags": [ "ranged attack 8", "blast 1", "pierce" ],
+      "RangedAttack": 8,
+      "Tags": [ "blast 1", "pierce" ],
       "Hit": "[D]+[fray] and foe is poisoned.",
       "Miss": "[fray].",
       "AreaEffect": "[fray].",

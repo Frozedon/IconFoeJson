@@ -7,7 +7,8 @@
     {
       "Name": "Thumper Gun",
       "ActionCost": 1,
-      "Tags": [ "ranged attack 3", "true strike" ],
+      "RangedAttack": 3,
+      "Tags": [ "true strike" ],
       "Hit": "[D]+[fray] and shove 1.",
       "Miss": "[fray].",
       "Effects": "Ignores ranged attack penalties. A different foe in range 3 is shoved 1.",

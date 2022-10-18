@@ -13,7 +13,8 @@
     {
       "Name": "Savage Fang",
       "ActionCost": 1,
-      "Tags": [ "melee attack", "+1 boon", "multimark" ],
+      "MeleeAttack": 1,
+      "Tags": [ "+1 boon", "multimark" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
       "Effects": "Increase damage to 2[D]+[fray] against characters inside its water zones or adhered to the Kelpie."

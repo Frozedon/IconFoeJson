@@ -44,7 +44,8 @@
             {
               "Name": "Hammer",
               "ActionCost": 1,
-              "Tags": [ "melee attack 3", "blast 1", "+1 curse" ],
+              "MeleeAttack": 3,
+      "Tags": [ "blast 1", "+1 curse" ],
               "Hit": "5[D]+[fray] and foe is stunned.",
               "Miss": "[D]+[fray].",
               "AreaEffect": "[D]+[fray]."
@@ -52,7 +53,8 @@
             {
               "Name": "Spear",
               "ActionCost": 1,
-              "Tags": [ "melee attack", "line 10", "pierce" ],
+              "MeleeAttack": 1,
+      "Tags": [ "line 10", "pierce" ],
               "Hit": "[D], five times.",
               "Miss": "[D], twice.",
               "AreaEffect": "[D], twice."
@@ -60,7 +62,8 @@
             {
               "Name": "Sword",
               "ActionCost": 1,
-              "Tags": [ "melee attack", "arc 6" ],
+              "MeleeAttack": 1,
+      "Tags": [ "arc 6" ],
               "Hit": "4[D]+[fray].",
               "Miss": "2[D]+[fray].",
               "AreaEffect": "2[D]+[fray]."
@@ -68,13 +71,15 @@
             {
               "Name": "Curved Sword",
               "ActionCost": 1,
-              "Tags": [ "melee attack 2", "multiattack" ],
+              "MeleeAttack": 2,
+      "Tags": [ "multiattack" ],
               "AutoHit": "[D]+[fray]."
             },
             {
               "Name": "Bow",
               "ActionCost": 1,
-              "Tags": [ "ranged attack 10", "pierce" ],
+              "RangedAttack": 10,
+      "Tags": [ "pierce" ],
               "Hit": "3[D]+[fray].",
               "Miss": "[D]+[fray].",
               "Effects": "Shove 5.",

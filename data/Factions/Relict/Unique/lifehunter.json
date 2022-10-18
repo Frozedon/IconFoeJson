@@ -26,7 +26,8 @@
     {
       "Name": "Life Seeking Arrow",
       "ActionCost": 2,
-      "Tags": [ "ranged attack 10", "+1 boon", "pierce", "special recharge" ],
+      "RangedAttack": 10,
+      "Tags": [ "+1 boon", "pierce", "special recharge" ],
       "Hit": "50% of the foe's max HP.",
       "Miss": "25% of the foe's max HP.",
       "CriticalHit": "Deals 75% of the foe's max HP instead.",

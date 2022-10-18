@@ -8,7 +8,8 @@
     {
       "Name": "Spiral Horn",
       "ActionCost": 2,
-      "Tags": [ "ranged attack", "line 6", "pierce" ],
+      "RangedAttack": 1,
+      "Tags": [ "line 6", "pierce" ],
       "Hit": "[D], twice.",
       "Miss": "1 damage, twice.",
       "AreaEffect": "1 damage, twice.",

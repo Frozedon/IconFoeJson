@@ -7,7 +7,8 @@
     {
       "Name": "Wild Card",
       "ActionCost": 1,
-      "Tags": [ "ranged attack 5", "multimark" ],
+      "RangedAttack": 5,
+      "Tags": [ "multimark" ],
       "AutoHit": "1 damage and the foe is marked.",
       "Mark": "A card attaches to the target. The next time the target is hit by an attack, the card explodes in a blast 1 AoE explosion centered on them for [D]+[fray]. Foes within must save or become branded. Then, the mark clears."
     },

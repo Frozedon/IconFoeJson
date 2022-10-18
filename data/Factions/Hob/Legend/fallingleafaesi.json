@@ -15,7 +15,8 @@
     {
       "Name": "Leaf Dance",
       "ActionCost": 1,
-      "Tags": [ "melee attack", "multiattack", "+1 boon" ],
+      "MeleeAttack": 1,
+      "Tags": [ "multiattack", "+1 boon" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
       "Effects": "Aesi may dash up to 5 spaces during any part of this attack, making attacks against any adjacent foes during its movement, but must move in a straight line. During this movement, they can shove any memories 1 to either side."

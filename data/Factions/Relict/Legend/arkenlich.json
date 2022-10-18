@@ -10,7 +10,8 @@
     {
       "Name": "Lesser Unholy",
       "ActionCost": 1,
-      "Tags": [ "ranged attack 6", "blast 1" ],
+      "RangedAttack": 6,
+      "Tags": [ "blast 1" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
       "AreaEffect": "[fray].",
@@ -24,7 +25,8 @@
     {
       "Name": "Finger of Death",
       "ActionCost": 2,
-      "Tags": [ "ranged attack 8", "1/round" ],
+      "RangedAttack": 8,
+      "Tags": [ "1/round" ],
       "Hit": "6[D].",
       "Miss": "3[D].",
       "Effects": "This attack can't lower a character past 1 hp."

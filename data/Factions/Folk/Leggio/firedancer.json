@@ -6,7 +6,8 @@
     {
       "Name": "Flame Dance",
       "ActionCost": 1,
-      "Tags": [ "ranged attack 6", "pierce" ],
+      "RangedAttack": 6,
+      "Tags": [ "pierce" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
       "Effects": "Dash 2, then deal [fray] piercing damage to a different character in range 6."

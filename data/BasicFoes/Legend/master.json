@@ -19,7 +19,8 @@
         {
           "Name": "Minion Assault",
           "ActionCost": 0,
-          "Tags": [ "melee attack", "pierce" ],
+          "MeleeAttack": 1,
+      "Tags": [ "pierce" ],
           "Hit": "[D].",
           "Miss": "1 damage.",
           "Effects": "Deals 1 additional piercing damage once for every minion adjacent to the target."
@@ -39,7 +40,8 @@
             "Tags": [ "Size 1", "20 HP", "Defense 8", "Sturdy" ],
             "SummonActions": "1/round during the Master's turn, it can move 3 spaces and attack an adjacent character.",
             "Actions": {
-              "Tags": [ "melee attack", "true strike" ],
+              "MeleeAttack": 1,
+      "Tags": [ "true strike" ],
               "Hit": "[D]+[fray] and shove 1.",
               "Miss": "[fray]."
             }

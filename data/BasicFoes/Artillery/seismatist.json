@@ -8,7 +8,8 @@
     {
       "Name": "Rumble",
       "ActionCost": 2,
-      "Tags": [ "ranged attack", "arc 6 + blast 1", "pierce" ],
+      "RangedAttack": 1,
+      "Tags": [ "arc 6 + blast 1", "pierce" ],
       "Hit": "2[D]+[fray].",
       "Miss": "[fray].",
       "AreaEffect": "[fray].",

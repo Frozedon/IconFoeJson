@@ -13,7 +13,8 @@
     {
       "Name": "Scrap Mortar",
       "ActionCost": 2,
-      "Tags": [ "ranged attack 10", "pierce" ],
+      "RangedAttack": 10,
+      "Tags": [ "pierce" ],
       "Hit": "2[D]+[fray] and create a pit under the target.",
       "Miss": "[fray].",
       "Effects": "Ignores cover."

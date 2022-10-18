@@ -6,7 +6,8 @@
     {
       "Name": "Raze",
       "ActionCost": 1,
-      "Tags": [ "melee attack 2", "true strike" ],
+      "MeleeAttack": 2,
+      "Tags": [ "true strike" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
       "Effects": "All foes in range 2 take 2 damage."

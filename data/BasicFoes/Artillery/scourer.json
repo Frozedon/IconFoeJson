@@ -7,7 +7,8 @@
     {
       "Name": "Scour",
       "ActionCost": 2,
-      "Tags": [ "ranged attack 8", "pierce", "mark" ],
+      "RangedAttack": 8,
+      "Tags": [ "pierce", "mark" ],
       "Hit": "2[D]+[fray].",
       "Miss": "[fray].",
       "Effects": "Mark the target.",

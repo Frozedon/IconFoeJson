@@ -20,7 +20,8 @@
     {
       "Name": "Scrap Storm",
       "ActionCost": 2,
-      "Tags": [ "ranged attack 8", "cross 2", "pierce" ],
+      "RangedAttack": 8,
+      "Tags": [ "cross 2", "pierce" ],
       "Hit": "2[D]+[fray] and foe becomes vulnerable.",
       "Miss": "[fray].",
       "AreaEffect": "[fray].",

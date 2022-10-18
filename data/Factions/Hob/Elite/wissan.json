@@ -9,7 +9,8 @@
     {
       "Name": "Ancient Bolt",
       "ActionCost": 1,
-      "Tags": [ "ranged attack", "line 8", "pierce" ],
+      "RangedAttack": 1,
+      "Tags": [ "line 8", "pierce" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
       "Effects": "Foes in the line are electrified. Electrified characters take 2 damage, once, for every adjacent character."

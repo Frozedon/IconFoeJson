@@ -9,7 +9,8 @@
     {
       "Name": "Crush Body",
       "ActionCost": 1,
-      "Tags": [ "melee attack", "close blast 1", "true strike" ],
+      "MeleeAttack": 1,
+      "Tags": [ "close blast 1", "true strike" ],
       "Hit": "[D]+[fray] and summon a crawling mass.",
       "Miss": "[fray].",
       "AreaEffect": "[fray].",

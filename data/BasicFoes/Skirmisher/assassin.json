@@ -13,7 +13,8 @@
     {
       "Name": "Shadow Stab",
       "ActionCost": 1,
-      "Tags": [ "melee attack", "+1 boon" ],
+      "MeleeAttack": 1,
+      "Tags": [ "+1 boon" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
       "Effects": "Teleport 1 and gain stealth. If made from stealth, can dash 2 before and after the action."

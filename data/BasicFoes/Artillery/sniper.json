@@ -12,7 +12,8 @@
     {
       "Name": "Heart Seeker",
       "ActionCost": 1,
-      "Tags": [ "ranged attack 6", "pierce" ],
+      "RangedAttack": 6,
+      "Tags": [ "pierce" ],
       "Hit": "2[D]+[fray].",
       "Miss": "[fray].",
       "Effects": "Cannot target characters in range 2."

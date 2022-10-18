@@ -7,7 +7,8 @@
     {
       "Name": "Chain Lightning",
       "ActionCost": 2,
-      "Tags": [ "ranged attack 8", "pierce" ],
+      "RangedAttack": 8,
+      "Tags": [ "pierce" ],
       "Hit": "2[D]+[fray].",
       "Miss": "[fray].",
       "AreaEffect": "A foe in range 3 from the attack target also takes [fray] damage, then must save. If they fail the save, this effect repeats, choosing a new foe in range 3 of them instead. A character can only be chosen once by this effect, but it can chain any number of times. Electrified characters take +1 curse on this save."

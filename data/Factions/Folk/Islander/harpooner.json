@@ -6,7 +6,8 @@
     {
       "Name": "Spear",
       "ActionCost": 1,
-      "Tags": [ "ranged attack 6", "pierce" ],
+      "RangedAttack": 6,
+      "Tags": [ "pierce" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
       "Effects": "No ranged attack penalties for adjacent foes. If attacking an adjacent foe, deals bonus damage."

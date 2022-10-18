@@ -30,7 +30,8 @@
     {
       "Name": "Comet Rain",
       "ActionCost": 1,
-      "Tags": [ "range 6", "cross 2", "2/round" ],
+      "Range": 6,
+      "Tags": [ "cross 2", "2/round" ],
       "AreaEffect": "[D]+[fray]. Then, create two height 1 comet objects placed adjacent to characters targeted. Characters in cover from the demon take half damage."
     },
     {

@@ -5,7 +5,8 @@
     {
       "Name": "Toxion",
       "ActionCost": 1,
-      "Tags": "melee attack or ranged attack 5",
+      "MeleeAttack": 1,
+      "RangedAttack": 5,
       "Hit": "[D]+[fray] and foe is poisoned.",
       "Miss": "[fray].",
       "Effects": "Poisoned foes are shoved 2 in a direction of the Boil's choice."

@@ -14,7 +14,8 @@
     {
       "Name": "Wicked Slice",
       "ActionCost": 1,
-      "Tags": [ "melee attack", "+1 boon" ],
+      "MeleeAttack": 1,
+      "Tags": [ "+1 boon" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
       "Effects": [

@@ -8,7 +8,8 @@
     {
       "Name": "Hessian Long Rifle",
       "ActionCost": 2,
-      "Tags": [ "ranged attack 10", "true strike" ],
+      "RangedAttack": 10,
+      "Tags": [ "true strike" ],
       "Hit": "2[D]+[fray] and foe is burning.",
       "Miss": "[fray].",
       "CriticalHit": "Foe is dazed."

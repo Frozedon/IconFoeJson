@@ -8,7 +8,8 @@
     {
       "Name": "Great Holy",
       "ActionCost": 2,
-      "Tags": [ "ranged attack 6", "blast 2" ],
+      "RangedAttack": 6,
+      "Tags": [ "blast 2" ],
       "Hit": "2[D]+[fray].",
       "Miss": "[fray].",
       "AreaEffect": "[fray].",

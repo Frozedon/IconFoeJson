@@ -7,7 +7,7 @@
     {
       "Name": "Bolt",
       "ActionCost": 1,
-      "Tags": "ranged attack 8",
+      "RangedAttack": 8,
       "Hit": "[D]+[fray].",
       "Miss": "[fray]."
     },

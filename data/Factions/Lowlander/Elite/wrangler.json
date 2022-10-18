@@ -33,7 +33,8 @@
           "SummonActions": "May fly 3, then",
           "Actions": {
             "Name": "Attack",
-            "Tags": [ "melee attack", "line 4", "pierce" ],
+            "MeleeAttack": 1,
+      "Tags": [ "line 4", "pierce" ],
             "Hit": "[D]+[fray].",
             "Miss": "[fray].",
             "AreaEffect": "[fray]."

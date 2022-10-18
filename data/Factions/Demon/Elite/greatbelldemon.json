@@ -8,7 +8,8 @@
     {
       "Name": "Flatten Mortal",
       "ActionCost": 2,
-      "Tags": [ "melee attack", "close blast 1", "1/round" ],
+      "MeleeAttack": 1,
+      "Tags": [ "close blast 1", "1/round" ],
       "Hit": "4[D]+[fray] and foe is stunned.",
       "Miss": "[D]+[fray].",
       "AreaEffect": "[D]+[fray]."

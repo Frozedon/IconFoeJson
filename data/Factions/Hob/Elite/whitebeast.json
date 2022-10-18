@@ -15,13 +15,15 @@
     {
       "Name": "Primal Stars",
       "ActionCost": 1,
-      "Tags": [ "ranged attack 10", "multiattack", "pierce" ],
+      "RangedAttack": 10,
+      "Tags": [ "multiattack", "pierce" ],
       "AutoHit": "4 damage."
     },
     {
       "Name": "Breath of the Wild",
       "ActionCost": 1,
-      "Tags": [ "ranged attack 5", "blast 2" ],
+      "RangedAttack": 5,
+      "Tags": [ "blast 2" ],
       "Recharge": 6,
       "Hit": "2[D]+[fray].",
       "Miss": "[fray].",
@@ -41,7 +43,8 @@
     {
       "Name": "Pollen Haze",
       "ActionCost": 1,
-      "Tags": [ "range 6", "blast 1" ],
+      "Range": 6,
+      "Tags": [ "blast 1" ],
       "AreaEffect": "Foes in the area take 2 damage and must save or become vulnerable. If the area catches a tree in the area, foes in the area take 2 damage again."
     }
   ]

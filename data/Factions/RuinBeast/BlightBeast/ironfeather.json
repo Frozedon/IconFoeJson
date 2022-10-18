@@ -7,7 +7,8 @@
     "Name": "Feather Spray",
     "ActionCost": 2,
     "Recharge": 6,
-    "Tags": [ "range 8", "blast 1" ],
+    "Range": 8,
+    "Tags": [ "blast 1" ],
     "Description": "Characters in the area must save or become vulnerable. They then take [fray] damage twice as an area effect."
   }
 }

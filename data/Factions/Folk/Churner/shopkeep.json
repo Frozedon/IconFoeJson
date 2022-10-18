@@ -6,7 +6,8 @@
     {
       "Name": "Ban From the Shop",
       "ActionCost": 1,
-      "Tags": [ "ranged attack 4", "multimark" ],
+      "RangedAttack": 4,
+      "Tags": [ "multimark" ],
       "AutoHit": "[fray] damage. Foe is marked.",
       "Mark": "While marked, if they end their turn in the shop's aura, they take [D]+[fray] divine damage."
     },

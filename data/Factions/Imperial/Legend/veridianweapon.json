@@ -23,7 +23,8 @@
         {
           "Name": "Steam Vent",
           "ActionCost": 1,
-          "Tags": [ "melee attack 4", "blast 1" ],
+          "MeleeAttack": 4,
+      "Tags": [ "blast 1" ],
           "Hit": "[D]+[fray] and foe is pacified.",
           "Miss": "[fray]."
         },
@@ -43,7 +44,8 @@
         {
           "Name": "Mega Gun Turret",
           "ActionCost": 1,
-          "Tags": [ "ranged attack 8", "cross 2" ],
+          "RangedAttack": 8,
+      "Tags": [ "cross 2" ],
           "Hit": "[D]+[fray] and foe is branded and shoved 1.",
           "Miss": "[fray].",
           "AreaEffect": "[fray]."

@@ -14,7 +14,8 @@
       "Name": "Impale",
       "ActionCost": 2,
       "Recharge": 5,
-      "Tags": [ "melee attack", "true strike" ],
+      "MeleeAttack": 1,
+      "Tags": [ "true strike" ],
       "Hit": "2[D]+[fray] and shove 4. The Nail Demon dashes after the target, following it.",
       "Miss": "[D]+[fray] and shove 2.",
       "Collide": "Foe is also dazed and winded."

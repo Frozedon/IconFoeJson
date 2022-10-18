@@ -8,7 +8,8 @@
     {
       "Name": "Pay the Ferryman",
       "ActionCost": 2,
-      "Tags": [ "melee attack", "+1 boon" ],
+      "MeleeAttack": 1,
+      "Tags": [ "+1 boon" ],
       "Hit": "2[D]+[fray].",
       "Miss": "[fray].",
       "Effects": [

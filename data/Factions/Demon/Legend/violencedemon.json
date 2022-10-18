@@ -74,7 +74,8 @@
         {
           "Name": "Split Foe",
           "ActionCost": 2,
-          "Tags": [ "melee attack", "line 6", "1/round" ],
+          "MeleeAttack": 1,
+      "Tags": [ "line 6", "1/round" ],
           "Hit": "2[D]+[fray] and must save or become stunned.",
           "Miss": "[fray].",
           "Effects": [
@@ -92,7 +93,8 @@
         {
           "Name": "Universal Violence",
           "ActionCost": 2,
-          "Tags": [ "melee attack 3", "+1 boon", "blade consume 6" ],
+          "MeleeAttack": 3,
+      "Tags": [ "+1 boon", "blade consume 6" ],
           "Hit": "Foe takes [D] damage, six times.",
           "Miss": "Three times."
         }

@@ -7,7 +7,8 @@
   "Actions": {
     "Name": "Hamstring",
     "ActionCost": 1,
-    "Tags": [ "melee attack", "+1 boon" ],
+    "MeleeAttack": 1,
+      "Tags": [ "+1 boon" ],
     "Hit": "[D]+[fray].",
     "Miss": "[fray].",
     "Effects": "On hit, until the end of their next turn, foe takes 2 damage for each space they move."

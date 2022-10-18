@@ -17,7 +17,8 @@
     {
       "Name": "Quietus",
       "ActionCost": 2,
-      "Tags": [ "ranged attack 6", "blast 1", "1/round" ],
+      "RangedAttack": 6,
+      "Tags": [ "blast 1", "1/round" ],
       "Hit": "50% of the character's max hp.",
       "Miss": "25%.",
       "AreaEffect": "25%.",

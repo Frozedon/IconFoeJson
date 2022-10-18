@@ -7,7 +7,8 @@
     {
       "Name": "Righteous Fist",
       "ActionCost": 1,
-      "Tags": [ "melee attack", "true strike" ],
+      "MeleeAttack": 1,
+      "Tags": [ "true strike" ],
       "Hit": "[D]+[fray] and shove 2.",
       "Miss": "[fray] and shove 1."
     },

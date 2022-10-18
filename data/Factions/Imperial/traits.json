@@ -13,7 +13,11 @@
   },
   {
     "Name": "Gunblade",
-    "Description": "All melee attacks gain On Hit: may deal 2 piercing damage to a foe in range 4 as an effect."
+    "Description": "All melee attacks gain On Hit: may deal 2 piercing damage to a foe in range 4 as an effect.",
+    "ActionAdditions": {
+      "ApplyToMeleeAttack": true,
+      "Effects": "On Hit: May deal 2 piercing damage to a foe in range 4."
+    }
   },
   {
     "Name": "Imperial Automata",

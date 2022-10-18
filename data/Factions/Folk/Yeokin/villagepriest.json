@@ -6,7 +6,8 @@
     {
       "Name": "Greenwrath",
       "ActionCost": 1,
-      "Tags": [ "melee attack or ranged attack 6" ],
+      "MeleeAttack": 1,
+      "RangedAttack": 6,
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
       "Effects": "Deals bonus damage and inflicts branded if a character is inside dangerous or difficult terrain."

@@ -30,7 +30,8 @@
       "Name": "Flash Bomb",
       "ActionCost": 1,
       "Recharge": 6,
-      "Tags": [ "range 4", "cross 1" ],
+      "Range": 4,
+      "Tags": [ "cross 1" ],
       "AreaEffect": "Foes are slowed. Slowed foes become burning and take [fray] damage."
     }
   ],
@@ -42,7 +43,8 @@
         "Name": "Flash Bomb",
         "ActionCost": 1,
         "Recharge": 6,
-        "Tags": [ "range 6", "cross 2" ],
+        "Range": 6,
+        "Tags": [ "cross 2" ],
         "AreaEffect": "Foes are slowed. Slowed foes become burning and take [fray] damage."
       }
     },

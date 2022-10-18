@@ -61,7 +61,8 @@
           {
             "Name": "Black Flame",
             "ActionCost": 1,
-            "Tags": [ "range 5", "blast 1" ],
+            "Range": 5,
+            "Tags": [ "blast 1" ],
             "AreaEffect": "All characters take [fray] damage and are branded."
           }
         ]
@@ -122,7 +123,8 @@
             {
               "Name": "Black Flame",
               "ActionCost": 1,
-              "Tags": [ "range 5", "blast 1" ],
+              "Range": 5,
+              "Tags": [ "blast 1" ],
               "AreaEffect": "All characters take [fray] damage and are branded."
             }
           ]

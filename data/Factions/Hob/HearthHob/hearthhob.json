@@ -11,7 +11,8 @@
     {
       "Name": "Beat Down",
       "ActionCost": 1,
-      "Tags": [ "melee attack", "+1 boon" ],
+      "MeleeAttack": 1,
+      "Tags": [ "+1 boon" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
       "Charge": "Deals bonus damage for every status a foe is suffering from."

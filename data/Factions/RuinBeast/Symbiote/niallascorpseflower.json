@@ -8,7 +8,8 @@
     {
       "Name": "Pacifying Spores",
       "ActionCost": 2,
-      "Tags": [ "range 5", "blast 1" ],
+      "Range": 5,
+      "Tags": [ "blast 1" ],
       "AreaEffect": "Foes must save or take [D]+[fray], become poisoned, and become pacified."
     },
     {

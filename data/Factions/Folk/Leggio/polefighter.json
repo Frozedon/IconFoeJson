@@ -7,7 +7,8 @@
     {
       "Name": "Pole Slam",
       "ActionCost": 1,
-      "Tags": [ "melee attack", "line 3" ],
+      "MeleeAttack": 1,
+      "Tags": [ "line 3" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
       "AreaEffect": "[fray].",

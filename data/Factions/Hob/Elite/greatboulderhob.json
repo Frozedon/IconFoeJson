@@ -8,7 +8,8 @@
     {
       "Name": "Ancient Geo",
       "ActionCost": 1,
-      "Tags": [ "melee attack", "arc 4 + blast 1" ],
+      "MeleeAttack": 1,
+      "Tags": [ "arc 4 + blast 1" ],
       "Hit": "2[D] and foe is dazed.",
       "Miss": "[D].",
       "AreaEffect": "[D].",

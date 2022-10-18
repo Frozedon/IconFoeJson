@@ -7,7 +7,8 @@
     {
       "Name": "Hunter Shot",
       "ActionCost": 1,
-      "Tags": [ "ranged attack 6", "+1 boon" ],
+      "RangedAttack": 6,
+      "Tags": [ "+1 boon" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
       "Effects": "Has no maximum range against marked targets. Deals bonus damage when made from stealth."

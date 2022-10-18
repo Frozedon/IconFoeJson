@@ -9,7 +9,8 @@
     {
       "Name": "Titanforged Greatbow",
       "ActionCost": 2,
-      "Tags": [ "ranged attack 8", "pierce" ],
+      "RangedAttack": 8,
+      "Tags": [ "pierce" ],
       "Hit": "2[D]+[fray] and shove 1.",
       "Miss": "[fray].",
       "Effects": "This weapon deals bonus damage and gains +1 boon against characters outside of cover.",

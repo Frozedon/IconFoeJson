@@ -6,7 +6,8 @@
     {
       "Name": "High Pressure",
       "ActionCost": 2,
-      "Tags": [ "ranged attack 6", "blast 1" ],
+      "RangedAttack": 6,
+      "Tags": [ "blast 1" ],
       "Hit": "[fray] damage, three times.",
       "Miss": "[fray].",
       "AreaEffect": "[fray].",

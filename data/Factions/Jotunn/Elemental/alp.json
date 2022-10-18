@@ -12,7 +12,8 @@
     {
       "Name": "Ancient Geo",
       "ActionCost": 2,
-      "Tags": [ "melee attack", "arc 4 + blast 1" ],
+      "MeleeAttack": 1,
+      "Tags": [ "arc 4 + blast 1" ],
       "Hit": "2[D]+[fray] and foe is slowed and poisoned.",
       "Miss": "[fray].",
       "AreaEffect": "[fray].",

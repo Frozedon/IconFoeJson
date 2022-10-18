@@ -6,7 +6,8 @@
   "Actions": {
     "Name": "Sonic Screech",
     "ActionCost": 1,
-    "Tags": [ "ranged attack", "line 6" ],
+    "RangedAttack": 1,
+      "Tags": [ "line 6" ],
     "Hit": "[D]+[fray].",
     "Miss": "[fray].",
     "AreaEffect": "[fray].",

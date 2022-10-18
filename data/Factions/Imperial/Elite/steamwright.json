@@ -7,7 +7,8 @@
     {
       "Name": "Steam Hammer",
       "ActionCost": 2,
-      "Tags": [ "melee attack 2", "blast 1" ],
+      "MeleeAttack": 2,
+      "Tags": [ "blast 1" ],
       "Hit": "2[D]+[fray].",
       "Miss": "[fray].",
       "AreaEffect": "[fray].",
@@ -22,7 +23,8 @@
     {
       "Name": "Steam Blast",
       "ActionCost": 1,
-      "Tags": [ "range 3", "cross 1", "repeatable" ],
+      "Range": 3,
+      "Tags": [ "cross 1", "repeatable" ],
       "AreaEffect": "[fray] damage and inflict burning. Burning characters must save or become blinded. Burning and blinded characters take [fray] damage twice instead."
     }
   ]

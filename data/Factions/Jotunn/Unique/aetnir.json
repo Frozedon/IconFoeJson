@@ -8,7 +8,8 @@
     {
       "Name": "Titan Cut",
       "ActionCost": 1,
-      "Tags": [ "melee attack", "line 4" ],
+      "MeleeAttack": 1,
+      "Tags": [ "line 4" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
       "AreaEffect": "[fray]."

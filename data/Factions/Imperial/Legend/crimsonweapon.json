@@ -10,7 +10,8 @@
     {
       "Name": "Weapon Blade",
       "ActionCost": 1,
-      "Tags": [ "melee attack 2", "arc 3", "true strike" ],
+      "MeleeAttack": 2,
+      "Tags": [ "arc 3", "true strike" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
       "Effects": "Deals bonus damage to dazed characters."

@@ -6,7 +6,8 @@
     {
       "Name": "Unholy",
       "ActionCost": 2,
-      "Tags": [ "ranged attack 6", "blast 1" ],
+      "RangedAttack": 6,
+      "Tags": [ "blast 1" ],
       "Hit": "2[D]+[fray].",
       "Miss": "[fray].",
       "AreaEffect": "[fray].",

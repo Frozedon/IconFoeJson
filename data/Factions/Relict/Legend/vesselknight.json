@@ -70,7 +70,7 @@
           "Name": "Soul Cleaver",
           "ActionCost": 0,
           "Tags": [ "2/round" ],
-          "Effects": "All foes in Aura 2 of the knight take 2 divine damage. Each time this ability is used again this combat, increase its damage by +2."
+          "Effects": "All foes in Aura 2 of the knight take 2 divine damage. Each time this ability is used again this combat, increase its damage by +1."
         }
       ]
     }

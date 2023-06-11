@@ -7,7 +7,7 @@
     {
       "Name": "Divination",
       "ActionCost": 1,
-      "Tags": [ "attacl", "range 5", "multi-mark" ],
+      "Tags": [ "attack", "range 5", "multimark" ],
       "AutoHit": "1 damage and the foe is marked.",
       "Mark": "A card attaches to the target. The next time the target is damaged by an attack, the card explodes in a small blast area effect explosion centered on them for [D]+[fray]. Foes within must save or become sealed. Then, the mark clears."
     },

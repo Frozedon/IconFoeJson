@@ -3,27 +3,31 @@
   "Inherits": "Heavy",
   "Type": "Foe",
   "UsesTemplate": true,
-  "Traits": [ "Defiance", "Enrage", "Bullheaded" ],
+  "Traits": [ "Defiance", "Enrage" ],
   "Actions": [
     {
       "Name": "Bloody Crescent",
       "ActionCost": 1,
-      "Tags": [ "melee attack", "arc 3", "true strike" ],
+      "Tags": [ "attack", "arc 3", "true strike" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
-      "AreaEffect": "[fray]."
+      "AreaEffect": "[fray].",
+      "Effects": "Target is slashed.",
+      "Combo": {
+        "Name": "Full Moon",
+        "ActionCost": 2,
+        "Tags": [ "attack", "burst 1 (target)" ],
+        "Hit": "2[D]+[fray].",
+        "Miss": "[fray].",
+        "AreaEffect": "[fray].",
+        "Effects": "[name] gains 4 vigor."
+      }
     },
     {
-      "Name": "Swipe",
+      "Name": "Furious Leap",
       "ActionCost": 1,
       "Tags": "repeatable",
-      "Description": "All foes adjacent to the berserker take 2 damage."
-    },
-    {
-      "Name": "Leap",
-      "ActionCost": 1,
-      "Tags": "repeatable",
-      "Description": "The berserker flies 2. When it lands, all adjacent characters are shoved 1."
+      "Description": "The [name] flies 2, then foes adjacent to the [name] take 2 damage."
     }
   ]
 }

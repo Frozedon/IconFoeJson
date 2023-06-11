@@ -8,7 +8,7 @@
     {
       "Name": "Cleansing Bolt",
       "ActionCost": 1,
-      "Tags": [ "ranged attack 5", "cross 1" ],
+      "Tags": [ "attack", "range 5", "small blast" ],
       "AutoHit": "[fray].",
       "AreaEffect": "[fray].",
       "Effects": "Does not damage allies. Deals bonus damage for each ally caught in its area of effect."
@@ -16,14 +16,14 @@
     {
       "Name": "Cleansing Charm",
       "ActionCost": 1,
-      "Tags": "terrain effect",
-      "Description": "The Abjurer places a charm in a free space in range 3 that lasts until the start of its next turn. Allies that end their turn adjacent to the charm can clear a status or blight."
+      "Tags": [ "range 3", "terrain effect" ],
+      "Description": "The [name] places a charm in a free space in range. An ally that ends their turn adjacent to the charm can consume it to cure themselves and fly 2."
     },
     {
       "Name": "Empower Shield",
       "ActionCost": 1,
       "Tags": "stance",
-      "Description": "The Abjurer becomes immobile, but their aura of shielding increases to aura 2 and also grants cover. They can exit this stance as an action, and also exit if shoved or stunned."
+      "Description": "The [name] becomes immobile, but their aura of shielding increases to aura 2 and also grants cover from abilities used from outside the aura. They can exit this stance as an action."
     }
   ]
 }

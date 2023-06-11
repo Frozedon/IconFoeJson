@@ -3,26 +3,27 @@
   "Inherits": "Artillery",
   "Type": "Foe",
   "UsesTemplate": true,
-  "Traits": [ "Phasing", "The Old Blood" ],
+  "Traits": "Phasing",
   "Actions": [
     {
       "Name": "Chaos Shard",
       "ActionCost": 1,
-      "Tags": "ranged attack 6",
-      "Hit": "Character is inflicted with all four blights.",
-      "Miss": "Character is inflicted with two blights of this wright's choice.",
-      "Effects": "If already blighted, character takes 2 piercing damage once, then is shoved 1 space, once, for every blight they are inflicted with. The shoves can be in different directions."
+      "Tags": [ "attack", "range 6", "pierce" ],
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "Effects": "Foe is shattered."
     },
     {
       "Name": "Chaos Rift",
       "ActionCost": 1,
-      "Description": "Create a pit in free space in range 3. The pit is also dangerous terrain."
+      "Tags": [ "range 3", "terrain effect" ],
+      "Description": "Create a pit in free space in range. The pit is also dangerous terrain, and characters cannot attack while inside. The [name] is immune to damage and effects from its chaos rifts, and can teleport to the location of any active rift in range 3 as a free action during its turn."
     },
     {
       "Name": "Chaos Storm",
       "ActionCost": 2,
-      "Tags": [ "range 6", "blast 1" ],
-      "Description": "Remove all characters in the area from the battlefield, then place them in any space within range 3 of their original location."
+      "Description": "Teleport all characters 2 spaces. Foes take 2 piercing damage as an area effect.",
+      "Effects": "At round 3+, becomes 1 action."
     }
   ]
 }

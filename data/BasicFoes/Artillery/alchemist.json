@@ -8,23 +8,23 @@
     {
       "Name": "Spray",
       "ActionCost": 1,
-      "Tags": [ "ranged attack", "close blast 2" ],
-      "Hit": "[D]+[fray] and inflict poisoned.",
+      "Tags": [ "attack", "range 3", "large blast" ],
+      "Hit": "[D]+[fray].",
       "Miss": "[fray].",
       "AreaEffect": "[fray].",
-      "Effects": "Attack target explodes shoving adjacent characters 1 away from them and dealing [fray] piercing damage to them."
+      "Effects": "Attack target explodes, shoving adjacent characters 1 away from them and dealing 2 piercing damage to them as an area effect."
     },
     {
       "Name": "Volatile Mix",
       "ActionCost": 1,
-      "Description": "The Alchemist chooses a foe in range 6. At the end of that foe's next turn, they explode, taking 2 piercing damage and dealing 2 piercing damage to all other characters in range 2."
+      "Tags": "range 6",
+      "Description": "The [name] chooses a foe in range. At the end of that foe's next turn, they explode, taking 2 piercing damage and dealing 2 piercing damage in a large blast area effect centered on themselves."
     },
     {
       "Name": "Sticky Solution",
       "ActionCost": 1,
-      "Recharge": 5,
-      "Tags": "close blast 1",
-      "Description": "Area becomes difficult terrain for the rest of combat."
+      "Tags": "range 6",
+      "Description": "A character in range must save. On a successful save, they are shattered. On a failed save, they are shattered and cannot target adjacent characters or spaces with abilities until the end of their next turn."
     }
   ]
 }

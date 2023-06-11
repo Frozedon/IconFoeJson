@@ -7,24 +7,27 @@
     {
       "Name": "Dissonant Bolt",
       "ActionCost": 1,
-      "Tags": [ "ranged attack", "line 6", "pierce" ],
+      "Tags": [ "attack", "line 6", "pierce" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
       "AreaEffect": "[fray].",
-      "Effects": "Attack target is electrified. Electrified characters can be teleported 1."
+      "Effects": [
+        "Attack target is vulnerable.",
+        "Foes in the line may be teleported 1.",
+        "At round 3+, increase this teleport to 2 and deal 2 piercing damage again to foes teleported this way."
+      ]
     },
     {
       "Name": "Flash Step",
       "ActionCost": 1,
       "Tags": "repeatable",
-      "Description": "Teleport 3, then deal 2 piercing damage to a foe in range 3."
+      "Description": "Teleport 1, then either Teleport 2, or deal 2 piercing damage to a foe in range 3."
     },
     {
-      "Name": "Crackling Wall",
+      "Name": "Crackling Rift",
       "ActionCost": 1,
-      "Recharge": 6,
       "Tags": "terrain effect",
-      "Description": "The Rift Dancer creates a line 3 dangerous terrain effect in range 4. Electrified characters must save when attempting to pass into the space or be unable to move into it for the rest of the turn."
+      "Description": "The [name] creates a line 3 dangerous terrain effect in range 4. Allies are immune to damage from the effect and can teleport 1 if they end their turn in the area. Foes are vulnerable+ while in the area."
     }
   ]
 }

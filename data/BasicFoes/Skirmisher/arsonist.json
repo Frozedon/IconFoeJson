@@ -1,0 +1,28 @@
+{
+  "Name": "Arsonist",
+  "Inherits": "Skirmisher",
+  "Type": "Foe",
+  "UsesTemplate": true,
+  "Actions": [
+    {
+      "Name": "Bomb",
+      "ActionCost": 1,
+      "Tags": [ "attack", "range 4", "small blast", "+1 boon" ],
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "AreaEffect": "[fray].",
+      "Effects": "If only one character is caught in the area of effect, deal 2 damage again to that character and they are dazed."
+    },
+    {
+      "Name": "Kick Off",
+      "ActionCost": 1,
+      "Description": "The [name] flies 1. Before they fly, they may shove an adjacent character 1 space, then deal 2 damage to them if they are a foe. If they do, they fly 3 instead."
+    },
+    {
+      "Name": "Sticky Bomb",
+      "ActionCost": 1,
+      "Tags": "range 3",
+      "Description": "The [name] sticks a bomb at a character in range. At the end of that character's turn, the bomb explodes and they take 2 damage four times. For every adjacent foe or ally, reduce the number of times the targeted character takes damage by one, but deal 2 damage instead to that character. Then, end this effect."
+    }
+  ]
+}

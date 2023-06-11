@@ -1,79 +1,94 @@
 {
   "Name": "Master",
-  "Inherits": "Legendary Leader",
+  "Inherits": "Legend",
   "Type": "Foe",
-  "HP": 20,
   "UsesTemplate": true,
-  "Traits": "Unique Minions",
-  "Actions": {
-    "Name": "Barrage",
-    "ActionCost": 1,
-    "Tags": "close blast 1",
-    "AreaEffect": "[fray] piercing damage. Allies are immune."
-  },
-  "PhasesDescription": "The Master starts in Phase I, and goes into Phase II until the end of the next round when all it's minions are defeated (Great minions do not count).",
+  "Traits": "The Horde",
+  "Actions": [
+    {
+      "Name": "Aggressive Tempo",
+      "ActionCost": 1,
+      "Tags": [ "attack", "range 2", "true strike" ],
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "Effects": "Foe is sealed. The [name] and any minions in range 2 may dash 2 before or after this attack.",
+      "Combo": {
+        "Name": "Defensive Tempo",
+        "ActionCost": 1,
+        "Tags": [ "attack", "range 2" ],
+        "Hit": "[D]+[fray].",
+        "Miss": "[fray].",
+        "Effects": "The [name] shoves all foes in range 2 one space, then the [name] gains counter until the start of its next turn, and grants counter to any adjacent minions for the same duration."
+      }
+    },
+    {
+      "Name": "Promote",
+      "ActionCost": 1,
+      "Tags": [ "1/round" ],
+      "Description": "A minion gains 6 vigor and can immediately use Press the Assault, ignoring the attack limit. Damage that spills over from this vigor deals one 'hit' of damage as normal to the minion."
+    },
+    {
+      "Name": "Disabling Strike",
+      "ActionCost": 1,
+      "Tags": [ "range 3" ],
+      "Description": "A foe in range is pacified, then shoved 1 in any direction. Pacified foes are shoved 3 instead."
+    },
+    {
+      "Name": "Barrage",
+      "ActionCost": 1,
+      "Tags": [ "range 3", "burst 1 (target space)" ],
+      "AreaEffect": "Foes take 2 piercing damage. Allies are immune."
+    }
+  ],
+  "PhasesDescription": "The [name] starts in Phase I. At the start of round 4, the [name] goes into Phase II.",
   "Phases": [
     {
-      "Traits": [ "Summon Minion", "Lurk in the Shadows", "Looming Shadow" ],
       "Actions": [
         {
-          "Name": "Minion Assault",
-          "ActionCost": 0,
-          "Tags": [ "melee attack", "pierce" ],
-          "Hit": "[D].",
-          "Miss": "1 damage.",
-          "Effects": "Deals 1 additional piercing damage once for every minion adjacent to the target."
+          "Name": "Assault Wave",
+          "RoundAction": true,
+          "Description": "At the start of the round, the [name] chooses a burst 2 (target space) area of the battlefield. At the end of the round, foes in the area are charged by all minions in the area. They must save or take 3 piercing damage per minion in the area, up to a maximum of six times, or just 1 piercing damage per minion on a successful save."
         },
         {
-          "Name": "Great Puppeteer",
+          "Name": "Rally",
           "ActionCost": 1,
-          "Description": "All allies in a close blast 1 area of the Master may dash 3 spaces, then deal 1 piercing damage to an adjacent foe."
-        },
-        {
-          "Name": "Promote",
-          "ActionCost": 2,
-          "Tags": "2/round",
-          "Description": "Destroy one minion and replace it with a Great Minion.",
+          "Tags": [ "object", "1/round" ],
+          "Description": "The [name] summons a Rally Point object in free space not adjacent to a foe in range 3. If using this action again with an active rally point, it moves the rally point rather than summoning a new one.",
           "Summons": {
-            "Name": "Great Minion",
-            "Tags": [ "Size 1", "20 HP", "Defense 8", "Sturdy" ],
-            "SummonActions": "1/round during the Master's turn, it can move 3 spaces and attack an adjacent character.",
-            "Actions": {
-              "Tags": [ "melee attack", "true strike" ],
-              "Hit": "[D]+[fray] and shove 1.",
-              "Miss": "[fray]."
-            }
+            "Name": "Rally Point",
+            "IsObject": true,
+            "Tags": [ "Size 1 object", "destructible (10 hp)" ],
+            "SummonEffects": "Aura 1. Minions in the aura are immune to all damage and Press the Assault against characters in the area deals maximum damage."
           }
         }
       ]
     },
     {
-      "Description": "When entering Phase II, the Master returns to phase I at the end of the next round.",
       "Actions": [
         {
-          "Name": "Aether Bomb",
-          "ActionCost": 1,
-          "Tags": "2/round",
-          "Description": "Summon a blast 1 terrain effect, which cannot overlap with another Aether bomb. When the Master changes phases, all aether bombs explode and are destroyed. Characters within must save or take 2[D]+[fray] damage, or [D]+[fray] on a successful save."
+          "Name": "Reinforcements",
+          "RoundAction": true,
+          "Description": "At the start of the round, the [name] summons extra reinforcements. The Minion mob is replenished by 2 new minions per player, which can be placed in any space on the battlefield not adjacent to a foe. There is no maximum on minions placed."
         },
         {
-          "Name": "Reposition",
-          "ActionCost": 1,
-          "Description": "Shove an adjacent character 1, then dash 2."
+          "Name": "Intense Assault Wave",
+          "RoundAction": true,
+          "Description": "At the start of the round, the [name] chooses a foe anywhere of the battlefield. At the end of the round, that foe is charged by all minions in range 3 of them. They must save or take 3 piercing damage per minion in the area, up to a maximum of six times, or just 1 piercing damage per minion on a successful save."
         },
         {
-          "Name": "Rally",
-          "ActionCost": 2,
-          "Tags": [ "1/round" ],
-          "Description": "The Master creates a Rally Point in range 3.",
+          "Name": "Great Rally",
+          "ActionCost": 1,
+          "Tags": [ "object", "1/round" ],
+          "Description": "The [name] summons a Rally Point object in free space not adjacent to a foe in range 3. If using this action again with an active rally point, it moves the rally point rather than summoning a new one.",
           "Summons": {
             "Name": "Rally Point",
             "IsObject": true,
-            "Tags": [ "Size 1", "Height 1", "10 HP" ],
-            "SummonEffects": "Aura 1. Minions in the aura are immune to all damage and Minion Assault against characters in the area deals maximum damage."
+            "Tags": [ "Size 1 object", "destructible (10 hp)" ],
+            "SummonEffects": "Aura 2. Minions in the aura are immune to all damage and Press the Assault against characters in the area deals maximum damage."
           }
         }
       ]
     }
-  ]
+  ],
+  "Tactics": "The [name] is a slightly more complicated basic legend that comes with its own (large) group of problems. Clearing out minions can make the fight more manageable, since many of the [name]'s abilities such as Assault Wave are less effective with less minions on the field."
 }

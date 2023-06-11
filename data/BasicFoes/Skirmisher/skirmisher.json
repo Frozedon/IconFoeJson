@@ -1,10 +1,10 @@
 {
   "Name": "Skirmisher",
   "Class": "Skirmisher",
-  "Vitality": 6,
+  "Vitality": 7,
   "Speed": 4,
-  "Defense": 12,
-  "FrayDamage": 3,
+  "Defense": 10,
+  "FrayDamage": 2,
   "DamageDie": 10,
-  "Traits": [ "Skirmish", "Dodge" ]
+  "Traits": [ "Skirmisher", "Dodge" ]
 }

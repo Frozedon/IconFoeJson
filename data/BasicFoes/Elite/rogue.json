@@ -8,30 +8,35 @@
   "Interrupts": {
     "Name": "Disappearing Act",
     "Trigger": "When bloodied.",
-    "Effects": "May teleport 4, then gain stealth."
+    "Effects": "Remove self from the battlefield. At the start of the [name]'s next turn, return them to the battlefield anywhere in range 3 of a character, with stealth."
   },
   "Actions": [
     {
       "Name": "Wicked Slice",
       "ActionCost": 1,
-      "Tags": [ "melee attack", "+1 boon" ],
+      "Tags": [ "attack", "+1 boon" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
       "Effects": [
-        "Critical hit (+[D]) against bloodied characters.",
+        "Deals 2 damage again to the target for each of the following on the target: bloodied, blinded, dazed.",
         "Dash 1 before and after the attack."
       ]
     },
     {
-      "Name": "Vile",
+      "Name": "Blinding Dust",
       "ActionCost": 1,
-      "Description": "A foe in range 5 is slowed, and must save or take take 1 piercing damage for each space they move until the end of their next turn."
+      "Tags": "end turn",
+      "Description": "An adjacent foe becomes blinded. The [name] then may dash 3 and gains stealth."
     },
     {
-      "Name": "Foul Play",
-      "ActionCost": 2,
-      "Recharge": 5,
-      "Description": "Teleport 3, then deal [D] to an adjacent foe. Can repeat this effect, but must choose a different foe each time unless no other foes are in range, or this effect has triggered four times."
+      "Name": "Dirty Fighting",
+      "ActionCost": 1,
+      "Description": "Daze two foes in range 3 of the [name] and each other, then swap their places, removing and placing them.",
+      "Combo": {
+        "Name": "Foul Play",
+        "ActionCost": 1,
+        "Effects": "Teleport 4, then deal 4 damage to an adjacent foe. Can repeat this effect, but must choose a different foe in range each time unless a foe has already been chosen by this ability, or this effect has triggered three times."
+      }
     }
   ]
 }

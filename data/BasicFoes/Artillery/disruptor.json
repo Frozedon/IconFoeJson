@@ -7,22 +7,25 @@
     {
       "Name": "Magnetism",
       "ActionCost": 1,
-      "Tags": "ranged attack 8",
+      "Tags": [ "attack", "range 8" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
-      "Effects": "All characters in range 2 of the foe are shoved 1 towards or away from that character (Disruptor chooses)."
+      "Effects": [
+        "All characters in range 2 of the foe are shoved 1 towards or away from that character ([name] chooses).",
+        "At round 3+, deals bonus damage and shatters all foes targeted."
+      ]
     },
     {
       "Name": "Anchor",
       "ActionCost": 1,
-      "Description": "An ally in range 6 is shoved 4 spaces towards the Disruptor with phasing."
+      "Tags": [ "repeatable" ],
+      "Description": "An ally in range 6 is shoved up to 4 spaces towards the [name] with phasing."
     },
     {
       "Name": "Disrupt",
       "ActionCost": 1,
       "Tags": "mark",
-      "Description": "A character in range 8 is marked.",
-      "Mark": "While marked, they are vulnerable+ and take 2 piercing damage, once, for every adjacent character every time they end their turn. If they end their turn with no characters adjacent, end this mark."
+      "Description": "A character in range 8 is marked. While marked, they are vulnerable+ and take 1 piercing damage, once, for every adjacent character every time they end their turn. If they end their turn with no characters adjacent, end this mark."
     }
   ]
 }

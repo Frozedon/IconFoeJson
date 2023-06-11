@@ -3,29 +3,31 @@
   "Inherits": "Leader",
   "Type": "Foe",
   "UsesTemplate": true,
-  "Traits": "Divine Presence",
+  "Traits": "Defiance",
   "Actions": [
     {
       "Name": "Holy",
       "ActionCost": 2,
-      "Tags": [ "ranged attack 4", "blast 1" ],
+      "Tags": [ "range 4", "medium blast" ],
       "AutoHit": "[D]+[fray].",
       "Miss": "[fray].",
       "AreaEffect": "[fray].",
-      "Effects": "Foes inside are branded. Branded foes must save or become pacified."
+      "Effects": [
+        "Attack target is pacified.",
+        "Allies in the area gain 2 vigor."
+      ]
     },
     {
-      "Name": "Redempta",
+      "Name": "Pandaemonium",
       "ActionCost": 2,
-      "Tags": "1/combat",
-      "Description": "Target defeated ally in range 4 and remove incapacitated. They stop being defeated and return with 50% hp. They can act normally and take a turn starting next round."
+      "Tags": "range 4",
+      "Description": "The [name] targets a large blast area in range. It may remove all characters in the area, then place them back in any other space in the area. Foes can save to avoid this effect, but are sealed on a successful save."
     },
     {
       "Name": "Shield of Faith",
       "ActionCost": 2,
-      "Tags": "mark",
-      "Description": "Allied character in range 3 becomes marked.",
-      "Mark": "While marked, they gain sturdy and resistance while marked and in range 3 of the priest."
+      "Tags": [ "range 2", "mark" ],
+      "Description": "Allied character in range becomes marked. When marked, the ally is cured. While marked and in range of the priest, the marked ally has resistance and +1 boon on saves."
     }
   ]
 }

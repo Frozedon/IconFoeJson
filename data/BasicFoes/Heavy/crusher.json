@@ -3,24 +3,29 @@
   "Inherits": "Heavy",
   "Type": "Foe",
   "UsesTemplate": true,
-  "Traits": "Grit",
+  "Traits": "Sturdy",
   "Actions": [
     {
       "Name": "Headbutt",
       "ActionCost": 1,
-      "Tags": "melee attack",
+      "Tags": [ "attack", "true strike" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
       "Effects": [ 
-        "Foe most save or become winded.",
-        "Critical hit (+[D]) against Grabbed foes."
+        "Foe is weakened.",
+        "Deals bonus damage to weakened foes."
       ]
     },
     {
-      "Name": "Grab",
+      "Name": "Mighty Blow",
       "ActionCost": 1,
-      "Tags": [ "stance" ],
-      "Description": "An adjacent foe must save or become grabbed by this character. If they're winded, they fail the save. While a foe is grabbed, the foe and the Crusher are immobile, and the grabbed foe takes [fray] damage at the start of their turns. If shoved or moved apart, or this ability is used again, the grab ends. A foe can save at the end of their turn to end a grab."
+      "Description": "The [name] deals 2 damage to an adjacent foe and either shoves them 1 or creates a pit under them."
+    },
+    {
+      "Name": "Grapple",
+      "ActionCost": 1,
+      "Tags": "mark",
+      "Description": "The [name] marks an adjacent foe. While marked, that foe must save if it attempts to break adjacency. On a failed save, it becomes unable to exit adjacency with the [name] by any means for the rest of the current turn. On a successful save, the mark and this effect ends, but the foe is weakened."
     }
   ]
 }

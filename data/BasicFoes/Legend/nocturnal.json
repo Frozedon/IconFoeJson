@@ -1,78 +1,93 @@
 {
   "Name": "Nocturnal",
-  "Inherits": "Legendary Skirmisher",
+  "Inherits": "Legend",
   "Type": "Foe",
-  "HP": 24,
   "UsesTemplate": true,
-  "Traits": "Hunter in the Mist",
+  "Traits": [ "Skirmisher", "Pick Off", "Master of the Night" ],
   "Actions": [
     {
-      "Name": "The Horror",
+      "Name": "Crippling Paranoia",
+      "RoundAction": true,
+      "Description": "At the start of the round, the [name] chooses a foe. At the end of the round, that foe deals 6 damage to all allies in adjacent spaces and dazes them, then the [name] can shove them 1 in any direction."
+    },
+    {
+      "Name": "The Pain",
       "ActionCost": 1,
-      "Tags": "melee attack",
+      "Tags": [ "attack", "range 3", "true strike" ],
+      "PreEffect": "Teleport 1.",
       "Hit": "[D]+[fray] and shove 1.",
       "Miss": "[fray].",
-      "Effects": "May teleport up to 3 spaces before or after the attack."
+      "Effects": "Teleport 1.",
+      "Combo": {
+        "Name": "The Agony",
+        "ActionCost": 1,
+        "Tags": [ "attack", "range 5" ],
+        "Hit": "3 piercing damage, three times.",
+        "Miss": "3 piercing damage once.",
+        "Combo": {
+          "Name": "The Horror",
+          "ActionCost": 2,
+          "Tags": [ "attack" ],
+          "Hit": "2[D]+[fray].",
+          "Miss": "[D]+[fray].",
+          "Effects": "Deals 2 damage again to the target for each that is true: bloodied, blinded, dazed."
+        }
+      }
     },
     {
-      "Name": "Rake",
+      "Name": "Bloody Slash",
       "ActionCost": 1,
-      "Tags": [ "line 4", "repeatable" ],
-      "AreaEffect": "Foes in the area take [fray] damage. The Nocturnal may teleport to any space in the area after this action resolves."
+      "Tags": [ "line 4" ],
+      "AreaEffect": "Foes in the area take 2 damage once for every foe in the line, up to three times. The [name] may teleport to any space in the area after this ability resolves."
     },
     {
-      "Name": "Disappear",
-      "ActionCost": 2,
-      "Tags": "1/round",
-      "Description": "Remove the Nocturnal from the battlefield and place them in any free space."
+      "Name": "Great Fell Shot",
+      "ActionCost": 1,
+      "Tags": [ "range 4", "2/round" ],
+      "Description": "Choose two free spaces in range. Characters that enter that space or start their turn there are struck by a projectile, taking 3 piercing damage twice, and ending this effect. This area lasts until triggered."
     }
   ],
-  "PhasesDescription": "Phase change triggers at the start of each round. The Nocturnal starts in phase II and can shift up or down one phase (so it can't shift from I to III for example). It must shift phases.",
+  "PhasesDescription": "Phase change triggers at the start of each round. The [name] starts in phase I and goes up to phase II, then III, then back to I.",
   "Phases": [
     {
-      "Traits": "Clinging Mists",
       "Actions": [
         {
-          "Name": "Paranoia",
+          "Name": "Lost and Alone",
           "ActionCost": 1,
-          "Tags": [ "multimark", "1/round" ],
-          "Description": "A foe in range 6 is marked.",
-          "Mark": "While marked, they cannot target allies with abilities and effects. A character can save at the end of their turn to clear this mark, ending it on a success."
+          "Tags": [ "range 3", "2/round" ],
+          "Description": "The [name] swaps the places of two foes in range 3 of the [name] and each other, removing and placing them. One foe is then dazed."
         },
         {
-          "Name": "Amygdala",
+          "Name": "Assassinate",
           "ActionCost": 1,
-          "Tags": "1/round",
-          "Description": "All foes in range 3 are forced to flee. They must save or be shoved 2 spaces in a direction of the Nocturnal's choice. At the start of their next turn, even if they saved successfully, the Nocturnal can shove them 2 in a direction of its choice."
+          "Tags": [ "range 3", "1/round" ],
+          "Description": "The [name] chooses a foe in range 3 that has not acted yet this round. At the end of that foe's turn, as long as they're in range 3, teleport to any space adjacent to them, deal 2 damage, three times to them, and blind them. Reduce this damage to just 2 damage if they have an adjacent ally. Then, fly 1."
         }
       ]
     },
     {
-      "Traits": "Blood Drain",
       "Actions": {
-        "Name": "Great Fell Shot",
+        "Name": "Amygdala",
         "ActionCost": 1,
-        "Tags": "2/round",
-        "Description": "Mark two unoccupied spaces in range 8.",
-        "Effects": "Characters that enter that space or start their turn there are struck by a projectile, taking 3 damage twice, and ending this effect. This area lasts until triggered."
+        "Tags": [ "range 2", "2/round" ],
+        "Description": "All foes in range are inflicted with supernatural fear. They must save or be shoved 3 spaces in a direction of the [name]'s choice, or 1 space on a successful save."
       }
     },
     {
       "Actions": [
         {
-          "Name": "Embrace",
-          "ActionCost": 2,
-          "Tags": "1/round",
-          "Description": "An adjacent foe must save. On a successful save, they are shoved 1 and take [D]+[fray]. On a failed save, they take divine damage equal to 50% of their max hp. Either way, this attack can't take them below 1 hp."
+          "Name": "Bloody Nightmare",
+          "RoundAction": true,
+          "Description": "At the start of the round, the [name] supernaturally slashes all foes. For the rest of combat, all foes take 2 piercing damage at the start of their turns. This effect stacks."
         },
         {
-          "Name": "Open Wound",
+          "Name": "Kidnap",
           "ActionCost": 1,
-          "Tags": [ "multimark", "1/round" ],
-          "Description": "A foe in range 4 is marked.",
-          "Mark": "While marked, when that foe is shoved, they take [fray] damage. A foe can save against this effect at the end of their turn, ending the mark."
+          "Tags": [ "2/round" ],
+          "Description": "The [name] dashes 4. A foe adjacent to any point during its dash is removed from the battlefield, then placed adjacent when it finishes its movement. Foes can save to avoid this effect, but are dazed on a successful save."
         }
       ]
     }
-  ]
+  ],
+  "Tactics": "The [name] is an evasive and slippery legend fight that is the most scary when foes are split up. It can use its suite of abilities to force them to do so, or use Crippling Paranoia when it wants to really isolate someone."
 }

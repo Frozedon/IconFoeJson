@@ -7,25 +7,23 @@
     {
       "Name": "Blast",
       "ActionCost": 2,
-      "Tags": [ "ranged attack 8", "blast 1", "pierce" ],
-      "Hit": "2[D].",
-      "Miss": "1 damage.",
-      "AreaEffect": "1 damage.",
-      "Effects": [
-        "Deal 2 piercing damage again to all characters for each character caught in the area.",
-        "Attack target is burning. If attack targets a burning character, increase blast size to 2."
-      ]
+      "Tags": [ "attack", "range 8", "medium blast" ],
+      "Hit": "2[D]+[fray].",
+      "Miss": "[fray] damage.",
+      "AreaEffect": "Deal 1 piercing damage again to all characters for each character caught in the area, up to a maximum of three times.",
+      "Effects": "At round 3+, increase blast to a large blast and deals bonus damage."
     },
     {
-      "Name": "Embers",
+      "Name": "Emberflash",
       "ActionCost": 1,
-      "Tags": [ "range 6", "blast 1" ],
-      "AreaEffect": "2 piercing damage and one foe in the area becomes burning. Burning foes take 2 piercing damage, twice."
+      "Tags": [ "range 6", "small blast" ],
+      "AreaEffect": "2 piercing damage and create a dangerous terrain space in the center, which can be placed under a character."
     },
     {
-      "Name": "Flash",
+      "Name": "Flash Fire",
       "ActionCost": 1,
-      "Description": "A character in range 8 is vulnerable. Vulnerable foes take 2 piercing damage and become burning."
+      "Tags": "end turn",
+      "Description": "A character in range 6 becomes vulnerable. Vulnerable foes are shoved 2 and take 1 piercing damage twice."
     }
   ]
 }

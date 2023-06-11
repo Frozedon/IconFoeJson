@@ -1,6 +1,13 @@
 {
   "Name": "Legend",
+  "Class": "Unique",
   "SpecialClass": "Legend",
+  "Vitality": 10,
+  "HP": 50,
+  "Speed": 4,
+  "Defense": 8,
+  "FrayDamage": 3,
+  "DamageDie": 8,
   "HPMultiplyByPlayers": true,
   "Traits": [ "Legend", "Juggernaut" ]
 }

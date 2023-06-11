@@ -5,21 +5,31 @@
   "UsesTemplate": true,
   "Actions": [
     {
-      "Name": "Wild Card",
+      "Name": "Divination",
       "ActionCost": 1,
-      "Tags": [ "ranged attack 5", "multimark" ],
+      "Tags": [ "attacl", "range 5", "multi-mark" ],
       "AutoHit": "1 damage and the foe is marked.",
-      "Mark": "A card attaches to the target. The next time the target is hit by an attack, the card explodes in a blast 1 AoE explosion centered on them for [D]+[fray]. Foes within must save or become branded. Then, the mark clears."
+      "Mark": "A card attaches to the target. The next time the target is damaged by an attack, the card explodes in a small blast area effect explosion centered on them for [D]+[fray]. Foes within must save or become sealed. Then, the mark clears."
     },
     {
-      "Name": "Weaken",
+      "Name": "Dark Fate",
       "ActionCost": 1,
-      "Description": "A foe in range 5 is pacified."
+      "Tags": "range 5",
+      "Description": "The [name] chooses a foe in range. That foe is either pacified (1-3) and shoved 1 away from them, or sealed (4-6) and shoved 1 towards them."
     },
     {
       "Name": "Bend Fate",
       "ActionCost": 1,
-      "Description": "The Abjurer chooses an ally in range 5. Until the end of their next turn, attacks gain +1 curse against that ally, and that ally gains +1 boon on attacks."
+      "Tags": "range 5",
+      "Description": "The [name] chooses an ally in range, then gambles, applying the effect:",
+      "Rolls": [
+        { "Values": 1, "Description": "Ally deals [fray] damage to all adjacent characters." },
+        { "Values": 2, "Description": "Ally may teleport 4." },
+        { "Values": 3, "Description": "Ally gains flying for the rest of combat." },
+        { "Values": 4, "Description": "Ally gains stealth." },
+        { "Values": 5, "Description": "Ally creates 3 spaces of difficult terrain in adjacent spaces." },
+        { "Values": 6, "Description": "Ally becomes unstoppable until bloodied, or until defeated if already bloodied." }
+      ]
     }
   ]
 }

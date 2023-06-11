@@ -3,27 +3,25 @@
   "Inherits": "Heavy",
   "Type": "Foe",
   "UsesTemplate": true,
+  "Traits": "Bullheaded",
   "Actions": [
     {
-      "Name": "Hilt Sweep",
+      "Name": "Chain Hook",
       "ActionCost": 1,
-      "Tags": "melee attack",
-      "AutoHit": "[fray] damage and shove 1.",
-      "Effects": "All other adjacent foes are shoved 1."
+      "Description": "A character in range 3 is shoved 2 towards the [name]."
     },
     {
-      "Name": "Shoulder check",
+      "Name": "Shoulder Check",
       "ActionCost": 1,
-      "Description": "Dash 1 and gain vigilance 1. Smite recharges."
-    },
-    {
-      "Name": "Smite",
-      "ActionCost": 2,
-      "Recharge": 6,
-      "Tags": [ "melee attack", "true strike" ],
-      "Hit": "3[D]+[fray] and foe is stunned and shoved 1.",
-      "Miss": "[fray] damage and foe is dazed.",
-      "Effects": "+1 boon against dazed characters."
+      "Description": "Rush 1. An adjacent foe is shoved 1.",
+      "Combo": {
+        "Name": "Crushing Overhead",
+        "ActionCost": 2,
+        "Tags": [ "attack", "true strike" ],
+        "Hit": "3[D]+[fray] and foe is stunned and shoved 1.",
+        "Miss": "[fray] damage and foe is slashed.",
+        "Effects": "Deals bonus damage to slashed or weakened characters."
+      }
     }
   ]
 }

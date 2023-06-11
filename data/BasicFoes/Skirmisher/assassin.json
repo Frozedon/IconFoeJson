@@ -3,31 +3,27 @@
   "Inherits": "Skirmisher",
   "Type": "Foe",
   "UsesTemplate": true,
-  "Interrupts": {
-    "Name": "Shadow Slip",
-    "Tags": [ "requires a shadow clone" ],
-    "Trigger": "When targeted by an attack.",
-    "Effects": "Gain evasion against that attack, then after the attack resolves, teleport to the space of a shadow clone and replace it, removing the clone and gaining stealth. This interrupt can be repeated as long as there is at least one shadow clone."
-  },
+  "Traits": "Nimble",
   "Actions": [
     {
-      "Name": "Shadow Stab",
+      "Name": "Razor Wind",
       "ActionCost": 1,
-      "Tags": [ "melee attack", "+1 boon" ],
-      "Hit": "[D]+[fray].",
-      "Miss": "[fray].",
-      "Effects": "Teleport 1 and gain stealth. If made from stealth, can dash 2 before and after the action."
+      "Tags": "attack",
+      "Hit": "[D].",
+      "Miss": "1 damage.",
+      "Effects": "Repeat the following effect twice: Dash 1, then area effect: burst 1 (self): 2 damage."
     },
     {
-      "Name": "Shadow Clone",
+      "Name": "Gust",
       "ActionCost": 1,
-      "Tags": "summon",
-      "Description": "Summon a shadow clone in a free space in range 3.",
-      "Summons": {
-        "Name": "Shadow Clone",
-        "Tags": [ "Size 1", "Intangible", "Immobile" ],
-        "SummonEffects": "Foes adjacent to a shadow clone at the start of their turn take [fray] damage from the clone."
-      }
+      "Tags": "range 2",
+      "Description": "The [name] or an ally in range may fly 2."
+    },
+    {
+      "Name": "Assassinate",
+      "ActionCost": 1,
+      "Tags": [ "range 3", "end turn" ],
+      "Description": "The [name] chooses a foe in range. At the end of that foe's turn, as long as they're in range 3, teleport to any space adjacent to them, deal 2 damage, three times to them, and blind them. Reduce this damage to just 2 damage if they have an adjacent ally. Then, fly 1."
     }
   ]
 }

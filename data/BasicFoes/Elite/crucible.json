@@ -3,36 +3,43 @@
   "Inherits": [ "Elite", "Artillery" ],
   "Type": "Foe",
   "UsesTemplate": true,
-  "RemoveTraits": "Slip",
-  "Traits": [ "Flying", "Unstable Reality" ],
+  "Traits": "Flying",
   "Actions": [
+    {
+      "Name": "Unstable Reality",
+      "ActionCost": 0,
+      "Description": "Self or an ally in range 3 may teleport 2."
+    },
     {
       "Name": "Annihilate",
       "ActionCost": 2,
-      "Tags": [ "ranged attack 10", "blast 1", "pierce", "terrain effect" ],
+      "Tags": [ "attack", "range 10", "medium blast" ],
       "Hit": "2[D]+[fray].",
-      "Miss": "[fray].",
-      "AreaEffect": "[fray].",
-      "Effects": "Attack target becomes vulnerable and burning. Attacks against a burning foe increase the area size to blast 2.",
-      "TerrainEffect": "After attack resolves, summon a height 1 boulder object in the area."
-    },
-    {
-      "Name": "Great Slip",
-      "ActionCost": 1,
-      "Description": "Remove self from the battlefield, then return in a free space in range 3."
+      "Miss": "[D]+[fray].",
+      "AreaEffect": "[D]+[fray].",
+      "Effects": [
+        "Attack target becomes vulnerable.",
+        "At round 3+, increase blast size to large blast, and deals 2 piercing damage again to all foes on the battlefield."
+      ],
+      "TerrainEffect": "Create a pit under target.",
+      "Combo": {
+        "Name": "Great Slip",
+        "ActionCost": 1,
+        "Description": "Remove self from the battlefield, then return in a free space in range 3."
+      }
     },
     {
       "Name": "Fell Shot",
       "ActionCost": 1,
-      "Tags": "repeatable",
-      "Description": "Mark an unoccupied space in range 8.",
+      "Tags": [ "range 8", "repeatable" ],
+      "Description": "Mark an unoccupied space in range.",
       "AreaEffect": "Characters that enter that space or start their turn there are struck by a projectile, taking 2 piercing damage twice, and ending this effect."
     },
     {
       "Name": "Liminal Arrows",
       "ActionCost": 1,
-      "Recharge": 5,
-      "Description": "Choose a foe in line of sight and range 10. At the end of that character's turn, they take [D] piercing damage 3 times if not in cover from the crucible, or just [fray] piercing damage if it's in cover. Then this effect ends."
+      "Tags": "range 10",
+      "Description": "Choose a foe in line of sight and range. At the end of that character's turn, it takes piercing [fray] damage 3 times if not in cover from the [name], or just piercing [fray] damage if it is. Then this effect ends."
     }
   ]
 }

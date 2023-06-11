@@ -7,25 +7,25 @@
     {
       "Name": "Discord",
       "ActionCost": 1,
-      "Tags": [ "ranged attack 8", "pierce" ],
-      "AutoHit": "[fray]."
+      "Tags": [ "attack", "range 8", "pierce" ],
+      "AutoHit": "[fray] damage."
     },
     {
       "Name": "Chant of Investiture",
       "ActionCost": 2,
-      "Tags": [ "stance", "mark" ],
-      "Description": "An ally in range 8 is marked by the Cantrix. While in this stance, the Cantrix is immobile and must spend 1 action during their turn to maintain this stance. It ends if the Cantrix is shoved or stunned.",
-      "Mark": "While marked, they gain resistance, sturdy, and +1 boon on all attacks and saves while in range 8 of the Cantrix."
+      "Tags": [ "range 10", "mark", "stance" ],
+      "Description": "An ally in range is marked by the [name] and gains resistance, sturdy, and +1 boon on all attacks and saves. While in this stance, the [name] is immobile and must spend 1 action during their turn to maintain this stance. It ends if the [name] takes damage."
     },
     {
       "Name": "Hypnogogia",
       "ActionCost": 1,
-      "Description": "A character in range 8 of the Cantrix becomes pacified. If already pacified, the character becomes unable to dash until the end of their next turn."
+      "Tags": "range 8",
+      "Description": "A character in range 8 of the [name] becomes pacified. If already pacified, the character becomes unable to dash, rush, or fly until the end of their next turn."
     },
     {
       "Name": "Escape",
       "ActionCost": 1,
-      "Description": "The Cantrix swaps places with a marked ally."
+      "Description": "The [name] swaps place with a marked ally, removing and placing both of them."
     }
   ]
 }

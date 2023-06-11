@@ -7,21 +7,21 @@
     {
       "Name": "Redondo",
       "ActionCost": 0,
-      "Description": "Swap places with an adjacent ally."
+      "Description": "Swap places with an adjacent ally, removing and placing both characters."
     },
     {
       "Name": "Cleave",
       "ActionCost": 2,
-      "Tags": [ "melee attack", "true strike" ],
+      "Tags": [ "attack", "true strike" ],
       "Hit": "2[D]+[fray].",
       "Miss": "[fray].",
-      "AreaEffect": "All foes adjacent to the attack target take [fray] damage."
+      "AreaEffect": "All foes adjacent to the [name] or its attack target take [fray] damage."
     },
     {
-      "Name": "Strike",
+      "Name": "Bull Rush",
       "ActionCost": 1,
       "Tags": "repeatable",
-      "Description": "An adjacent foe is dazed. Dazed foes take [fray] damage."
+      "Description": "The [name] rushes 1. An adjacent character when it finishes its movement is either weakened or shoved 1."
     }
   ]
 }

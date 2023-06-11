@@ -3,22 +3,37 @@
   "Inherits": "Heavy",
   "Type": "Foe",
   "UsesTemplate": true,
-  "Traits": "Size 2",
+  "Traits": [ "Sturdy", "Size 2" ],
   "Actions": [
     {
       "Name": "Backhand",
       "ActionCost": 1,
-      "Tags": [ "melee attack", "true strike" ],
+      "Tags": [ "attack", "true strike" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
-      "Effects": "Foe is dazed. If already dazed, they must save or become stunned."
+      "Combo": {
+        "Name": "Backbreaker",
+        "ActionCost": 2,
+        "Tags": [ "attack" ],
+        "Hit": "2[D]+[fray].",
+        "Miss": "[fray].",
+        "Effects": [
+          "Foe is stunned.",
+          "[name] may rush 2 before using this ability."
+        ]
+      }
+    },
+    {
+      "Name": "Bulk Up",
+      "ActionCost": 1,
+      "Description": "Gain 4 vigor, or 6 if bloodied."
     },
     {
       "Name": "Hurl",
       "ActionCost": 1,
       "Tags": "repeatable",
-      "Description": "The Brute picks up an adjacent character or object and shoves them 3.",
-      "Collide": "Character is dazed."
+      "Description": "The [name] shoves an adjacent character or object 2. ",
+      "Collide": "Character is weakened."
     }
   ]
 }

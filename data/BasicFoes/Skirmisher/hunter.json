@@ -3,14 +3,20 @@
   "Inherits": "Skirmisher",
   "Type": "Foe",
   "UsesTemplate": true,
+  "Traits": "Wayfinding",
   "Actions": [
     {
       "Name": "Hunter Shot",
       "ActionCost": 1,
-      "Tags": [ "ranged attack 6", "+1 boon" ],
+      "Tags": [ "attack", "range 4", "+1 boon" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
-      "Effects": "Has no maximum range against marked targets. Deals bonus damage when made from stealth."
+      "Effects": "Bloodied characters are shoved 1 in a direction of the [name]'s choice and dazed."
+    },
+    {
+      "Name": "Set Trap",
+      "ActionCost": 1,
+      "Description": "The [name] creates a trap dangerous terrain space in free space in range 2."
     },
     {
       "Name": "Prowl",
@@ -21,8 +27,8 @@
     {
       "Name": "Hunt",
       "ActionCost": 1,
-      "Tags": "mark",
-      "Description": "A character in range 8 must save or be marked. The target cannot benefit from cover, stealth, or evasion while marked. They can repeat the save at the end of their turn, ending it on a success."
+      "Tags": [ "range 4", "mark" ],
+      "Description": "A character in range is marked. The [name] deals bonus damage to the marked character and their abilities gain unerring against them."
     }
   ]
 }

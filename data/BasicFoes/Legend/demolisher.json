@@ -1,74 +1,74 @@
 {
   "Name": "Demolisher",
-  "Inherits": "Legendary Heavy",
+  "Inherits": "Legend",
   "Type": "Foe",
-  "HP": 40,
   "UsesTemplate": true,
-  "Traits": [ "Size 2", "Sturdy", "Great Strength" ],
+  "Traits": [ "Size 2", "Sturdy" ],
   "Actions": [
+    {
+      "Name": "Lumbering Charge",
+      "RoundAction": true,
+      "Description": "At the end of the round, the [name] may Rush 1 up to four times. Before each space of this rush, it shoves all adjacent foes 1 space and deals 1 damage to them."
+    },
     {
       "Name": "Pound",
       "ActionCost": 1,
-      "Tags": [ "melee attack 2", "true strike" ],
+      "Tags": [ "attack", "range 2", "true strike" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
-      "Effects": "Deals bonus damage for each: character is winded, dazed, or stunned.",
+      "Effects": "Deals bonus damage for each: character is weakened, slashed, or stunned.",
       "Combo": {
-        "Name": "Battle Shout",
+        "Name": "Battle Roar",
         "ActionCost": 1,
         "Tags": "end turn",
-        "Description": "Characters in range 3 take [fray] damage and are shoved 1 towards the Demolisher.",
+        "Description": "Foes in range 2 take 2 piercing damage. Bloodied foes are slashed.",
         "Combo": {
-          "Name": "Massive Impact",
+          "Name": "Quake Strike",
           "ActionCost": 2,
-          "Tags": [ "melee attack", "close blast 1" ],
+          "Tags": [ "attack", "range 2", "burst 1" ],
           "Hit": "3[D]+[fray].",
           "Miss": "[fray].",
           "AreaEffect": "[fray].",
-          "Effects": "Attack target must save or be stunned."
+          "Effects": "Create a pit under attack target."
         }
       }
     },
     {
       "Name": "Hurl Boulder",
       "ActionCost": 1,
-      "Tags": "terrain effect",
-      "Effects": "A foe in range 3 takes 2 damage and is shoved 1, then create a height 1 boulder object next to them."
+      "Tags": "range 4",
+      "Effects": "A foe in range takes 2 damage and is shoved 1, then create a height 1 boulder object next to them."
     },
     {
       "Name": "Lash",
       "ActionCost": 1,
-      "Description": "The Demolisher whips a chain, hook, or weapon around a foe in range 5, shoving them 3 spaces towards the Demolisher."
+      "Tags": "range 4",
+      "Description": "The [name] whips a chain, hook, or weapon around a foe in range, shoving them 2 spaces towards the [name].",
+      "Collide": "Foe is weakened. Weakened foes take [fray] damage."
+    },
+    {
+      "Name": "Heavy Vault",
+      "ActionCost": 1,
+      "Tags": "1/round",
+      "Effects": "The [name] removes itself from the battlefield, then places itself in range 3. Characters under it when its placed take 2 damage and are removed and placed in any adjacent space as they are tossed around."
     }
   ],
   "PhasesDescription": "Starts in Phase I and enters Phase II when bloodied.",
   "Phases": [
+    { },
     {
-      "Actions": [
-        {
-          "Name": "Charge",
-          "ActionCost": 1,
-          "Tags": "1/round",
-          "Description": "Dash 4 in a straight line. All characters the Demolisher passes over are shoved 1 to the side and take [fray] damage."
-        }
-      ]
-    },
-    {
+      "Description": "As Phase I but Lumbering Charge triggers twice.",
       "Traits": [ "Frothing Mad", "Enrage" ],
       "Actions": [
         {
-          "Name": "Charge",
-          "ActionCost": 1,
-          "Tags": "3/round",
-          "Description": "Dash 4 in a straight line. All characters the Demolisher passes over are shoved 1 to the side and take [fray] damage."
-        },
-        {
           "Name": "Great Lash",
           "ActionCost": 1,
-          "Tags": "1/round",
-          "Description": "The Demolisher whips a chain or hook around all foes in range 5. They are shoved 3 spaces towards the Demolisher."
+          "Tags": [ "range 4", "1/round" ],
+          "Description": "The [name] whips a chain or hook around all foes in range. They are shoved 2 spaces towards the [name].",
+          "Collide": "Foes are weakened. Weakened foes take [fray] damage."
         }
       ]
     }
-  ]
+  ],
+  "Tactics": "The [name] is a relatively straightforward fight. Characters will want to avoid colliding from its abilities, and finish it off quickly in phase II, where it becomes much stronger."
 }

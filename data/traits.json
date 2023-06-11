@@ -27,7 +27,7 @@
   },
   {
     "Name": "Aetherwall",
-    "Description": "Gains automatic cover against all attacks that originate outside of range 2 from them. (Cover grants resistance against ranged attacks, reducing its damage by 1/2)"
+    "Description": "Gains resistance against all abilities from characters that are outside of range 2 from them (Resistance halves damage)."
   },
   {
     "Name": "Amorous Waltz",
@@ -63,7 +63,7 @@
   },
   {
     "Name": "Aura of Shielding",
-    "Description": "Aura 1. This character and allies in the aura have dodge. (Immune to damage from missed attacks, area effects, and successful saves)"
+    "Description": "Aura 1. Self and allies in the area have dodge."
   },
   {
     "Name": "Aura of Terror",
@@ -103,7 +103,7 @@
   },
   {
     "Name": "Bullheaded",
-    "Description": "Has resistance unless suffering from a status. (Take 1/2 damage, rounded up)"
+    "Description": "Has resistance unless suffering from a status."
   },
   {
     "Name": "Camouflage",
@@ -167,7 +167,7 @@
       {
         "Name": "Diaga",
         "ActionCost": 1,
-        "Description": "An ally in range 4 can end a status or blight. If that ally is bloodied, they also gain vigor 1."
+        "Description": "An ally in range 4 is cured."
       }
     ]
   },
@@ -210,6 +210,10 @@
     ]
   },
   {
+    "Name": "Earth Bond",
+    "Description": "Resistance when adjacent to an object or inside a pit."
+  },
+  {
     "Name": "Earthbreaker",
     "Description": "This character can phase through objects and destroys any objects it moves through this way. Objects that can't normally be destroyed are instead removed as if they were unsummoned."
   },
@@ -220,7 +224,7 @@
   },
   {
     "Name": "Enrage",
-    "Description": "While bloody, gain +1 action."
+    "Description": "+1 action while bloodied."
   },
   {
     "Name": "Entrench",
@@ -262,7 +266,7 @@
   },
   {
     "Name": "Flying",
-    "Description": "Ignores all terrain and terrain effects other than impassable terrain, and ignores engagement and obstruction."
+    "Description": "Ignores terrain damage and movement penalties, height movement penalties, obstruction, and engagement."
   },
   {
     "Name": "Fortify",
@@ -274,7 +278,7 @@
   },
   {
     "Name": "Gran Diaga",
-    "Description": "Aura 1. At the start of this character's turn, allies in the aura can end a status or blight affecting them. If they are bloodied, they also gain vigor 1."
+    "Description": "Aura 2. At the start of the [name]'s turn, all allies in the aura gain vigor 3."
   },
   {
     "Name": "Great Enrage",
@@ -293,8 +297,12 @@
     "Description": "Sturdy when bloodied. (Can't be stunned or dazed, and reduce the distance of all shoves by 1)"
   },
   {
+    "Name": "Guard",
+    "Description": "Has Rampart, Reduce all damage to self and allies in orthogonal spaces by 2, as if by armor."
+  },
+  {
     "Name": "Heavy Armor",
-    "Description": "Resistant to abilities used from adjacent spaces. (Take 1/2 damage, rounded up)"
+    "Description": "Resistant to damage from adjacent spaces."
   },
   {
     "Name": "Heavy Metal Shield",
@@ -335,9 +343,8 @@
     "Actions": [
       {
         "Name": "Juggernaut",
-        "ActionCost": 0,
-        "Tags": [ "1/round" ],
-        "Description": "Clear a status, mark, or all blights affecting this character."
+        "RoundAction": true,
+        "Description": "At the start of the round, this character may clear a status or mark."
       }
     ]
   },
@@ -347,7 +354,7 @@
   },
   {
     "Name": "Legend",
-    "Description": "Takes 1 turn after every player character takes a turn. If slow, only one of its turns is affected.",
+    "Description": "Takes 1 turn for each player character.",
     "EncounterBudget": -1.0
   },
   {
@@ -408,7 +415,7 @@
   },
   {
     "Name": "Martyrdom",
-    "Description": "When defeated, grants vigor 1 to all allies in range 2."
+    "Description": "When defeated, cures all allies in range 2."
   },
   {
     "Name": "Master of Strategy",
@@ -416,8 +423,7 @@
   },
   {
     "Name": "Mob",
-    "Description": "This character doesn't trigger slay effects.",
-    "EncounterBudget": 0.2
+    "Description": "This character doesn't trigger slay effects, and is removed when defeated."
   },
   {
     "Name": "Monster Riding",
@@ -430,7 +436,7 @@
   },
   {
     "Name": "Nimble",
-    "Description": "Has evasion unless suffering from a status. (Roll a d6 when targeted by an attack. On a 4+, the attack automatically misses. Check before the attack roll)"
+    "Description": "Has evasion unless suffering from a status."
   },
   {
     "Name": "Noxious Censer",
@@ -475,7 +481,7 @@
   },
   {
     "Name": "Phasing",
-    "Description": "Can ignore obstruction and pass through, but not end your turn in, terrain or characters."
+    "Description": "Can ignore obstruction and pass through, but not end your turn in, terrain, objects, or characters."
   },
   {
     "Name": "Pixie Dust",
@@ -531,7 +537,7 @@
     "Description": "This character takes up a [X] by [X] area of spaces."
   },
   {
-    "Name": "Skirmish",
+    "Name": "Skirmisher",
     "Description": "Can move diagonally, and dash moves full speed.",
     "DashMultiplier": 1
   },
@@ -549,17 +555,15 @@
   },
   {
     "Name": "Slip",
-    "Actions": [
-      {
-        "Name": "Slip",
-        "ActionCost": 1,
-        "Description": "Remove self from the battlefield, then return within 1 space."
-      }
-    ]
+    "Description": "Movement ignores rampart, interrupts, and vigilance."
   },
   {
     "Name": "Slippery",
-    "Description": "Has evasion while bloodied. (Roll a d6 when targeted by an attack. On a 4+, the attack automatically misses. Check before the attack roll)"
+    "Description": "Has evasion while bloodied."
+  },
+  {
+    "Name": "Sneak",
+    "Description": "While in stealth, has evasion and phasing."
   },
   {
     "Name": "Sneak Attack",
@@ -595,7 +599,7 @@
   },
   {
     "Name": "Sturdy",
-    "Description": "Can't be stunned or dazed, and reduce the distance of all shoves by 1."
+    "Description": "When moved or removed and placed by a foe, can only be moved max 1 space a turn."
   },
   {
     "Name": "Stutter",
@@ -675,7 +679,7 @@
   },
   {
     "Name": "Wayfinding",
-    "Description": "Immune to terrain effects and difficult terrain."
+    "Description": "Has evasion while inside difficult or dangerous terrain, and ignores the effects of difficult or dangerous terrain."
   },
   {
     "Name": "Zipline Dismount",

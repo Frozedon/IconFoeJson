@@ -1,6 +1,0 @@
-{
-  "Name": "Legendary Heavy",
-  "Inherits": [ "Legend", "Heavy" ],
-  "RemoveTraits": "Fortify",
-  "Traits": "Legendary Vigilance"
-}

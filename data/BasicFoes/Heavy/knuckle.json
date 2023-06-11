@@ -3,26 +3,25 @@
   "Inherits": "Heavy",
   "Type": "Foe",
   "UsesTemplate": true,
-  "Traits": [ "Rook", "Heavy Armor" ],
+  "Traits": [ "Heavy Armor" ],
   "Actions": [
     {
       "Name": "Overpower",
       "ActionCost": 1,
-      "Tags": [ "melee attack", "true strike" ],
+      "Tags": [ "attack", "true strike" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
-      "AreaEffect": "All foes adjacent to the target take 2 damage."
+      "AreaEffect": "All foes adjacent to the attack target take 2 damage."
     },
     {
       "Name": "Crushing Advance",
       "ActionCost": 1,
-      "Description": "Dash 1 space, then shove all adjacent characters 1 space."
+      "Description": "The [name] and all allies in range 2 may rush 1 space. Then, all foes adjacent to the [name] take 2 damage."
     },
     {
-      "Name": "Taunt",
+      "Name": "Call Out",
       "ActionCost": 1,
-      "Recharge": 4,
-      "Description": "A foe in range 3 must save or be shoved towards the knuckle as far as possible, then gain hatred of the knuckle. On a successful save, they are shoved 1 towards the knuckle."
+      "Description": "A foe in range 3 must save or be shoved 2 towards the [name], then gain hatred of the [name]. On a successful save, they are shoved 1 towards the [name]."
     }
   ]
 }

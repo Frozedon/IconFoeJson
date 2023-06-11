@@ -3,31 +3,25 @@
   "Inherits": "Skirmisher",
   "Type": "Foe",
   "UsesTemplate": true,
-  "Interrupts": {
-    "Name": "Parry",
-    "Count": 1,
-    "Trigger": "The Fencer is targeted by an attack.",
-    "Effects": "The Fencer immediately gains evasion against that attack."
-  },
   "Actions": [
     {
       "Name": "Iron Kiss",
       "ActionCost": 1,
-      "Tags": "melee attack",
+      "Tags": "attack",
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
-      "Effects": "May dash 1 before and after the attack."
+      "Effects": "May dash 3 after the attack."
     },
     {
       "Name": "Skewer",
       "ActionCost": 1,
-      "Description": "Dash up to 3 spaces, then deal damage to an adjacent foe equal to the number of spaces moved."
+      "Description": "Dash up to 3 spaces in a straight line, then deal damage to an adjacent foe equal to the number of spaces moved +2."
     },
     {
       "Name": "Duel",
       "ActionCost": 1,
-      "Tags": "mark",
-      "Description": "Mark a character in range 3. Gain evasion against the marked character, and when the marked character takes an action, may dash 1 as an effect after the action resolves. End the mark if the marked character hits the Fencer with an attack."
+      "Tags": [ "range 3", "mark" ],
+      "Description": "Mark a character in range. Gain evasion against the marked character, and when the marked character uses an ability, may dash 1 after the ability resolves. End the mark if the marked character hits the Fencer with an attack."
     }
   ]
 }

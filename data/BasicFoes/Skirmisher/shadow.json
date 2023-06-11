@@ -3,25 +3,35 @@
   "Inherits": "Skirmisher",
   "Type": "Foe",
   "UsesTemplate": true,
+  "Tags": "Phasing",
   "Actions": [
     {
-      "Name": "Umbra",
+      "Name": "Shadow Cloak",
       "ActionCost": 1,
-      "Tags": [ "ranged attack 4", "+1 boon" ],
-      "Hit": "[D]+[fray].",
-      "Miss": "[fray].",
-      "Effects": "If made from stealth, blinds the foe, is a critical hit (+[D]), and ignores cover."
+      "Description": "The [name] teleports 4, then gains stealth.",
+      "Combo": {
+        "Name": "Shadow Scour",
+        "ActionCost": 2,
+        "Tags": [ "attack", "range 4", "unerring", "+1 boon" ],
+        "Hit": "[D]+2, twice.",
+        "Miss": "[D]+[fray], once.",
+        "Effects": [
+          "Blinds foe",
+          "Deals bonus damage to bloodied or blinded foes."
+        ]
+      }
     },
     {
       "Name": "Dark Arts",
       "ActionCost": 1,
-      "Description": "Swap places with an ally in range 3, teleporting."
+      "Tags": "range 3",
+      "Description": "Swap places with a character in range, teleporting. Foes can save to avoid this effect."
     },
     {
-      "Name": "Nocturne",
-      "ActionCost": 2,
-      "Tags": "end turn",
-      "Description": "Teleport 8, then gain stealth and evasion until the start of the shadow's next turn."
+      "Name": "Smothering Darkness ",
+      "ActionCost": 1,
+      "Tags": "range 3",
+      "Description": "The [name] creates a darkness terrain effect in a single space in range. The area is dangerous terrain for foes, and foes inside are blinded+."
     }
   ]
 }

@@ -5,26 +5,24 @@
   "UsesTemplate": true,
   "Actions": [
     {
-      "Name": "Strafe Shot",
-      "ActionCost": 1,
-      "Tags": [ "ranged attack 5", "+1 boon" ],
-      "Hit": "[D]+[fray].",
-      "Miss": "[fray].",
-      "Effects": "May dash 1 before and after the attack. Ignores cover and deals bonus damage against bloodied foes."
-    },
-    {
-      "Name": "Glare",
-      "ActionCost": 1,
-      "Description": "A foe in range 5 takes [fray] damage, then must save or become blinded."
-    },
-    {
       "Name": "Riddle",
+      "ActionCost": 1,
+      "Tags": [ "attack", "range 4", "+1 boon" ],
+      "Hit": "3 damage, three times.",
+      "Miss": "3 damage.",
+      "Effects": "Against foes at exactly range 3, inflicts dazed and gains unerring."
+    },
+    {
+      "Name": "Strafe",
+      "ActionCost": 1,
+      "Description": "The [name] dashes 2, then deals 2 damage to a foe in range 3."
+    },
+    {
+      "Name": "Flash Bomb",
       "ActionCost": 2,
-      "Recharge": 6,
-      "Tags": "ranged attack 5",
-      "Hit": "Deal 3 damage, five times.",
-      "Miss": "Two times.",
-      "Effects": "Ignores cover."
+      "Tags": [ "range 3", "small blast" ],
+      "AreaEffect": "All foes take 3 damage twice and are blinded.",
+      "Effects": "If the [name] catches itself or allies in the area, they gain stealth."
     }
   ]
 }

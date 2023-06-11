@@ -5,24 +5,25 @@
   "UsesTemplate": true,
   "Actions": [
     {
-      "Name": "Lob",
+      "Name": "Chain Bolt",
       "ActionCost": 1,
-      "Tags": [ "ranged attack 8", "pierce" ],
+      "Tags": [ "attack", "range 8", "pierce" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
-      "Effects": "Ignores cover. One or two different foes in range 4 from the target foe also take [fray] damage."
+      "AreaEffect": "One or two different foes in range 4 from the target foe also take 2 piercing damage."
     },
     {
-      "Name": "Flash",
+      "Name": "Entrench",
       "ActionCost": 1,
-      "Description": "A character in range 8 is vulnerable. Vulnerable foes take 2 piercing damage and become burning."
+      "Tags": "terrain effect",
+      "Description": "The [name] puts down a siege rune under itself, or in an adjacent space. While standing in a siege rune, the [name] or its allies deal bonus damage, and their attacks shove 1 and inflict vulnerable on their attack target."
     },
     {
       "Name": "Fell Shot",
       "ActionCost": 1,
-      "Tags": "repeatable",
-      "Description": "Mark an unoccupied space in range 8.",
-      "AreaEffect": "Characters that enter that space or start their turn there are struck by a projectile, taking 2 piercing damage twice, and ending this effect."
+      "Tags": [ "range 8", "terrain effect", "end turn" ],
+      "Description": "Choose one or two free spaces in range.",
+      "TerrainEffect": "Characters that enter that space or start their turn there are struck by a projectile, taking 2 piercing damage twice, and ending this effect. Otherwise, it expires if the [name] is defeated."
     }
   ]
 }

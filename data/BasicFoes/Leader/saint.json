@@ -3,25 +3,27 @@
   "Inherits": "Leader",
   "Type": "Foe",
   "UsesTemplate": true,
-  "Traits": [ "Defiance", "Martyrdom" ],
+  "Traits": [ "Martyrdom" ],
   "Actions": [
     {
       "Name": "Starcall",
       "ActionCost": 2,
-      "Tags": [ "ranged attack", "arc 6 + blast 1" ],
-      "AutoHit": "[D]+[fray] and foe is branded.",
-      "AreaEffect": "[fray]."
+      "Tags": [ "attack", "arc 6" ],
+      "AutoHit": "[D]+[fray] and foe is pacified.",
+      "AreaEffect": "[fray].",
+      "Effects": "Foe explodes for a burst 2 (target) area effect, dealing 3 damage to all foes within and granting 3 vigor to all allies."
     },
     {
       "Name": "Gentleness",
       "ActionCost": 2,
-      "Description": "The Saint becomes immobile and gains aura 2 until the start of its next turn. All damage dealt from characters inside the aura is reduced to 1."
+      "Tags": "stance",
+      "Description": "The [name] becomes immobile and gains aura 2 until the start of its next turn. While in the aura, all characters gain +1 curse on attacks and take 1 divine damage each time they deal damage to another character with an ability. Allies at 25% hp or lower than end their turn in the aura are cured."
     },
     {
       "Name": "Immaculate",
       "ActionCost": 2,
-      "Recharge": 6,
-      "Description": "An ally in range 5 becomes intangible until the end of its next turn."
+      "Tags": "1/combat",
+      "Description": "An ally in range 5 becomes immune to all damage until the end of its next turn."
     }
   ]
 }

@@ -1,0 +1,36 @@
+{
+  "Name": "Errant",
+  "Inherits": "Leader",
+  "Type": "Foe",
+  "UsesTemplate": true,
+  "Actions": [
+    {
+      "Name": "Shining Sword",
+      "ActionCost": 1,
+      "Tags": "attack",
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "Effects": [
+        "Foe is pacified.",
+        "Damage from this ability does not break pacified."
+      ]
+    },
+    {
+      "Name": "Intervention",
+      "ActionCost": 1,
+      "Description": "The Errant gains the following interrupt until the start of its next turn. If this interrupt is unused at the start of their turn, the errant can teleport 3 instead.",
+      "Interrupts": {
+        "Name": "Intervene",
+        "Count": 1,
+        "Trigger": "An ally in range 3 is targeted by an ability.",
+        "Effects": "The ally gains resistance against that ability and +1 boon on any saves against it. The errant may then teleport adjacent to that ally."
+      }
+    },
+    {
+      "Name": "Blink Strike",
+      "ActionCost": 1,
+      "Tags": "repeatable",
+      "Description": "An adjacent foe is teleported 1 space, then the errant and all its allies in range 3 of that foe can teleport 1 space towards the foe."
+    }
+  ]
+}

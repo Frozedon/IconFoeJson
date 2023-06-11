@@ -3,29 +3,28 @@
   "Inherits": "Heavy",
   "Type": "Foe",
   "UsesTemplate": true,
-  "Traits": "Sturdy",
-  "Interrupts": {
-    "Name": "Withstand",
-    "Count": 1,
-    "Trigger": "When self or an adjacent ally is target by an attack.",
-    "Effects": "Grant resistance against that attack."
-  },
   "Actions": [
+    {
+      "Name": "Weapon Vault",
+      "Description": "The [name] targets a character in range 2, then removes itself from the battlefield and places itself in any space adjacent to that character. Then, it may shove that character 1."
+    },
     {
       "Name": "Great Slice",
       "ActionCost": 2,
-      "Tags": [ "melee attack", "line 3", "true strike" ],
+      "Tags": [ "attack", "line 4" ],
+      "PreEffects": "Rush 1.",
       "Hit": "2[D]+[fray].",
       "Miss": "[fray].",
-      "AreaEffect": "[fray]."
-    },
-    {
-      "Name": "Split Foe",
-      "ActionCost": 2,
-      "Recharge": 6,
-      "Tags": [ "melee attack", "true strike", "+1 curse" ],
-      "Hit": "Deal [D]+[fray], 3 times.",
-      "Miss": "[D]+[fray]."
+      "AreaEffect": "[fray].",
+      "Effects": "Slash attack target.",
+      "Combo": {
+        "Name": "Whirlwind",
+        "ActionCost": 2,
+        "Tags": [ "attack", "melee", "true strike" ],
+        "Hit": "[D]+[fray].",
+        "Miss": "[fray].",
+        "Effects": "The [name] rushes 1 space, three times. After it rushes, each time, it deals 2 damage to adjacent characters."
+      }
     }
   ]
 }

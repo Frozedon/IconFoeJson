@@ -3,22 +3,27 @@
   "Inherits": "Heavy",
   "Type": "Foe",
   "UsesTemplate": true,
-  "Traits": [ "Defiance", "Hold the Line 2" ],
   "Actions": [
+    {
+      "Name": "Trip",
+      "ActionCost": 0,
+      "Tags": "range 2",
+      "Description": "A foe is shoved 1 in any direction."
+    },
     {
       "Name": "Sweep",
       "ActionCost": 2,
-      "Tags": [ "melee attack 2", "true strike" ],
-      "Hit": "[D]+[fray].",
+      "Tags": [ "attack", "range 2", "arc 3" ],
+      "Hit": "2[D]+[fray].",
       "Miss": "[fray].",
-      "Effects": "All foes in range 2 of the Sentinel take 2 damage and are shoved 1."
+      "AreaEffect": "[fray].",
+      "Effects": "Shove 1."
     },
     {
-      "Name": "Bash",
-      "ActionCost": 1,
-      "Tags": "repeatable",
-      "Description": "An adjacent foe is shoved 1 and must save or become winded.",
-      "Collide": "Foe fails the save."
+      "Name": "Fortress",
+      "ActionCost": 2,
+      "Tags": "end turn",
+      "Description": "The Sentinel may rush 1, then gains aura 1 until the start of its next turn. While this aura is active:\n• The Sentinel gains counter.\n• Allies without this ability in the aura gain resistance.\n• Any foe that enters the area without being shoved takes 3 damage, but no more than once a turn."
     }
   ]
 }

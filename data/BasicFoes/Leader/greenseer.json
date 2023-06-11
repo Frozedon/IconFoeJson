@@ -3,27 +3,32 @@
   "Inherits": "Leader",
   "Type": "Foe",
   "UsesTemplate": true,
-  "Traits": "Greenwalker",
   "Actions": [
     {
       "Name": "Greenwrath",
       "ActionCost": 1,
-      "Tags": [ "melee attack or ranged attack 6" ],
+      "Tags": [ "attack", "range 5" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
-      "Effects": "Deals bonus damage and inflicts branded if a character is inside dangerous or difficult terrain."
+      "Effects": "Deals bonus damage and inflicts sealed if a character is inside dangerous or difficult terrain."
     },
     {
       "Name": "Vine Lash",
       "ActionCost": 1,
-      "Description": "A character in range 6 must save or be shoved 4 in any direction. On a successful save they are shoved 2. They take 1 piercing damage for every space they move through difficult terrain during this shove."
+      "Tags": [ "range 5" ],
+      "Description": "A character in range is shoved 2 in any direction. If they move into difficult terrain during this shove, they take 3 piercing damage."
+    },
+    {
+      "Name": "Healing Spore",
+      "ActionCost": 1,
+      "Tags": [ "range 5", "terrain effect" ],
+      "Description": "The [name] creates a spore terrain effect in range. Foes are pacified+ while adjacent to the spore, and the spore grants 2 vigor to all adjacent allies when created. Only one spore can be created at once."
     },
     {
       "Name": "Wild Growth",
-      "ActionCost": 1,
-      "Recharge": 6,
-      "Tags": "terrain effect",
-      "TerrainEffect": "Create a blast 1 area of difficult terrain in range 6. The difficult terrain provides cover for allies."
+      "ActionCost": 2,
+      "Tags": "range 6",
+      "TerrainEffect": "Create a small blast area of difficult terrain. The difficult terrain provides cover for allies from abilities from the outside."
     }
   ]
 }

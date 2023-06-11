@@ -7,21 +7,22 @@
     {
       "Name": "Bolt",
       "ActionCost": 1,
-      "Tags": "ranged attack 8",
+      "Tags": [ "attack", "range 8", "small blast" ],
       "Hit": "[D]+[fray].",
-      "Miss": "[fray]."
+      "Miss": "[fray].",
+      "AreaEffect": "[fray].",
+      "Effects": "At round 3+, increase area to large blast and deals bonus damage."
     },
     {
-      "Name": "Vile",
+      "Name": "Mighty Summoning",
       "ActionCost": 1,
-      "Description": "A foe in range 5 is vulnerable, and must save or take take 1 piercing damage for each space they move until the end of their next turn."
+      "Description": "An ally in range 4 is removed from the battlefield, then placed in any space adjacent to the [name]. Alternately, the [name] can remove any adjacent ally, then place them in any space in range 4."
     },
     {
       "Name": "Riven",
       "ActionCost": 1,
-      "Tags": "mark",
-      "Description": "Mark a character in range 8.",
-      "Mark": "At the end of that character's turn, if they are still marked, they take [D] piercing damage, once, for every 3 spaces of distance between them and the justicar. Then, clear the mark."
+      "Tags": "end turn",
+      "Description": "Choose a foe in range 8. At the end of that character's turn, they take 3 piercing damage, once, for every 3 spaces of distance between them and the [name]."
     }
   ]
 }

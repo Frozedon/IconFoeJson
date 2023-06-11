@@ -1,65 +1,88 @@
 {
   "Name": "Razer",
-  "Inherits": "Legendary Artillery",
+  "Inherits": "Legend",
   "Type": "Foe",
-  "HP": 32,
   "UsesTemplate": true,
-  "Traits": "Flying",
   "PhasesDescription": "Starts in Phase I, then moves up a phase at the start of each around, looping back to Phase I after III.",
   "Phases": [
     {
-      "Traits": "Cataclysm",
       "Actions": [
+        {
+          "Name": "Cataclysm",
+          "RoundAction": true,
+          "Description": "At the start of the round, create 2 rock spires, height 1 objects, in free space within range 2 of a foe. Foes adjacent when the spires are created take 2 piercing damage."
+        },
+        {
+          "Name": "Scorch",
+          "RoundAction": true,
+          "Description": "At the start of the round, choose a character in range 6. At the end of that character's turn, the [name] shoots an energy blast at them for a medium blast explosion area effect. Characters within must save. On a successful save, they take piercing [fray] damage. On a failed save they take [D]+[fray] piercing damage. Rock spires in the area are destroyed."
+        },
         {
           "Name": "Raze",
           "ActionCost": 1,
-          "Tags": [ "melee attack", "arc 4" ],
-          "Hit": "2[D]+[fray].",
+          "Tags": [ "attack", "range 6", "true strike" ],
+          "Hit": "[D]+[fray].",
           "Miss": "[fray].",
-          "AreaEffect": "[fray].",
-          "Effects": "Attack target is vulnerable."
+          "Effects": [
+            "Attack target is vulnerable.",
+            "Vulnerable foes release a burst 1 explosion centered on them, dealing 2 damage to all foes within."
+          ],
+          "Combo": {
+            "Name": "Resonant Blast",
+            "ActionCost": 1,
+            "Tags": [ "attack", "range 6", "true strike" ],
+            "Hit": "[D]+[fray].",
+            "Miss": "[fray].",
+            "AreaEffect": "[fray].",
+            "Effects": "Deal [fray] damage again to all foes for every object or pit caught in the area."
+          }
         },
         {
           "Name": "Swat",
           "ActionCost": 1,
-          "Description": "A foe in range 2 must save or be shoved 3 and shattered. On a successful save, they are shoved 1.",
-          "Collide": "Also stunned."
+          "Tags": "range 2",
+          "Description": "A foe in range is shoved 2.",
+          "Collide": "Foe is shattered."
         },
         {
           "Name": "Aether Split",
           "ActionCost": 1,
-          "Tags": "close blast 1",
-          "AreaEffect": "Deal 2 damage to all foes, then teleport 2."
+          "Tags": [ "range 5", "medium blast" ],
+          "AreaEffect": "2 damage.",
+          "Effects": "Teleport all characters in the area 1. Teleport self 3 instead if in the area."
         },
         {
           "Name": "Eruption",
           "ActionCost": 1,
-          "Tags": "1/round",
-          "Description": "A Rock spire in range 5 emits a close blast 1 pool of blight. Adjacent characters take 2 damage. The spire gains aura 1, which is difficult terrain."
+          "Tags": [ "range 5", "1/round" ],
+          "Description": "A Rock spire in range erupts. Adjacent characters take 2 damage, then the spire creates 3 spaces of difficult terrain in adjacent spaces."
         }
       ]
     },
     {
-      "Description": "As phase I, but:",
+      "Description": "As Phase I, but:",
       "Actions": [
+        {
+          "Name": "Orbital Strike",
+          "RoundAction": true,
+          "Description": "Choose a space in range 5. At the end of the round, the [name] removes itself from the battlefield and lands in the space, placing itself. Foes in a large blast area centered on them take [D]+[fray] damage as an area effect and have a pit created under them."
+        },
         {
           "Name": "Soar",
           "ActionCost": 0,
-          "Tags": "2/round",
-          "Description": "Fly 3 spaces in a straight line."
-        },
-        {
-          "Name": "Scorch",
-          "ActionCost": 1,
-          "Tags": "2/round",
-          "Description": "Choose a character in range 6. At the end of that character's turn, the Razer shoots an energy blast at them for a blast 1 explosion area effect.",
-          "AreaEffect": "Characters within must save. On a successful save, they take [D]+[fray]. On a failed save they take 2[D]+[fray]. Rock spires in the area are destroyed."
+          "Description": "Fly 3."
         }
       ]
     },
     {
-      "Description": "As phase I and II, but:",
-      "Traits": [ "Radiance", "Elden Chaos", "Aftermath" ]
+      "Description": "As Phase I, but:",
+      "Traits": "Radiance",
+      "Actions": {
+        "Name": "Elden Chaos",
+        "RoundAction": true,
+        "Description": "At the end of the round, the [name] fires a blast of pure ancient chaos. The blast is a large blast area effect centered on any space in line of sight from the [name]. Foes in the area must save. On a failed save, they take 2[D]+[fray] piercing damage, twice. On a successful save, they take piercing [fray] damage, twice. Characters in cover automatically succeed the save. Then destroy all rock spires."
+      }
     }
-  ]
+  ],
+  "Tactics": "The [name] is a destructive tempo fight in which every third round it can throw a massive attack out. Characters will want to make sure to keep Rock Spires around or make their own cover, and spread out so that the Razer becomes unable to deal maximum damage with Elden Chaos."
 }

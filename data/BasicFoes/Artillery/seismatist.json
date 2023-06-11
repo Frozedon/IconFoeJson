@@ -3,31 +3,33 @@
   "Inherits": "Artillery",
   "Type": "Foe",
   "UsesTemplate": true,
-  "Traits": "Stoneskin",
+  "Traits": "Earth Bond",
   "Actions": [
     {
       "Name": "Rumble",
       "ActionCost": 2,
-      "Tags": [ "ranged attack", "arc 6 + blast 1", "pierce" ],
-      "Hit": "2[D]+[fray].",
-      "Miss": "[fray].",
-      "AreaEffect": "[fray].",
+      "Tags": [ "attack", "arc 6" ],
+      "Hit": "2[D].",
+      "Miss": "1 damage.",
+      "AreaEffect": "1 damage.",
       "Effects": [
-        "Deals damage for every adjacent object or pit.",
-        "Attack target is poisoned. Poisoned foes are shattered."
+        "Releases a medium blast on the attack target as an area effect, dealing 3 piercing damage again.",
+        "Deals bonus damage for every object or pit in the area.",
+        "At round 3+, stuns any character on an object or inside a pit in the area."
       ]
     },
     {
-      "Name": "Seismic Crusher",
+      "Name": "Seismic Rumble",
       "ActionCost": 1,
       "Tags": "line 6",
-      "Description": "Non-flying characters are shoved to either side of the line.",
-      "Collide": "[fray]."
+      "Description": "Characters are shoved 1 in the direction of the line, in any order.",
+      "Collide": "Character is shattered and takes 1 piercing damage twice."
     },
     {
       "Name": "Upheaval",
       "ActionCost": 1,
-      "Description": "Summon a height 1 boulder object or a pit in a free space in range 6."
+      "Tags": "repeatable",
+      "Description": "Summon a height 1 boulder object or a a pit in free space in range 6."
     }
   ]
 }

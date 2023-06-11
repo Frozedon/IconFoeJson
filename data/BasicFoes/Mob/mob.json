@@ -1,9 +1,11 @@
 {
   "Name": "Mob",
   "SpecialClass": "Mob",
-  "Vitality": 1,
-  "HP": 1,
+  "MembersPerPlayer": 2,
+  "Hits": 2,
   "Speed": 4,
-  "Defense": 6,
+  "Defense": 8,
+  "FrayDamage": 3,
+  "DamageDie": 6,
   "Traits": "Mob"
 }

@@ -2,9 +2,9 @@
   "Name": "Artillery",
   "Class": "Artillery",
   "Vitality": 8,
-  "Speed": 3,
-  "Defense": 6,
-  "FrayDamage": 4,
+  "Speed": 4,
+  "Defense": 7,
+  "FrayDamage": 3,
   "DamageDie": 8,
-  "Traits": [ "Overdrive", "Aetherwall", "Slip" ]
+  "Traits": [ "Aetherwall", "Slip" ]
 }

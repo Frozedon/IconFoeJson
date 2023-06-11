@@ -1,6 +1,0 @@
-{
-  "Name": "Legendary Leader",
-  "Inherits": [ "Legend", "Leader" ],
-  "RemoveTraits": [ "Shelter", "Diaga" ],
-  "Traits": "Legendary Diaga"
-}

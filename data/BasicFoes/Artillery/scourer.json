@@ -7,17 +7,19 @@
     {
       "Name": "Scour",
       "ActionCost": 2,
-      "Tags": [ "ranged attack 8", "pierce", "mark" ],
+      "Tags": [ "attack", "line 8", "mark" ],
       "Hit": "2[D]+[fray].",
       "Miss": "[fray].",
-      "Effects": "Mark the target.",
-      "Mark": "Attacks against the marked target for the rest of combat gain +1 boon, deal bonus damage, ignore cover, and inflict shattered. This effect does not stack."
+      "Effects": [
+        "Mark the target. Attacks against the marked target for the rest of combat gain +1 boon, deal bonus damage, ignore cover, and inflict shattered. This effect does not stack.",
+        "At round 3+, this effect can mark any number of targets."
+      ]
     },
     {
       "Name": "Boiling Bolus",
       "ActionCost": 2,
-      "Tags": "terrain effect",
-      "Description": "Create a blast 1 terrain effect in range 6. Characters in the area take [fray] piercing damage as an area effect when the area is created. The area is difficult terrain and new objects cannot be created in the area. The area lasts until this ability is used again."
+      "Tags": "range 6",
+      "Description": "Create a medium blast terrain effect in range. Characters in the area take piercing [fray] damage as an area effect when the area is created. The area is difficult and dangerous terrain and new objects or terrain effects cannot be created in the area. The area lasts until this ability is used again."
     }
   ]
 }

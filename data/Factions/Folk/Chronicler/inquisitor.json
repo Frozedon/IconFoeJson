@@ -6,24 +6,26 @@
     {
       "Name": "Lightning Spear",
       "ActionCost": 2,
-      "Tags": [ "ranged attack 8" ],
+      "Tags": [ "attack", "line 10" ],
       "Hit": "2[D]+[fray].",
       "Miss": "[fray].",
-      "Effects": "Foe is vulnerable and electrified. Ignores cover against electrified foes."
+      "AreaEffect": "[fray].",
+      "Effects": "Attack target is vulnerable.",
+      "Charge": "Deal 2 piercing damage again to target and to all foes in range 3 of the target."
     },
     {
-      "Name": "Deluge",
+      "Name": "Reliquary",
       "ActionCost": 1,
-      "Tags": [ "repeatable" ],
-      "Description": "The inquisitor dashes 2, then deals 2 piercing damage to a foe in range 6."
+      "Tags": [ "range 6", "mark" ],
+      "Description": "The [name] marks a foe in range. While marked, all damage against the foe gains pierce, and that foe takes 1 piercing damage again after being hit or missed by any attack."
     },
     {
       "Name": "Expurgation",
       "ActionCost": 1,
       "Tags": [ "end turn", "delay" ],
-      "Description": "The inquisitor ends their turn, chooses a blast 2 area in range 6, and gains",
+      "Description": "The [name] ends their turn, chooses a large blast area in range 6, and gains",
       "Delay": "Their next turn must be slow. At the start of that turn, that area erupts with lightning.",
-      "PostAreaEffect": "Characters inside must save or take [fray] piercing damage, once, for every character in the area, or just once on a successful save. Electrified foes fail the save."
+      "PostAreaEffect": "Characters inside must save or take piercing [fray] damage, once, for every character in the area, or just once on a successful save."
     }
   ]
 }

@@ -2,27 +2,39 @@
   "Name": "Yaman",
   "Inherits": [ "Chronicler", "Skirmisher" ],
   "Type": "Foe",
-  "Traits": "Roppo",
   "Actions": [
     {
       "Name": "Axe Kick",
       "ActionCost": 1,
-      "Tags": [ "melee attack 2", "+1 boon" ],
+      "Tags": [ "attack", "+1 boon" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
-      "Effects": "Becomes a critical hit (+[D]) against bloodied foes."
+      "Effects": "Deals bonus damage to bloodied foes.",
+      "Charge": "Gains range 2 and may dash 2 before using this ability."
+    },
+    {
+      "Name": "Roppo",
+      "ActionCost": 1,
+      "Description": "The [name] takes a pose and gains the following interrupt until the start of their next turn.",
+      "Interrupts": {
+        "Name": "Roppo",
+        "Count": 2,
+        "Trigger": "A foe uses an ability in range 2, and the ability resolves.",
+        "Effects": "The [name] may dash 2, then deal 2 damage to an adjacent foe."
+      }
     },
     {
       "Name": "Hurl Boulder",
       "ActionCost": 1,
-      "Description": "A foe in range 4 takes [fray] damage, is slowed, and is shoved 1."
+      "Tags": [ "range 4" ],
+      "Description": "A foe in range takes 2 damage, is dazed, and is shoved 1."
     },
     {
       "Name": "Izuna Drop",
       "ActionCost": 1,
       "Tags": [ "end turn", "delay" ],
-      "Description": "The Yaman takes a pose, then ends their turn and gains",
-      "Delay": "Their next turn must be slow. At the start of that turn, they may dash 2. Then, if a foe is adjacent the Yaman grabs them, removing both of them from the battlefield, then placing both of them back in free space adjacent to each other in range 2. The foe must save. On a successful save, they take [D]+[fray] and are dazed. On a failed save, they are stunned and takes 2[D]+[fray]."
+      "Description": "The [name] takes a pose, then ends their turn and gains",
+      "Delay": "Their next turn must be slow. At the start of that turn, they may dash 2. Then, if a foe is adjacent the [name] grabs them, removing both of them from the battlefield, then placing both of them back in free space adjacent to each other in range 2. The foe must save. On a successful save, they take [fray] damage and are dazed. On a failed save, they are stunned and take 2[D]+[fray]."
     }
   ]
 }

@@ -6,27 +6,29 @@
     {
       "Name": "Hot Griddle",
       "ActionCost": 1,
-      "Tags": [ "melee attack" ],
-      "Hit": "[D]+[fray] and foe is burning.",
+      "Tags": [ "attack" ],
+      "Hit": "[D]+[fray].",
       "Miss": "[fray].",
-      "Effects": "Foe is branded. Critical hit (+[D]) against burning foes."
+      "Effects": [
+        "Foe is sealed.",
+        "Critical hit (+[D]) against sealed foes."
+      ]
     },
     {
       "Name": "Flapjack",
       "ActionCost": 1,
-      "Tags": [ "summon", "repeatable" ],
+      "Tags": [ "range 4", "repeatable" ],
       "Description": "The cook summons a flapjack in range 4.",
       "Summons": {
         "Name": "Flapjack",
-        "Tags": [ "Size 1", "Intangible" ],
-        "SummonEffects": "A character moving into the flapjack's space can pick it up, removing it. That character gains defiance. A character that already has defiance gains vigor 1. A character with vigor becomes unstoppable until the end of their next turn."
+        "Tags": [ "Size 1 summon", "intangible" ],
+        "SummonEffects": "A character other than the [name] moving into the flapjack's space can pick it up, removing it. That character gains defiance. A character that already has defiance gains 6 vigor. A character with vigor becomes unstoppable until the end of their next turn."
       }
     },
     {
       "Name": "Cook Up a Storm",
       "ActionCost": 2,
-      "Tags": "terrain effect",
-      "Description": "The Cook creates a blast 2 terrain effect until the start of their next turn. Foes in the area are shoved outside the of area when it is created. The area is dangerous terrain for foes, provides cover for allies, and allies that end their turn in the area may end a status or blight, then gain vigor 1 if they are bloodied."
+      "Description": "The [name] creates a burst 2 (self) terrain effect until the start of their next turn. Foes in the area are shoved until outside the of area when it is created. The area is dangerous terrain for foes, provides cover for allies, and allies in the area when it is created gain 3 vigor."
     }
   ]
 }

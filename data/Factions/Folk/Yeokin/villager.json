@@ -4,15 +4,24 @@
   "Type": "Foe",
   "Actions": [
     {
-      "Name": "Improvised Weapon",
-      "ActionCost": 2,
-      "Tags": [ "melee attack or ranged attack 3" ],
-      "AutoHit": "2 damage."
+      "Name": "Valorous Strike",
+      "ActionCost": 1,
+      "Tags": [ "attack" ],
+      "AutoHit": "[fray] damage.",
+      "Effects": [
+        "An ally in range 3 of a [name] gains 2 vigor, or 4 vigor if bloodied.", 
+        "May dash 1 before the attack."
+      ]
+    },
+    {
+      "Name": "Rally",
+      "ActionCost": 1,
+      "Effects": "Up to three allies adjacent to a [name] may dash 1 space, or one ally adjacent to a [name] may dash 3 spaces."
     },
     {
       "Name": "Take Heart",
       "ActionCost": 2,
-      "Description": "An adjacent character can end a status or blight. Then, if they are bloodied, they may gain vigor 1."
+      "Description": "All allies adjacent to a [name] may end a status and gain 2 vigor, or 4 vigor if they are bloodied."
     }
   ]
 }

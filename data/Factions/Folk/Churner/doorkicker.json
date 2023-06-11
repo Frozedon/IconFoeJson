@@ -6,15 +6,15 @@
     {
       "Name": "Knee in the Back",
       "ActionCost": 1,
-      "Tags": [ "melee attack" ],
+      "Tags": [ "attack" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
-      "Effects": "Critical hit if made from stealth (+[D])."
+      "Effects": "Deals bonus damage if made from stealth."
     },
     {
       "Name": "Blackjack",
       "ActionCost": 1,
-      "Description": "An adjacent foe is slowed. If made from stealth, this action also deals [fray] damage."
+      "Description": "An adjacent foe is dazed. If made from stealth, this action also deals [fray] damage."
     },
     {
       "Name": "Prowl",
@@ -25,7 +25,7 @@
     {
       "Name": "Wild Gamble",
       "ActionCost": 1,
-      "Description": "Roll 1d6. Dash exactly that many spaces in a straight line, or as far as possible, then deal damage equal to the spaces moved, twice, to an adjacent foe. If no foes are adjacent, deal no damage."
+      "Description": "Roll 1d6. Dash exactly that many spaces in a straight line, or as far as possible, then deal damage equal to the spaces moved to an adjacent foe. If no foes are adjacent, deal no damage."
     }
   ]
 }

@@ -19,7 +19,7 @@
   },
   {
     "Name": "Aerial Acrobat",
-    "Description": "If an attack misses this character, they may deal 2 damage to the attacker, then fly 2."
+    "Description": "If an attack misses the [name], they may deal 2 damage to the attacker, then fly 2."
   },
   {
     "Name": "Aetherskin",
@@ -47,7 +47,7 @@
   },
   {
     "Name": "Aura of Freedom",
-    "Description": "Aura 1. This character and allies in the aura are immune to terrain effects, pits, difficult, and dangerous terrain."
+    "Description": "Aura 1. The [name] and allies in the aura are immune to movement penalties from terrain and elevation."
   },
   {
     "Name": "Aura of Glamour",
@@ -313,9 +313,8 @@
     "Description": "Immune to difficult and dangerous terrain."
   },
   {
-    "Name": "Hold the Line [X]",
-    "DisplayName": "Hold the Line",
-    "Description": "If this character ends any turn without attacking, they gain Sturdy until the start of their next turn and Vigilance [X]. (Can't be stunned or dazed, and reduce the distance of all shoves by 1)"
+    "Name": "Hold the Line",
+    "Description": "If the [name] ends any turn without attacking, they gain Sturdy and Vigilance +1."
   },
   {
     "Name": "Hollow",
@@ -427,11 +426,11 @@
   },
   {
     "Name": "Monster Riding",
-    "Description": "This character starts combat riding a trained monster, and can also mount it as an action or by spending its standard move. While riding, the rider shares space with the monster and moves when it moves. If the two are separated, this effect ends until the monster is remounted.",
+    "Description": "The [name] starts combat riding a trained monster, and can also mount it as an action or by spending its standard move. While riding, the [name] shares space with the monster and moves when it moves, becoming unstoppable while moving this way. If the two are separated, this effect ends until the monster is remounted.",
     "Summons": {
       "Name": "Tame Monster",
-      "Tags": [ "Size 1", "20 HP", "Defense 6", "10 VIT" ],
-      "SummonActions": "During the rider's turn, can dash 4, then either shove a character 1 space or deal 2 damage to them."
+      "Tags": [ "Size 1 summon"],
+      "SummonActions": "During the [name]'s turn, can dash 4, then either shove a character 1 space or deal 2 damage to them."
     }
   },
   {
@@ -512,16 +511,12 @@
     "Description": "Grants cover to adjacent allies."
   },
   {
-    "Name": "Roppo",
-    "Description": "The first time on any turn a foe takes an action in range 2, the Yaman may dash 2, then deal 2 damage to an adjacent foe."
-  },
-  {
     "Name": "Saddle Up",
     "Description": "An adjacent ally can mount or dismount this character as a free action, entering and sharing its space. Whiled mounted, attacks take +1 curse against a rider. Allies can start any combat already riding this character. This character has room for two size 1 characters. If this character is defeated, characters dismount."
   },
   {
     "Name": "Salty",
-    "Description": "When this character deals self damage, they gain vigor 1 after taking the damage."
+    "Description": "When the Sailor sacrifices any amount, they gain 3 vigor after the triggering ability resolves."
   },
   {
     "Name": "Shambling",
@@ -543,7 +538,7 @@
   },
   {
     "Name": "Slam",
-    "Description": "This character's abilities have Collide: Character is dazed. Dazed characters also take [D]+[fray]."
+    "Description": "When a character collides from the [name]'s moves, they are slashed. Slashed characters take [fray] damage instead."
   },
   {
     "Name": "Slime Trail",
@@ -647,7 +642,7 @@
   },
   {
     "Name": "Tumbling",
-    "Description": "Moving up terrain costs no movement. Can phase through characters and doing so costs 0 movement."
+    "Description": "Moving up terrain costs no movement. Can phase through characters and doing so costs a maximum of 1 movement."
   },
   {
     "Name": "Tunnel",

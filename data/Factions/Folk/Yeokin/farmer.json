@@ -2,30 +2,31 @@
   "Name": "Farmer",
   "Inherits": [ "Yeokin", "Heavy" ],
   "Type": "Foe",
-  "Traits": "Strength",
   "Actions": [
     {
       "Name": "Righteous Fist",
       "ActionCost": 1,
-      "Tags": [ "melee attack", "true strike" ],
+      "Tags": [ "attack", "true strike" ],
       "Hit": "[D]+[fray] and shove 2.",
-      "Miss": "[fray] and shove 1."
+      "Miss": "[fray] and shove 1.",
+      "Effects": "Deals bonus damage to weakened foes.",
+      "Collide": "Foe is weakened."
     },
     {
-      "Name": "Formation",
+      "Name": "Community Watch",
       "ActionCost": 1,
-      "Description": "Shove all allies in range 2 1 space towards this character."
+      "Description": "Shove all allies in range 2 1 space towards this character, then any adjacent allies gain 2 vigor."
     },
     {
       "Name": "Bale",
       "ActionCost": 1,
-      "Description": "The Farmer uses a pitchfork, shovel, or sheer strength and picks up an adjacent foe size 1 or smaller, removing them from the battlefield and placing them in an adjacent space, then shoving them 1."
+      "Description": "The [name] uses a pitchfork, shovel, or sheer strength and picks up an adjacent character size 1 or smaller, removing them from the battlefield and placing them in an adjacent space, then shoving them 1. Weakened foes are shoved 3 instead."
     },
     {
       "Name": "On the Chin",
-      "ActionCost": 1,
-      "Tags": "stance",
-      "Description": "The Farmer gains aura 1. The farmer and allies in the aura are sturdy, and the farmer gains vigilance 1 at the end of their turn."
+      "ActionCost": 2,
+      "Tags": [ "end turn", "stance" ],
+      "Description": "The [name] gains aura 1. The [name] and allies in the aura are sturdy, and gain 3 vigor at the start of the [name]'s turn."
     }
   ]
 }

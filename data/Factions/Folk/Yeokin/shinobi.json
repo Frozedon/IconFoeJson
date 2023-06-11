@@ -6,34 +6,32 @@
     {
       "Name": "Whirling Blade",
       "ActionCost": 1,
-      "Tags": [ "ranged attack 4", "+1 boon" ],
+      "Tags": [ "attack", "range 3", "unerring", "+1 boon" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
-      "Effects": "A different foe in range 3 takes [fray] damage.",
-      "CriticalHit": "All foes in range 3 take [fray] damage."
+      "Effects": "All foes at exactly range 3 take 2 damage, including the attack target."
     },
     {
       "Name": "Shadow Clone",
       "ActionCost": 1,
-      "Tags": [ "summon" ],
-      "Description": "Summon a shadow clone in a free space in range 3. Clones disappear at the end of combat or if the Shinobi is defeated.",
+      "Tags": [ "range 3", "summon" ],
+      "Description": "Summon a shadow clone in a free space in range",
       "Summons": {
         "Name": "Shadow Clone",
-        "Tags": [ "Size 1" ],
-        "Traits": "Intangible",
-        "SummonEffects": "Foes adjacent to a shadow clone at the start of their turn take [fray] damage from the clone."
+        "Tags": [ "Summon", "size 1" ],
+        "SummonEffects": "Foes adjacent to a shadow clone at the start of their turn take 3 damage from the clone. The [name] and any of its allies may gain stealth if they end their turn adjacent to a clone. Clones disappear at the end of combat or if the [name] is defeated."
       }
     },
     {
       "Name": "Shadow Swap",
       "ActionCost": 0,
-      "Description": "The Shinobi swaps places with a shadow clone, teleporting."
+      "Description": "The [name] or an ally swaps places with a shadow clone in range 3 of them, teleporting."
     },
     {
       "Name": "Raiton",
-      "ActionCost": 1,
-      "Recharge": 6,
-      "Description": "The Shinobi calls down lightning on a foe in range 6. At the end of that foe's turn, they take 3 damage, five times and are blinded. Reduce this damage by one time for every other non-summon character in range 2, which could cause it to do no damage."
+      "ActionCost": 2,
+      "Tags": [ "range 6" ],
+      "Description": "The [name] calls down lightning on a foe in range. At the end of that foe's turn, they take 4 damage, five times and are blinded, then this effect ends. Reduce this damage by one time for every other adjacent character to the target, which could cause it to do no damage."
     }
   ]
 }

@@ -6,28 +6,27 @@
     {
       "Name": "High Pressure",
       "ActionCost": 2,
-      "Tags": [ "ranged attack 6", "blast 1" ],
-      "Hit": "[fray] damage, three times.",
+      "Tags": [ "attack", "range 6", "large blast", "pierce" ],
+      "Hit": "[fray] damage, four times.",
       "Miss": "[fray].",
       "AreaEffect": "[fray].",
-      "Effects": "Can target one end of a portal. If so, the attack travels through the portal and is then retargeted to a new space or character within range 3 of the other end of the portal."
+      "Effects": "Can target one end of a portal. If so, the attack travels through the portal and is then retargeted to a new space or character within range 3 of the other end of the portal, as if by rebound."
     },
     {
       "Name": "Whisk",
       "ActionCost": 1,
-      "Description": "A foe in range 6 becomes vulnerable, then is teleported 1. Vulnerable foes are teleported 3 instead."
+      "Tags": [ "range 6" ],
+      "Description": "A foe in range becomes vulnerable, then is teleported 1. Vulnerable foes are teleported 3 instead."
     },
     {
       "Name": "Aether Portal",
       "ActionCost": 1,
-      "Recharge": 6,
-      "Tags": [ "summon" ],
       "Description": "The Aerothurge chooses any two free spaces on the battlefield and links them with glowing portals.",
       "Summons": {
         "Name": "Portal",
         "IsObject": true,
-        "Tags": [ "Size 1", "Height 1" ],
-        "SummonEffects": "Any character adjacent to a portal can spend 1 space of movement to teleport adjacent to the other linked portal, or vice versa."
+        "Tags": [ "Size 1 object" ],
+        "SummonEffects": "Any character adjacent to a portal can spend 2 spaces of movement to teleport adjacent to the other linked portal, or vice versa."
       }
     }
   ]

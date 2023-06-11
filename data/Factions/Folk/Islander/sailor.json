@@ -7,7 +7,7 @@
     {
       "Name": "Bloody Crescent",
       "ActionCost": 1,
-      "Tags": [ "melee attack", "arc 3", "true strike" ],
+      "Tags": [ "attack", "arc 3", "true strike" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
       "AreaEffect": "[fray]."
@@ -16,20 +16,20 @@
       "Name": "Sea Legs",
       "ActionCost": 1,
       "Description": "Shove all adjacent characters 1 space in the same direction.",
-      "Collide": "Foes are dazed. Dazed foes are stunned."
+      "Collide": "Foes are slashed."
     },
     {
       "Name": "Plunder",
       "ActionCost": 1,
       "Tags": "repeatable",
-      "Description": "The Sailor dashes 1, then deals 2 damage and shoves an adjacent foe 1."
+      "Description": "The [name] dashes 1, then deals 2 damage and shoves an adjacent foe 1."
     },
     {
       "Name": "Send to Erenhelion",
       "ActionCost": 2,
       "Tags": "true strike",
-      "Description": "The Sailor winds up for a massive blow. An adjacent foe must save or take 3[D]+[fray] and become dazed, or just [D]+[fray] on a successful save.",
-      "Effects": "The Sailor takes damage equal to 25% of their max hp."
+      "Description": "The [name] winds up for a massive blow. An adjacent foe must save or take 3[D]+[fray] and become slashed, or just [D]+[fray] on a successful save.",
+      "Effects": "The [name] sacrifices 25% of their maximum hp after this ability resolves."
     }
   ]
 }

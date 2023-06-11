@@ -6,27 +6,27 @@
     {
       "Name": "Greenwrath",
       "ActionCost": 1,
-      "Tags": [ "melee attack or ranged attack 6" ],
+      "Tags": [ "attack", "range 6" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
-      "Effects": "Deals bonus damage and inflicts branded if a character is inside dangerous or difficult terrain."
+      "Effects": "Deals bonus damage and inflicts sealed if a character is inside dangerous or difficult terrain."
     },
     {
       "Name": "Sow",
       "ActionCost": 1,
-      "Tags": "multimark",
-      "Description": "The village priest marks a foe in range 4. That foe is poisoned and takes 1 piercing damage.",
+      "Tags": [ "range 4", "multimark" ],
+      "Description": "The [name] marks a foe in range. That foe takes 1 piercing damage when marked.",
       "Combo": {
         "Name": "Reap",
         "ActionsCost": 1,
-        "Description": "All foes marked by Sow take [fray] piercing damage."
+        "Description": "All foes marked by Sow take 3 piercing damage once for every foe marked by Sow."
       }
     },
     {
       "Name": "Sanctify",
       "ActionCost": 2,
-      "Tags": [ "terrain effect" ],
-      "TerrainEffect": "The village priest scatters salt in a close blast 1 area. Foes that end their turn in the area become pacified and burning. Allies that end their turn in the area can end a status or blight, then gain vigor 1 if they are bloodied. The area persists until this action is taken again."
+      "Tags": [ "range 2" ],
+      "TerrainEffect": "The [name] scatters salt in a medium blast area in range. Foes that end their turn in the area become pacified. Allies that end their turn in the area gain 2 vigor. This area ends if this ability is used again."
     }
   ]
 }

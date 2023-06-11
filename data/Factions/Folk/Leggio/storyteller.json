@@ -6,15 +6,14 @@
     {
       "Name": "Story Staff",
       "ActionCost": 1,
-      "Tags": "melee attack 2",
+      "Tags": [ "attack", "range 2" ],
       "AutoHit": "[fray] damage and foe is pacified. Pacified foes instead take [D]+[fray]."
     },
     {
       "Name": "Felicity",
       "ActionCost": 1,
-      "Tags": "multimark",
-      "Description": "An ally in range 4 is marked.",
-      "Mark": "When marked, and at the start of the storyteller's turn, the marked ally may dash 1.",
+      "Tags": [ "range 4", "multimark" ],
+      "Description": "An ally in range is marked. When marked, and at the start of the [name]'s turn, the marked ally may dash 1.",
       "Combo": {
         "Name": "Fleet",
         "ActionCost": 1,
@@ -25,7 +24,7 @@
       "Name": "Heroism",
       "ActionCost": 2,
       "Tags": "stance",
-      "Description": "The Storyteller gains aura 2. Allies in the aura gain +1 boon on all saves and may save against statuses at the start instead of end of their turn."
+      "Description": "The [name] gains aura 2. Allies in the aura gain +1 boon on all saves and may save against statuses at the start instead of end of their turn."
     }
   ]
 }

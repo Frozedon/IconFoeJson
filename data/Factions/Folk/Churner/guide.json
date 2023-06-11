@@ -7,18 +7,18 @@
     {
       "Name": "Tranquilize",
       "ActionCost": 1,
-      "Tags": [ "ranged attack 6 or melee attack" ],
+      "Tags": [ "attack", "range 6" ],
       "AutoHit": "[fray] damage and foe is pacified. Pacified foes take [D]+[fray] damage instead."
     },
     {
       "Name": "Grappling Hook",
       "ActionCost": 1,
-      "Description": "The Guide teleports adjacent to a summon or object in range 3. Alternately, it can teleport adjacent to a foe in range, and that foe becomes branded."
+      "Description": "The [name] teleports adjacent to a summon or object in range. Alternately, it can teleport adjacent to a foe in range, then shove that foe 1."
     },
     {
       "Name": "Double Time",
       "ActionCost": 1,
-      "Description": "Roll 1d6. The Guide chooses a number of allies equal to half that number, then shoves them a number of spaces equal to that number in any direction."
+      "Description": "Roll 1d6. The [name] chooses a number of allies equal to half that number, then shoves them a number of spaces equal to that number in any direction."
     }
   ]
 }

@@ -6,27 +6,28 @@
     {
       "Name": "Fist of Fury",
       "ActionCost": 1,
-      "Tags": [ "melee attack" ],
+      "Tags": [ "attack" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
-      "Effects": "Becomes a critical hit (+[D]) against dazed foes."
+      "Effects": "Attack target is weakened.",
+      "Charge": "Deal 2 damage to all adjacent foes."
     },
     {
       "Name": "Roundhouse Kick",
       "ActionCost": 1,
-      "Description": "An adjacent foe is shoved 1 in any direction, including diagonally."
+      "Description": "The [name] rushes 1, then adjacent character is shoved 1 in any direction, including diagonally."
     },
     {
       "Name": "Temple Bell",
       "ActionCost": 1,
       "Tags": [ "summon", "end turn", "delay" ],
-      "Description": "The Bell Warden ends their turn and gains",
-      "Delay": "Their next turn must be slow. At the start of that turn, summon a temple bell in an adjacent space.",
+      "Description": "The [name] ends their turn and gains",
+      "Delay": "Their next turn must be slow. At the start of that turn, summon a temple bell in a free adjacent space.",
       "Summons": {
         "Name": "Temple Bell",
         "IsObject": true,
-        "Tags": [ "Size 1", "Height 1" ],
-        "SummonEffects": "When summoned, or when a character collides with it, releases a massive ringing. All characters in range 2 except the Bellkeeper must save or become dazed. Dazed characters take [D]+[fray] damage. This effect can't trigger more than once a round. Multiple bells can be summoned at once."
+        "Tags": [ "Size 1 object" ],
+        "SummonEffects": "When summoned, or when a character collides with it, releases a massive ringing. All characters in range 2 except the [name] must save or become weakened. Weakened characters take [fray] damage twice instead of saving. This effect can't trigger more than once a round. Multiple bells can be summoned at once."
       }
     }
   ]

@@ -6,10 +6,10 @@
     {
       "Name": "Flame Dance",
       "ActionCost": 1,
-      "Tags": [ "ranged attack 6", "pierce" ],
+      "Tags": [ "attack", "range 6", "pierce" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
-      "Effects": "Dash 2, then deal [fray] piercing damage to a different character in range 6."
+      "Effects": "Dash 1, then deal piercing [fray] damage to a different character in range 6."
     },
     {
       "Name": "Carnivale",
@@ -18,15 +18,15 @@
       "Description": "The Fire dancer summons a bomb in range 4.",
       "Summons": {
         "Name": "Bomb",
-        "Tags": [ "1 HP", "Attacks automatically hit" ],
-        "SummonEffects": "Can be shoved. When taking any amount of damage, explodes for a blast 1 area effect explosion. Characters within become vulnerable, then must save or take [D]+[fray] to characters within and become burning, or just [fray] damage."
+        "Tags": [ "Summon" ],
+        "SummonEffects": "When any character enters its space, it explodes for a small blast area effect explosion. Characters within become vulnerable, then must save or take 2 piercing damage twice, or just 2 piercing damage on a successful save."
       }
     },
     {
       "Name": "Juggle",
       "ActionCost": 2,
-      "Tags": "stance",
-      "Description": "The fire dancer starts juggling flames. While in this stance, at the end of their turn, or when they dash, they can deal [fray] piercing damage to a character in range 6."
+      "Tags": [ "stance" ],
+      "Description": "The [name] starts juggling flames. While in this stance, at the start and end of their turn, they may dash 2, then deal 2 piercing damage as an area effect to all foes in range 3."
     }
   ]
 }

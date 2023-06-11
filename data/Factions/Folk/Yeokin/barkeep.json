@@ -6,23 +6,23 @@
     {
       "Name": "Flaming Cocktail",
       "ActionCost": 1,
-      "Tags": [ "ranged attack 6", "cross 1" ],
+      "Tags": [ "attack", "range 6", "small blast", "pierce" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
-      "AreaEffect": "[fray]."
+      "AreaEffect": "[fray].",
+      "Effects": "Round 3+, large blast."
     },
     {
       "Name": "Bar Brawler",
-      "ActionCost": 1,
+      "ActionCost": 2,
       "Tags": "stance",
-      "Description": "The Barkeep gains counter and sturdy. Any time a character ends their turn adjacent to the barkeep in this stance, they must save or take 2 piercing damage and be shoved 1. This stance ends at the start of the Barkeep's next turn."
+      "Description": "The [name] takes a fighting stance, with the following benefits:\n• They gain counter and sturdy.\n• Any time a foe ends their turn adjacent to the [name] in this stance, they take 2 piercing damage and are shoved 1.\n• If a foe collides with the [name], they take 2 piercing damage and are shoved 1, but only once a round."
     },
     {
       "Name": "Barrel Roll",
       "ActionCost": 1,
-      "Tags": [ "end turn", "delay" ],
-      "Description": "The Barkeep chooses a direction, ends their turn, then gains",
-      "Delay": "Their next turn must be slow. At the start of that turn, they roll a barrel in a line pattern drawn in that direction from 2-6 spaces. Characters the barrel passes through take [fray] piercing damage and are shoved 1 to either side. When the barrel ends its movement, it explodes for a blast 1 area effect, dealing [D]+[fray] piercing damage and shattering all characters within."
+      "Tags": [ "range 5", "end turn", "small blast" ],
+      "AreaEffect": "2 damage, and shove 2 away from the origin point. At round 3+, becomes a large blast and any character in the center space must save or become stunned."
     }
   ]
 }

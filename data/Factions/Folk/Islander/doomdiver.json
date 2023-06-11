@@ -7,21 +7,22 @@
     {
       "Name": "Spear Slash",
       "ActionCost": 1,
-      "Tags": [ "melee attack 2", "+1 boon" ],
+      "Tags": [ "attack", "range 3", "+1 boon" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
-      "Effects": "Deals bonus damage to foes at range 2."
+      "Effects": "Deals bonus damage to and gains unerring against foes at exactly range 3."
     },
     {
       "Name": "Slide",
       "ActionCost": 1,
       "Tags": "repeatable",
-      "Description": "The Diver dashes 4 with phasing, dealing 2 damage to all characters it passes through."
+      "Description": "The [name] dashes 3 with phasing, dealing 2 damage to all characters it passes through."
     },
     {
       "Name": "Dive",
       "ActionCost": 2,
-      "Description": "The Diver chooses a foe in range 4, then removes themselves from the battlefield. At the end of that foe's next turn, that foe must save as the Diver descends, dealing [D] four times on a failed save, or twice on a successful save. Lower this damage by [D] for every adjacent ally of the target, which could cause it to do no damage. Then, place the Diver in any free space in range 2."
+      "Tags": [ "range 4", "end turn" ],
+      "Description": "The [name] chooses a foe in range, then removes themselves from the battlefield. At the end of that foe's next turn, that foe must save as the [name] descends, dealing [D]+[fray] three times on a failed save, or just once on a successful save. Lower this damage by [D]+[fray] for every adjacent ally of the target, which could cause it to do no damage. Then, place the [name] in any free space in range 2."
     }
   ]
 }

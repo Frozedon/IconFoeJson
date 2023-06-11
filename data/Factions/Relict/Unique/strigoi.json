@@ -1,0 +1,28 @@
+{
+  "Name": "Strigoi",
+  "Inherits": [ "Relict", "Skirmisher" ],
+  "Type": "Foe",
+  "Traits": [ "Phasing", "Blood Hunger" ],
+  "Actions": [
+    {
+      "Name": "Feral Frenzy",
+      "ActionCost": 1,
+      "Tags": [ "attack" ],
+      "Hit": "2 damage, three times.",
+      "Miss": "2 damage, once.",
+      "Effects": "May dash 2 before and after this action."
+    },
+    {
+      "Name": "Bloody Spit",
+      "ActionCost": 1,
+      "Tags": [ "line 3" ],
+      "AreaEffect": "Deal [fray] damage. If foe has vigor, deal [D] instead, and they are dazed."
+    },
+    {
+      "Name": "Feral Pounce",
+      "ActionCost": 1,
+      "Tags": [ "end turn" ],
+      "Description": "The [name] gains stealth. Choose a foe in range 3. If, at the end of that foe's next turn, they are still in range 3 of the [name], it may teleport adjacent to them and deal 2 damage, three times, ending this effect and stealth."
+    }
+  ]
+}

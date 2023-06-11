@@ -4,15 +4,11 @@
   "Type": "Foe",
   "Actions": [
     {
-      "Name": "Hookspear",
-      "ActionCost": 1,
-      "Description": "A foe in range 2 takes [fray] damage, is electrified, and is is shoved 1 towards the Servitor, then must save or become winded. Electrified characters fail the save."
-    },
-    {
       "Name": "Impaling Jab",
-      "ActionCost": 0,
+      "ActionCost": 1,
       "Tags": [ "line 3", "true strike" ],
-      "AreaEffect": "Characters take 2 damage."
+      "PreEffects": "The [name] may rush 1 before using this ability.",
+      "AreaEffect": "Characters take 2 damage. Any character at the very end of the line is weakened."
     }
   ]
 }

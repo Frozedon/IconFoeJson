@@ -1,41 +1,94 @@
 {
   "Name": "Wraith",
   "Inherits": [ "Relict", "Artillery" ],
-  "RemoveTraits": "Aetherwall",
-  "Traits": [ "Flying", "Ethereal (Resistance)" ],
+  "Traits": [ "Flying", "Phasing" ],
   "Actions": [
     {
       "Name": "Chain Lightning",
       "ActionCost": 2,
-      "Tags": [ "ranged attack 8", "pierce" ],
-      "Hit": "2[D]+[fray].",
-      "Miss": "[fray].",
-      "AreaEffect": "A foe in range 3 from the attack target also takes [fray] damage, then must save. If they fail the save, this effect repeats, choosing a new foe in range 3 of them instead. A character can only be chosen once by this effect, but it can chain any number of times. Electrified characters take +1 curse on this save."
+      "Tags": [ "attack", "range 8", "burst 2 (target)" ],
+      "Hit": "[D]+2, twice.",
+      "Miss": "2 damage, twice.",
+      "AreaEffect": "2 damage, twice.",
+      "Combo": {
+        "Name": "Soul Spark",
+        "ActionCost": 1,
+        "Tags": [ "range 6", "summon" ],
+        "Description": "Creates a Soul Spark summon in free space in range. Round 3+: Two sparks.",
+        "Summons": {
+          "Name": "Soul Spark",
+          "Tags": [ "Summon", "size 1", "intangible" ],
+          "SummonEffects": [
+            "Foes adjacent to Soul Sparks are vulnerable+, and all damage deal to them becomes piercing.",
+            "If a foe ends their turn adjacent to a spark, it releases a small blast pulse centered on it, dealing 1 piercing damage twice to all foes as an area effect.",
+            "The [name] can target the spark with Chain Lightning. If they do, it gains rebound and the spark triggers its area effect."
+          ]
+        }
+      }
     },
     {
-      "Name": "Shift",
+      "Name": "Unstable Charge",
       "ActionCost": 1,
-      "Description": "Teleport 2."
-    },
-    {
-      "Name": "Shock",
-      "ActionCost": 1,
-      "Description": "A character in range 8 is vulnerable. Vulnerable foes take [fray] piercing damage and become electrified."
+      "Tags": [ "range 6", "mark" ],
+      "Description": "Mark a foe in range. At the end of that foe's turn, they take 1 piercing damage, once, for every other character in range 2, then become vulnerable. Then, this mark ends."
     }
   ],
   "ConditionalAbilities": [
     {
       "Chapter": 2,
-      "RemoveActions": "Shift",
+      "RemoveActions": "Chain Lightning",
       "Actions": {
-        "Name": "Shift",
-        "ActionCost": 0,
-        "Description": "Teleport 2."
+        "Name": "Chain Lightning",
+        "ActionCost": 2,
+        "Tags": [ "attack", "range 8", "burst 2 (target)" ],
+        "Hit": "[D]+2, twice.",
+        "Miss": "2 damage, twice.",
+        "AreaEffect": "2 damage, twice.",
+        "Combo": {
+          "Name": "Soul Spark",
+          "ActionCost": 1,
+          "Tags": [ "range 6", "summon" ],
+          "Description": "Creates a Soul Spark summon in free space in range. Round 3+: Two sparks.",
+          "Summons": {
+            "Name": "Soul Spark",
+            "Tags": [ "Summon", "size 1", "intangible" ],
+            "SummonEffects": [
+              "Deal 1 piercing damage to all adjacent foes when summoned.",
+              "Foes adjacent to Soul Sparks are vulnerable+, and all damage deal to them becomes piercing.",
+              "If a foe ends their turn adjacent to a spark, it releases a small blast pulse centered on it, dealing 1 piercing damage twice to all foes as an area effect.",
+              "The [name] can target the spark with Chain Lightning. If they do, it gains rebound and the spark triggers its area effect."
+            ]
+          }
+        }
       }
     },
     {
       "Chapter": 3,
-      "Traits": "Eternal Rage"
+      "RemoveActions": "Chain Lightning",
+      "Actions": {
+        "Name": "Chain Lightning",
+        "ActionCost": 2,
+        "Tags": [ "attack", "range 8", "burst 2 (target)" ],
+        "Hit": "[D]+2, twice.",
+        "Miss": "2 damage, twice.",
+        "AreaEffect": "2 damage, twice.",
+        "Combo": {
+          "Name": "Soul Spark",
+          "ActionCost": 1,
+          "Tags": [ "range 6", "summon" ],
+          "Description": "Creates a Soul Spark summon in free space in range. Round 3+: Two sparks.",
+          "Summons": {
+            "Name": "Soul Spark",
+            "Tags": [ "Summon", "size 1", "intangible" ],
+            "SummonEffects": [
+              "Deal 1 piercing damage to all adjacent foes when summoned.",
+              "Foes adjacent to Soul Sparks are vulnerable+, and all damage deal to them becomes piercing.",
+              "If a foe ends their turn adjacent to a spark, it releases a large blast pulse centered on it, dealing 1 piercing damage twice to all foes as an area effect.",
+              "The [name] can target the spark with Chain Lightning. If they do, it gains rebound and the spark triggers its area effect."
+            ]
+          }
+        }
+      }
     }
   ]
 }

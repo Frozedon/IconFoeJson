@@ -6,12 +6,11 @@
     {
       "Name": "Lightning Axe",
       "ActionCost": 2,
-      "Recharge": 5,
-      "Tags": [ "melee attack", "close blast 1", "true strike" ],
-      "Hit": "2[D]+[fray], shove 1, and electrify.",
-      "Miss": "[fray] and shove 1.",
-      "AreaEffect": "[fray] and shove 1.",
-      "Effects": "Teleport all electrified foes 1."
+      "Tags": [ "attack", "range 2", "medium blast", "true strike", "usable when bloodied" ],
+      "Hit": "2[D]+[fray] and shove 2.",
+      "Miss": "[D]+[fray] and shove 1.",
+      "AreaEffect": "[D]+[fray] and shove 1.",
+      "Collide": "Foe is weakened."
     }
   ]
 }

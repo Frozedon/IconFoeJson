@@ -2,18 +2,19 @@
   "Name": "Husk",
   "Inherits": [ "Relict", "Mob" ],
   "Type": "Foe",
+  "Speed": 2,
+  "Traits": [ "Endless Dead", "Fading" ],
   "Actions": [
     {
-      "Name": "Latch On",
+      "Name": "Soul Frenzy",
       "ActionCost": 2,
-      "Description": "The Husk moves up to 3 spaces in a straight line, then an adjacent character becomes immobile until the Husk is no longer adjacent or is defeated."
+      "Tags": "attack",
+      "Effects": "All [name]s may rush 1 space. Then foes adjacent to one or more [name]s take 2 piercing damage."
     },
     {
-      "Name": "Lurching Grab",
+      "Name": "Soul Sacrifice",
       "ActionCost": 2,
-      "Tags": "melee attack",
-      "Description": "Dash 1, then",
-      "AutoHit": "1 damage. If the target started this turn immobile, then deal 3 piercing damage."
+      "Description": "Choose a bloodied character adjacent to one or more [name]s, then destroy all [name]s adjacent to that character. If that character is an ally, they gain 2 vigor per husk destroyed. If that character was a foe, they must sacrifice 2 per [name] destroyed."
     }
   ]
 }

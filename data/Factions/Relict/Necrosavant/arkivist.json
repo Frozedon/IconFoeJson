@@ -2,12 +2,13 @@
   "Name": "Arkivist",
   "Inherits": "Necrosavant",
   "Type": "Foe",
-  "Traits": "Aura of the Endless Legion",
+  "Traits": "Shepherd of the Dead",
   "Actions": [
     {
-      "Name": "Call the Lost",
+      "Name": "Incantation of Reclamation",
       "ActionCost": 1,
-      "Description": "Summon 3 husks adjacent to a foe in range 8."
+      "Tags": [ "range 3" ],
+      "Description": "The [name] summons a husk in a free space in range, then deals 1 piercing damage to all foes adjacent to that husk."
     }
   ]
 }

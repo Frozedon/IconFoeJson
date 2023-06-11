@@ -2,27 +2,44 @@
   "Name": "Silent One",
   "Inherits": [ "Relict", "Leader" ],
   "Type": "Foe",
-  "Traits": [ "Defiance", "Ethereal (Resistance)" ],
+  "Traits": [ "Defiance", "Ethereal" ],
   "Actions": [
     {
       "Name": "Mournful Wail",
       "ActionCost": 1,
-      "Tags": "ranged attack 6",
-      "Hit": "[D]+[fray] and foe is pacified.",
-      "Miss": "[fray]."
+      "Tags": [ "attack", "range 6" ],
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "Effects": "Foe is pacified. Deals bonus damage to pacified foes and does not break the pacified condition."
     },
     {
       "Name": "Fear",
       "ActionCost": 1,
-      "Tags": [ "multimark", "repeatable" ],
-      "Description": "Mark a foe in range 6.",
-      "Mark": "While marked, that foe gains +1 curse on attacks and saves unless adjacent to an ally. If they end their turn adjacent to an ally, they can pass a save to clear this mark."
+      "Tags": [ "multimark" ],
+      "Description": "Mark a foe in range 6. While marked, that foe deals half damage unless adjacent to an ally. If they end their turn adjacent to an ally, they can save to clear this mark."
+    },
+    {
+      "Name": "Dreadful Sobbing",
+      "ActionCost": 1,
+      "Description": "The [name] gains aura 1 until the start of its next turn. Characters in the aura are pacified+ and cannot be cured."
     },
     {
       "Name": "Possess",
       "ActionCost": 2,
-      "Recharge": 5,
-      "Description": "The Silent one moves into and shares the space of an adjacent foe, possessing them. While possessing that character, they are intangible, share its space, move when it moves. They can still take actions normally, but can't leave the possessed character's space. The possessed character takes a free action at the end of its turn, which the Silent One chooses: dash 3 in any direction, deal [D]+[fray] to an adjacent character, or become pacified. A character can save to remove this effect at the end of their turns, and if successful becomes immune to it for the rest of combat. When possession ends, the silent one appears in a free adjacent space."
+      "Tags": [ "1/combat" ],
+      "Description": "The [name] moves into and shares the space of an adjacent character, possessing them, with the following effects:",
+      "ListedItems": [
+        { "Description": "While possessing that character, they are intangible, share its space, and move when it moves. They can still take actions normally, but can't leave the possessed character's space." },
+        {
+          "Description": "The possessed character takes a free action at the end of its turn, which the [name] chooses:",
+          "ListedItems": [
+            { "Description": "Be shoved by the Silent one 3 spaces in any direction." },
+            { "Description": "Deal [D] damage to an adjacent character." },
+            { "Description": "Become pacified." }
+          ]
+        },
+        { "Description": "A character may save to remove this effect at the end of their turns after the above effect activates. When possession ends, the [name] appears in a free adjacent space." }
+      ]
     }
   ]
 }

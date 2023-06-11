@@ -5,36 +5,54 @@
     {
       "Name": "Overpower",
       "ActionCost": 1,
-      "Tags": [ "melee attack", "true strike" ],
+      "Tags": [ "attack", "true strike" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
-      "AreaEffect": "All foes adjacent to the target take 2 damage."
+      "AreaEffect": "All foes adjacent to the target take [fray] damage."
     },
     {
-      "Name": "Strike",
+      "Name": "Hook Spear",
       "ActionCost": 1,
-      "Description": "An adjacent foe must save or become dazed. Dazed foes take [fray] damage."
+      "Tags": [ "range 2" ],
+      "Description": "A foe in range 2 is shoved 1 towards the [name] and slashed."
+    },
+    {
+      "Name": "Grave Guard",
+      "ActionCost": 1,
+      "Tags": [ "range 2" ],
+      "Description": "All allies in range may rush 1 towards this character. Bloodied allies that rushed this way gain 3 vigor."
     },
     {
       "Name": "Death March",
       "ActionCost": 1,
-      "Description": "The Wight and all adjacent allies may move 1 space in the same direction, ignoring engagement, then each may deal 2 damage to an adjacent foe."
+      "Tags": [ "range 2" ],
+      "Description": "The [name] and all allies in range may rush 1 space in the same direction, then all foes adjacent to any character that moved this way take 2 damage."
     }
   ],
   "ConditionalAbilities": [
     {
       "Chapter": 2,
+      "RemoveActions": "Death March",
       "Actions": [
         {
-          "Name": "Formation",
+          "Name": "Death March",
           "ActionCost": 0,
-          "Description": "Shove all allies in range 2 1 space towards this character."
+          "Tags": [ "range 2" ],
+          "Description": "The [name] and all allies in range may rush 1 space in the same direction, then all foes adjacent to any character that moved this way take 2 damage."
         }
       ]
     },
     {
       "Chapter": 3,
-      "Traits": "Defiance"
+      "RemoveActions": "Death March",
+      "Actions": [
+        {
+          "Name": "Death March",
+          "ActionCost": 0,
+          "Tags": [ "range 2" ],
+          "Description": "The [name] and all allies in range may rush 1 space in the same direction, then all foes adjacent to any character that moved this way take [fray] damage."
+        }
+      ]
     }
   ]
 }

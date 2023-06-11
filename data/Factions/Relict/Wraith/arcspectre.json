@@ -4,14 +4,10 @@
   "Type": "Foe",
   "Actions": [
     {
-      "Name": "Storm of Wrath",
+      "Name": "Synaptic Storm",
       "ActionCost": 2,
-      "Recharge": 6,
-      "Tags": [ "ranged attack 8", "blast 2", "pierce" ],
-      "Hit": "[D] three times.",
-      "Miss": "[D].",
-      "AreaEffect": "[D].",
-      "Effects": "All foes must save or become electrified and vulnerable. Electrified characters fail the save."
+      "Tags": [ "range 6", "terrain effect" ],
+      "Description": "Creates a massive network storm in range, which could overlap characters. The storm is a small blast terrain effect that is dangerous terrain, which the [name] and allies ignore. Foes in the storm are vulnerable+. Using this ability again with an active storm can move the storm 2 spaces instead of replacing it. If used this way, it costs 1 action. At round 3+, moving a storm is a free action."
     }
   ]
 }

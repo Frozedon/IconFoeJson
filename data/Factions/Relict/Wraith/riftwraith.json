@@ -2,13 +2,18 @@
   "Name": "Rift Wraith",
   "Inherits": "Wraith",
   "Type": "Foe",
-  "Traits": "Open Rift",
   "Actions": [
     {
-      "Name": "Boiling Curse",
-      "ActionCost": 0,
-      "Tags": [ "terrain effect" ],
-      "Description": "Choose a free space in range 6. The next time a non-relict character passes over such a space, it explodes in a blast 1 area effect. Non-relict characters inside take [D] and are electrified. Electrified characters are stunned. The space lasts until the end of combat or until detonated."
+      "Name": "Rift Step",
+      "ActionCost": 1,
+      "Tags": [ "range 6" ],
+      "Description": "Teleport to the space of any pit in range."
+    },
+    {
+      "Name": "Open Rift",
+      "ActionCost": 1,
+      "Tags": [ "range 6" ],
+      "Description": "Create a pit under any character in range. Then, the [name] may teleport that character to any other pit space in range 3 of their target's location."
     }
   ]
 }

@@ -2,12 +2,11 @@
   "Name": "Arc Ghul",
   "Inherits": "Ghul",
   "Type": "Foe",
-  "Traits": "Living Lightning",
   "Actions": [
     {
       "Name": "Soul Shift",
-      "ActionCost": 0,
-      "Description": "The Ghul and any adjacent relict teleport 3. When they reappear, they must be placed adjacent if possible."
+      "ActionCost": 2,
+      "Description": "The [name] and any adjacent relict teleport 6. When they reappear, they must be placed adjacent if possible."
     }
   ]
 }

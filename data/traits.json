@@ -54,6 +54,10 @@
     "Description": "Aura 2. Foes outside the aura cannot directly target this character with abilities."
   },
   {
+    "Name": "Aura of Immortality",
+    "Description": "While the [name] is undefeated, it has Aura 2. Allies without this trait inside cannot be reduced past 1 HP."
+  },
+  {
     "Name": "Aura of Resilience",
     "Description": "Aura 2. Self and allies in the aura gain +1 boon on saves and are immune to critical hits. (downgrade critical hits to regular hits)"
   },
@@ -71,7 +75,7 @@
   },
   {
     "Name": "Automata",
-    "Description": "This character always attempts to attack and focus on the closest foe at the start of its turn."
+    "Description": "If the [name] attacks the same character as last turn, it deals bonus damage and gains +1 boon. This effect stacks."
   },
   {
     "Name": "Battle Platform",
@@ -80,6 +84,10 @@
   {
     "Name": "Beyond Death",
     "Description": "When defiance activates, roll a d6. On a 4+, this character immediately regains defiance. Attacks with True Strike bypass this trait."
+  },
+  {
+    "Name": "Blood Hunger",
+    "Description": "Deals +2 damage with all abilities against bloodied foes."
   },
   {
     "Name": "Blood Rush",
@@ -148,6 +156,10 @@
   {
     "Name": "Curse the Eyeless",
     "Description": "Evasion against blinded or slowed characters. (Roll a d6 when targeted by an attack. On a 4+, the attack automatically misses. Check before the attack roll)"
+  },
+  {
+    "Name": "Dark Hollow",
+    "Description": "Deals bonus damage and has evasion unless there's two or more adjacent characters."
   },
   {
     "Name": "Death Whistle",
@@ -223,6 +235,10 @@
     "EncounterBudget": 2
   },
   {
+    "Name": "Empty Husk",
+    "Description": "This character becomes a height 1 object when defeated instead of a character, and cannot be returned to the battlefield."
+  },
+  {
     "Name": "Enrage",
     "Description": "+1 action while bloodied."
   },
@@ -239,14 +255,8 @@
     "Description": "When defeated, instead remain at 1 hp and become intangible until the end of their next turn. At the end of that turn, become defeated."
   },
   {
-    "Name": "Ethereal (Resistance)",
-    "DisplayName": "Ethereal",
-    "Description": "Phasing, and has resistance unless there's an adjacent foe."
-  },
-  {
-    "Name": "Ethereal (Evasion)",
-    "DisplayName": "Ethereal",
-    "Description": "Phasing, and has evasion unless there's an adjacent foe."
+    "Name": "Ethereal",
+    "Description": "Phasing, and has resistance unless adjacent to a foe."
   },
   {
     "Name": "Evasion",
@@ -302,7 +312,7 @@
   },
   {
     "Name": "Heavy Armor",
-    "Description": "Resistant to damage from adjacent spaces."
+    "Description": "Resistant to abilities used from adjacent spaces."
   },
   {
     "Name": "Heavy Metal Shield",
@@ -322,7 +332,7 @@
   },
   {
     "Name": "Immortal Disregard",
-    "Description": "Attacks never miss this character.",
+    "Description": "Attacks never miss the [name] (turn any miss into a hit).",
     "Defense": 0
   },
   {
@@ -442,10 +452,6 @@
     "Description": "The priest has Aura 2. Poisoned foes in the aura get +1 curse on attacks and saves."
   },
   {
-    "Name": "Open Rift",
-    "Description": "Create a pit under any character hit by the wraith's attacks."
-  },
-  {
     "Name": "Overdrive",
     "Description": "At the start of round 4, this character becomes powered up. All their attacks are critical hits on hit ([+D])."
   },
@@ -496,7 +502,7 @@
   },
   {
     "Name": "Regeneration",
-    "Description": "Gain vigor 1 at the end of your turn."
+    "Description": "If bloodied, gain 4 vigor at the end of your turn."
   },
   {
     "Name": "Regenerator",
@@ -522,6 +528,10 @@
     "Name": "Shambling",
     "Description": "Cannot dash.",
     "DashMultiplier": 0
+  },
+  {
+    "Name": "Shed Flesh",
+    "Description": "After taking damage that bloodies it, becomes intangible until the start of its next turn as it wriggles out of its flesh. For the rest of combat, gains phasing and flying."
   },
   {
     "Name": "Shelter",
@@ -565,6 +575,10 @@
     "Description": "Attacks from Stealth are critical hits (+[D])."
   },
   {
+    "Name": "Soul Mass",
+    "Description": "Can share space with other characters. Foes treat the space as difficult terrain, are slashed+ while inside, and have cover from the outside, but are otherwise targetable normally. Any foes that start their turn inside its space take [fray] damage. Foes that attempt to leave the [name]'s space by any means on their turn must save or become unable to exit it until the end of the current turn."
+  },
+  {
     "Name": "Spindly Limbs",
     "Description": "Ignores engagement from other character, and spends no additional movement moving up or down terrain."
   },
@@ -582,7 +596,7 @@
   },
   {
     "Name": "Stoneskin",
-    "Description": "Has resistance while adjacent to an object. (Take 1/2 damage, rounded up)"
+    "Description": "While adjacent to an object, has resistance."
   },
   {
     "Name": "Street Fighter",
@@ -606,7 +620,7 @@
   },
   {
     "Name": "Surreality",
-    "Description": "Starts combat bloodied, but with vigor 1."
+    "Description": "When this character would be defeated, instead becomes intangible until the end of its next turn, then removes itself from the battlefield. It cannot return."
   },
   {
     "Name": "Swarm",
@@ -654,15 +668,11 @@
   },
   {
     "Name": "Unstable",
-    "Description": "When defeated, explodes in a blast 1 explosion centered on this cgaracter. Characters inside take [D] piercing damage, twice, as an area effect. This character is then removed from the battlefield. Create a pit in the area it vacated."
+    "Description": "When defeated, explodes in a large blast area effect explosion centered on the [name]. Characters inside take piercing fray damage, twice, as an area effect. The [name] is then removed from the battlefield. Create a pit in the area it vacated."
   },
   {
     "Name": "Unstoppable",
     "Description": "Immune to all statuses. Can't be immobilized, shoved, or teleported by foes."
-  },
-  {
-    "Name": "Unstable Reality",
-    "Description": "1/turn, teleports 1 when damaged by an ability."
   },
   {
     "Name": "Vengeance",

@@ -3,14 +3,13 @@
   "Type": "Foe",
   "Inherits": "Ghul",
   "Chapter": 2,
+  "Traits": "Defiance",
   "Actions": [
     {
       "Name": "Devour",
       "ActionCost": 1,
-      "Recharge": 4,
-      "Tags": "delay",
-      "Description": "The Ghul become immobile and gains",
-      "Delay": "It must take a slow turn next round, but at the start of that turn, it emits an aura 2 effect around it, which only affects non-relict characters. It has different effects depending on the number of non-relict, non-summon characters in the aura. Damage dealt is divine.\n1 character: 100% HP\n2 characters: 25% HP\n3+ characters: 1 HP."
+      "Tags": [ "end turn", "round 3+ only" ],
+      "Effects": "The [name] gains aura 2 until the start of its next turn. Foes that end their turn in the aura must sacrifice 25% of their max hp and become dazed. Dazed or blinded foes must sacrifice 50% of their max hp instead."
     }
   ]
 }

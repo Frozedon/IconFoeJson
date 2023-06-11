@@ -6,41 +6,40 @@
     {
       "Name": "Unholy",
       "ActionCost": 2,
-      "Tags": [ "ranged attack 6", "blast 1" ],
+      "Tags": [ "attack", "range 5", "medium blast" ],
       "Hit": "2[D]+[fray].",
       "Miss": "[fray].",
       "AreaEffect": "[fray].",
-      "Effects": "Attack target is branded. This action can also be made as a close blast 1 melee attack."
+      "Effects": "Sealed foes must sacrifice 4. Then, attack target is sealed."
     },
     {
       "Name": "Fear",
       "ActionCost": 1,
       "Tags": "multimark",
-      "Description": "Mark a foe in range 6.",
-      "Mark": "While marked, that foe gains +1 curse on attacks and saves unless adjacent to an ally. If they end their turn adjacent to an ally, they can clear this mark."
+      "Description": "Mark a foe in range 6. While marked, that foe deals half damage unless adjacent to an ally. If they end their turn adjacent to an ally, they can save to clear this mark."
     },
     {
-      "Name": "Grasping Dead",
+      "Name": "Black Communion",
       "ActionCost": 1,
-      "Description": "A foe in range 6 takes 2 damage, then must save. On a failed save, spectral hands grab and immobilize them until the end of their next turn. That character or an adjacent ally can use an action to end this effect, freeing them."
-    },
-    {
-      "Name": "Raise Dead",
-      "ActionCost": 2,
-      "Tags": [ "1/combat" ],
-      "Description": "Target defeated ally in range 4 and remove incapacitated. They stop being defeated and return with 50% hp. They can act normally and take a turn starting next round."
+      "Tags": [ "range 5", "line 4" ],
+      "AreaEffect": "Foes take 2 damage. Allies gain 2 vigor. Then, create a difficult terrain effect space of grasping dead hands underneath every foe in the area. While inside a grasping hands space, foes are sealed+ and cannot gain vigor."
     }
   ],
   "ConditionalAbilities": [
     {
       "Chapter": 2,
+      "RemoveActions": "Unholy",
       "Actions": {
-        "Name": "Soul Shred",
-        "ActionCost": 1,
-        "Recharge": 4,
-        "Tags": [ "multimark" ],
-        "Description": "Mark a foe in range 6.",
-        "Mark": "While marked, that foe gains Aura 1. Allies of that foe that end their turn in the aura take 3 piercing damage."
+        "Name": "Unholy",
+        "ActionCost": 2,
+        "Tags": [ "attack", "range 5", "medium blast" ],
+        "Hit": "2[D]+[fray].",
+        "Miss": "[fray].",
+        "AreaEffect": "[fray].",
+        "Effects": [
+          "Sealed foes must sacrifice 4. Then, attack target is sealed.",
+          "Create a grasping dead terrain effect under up to two of its targets."
+        ]
       }
     },
     {
@@ -49,7 +48,7 @@
         "Name": "Radiance of the Black Sun",
         "ActionCost": 2,
         "Tags": "1/combat",
-        "Description": "This character becomes immobile but gains Aura 2 until the start of its next turn. While the aura is active, Relict other than this character in the area cannot be reduced past 1 hp. This Aura also deactivates if this character is stunned."
+        "Description": "The [name] becomes immobile but gains Aura 2 until the start of its next turn. While the aura is active, Relict other than the [name] in the area cannot be reduced past 1 hp."
       }
     }
   ]

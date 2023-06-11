@@ -3,45 +3,45 @@
   "Inherits": [ "Relict", "Elite", "Leader" ],
   "Type": "Foe",
   "Chapter": 2,
+  "Vitality": 8,
   "Traits": [ "Defiance", "Stoneskin" ],
   "Actions": [
     {
       "Name": "Deep Call",
       "ActionCost": 1,
-      "Tags": [ "ranged attack 6" ],
+      "Tags": [ "attack", "range 6" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
-      "Effects": "The Arkitek may summon a height 1 dungeon ruin object adjacent to its target, and the target must save or become branded."
+      "Effects": "The [name] may summon a height 1 dungeon ruin object adjacent to its target."
     },
     {
       "Name": "Reconfigure",
       "ActionCost": 1,
-      "Description": "The Arkitek teleports any number of objects created by it or another character in range 2 to any other free space in range 2. Characters standing on or trapped inside an object are moved with them."
+      "Tags": [ "range 2" ],
+      "Description": "The [name] removes and places any number of objects created by it or another character in range to any other free space in range. Characters standing on or trapped inside an object are moved and placed with it."
     },
     {
       "Name": "Pillar of Iz",
       "ActionCost": 1,
-      "Recharge": 5,
-      "Tags": "summon",
-      "Description": "The Arkitek summons a Pillar of Iz in range 5, pushing up characters if it's summoned under them.",
+      "Tags": [ "range 5", "3/combat" ],
+      "Description": "The [name] summons a Pillar of Iz in range. It can be summoned under characters.",
       "Summons": {
         "Name": "Pillar of Iz",
         "IsObject": true,
-        "Tags": [ "Size 1", "Height 2", "Destructible (10 HP)" ],
-        "SummonEffects": "Aura 1. Inside the aura, relict characters have resistance."
+        "Tags": [ "Height 2 object", "destructible (5 hp)" ],
+        "SummonEffects": "Aura 1. Inside the aura, the [name] and allies have resistance and foes are sealed+."
       }
     },
     {
       "Name": "Entombment of Iz",
       "ActionCost": 1,
-      "Recharge": 6,
-      "Tags": "summon",
-      "Description": "The Arkitek entombs a character in a magical sarcophagus, summoning it in their space.",
+      "Tags": [ "range 4", "1/combat" ],
+      "Description": "The [name] entombs a character in range in a magical sarcophagus, summoning it in their space. If a character is defeated in the sarcophagus, it crumbles and this effect ends.",
       "Summons": {
         "Name": "Sarcophagus of Iz",
         "IsObject": true,
-        "Tags": [ "Destructible (10 HP)" ],
-        "SummonEffects": "Shares space with a character. While inside, they take 3 piercing damage at the start of their turns and are immobile, but can otherwise be targeted normally. The Sarcophagus has resistance against the character inside it."
+        "Tags": [ "Object", "destructible (10 hp)" ],
+        "SummonEffects": "Shares space with a character. While sharing space with the sarcophagus, they must sacrifice 3 at the start of their turn and are immobile, but can otherwise be targeted normally. The Sarcophagus takes no damage from Relict and only 1 damage maximum from any ability from a foe inside of it."
       }
     }
   ]

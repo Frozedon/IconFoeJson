@@ -2,13 +2,12 @@
   "Name": "Grafter",
   "Inherits": "Necrosavant",
   "Type": "Foe",
-  "Traits": "Amalgamate",
-  "Interrupts": [
+  "Traits": "Regeneration",
+  "Actions": [
     {
-      "Name": "Split Suffering",
-      "Count": 1,
-      "Trigger": "A relict takes damage in range 3 of the Grafter.",
-      "Effects": "That character gains Resistance. The Grafter or a different relict in range 3 from the Grafter takes [D]."
+      "Name": "Share Suffering",
+      "ActionCost": 1,
+      "Description": "The [name] gains aura 1 in this stance. Each time an ally in the aura takes damage from an ability, they gain 2 vigor. This effect could trigger multiple times per ability. After that ability resolves, the [name] sacrifices 2. At the start of its turn, the [name] either exits this stance or sacrifices 4 to maintain it."
     }
   ]
 }

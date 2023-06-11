@@ -6,14 +6,7 @@
     {
       "Name": "Shriek",
       "ActionCost": 1,
-      "Description": "All foes in range 2 must save or be forced to flee, shoving them 3 spaces in a direction of the Wailer's choice, or 1 space on a successful save."
-    },
-    {
-      "Name": "Pounce",
-      "ActionCost": 0,
-      "Tags": [ "mark", "end turn" ],
-      "Description": "The Wailer gains stealth. Mark a foe in range 3.",
-      "Mark": "At the end of the marked character's next turn, they are still in range 3 of the Wailer, the Wailer may teleport adjacent to them and deal [D]. Then this mark ends."
+      "Description": "All adjacent foes must save or be forced to flee, shoving them 3 spaces in a direction of the [name]'s choice, or 1 space on a successful save."
     }
   ]
 }

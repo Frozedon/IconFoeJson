@@ -8,14 +8,13 @@
     {
       "Name": "Scouring Beam",
       "ActionCost": 2,
-      "Recharge": 6,
-      "Tags": [ "ranged attack", "line 10", "pierce" ],
-      "Hit": "[D]+[fray] twice.",
+      "Tags": [ "attack", "line 10", "width 2", "pierce", "round 3+ only" ],
+      "Hit": "[D]+[fray], twice.",
       "Miss": "[fray], twice.",
       "AreaEffect": "[fray], twice.",
       "Effects": [
-        "All foes in the area are shattered.",
-        "All terrain height 1 or lower in the path is destroyed."
+        "Foes in the area must save or be shattered.",
+        "All objects in the path are removed."
       ]
     }
   ]

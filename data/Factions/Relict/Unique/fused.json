@@ -2,25 +2,30 @@
   "Name": "Fused",
   "Inherits": [ "Relict", "Heavy" ],
   "Type": "Foe",
-  "Vitality": 15,
-  "RemoveTraits": "Armor 3",
-  "Traits": [ "Armor 1", "Size 3", "Amorphous", "Release Passengers" ],
+  "Traits": [ "Size 2", "Soul Mass", "Release Passengers" ],
   "Actions": [
     {
       "Name": "Crush",
       "ActionCost": 2,
-      "Tags": [ "melee attack", "close blast 1", "true strike" ],
+      "Tags": [ "attack", "medium blast", "true strike" ],
       "Hit": "2[D]+[fray].",
       "Miss": "[fray].",
       "AreaEffect": "[fray].",
-      "Effects": "Becomes a critical hit on hit against winded foes."
+      "Effects": "Deals bonus damage to weakened foes.",
+      "Combo": {
+        "Name": "Melding Mass",
+        "ActionCost": 2,
+        "Tags": "attack",
+        "Hit": "[D]+[fray].",
+        "Miss": "[fray].",
+        "Effects": "The [name] may rush 2 after this ability. Characters inside the [name] are shoved 3 in any direction.",
+        "Collide": "Characters are stunned."
+      }
     },
     {
       "Name": "Wail of Terror",
-      "ActionCost": 0,
-      "Recharge": 6,
-      "Description": "The Fused releases a horrible shriek, a close blast 1 area effect. Characters in the area must save or become winded.",
-      "Effects": "Any non-relict character in the area takes [fray] damage three times at the end of their turn, then this effect ends. They can ignore this effect by ending their turn adjacent to an ally. This action instantly recharges if the Fused misses with an attack or does not attack on their turn."
+      "ActionCost": 2,
+      "Description": "The [name] releases a horrible shriek in a medium blast area effect. Foes in the area are weakened, and take 2 damage once for every foe in the area, up to a maximum of five times."
     }
   ]
 }

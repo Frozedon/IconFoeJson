@@ -3,27 +3,41 @@
   "Inherits": [ "Relict", "Heavy" ],
   "Type": "Foe",
   "Chapter": 2,
-  "Traits": [ "Defiance", "Sturdy", "Immortal Disregard", "Beyond Death", "Aura of Immortality" ],
+  "Traits": [ "Defiance", "Sturdy", "Immortal Disregard", "Aura of Immortality" ],
   "Actions": [
     {
       "Name": "Bloody Fuller",
-      "ActionCost": 2,
-      "Tags": [ "melee attack 2", "true strike" ],
-      "Hit": "[D].",
-      "Miss": "0 damage.",
+      "ActionCost": 1,
+      "Tags": [ "attack", "range 2", "true strike" ],
+      "Hit": "[D]+2.",
+      "Miss": "2 damage.",
       "Effects": [
         "Shove 1.",
-        "Deals added damage to all foes in range 2, hit or miss, equal to 2 times the round number."
+        "Deals damage again to attack target and all foes adjacent to the attack target, hit or miss, equal to 2 times the round number."
       ]
     },
     {
-      "Name": "Impale",
+      "Name": "March of the Imperium",
+      "ActionCost": 1,
+      "Description": "Repeat the following effect twice:",
+      "Effects": "Either the [name] or an adjacent ally rushes 1, then deals 2 damage to all adjacent foes and shoves them 1. This can affect the same foe more than once.",
+      "Combo": {
+        "Name": "Arken Impaler",
+        "ActionCost": 1,
+        "Description": "An adjacent foe is shoved 3. The [name] rushes after the target, following it, ending adjacent if possible.",
+        "Collide": "Foe is also slashed and takes [fray] damage."
+      }
+    },
+    {
+      "Name": "Supreme Formation",
+      "ActionCost": 1,
+      "Description": "All allies everywhere may rush 1 space closer to this character. Bloodied allies gain 2 vigor."
+    },
+    {
+      "Name": "Execute",
       "ActionCost": 2,
-      "Recharge": 5,
-      "Tags": [ "melee attack", "true strike" ],
-      "Hit": "2[D]+[fray] and shove 4. The immortal dashes after the target, following it.",
-      "Miss": "[D]+[fray] and shove 2.",
-      "Collide": "Foe is also dazed and winded."
+      "Tags": [ "range 2" ],
+      "Description": "A foe in range at 25% HP or lower must save. On a failed save, they are defeated, ignoring all other effects. On a successful save, they are reduced to 1 hp."
     }
   ]
 }

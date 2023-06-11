@@ -4,36 +4,50 @@
   "Traits": "Phasing",
   "Actions": [
     {
-      "Name": "Hamstring",
+      "Name": "Bloodfeed",
       "ActionCost": 1,
-      "Tags": [ "melee attack", "+1 boon" ],
+      "Tags": [ "attack", "+1 boon" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
-      "Effects": "On hit, until the end of their next turn, foe takes 2 damage for each space they move."
+      "Effects": "Foe takes 2 damage again if not adjacent to any allies, and 2 damage again if bloodied."
+    },
+    {
+      "Name": "Reality Flicker",
+      "ActionCost": 1,
+      "Description": "The [name] or an ally in range 2 can teleport 3."
     },
     {
       "Name": "Life Drain",
       "ActionCost": 1,
-      "Effects": "A foe in range 3 takes [fray] damage, ignoring vigor. If they are bloodied, they take [fray] damage twice instead, ignoring vigor."
+      "Effects": "An adjacent foe sacrifices 3. If they are bloodied, they sacrifice 6 instead, and the [name] gains evasion until the start of its next turn."
     },
     {
       "Name": "Terrorize",
       "ActionCost": 1,
-      "Effects": "A foe in range 4 must save or become blinded+ and gains +1 curse on all attacks and saves until it ends a turn adjacent to an ally. On a successful save, they are only blinded. Blinded or Bloodied foes fail the save."
+      "Tags": [ "range 2" ],
+      "Effects": "A foe in range must save or become blinded+ and gains + 1 curse on all attacks and saves until it ends a turn adjacent to an ally, ending this effect. On a successful save, they are only blinded."
     }
   ],
   "ConditionalAbilities": [
     {
       "Chapter": 2,
+      "RemoveActions": "Life Drain",
       "Actions": {
-        "Name": "Arc Whip",
+        "Name": "Life Drain",
         "ActionCost": 1,
-        "Effects": "A character in range 4 must save or become slowed and electrified. Electrified characters take [fray] damage."
+        "Tags": [ "range 4" ],
+        "Effects": "An adjacent foe sacrifices 3. If they are bloodied, they sacrifice 6 instead, and the [name] gains evasion until the start of its next turn."
       }
     },
     {
       "Chapter": 3,
-      "Traits": "Unstable Reality"
+      "RemoveActions": "Life Drain",
+      "Actions": {
+        "Name": "Life Drain",
+        "ActionCost": 1,
+        "Tags": [ "range 4" ],
+        "Effects": "An adjacent foe sacrifices 3. If they are bloodied, they sacrifice 6 instead, and the [name] gains evasion until the start of its next turn. If they are at 25% hp or lower, it additionally reduces them to 1 hp, and the [name] gains a vigor surge."
+      }
     }
   ]
 }

@@ -8,14 +8,20 @@
     {
       "Name": "Entombment of Iz",
       "ActionCost": 1,
-      "Recharge": 6,
-      "Description": "The Immortalist entombs a character in a magical sarcophagus, summoning it in their space.",
+      "Tags": [ "range 5", "1/combat" ],
+      "Description": "The [name] entombs a character in range in a magical sarcophagus, summoning it in their space. If a character is defeated in the sarcophagus, it crumbles and this effect ends.",
       "Summons": {
         "Name": "Sarcophagus of Iz",
         "IsObject": true,
-        "Tags": [ "Destructible (10 HP)" ],
-        "SummonEffects": "Shares space with a character. While inside, they take 3 piercing damage at the start of their turns and are immobile, but can otherwise be targeted normally. The Sarcophagus has resistance against the character inside it."
+        "Tags": [ "Object", "Destructible (10 HP)" ],
+        "SummonEffects": "Shares space with a character. While sharing space with the sarcophagus, they must sacrifice 3 at the start of their turn and are immobile, but can otherwise be targeted normally. The Sarcophagus takes no damage from Relict and only 1 damage maximum from any ability from a foe inside of it."
       }
+    },
+    {
+      "Name": "Dark Redempta",
+      "ActionCost": 2,
+      "Tags": [ "range 4", "1/combat" ],
+      "Description": "Target defeated relict in range and remove incapacitated. They stop being defeated and return to the battlefield with 50% hp, or 25% hp if they are an elite. They can act normally and take a turn starting next round. If defeated again, they disintegrate and are removed from the battlefield, and cannot be returned again."
     }
   ]
 }

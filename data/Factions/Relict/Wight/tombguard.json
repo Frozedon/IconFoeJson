@@ -2,21 +2,12 @@
   "Name": "Tomb Guard",
   "Inherits": "Wight",
   "Type": "Foe",
-  "Interrupts": [
-    {
-      "Name": "Withstand",
-      "Count": 1,
-      "Trigger": "When self or an adjacent ally is targeted by an attack.",
-      "Effects": "Grant resistance against that attack."
-    }
-  ],
   "Actions": [
     {
-      "Name": "Bash",
-      "ActionCost": 1,
-      "Tags": [ "repeatable" ],
-      "Description": "An adjacent foe is shoved 1 and must save or become winded.",
-      "Collide": "Foe fails the save."
+      "Name": "Fortress",
+      "ActionCost": 2,
+      "Tags": [ "end turn" ],
+      "Description": "The [name] gains aura 1 until the start of its next turn. While this aura is active, the [name] gains counter, and allies without this ability in the aura gain resistance."
     }
   ]
 }

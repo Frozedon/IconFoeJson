@@ -5,19 +5,12 @@
   "RemoveActions": "Hamstring",
   "Actions": [
     {
-      "Name": "Razor Wind",
-      "ActionCost": 1,
-      "Tags": [ "melee attack" ],
-      "Description": "Repeat the following effect three times:",
-      "Effects": "Dash 1, then deal 2 damage to all adjacent foes. Must move in the same direction."
-    }
-  ],
-  "Interrupts": [
-    {
-      "Name": "Twirl",
-      "Count": 1,
-      "Trigger": "The Twinsoul takes damage from an ability.",
-      "Effects": "The Twinsoul teleports 3 after the ability resolves, then gains evasion until the start of its next turn."
+      "Name": "Twin Strike",
+      "ActionCost": 2,
+      "Tags": [ "attack", "+1 boon" ],
+      "Hit": "[D]+2, twice.",
+      "Miss": "2 damage, twice.",
+      "Effects": "The [name] may backflip and fly 2 after this ability resolves."
     }
   ]
 }

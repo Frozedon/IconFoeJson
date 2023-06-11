@@ -3,35 +3,51 @@
   "Inherits": [ "Relict", "Elite", "Heavy" ],
   "Type": "Foe",
   "Chapter": 3,
-  "Traits": [ "Sturdy", "Size 3", "Defiance", "Soul Mass", "Drag Under", "Shed Mass" ],
+  "RemoveTraits": "Guard",
+  "Traits": [ "Sturdy", "Size 3", "Defiance", "Soul Mass", "Shed Mass" ],
   "Actions": [
     {
       "Name": "Hungry Dead",
-      "ActionCost": 2,
-      "Tags": [ "melee attack", "true strike" ],
-      "Hit": "2[D]+[fray].",
+      "ActionCost": 1,
+      "Tags": [ "attack", "true strike" ],
+      "Hit": "[D]+[fray].",
       "Miss": "[fray].",
-      "Effects": "All foes in range 2 are shoved 2 towards the grave, which could shove them inside of it."
+      "Effects": "All characters in range 2 are shoved 1 towards the [name], which could shove them inside of it."
     },
     {
-      "Name": "Vortex",
+      "Name": "Tendrils",
       "ActionCost": 1,
-      "Description": "Characters in range 2 of the Grave are shoved 1 towards it, which could move them inside the Grave."
+      "Tags": [ "range 2" ],
+      "Description": "Characters in range of the [name] are shoved 1 towards or away from it. The [name] can choose for each character. Bloodied characters are shoved 2 instead."
     },
     {
       "Name": "Vomit Lightning",
       "ActionCost": 1,
-      "Description": "A foe in range 4 takes [fray] damage and is electrified. Electrified characters must save or be winded."
-    },
-    {
-      "Name": "One Hundred Hands",
-      "ActionCost": 1,
-      "Tags": [ "end turn" ],
-      "Description": "The Grave dashes 2 spaces.",
+      "Tags": [ "range 2", "medium blast" ],
+      "AreaEffect": "Foes take 2 damage once for each foe in the area, up to a maximum of three times.",
       "Combo": {
-        "Name": "Cacophonous Consumption",
-        "ActionCost": 2,
-        "Description": "Characters inside the Grave must save or take [fray] damage five times, or twice on a failed save."
+        "Name": "One Hundred Hands",
+        "ActionCost": 1,
+        "Tags": [ "end turn" ],
+        "Description": "The [name] rushes 1 space.",
+        "Combo": {
+          "Name": "Two Hundred Hands",
+          "ActionCost": 1,
+          "Tags": [ "end turn" ],
+          "Description": "The [name] rushes 2 spaces.",
+          "Combo": {
+            "Name": "Three Hundred Hands",
+            "ActionCost": 1,
+            "Tags": [ "end turn" ],
+            "Description": "The [name] rushes 3 spaces.",
+            "Combo": {
+              "Name": "Cacophonous Consumption",
+              "ActionCost": 2,
+              "Tags": [ "true strike" ],
+              "Description": "Foes inside the [name] must save, then they take 5 damage, five times. If they succeed the save, they take 3 damage, five times instead."
+            }
+          }
+        }
       }
     }
   ]

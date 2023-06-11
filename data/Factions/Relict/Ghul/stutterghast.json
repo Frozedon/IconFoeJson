@@ -3,13 +3,26 @@
   "Inherits": "Ghul",
   "Type": "Foe",
   "Chapter": 3,
-  "Traits": [ "Stutter", "Hollow" ],
-  "Interrupts": [
+  "Traits": [ "Dark Hollow" ],
+  "RemoveActions": "Reality Flicker",
+  "Actions": [
     {
-      "Name": "Reality Break",
-      "Count": 1,
-      "Trigger": "The Stutterghast is Bloodied.",
-      "Effects": "The stutterghast becomes intangible until the end of its next turn."
+      "Name": "Stutter",
+      "ActionCost": 0,
+      "Description": "Repeat the following effect twice:",
+      "Effects": "The [name] or an ally in range 2 teleports 2."
+    },
+    {
+      "Name": "Stutterslash",
+      "ActionCost": 2,
+      "Tags": [ "range 3", "+1 boon" ],
+      "Hit": "[D]+[fray], twice.",
+      "Miss": "[fray], twice.",
+      "Effects": [
+        "Deals bonus damage to bloodied foes.",
+        "Gains unerring against foes at exactly range 3.",
+        "May teleport self and foe 2 spaces after this ability resolves."
+      ]
     }
   ]
 }

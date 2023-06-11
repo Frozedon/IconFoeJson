@@ -3,39 +3,35 @@
   "Inherits": [ "Relict", "Skirmisher" ],
   "Type": "Foe",
   "Chapter": 2,
-  "Vitality": 10,
-  "Speed": 3,
-  "Defense": 5,
   "Traits": "Shed Flesh",
   "Actions": [
     {
-      "Name": "Slice and Dice",
+      "Name": "Bloody Hacking ",
       "ActionCost": 1,
-      "Tags": [ "melee attack or ranged attack 4" ],
+      "Tags": [ "attack", "+1 boon" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
-      "Effects": "May dash 1 before or after attack."
+      "Effects": [
+        "Foe is dazed.",
+        "Bloodied or dazed foes take 2 damage again after this ability resolves."
+      ]
     },
     {
       "Name": "Life Drain",
       "ActionCost": 1,
-      "Effects": "A foe in range 3 takes 2 damage, ignoring vigor. If they are bloodied, they take 2 damage twice instead, ignoring vigor."
+      "Effects": "An adjacent foe sacrifices 3. If they are bloodied, they sacrifice 6 instead, and the [name] gains evasion until the start of its next turn."
     },
     {
-      "Name": "Rake",
+      "Name": "Horrible Twitching",
       "ActionCost": 1,
-      "Tags": [ "line 3", "repeatable" ],
-      "AreaEffect": "Foes in the area take [fray] damage.",
-      "Effects": "The Revenant may teleport to any space in the area after this action resolves."
+      "Tags": [ "stance" ],
+      "Description": "The [name] gains aura 1. Foes in the aura gain +1 curse on attacks. Allies in the aura gain the dodge trait. The [name] loses this stance if it ends its turn with no foes in the aura."
     },
     {
-      "Name": "Horrify",
+      "Name": "Bone Chilling Scream",
       "ActionCost": 2,
-      "Recharge": 6,
-      "Tags": [ "close blast 1", "special interrupt" ],
-      "Description": "The Revenant releases a bone chilling scream.",
-      "AreaEffect": "Characters in the area must save or take 2[D]+[fray], or [D]+[fray] on a successful save. Reduce this damage by [D] for every character past the first in the area, to a minimum of [fray] damage.",
-      "SpecialInterrupt": "The Revenant can take this action as an interrupt when bloodied."
+      "Tags": [ "range 2", "usable while bloodied" ],
+      "Description": "The [name] releases a bone chilling scream, a burst 1 area effect. Characters in the area must save or take 2[D]+[fray], or [D]+[fray] on a successful save."
     }
   ]
 }

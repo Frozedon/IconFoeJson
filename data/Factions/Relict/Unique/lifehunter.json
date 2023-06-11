@@ -3,35 +3,34 @@
   "Inherits": [ "Relict", "Artillery" ],
   "Type": "Foe",
   "Chapter": 2,
-  "RemoveTraits": "Aetherwall",
-  "Traits": [ "Hand Picked", "Ethereal (Resistance)" ],
+  "Traits": [ "Phasing", "Hand Picked" ],
   "Actions": [
-    {
-      "Name": "Shift",
-      "ActionCost": 1,
-      "Description": "Teleport 2."
-    },
     {
       "Name": "Nock",
       "ActionCost": 1,
-      "Description": "Life Seeking Arrow recharges."
+      "Description": "The [name] dashes 2.",
+      "Combo": {
+        "Name": "Life Seeking Arrow",
+        "ActionCost": 2,
+        "Tags": [ "attack", "range 12", "+1 boon" ],
+        "Hit": "2[D]+[fray].",
+        "Miss": "[fray].",
+        "Effects": [
+          "Hit or miss, foe must also sacrifice 25% of their max hp.",
+          "Cannot target characters in range 2."
+        ]
+      }
+    },
+    {
+      "Name": "Kick Off",
+      "ActionCost": 1,
+      "Description": "The [name] flies 1. Before they fly, they may shove an adjacent character 1 space, then deal 2 damage to them if they are a foe. If they do, they fly 3 instead."
     },
     {
       "Name": "Liminal Darts",
       "ActionCost": 1,
       "Tags": "mark",
-      "Description": "Mark a foe in line of sight and range 10.", 
-      "Mark": "At the end of the marked character's turn, it takes [D] piercing damage if it's not in cover from the Life Hunter, or just 2 piercing damage if it is. Then this mark ends."
-    },
-    {
-      "Name": "Life Seeking Arrow",
-      "ActionCost": 2,
-      "Tags": [ "ranged attack 10", "+1 boon", "pierce", "special recharge" ],
-      "Hit": "50% of the foe's max HP.",
-      "Miss": "25% of the foe's max HP.",
-      "CriticalHit": "Deals 75% of the foe's max HP instead.",
-      "Effects": "Ignores cover. Cannot target characters in range 2.",
-      "SpecialRecharge": "Recharges only if Nock is used. Starts combat uncharged."
+      "Description": "Mark a foe in line of sight and range 10. At the end of that character's turn, it takes [D] piercing damage if it's not in cover from the [name], or just 2 piercing damage if it is. Then this mark ends."
     }
   ]
 }

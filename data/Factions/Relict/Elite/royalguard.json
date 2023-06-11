@@ -5,31 +5,37 @@
   "Traits": "Size 2",
   "Actions": [
     {
+      "Name": "Vortex",
+      "ActionCost": 0,
+      "Description": "All characters in range 2 of the [name] are shoved 1 towards or away from it."
+    },
+    {
       "Name": "Battalion of Limbs",
       "ActionCost": 1,
-      "Tags": [ "melee attack", "true strike", "multimark" ],
-      "Hit": "[D]+[fray] and foe is marked.",
+      "Tags": [ "attack", "medium blast", "true strike", "multimark" ],
+      "Hit": "[D]+[fray].",
       "Miss": "[fray].",
-      "Effects": "The Royal Guard deals [fray] damage to all adjacent foes.",
-      "Mark": "This mark can be placed more than once and stacks indefinitely. For each stack of the mark, this attack deals +[D] on hit or miss. A character can save against this mark at the end of their turn to clear all stacks, but only if they are not adjacent to the royal guard."
+      "AreaEffect": "[fray].",
+      "Effects": "The [name] marks their attack target. This mark can be placed more than once and stacks indefinitely. For each stack of the mark, this attack deals +3 damage on hit or miss. A character can save against this mark at the end of their turn to clear all stacks, but only if they are not in range 2 of the [name]."
+    },
+    {
+      "Name": "Blade Shield",
+      "ActionCost": 1,
+      "Tags": [ "range 3", "multimark" ],
+      "Description": "An ally in range is marked by the [name]. While marked and adjacent to the [name], they gain +1 boon on saves and resistance."
     },
     {
       "Name": "Ball Lightning",
       "ActionCost": 1,
-      "Tags": "true strike",
-      "Description": "A character in range 6 must save. On a failed save, they take [D]+[fray] and are electrified, then as an area effect any of their allies in range 2 of them take [fray] damage."
-    },
-    {
-      "Name": "Vortex",
-      "ActionCost": 0,
-      "Description": "Characters in range 2 of the royal guard are shoved 1 towards it."
+      "Tags": [ "range 6", "small blast", "true strike" ],
+      "AreaEffect": "[fray] damage and characters must save or be slashed."
     },
     {
       "Name": "Wind of Obliteration",
       "ActionCost": 2,
-      "Recharge": 5,
+      "Tags": [ "unable when bloodied" ],
       "Description": "Repeat this effect three times:",
-      "Effects": "The Royal Guard dashes 2, then deals [D] to all adjacent characters, then shoves them 1. It gains phasing during this action and must take each of these dashes in the same direction."
+      "Effects": "The [name] rushes 1, then deals [D] to all adjacent characters, then shoves them 1. It gains phasing during this action and must take each of these dashes in the same direction. Characters can be affected multiple times."
     }
   ]
 }

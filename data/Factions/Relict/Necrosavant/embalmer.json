@@ -2,5 +2,14 @@
   "Name": "Embalmer",
   "Inherits": "Necrosavant",
   "Type": "Foe",
-  "Traits": [ "Heavy Armor", "Aura of Rot" ]
+  "RemoveActions": "Black Communion",
+  "Actions": [
+    {
+      "Name": "Necrotize",
+      "ActionCost": 1,
+      "Tags": [ "range 2", "medium blast" ],
+      "AreaEffect": "Foes take 2 piercing damage. Self and allies gain vigor 2.",
+      "Effects": "The [name] gains Aura 2 until the start of its next turn. Foes that end their turn in the aura must sacrifice 2 and have a grasping dead space created under them. While inside a grasping hands space foes are sealed+ and cannot gain vigor."
+    }
+  ]
 }

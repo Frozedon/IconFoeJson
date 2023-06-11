@@ -3,31 +3,39 @@
   "Inherits": [ "Relict", "Elite", "Skirmisher" ],
   "Type": "Foe",
   "Chapter": 2,
-  "Traits": [ "Surreality", "Stutter", "Ethereal (Resistance)" ],
+  "Traits": [ "Phasing", "Dark Hollow", "Surreality" ],
   "Actions": [
+    {
+      "Name": "Stutter",
+      "ActionCost": 0,
+      "Description": "Repeat the following effect twice:",
+      "Effects": "The [name] or an adjacent ally teleports 1."
+    },
     {
       "Name": "Soul Rip",
       "ActionCost": 1,
-      "Tags": [ "melee attack", "line 4", "+1 boon", "divine" ],
-      "Hit": "[D]+[fray].",
-      "Miss": "[fray].",
-      "AreaEffect": "[fray]."
+      "Tags": [ "attack", "line 4", "+1 boon" ],
+      "Hit": "[D] damage.",
+      "Miss": "1 damage.",
+      "AreaEffect": "1 damage.",
+      "Effects": "All foes in the area must sacrifice 4 after this ability resolves."
     },
     {
-      "Name": "Life Drain",
+      "Name": "Horrid Slashing",
       "ActionCost": 1,
-      "Effects": "A foe in range 3 takes 2 damage, ignoring vigor. If they are bloodied, they take 2 damage twice instead, ignoring vigor."
+      "Effects": "The [name] teleports 1, then teleports 1. Each time, it deals 2 damage to an adjacent foe. Bloodied foes are dazed."
     },
     {
       "Name": "Shriek",
       "ActionCost": 1,
-      "Description": "All foes in range 2 must save or be forced to flee, shoving them 3 spaces in a direction of the Izenghast's choice, or 1 space on a successful save."
+      "Tags": [ "range 2" ],
+      "Description": "All foes in range must save or be forced to flee, shoving them 2 spaces in a direction of the [name]'s choice, or 1 space on a successful save."
     },
     {
       "Name": "Soul Drain",
       "ActionCost": 2,
-      "Recharge": 6,
-      "Description": "The Izenghast reduces an adjacent character to 25% of their maximum hp, then gains vigor 1. When the ghasts's vigor is broken, that character recovers 50% of their maximum hp, healing it."
+      "Tags": [ "usable only on bloodied foes" ],
+      "Description": "An adjacent foe sacrifices 25% of their maximum hp. The [name] or an ally in range 3 is cured."
     }
   ]
 }

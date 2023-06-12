@@ -1,0 +1,192 @@
+{
+  "Name": "Dread Lords",
+  "Inherits": [ "Relict", "Legend" ],
+  "Type": "Foe",
+  "Chapter": 3,
+  "RemoveTraits": "Juggernaut",
+  "Traits": [ "Triumvirate", "Imperium" ],
+  "Actions": [
+    {
+      "Name": "Eternal Lordship",
+      "RoundAction": true,
+      "Description": "At the start of the round, clear a status or mark on one of the Lords."
+    }
+  ],
+  "PhasesDescription": "At the start of each round, one of the Dread Lords can use its Round Action, with a different Lord's round action each round, until all three have used their Round Action. At round 3 and every three rounds thereafter, the Lords use Eternal Imperium.",
+  "ExtraAbilitySets": [
+    {
+      "Name": "Eternal Imperium",
+      "Class": "None",
+      "Description": "At the start of this round, all three Lords use their Round actions simultaneously."
+    },
+    {
+      "Name": "Lord Evictor",
+      "Class": "Heavy",
+      "Traits": [ "Sturdy", "Rampart", "Armor 2" ],
+      "Actions": [
+        {
+          "Name": "Strength of Hell",
+          "RoundAction": true,
+          "Description": "The Lord Evictor prepares to strike a seismic blow. At the end of the round, they slam the battlefield, affecting all characters in range 3 from them. Characters take differing effects depending on how far away they are from the Lord Evictor:",
+          "ListedItems": [
+            { "Name": "Adjacent", "Description": "3 damage, three times, and shoved 3." },
+            { "Name": "2 Spaces", "Description": "2 damage, twice, and shoved 2." },
+            { "Name": "3 Spaces", "Description": "1 damage and shoved 1." }
+          ]
+        },
+        {
+          "Name": "Dread March",
+          "ActionCost": 0,
+          "Description": "The Lord Evictor rushes 1, then shoves all adjacent foes 1.",
+          "CustomComponents": {
+            "Name": "Imperium",
+            "Description": "The other lords can also rush 1."
+          }
+        },
+        {
+          "Name": "Blood Rush",
+          "ActionCost": 1,
+          "Tags": [ "attack", "range 2", "true strike" ],
+          "Hit": "[D]+[fray].",
+          "Miss": "[fray].",
+          "Effects": [
+            "The Lord Evictor may rush 1 before this attack.",
+            "The Lord swings their weapon in a massive arc after this ability resolves. Foes adjacent to the Lord take 2 damage again and are shoved 1."
+          ]
+        },
+        {
+          "Name": "Crush Peon",
+          "ActionCost": 1,
+          "Description": "An adjacent foe is picked up and crushed by the Lord Evictor. Remove them from the battlefield as they are hurled into the air, then smashed down in any space in range 2, returning them. They are slashed. Slashed characters are stunned instead.",
+          "CustomComponents": {
+            "Name": "Imperium",
+            "Description": "The other one or two lords are in range 3 of the target's landing point, they juggle the target with attacks before they land, each dealing 2 piercing damage."
+          }
+        },
+        {
+          "Name": "Break Earth",
+          "ActionCost": 1,
+          "Tags": [ "range 3" ],
+          "Description": "The Lord Evictor smashes the ground with the hilt of their weapon, dealing fray damage to and weakening a character in range. Weakened characters are stunned.",
+          "CustomComponents": {
+            "Name": "Imperium",
+            "Description": "If another Lord is in range 3, the Lord Evictor can cause a shockwave that creates a height 1 debris object underneath that Lord, or raises the height of such an object by 1."
+          }
+        },
+        {
+          "Name": "Dark Grip",
+          "ActionCost": 1,
+          "Tags": [ "range 4+" ],
+          "Description": "A foe at or further away than range 4 must save. On a successful save, they are shoved 2 spaces towards the Lord Evictor. On a failed save, they are shoved until adjacent, or as far as possible."
+        }
+      ]
+    },
+    {
+      "Name": "Lord Prelictor",
+      "Class": "Artillery",
+      "Traits": [ "Aetherwall" ],
+      "Actions": [
+        {
+          "Name": "Muster the Dead",
+          "RoundAction": true,
+          "Description": "At the start of the round, the Lord Prelictor summons three wailing souls, in free space anywhere on the battlefield not adjacent to a foe.",
+          "Summons": {
+            "Name": "Wailing Soul",
+            "Tags": [ "Summon", "size 1", "intangible" ],
+            "SummonEffects": "Foes adjacent to souls are vulnerable+ and all damage dealt to them becomes piercing. If a foe collides with a soul, they release a large blast shriek area effect centered on them, dealing 2 piercing damage to all foes inside, then removing the soul."
+          }
+        },
+        {
+          "Name": "Master of the Secret Places",
+          "ActionCost": 0,
+          "Description": "The Lord swaps the positions of any or all of the three Lords, removing and placing them."
+        },
+        {
+          "Name": "Imperishable Star",
+          "ActionCost": 1,
+          "Tags": [ "attack", "range 5", "large blast", "pierce" ],
+          "Hit": "[D]+[fray].",
+          "Miss": "[fray].",
+          "AreaEffect": "[fray].",
+          "Effects": "Create a pit under the attack target."
+        },
+        {
+          "Name": "Yawning Void",
+          "ActionCost": 1,
+          "Tags": [ "range 3", "terrain effect" ],
+          "Description": "Summon a pit in a free space in range. Characters that start or end their turn in the pit can be teleported by the Lord Prelictor to any other pit created by this ability or Imperishable Star.",
+          "CustomComponents": {
+            "Name": "Imperium",
+            "Description": "The Lord Prelictor can then teleport another Lord in range 3 2 spaces."
+          }
+        },
+        {
+          "Name": "Drain Essence",
+          "ActionCost": 1,
+          "Tags": [ "range 5", "small blast" ],
+          "AreaEffect": "Foes inside take 2 piercing damage and must save or become pacified."
+        },
+        {
+          "Name": "Dark Astra",
+          "ActionCost": 1,
+          "Tags": [ "mark" ],
+          "Description": "The Lord Prelictor marks itself or another Lord with a ward of energy. That Lord gains 10 vigor. When this vigor is destroyed, or at the end of the round, the ward explodes, ending this mark. Foes in a large blast area effect centered on the targeted Lord take 2 piercing damage twice and must save or be shattered. A character also loses this vigor if the mark is transferred, but it doesn't cause the ward to explode."
+        }
+      ]
+    },
+    {
+      "Name": "Lord Vexator",
+      "Class": "Skirmisher",
+      "Traits": [ "Skirmisher", "Dodge" ],
+      "Actions": [
+        {
+          "Name": "Punishment of Heaven",
+          "RoundAction": true,
+          "Description": "The Lord Vexator prepares to shoot a massive flurry of bolts from a greatbow at all characters close to it. At the end of the round, they release a flurry of shots, affecting all characters in range 3 from them. Characters take differing effects depending on how far away they are to the Lord Vexator:",
+          "ListedItems": [
+            { "Name": "Adjacent", "Description": "1 damage and shove 1." },
+            { "Name": "2 Spaces", "Description": "2 damage, twice, and shoved 2." },
+            { "Name": "3 Spaces", "Description": "3 damage, three times and shoved 3." }
+          ]
+        },
+        {
+          "Name": "Raid",
+          "ActionCost": 1,
+          "Description": "The Lord Vexator leaps and flies up to 3 spaces.",
+          "CustomComponents": {
+            "Name": "Imperium",
+            "Description": "If they land next to another Lord, both Lords can leap and fly up to 3 spaces again, then each can deal 2 damage to an adjacent foe after landing."
+          }
+        },
+        {
+          "Name": "Scathe Barbarians",
+          "ActionCost": 2,
+          "Tags": [ "attack", "range 4" ],
+          "Hit": "2[D]+[fray].",
+          "Miss": "[D]+[fray].",
+          "Effects": "Deals bonus damage for every difference in height between the Lord Vexator and their target. If the difference is 2+, this ability gains unerring, foe takes 2 damage twice again and is dazed."
+        },
+        {
+          "Name": "The Language of the Shadows",
+          "ActionCost": 1,
+          "Description": "The Lord Vexator gains stealth, and adjacent foes must save or become blinded.",
+          "CustomComponents": {
+            "Name": "Imperium",
+            "Description": "Another Lord in range 3 gains stealth."
+          }
+        },
+        {
+          "Name": "Essence Arrow",
+          "ActionCost": 1,
+          "Tags": [ "line 6" ],
+          "Description": "The Lord Vexator shoots a line 6 area effect. Foes inside take [fray] damage.",
+          "CustomComponents": {
+            "Name": "Imperium",
+            "Description": "If the Lord Evictor is caught in the area, the area gains true strike, and foes in the line are then shoved 1 towards or away from the Lord Vexator. If the Lord Prelictor is caught in the line, the arrow deals 2 piercing damage twice instead."
+          }
+        }
+      ]
+    }
+  ],
+  "Tactics": "This legend fight is three warriors that work in tandem with each other. The Lord Evictor and Lord Vexator are powerful fighters whose Round Actions punish players for getting close or staying away, respectively. The Lord Prelictor can use its abilities to swap around the positions of the lords or making targeting one lord less appealing, making this tricky to handle. It's Wailing Soul summons are potent, but players might consider getting shoved into them voluntarily to clear them before they can become a problem."
+}

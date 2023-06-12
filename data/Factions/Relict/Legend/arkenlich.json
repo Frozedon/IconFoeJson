@@ -1,74 +1,92 @@
 {
   "Name": "Arkenlich",
-  "Inherits": [ "Relict", "Legendary Artillery" ],
+  "Inherits": [ "Relict", "Legend" ],
   "Type": "Foe",
   "Chapter": 2,
-  "HP": 32,
-  "RemoveTraits": "Juggernaut",
-  "Traits": [ "Eternal", "Master of Life and Death" ],
   "Actions": [
     {
-      "Name": "Lesser Unholy",
-      "ActionCost": 1,
-      "Tags": [ "ranged attack 6", "blast 1" ],
-      "Hit": "[D]+[fray].",
-      "Miss": "[fray].",
-      "AreaEffect": "[fray].",
-      "Effects": "Attack target is vulnerable. This action can also be made as a close blast 1 melee attack."
-    },
-    {
-      "Name": "Puppet Strings",
-      "ActionCost": 1,
-      "Description": "A foe in range 6 is shoved 3 in a direction of the Lich's choice."
-    },
-    {
-      "Name": "Finger of Death",
-      "ActionCost": 2,
-      "Tags": [ "ranged attack 8", "1/round" ],
-      "Hit": "6[D].",
-      "Miss": "3[D].",
-      "Effects": "This attack can't lower a character past 1 hp."
-    },
-    {
-      "Name": "Paralyze with Fear",
-      "ActionCost": 1,
-      "Tags": "1/round",
-      "Description": "The Lich releases a horrible shriek, a close blast 1 area effect. One character in the area must save or become immobile until the end of their next turn. Effect: Any non-relict character in the area takes [fray] damage three times at the end of their turn, then this effect ends. They can ignore this effect by ending their turn adjacent to an ally."
-    },
-    {
-      "Name": "Vile",
-      "ActionCost": 1,
-      "Tags": "1/round",
-      "Description": "A foe in range 5 is vulnerable, and must save or take take 1 piercing damage for each space they move until the end of their next turn."
-    },
-    {
-      "Name": "Master of Death",
-      "ActionCost": 1,
-      "Tags": "1/round",
-      "Description": "Summon 5 husks in free spaces in range 4."
-    }
-  ],
-  "PhasesDescription": "The lich progress through its three phases in order (I>III, then back to I), starting with phase I, then swapping to the next phase each round.",
-  "Phases": [
-    {
-      "Traits": "Soul Sacrifice"
-    },
-    {
-      "Actions": {
-        "Name": "Entombment of Iz",
-        "ActionCost": 1,
-        "Tags": "1/round",
-        "Description": "The Lich entombs a character in a magical sarcophagus, summoning it in their space.",
-        "Summons": {
-          "Name": "Sarcophagus of Iz",
-          "IsObject": true,
-          "Tags": [ "Destructible (10 HP)" ],
-          "SummonEffects": "Shares space with a character. While inside, they take 3 piercing damage at the start of their turns and are immobile, but can otherwise be targeted normally. The Sarcophagus has resistance against the character inside it."
-        }
+      "Name": "Thy Tribute is Demanded",
+      "RoundAction": true,
+      "Description": "At the start of each round, the [name] severs part of a foe's soul in range 4, placing it in a free space adjacent to that character.",
+      "Summons": {
+        "Name": "Soul Fragment",
+        "Tags": [ "Summon", "immobile", "intangible" ],
+        "SummonEffects": "Each soul fragment is tied to a specific character. Characters adjacent to any soul fragment are vulnerable+. Additionally, fragments can be affected by the [name]'s round actions Annihilation of the Wicked and Utterances of the Crawling Dead."
       }
     },
     {
+      "Name": "Annihilation of the Wicked",
+      "RoundAction": true,
+      "Description": "At the end of each round, the [name] wreaks the battlefield with scathing ur-magic. All foes on the battlefield take 1 piercing damage, once, for every other foe or soul fragment that they share a row or column with on the battlefield grid map (imagine it like a big cross centered on each character)."
+    },
+    {
+      "Name": "Witness the Coming Terror",
+      "ActionCost": 2,
+      "Tags": [ "range 4", "1/round" ],
+      "Description": "The [name] reveals a glimpse of a possible dark future to a character in range. That character becomes vulnerable from the sheer stress and must save or become stunned. If there are none of its allies in range 2, that character also sacrifices 25% of their maximum hp."
+    },
+    {
+      "Name": "Offer Obeisance before Thy Proper Lords",
+      "ActionCost": 1,
+      "Tags": [ "end turn", "1/round" ],
+      "Description": "The [name] releases a word of powerful Ur-magic, ordering all foes to kneel. Foes can choose: either kneel and become immobile for the rest of the current round, or be shoved 2 away from the [name].",
+      "Collide": "Foe is vulnerable."
+    },
+    {
+      "Name": "Fear",
+      "ActionCost": 1,
+      "Tags": [ "range 6", "multimark", "1/round" ],
+      "Description": "Mark a foe in range. While marked, that foe deals half damage unless adjacent to an ally. If they end their turn adjacent to an ally, they may save to clear this mark."
+    },
+    {
+      "Name": "Master of the Four Winds ",
+      "ActionCost": 1,
+      "Description": "The [name] either teleports 4, or removes itself from the battlefield, then places itself in free space in range 2."
+    },
+    {
+      "Name": "The Inevitable Corruption of Flesh",
+      "ActionCost": 1,
+      "Tags": [ "line 5" ],
+      "AreaEffect": "Foes in the line take 2 piercing damage, then each foe deals 1 piercing damage to all its adjacent allies. Characters adjacent to more than one foe in this effect can be damaged multiple times.",
+      "Combo": {
+        "Name": "The Word of Beckoning Cowards",
+        "ActionCost": 1,
+        "Tags": [ "line 5" ],
+        "AreaEffect": "Foes in the line take 2 piercing damage. The first foe in the line is shoved 2 towards the [name], or as far as possible."
+      }
+    },
+    {
+      "Name": "Profane",
+      "ActionCost": 1,
+      "Tags": [ "attack", "range 4", "small blast", "pierce" ],
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "AreaEffect": "[fray].",
+      "Combo": {
+        "Name": "Bolide",
+        "Tags": [ "attack", "range 6", "large blast" ],
+        "Hit": "[D]+[fray].",
+        "Miss": "[fray].",
+        "AreaEffect": "[fray].",
+        "Effects": "Character in the center space is shattered. Then create a height 1 smoking meteor object in free space adjacent to them.",
+        "Combo": {
+          "Name": "Black Blade of Iz",
+          "ActionCost": 2,
+          "Tags": [ "attack", "range 2", "true strike" ],
+          "Hit": "[D]+[fray], twice and shove 1.",
+          "Miss": "[fray] damage, twice.",
+          "Effects": "Deals bonus damage vs shattered or vulnerable foes."
+        }
+      }
+    }
+  ],
+  "PhasesDescription": "At round 3 and every third round thereafter, the [name] uses Utterances of the Crawling Dead.",
+  "Phases": [
+    { },
+    {
+      "Description": "As Phase 1, but:",
       "Traits": "Utterances of the Crawling Dead"
     }
-  ]
+  ],
+  "Tactics": "The [name] is a legend fight based on positioning. At the end of each round, all foes are pelted with magic that stacks up in nasty ways if they are lined up in the wrong way, but many of the [name]'s abilities require characters to group up to avoid. Every third round, Utterances of the Crawling dead makes the area they have to line up in even smaller. The [name] can also pull characters around itself to get them out of position."
 }

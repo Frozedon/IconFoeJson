@@ -1,31 +1,29 @@
 {
   "Name": "Vessel Knight",
-  "Inherits": [ "Relict", "Legendary Heavy" ],
+  "Inherits": [ "Relict", "Legend" ],
   "Type": "Foe",
-  "HP": 40,
-  "Traits": [ "Size 2", "Defiance", "Malice", "Beyond Death" ],
+  "Traits": [ "Size 2", "Sturdy", "Malice", "Beyond Death" ],
   "Actions": [
     {
       "Name": "Darklight Cleaver",
       "ActionCost": 1,
-      "Tags": [ "melee attack 2", "true strike" ],
-      "Hit": "[fray].",
-      "Miss": "-.",
-      "Effects": "Foe gains a stack of Malice.",
+      "Tags": [ "attack", "range 2", "true strike" ],
+      "Hit": "[D]+1.",
+      "Miss": "1.",
+      "Effects": "Foe gains +1 Malice.",
       "Combo": {
         "Name": "Darklight Splitter",
         "ActionCost": 1,
-        "Tags": [ "melee attack 2", "line 5", "true strike" ],
-        "Hit": "[fray] and target gains a stack of Malice.",
-        "Miss": "-.",
-        "AreaEffect": "-.",
-        "Effects": "All foes in the area gain a stack of Malice.",
+        "Tags": [ "attack", "range 2", "line 5", "true strike" ],
+        "Hit": "[D]+1 and +1 Malice.",
+        "Miss": "1 damage and +1 Malice.",
+        "AreaEffect": "1 damage and +1 Malice.",
         "Combo": {
           "Name": "Darklight Crusher",
           "ActionCost": 2,
-          "Tags": [ "melee attack 2", "+1 curse", "true strike", "divine" ],
-          "Hit": "2[D]+[fray].",
-          "Miss": "[D]+[fray]."
+          "Tags": [ "attack", "range 2", "+1 curse" ],
+          "Hit": "2[D]+[fray] and +1 Malice.",
+          "Miss": "[D]+[fray] and +1 Malice."
         }
       }
     },
@@ -33,46 +31,54 @@
       "Name": "Dark Strength",
       "ActionCost": 1,
       "Tags": [ "repeatable" ],
-      "Description": "Dash forward up to 3 spaces, then an adjacent foe is shoved 3 spaces.",
-      "Collide": "Foe is stunned."
+      "Description": "Rush 2, then an adjacent foe is shoved 2 spaces.",
+      "Collide": "Foe is slashed. Slashed foes are stunned."
     }
   ],
-  "PhasesDescription": "The Knight switches to phase II when bloodied.",
+  "PhasesDescription": "The [name] switches to Phase II when bloodied.",
   "Phases": [
     {
       "Actions": [
         {
           "Name": "Rage of Iz",
           "ActionCost": 1,
-          "Tags": [ "2/round", "terrain effect" ],
-          "Effects": "The Vessel roars, and a foe of its choice in range 6 feels the ground trembling beneath their feet. At the end of that character's turn, the knight summons either a pit (50%) or a height 1 dark light spire object (50%) under that foe. The ground erupts in a blast 1 area effect centered on this terrain, dealing [fray] damage to all characters."
+          "Tags": [ "range 6", "terrain effect", "2/round" ],
+          "Effects": "The [name] roars, and a foe of its choice in range 6 feels the ground trembling beneath their feet. At the end of that character's turn, roll 1d6. The [name] summons either a pit (1-3) or a height 1 dark light spire object (4-6) under that foe. The ground erupts in a small blast area effect centered on this terrain, dealing [fray] damage to all characters."
+        },
+        {
+          "Name": "Despair",
+          "ActionCost": 1,
+          "Tags": [ "range 3", "1/round" ],
+          "Description": "The [name] charges a character in range 3 with dark energy, creating a small blast area on them. At the end of that characters next turn, they must sacrifice 3 for every space of the cross not occupied by themselves, an ally, or a summon. Then, they gain +1 Malice."
         },
         {
           "Name": "Damocles",
           "ActionCost": 0,
-          "Tags": [ "1/round" ],
-          "Description": "The knight chooses a character in range 3. At the end of the very next turn, if that character is still in range 3 of the knight, it teleports adjacent to them and may make the next of its Darklight attack series against them."
+          "Tags": [ "range 3", "1/round" ],
+          "Description": "The [name] chooses a character in range. At the end of the very next turn, if that character is still in range of the [name], it removes itself from the battlefield, then places itself adjacent to them and may make the next of its Darklight attack series against them."
         }
       ]
     },
     {
+      "Description": "When bloodied, the [name] becomes intangible until the end of the current turn, then transitions into Phase II. It ignores all damage that put it into its phase transition past its bloodied value.",
       "Traits": "Spectral Form",
       "Interrupts": [
         {
           "Name": "Dispersal",
-          "Tags": [ "2/round" ],
-          "Trigger": "The knight is damaged by an ability.",
-          "Effects": "The knight may teleport up to 4 spaces."
+          "Tags": "2/round",
+          "Trigger": "The [name] is damaged by an ability.",
+          "Effects": "The [name] may teleport up to 3 spaces."
         }
       ],
       "Actions": [
         {
           "Name": "Soul Cleaver",
           "ActionCost": 0,
-          "Tags": [ "2/round" ],
-          "Effects": "All foes in Aura 2 of the knight take 2 divine damage. Each time this ability is used again this combat, increase its damage by +1."
+          "Tags": [ "range 2", "2/round" ],
+          "Effects": "All foes in range take 2 divine damage. Each time this ability is used again this combat, increase its damage by +1."
         }
       ]
     }
-  ]
+  ],
+  "Tactics": "The [name] is a relatively straightforward and threatening legend fight. Characters must balance their own ability to attack with increasing stacks of Malice. Malice can be reduced by not attacking, but in Phase II, the [name] starts to ramp up its damage output with its Soul Cleaver ability, which will become overwhelming over time."
 }

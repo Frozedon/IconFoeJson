@@ -82,10 +82,6 @@
     "Description": "Characters can mount or dismount this character with their standard move, placing them adjacent when dismounting. Allies can start the battle mounted on this character. While mounted, place them inside a free space in this character (size 2 characters has space for 4 size 1 characters, while size 3 characters has space for 9). They share its space, move when it moves, and have cover. Characters hostile to this character must pass a save to mount it. Characters mounting it when it is defeated are placed adjacent and stunned."
   },
   {
-    "Name": "Beyond Death",
-    "Description": "When defiance activates, roll a d6. On a 4+, this character immediately regains defiance. Attacks with True Strike bypass this trait."
-  },
-  {
     "Name": "Blood Hunger",
     "Description": "Deals +2 damage with all abilities against bloodied foes."
   },
@@ -495,6 +491,10 @@
   {
     "Name": "Primal Strength",
     "Description": "When a brawler beast causes a character to collide, that character is dazed."
+  },
+  {
+    "Name": "Rampart",
+    "Description": "Foes cannot enter or exit a space affected by a rampart effect by dashing, flying, or teleporting."
   },
   {
     "Name": "Ranged Master",

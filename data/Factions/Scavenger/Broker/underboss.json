@@ -2,13 +2,12 @@
   "Name": "Underboss",
   "Inherits": "Broker",
   "Type": "Foe",
-  "Traits": "Cheap Trick",
   "Actions": [
     {
       "Name": "Aura of Skulduggery",
       "ActionCost": 1,
-      "Recharge": 5,
-      "Description": "Until the start of their next turn, the underboss is immobile but gains Aura 2. The underboss and allies in the aura have evasion."
+      "Tags": [ "end turn" ],
+      "Description": "Until the start of their next turn, the [name] is immobile and gains Aura 2. The [name] and allies in the aura have evasion and counter."
     }
   ]
 }

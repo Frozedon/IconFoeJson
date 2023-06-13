@@ -1,54 +1,73 @@
 [
   {
-    "Name": "Blood Luck",
-    "Description": "When a Blood Brother picks up a valuables token, all their abilities recharge."
+    "Name": "Twins",
+    "Description": "This legend is two separate size 1 characters, with the following features:",
+    "ListedItems": [
+      { "Description": "Each track effects and hp separately." },
+      { "Description": "However, combos and uses of per round abilities are tracked between both twins." },
+      { "Description": "When this legend takes a turn, only one twin acts at a time, alternating if possible." }
+    ]
   },
   {
+    "Name": "Fatebound",
+    "Description": "If a twin is reduced to 0 hp, they become defeated as normal. However, starting at the end of the next player turn, and at the end of every player turn past that, if the other twin has at least 1 hp and is in range 5, the defeated twin returns from defeated and heals to 25% of their max hp."
+  },
+
+
+  {
     "Name": "Blood Brother",
-    "Description": "The Band has four Brothers. Each Brother is a separate entity, tracking hp and effects separately. The Band is only defeated when all Brothers are defeated.\nOn each of the Band's turns, the Band acts with a different brother, until all have acted at least once. Ability recharge and interrupts are checked for each brother separately.\nEach Brother has unique actions and a Bloodbound Blessing."
+    "Description": "This legend is made up of four Brothers. Each Brother is a separate character, tracking hp and effects separately. The Band is only defeated when all Brothers are defeated. On each of the Band's turns, the Band acts with a different brother, until all have acted at least once. Each Brother has unique actions and a Bloodbound Blessing."
+  },
+  {
+    "Name": "Blood Bound Blessing",
+    "Description": "Each time a Blood Brother is defeated, all active brothers immediately gain the Blood-bound Blessing of the fallen brother, empowering them."
   },
   {
     "Name": "Blessing Boots",
     "DisplayName": "Blessing",
-    "Description": "All remaining Brothers become sturdy and gain The Boot ability."
+    "Description": "All remaining Brothers become sturdy and gain The Boot."
   },
   {
-    "Name": "Iron Fist",
-    "Description": "Attacks against bloodied foes daze them, hit or miss."
+    "Name": "Iron Blade",
+    "Description": "Attacks against bloodied foes gain true strike and slash them."
   },
   {
     "Name": "Blessing Fixer",
     "DisplayName": "Blessing",
-    "Description": "One brother can use Garrote once per round."
+    "Description": "One brother can use Grapple once a round."
+  },
+  {
+    "Name": "Dripping Blade",
+    "Description": "Attacks force the attack target to sacrifice 3 after dealing damage."
   },
   {
     "Name": "Blessing Filth",
     "DisplayName": "Blessing",
-    "Description": "All remaining Brothers gain the Venom Blade trait."
+    "Description": "All remaining Brothers gain Dripping Blade."
   },
   {
     "Name": "Blessing Cats",
     "DisplayName": "Blessing",
-    "Description": "All Brothers gain one use of the Feline Felicity interrupt."
-  },
-  {
-    "Name": "Cheaper Trick",
-    "Description": "When missed by an attack, shove foe 2, teleport 2, and deal 2 damage."
+    "Description": "All Brothers gain Feline Felicity."
   },
   {
     "Name": "Blessing Sharkie",
     "DisplayName": "Blessing",
-    "Description": "All Brothers gain Swindle."
+    "Description": "All Brothers gain Great Swindle."
   },
   {
     "Name": "Blessing Pale",
     "DisplayName": "Blessing",
-    "Description": "All Brothers go to speed 6 and gain phasing."
+    "Description": "All Brothers go to speed 5 and gain phasing."
+  },
+  {
+    "Name": "Keen Eye",
+    "Description": "All attacks can critical hit (+[D])."
   },
   {
     "Name": "Blessing Sharp",
     "DisplayName": "Blessing",
-    "Description": "All Brothers gain the Overdrive trait."
+    "Description": "All Brothers gain Keen Eye, and one brother can use Ricochet Shot once a round."
   },
   {
     "Name": "Blessing Fanatic",
@@ -56,17 +75,27 @@
     "Description": "One brother can use Spark once a round."
   },
   {
-    "Name": "Blood Pact",
-    "Description": "This character gains defiance at the start of their turn if there is a bloody character in range 3."
+    "Name": "Aura of Bloodletting",
+    "Description": "Aura 2. All foes that use an ability in the area, including basic abilities, must sacrifice 2 after the ability resolves. Bloodied foes sacrifice 5 instead."
   },
   {
     "Name": "Blessing Broker",
     "DisplayName": "Blessing",
-    "Description": "All Brothers gain Vigor 1 and Defiance."
+    "Description": "All Brothers gain Defiance."
   },
   {
     "Name": "Blessing Monger",
     "DisplayName": "Blessing",
     "Description": "All foes are marked by Bounty Hunt."
+  },
+
+
+  {
+    "Name": "Net Worth",
+    "Description": "The Midan's pernicious metal aether slowly turns everything on the battlefield into gold and precious jewels. Their abilities have more effects and deal more damage to foes according to their net worth. A foe's net worth is tracked with a d10, for each character."
+  },
+  {
+    "Name": "Perfection",
+    "Description": "If a foe has 10 net worth at the end of their turn, they are fully encased in precious metals and jewels. Their net worth is reduced to 0, then they are defeated, removed from the battlefield, and replaced by a height 1 golden statue object with 10 hp. Return them to the battlefield, still defeated, when the statue is destroyed."
   }
 ]

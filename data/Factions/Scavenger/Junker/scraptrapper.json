@@ -2,13 +2,12 @@
   "Name": "Scrap Trapper",
   "Inherits": "Junker",
   "Type": "Foe",
-  "Traits": "Wayfinding",
   "Actions": [
     {
-      "Name": "Spring Scrap Trap",
+      "Name": "Hoard Ward",
       "ActionCost": 1,
-      "Tags": [ "terrain effect", "special recharge" ],
-      "Description": "The Tinker Summons a blast 1 area of difficult terrain in range 8. Recharges when picking up a valuables token."
+      "Tags": [ "range 8", "terrain effect" ],
+      "Description": "The [name] creates a small blast area of difficult terrain in range. When the area is created, all characters inside take 2 piercing damage. Foes that pick up a valuables token in the area take 4 piercing damage. Ability cannot be used again until the scrap trapper picks up a valuables token."
     }
   ]
 }

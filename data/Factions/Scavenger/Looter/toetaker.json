@@ -2,14 +2,14 @@
   "Name": "Toe-taker",
   "Inherits": "Looter",
   "Type": "Foe",
-  "Traits": "Consumptive Greed",
+  "Traits": "Golden Burden",
   "RemoveActions": "Slice and Dice",
   "Actions": {
-    "Name": "Hamstring",
+    "Name": "Toe Cut",
     "ActionCost": 1,
-    "Tags": [ "melee attack", "+1 boon" ],
-    "Hit": "[D]+[fray].",
-    "Miss": "[fray].",
-    "Effects": "On hit, until the end of their next turn, foe takes 2 damage for each space they move."
+    "Tags": [ "attack", "melee", "+1 boon" ],
+    "Hit": "[D].",
+    "Miss": "1 damage.",
+    "Effects": "The character gains an open wound. While wounded, it takes [D] again at the end of its turns. This effect does not stack, and ends instead if the character ends their turn adjacent to an ally."
   }
 }

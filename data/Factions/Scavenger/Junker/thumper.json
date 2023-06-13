@@ -2,21 +2,12 @@
   "Name": "Thumper",
   "Inherits": "Junker",
   "Type": "Foe",
-  "RemoveActions": "Scrap Storm",
   "Actions": [
     {
       "Name": "Load Scrap",
       "ActionCost": 1,
-      "Tags": [ "end turn", "greed" ],
-      "Description": "The Thumper loads an adjacent valuables token into their mortar, removing it. The next mortar shot becomes blast 2 and shatters its target on hit. Then, after the attack resolves, place a valuables token anywhere in the area."
-    },
-    {
-      "Name": "Scrap Mortar",
-      "ActionCost": 2,
-      "Tags": [ "ranged attack 10", "pierce" ],
-      "Hit": "2[D]+[fray] and create a pit under the target.",
-      "Miss": "[fray].",
-      "Effects": "Ignores cover."
+      "Tags": [ "end turn" ],
+      "Description": "The [name] loads an adjacent valuables token into their mortar, removing the token. The next scrap storm they use deals 5 piercing damage again to all characters, creates a pit under its attack target, and its attack target must save or become stunned. Then, place a valuables token anywhere in the area."
     }
   ]
 }

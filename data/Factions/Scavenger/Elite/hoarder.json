@@ -3,41 +3,40 @@
   "Inherits": [ "Scavenger", "Elite", "Artillery" ],
   "Type": "Foe",
   "RemoveTraits": "Slip",
-  "Traits": "Great Junk Armor",
+  "Traits": [ "Great Junk Armor", "Animate Junk Golem" ],
   "Actions": [
     {
-      "Name": "Animate Junk Golem",
+      "Name": "Scrapstorm",
       "ActionCost": 1,
-      "Tags": [ "summon", "1/combat" ],
-      "Description": "The Hoarder summons a Junk Golem in range 3.",
-      "Summons": {
-        "Name": "Junk Golem",
-        "Tags": [ "Size 1", "Sturdy", "16 HP", "Defense 8" ],
-        "SummonActions": "When summoned, or once on the hoarder's turn, the golem can move 3 spaces, then shove an adjacent foe 2. If that foe collides, they take [D] damage and are shattered.",
-        "SummonEffects": "When the golem is defeated, drop 3 valuables in or adjacent to the space it occupied. When the golem passes over a valuables token, it absorbs it, gaining vigor 1 and giving its action bonus damage. It drops any tokens it picked up when it is defeated."
-      }
-    },
-    {
-      "Name": "Scrap Storm",
-      "ActionCost": 2,
-      "Tags": [ "ranged attack 8", "cross 2", "pierce" ],
-      "Hit": "2[D]+[fray] and foe becomes vulnerable.",
+      "Tags": [ "attack", "range 8", "small blast", "pierce" ],
+      "Hit": "[D]+[fray] and foe becomes vulnerable.",
       "Miss": "[fray].",
       "AreaEffect": "[fray].",
       "CustomComponents": {
-        "Name": "Greed",
-        "Description": "Deals bonus damage for each valuables token this character holds."
+        "Name": "Round 3+",
+        "Description": "Deals bonus damage, becomes a medium blast, and also creates a valuables token in its area."
       }
     },
     {
       "Name": "Pile It Up",
       "ActionCost": 1,
-      "Description": "The Hoarder creates a height 1 or 2 junk pile object in a space in range 6. Characters adjacent to it when it is created are shoved 1. If created under a character, it pushes them up on top of it instead."
+      "Tags": [ "range 6" ],
+      "Description": "The [name] creates a height 1 scrap pile object in a space in range. Characters adjacent to it when it is created takes 1 damage twice and are shoved 1. If created under a character, it pushes them up on top of it instead.",
+      "CustomComponents": {
+        "Name": "Greed",
+        "Description": "Increase damage, height and shove by +1."
+      }
     },
     {
-      "Name": "Junk Form",
+      "Name": "Weigh Down",
       "ActionCost": 1,
-      "Description": "The Hoarder transforms into junk, then swaps places with any free valuables token."
+      "Tags": [ "range 6", "mark" ],
+      "Description": "The [name] causes junk to accumulate and stick to a foe of its choice in range. That foe is marked. While marked, the foe cannot dash or rush, and drops a valuables token in an adjacent space of their choice at the end of their turn. A foe can end this mark if they don't move for their entire turn."
+    },
+    {
+      "Name": "Great Junk Form",
+      "ActionCost": 1,
+      "Description": "The [name] transforms into junk, then swaps places with any free valuables token, removing and placing it."
     }
   ]
 }

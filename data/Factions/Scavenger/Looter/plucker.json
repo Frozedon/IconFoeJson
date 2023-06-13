@@ -3,8 +3,9 @@
   "Inherits": "Looter",
   "Type": "Foe",
   "Actions": {
-    "Name": "Lighten Load",
+    "Name": "Golden Step",
     "ActionCost": 1,
-    "Effects": "The Plucker teleports 2. An adjacent foe must save, or take [fray] damage once for each valuables token they are carrying. The Plucker then steals all valuables from them. If they have no valuables, they are instead slowed and take [fray] damage."
+    "Tags": [ "range 3" ],
+    "Effects": "An ally in range can dash 3 with phasing. Any time the chosen ally picks up a valuables token during that move they deal 2 damage to all adjacent foes, then [name] gains the token."
   }
 }

@@ -3,17 +3,19 @@
   "Inherits": "Junker",
   "Type": "Foe",
   "Chapter": 3,
+  "Traits": "Deep Pockets",
   "Actions": [
     {
       "Name": "Golden Hand",
       "ActionCost": 0,
-      "Description": "The wright transmutes an object in range 8 into solid gold. Characters standing adjacent to it count as holding a valuables token. This effect ends at the end of combat."
+      "Tags": [ "range 8" ],
+      "Description": "The [name] transmutes an object in range into solid gold. Characters standing adjacent to it count as holding a valuables token."
     },
     {
       "Name": "Flesh to Metal",
       "ActionCost": 1,
-      "Recharge": 6,
-      "Description": "A foe in range 8 must save. On a successful save, they are shattered. On a failed save, they begin turning into solid gold. At the end of their turn, remove and replace their character with a size 1 destructible object with 10 hp. Until the terrain piece is destroyed, they cannot take a turn. When it's destroyed, return them to the battlefield. Characters standing adjacent to the terrain piece count as holding a valuables token."
+      "Tags": [ "range 8", "1/combat" ],
+      "Description": " A foe in range must save. On a successful save, they are shattered, and the [name] can use this ability again this combat. On a failed save, they begin turning into solid gold. At the end of their next turn, remove and replace their character with a size 1 destructible object with 10 hp. Until the terrain piece is destroyed, they cannot take a turn. When it's destroyed, return them to the battlefield. Characters standing adjacent to the object count as holding a valuables token."
     }
   ]
 }

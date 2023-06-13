@@ -3,13 +3,29 @@
   "Inherits": "Scrapper",
   "Type": "Foe",
   "Chapter": 3,
-  "Traits": [ "Sturdy", "Gilded Armor", "Collect Paycheck" ],
-  "Actions": {
-    "Name": "The Block",
-    "ActionCost": 1,
-    "Tags": [ "mark", "end turn", "special recharge" ],
-    "Description": "The splitter marks a foe in range 3.",
-    "Mark": "At the end of that foe's next turn, if they are still marked, the Splitter dashes up to 6 spaces towards them. They must save or take 3[D]+[fray], or [D]+[fray] on a successful save. Either way, the mark ends.",
-    "SpecialRecharge": "This ability recharges only if the Splitter picks up a valuables token."
-  }
+  "Traits": [ "Sturdy", "Deep Pockets" ],
+  "Interrupts": {
+    "Name": "Golden Armor",
+    "Count": 1,
+    "Tags": "requires at least one valuables token",
+    "Trigger": "Self or an adjacent ally is targeted by ability.",
+    "Effects": "Grant resistance and unstoppable against the triggering ability, then if this character has at least one valuables token, discard a valuables token, destroying it."
+  },
+  "Actions": [
+    {
+      "Name": "The Block",
+      "ActionCost": 1,
+      "Tags": [ "range 3", "true strike", "end turn" ],
+      "Description": "The [name] chooses a foe in range. At the end of that foe's next turn, the [name] rushes up to 4 spaces towards them. If the [name] ends this movement adjacent to the chosen foe, they must save or take 2[D]+[fray], or [D]+[fray] on a successful save.",
+      "CustomComponents": {
+        "Name": "Slay",
+        "Description": "Gain +2 valuables."
+      }
+    },
+    {
+      "Name": "Execute",
+      "ActionCost": 2,
+      "Description": "A foe in range 2 at 25% HP or lower must save. On a failed save, they are defeated, ignoring all other effects. On a successful save, they sacrifice down to 1 hp."
+    }
+  ]
 }

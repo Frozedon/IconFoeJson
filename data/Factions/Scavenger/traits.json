@@ -1,39 +1,45 @@
 [
   {
+    "Name": "Animate Junk Golem",
+    "Description": "At the start of combat, the [name] summons a Junk Golem in range 3.",
+    "Summons": {
+      "Name": "Junk Golem",
+      "Tags": [ "Size 1", "intangible" ],
+      "SummonActions": "When summoned, or once on the [name]'s turn, the golem can move 3 spaces, then shove an adjacent foe 1. If that foe collides, they take 2 piercing damage and are vulnerable.",
+      "SummonEffects": "When the golem enters the space of a valuables token, it absorbs it. It's speed, shove, and collide damage all increase by +1 for the rest of combat."
+    }
+  },
+  {
     "Name": "Arkentech Hover Chair",
     "Description": "Flying and Sturdy. Loses both when bloodied."
   },
   {
     "Name": "Assets",
-    "Description": "The Baron has a d6 power die, starting at 6. They may tick the die down to spend some of their tremendous wealth to empower their abilities. The die ticks up by 1 at the start of their turn, or 2 every time they pick up a valuables token."
+    "Description": "The [name] has a d6 power die, starting at 6. They may tick the die down to spend some of their tremendous wealth to empower their abilities. The die ticks up by 1 at the start of their turn, or 2 every time they pick up a valuables token."
   },
   {
     "Name": "Aura of Taxes",
-    "Description": "Aura 2. Foes that enter or exit the aura stop moving and become immobile until the end of the current turn. They can ignore this effect by immediately paying 1 valuables token to the Tollkin. If they have paid the toll, they ignore this trait for the rest of combat."
+    "Description": "Aura 2. Foes that enter or exit the aura stop moving and become immobile until the end of the current turn. They can ignore this effect by immediately paying 1 valuables token to the [name], which the Tollkin picks up. If they have paid the toll, they ignore this trait for the rest of combat."
   },
   {
     "Name": "Aura of Wealth",
-    "Description": "Aura 2. Characters inside count as holding 1 valuables token"
+    "Description": "Aura 2. All characters inside count as holding 1 valuables token"
   },
   {
     "Name": "Bully",
     "Description": "This character always treats bloodied foes as if they have a valuables token."
   },
   {
-    "Name": "Consumptive Greed",
-    "Description": "Toe-takers always attempt to focus on the closest foe with a valuables token at the start of their turn."
+    "Name": "Cut and Run",
+    "Description": "If a Scavenger has 4 or more valuables tokens, they attempt to flee the battlefield, fleeing successfully if they start their turn in an edge space of the battlefield with no hostile characters adjacent."
   },
   {
     "Name": "Deep Pockets",
     "Description": "Starts with 1 valuables token."
   },
   {
-    "Name": "Gilded Armor",
-    "Description": "Drops 1 valuables token when bloodied. Gains vigor 1 when picking up a valuables token."
-  },
-  {
     "Name": "Golden Burden",
-    "Description": "Has evasion against characters carrying valuables."
+    "Description": "Has evasion against characters holding a valuables token."
   },
   {
     "Name": "Golden Step",
@@ -46,11 +52,11 @@
   },
   {
     "Name": "Great Junk Armor",
-    "Description": "The first and second time this character is damaged by an attack or ability in a combat, reduce all damage to 0 and summon 2 valuables tokens in spaces in range 2 from them."
+    "Description": "The first and second time this character is damaged by an ability in a combat, reduce all damage to 0 and summon a valuables token in spaces in range 2 from them."
   },
   {
     "Name": "Greed",
-    "Description": "If a Scavenger is holding a valuables token, their attacks can randomly critical hit (+[D]). Many other scavenger abilities become more powerful if they have a valuables token."
+    "Description": "When the Scavenger uses an ability and either they or their target has one or more valuables tokens, the ability gains more powerful greed effects."
   },
   {
     "Name": "Guard Loot",
@@ -58,19 +64,23 @@
   },
   {
     "Name": "Junk Armor",
-    "Description": "The first time the Junker is damaged by an attack or ability in a combat, reduce all damage to 0 and summon 1 valuables token in a space in range 2 from them."
+    "Description": "The first time the [name] is damaged by an attack or ability in a combat, reduce all damage to 0 and summon 1 valuables token in free space in range 2 from them."
   },
   {
     "Name": "Leave Tracks",
-    "Description": "At the start of their turn, the Ring Finger puts down a track in their space. A character that ends their turn in that space collects the track. When a track has been collected, the Ring Finger's Master Cloak trait deactivates until the end of the Finger's next turn."
+    "Description": "At the start of their turn, the [name] puts down a track in their space. A character that enters that space collects the track. When a track has been collected, the [name]'s Master Cloak trait deactivates until the end of the [name]'s next turn."
+  },
+  {
+    "Name": "Loot Hauler",
+    "Description": "[name]s can pick up valuables tokens. Allies of [name]s can take valuables tokens from them by entering or exiting a space adjacent to the [name] holding one."
   },
   {
     "Name": "Master Cloak",
-    "Description": "While this trait is active, the Ring Finger cannot be directly targeted or attacked and their location is not revealed on the map. Instead, the GM secretly records their location. Auras, area effects, and other effects that can target a space affect them normally (taking into account dodge). This trait deactivates until the end of the Finger's next turn if a track is collected or after the Finger attacks."
+    "Description": "While this trait is active, the [name] is unstoppable, has phasing, and cannot be directly targeted at all. Their location is not revealed on the map. Instead, the GM secretly records their location. Auras, area effects, and other effects that can target a space affect them normally (taking into account dodge). This trait deactivates until the end of the [name]'s next turn if a track is collected or the [name] attacks."
   },
   {
-    "Name": "Pay the Reaper",
-    "Description": "May discard all valuables tokens as an effect at the start or end of any turn to gain defiance. While the Aurelian has defiance, they cannot pick up valuables tokens."
+    "Name": "Oooh, Shiny",
+    "Description": "When [name] enters the space of a valuables token, they stop moving and admire it, then pick it up. This stops any movement from any ability or round action and immediately halts the ability."
   },
   {
     "Name": "Smelt",
@@ -78,7 +88,7 @@
   },
   {
     "Name": "Tally",
-    "Description": "The Aurelian has a d10 power die and Aura 2. Whenever a foe uses an attack against the Aurelian or any of its allies in the aura, tick the die up by 1. Also Tick Tally up by 1 every time the Aurelian picks up a valuables token. Certain actions require higher or lower tally."
+    "Description": "The [name] has a d10 power die and Aura 2. Whenever a foe uses an attack against the [name] or any of its allies in the aura, tick the die up by 1. Also tick Tally up by 1 every time the Aurelian picks up a valuables token. Certain actions require higher or lower tally."
   },
   {
     "Name": "Thiefcraft",
@@ -86,6 +96,6 @@
   },
   {
     "Name": "Tithe-law",
-    "Description": "Characters can always avoid effects from the Judge by paying the Judge either 1 valuables token or taking divine damage equal to 25% of their hp."
+    "Description": "Characters can always avoid effects from the [name] by paying the [name] 1 valuables token, or sacrificing 25% of their max hp."
   }
 ]

@@ -1,0 +1,144 @@
+{
+  "Name": "Midan",
+  "Inherits": [ "Scavenger", "Legend" ],
+  "Type": "Foe",
+  "Traits": [ "Net Worth", "Perfection" ],
+  "Actions": [
+    {
+      "Name": "Grand Transmutation",
+      "RoundAction": true,
+      "Description": "At the start of the round, all foes gain 1 net worth."
+    },
+    {
+      "Name": "Halcyon World",
+      "RoundAction": true,
+      "Description": "At the start of the round, the Midan creates a height 3 golden pillar in free space anywhere on the battlefield. At the end of the round, a foe increases their net worth by 1 for each of these pillars they are adjacent to."
+    },
+    {
+      "Name": "Glittering World",
+      "RoundAction": true,
+      "Description": "The Midan injects the closest foe to them with powerful metal aether. If there are foes at an equal distance, it can choose. This has the following effects:",
+      "ListedItems": [
+        { "Description": "Increase that character's net worth by 1d6. Even if that character would go to 10 net worth, they are not defeated." },
+        { "Description": "Instead, at the end of the round, the affected character explodes, dealing piercing damage equal to twice their net worth to all allies and destructible objects in a large blast area effect explosion centered on them with true strike and increasing allies' net worth in the area by 2. Then, they reduce their net worth by 4 and end this effect." }
+      ]
+    },
+    {
+      "Name": "Molten Creation",
+      "ActionCost": 1,
+      "Tags": [ "line 10", "1/round" ],
+      "Description": "The Midan blasts a line 10 area effect drawn from its position. Foes in the area increase their net worth by 1. The Midan can then duplicate any of its terrain effects or objects in the area, creating exact copies in a free adjacent space to the original effect."
+    },
+    {
+      "Name": "Market Evaluation",
+      "ActionCost": 1,
+      "Tags": [ "range 4", "1/round" ],
+      "Description": "The Midan chooses a burst 2 (target space) in range. It may swap the positions of any characters or objects in the area, including itself, removing and placing them. It may then swap the net worth of two characters in the area."
+    },
+    {
+      "Name": "Molten Shell",
+      "ActionCost": 1,
+      "Tags": [ "1/round" ],
+      "Description": "The Midan surrounds itself with a molten gold shell, gaining a d6 power die with 1 charge per player (max 6). The Midan becomes resistant to all damage and unstoppable while the metal shell is active. However, when it would take damage, reduce the metal shell power die by 1, then increase the net worth of whoever dealt the damage by 2. When the die reaches 0, the shell cracks and this effect ends."
+    },
+    {
+      "Name": "Melt",
+      "ActionCost": 1,
+      "Tags": [ "1/round" ],
+      "Description": "The Midan removes itself from the battlefield, then places itself in free space in range 3."
+    },
+    {
+      "Name": "The Weight",
+      "ActionCost": 1,
+      "Tags": [ "attack", "range 6", "small blast" ],
+      "Hit": "[D] + twice net worth.",
+      "Miss": "Twice net worth.",
+      "AreaEffect": "Twice net worth.",
+      "Effects": "All characters in the area are shoved 1 and have their net worth increased by 1.",
+      "Combo": {
+        "Name": "Golden Glove",
+        "ActionCost": 1,
+        "Tags": [ "attack", "range 3", "+1 boon", "true strike" ],
+        "Hit": "[D]+[fray].",
+        "Miss": "[fray].",
+        "Effects": "Foe must save or be shoved 1 for every 2 net worth they have, or just 1 space on a successful space. Then, they gain 1 net worth.",
+        "Collide": "Foe is stunned.",
+        "Combo": {
+          "Name": "Take Measure",
+          "ActionCost": 2,
+          "Tags": [ "attack", "range 4", "medium blast", "pierce" ],
+          "Hit": "2[D] + twice net worth.",
+          "Miss": "Twice net worth.",
+          "AreaEffect": "Twice net worth.",
+          "Effects": [
+            "Foe is shattered.",
+            "Foes in the area gain 1 net worth. Bloodied foes gain 2."
+          ]
+        }
+      }
+    },
+    {
+      "Name": "Scatter Wealth",
+      "ActionCost": 1,
+      "Tags": [ "range 3" ],
+      "Description": "Create a coin pile difficult terrain space in any space in range. The Midan is not slowed by these spaces, and when it takes this action, it may dive into the ground, then appear inside the coin space. When it emerges, deal 2 piercing damage to all adjacent foes."
+    },
+    {
+      "Name": "Glimmer",
+      "ActionCost": 1,
+      "Tags": [ "range 3", "end turn" ],
+      "TerrainEffect": "The Midan creates a height 1 volatile gem object in free space in range.",
+      "Summons": {
+        "Name": "Volatile Gem",
+        "IsObject": true,
+        "Tags": [ "Height 1 object", "1 hp" ],
+        "SummonEffects": "Explodes when taking damage from any ability (including the Midan's), destroying them. When destroyed, each object deals 1 piercing damage, once, to all adjacent foes for every net worth, then increases their net worth by 1."
+      },
+      "Combo": {
+        "Name": "Crystallize",
+        "ActionCost": 1,
+        "Description": "The Midan creates a geode in free space underneath any foe. The geodes are pits, and foes inside are vulnerable+. Foes that end their turn inside a geode increase their net worth by +1 and become vulnerable.",
+        "Combo": {
+          "Name": "Aurelian Bomb",
+          "ActionCost": 1,
+          "TerrainEffect": " The Midan creates a bomb of molten gold in range.",
+          "Summons": {
+            "Name": "Aurelian Bomb",
+            "IsObject": true,
+            "Tags": [ "Height 1 object", "10 hp" ],
+            "SummonEffects": "When the Midan summons a bomb, it may choose to detonate any Aurelian bombs that it didn't place this turn. Bombs explode with a medium blast area effect centered on them, shattering all foes inside, dealing piercing [fray] damage four times to all foes and objects inside, then increasing all foes net worth by 2 in the area."
+          }
+        }
+      }
+    }
+  ],
+  "PhasesDescription": "At round 3, and every third round thereafter, the Midan uses The Price is Right.",
+  "Phases": [
+    {
+    },
+    {
+      "Actions": [
+        {
+          "Name": "The Price is Right",
+          "RoundAction": true,
+          "Description": "At the start of the round, the Midan shows the characters three golden caskets (a left, right, and center casket).\nThe GM secretly assigns a number to each casket, from 1 to 3. They must then tell the players what each number does, but not which numbers have been assigned to each casket - that's up to the players to find out!\nCharacters must choose a casket (left, right, center), and must decide which casket to choose at the start of the round.\nThen, the Midan hides the caskets. At the end of the round, they return the caskets and open them, showing the numbers, in order, applying the effects to all characters that chose that casket, then hiding the caskets again.",
+          "ListedItems": [
+            {
+              "Name": "Casket #1",
+              "Description": "Increase net worth by 1, then receive 1 dust."
+            },
+            {
+              "Name": "Casket #2",
+              "Description": "Reduce net worth to 0."
+            },
+            {
+              "Name": "Casket #3",
+              "Description": "Double net worth."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "Tactics": "Fighting the Midan is all about managing a characters' net worth. Certain effects, like the Midan's molten shell, can rack it up very quickly on unprepared characters. The Midan can blow up its own volatile gems and swap characters into bad positions in order to maximize wealth gain, also using Molten Creation to double up on powerful terrain effects or objects such as Aurelian Bomb. The amount of objects and terrain can get overwhelming for players very quickly if it's not dealt with!\n Canny players may figure out that Glittering World can be used to destroy the Midan's objects or free characters that have been turned to gold, and also safely reset the net worth of characters that are too high."
+}

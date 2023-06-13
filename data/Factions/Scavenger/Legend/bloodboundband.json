@@ -2,65 +2,53 @@
   "Name": "Blood Bound Band",
   "Inherits": [ "Scavenger", "Legend" ],
   "Type": "Foe",
-  "Class": "Unique",
-  "Vitality": 10,
-  "HP": 10,
+  "HP": 13,
   "HPText": "Each brother has [HP] hp per player character [MIN]",
-  "Speed": 4,
-  "Defense": 10,
-  "FrayDamage": 3,
-  "DamageDie": 8,
-  "RemoveTraits": "Enrage",
-  "Traits": [ "Blood Luck", "Blood Brother" ],
+  "Traits": [ "Blood Brother", "Blood Bound Blessing" ],
   "SetupTraits": [
     {
       "Name": "Blood Brothers",
       "Description": "To determine which brothers the Band consists of, roll a d10 4 times, reroll repeats, or pick 4."
     }
   ],
+  "RemoveActions": "Juggernaut",
   "Actions": [
+    {
+      "Name": "Strength in Blood",
+      "RoundAction": true,
+      "Description": "At the start of the round, this legend may clear a status or mark affecting one of the Brothers."
+    },
     {
       "Name": "Blood Bond",
       "ActionCost": 1,
-      "Tags": "greed",
-      "Description": "Swap places with a Blood Brother in range 3.",
-      "CustomComponents": {
-        "Name": "Greed",
-        "Description": "Free action."
-      }
+      "Description": "Swap places with a Blood Brother in range 3, removing and placing both characters."
     },
     {
       "Name": "Setup",
       "ActionCost": 1,
-      "Tags": [ "end turn", "greed" ],
-      "Description": "Dash 3, then gain stealth. Next action treats all targets as bloodied.",
-      "CustomComponents": {
-        "Name": "Greed",
-        "Description": "Free action."
-      }
+      "Tags": [ "end turn" ],
+      "Description": "Dash 3, then any brother gains stealth. That brother's next ability treats all targets as bloodied."
     },
     {
       "Name": "Serrated Knife",
       "ActionCost": 1,
-      "Description": "A character in range 4 takes [fray] damage. If they're bloodied, they take [fray] damage twice."
+      "Description": "A character in range 4 takes 2 damage. If they're bloodied, they take 3 damage twice instead."
     },
     {
       "Name": "First Blood",
       "ActionCost": 1,
-      "Tags": "melee attack",
+      "Tags": [ "attack", "range 3" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
       "Effects": [
         "May dash 1 before and after attack.",
-        "Attack deals max damage to undamaged characters or characters with any amount of vigor."
+        "Attack gains +1 dash and deals +2 damage on hit or miss per fallen brother."
       ]
     }
   ],
+  "PhasesDescription": "When only one brother is remaining, the band goes into Phase II.",
   "Phases": [
-    {
-      "Name": "2+ Brothers",
-      "Description": "Each time a Blood Brother is defeated, all active brothers gain the Blood-bound Blessing of the fallen brother, empowering them. Each brother has a different blessing."
-    },
+    { },
     {
       "Name": "1 Brother",
       "Description": "If only one Brother is remaining, they become unstoppable and gain +1 action for the rest of combat."
@@ -70,78 +58,77 @@
     {
       "Name": "1. Boots",
       "Class": "Heavy",
-      "Traits": [ "Size 2", "Sturdy", "Fortify", "Armor 3", "Blessing Boots" ],
-      "Interrupts": {
-        "Name": "Dropkick",
-        "Count": 1,
-        "Recharge": 6,
-        "Trigger": "A foe finishes taking an action in range 3 of Boots.",
-        "Effects": "Boots teleports adjacent to that foe, then they take [D]+[fray] and are shoved 3. Foe must then save or be stunned.",
-        "Collide": "Foe fails the save."
-      },
-      "Actions": {
-        "Name": "The Boot",
-        "ActionCost": 0,
-        "Description": "An adjacent foe is shoved 2. If they're bloody, they are instead shoved 4.",
-        "Collide": "Foe is dazed."
-      }
+      "Traits": [ "Guard", "Blessing Boots" ],
+      "Actions": [
+        {
+          "Name": "The Boot",
+          "ActionCost": 0,
+          "Description": "An adjacent foe is shoved 1. If they're bloody, they are instead shoved 3.",
+          "Collide": "Foe is weakened."
+        },
+        {
+          "Name": "Flying Dropkick",
+          "ActionCost": 2,
+          "Description": "Boots rushes 3 towards a foe. Then, if they are adjacent to that foe, that foe takes take [D]+[fray] and is shoved 3.",
+          "Collide": "Foe is stunned."
+        }
+      ]
     },
     {
       "Name": "2. Fixer",
       "Class": "Heavy",
-      "Traits": [ "Fortify", "Armor 3", "Iron Fist", "Blessing Fixer" ],
+      "Traits": [ "Guard", "Iron Blade", "Blessing Fixer" ],
       "Actions": {
-        "Name": "Garrote",
+        "Name": "Grapple",
         "ActionCost": 1,
-        "Recharge": 6,
-        "Effects": "An adjacent foe must save. On a successful save, that foe takes [fray] damage twice. On a failed save, that foe and Fixer become immobile. At the end of the targeted foe's turn, they must save or take damage equal to 50% of their max hp. Bloodied characters fail this save. Then, this effect ends. It also ends early if Fixer or the targeted foe are moved apart. Only one character can be garroted at once."
+        "Tags": [ "mark" ],
+        "Description": "Fixer marks an adjacent foe. While marked, that foe must save if it attempts to break adjacency the first time in a round. On a failed save, it becomes unable to exit adjacency with Fixer by any means for the rest of the current round. On a successful save, the mark and this effect ends, but the foe is weakened."
       }
     },
     {
       "Name": "3. Filth",
       "Class": "Skirmisher",
-      "Traits": [ "Skirmish", "Dodge", "Venom Blade", "Blessing Filth" ],
+      "Traits": [ "Skirmish", "Dodge", "Dripping Blade", "Blessing Filth" ],
       "Actions": {
         "Name": "Poison Gas",
         "ActionCost": 2,
-        "Recharge": 6,
-        "Tags": "close blast 1",
-        "AreaEffect": "Characters in the area take [D]+[fray]. Then, they must save or take [D] again, become poisoned, and become blinded. Poisoned or blinded characters fail this save."
+        "Tags": [ "small blast" ],
+        "AreaEffect": "Characters in the area take 6 damage. Then, they must save or take 6 damage again and become blinded. Blinded characters fail this save."
       }
     },
     {
       "Name": "4. Cats",
       "Class": "Skirmisher",
       "Traits": [ "Skirmish", "Dodge", "Blessing Cats" ],
-      "Interrupts": {
-        "Name": "Feline Felicity",
-        "Count": 2,
-        "Trigger": "A foe starts or ends their turn.",
-        "Effects": "Teleport 3, then may deal 2 damage to an adjacent foe."
-      },
-      "Actions": {
-        "Name": "Fan of Nya-ives",
-        "ActionCost": 1,
-        "Recharge": 6,
-        "Tags": "close blast 1",
-        "AreaEffect": "Foes take [fray] damage. Bloodied foes take [fray] damage three times."
-      }
+      "Actions": [
+        {
+          "Name": "Feline Felicity",
+          "ActionCost": 0,
+          "Description": "Teleport 3, then may deal 2 damage to an adjacent foe. Bloodied foes take 2 damage twice."
+        },
+        {
+          "Name": "Fan of Nya-ives",
+          "ActionCost": 1,
+          "Tags": [ "medium blast" ],
+          "AreaEffect": "Foes take 3 damage. Bloodied foes take 3 damage twice. Then, Cats may teleport 2."
+        }
+      ]
     },
     {
       "Name": "5. Sharkie",
-      "Class": "Skirmisher",
-      "Traits": [ "Skirmish", "Dodge", "Cheaper Trick", "Blessing Sharkie" ],
+      "Class": "Leader",
+      "Traits": [ "Diaga", "Blessing Sharkie" ],
       "Actions": [
         {
-          "Name": "Aura of Skulduggery",
+          "Name": "Great Aura of Skulduggery",
           "ActionCost": 1,
-          "Recharge": 6,
-          "Description": "Until the start of their next turn, Sharkie gains Aura 2. Sharkie and other Brothers in the aura have evasion."
+          "Tags": [ "end turn" ],
+          "Description": "Until the start of their next turn, Sharkie is immobile and gains Aura 2. Sharkie and allies in the aura have evasion and counter. Foes that trigger counter or evasion are also shoved 2 after the triggering ability resolves."
         },
         {
-          "Name": "Swindle",
+          "Name": "Great Swindle",
           "ActionCost": 0,
-          "Description": "A foe in range 3 must save or swap places with Sharkie, teleporting. Bloodied characters fail the save."
+          "Description": "A foe in range 3 is sealed, then must save or swap places with Sharkie, teleporting. Bloodied characters fail the save."
         }
       ]
     },
@@ -151,33 +138,32 @@
       "Traits": [ "Skirmish", "Dodge", "Blessing Pale" ],
       "Actions": {
         "Name": "Nighthaunt",
-        "ActionCost": 1,
-        "Recharge": 4,
-        "Tags": "end turn",
-        "Description": "Pale teleports 3, then becomes intangible and gains phasing until the start of their next turn. This action grants resistance instead if they are the only Brother active.",
+        "ActionCost": 2,
+        "Tags": [ "end turn" ],
+        "Description": "Pale teleports 3, then becomes intangible and gains phasing until the start of their next turn. This action grants evasion instead if they are the only Brother active.",
         "Combo": {
-          "Name": "Assassinate",
+          "Name": "Midnight Blade",
           "ActionCost": 2,
-          "Tags": "melee attack",
-          "Hit": "4[D]+[fray] and foe is stunned.",
+          "Tags": [ "attack" ],
+          "Hit": "3[D]+[fray].",
           "Miss": "[D]+[fray].",
-          "Effects": "Deals half damage if foe has any amount of vigor. Deals double damage if foe is bloodied."
+          "Effects": "Deals half damage if foe has any amount of vigor. Deals bonus damage if foe is bloodied."
         }
       }
     },
     {
       "Name": "7. Sharp",
       "Class": "Artillery",
-      "Traits": [ "Aetherwall", "Overdrive", "Blessing Sharp" ],
+      "Traits": [ "Aetherwall", "Slip", "Keen Eye", "Blessing Sharp" ],
       "Actions": {
         "Name": "Ricochet Shot",
         "ActionCost": 1,
-        "Tags": [ "ranged attack 10", "pierce" ],
+        "Tags": [ "attack", "range 10", "pierce" ],
         "Hit": "[D]+[fray] and foe is shattered.",
         "CriticalHit": "Foe is stunned.",
         "Miss": "[fray].",
         "Effects": [
-          "A different foe in range 3 from the original target takes [D].",
+          "A different foe in range 3 from the original target takes [fray] damage.",
           "Deals bonus damage against bloodied foes."
         ]
       }
@@ -185,55 +171,53 @@
     {
       "Name": "8. Fanatic",
       "Class": "Artillery",
-      "Traits": [ "Aetherwall", "Overdrive 3", "Blessing Fanatic" ],
+      "Traits": [ "Aetherwall", "Slip", "Blessing Fanatic" ],
       "Actions": [
-        {
-          "Name": "Blood Pyre",
-          "ActionCost": 2,
-          "Tags": [ "ranged attack 6", "blast 1" ],
-          "Hit": "2[D]+[fray].",
-          "Miss": "[fray].",
-          "AreaEffect": "[fray].",
-          "Effects": "Summon a pit under every bloodied character."
-        },
         {
           "Name": "Spark",
           "ActionCost": 0,
-          "Tags": "mark",
-          "Description": "A foe in range 6 is marked.",
-          "Mark": "At the end of the marked character's turn, if they are still marked, they explode in a blast 1 area effect for [D]+[fray]. Summon a pit under them. If that foe is already standing in a pit, they instead take damage equal to 50% of their max hp. Then clear this mark. It explodes immediately if used against bloodied foes."
+          "Description": "Choose a foe in range 6 that has not acted this round. At the end of that foe's next turn, they explode in a small blast area effect for [D]+[fray] piercing damage, dealing damage to all foes other than them in the area. Summon a pit under them. If they are standing in a pit when the explosion happens, they are stunned and also take damage."
+        },
+        {
+          "Name": "Blood Pyre",
+          "ActionCost": 1,
+          "Tags": [ "attack", "range 6", "medium blast" ],
+          "Hit": "[D]+[fray].",
+          "Miss": "[fray].",
+          "AreaEffect": "[fray].",
+          "Effects": "Summon a pit under every bloodied character in the area. Deals bonus damage to characters inside pits."
         }
       ]
     },
     {
       "Name": "9. Broker",
       "Class": "Leader",
-      "Traits": [ "Shelter", "Diaga", "Blood Pact", "Blessing Broker" ],
-      "Interrupts": {
-        "Name": "Sacrifice",
-        "Count": 1,
-        "Trigger": "Another Brother would take damage in range 6.",
-        "Effects": "This character takes damage equal to 25% of their HP. That ally gains vigor 1 before the damage is applied."
+      "Traits": [ "Diaga", "Defiance", "Aura of Bloodletting", "Blessing Broker" ],
+      "Actions": {
+        "Name": "Bloody Bond",
+        "ActionCost": 1,
+        "Tags": [ "mark" ],
+        "Description": "Mark an ally in range 4. While marked and in range, that ally has resistance to all damage, but Broker must sacrifice 3 at the end of that ally's turn."
       }
     },
     {
       "Name": "10. Monger",
       "Class": "Leader",
-      "Traits": [ "Shelter", "Diaga", "Blessing Monger" ],
+      "Traits": [ "Diaga", "Blessing Monger" ],
       "Actions": [
         {
-          "Name": "Bounty Hunter",
-          "ActionCost": 0,
-          "Tags": "mark",
-          "Description": "A foe in range 6 is marked.",
-          "Mark": "While marked, the target cannot benefit from evasion, dodge, or stealth, and allies gain +1 boon to attack the foe. Using this mark again transfers it."
+          "Name": "Bounty Hunt",
+          "ActionCost": 1,
+          "Tags": [ "mark" ],
+          "Description": "A foe in range 6 is marked. While marked, abilities against the target gain true strike, and allies gain +1 boon to attack the foe. Using this mark again transfers it. A foe can end this mark by ending their turn more than 2 spaces away from any Brother."
         },
         {
-          "Name": "Weaken",
+          "Name": "Weakening Venom",
           "ActionCost": 1,
-          "Description": "A foe in range 6 is pacified."
+          "Description": "A foe in range 6 is pacified+. They can purge the venom from their system at the end of any turn they attack, ending this effect."
         }
       ]
     }
-  ]
+  ],
+  "Tactics": "The band are a bunch of nasty fighters that may seem unassuming at first, but become very dangerous when foes are bloodied. They are a fairly straightforward fight, but can benefit from looking at what each brother can do to combo their abilities together. Characters might try to defeat them all in the same round to limit the effects of their blessings, or pick off a particularly troublesome brother early."
 }

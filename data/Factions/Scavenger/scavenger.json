@@ -2,7 +2,7 @@
   "Name": "Scavenger",
   "Faction": "Scavenger",
   "Type": "Template",
-  "Traits": "Greed",
+  "Traits": [ "Greed", "Cut and Run" ],
   "SetupTraits": [
     {
       "Name": "Kin", 
@@ -11,16 +11,12 @@
         {
           "Name": "Motivations",
           "Description": "Scavengers are typically after the wealth in the ruins and won't fight if terms can be reached."
-        },
-        {
-          "Name": "Flee",
-          "Description": "If a Scavenger has 4 or more valuables tokens (see below), they attempt to flee the battlefield, fleeing successfully if they start their turn in an edge space of the battlefield with no hostile characters adjacent."
         }
       ]
     },
     {
       "Name": "Valuables",
-      "Description": "If fighting scavengers, the GM places valuables tokens on the battlefield equal to the number of players +1. Valuables are intangible tokens that can be picked up by any character by moving over their space. Characters drop them when defeated, or can drop them voluntarily as 1 action. Any character that ends a fight holding two or more valuables tokens gains 1 dust. Valuables tokens left on the battlefield don't count."
+      "Description": "If fighting scavengers, the GM places valuables tokens on the battlefield equal to the number of players +1. Valuables can be picked up by any character by moving into their space. They don't provide obstruction, can't be targeted, and can share space with anything except other valuables tokens. Characters drop them in adjacent spaces when defeated, or can drop them voluntarily as 1 action. Any character that ends a fight holding two or more valuables tokens gains 1 dust. Valuables tokens left on the battlefield don't count."
     }
   ]
 }

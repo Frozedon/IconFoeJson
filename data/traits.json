@@ -86,6 +86,14 @@
     "Description": "Deals +2 damage with all abilities against bloodied foes."
   },
   {
+    "Name": "Blood Price",
+    "Description": "The [name] has Aura 2:",
+    "ListedItems": [
+      { "Description": "Foes inside the aura that use an ability must sacrifice 2 after the ability resolves." },
+      { "Description": "Whenever a character in the area sacrifices, the [name] may grant 2 vigor to itself or any ally in the aura." }
+    ]
+  },
+  {
     "Name": "Blood Rush",
     "Description": "On Critical Hit or Slay, gains +1 action."
   },
@@ -118,16 +126,8 @@
     "Description": "When missed by an attack, may deal 1 damage to their attacker, then teleport 1."
   },
   {
-    "Name": "Collect Paycheck",
-    "Description": "All actions have Slay: Gain +1 action."
-  },
-  {
     "Name": "Commander's Aura",
     "Description": "Aura 2. Allies in the aura have +1 boon on attacks."
-  },
-  {
-    "Name": "Cowerdly by Nature",
-    "Description": "This character surrenders and ends the fight if it's the only character left."
   },
   {
     "Name": "Counter",
@@ -135,7 +135,7 @@
   },
   {
     "Name": "Cowardly by Nature",
-    "Description": "This character surrenders and ends the fight if it's the only character left."
+    "Description": "The [name] surrenders and ends the fight if it's the only character left."
   },
   {
     "Name": "Cronies",
@@ -236,7 +236,7 @@
   },
   {
     "Name": "Enrage",
-    "Description": "+1 action while bloodied."
+    "Description": "+1 action when bloodied."
   },
   {
     "Name": "Entrench",
@@ -311,6 +311,10 @@
     "Description": "Resistant to abilities used from adjacent spaces."
   },
   {
+    "Name": "Heavy Caliber",
+    "Description": "The [name]'s abilities have Collide: [fray] damage and foe is slashed."
+  },
+  {
     "Name": "Heavy Metal Shield",
     "Description": "Has resistance against abilities from the closest foe. If multiple foes are equidistant, this trait applies to all of them. (Take 1/2 damage, rounded up)"
   },
@@ -333,7 +337,7 @@
   },
   {
     "Name": "Immovable Object",
-    "Description": "Unstoppable. (Immune to all statuses. Can't be immobilized, shoved, or teleported by foes)"
+    "Description": "Cannot be shoved, teleported, or removed from the battlefield."
   },
   {
     "Name": "Insulated",
@@ -572,7 +576,7 @@
   },
   {
     "Name": "Sneak Attack",
-    "Description": "Attacks from Stealth are critical hits (+[D])."
+    "Description": "Attacks that break Stealth deal bonus damage and can critical hit (+[D])."
   },
   {
     "Name": "Soul Mass",
@@ -600,7 +604,7 @@
   },
   {
     "Name": "Street Fighter",
-    "Description": "Has resistance while adjacent to two or more foes. (Take 1/2 damage, rounded up)"
+    "Description": "Has resistance while adjacent to two or more foes."
   },
   {
     "Name": "Strength",
@@ -665,6 +669,10 @@
   {
     "Name": "Two Heads",
     "Description": "Saves at the start and the end of its turn to end conditions or other effects."
+  },
+  {
+    "Name": "Unflattering Bounty Poster",
+    "Description": "The [name] starts combat by unveiling an unflattering poster of bounty target, chosen randomly from all player characters. The [name]'s has evasion against that character and their abilities are stronger against them."
   },
   {
     "Name": "Unstable",

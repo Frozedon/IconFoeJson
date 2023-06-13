@@ -1,0 +1,30 @@
+{
+  "Name": "Goon",
+  "Inherits": [ "Scavenger", "Mob" ],
+  "Type": "Foe",
+  "Traits": [ "Loot Hauler" ],
+  "Actions": [
+    {
+      "Name": "Yes Boss ",
+      "ActionCost": 1,
+      "Tags": [ "attack" ],
+      "Hit": "[fray], twice",
+      "Miss": "[fray].",
+      "Effects": [
+        "The acting [name] may rush 2 before this attack.",
+        "All other characters standing adjacent to one or more [name]s take 2 damage."
+      ]
+    },
+    {
+      "Name": "You got it Boss",
+      "ActionCost": 1,
+      "Description": "Up to two [name]s can rush 1, then daze an adjacent foe. Dazed foes take 4 damage instead."
+    },
+    {
+      "Name": "Fill Em with Daylight",
+      "ActionCost": 2,
+      "Tags": [ "Round 3+ only", "1/combat" ],
+      "Description": "A foe in range 4 of any [name] takes 3 piercing damage, once, per [name] in range 4. This damage cannot reduce a foe past 1 hp."
+    }
+  ]
+}

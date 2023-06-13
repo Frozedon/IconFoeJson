@@ -7,18 +7,30 @@
     {
       "Name": "Serrated Bolt",
       "ActionCost": 1,
-      "Effects": "Deal [fray] damage to a character in range 6. Becomes a free action against foes with valuables tokens."
+      "Tags": [ "range 6", "unerring" ],
+      "Effects": "Deal 3 damage to a character in range.",
+      "CustomComponents": {
+        "Name": "Greed",
+        "Description": "Free action."
+      }
     },
     {
       "Name": "Collect Bounty",
       "ActionCost": 2,
-      "Tags": "ranged attack 6",
+      "Tags": [ "attack", "range 6", "+1 boon" ],
       "Hit": "2[D]+[fray].",
-      "Miss": "[fray].",
-      "CustomComponents": {
-        "Name": "Greed",
-        "Description": "Deals bonus damage and gains +1 boon per valuables token the target is holding."
-      }
+      "Miss": "[D]+[fray].",
+      "Effects": "Can only be used against bloodied targets.",
+      "CustomComponents": [
+        {
+          "Name": "Slay",
+          "Description": "Gain +2 valuables."
+        },
+        {
+          "Name": "Greed",
+          "Description": "Gains unerring."
+        }
+      ]
     }
   ]
 }

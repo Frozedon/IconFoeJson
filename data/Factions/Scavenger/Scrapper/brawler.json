@@ -6,6 +6,6 @@
   "Actions": {
     "Name": "Hurl Loot",
     "ActionCost": 1,
-    "Description": "The Brawler picks up an adjacent valuables token and throws it at a foe in range 3. That foe either picks up the token or becomes dazed. Dazed foes instead take [D]+[fray] damage."
+    "Description": "The [name] picks up an adjacent valuables token and throws it at a foe in range 4. That foe takes 2 damage, then either picks up the token or becomes slashed."
   }
 }

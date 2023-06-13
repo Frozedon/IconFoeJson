@@ -5,13 +5,14 @@
   "Actions": [
     {
       "Name": "Junk Form",
-      "ActionCost": 1,
-      "Description": "The Junk Mage transforms into junk, then swaps places with any free valuables token."
+      "ActionCost": 0,
+      "Description": "The [name] transforms into junk, then swaps places with any free valuables token in range 3, removing and placing itself."
     },
     {
       "Name": "Animate Valuables",
       "ActionCost": 1,
-      "Description": "The Junk Mage chooses a character in range 8. That character takes 3 piercing damage once for each loose valuables token in range 3 of them."
+      "Tags": [ "range 8" ],
+      "Description": "The [name] chooses a character in range. That character releases a burst 2 (target) area effect, which deals 2 piercing damage to them once for each loose valuables token in the area."
     }
   ]
 }

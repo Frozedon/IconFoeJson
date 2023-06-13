@@ -5,27 +5,30 @@
     {
       "Name": "One-Two",
       "ActionCost": 1,
-      "Tags": [ "melee attack", "true strike" ],
+      "Tags": [ "attack", "true strike" ],
       "Hit": "Deal [fray] damage twice.",
       "Miss": "[fray]."
     },
     {
-      "Name": "That One!",
+      "Name": "Fastball Special",
       "ActionCost": 1,
-      "Tags": "mark",
-      "Description": "A foe in range 5 is marked.",
-      "Mark": "While marked, they count as holding a valuables token."
+      "Description": "An adjacent ally is shoved 3.",
+      "Collide": "If they collide with a foe, that foe is weakened and shoved 1, and that ally gains 3 vigor."
     },
     {
       "Name": "Uppercut",
       "ActionCost": 1,
-      "Description": "An adjacent character is dazed. If that character has a valuables token, they also take [fray] damage."
+      "Description": "Rush 1, then an adjacent character takes 2 damage and is shoved 1.",
+      "CustomComponents": {
+        "Name": "Greed",
+        "Description": "They are slashed, take 2 damage, and are shoved 1 again."
+      }
     },
     {
       "Name": "Haymaker",
       "ActionCost": 2,
-      "Tags": [ "true strike", "greed" ],
-      "Description": "An adjacent foe must save or take [D]+[fray] and become stunned and winded, or just winded on a successful save.",
+      "Tags": [ "true strike" ],
+      "Description": "Rush 2, then an adjacent foe must save or take [D]+[fray] and become stunned, or just [fray] damage on a successful save. ",
       "CustomComponents": {
         "Name": "Greed",
         "Description": "1 action."
@@ -35,25 +38,29 @@
   "ConditionalAbilities": [
     {
       "Chapter": 2,
+      "RemoveActions": "Upppercut",
       "Actions": {
-        "Name": "No Nonsense",
-        "ActionCost": 2,
-        "Tags": "stance",
-        "Description": "Can only be used while bloodied. The Scrapper gains vigor 1, then becomes unstoppable and gains counter while in this stance."
+        "Name": "Uppercut",
+        "ActionCost": 0,
+        "Description": "Rush 1, then an adjacent character takes 2 damage and is shoved 1.",
+        "CustomComponents": {
+          "Name": "Greed",
+          "Description": "They are slashed, take 2 damage, and are shoved 1 again."
+        }
       }
     },
     {
       "Chapter": 3,
-      "RemoveActions": "No Nonsense",
+      "RemoveActions": "Upppercut",
       "Actions": {
-        "Name": "No Nonsense",
-        "ActionCost": 2,
-        "Tags": "stance",
-        "Description": "Can only be used while bloodied. The Scrapper gains vigor 1, then becomes unstoppable and gains counter while in this stance.",
+        "Name": "Uppercut",
+        "ActionCost": 0,
+        "Description": "Rush 1, then an adjacent character takes 2 damage and is shoved 1.",
         "CustomComponents": {
           "Name": "Greed",
-          "Description": "Free action."
-        }
+          "Description": "They are slashed, take 2 damage, and are shoved 1 again."
+        },
+        "PostEffects": "Deals +1 damage per valulables token the [name] is holding."
       }
     }
   ]

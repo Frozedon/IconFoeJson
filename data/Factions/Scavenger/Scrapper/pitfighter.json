@@ -7,13 +7,18 @@
     {
       "Name": "Rolling Punch",
       "ActionCost": 1,
-      "Description": "Swap places with an adjacent foe. That foe is dazed. If they are holding a valuables token, they are then shoved 1."
+      "Description": "Swap places with an adjacent foe, removing and placing both characters. That foe is slashed, then shoved 1.",
+      "CustomComponents": {
+        "Name": "Greed",
+        "Description": "Free action."
+      }
     },
     {
       "Name": "Golden Knuckles",
-      "ActionCost": 0,
-      "Tags": [ "true strike", "requires greed" ],
-      "Description": "Deal [fray] damage to an adjacent foe once for each valuables token the Pit Fighter is holding. A different foe could be targeted each time."
+      "ActionCost": 1,
+      "Tags": [ "true strike" ],
+      "Description": "An adjacent foe is shoved 1 for every valuables token the [name] is holding.",
+      "Collide": "Foe takes 3 damage, once for every valuables token the [name] is holding."
     }
   ]
 }

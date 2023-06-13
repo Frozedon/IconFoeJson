@@ -8,7 +8,7 @@
     "Name": "Too Rich to Care",
     "Count": 1,
     "Tags": "costs 3 Assets",
-    "Trigger": "The Baron or an ally in range 3 is targeted by an ability.",
+    "Trigger": "The [name] or an ally in range 3 is targeted by an ability.",
     "Effects": "The target gains resistance and unstoppable against the ability."
   },
   "Actions": [
@@ -21,30 +21,38 @@
     {
       "Name": "Fortune Maker",
       "ActionCost": 1,
-      "Tags": [ "costs 2 Assets", "multimark", "1/round" ],
-      "Description": "The Baron chooses an ally or allied summon in range 4 and motivates them with promises of extreme wealth. That ally is marked.",
-      "Mark": "While marked, they gain +1 boon on all attacks and saves."
+      "Tags": [ "range 4", "multimark", "costs 3 Assets", "1/round" ],
+      "Description": "The [name] chooses an ally in range and motivates them with promises of extreme wealth, marking them. That ally's attacks can no longer miss and they can no longer fail saves."
     },
     {
       "Name": "Problem Solver",
       "ActionCost": 1,
-      "Tags": [ "costs 2 Assets", "1/round" ],
-      "Description": "The Baron summons an Arkentech Mercenary.",
+      "Tags": [ "range 6", "costs 4 Assets", "1/round" ],
+      "Description": "The [name] creates a Crony, a new character, in range. The Crony is an ally of the Baron that doesn't take its turn independently, but acts on the [name]'s turn.",
       "Summons": {
-        "Name": "Arkentech Mercenary",
-        "Tags": [ "Size 1", "Sturdy", "20 HP", "Defense 8" ],
-        "SummonEffects": "When summoned, or on the baron's turn, may move 4 spaces, then takes one of the following summon actions:",
+        "Name": "Crony",
+        "Tags": [ "Size 1", "no vit", "10 HP", "8 def", "spd 4/2" ],
+        "Description": "When created, or on the [name]'s turn, may use its standard move to move 4 spaces, then makes one of the following attacks:",
         "ListedActions": [
           {
-            "Name": "Arkentech Rifle",
-            "Tags": [ "ranged attack 6", "pierce" ],
-            "Hit": "[D].",
-            "Miss": "1 damage."
+            "Name": "Blunderbuss",
+            "ActionCost": 1,
+            "Tags": [ "attack", "range 6", "pierce" ],
+            "Hit": "5 damage.",
+            "Miss": "2 damage.",
+            "CustomComponents": {
+              "Name": "Greed",
+              "Description": "+2 damage."
+            }
           },
           {
             "Name": "Arkentech Explosives",
-            "Tags": [ "range 4", "blast 1" ],
-            "AreaEffect": "2 piercing damage, shove 1."
+            "Tags": [ "attack", "range 4", "small blast", "true strike" ],
+            "AreaEffect": "2 piercing damage, shove 1.",
+            "CustomComponents": {
+              "Name": "Greed",
+              "Description": "+2 damage."
+            }
           }
         ]
       }
@@ -52,22 +60,21 @@
     {
       "Name": "Arkentech Force Beam",
       "ActionCost": 1,
-      "Tags": [ "ranged attack 3", "pierce" ],
+      "Tags": [ "attack", "range 3", "pierce" ],
       "AutoHit": "[fray].",
-      "Effects": "All foes in range 3 of the Baron take [fray] damage. Shove all affected foes 1 either away from or towards the Baron."
+      "AreaEffect": "All foes in range 3 of the [name] take [fray] damage. Shove all affected foes 1 either away from or towards the [name]."
     },
     {
       "Name": "Pay Off",
       "ActionCost": 1,
-      "Tags": "mark",
-      "Description": "The Baron gives a foe in range 6 a valuables token. That foe must then save or become marked.",
-      "Mark": "While marked and holding at least one valuables token, they are pacified+."
+      "Tags": [ "range 6", "mark" ],
+      "Description": "The [name] gives a foe in range a valuables token. That foe must then save or become marked. While marked and holding at least one valuables token, they are pacified+."
     },
     {
       "Name": "Count Money",
       "ActionCost": 2,
-      "Tags": [ "end turn", "1/turn" ],
-      "Description": "The Baron gains 6 Assets, gains resistance, and becomes unstoppable until the start of their next turn."
+      "Tags": [ "end turn", "1/round" ],
+      "Description": "The [name] gains 6 Assets and gains resistance until the start of their next turn."
     }
   ]
 }

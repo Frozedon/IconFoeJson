@@ -2,18 +2,19 @@
   "Name": "Blood Broker",
   "Inherits": "Broker",
   "Type": "Foe",
-  "Chapter": 2,
-  "Interrupts": {
-    "Name": "Sacrifice",
-    "Count": 1,
-    "Trigger": "An ally would take damage in range 6.",
-    "Effects": "This character takes damage equal to 25% of their HP. That ally gains vigor 1 before the damage is applied."
-  },
-  "Actions": {
-    "Name": "Open Wound",
-    "ActionCost": 1,
-    "Tags": "mark",
-    "Description": "An adjacent foe is marked.",
-    "Mark": "While marked, each time they dash (even as part of an ability), they take 2 piercing damage."
-  }
+  "Chapter": 3,
+  "Traits": [ "Regeneration", "Blood Price" ],
+  "Actions": [
+    {
+      "Name": "Bulk Up",
+      "ActionCost": 1,
+      "Description": "The [name] gains 4 vigor, or 6 if bloodied."
+    },
+    {
+      "Name": "Equivalent Exchange",
+      "ActionCost": 1,
+      "Tags": [ "range 5", "multimark" ],
+      "Description": "The [name] cures and marks an ally in range. If that ally is defeated while marked, the character that defeated them must sacrifice 25% of their maximum hp."
+    }
+  ]
 }

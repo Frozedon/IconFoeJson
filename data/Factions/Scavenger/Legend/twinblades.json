@@ -1,0 +1,99 @@
+{
+  "Name": "Twinblades",
+  "Inherits": [ "Scavenger", "Legend" ],
+  "Type": "Foe",
+  "HP": 25,
+  "HPText": "Each twin has [HP] hp per player character [MIN]",
+  "Traits": [ "Twins", "Fatebound" ],
+  "Actions": [
+    {
+      "Name": "Knife Juggling",
+      "RoundAction": true,
+      "Description": "At the start of the round, the twins choose a character in range 3 of one of the twins. At the end of the round, each twin flings a knife at that character. Each knife deals 4 piercing damage if the chosen character is in range 3, or just 1 piercing damage if they are further away."
+    },
+    {
+      "Name": "Turnabout",
+      "ActionCost": 1,
+      "Description": "If both twins are in range 5 of each other, they remove themselves from the battlefield, then switch places, placing them back in each other's positions. When they land, they deal 2 damage to all adjacent foes."
+    },
+    {
+      "Name": "Gemini",
+      "ActionCost": 1,
+      "Tags": [ "attack" ],
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "Effects": "Both twins can dash 3 before the attack is made. If both twins are then adjacent to the target, the target takes bonus damage from this attack.",
+      "Combo": {
+        "Name": "Twist Knife",
+        "ActionCost": 1,
+        "Tags": [ "attack" ],
+        "Hit": "2 damage, five times.",
+        "Miss": "2 damage.",
+        "Effects": [
+          "Foe is dazed.",
+          "If both twins are 3 spaces away from each other, they deal 2 piercing damage again to all adjacent foes."
+        ],
+        "Combo": {
+          "Name": "Mortal Wound",
+          "ActionCost": 2,
+          "Tags": [ "attack" ],
+          "Hit": "2[D]+[fray].",
+          "Miss": "[D]+[fray].",
+          "Effects": "Deeply wounds the target. While suffering from this effect, they must sacrifice 3 after using any ability. This effect ends when they are defeated, or they can remove it by ending their turn without attacking."
+        }
+      }
+    },
+    {
+      "Name": "Kick Off",
+      "ActionCost": 1,
+      "Description": "The twin flies 3, kicking off an adjacent character, with different effects depending on that character:",
+      "ListedItems": [
+        {
+          "Name": "Foe",
+          "Description": "Foe takes 2 damage and is shoved 2."
+        },
+        {
+          "Name": "Other Twin",
+          "Description": "Other twin can fly 3."
+        },
+        {
+          "Name": "Twirling Blade",
+          "Description": "Blade is shoved 2."
+        }
+      ],
+      "Combo": {
+        "Name": "Spin",
+        "ActionCost": 1,
+        "Description": "Both twins deal 2 damage to all adjacent foes as an area effect. Any Twirling Blades adjacent to a twin spin again, dealing 2 piercing damage to all adjacent foes.",
+        "Combo": {
+          "Name": "Venom Cloud",
+          "ActionCost": 1,
+          "Description": "All adjacent foes to a twin must save or become blinded. The twins gain evasion until the end of the current round."
+        }
+      }
+    }
+  ],
+  "PhasesDescription": "The twins enter Phase II at the start of round 4.",
+  "Phases": [
+    {
+      "Actions": [
+        {
+          "Name": "Twirling Blade",
+          "RoundAction": true,
+          "Description": "At the start of the round, the twins summon a twirling blade in range 3 of one of the twins. The blade is a summon. Foes that collide with a blade or start their turn adjacent to a blade take 2 piercing damage. If a blade collides with a character, it also deals 2 piercing damage to them. Characters can be damaged by multiple blades at once."
+        }
+      ]
+    },
+    {
+      "Description": "As phase I but:",
+      "Actions": [
+        {
+          "Name": "Seeking Twirling Blades",
+          "RoundAction": true,
+          "Description": "At the start of the round, the twins can shove each blade by 1 space in any direaction. Then, the twins summon two more twirling blades in range 3 of one of the twins. The blade is a summon. Foes that collide with a blade or start their turn adjacent to a blade take piercing damage equal to the round number. If a blade collides with a character, it also deals 2 piercing damage to them. Characters can be damaged by multiple blades at once."
+        }
+      ]
+    }
+  ],
+  "Tactics": "The Twinblades are a dynamic duo that can put out a lot of pressure and damage on the characters, especially in phase II where their whirling blades becomes more mobile and start dealing more damage. They can use turnabout to confuse characters that think they have gotten it all figured out, and benefit from good positioning. A good strategy for players will be to damage them both down at the same time, so that they can't use the opportunity to resurrect each other, or else split them up."
+}

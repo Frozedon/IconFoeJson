@@ -2,29 +2,27 @@
   "Name": "Tollkin",
   "Inherits": [ "Scavenger", "Heavy" ],
   "Type": "Foe",
-  "Vitality": 12,
-  "RemoveTraits": "Armor 3",
   "Traits": [ "Size 2", "Immovable Object", "Aura of Taxes" ],
   "Actions": [
     {
       "Name": "Barricade Slam",
       "ActionCost": 2,
-      "Tags": [ "melee attack", "true strike" ],
+      "Tags": [ "attack", "true strike" ],
       "Hit": "2[D]+[fray].",
       "Miss": "[fray].",
-      "Effects": "Foe is dazed."
+      "Effects": "Foe is slashed."
     },
     {
       "Name": "Build Barricade",
       "ActionCost": 2,
-      "Description": "The Tollkin creates a line 4 terrain effect. The effect is difficult terrain and foes that cross it must save or become winded."
+      "Description": "The [name] creates a line 4 terrain effect in free space, with at least one space adjacent. The effect is difficult terrain, the [name] deals bonus damage to characters in the area, and foes that enter or exit the area are weakened."
     },
     {
-      "Name": "Golden Knuckles",
+      "Name": "Great Golden Knuckles",
       "ActionCost": 2,
-      "Tags": [ "true strike", "greed" ],
-      "Description": "An adjacent foe is shoved 2 for every valuables token the Tollkin is holding.",
-      "Collide": "Foe takes 3 damage, once for every valuables token the Tollkin is holding."
+      "Tags": [ "true strike" ],
+      "Description": "An adjacent foe is shoved 2 for every valuables token the [name] is holding.",
+      "Collide": "Foe takes 4 damage, then 4 damage again, once for every valuables token the [name] is holding."
     }
   ]
 }

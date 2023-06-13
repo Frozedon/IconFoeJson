@@ -3,17 +3,21 @@
   "Inherits": [ "Scavenger", "Leader" ],
   "Actions": [
     {
-      "Name": "Bolt of Law",
+      "Name": "Overseer's Bolt",
       "ActionCost": 1,
-      "Tags": "ranged attack 6 or melee attack",
-      "Hit": "[D]+[fray] and foe is branded.",
-      "Miss": "[fray]."
+      "Tags": [ "attack", "range 3" ],
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "Effects": [
+        "Foe is sealed.",
+        "All allies in range 2 of the target foe may dash 1."
+      ]
     },
     {
       "Name": "Swindle",
       "ActionCost": 1,
-      "Tags": "greed",
-      "Description": "Swap places with a character in range 3, teleporting. Foes can save to avoid this effect.",
+      "Tags": [ "range 3" ],
+      "Description": "Swap places with a character in range, removing and placing both characters. Foes can pass a save to avoid this effect, but are pacified on a successful save.",
       "CustomComponents": {
         "Name": "Greed",
         "Description": "Free action."
@@ -22,33 +26,44 @@
     {
       "Name": "Incentivize",
       "ActionCost": 1,
-      "Tags": "end turn",
-      "Description": "The broker puts down a valuables token in range 3."
+      "Tags": [ "range 3", "end turn" ],
+      "Description": "The [name] either puts down a valuables token in range, or allows an ally in range 3 to dash 3."
     },
     {
       "Name": "Exact Price",
       "ActionCost": 1,
-      "Tags": "special recharge",
-      "Effects": [
-        "A foe in range 6 becomes stunned and pacified. A foe can avoid this by taking divine damage equal to 25% of their max hp or by dropping a valuables token.",
-        "Only recharges if the Broker picks up a valuables token."
-      ]
+      "Tags": [ "range 6", "mark" ],
+      "Description": "A foe in range is marked. At the end of their turn, that foe must sacrifice 3. They can avoid paying this cost if they drop a valuables token into an adjacent space. They both avoid the cost and end this mark by dropping two or more valuables tokens instead."
     }
   ],
   "ConditionalAbilities": [
     {
       "Chapter": 2,
+      "RemoveActions": "Swindle",
       "Actions": {
-        "Name": "Tit for Tat",
+        "Name": "Swindle",
         "ActionCost": 1,
-        "Tags": "mark",
-        "Description": "The Broker marks an ally in range 4.",
-        "Mark": "While marked, that character has counter and evasion."
+        "Tags": [ "range 5" ],
+        "Description": "Swap places with a character in range, removing and placing both characters. Foes can pass a save to avoid this effect, but are pacified on a successful save.",
+        "CustomComponents": {
+          "Name": "Greed",
+          "Description": "Free action."
+        }
       }
     },
     {
       "Chapter": 3,
-      "Traits": "Equivalent Exchange"
+      "RemoveActions": "Swindle",
+      "Actions": {
+        "Name": "Swindle",
+        "ActionCost": 1,
+        "Tags": [ "no maximum range" ],
+        "Description": "Swap places with a character in range, removing and placing both characters. Foes can pass a save to avoid this effect, but are pacified on a successful save. Allies that are swapped gain stealth",
+        "CustomComponents": {
+          "Name": "Greed",
+          "Description": "Free action."
+        }
+      }
     }
   ]
 }

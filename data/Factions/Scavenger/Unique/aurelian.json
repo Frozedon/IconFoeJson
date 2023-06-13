@@ -3,12 +3,12 @@
   "Inherits": [ "Scavenger", "Leader" ],
   "Type": "Foe",
   "Chapter": 3,
-  "Traits": [ "Tally", "Pay the Reaper" ],
+  "Traits": [ "Defiance", "Tally" ],
   "Actions": [
     {
       "Name": "Take Measure",
       "ActionCost": 1,
-      "Tags": [ "ranged attack 8", "blast 1" ],
+      "Tags": [ "attack", "range 8", "medium blast" ],
       "Hit": "[D]+[fray] and increase Tally by 1.",
       "Miss": "[fray].",
       "AreaEffect": "[fray]."
@@ -16,28 +16,32 @@
     {
       "Name": "Count",
       "ActionCost": 1,
-      "Tags": "end turn",
+      "Tags": [ "end turn" ],
       "Description": "Increase Tally by 1."
+    },
+    {
+      "Name": "Incentivize",
+      "ActionCost": 1,
+      "Tags": [ "range 3", "end turn" ],
+      "Description": "The [name] either puts down a valuables token in range, or allows an ally in range 3 to dash 3."
     },
     {
       "Name": "Weight of Conscience",
       "ActionCost": 1,
-      "Tags": [ "mark", "requires 3+ tally" ],
-      "Description": "The Aurelian marks a foe in range 5.",
-      "Mark": "While marked, the foe cannot teleport and can only move a maximum of 3 spaces a round, no matter their abilities or speed. A foe can end this mark by not moving at all for their entire turn."
+      "Tags": [ "multimark", "requires 3+ Tally", "reduces Tally by 1" ],
+      "Description": "The [name] marks a foe in range 5. While marked, the foe can only move a maximum of 3 spaces a round, no matter their abilities or speed. A foe can end this mark by not moving at all for their entire turn."
     },
     {
       "Name": "Lift Burdens",
       "ActionCost": 1,
-      "Tags": [ "mark", "requires 6+ tally" ],
-      "Description": "The Aurelian marks an ally in range 5.",
-      "Mark": "While marked, the ally gains flying and evasion."
+      "Tags": [ "multimark", "requires 6+ Tally", "reduces Tally by 2" ],
+      "Description": "The [name] marks an ally in range 5. While marked, the ally gains flying, evasion, dodge and their attacks deal bonus damage."
     },
     {
       "Name": "Collect",
       "ActionCost": 2,
-      "Tags": [ "requires 10 tally", "resets tally" ],
-      "Description": "Every foe on the battlefield is reduced to 50% of their max hp and loses all vigor. If already bloodied, they are reduced to 25% hp instead and must save or become stunned."
+      "Tags": [ "requires 10 Tally", "resets Tally" ],
+      "Description": "Every foe on the battlefield sacrifices down to 50% of their maximum hp. Foes at 50% hp sacrifice down to 25%. Foes at 25% hp or lower are defeated."
     }
   ]
 }

@@ -3,34 +3,41 @@
   "Inherits": [ "Scavenger", "Elite", "Skirmisher" ],
   "Type": "Foe",
   "Chapter": 2,
-  "Traits": [ "Phasing", "Slippery", "Leave Tracks", "Master Cloak" ],
+  "Speed": 6,
+  "Traits": [ "Leave Tracks", "Master Cloak" ],
   "Actions": [
     {
       "Name": "Pay the Ferryman",
-      "ActionCost": 2,
-      "Tags": [ "melee attack", "+1 boon" ],
-      "Hit": "2[D]+[fray].",
+      "ActionCost": 1,
+      "Tags": [ "attack", "+1 boon" ],
+      "Hit": "[D]+[fray].",
       "Miss": "[fray].",
       "Effects": [
-        "Deals bonus damage for each valuables token the Ring Finger is holding. If the finger is holding 3 or more, is automatically a critical hit on hit (+[D]).",
-        "The Ring Finger may teleport 2 spaces before and after the attack."
+        "This attack breaks master cloak. If this attack breaks Master cloak, deals added base damage equal to twice the round number plus twice the number of valuables tokens the [name] is holding.",
+        "The [name] may teleport 2 spaces before and after the attack."
       ]
     },
     {
       "Name": "Mug",
       "ActionCost": 1,
-      "Description": "An adjacent foe is slowed. If they have a valuables token, that foe takes [D], then the Ring Finger takes a valuables token."
+      "Description": "An adjacent foe is dazed. If they have a valuables token, that foe takes 3 damage, then the [name] gains a valuables token.",
+      "Combo": {
+        "Name": "Swindle",
+        "ActionCost": 1,
+        "Description": "Swap places with a character in range 3, teleporting. Foes can save to avoid this effect."
+      }
     },
     {
       "Name": "Blinding Bomb",
       "ActionCost": 1,
-      "Description": "The Ring Finger throws a bomb at a cross 1 location in range 4. Characters within take [fray] damage and must save or become blinded."
+      "Tags": [ "range 3" ],
+      "Description": "The [name] throws blinding dust at a small blast location in range. Characters within take [fray] damage and must save or become blinded."
     },
     {
       "Name": "Drop Caltrops",
       "ActionCost": 1,
       "Tags": [ "terrain effect", "1/round" ],
-      "Description": "The Ring Finger creates a line 3 area of difficult terrain."
+      "Description": "The [name] creates a line 3 area of difficult and dangerous terrain."
     }
   ]
 }

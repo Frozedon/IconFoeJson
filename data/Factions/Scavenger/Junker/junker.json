@@ -4,58 +4,79 @@
   "Traits": "Junk Armor",
   "Actions": [
     {
-      "Name": "Scrap Storm",
-      "ActionCost": 2,
-      "Tags": [ "ranged attack 8", "cross 2", "greed" ],
-      "Hit": "2[D]+[fray] and foe becomes vulnerable.",
+      "Name": "Scrapstorm",
+      "ActionCost": 1,
+      "Tags": [ "attack", "range 8", "small blast", "pierce" ],
+      "Hit": "[D]+[fray] and foe becomes vulnerable.",
       "Miss": "[fray].",
       "AreaEffect": "[fray].",
       "CustomComponents": {
-        "Name": "Greed",
-        "Description": "Deals bonus damage for each valuables token this character holds."
+        "Name": "Round 3+",
+        "Description": "Deals bonus damage, becomes a large blast, and also creates a valuables token in its area."
       }
     },
     {
       "Name": "Scrap Turret",
       "ActionCost": 1,
-      "Tags": "summon",
-      "Description": "The Tinker summons a turret in range 6.",
+      "Tags": [ "range 6", "summon" ],
+      "Description": "The [name] summons a scrap turret in range.",
       "Summons": {
         "Name": "Scrap Turret",
-        "Tags": [ "Size 1", "Immobile", "1 HP" ],
-        "SummonEffects": "When a foe in range 3 from the turret takes damage, the turret deals 1 piercing damage to them. The Junker can only have one of these turrets active at once, and using this ability again while one is out resummons it to a new space."
+        "Tags": [ "Size 1", "intangible" ],
+        "SummonEffects": "Once a turn, when a foe in range 3 from the turret takes damage from the [name], the turret deals 1 piercing damage twice to them."
       }
     },
     {
       "Name": "Pile It Up",
       "ActionCost": 1,
-      "Description": "The Junker creates a height 1 or 2 scrap pile object in a space in range 6. Characters adjacent to it when it is created are shoved 1. If created under a character, it pushes them up on top of it instead."
-    },
-    {
-      "Name": "Disassemble",
-      "ActionCost": 0,
-      "Tags": "1/combat",
-      "Description": "The Junker destroys all objects and Scrap Turrets in range 2, turning them into valuables tokens. Objects that can't normally be destroyed are instead un-summoned and removed from the battlefield."
+      "Tags": [ "range 6" ],
+      "Description": "The [name] creates a height 1 scrap pile object in a space in range 6. Characters adjacent to it when it is created takes 1 damage twice and are shoved 1. If created under a character, it pushes them up on top of it instead.",
+      "CustomComponents": {
+        "Name": "Greed",
+        "Description": "Increase damage, height and shove by +1."
+      }
     }
   ],
   "ConditionalAbilities": [
     {
       "Chapter": 2,
+      "RemoveActions": "Pile It Up",
       "Actions": {
-        "Name": "Scrap Blast",
+        "Name": "Pile It Up",
         "ActionCost": 1,
-        "Tags": "greed",
-        "Description": "A foe in range 8 is shattered and shoved 1.",
-        "Collide": "They also take [D] piercing.",
-        "CustomComponents": {
-          "Name": "Greed",
-          "Description": "Can only be used if holding a valuables token."
-        }
+        "Tags": [ "range 6" ],
+        "Description": "The [name] creates a height 1 scrap pile object in a space in range 6. Characters adjacent to it when it is created takes 1 damage twice and are shoved 1. If created under a character, it pushes them up on top of it instead.",
+        "CustomComponents": [
+          {
+            "Name": "Greed",
+            "Description": "Increase damage, height and shove by +1."
+          },
+          {
+            "Name": "Greed",
+            "Description": "Adjacent foes must save or be shattered."
+          }
+        ]
       }
     },
     {
       "Chapter": 3,
-      "Traits": "Smelt"
+      "RemoveActions": "Pile It Up",
+      "Actions": {
+        "Name": "Pile It Up",
+        "ActionCost": 1,
+        "Tags": [ "range 6" ],
+        "Description": "The [name] creates a height 1 scrap pile object in a space in range 6. Characters adjacent to it when it is created takes 1 damage twice and are shoved 1. If created under a character, it pushes them up on top of it instead.",
+        "CustomComponents": [
+          {
+            "Name": "Greed",
+            "Description": "+1 damage, height, and shove per valuables token the hoarder has, to a maximum of 3 height, +3 damage, and +3 shove."
+          },
+          {
+            "Name": "Greed",
+            "Description": "Adjacent foes must save or be shattered."
+          }
+        ]
+      }
     }
   ]
 }

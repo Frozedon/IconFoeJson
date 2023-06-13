@@ -1,0 +1,46 @@
+{
+  "Name": "Mondo",
+  "Inherits": [ "Scavenger", "Elite", "Heavy" ],
+  "Type": "Foe",
+  "Traits": [ "Size 2", "Sturdy", "Enrage", "Oooh, Shiny" ],
+  "Actions": [
+    {
+      "Name": "MONDO DESTROY!",
+      "RoundAction": true,
+      "Description": "At the start of the round, [name] chooses any foe. At the end of the round, [name] rushes up to 6 spaces towards that foe, or until adjacent, with each space of the movement ending closer to the chosen foe. If [name] ends this movement adjacent, they wallop the foe with awesome force. That foe is stunned and must save or take 2[D]+[fray], twice, or just once on a successful save."
+    },
+    {
+      "Name": "MONDO BASH",
+      "ActionCost": 2,
+      "Tags": [ "attack", "range 2", "true strike" ],
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "CustomComponents": {
+        "Name": "Greed",
+        "Description": "Deals bonus damage per valuables token [name] or their target is holding. If 3+ tokens in total, deals an extra +[D] on hit or miss."
+      },
+      "Combo": {
+        "Name": "MONDO SMASH",
+        "ActionCost": 2,
+        "Tags": [ "attack", "range 2", "medium blast", "true strike" ],
+        "Hit": "2[D]+[fray].",
+        "Miss": "[fray].",
+        "AreaEffect": "[fray].",
+        "CustomComponents": {
+          "Name": "Greed",
+          "Description": "Deals bonus damage per valuables token [name] or any character in the area is holding. If 3+ tokens total, stuns all characters inside."
+        }
+      }
+    },
+    {
+      "Name": "MONDO SPINNING LARIAT",
+      "ActionCost": 1,
+      "Description": "[name] rushes 2, three times, in the same direction. Each time they finish a rush, they shove all adjacent characters 2."
+    },
+    {
+      "Name": "MONDO SPIRAL CRUSHER",
+      "ActionCost": 1,
+      "Description": "[name] flings an adjacent character high into the air, removing them from the battlefield, then chooses a space in range 3. At the start of that character's next turn, they return to the battlefield in that space, or as close as possible if it's occupied, dealing 5 damage to all adjacent characters. That character is weakened."
+    }
+  ]
+}

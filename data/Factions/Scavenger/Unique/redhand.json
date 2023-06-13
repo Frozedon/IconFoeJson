@@ -1,0 +1,43 @@
+{
+  "Name": "Redhand",
+  "Inherits": [ "Scavenger", "Skirmisher" ],
+  "Type": "Foe",
+  "Chapter": 2,
+  "Traits": [ "Unflattering Bounty Poster" ],
+  "Actions": [
+    {
+      "Name": "Collect Bounty",
+      "ActionCost": 2,
+      "Tags": [ "attack", "range 3", "unerring" ],
+      "Hit": "2[D]+[fray].",
+      "Miss": "[fray].",
+      "Effects": "Can only be used against bloodied targets or the Bounty Target.",
+      "CustomComponents": {
+        "Name": "Slay",
+        "Description": "Gain +2 valuables."
+      }
+    },
+    {
+      "Name": "Kick Off ",
+      "ActionCost": 1,
+      "Effects": "The [name] flies 1. Before they fly, they may shove an adjacent character 1 space, then deal 2 damage to them if they are a foe. If they do, they fly 3 instead."
+    },
+    {
+      "Name": "Lasso",
+      "ActionCost": 1,
+      "Tags": [ "range 4" ],
+      "Description": "A character in range 4 is shoved 1 towards the [name].",
+      "Effects": "Against the bounty target, shoves them 2 instead and dazes them.",
+      "CustomComponents": {
+        "Name": "Greed",
+        "Description": "Free action."
+      }
+    },
+    {
+      "Name": "Stun Bomb",
+      "ActionCost": 1,
+      "Tags": [ "range 4", "small blast" ],
+      "AreaEffect": "Foes are dazed. Dazed foes or the bounty target takes 4 damage."
+    }
+  ]
+}

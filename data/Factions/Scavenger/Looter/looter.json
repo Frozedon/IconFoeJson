@@ -1,43 +1,66 @@
 {
   "Name": "Looter",
   "Inherits": [ "Scavenger", "Skirmisher" ],
-  "Traits": [ "Bully", "Golden Burden" ],
+  "Traits": [ "Bully" ],
   "Actions": [
     {
       "Name": "Slice and Dice",
       "ActionCost": 1,
-      "Tags": [ "melee attack or ranged attack 4", "+1 boon" ],
+      "Tags": [ "attack", "range 4", "+1 boon" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
-      "Effects": "May dash 1 before or after attack."
-    },
-    {
-      "Name": "Smoke Bomb",
-      "ActionCost": 2,
-      "Tags": "end turn",
-      "Description": "Create a blast 1 area of difficult terrain in range 3. Characters in the area gain cover and characters other than Looters are blinded+. This area lasts until this ability is used again."
+      "Effects": "May dash 1 both before and after attack."
     },
     {
       "Name": "Mug",
       "ActionCost": 1,
-      "Description": "An adjacent foe is slowed. If that foe has a valuables token, they take [fray] damage, then the looter takes a valuables token from them."
+      "Description": "An adjacent foe is dazed. If they have a valuables token, that foe takes 3 damage, then the [name] gains a valuables token."
     },
     {
       "Name": "Swing Sack",
-      "ActionCost": 0,
-      "Tags": "greed",
-      "Description": "An adjacent character takes 2 damage once. Deal 2 damage again for each valuables token the Looter has."
+      "ActionCost": 1,
+      "Tags": "arc 3",
+      "AreaEffect": "2 damage.",
+      "CustomComponents": {
+        "Name": "Greed",
+        "Description": "Deal 2 damage again to each character for each valuables token the [name] has."
+      }
+    },
+    {
+      "Name": "Smoke Bomb",
+      "ActionCost": 1,
+      "Tags": [ "range 3", "1/combat" ],
+      "Description": "Create a small blast area of difficult terrain in range, then the [name] gains stealth. The area can overlap characters. Self and allies in the area gain evasion+, and foes inside are blinded+."
     }
   ],
   "ConditionalAbilities": [
     {
       "Chapter": 2,
-      "Traits": "Golden Step"
+      "RemoveActions": "Smoke Bomb",
+      "Actions": {
+        "Name": "Smoke Bomb",
+        "ActionCost": 1,
+        "Tags": [ "range 3", "1/combat" ],
+        "Description": "Create a small blast area of difficult terrain in range, then the [name] gains stealth. The area can overlap characters. Self and allies in the area gain evasion+, and foes inside are blinded+.",
+        "CustomComponents": {
+          "Name": "Greed",
+          "Description": "Medium Blast."
+        }
+      }
     },
     {
       "Chapter": 3,
-      "RemoveTraits": "Golden Step",
-      "Traits": "Golden Step (Improved)"
+      "RemoveActions": "Smoke Bomb",
+      "Actions": {
+        "Name": "Smoke Bomb",
+        "ActionCost": 1,
+        "Tags": [ "range 3", "1/combat" ],
+        "Description": "Create a small blast area of difficult terrain in range and all foes in the area take 3 damage and are dazed. Then, the [name] gains stealth. The area can overlap characters. Self and allies in the area gain evasion+, and foes inside are blinded+.",
+        "CustomComponents": {
+          "Name": "Greed",
+          "Description": "Medium Blast."
+        }
+      }
     }
   ]
 }

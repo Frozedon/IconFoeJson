@@ -10,10 +10,11 @@
       "Tags": [ "attack", "range 8" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
-      "Effects": [
-        "All characters in range 2 of the foe are shoved 1 towards or away from that character ([name] chooses).",
-        "At round 3+, deals bonus damage and shatters all foes targeted."
-      ]
+      "Effects": "All characters in range 2 of the foe are shoved 1 towards or away from that character ([name] chooses).",
+      "CustomComponents": {
+        "Name": "Round 3+",
+        "Description": "Deals bonus damage and shatters all foes targeted."
+      }
     },
     {
       "Name": "Anchor",

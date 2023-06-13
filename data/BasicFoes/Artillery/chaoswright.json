@@ -23,7 +23,10 @@
       "Name": "Chaos Storm",
       "ActionCost": 2,
       "Description": "Teleport all characters 2 spaces. Foes take 2 piercing damage as an area effect.",
-      "Effects": "At round 3+, becomes 1 action."
+      "CustomComponents": {
+        "Name": "Round 3+",
+        "Description": "Becomes 1 action."
+      }
     }
   ]
 }

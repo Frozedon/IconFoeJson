@@ -11,7 +11,10 @@
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
       "AreaEffect": "[fray].",
-      "Effects": "At round 3+, increase area to large blast and deals bonus damage."
+      "CustomComponents": {
+        "Name": "Round 3+",
+        "Description": "Increase area to large blast and deals bonus damage."
+      }
     },
     {
       "Name": "Mighty Summoning",

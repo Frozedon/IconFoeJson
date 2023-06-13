@@ -10,7 +10,10 @@
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
       "AreaEffect": "[fray].",
-      "Effects": "Round 3+, large blast."
+      "CustomComponents": {
+        "Name": "Round 3+",
+        "Description": "Large blast."
+      }
     },
     {
       "Name": "Bar Brawler",
@@ -22,7 +25,11 @@
       "Name": "Barrel Roll",
       "ActionCost": 1,
       "Tags": [ "range 5", "end turn", "small blast" ],
-      "AreaEffect": "2 damage, and shove 2 away from the origin point. At round 3+, becomes a large blast and any character in the center space must save or become stunned."
+      "AreaEffect": "2 damage, and shove 2 away from the origin point.",
+      "CustomComponents": {
+        "Name": "Round 3+",
+        "Description": "Becomes a large blast and any character in the center space must save or become stunned."
+      }
     }
   ]
 }

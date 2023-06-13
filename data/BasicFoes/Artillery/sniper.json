@@ -14,10 +14,11 @@
         "Tags": [ "attack", "range 12", "+1 boon" ],
         "Hit": "3[D]+[fray].",
         "Miss": "[D]+[fray].",
-        "Effects": [
-          "Cannot target characters in range 3.",
-          "At round 3+, costs only 1 action and deals bonus damage."
-        ]
+        "Effects": "Cannot target characters in range 3.",
+        "CustomComponents": {
+          "Name": "Round 3+",
+          "Description": "Costs only 1 action and deals bonus damage."
+        }
       }
     },
     {

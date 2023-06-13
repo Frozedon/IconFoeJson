@@ -11,7 +11,10 @@
       "Hit": "2[D]+[fray].",
       "Miss": "[fray] damage.",
       "AreaEffect": "Deal 1 piercing damage again to all characters for each character caught in the area, up to a maximum of three times.",
-      "Effects": "At round 3+, increase blast to a large blast and deals bonus damage."
+      "CustomComponents": {
+        "Name": "Round 3+",
+        "Description": "Increase blast to a large blast and deals bonus damage."
+      }
     },
     {
       "Name": "Emberflash",

@@ -10,10 +10,11 @@
       "Tags": [ "attack", "line 8", "mark" ],
       "Hit": "2[D]+[fray].",
       "Miss": "[fray].",
-      "Effects": [
-        "Mark the target. Attacks against the marked target for the rest of combat gain +1 boon, deal bonus damage, ignore cover, and inflict shattered. This effect does not stack.",
-        "At round 3+, this effect can mark any number of targets."
-      ]
+      "Effects": "Mark the target. Attacks against the marked target for the rest of combat gain +1 boon, deal bonus damage, ignore cover, and inflict shattered. This effect does not stack.",
+      "CustomComponents": {
+        "Name": "Round 3+",
+        "Description": "This effect can mark any number of targets."
+      }
     },
     {
       "Name": "Boiling Bolus",

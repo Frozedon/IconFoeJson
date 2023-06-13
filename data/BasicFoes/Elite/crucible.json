@@ -17,11 +17,12 @@
       "Hit": "2[D]+[fray].",
       "Miss": "[D]+[fray].",
       "AreaEffect": "[D]+[fray].",
-      "Effects": [
-        "Attack target becomes vulnerable.",
-        "At round 3+, increase blast size to large blast, and deals 2 piercing damage again to all foes on the battlefield."
-      ],
+      "Effects": "Attack target becomes vulnerable.",
       "TerrainEffect": "Create a pit under target.",
+      "CustomComponents": {
+        "Name": "Round 3+",
+        "Description": "Increase blast size to large blast, and deals 2 piercing damage again to all foes on the battlefield."
+      },
       "Combo": {
         "Name": "Great Slip",
         "ActionCost": 1,

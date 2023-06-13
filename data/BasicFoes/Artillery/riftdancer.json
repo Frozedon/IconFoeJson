@@ -13,9 +13,12 @@
       "AreaEffect": "[fray].",
       "Effects": [
         "Attack target is vulnerable.",
-        "Foes in the line may be teleported 1.",
-        "At round 3+, increase this teleport to 2 and deal 2 piercing damage again to foes teleported this way."
-      ]
+        "Foes in the line may be teleported 1."
+      ],
+      "CustomComponents": {
+        "Name": "Round 3+",
+        "Description": "Increase this teleport to 2 and deal 2 piercing damage again to foes teleported this way."
+      }
     },
     {
       "Name": "Flash Step",

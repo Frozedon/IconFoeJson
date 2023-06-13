@@ -14,7 +14,11 @@
         "Name": "Soul Spark",
         "ActionCost": 1,
         "Tags": [ "range 6", "summon" ],
-        "Description": "Creates a Soul Spark summon in free space in range. Round 3+: Two sparks.",
+        "Description": "Creates a Soul Spark summon in free space in range.",
+          "CustomComponents": {
+            "Name": "Round 3+",
+            "Description": "Two sparks."
+          },
         "Summons": {
           "Name": "Soul Spark",
           "Tags": [ "Summon", "size 1", "intangible" ],
@@ -48,7 +52,11 @@
           "Name": "Soul Spark",
           "ActionCost": 1,
           "Tags": [ "range 6", "summon" ],
-          "Description": "Creates a Soul Spark summon in free space in range. Round 3+: Two sparks.",
+          "Description": "Creates a Soul Spark summon in free space in range.",
+          "CustomComponents": {
+            "Name": "Round 3+",
+            "Description": "Two sparks."
+          },
           "Summons": {
             "Name": "Soul Spark",
             "Tags": [ "Summon", "size 1", "intangible" ],
@@ -76,7 +84,11 @@
           "Name": "Soul Spark",
           "ActionCost": 1,
           "Tags": [ "range 6", "summon" ],
-          "Description": "Creates a Soul Spark summon in free space in range. Round 3+: Two sparks.",
+          "Description": "Creates a Soul Spark summon in free space in range.",
+          "CustomComponents": {
+            "Name": "Round 3+",
+            "Description": "Two sparks."
+          },
           "Summons": {
             "Name": "Soul Spark",
             "Tags": [ "Summon", "size 1", "intangible" ],

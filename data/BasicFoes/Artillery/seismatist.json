@@ -14,9 +14,12 @@
       "AreaEffect": "1 damage.",
       "Effects": [
         "Releases a medium blast on the attack target as an area effect, dealing 3 piercing damage again.",
-        "Deals bonus damage for every object or pit in the area.",
-        "At round 3+, stuns any character on an object or inside a pit in the area."
-      ]
+        "Deals bonus damage for every object or pit in the area."
+      ],
+      "CustomComponents": {
+        "Name": "Round 3+",
+        "Description": "Stuns any character on an object or inside a pit in the area."
+      }
     },
     {
       "Name": "Seismic Rumble",

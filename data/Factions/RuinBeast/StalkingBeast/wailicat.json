@@ -2,11 +2,12 @@
   "Name": "Wailicat",
   "Inherits": "Stalking Beast",
   "Type": "Foe",
-  "Traits": "Great Leap",
+  "Traits": "Leap",
+  "RemoveActions": "Stalk Prey",
   "Actions": {
     "Name": "Pounce",
-    "ActionCost": 0,
-    "Tags": "end turn",
-    "Description": "The cat gains stealth. Choose a foe in range 3. If, at the end of that foe's next turn, they are still in range 3 of the cat, it may teleport adjacent to them and deal [D], ending this effect."
+    "ActionCost": 1,
+    "Tags": [ "range 3", "end turn" ],
+    "Description": "The [name] gains stealth. Choose a foe in range. If, at the end of that foe's next turn, they are in range 3 of the [name], it may teleport adjacent to them and deal 6 damage, ending this effect."
   }
 }

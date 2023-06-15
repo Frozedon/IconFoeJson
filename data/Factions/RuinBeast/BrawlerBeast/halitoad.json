@@ -3,10 +3,11 @@
   "Inherits": "Brawler Beast",
   "Type": "Foe",
   "Traits": "Stench",
+  "RemoveActions": "Wild Toss",
   "Actions": {
-    "Name": "Tongue Lash",
+    "Name": "Tongue Flick",
     "ActionCost": 1,
-    "Description": "A foe in range 4 takes [fray] damage, then must save or become poisoned and shoved as far as possible towards the Halitoad. Poisoned characters fail the save.",
-    "Effects": "Range 8 while bloodied."
+    "Tags": [ "range 3", "repeatable" ],
+    "Description": "The [name] shoves a character in range one space towards it, or 3 spaces if the [name] or its target is bloodied."
   }
 }

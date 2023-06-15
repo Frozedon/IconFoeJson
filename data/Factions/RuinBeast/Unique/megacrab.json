@@ -3,17 +3,16 @@
   "Inherits": [ "Ruin Beast", "Heavy" ],
   "Type": "Foe",
   "Chapter": 2,
-  "RemoveTraits": "Armor 3",
   "Traits": [ "Size 2", "Armor 10", "Flip Over" ],
   "Actions": [
     {
       "Name": "Claw Slam",
       "ActionCost": 2,
-      "Tags": [ "melee atttack", "close blast 1", "+1 curse", "true strike" ],
+      "Tags": [ "attack", "range 2", "medium blast", "+1 curse", "true strike" ],
       "Hit": "3[D]+[fray].",
       "Miss": "[fray].",
       "AreaEffect": "[fray].",
-      "Effects": "The crab can spend additional actions on this attack. Every extra action it spends on it gives it bonus damage and +1 boon."
+      "Effects": "The [name] can spend additional actions on this attack. Every extra action it spends on it gives it bonus damage and +1 boon."
     },
     {
       "Name": "Claw Jab",
@@ -25,7 +24,7 @@
       "Name": "Water Jet",
       "ActionCost": 1,
       "Tags": "stance",
-      "Description": "The Crab creates a line 5 area effect drawn adjacent to it while in this stance. When the crab moves, it can reposition this effect, but reduces its size by 1. Characters that move into the area or start their turn there take 2 damage, are shoved 3 and must save or become winded and frostbitten. Frostbitten foes fail this save and take [fray] damage instead. When the area reaches 0, the stance ends."
+      "Description": "The [name] creates a line 5 area effect drawn adjacent to it while in this stance. When the [name] moves, it can reposition this effect, but reduces its size by 1. Characters that move into the area or start their turn there take 2 damage, are shoved 2 and must save or become weakened. Weakened foes fail this save and take 4 damage instead. When the area reaches 0, the stance ends."
     }
   ]
 }

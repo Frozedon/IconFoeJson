@@ -2,29 +2,30 @@
   "Name": "Canoptic Swarm",
   "Inherits": [ "Ruin Beast", "Heavy" ],
   "Type": "Foe",
-  "RemoveTraits": "Armor 3",
-  "Traits": [ "Size 2", "Amorphous", "Swarm" ],
+  "Traits": [ "Size 2", "Amorphous" ],
   "Actions": [
     {
       "Name": "A Hundred Maws",
-      "ActionCost": 2,
-      "Tags": [ "melee attack", "true strike" ],
-      "Hit": "2[D]+[fray].",
+      "ActionCost": 1,
+      "Tags": [ "attack", "true strike" ],
+      "Hit": "[D]+[fray].",
       "Miss": "[fray].",
-      "Effects": "Characters inside its space take 2 damage."
+      "Effects": [
+        "Deals bonus damage to characters inside its space.",
+        "All Characters inside its space take 2 damage."
+      ]
     },
     {
       "Name": "Swarm Surge",
       "ActionCost": 1,
       "Tags": "repeatable",
-      "Description": "The Swarm dashes 2, ignoring all movement penalties."
+      "Description": "The [name] rushes 2. Allies inside its space can also rush 1."
     },
     {
       "Name": "Consume",
       "ActionCost": 1,
       "Tags": "multimark",
-      "Description": "A foe inside the swarm's area is marked.",
-      "Mark": "While marked, they are dazed+ and winded+ while sharing space with the swarm and take [D]+[fray] for ending their turn inside it instead of just [fray] damage."
+      "Description": "A foe inside the [name]'s area is marked. While marked, they are slashed if they start or end their turn inside or adjacent to the [name], and they take 2 damage if they are inside the [name] and it uses an ability."
     }
   ]
 }

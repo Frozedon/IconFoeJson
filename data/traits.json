@@ -22,6 +22,10 @@
     "Description": "If an attack misses the [name], they may deal 2 damage to the attacker, then fly 2."
   },
   {
+    "Name": "Aetherflesh",
+    "Description": "The [name] can teleport 5 instead of taking a standard move."
+  },
+  {
     "Name": "Aetherskin",
     "Description": "When bloodied, becomes intangible until the end of its next turn."
   },
@@ -44,6 +48,10 @@
   {
     "Name": "Aura of Bloodlust",
     "Description": "Aura 1. Foes that end their turn in the Aura must save or gain hatred of this character."
+  },
+  {
+    "Name": "Aura of Distortion",
+    "Description": "Aura 1. Allies inside the aura have evasion and foes are blinded+. Becomes aura 2 when bloodied."
   },
   {
     "Name": "Aura of Freedom",
@@ -80,6 +88,10 @@
   {
     "Name": "Battle Platform",
     "Description": "Characters can mount or dismount this character with their standard move, placing them adjacent when dismounting. Allies can start the battle mounted on this character. While mounted, place them inside a free space in this character (size 2 characters has space for 4 size 1 characters, while size 3 characters has space for 9). They share its space, move when it moves, and have cover. Characters hostile to this character must pass a save to mount it. Characters mounting it when it is defeated are placed adjacent and stunned."
+  },
+  {
+    "Name": "Blight Splash",
+    "Description": "Attacks deal 1 piercing damage on hit or miss to all foes in range 2 of the target as an area effect."
   },
   {
     "Name": "Blood Hunger",
@@ -119,7 +131,7 @@
   },
   {
     "Name": "Camouflage",
-    "Description": "If this character ends its turn adjacent to an object or or inside difficult terrain, it gains stealth."
+    "Description": "If this [name] ends its turn adjacent to an object or or inside difficult or dangerous terrain, it gains stealth."
   },
   {
     "Name": "Cheap Trick",
@@ -128,6 +140,10 @@
   {
     "Name": "Commander's Aura",
     "Description": "Aura 2. Allies in the aura have +1 boon on attacks."
+  },
+  {
+    "Name": "Cornered",
+    "Description": "When half its members are remaining or less, this [name] gains +1 action."
   },
   {
     "Name": "Counter",
@@ -148,6 +164,10 @@
   {
     "Name": "Crystal Dagger",
     "Description": "When the demon teleports, it may deal 1 damage to a foe in range 3."
+  },
+  {
+    "Name": "Curl Up",
+    "Description": "When defeated, this character curls up and becomes a height 1 boulder object."
   },
   {
     "Name": "Curse the Eyeless",
@@ -180,10 +200,6 @@
     ]
   },
   {
-    "Name": "Distortion",
-    "Description": "Aura 1. Foes inside are blinded+."
-  },
-  {
     "Name": "Dirty Fighting",
     "Description": "+1 boon on attacks and bonus damage to characters inside pits."
   },
@@ -201,21 +217,22 @@
   },
   {
     "Name": "Dweller in Dark",
-    "Description": "This character has the following abilities:",
+    "Description": "The [name] has the following abilities:",
     "ListedItems": [
-      {
-        "Description": "Immune to pits."
-      },
       {
         "Description": "Immune to blinded."
       },
       {
-        "Description": "May use its standard move to teleport from the area of any pit to any other pit."
+        "Description": "May use its standard move to teleport from the area of any pit to any other pit in range 4."
       },
       {
-        "Description": "Has resistance while inside a pit. (Take 1/2 damage, rounded up)"
+        "Description": "Has resistance while inside a pit."
       }
     ]
+  },
+  {
+    "Name": "Ear Splitting Song",
+    "Description": "The [name] has aura 2. Foes in the aura gain +1 curse on saves and do not save against statuses at the end of their turn. The aura increases to aura 3 when the [name] is bloodied."
   },
   {
     "Name": "Earth Bond",
@@ -260,7 +277,7 @@
   },
   {
     "Name": "Explosive Demise",
-    "Description": "When defeated, explodes in a blast 1 area effect centered on it. Foes inside are shoved 1 away from the origin space and must save or take [D]+[fray], or [fray] on a successful save."
+    "Description": "When defeated, explodes in a small blast area effect centered on it. Characters inside are shoved 1 away from the origin space and must save or take [D]+[fray], or [fray] on a successful save."
   },
   {
     "Name": "Eyeless",
@@ -289,10 +306,6 @@
   {
     "Name": "Great Enrage",
     "Description": "Sturdy and +1 action while bloodied. (Can't be stunned or dazed, and reduce the distance of all shoves by 1)"
-  },
-  {
-    "Name": "Great Leap",
-    "Description": "Ignores height movement penalties. When moving from a higher elevation to a lower one, may fly until the movement ends."
   },
   {
     "Name": "Greenwalker",
@@ -331,6 +344,10 @@
     "Description": "Aura 1. While there is exactly 1 other character in hollow's aura, it has have evasion and stealth. This aura has no effect if no other characters, or 2 or more other characters are inside, and its effects (including stealth) turn off it if deactivates."
   },
   {
+    "Name": "Immobile",
+    "Description": "Can't move, be moved, or be removed from the battlefield in any way."
+  },
+  {
     "Name": "Immortal Disregard",
     "Description": "Attacks never miss the [name] (turn any miss into a hit).",
     "Defense": 0
@@ -358,8 +375,16 @@
     ]
   },
   {
+    "Name": "Latch",
+    "Description": "Starts combat sharing the same space as another ally the same size or larger. While latched on, can't move, but instead moves with its host. Being moved out of its host's space end this effect. If the [name] would be shoved, teleported, or removed from the battlefield, it can pass a save to avoid the effect and become immune to these effects until the end of the current turn. Can latch on to a new adjacent allied character with 1 action or its standard move ability."
+  },
+  {
     "Name": "Lead Astray",
     "Description": "Aura 2. This character may teleport any other character that ends their turn in the aura 2 spaces in any direction."
+  },
+  {
+    "Name": "Leap",
+    "Description": "This [name] ignores height movement penalties. When it ends any movement on a lower elevation than it started, it gains flying for the duration of that movement."
   },
   {
     "Name": "Legend",
@@ -494,11 +519,15 @@
   },
   {
     "Name": "Primal Strength",
-    "Description": "When a brawler beast causes a character to collide, that character is dazed."
+    "Description": "All the [name]'s abilities have Collide: foes are is weakened. Weakened foes take 2 damage on collide instead, and the [name] gains 2 vigor."
   },
   {
     "Name": "Rampart",
     "Description": "Foes cannot enter or exit a space affected by a rampart effect by dashing, flying, or teleporting."
+  },
+  {
+    "Name": "Rancor",
+    "Description": "Foes that end their turn adjacent to the [name] take 3 damage and are slashed."
   },
   {
     "Name": "Ranged Master",
@@ -527,6 +556,10 @@
   {
     "Name": "Salty",
     "Description": "When the Sailor sacrifices any amount, they gain 3 vigor after the triggering ability resolves."
+  },
+  {
+    "Name": "Shaggy Mass",
+    "Description": "The [name] blocks line of sight and provides cover as though it was a height 3 object."
   },
   {
     "Name": "Shambling",
@@ -596,7 +629,11 @@
   },
   {
     "Name": "Stench",
-    "Description": "Melee attacks against this character have +1 curse. Characters starting their turns in an adjacent space are poisoned. Poisoned foes treat the area as dangerous terrain."
+    "Description": "The [name] has aura 1. Foes in the aura take +1 curse on attacks and saves."
+  },
+  {
+    "Name": "Stone Pantry",
+    "Description": "Has evasion while adjacent to an object. In addition, if the [name] ends its turn adjacent to an object, it gains stealth."
   },
   {
     "Name": "Stoneskin",

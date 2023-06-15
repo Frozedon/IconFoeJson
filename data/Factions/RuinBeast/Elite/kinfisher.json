@@ -3,40 +3,48 @@
   "Inherits": [ "Ruin Beast", "Elite", "Heavy" ],
   "Type": "Foe",
   "Chapter": 2,
-  "Vitality": 8,
-  "Speed": 1,
-  "Traits": [ "Size 2", "Sturdy", "Lure", "Perfect Camouflage" ],
+  "Traits": [ "Size 2", "Immobile", "Perfect Camouflage" ],
   "Actions": [
     {
-      "Name": "Reel In",
-      "ActionCost": 0,
-      "Description": "The fisher moves its lure up to 4 spaces towards it, then shoves all adjacent characters to the lure the same amount. Characters can pass a save to reduce this shove to 1."
+      "Name": "Lure",
+      "RoundAction": true,
+      "Description": "At the start of the round, the [name] puts a lure out adjacent to a foe of its choice. The lure is a size 1 intangible summon."
     },
     {
-      "Name": "Spit Up",
+      "Name": "Lure Spines",
       "ActionCost": 1,
-      "Tags": "close blast 1",
-      "AreaEffect": "Characters take [fray] damage, are poisoned, and must save or become winded. Poisoned characters fail the save."
+      "Tags": [ "attack", "range 3", "true strike" ],
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "Effects": "This attack can only be made from the Lure's location instead of the [name]'s main body."
     },
     {
       "Name": "The Maw",
       "ActionCost": 1,
-      "Tags": [ "melee attack", "true strike" ],
+      "Tags": [ "attack", "true strike" ],
       "Hit": "3[D]+[fray].",
       "Miss": "[D]+[fray].",
-      "Effects": "If more than one character is adjacent to the Kinfisher, it chooses targets randomly. It cannot target summons. Then, the fisher's lure is shoved to 3 spaces away from it."
+      "Effects": [
+        "Foe must save or be stunned.",
+        "Deals bonus damage to weakened foes."
+      ]
     },
     {
-      "Name": "Gnash",
+      "Name": "Reel In",
       "ActionCost": 1,
-      "Tags": "repeatable",
-      "Description": "The Kingfisher dashes 1 as it flops forward, then deals 2 damage to all adjacent foes."
+      "Description": "The [name] moves its lure up to 4 spaces towards it, then shoves all adjacent characters to the lure the same amount in the same direction. Characters can pass a save to reduce this shove to 1"
+    },
+    {
+      "Name": "Acid Spit",
+      "ActionCost": 1,
+      "Tags": "line 6",
+      "AreaEffect": "Foes take 3 damage and must save or be weakened."
     },
     {
       "Name": "Submerge",
       "ActionCost": 1,
-      "Recharge": 5,
-      "Description": "The Kinfisher submerges into the ground, teleporting 5 spaces, then resurfaces, even to an occupied area. When it resurfaces, characters in its area take [fray] damage, are placed in the closest adjacent space of its choice, then shoved 1."
+      "Tags": [ "usable when bloodied", "end turn" ],
+      "Description": "The [name] submerges into the ground, removing itself from the battlefield, then resurfaces in free space in range 4, even to an occupied area. When it resurfaces, characters in its area take [fray] damage, are removed then placed in the closest adjacent space of its choice, then shoved 1."
     }
   ]
 }

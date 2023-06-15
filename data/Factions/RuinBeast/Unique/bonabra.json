@@ -1,0 +1,51 @@
+{
+  "Name": "Bonabra",
+  "Inherits": [ "Ruin Beast", "Leader" ],
+  "Type": "Foe",
+  "Chapter": 2,
+  "Traits": [ "Size 3", "Bounteous Rest", "Unstoppable Rage" ],
+  "ExtraAbilitySets": [
+    {
+      "Name": "Regular",
+      "Traits": [ "Sheltering Mass" ],
+      "Actions": [
+        {
+          "Name": "Roll Over",
+          "ActionCost": 1,
+          "Description": "The [name] removes itself from the battlefield, then places itself anywhere in 1 space of its original location. Characters inside its area when it returns take 4 piercing damage and are removed from the battlefield, then placed outside its space as close as possible to its original location and shoved 1."
+        },
+        {
+          "Name": "Peaceful Snore",
+          "ActionCost": 1,
+          "Description": "All allies of the [name] in range 2 of it can immediately save against all statuses and dash 1. Allies at 25% hp or lower are additionally cured."
+        }
+      ]
+    },
+    {
+      "Name": "Unstoppable Rage",
+      "Actions": [
+        {
+          "Name": "Crimson Rampage",
+          "ActionCost": 1,
+          "Tags": [ "attack", "medium blast", "true strike", "pierce" ],
+          "Hit": "[D]+[fray].",
+          "Miss": "[D]+[fray].",
+          "AreaEffect": "[D]+[fray].",
+          "Effects": "Deals maximum damage against stunned characters."
+        },
+        {
+          "Name": "Headbutt",
+          "ActionCost": 1,
+          "Tags": [ "repeatable" ],
+          "Description": "A character adjacent to the [name] is shoved 4.",
+          "Collide": "Character takes [D]+[fray] and is stunned."
+        },
+        {
+          "Name": "Gigakaiser",
+          "ActionCost": 1,
+          "Description": "The [name] rushes 2, then an adjacent character takes [fray] damage and is stunned. Stunned characters must additionally sacrifice 25% of their maximum hp. Characters at 25% hp or lower are instantly defeated."
+        }
+      ]
+    }
+  ]
+}

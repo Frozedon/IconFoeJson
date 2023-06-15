@@ -6,35 +6,35 @@
     {
       "Name": "Scrabble",
       "ActionCost": 1,
-      "Tags": [ "melee attack" ],
-      "AutoHit": "[fray]."
+      "Tags": [ "attack", "range 2" ],
+      "AutoHit": "2 damage, twice."
     },
     {
-      "Name": "Pheremones",
+      "Name": "Pheremone Blast",
       "ActionCost": 1,
-      "Description": "A foe in range 4 is branded. Branded foes are pacified."
+      "Tags": [ "range 4" ],
+      "Description": "A foe in range is pacified, then shoved either 1 space towards or away from the [name]."
     },
     {
       "Name": "Spur",
       "ActionCost": 1,
-      "Tags": "repeatable",
-      "Description": "The character the symbiote is latched on to dashes 3 and may deal [fray] damage to an adjacent character of the symbiote's choice."
+      "Tags": [ "repeatable" ],
+      "Description": "The character the [name] is latched on to dashes 3 and may deal 2 damage to an adjacent character of the [name]'s choice."
     },
     {
       "Name": "Berserk",
       "ActionCost": 2,
-      "Recharge": 6,
-      "Description": "The Symbiote's host becomes sturdy, gains +1 action, and gains +1 boon on all attacks and saves. These effects last until the end of the host's next turn."
+      "Description": "The [name]'s host becomes sturdy, gains 5 vigor, and gains +1 action. These effects last until the end of the host's next turn."
     }
   ],
   "ConditionalAbilities": [
     {
       "Chapter": 2,
-      "Traits": "Latch Enrage"
+      "Traits": "Defiance"
     },
     {
       "Chapter": 3,
-      "Traits": "Latch Defiance"
+      "Traits": "Latch Enrage"
     }
   ]
 }

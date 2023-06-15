@@ -2,28 +2,32 @@
   "Name": "Bicorn",
   "Inherits": [ "Ruin Beast", "Artillery" ],
   "Type": "Foe",
-  "Speed": 5,
   "Traits": "Aetherskin",
   "Actions": [
     {
-      "Name": "Spiral Horn",
-      "ActionCost": 2,
-      "Tags": [ "ranged attack", "line 6", "pierce" ],
-      "Hit": "[D], twice.",
-      "Miss": "1 damage, twice.",
-      "AreaEffect": "1 damage, twice.",
-      "Effects": "Create a volatile mote, a terrain effect, next to every character affected. When the Bicorn passes through a mote, it picks it up and increases the hit and miss damage of this ability by +2 permanently. (so picking up one would make it do [D]+2, twice, and 3 damage, twice on a miss, for example)."
+      "Name": "Lightning Gallop",
+      "ActionCost": 1,
+      "Description": "Dash 2 with phasing. If this movement is in a straight line, increase to dash 4. When this dash finishes, deal 2 piercing damage to a foe in range 4.",
+      "Combo": {
+        "Name": "Spiral Horn",
+        "ActionCost": 2,
+        "Tags": [ "attack", "line 8", "pierce" ],
+        "Hit": "[D], twice.",
+        "Miss": "1 damage, twice.",
+        "AreaEffect": "1 damage, twice.",
+        "Effects": "Create a volatile mote, a terrain effect, next to every character in the line. When the Bicorn passes through a mote, it picks it up and increases the hit and miss damage of this ability by +2 permanently. (so picking up one would make it do [D]+2, twice, and 3 damage, twice on a miss, for example)."
+      }
     },
     {
       "Name": "Destabilize",
       "ActionCost": 1,
-      "Description": "A foe in range 6 becomes vulnerable. If that foe moves more than 1 space on its next turn, it also takes [fray] damage."
+      "Tags": [ "range 6" ],
+      "Description": "A foe in range becomes vulnerable. If that foe moves more than 1 space on its next turn, it also takes 2 damage twice."
     },
     {
-      "Name": "Gallop",
+      "Name": "Surge Shift",
       "ActionCost": 1,
-      "Tags": "repeatable",
-      "Description": "Dash 2. If this movement is in a straight line, increase to dash 4."
+      "Description": "Remove the [name] or an ally anywhere from the battlefield, then place the [name] or that ally in range 2 of its original location."
     }
   ]
 }

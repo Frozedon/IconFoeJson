@@ -6,34 +6,58 @@
     {
       "Name": "Ambush",
       "ActionCost": 1,
-      "Tags": [ "melee attack" ],
+      "Tags": [ "attack", "+1 boon" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
-      "Effects": "Against a bloodied foe, becomes a critical hit, and blinds on hit."
+      "Effects": [
+        "[name] may dash 2 before making the attack.",
+        "If made from stealth, deals bonus damage and dazes its target."
+      ]
     },
     {
-      "Name": "Prowl",
+      "Name": "Stalk Prey",
       "ActionCost": 1,
-      "Tags": "end turn",
-      "Effects": "Dash 1 and gain stealth."
+      "Tags": [ "range 3", "mark" ],
+      "Description": "The [name] marks a foe in range. While marked, at the end of that foe's turn, the [name] can remove itself from the battlefield, then return in any adjacent space to them. If the marked foe is not adjacent to any allies, the [name] deals 6 damage to them, then gains stealth."
     },
     {
       "Name": "Rake",
       "ActionCost": 1,
-      "Tags": [ "line 3", "repeatable" ],
-      "AreaEffect": "Foes in the area take [fray] damage.",
-      "Effects": "The Stalking Beast may teleport to any space in the area after this action resolves."
+      "Tags": [ "line 4", "unerring", "repeatable" ],
+      "Description": "Foes in the area take 2 damage. The [name] may dash to any space in the area after this action resolves, with phasing."
     }
   ],
   "ConditionalAbilities": [
     {
       "Chapter": 2,
-      "Traits": "Pack Tactics"
+      "RemoveActions": "Ambush",
+      "Actions": {
+        "Name": "Ambush",
+        "ActionCost": 1,
+        "Tags": [ "attack", "+1 boon" ],
+        "Hit": "[D]+[fray].",
+        "Miss": "[fray].",
+        "Effects": [
+          "[name] may fly 2 before making the attack.",
+          "If made from stealth, deals bonus damage and dazes its target."
+        ]
+      }
     },
     {
       "Chapter": 3,
-      "RemoveTraits": "Pack Tactics",
-      "Traits": "Pack Tactics (Improved)"
+      "RemoveActions": "Ambush",
+      "Actions": {
+        "Name": "Ambush",
+        "ActionCost": 1,
+        "Tags": [ "attack", "+1 boon" ],
+        "Hit": "[D]+[fray].",
+        "Miss": "[fray].",
+        "Effects": [
+          "[name] may fly 2 before making the attack.",
+          "If made from stealth, deals bonus damage and dazes its target.",
+          "Can critically hit (+[D]) when this [name] is bloodied."
+        ]
+      }
     }
   ]
 }

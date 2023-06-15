@@ -1,0 +1,40 @@
+{
+  "Name": "Basilisk",
+  "Inherits": [ "Ruin Beast", "Elite", "Skirmisher" ],
+  "Type": "Foe",
+  "Chapter": 2,
+  "Traits": [ "Phasing", "Stone Pantry", "Petrification" ],
+  "Actions": [
+    {
+      "Name": "Toxic Spine",
+      "ActionCost": 1,
+      "Tags": [ "attack", "range 3", "unerring" ],
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "Effects": [
+        "Create a toxic pool difficult terrain effect space under the attack target with the",
+        "Foes that end their turn in this space gain 1 petrification."
+      ],
+      "Combo": {
+        "Name": "Toxic Lash",
+        "ActionCost": 2,
+        "Tags": [ "attack", "range 2" ],
+        "Hit": "2[D]+[fray].",
+        "Miss": "[fray].",
+        "Effects": "Inflict 1 petrification on the attack target."
+      }
+    },
+    {
+      "Name": "Tail Slash",
+      "ActionCost": 1,
+      "Tags": [ "range 2" ],
+      "Description": "A foe in range, takes 2 damage, is dazed, and infected with a petrifying poison. At the end of their next turn, they take 1 petrification unless they end that turn adjacent to one or more allies. Then, this effect ends. This effect does not stack."
+    },
+    {
+      "Name": "Gall Stone",
+      "ActionCost": 1,
+      "Tags": [ "range 4" ],
+      "Description": "The [name] spits up a height 1 object, a pillar of toxic bile, in range. Foes that end their turn adjacent to one or more of these pillars gain 1 petrification per pillar."
+    }
+  ]
+}

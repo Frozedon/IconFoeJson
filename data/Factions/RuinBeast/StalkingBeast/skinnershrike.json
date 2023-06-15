@@ -3,17 +3,23 @@
   "Inherits": "Stalking Beast",
   "Type": "Foe",
   "Chapter": 3,
-  "Traits": "Nimble",
-  "Interrupts": {
-    "Name": "Stalking Retreat",
-    "Count": 1,
-    "Trigger": "When damaged by an ability.",
-    "Effects": "Gain evasion against the ability if it is an attack. After the triggering ability resolves, dash 2, then gain stealth."
-  },
-  "Actions": {
-    "Name": "Fowl Play",
-    "ActionCost": 2,
-    "Recharge": 5,
-    "Description": "Teleport 3, then deal [D] to an adjacent foe. Can repeat this effect, but must choose a different foe each time unless no other foes are in range, or this effect has triggered four times."
-  }
+  "Actions": [
+    {
+      "Name": "Blinding Speed",
+      "ActionCost": 0,
+      "Tags": [ "usable while bloodied" ],
+      "Description": "The [name] teleports 3. If it started this teleport adjacent to a foe, that foe is blinded."
+    },
+    {
+      "Name": "Stalking Slasher",
+      "ActionCost": 1,
+      "Description": "Until the start of its next turn, the Shrike gains aura 1. Itself and allies in the aura gain evasion. When it or an ally in the aura successful evades an attack, it can daze the attacker, then self or the triggering ally gains stealth, and can teleport 2."
+    },
+    {
+      "Name": "Fowl Play",
+      "ActionCost": 1,
+      "Tags": [ "usable while bloodied" ],
+      "Effects": "Teleport 4, then deal 4 damage to an adjacent foe. Can repeat this effect, but must choose a different foe in range each time unless a foe has already been chosen by this ability, or this effect has triggered three times."
+    }
+  ]
 }

@@ -2,11 +2,5 @@
   "Name": "Dungeon Jelly",
   "Inherits": "Stalking Beast",
   "Type": "Foe",
-  "Traits": [ "Flying", "Distortion" ],
-  "Actions": {
-    "Name": "Stinging Darts",
-    "ActionCost": 1,
-    "Recharge": 6,
-    "Description": "All foes in range 2 must save or become poisoned and blinded. Poisoned foes fail the save and also take [fray] damage."
-  }
+  "Traits": [ "Flying", "Aura of Distortion" ]
 }

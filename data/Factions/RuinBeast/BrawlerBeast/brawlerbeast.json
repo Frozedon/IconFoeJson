@@ -1,46 +1,49 @@
 {
   "Name": "Brawler Beast",
   "Inherits": [ "Ruin Beast", "Heavy" ],
-  "Traits": [ "Size 2", "Primal Strength" ],
+  "Traits": [ "Primal Strength" ],
   "Actions": [
     {
       "Name": "Smash",
       "ActionCost": 1,
-      "Tags": [ "melee attack", "true strike" ],
+      "Tags": [ "attack", "true strike" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
-      "Effects": "Shove 1. If either foe or this character is bloodied, increase shove to 3."
+      "Effects": "Shove 1. If the [name] or its target is bloodied, increase shove to 3."
     },
     {
-      "Name": "Rampage",
+      "Name": "Wild Toss",
       "ActionCost": 1,
-      "Tags": "repeatable",
-      "Effects": "The beast dashes up to 2 spaces. When it ends this movement, adjacent foes take 2 damage and is shoved 1."
+      "Tags": [ "repeatable" ],
+      "Effects": "The [name] hurls an adjacent ally, removing them from the battlefield, then placing them in range 3. That ally deals 2 damage to adjacent foes when landing."
     },
     {
-      "Name": "Charge",
-      "ActionCost": 1,
-      "Recharge": 4,
-      "Tags": "end turn",
-      "Effects": [
-        "The beast chooses a foe in range 2. At the end of that foe's next turn, the beast dashes up to 5 spaces towards that foe, phasing through characters. Characters the beast passes through are shoved 1 to either side and take [fray] damage. If the beasts ends this movement adjacent to their foe, that foe must save or take 2[D]+[fray] and become stunned, or [D]+[fray] only on a successful save.",
-        "This ability has no recharge if the beast is bloodied."
-      ]
+      "Name": "Barreling Charge",
+      "ActionCost": 2,
+      "Tags": [ "range 2", "end turn" ],
+      "Effects": "The [name] chooses a foe in range and becomes sturdy. At the end of that foe's next turn, the [name] rushes up to 4, with each space moving towards that foe, phasing through characters. Characters the [name] passes through are shoved 1 to either side and take 2 damage. If the [name] ends this movement adjacent to their foe, that foe is weakened and must save or take 2[D]+[fray] and become stunned, or [D]+[fray] on a successful save. Then, this effect ends."
     }
   ],
   "ConditionalAbilities": [
     {
       "Chapter": 2,
+      "RemoveActions": "Wild Toss",
       "Actions": {
-        "Name": "Bellow",
-        "ActionCost": 0,
-        "Description": "A foe in range 2 is shoved 1. If the beast is bloodied, all foes in range 2 are shoved 1 instead."
+        "Name": "Wild Toss",
+        "ActionCost": 1,
+        "Tags": [ "repeatable" ],
+        "Effects": "The [name] hurls an adjacent ally or foe, removing them from the battlefield, then placing them in range 3. That ally deals 2 damage to adjacent foes when landing."
       }
     },
     {
       "Chapter": 3,
-      "RemoveTraits": "Enrage",
-      "Traits": "True Enrage"
+      "RemoveActions": "Wild Toss",
+      "Actions": {
+        "Name": "Wild Toss",
+        "ActionCost": 1,
+        "Tags": [ "repeatable" ],
+        "Effects": "The [name] hurls an adjacent ally or foe, removing them from the battlefield, then placing them in range 5. That ally deals 2 damage to adjacent foes when landing. When the [name] is bloodied, this deals 3 damage instead."
+      }
     }
   ]
 }

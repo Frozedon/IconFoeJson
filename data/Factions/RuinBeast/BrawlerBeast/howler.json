@@ -3,23 +3,24 @@
   "Inherits": "Brawler Beast",
   "Type": "Foe",
   "Chapter": 2,
+  "Traits": [ "Counter" ],
   "Actions": [
     {
       "Name": "Howl",
       "ActionCost": 2,
-      "Recharge": 6,
-      "Description": "All non-howler characters in a close blast 1 area effect must save or take [D]+[fray] and be stunned.",
-      "Effects": "Can be used as an Interrupt when bloodied."
+      "Tags": [ "1/combat" ],
+      "Description": "All foes in range 2 take 2 damage, are weakened, and must save or be stunned."
     },
     {
-      "Name": "Iron Grip",
+      "Name": "Bulk Up",
       "ActionCost": 1,
-      "Description": "The Howler dashes 3 spaces in any direction. An adjacent foe when it starts moving must save or be dragged them with it, shoving its target towards it until its adjacent. Bloodied foes fail the save."
+      "Description": "The [name] gains 4 vigor, or 6 vigor if bloodied."
     },
     {
-      "Name": "Body Slam",
-      "ActionCost": 0,
-      "Description": "The Howler flies into the air and comes slamming back down. Adjacent characters must choose: be shoved 1, or take [fray] damage."
+      "Name": "Iron Driver",
+      "ActionCost": 1,
+      "Tags": [ "usable when bloodied" ],
+      "Description": "The [name] grabs an adjacent character, removing them from the battlefield, then rushes 2 spaces in any direction, placing them in a free adjacent space and slamming them into the ground repeatedly. That foe is slashed and must save or take 3 damage, three times or just 1 damage, three times on a successful save."
     }
   ]
 }

@@ -4,21 +4,20 @@
   "Type": "Foe",
   "Chapter": 2,
   "Traits": "Explosive Demise",
-  "RemoveActions": "Biotic",
   "Actions": [
     {
       "Name": "Rocket Jump",
       "ActionCost": 0,
-      "Description": "The beetle flies 2."
+      "Description": "The [name] flies 2."
     },
     {
       "Name": "Acid Ignition",
       "ActionCost": 2,
-      "Tags": [ "ranged attack 6", "blast 2", "pierce" ],
-      "Hit": "2[D]+[fray] and inflict poisoned.",
-      "Miss": "[fray].",
-      "AreaEffect": "[fray].",
-      "Effects": "Critical hit against poisoned foes."
+      "Tags": [ "attack", "range 6", "large blast", "Round 3+ only" ],
+      "Hit": "2[D]+[fray].",
+      "Miss": "[D]+[fray].",
+      "AreaEffect": "[D]+[fray].",
+      "Effects": "Deals bonus damage to and can critical hit (+[D]) vulnerable foes."
     }
   ]
 }

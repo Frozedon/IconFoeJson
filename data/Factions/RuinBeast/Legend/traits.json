@@ -1,26 +1,99 @@
 [
   {
     "Name": "Monstrous Heads",
-    "Description": "The Chimaera has three heads, chosen or rolled for from the following list, each unique. Each head has a unique set of powers, shares the chimaera's space, is separately targetable, and has its own hit points. Statuses, marks, or other effects only affect the currently acting head. Only one head is targetable at a time, even if an attack has area of effect. Damage that 'spills over' on one head is lost.\nEach time the Chimaera takes a turn, it takes a turn with only one of its heads. A different head must act from the last head that acted, unless there is only one head left. The Chimaera is only defeated when all three heads are defeated."
+    "Description": "The Chimaera has three heads, chosen or rolled for from the following list, each unique.",
+    "ListedItems": [
+      { "Description": "Each head has 1/3 of the Chimaera's total hp, rounded up." },
+      { "Description": "When dealing damage to the Chimaera, a character must choose which head they are damaging, and can only target one head at once. Heads that are reduced to 0 hp are defeated. Damage that 'spills over' on one head is lost." },
+      { "Description": "Each head has unique set of abilities. Abilities become more powerful the less heads there are." },
+      { "Description": "Statuses, marks, or other effects only affect the currently acting head." },
+      { "Description": "Each time the Chimaera takes a turn, it takes a turn with only one of its heads. A different head must act from the last head that acted, unless there is only one head left. The Chimaera is only defeated when all three heads are defeated." }
+    ]
   },
   {
     "Name": "Feral Rage",
-    "Description": "The Chimaera's remaining head gains +1 action and becomes unstoppable. (Immune to all statuses. Can't be immobilized, shoved, or teleported by foes)"
+    "Description": "The Chimaera gains +1 action and becomes unstoppable."
   },
   {
     "Name": "Lion's Pride",
-    "Description": "At the end of its turn, gains vigilance 1. Can intercept attacks against other heads."
+    "Description": "While the Lion is undefeated, reduces damage to all other heads by 2, as if from Armor."
   },
   {
     "Name": "Bull's Fortitude",
-    "Description": "All heads are Sturdy while the Bull head is alive. (Immune to shove, dazed, and stunned)"
+    "Description": "While the Bull is undefeated, the Chimaera is immune to being shoved."
   },
   {
-    "Name": "Noxious Venom",
-    "Description": "While the Toad head is alive, all heads have counter. (Each time a foe deals damage to you with an ability, deal 2 damage back)"
+    "Name": "Serpent's Guile",
+    "Description": "While the Serpent is alive and undefeated, bloodied foes deal only half damage to the Chimaera."
   },
   {
-    "Name": "Goat's Shield",
-    "Description": "While the goat is alive, the Chimaera's heads have Aetherwall. (Gains automatic cover against all attacks that originate outside of range 2 from them. Cover grants resistance against ranged attacks, reducing it by 1/2)"
+    "Name": "Crocodile's Savagery",
+    "Description": "While the Crocodile is undefeated, the Chimaera's attacks can critical hit (+[D])."
+  },
+  {
+    "Name": "Toad's Repulsion",
+    "Description": "While the Toad head is alive, all heads have counter."
+  },
+  {
+    "Name": "Baboon's Malice",
+    "Description": "While the Baboon head is undefeated, all the Chimaera's damage is piercing."
+  },
+  {
+    "Name": "Wolf's Brutality",
+    "Description": "While the Wolf head is undefeated, the Chimaera gains stealth if it ends its turn with no foes adjacent."
+  },
+  {
+    "Name": "Chicken's Spite",
+    "Description": "While the Chicken head is undefeated, all attacks against the Chimaera take +1 curse."
+  },
+  {
+    "Name": "Bear's Vitality",
+    "Description": "While the Bear is undefeated, the Chimaera's Juggernaut trait triggers twice at the start of the round."
+  },
+
+  {
+    "Name": "Might of the Wild",
+    "Description": "The Apex has three unique abilities, depending on what type of beast it is. Choose or roll for them. The third ability only becomes usable during its second phase."
+  },
+  {
+    "Name": "Hunting Grounds",
+    "Description": "Before the fight, the GM places three small blast difficult terrain areas on the map. None can be placed in range 2 of each other. Each area is a hunting ground. The Apex gains +1 boon on attacks and deals bonus damage to characters in hunting grounds."
+  },
+  {
+    "Name": "Monster Hunt",
+    "Description": "A foe that ends their turn inside any space of a hunting ground can attempt to make a ploy against the Apex by using the natural environment, as long as the Apex is in range 3.",
+    "ListedItems": [
+      { "Description": "Making a ploy is a free action that ends a character's turn." },
+      { "Description": "That player describes to the GM the impressive stunt they pull against the Apex, then rolls 1d6 and hands the die to the GM." },
+      { "Description": "While the Apex has the die, it takes bonus damage and one of its Might of the Wild abilities is disabled, has no effect, and cannot be used, chosen by the player. It reduces the die by 1 at the end of each of its turns. When a die would be reduced to 0, discard it." },
+      { "Description": "Each hunting ground can only be used once to disable the Apex." },
+      { "Description": "The Apex can keep multiple dice at once (track which ability they are disabling) and the bonus damage effect from them stacks." }
+    ]
+  },
+  {
+    "Name": "Hidden Might",
+    "Description": "The apex's third Might of the Wild ability becomes active."
+  },
+  {
+    "Name": "Earthglide",
+    "Description": "The Apex has Phasing."
+  },
+  {
+    "Name": "Blend In",
+    "Description": "If the Apex starts its turn in difficult or dangerous terrain, it gains stealth."
+  },
+  {
+    "Name": "Winged",
+    "Description": "The Apex's standard move is fly 5, and all its dashes or rushes may be replaced with a fly. This trait deactivates if weakened."
+  },
+
+
+  {
+    "Name": "Dragonfire",
+    "Description": "The Wyrm's divine fire scorches the very soul. When an ability inflicts dragon fire, all of its targets sacrifice 25% of their max hp."
+  },
+  {
+    "Name": "Path of Ruin",
+    "Description": "Many of the Wyrm's abilities key off a particular map edge, called the Path of Ruin. The GM decides and announces the initial Path of Ruin edge at the beginning of combat, then it moves clockwise at the start of each round."
   }
 ]

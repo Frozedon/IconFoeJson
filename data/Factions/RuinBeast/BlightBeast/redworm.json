@@ -3,5 +3,10 @@
   "Inherits": "Blight Beast",
   "Type": "Foe",
   "Chapter": 3,
-  "Traits": [ "Dig", "Dweller in Dark", "Tunnel" ]
+  "Traits": [ "Dig", "Dweller in Dark" ],
+  "Actions": {
+    "Name": "Tunnel",
+    "ActionCost": 2,
+    "Description": "The [name] creates a pit under itself, then another pit in range 6. It then removes itself from the battlefield and reemerges in the second pit. When it emerges, it deals 1 piercing damage three times to all foes in range 2 as an area effect."
+  }
 }

@@ -2,17 +2,12 @@
   "Name": "Aethertick",
   "Inherits": "Symbiote",
   "Type": "Foe",
-  "Interrupts": {
-    "Name": "Turn Bolts",
-    "Count": 1,
-    "Trigger": "The Aethertick or its host is targeted by a ranged attack.",
-    "Effects": "The target gains evasion against the triggering attack."
-  },
-  "RemoveActions": "Spur", 
+  "Traits": "Turn Bolts",
+  "RemoveActions": "Spur",
   "Actions": {
     "Name": "Aether Warp",
     "ActionCost": 1,
-    "Tags": "repeatable",
-    "Description": "The Aethertick and its host teleport 3."
+    "Tags": [ "repeatable" ],
+    "Description": "The [name] and its host teleport 3."
   }
 }

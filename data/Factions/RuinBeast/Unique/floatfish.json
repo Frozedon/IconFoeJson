@@ -6,32 +6,35 @@
   "Traits": [ "Flying", "Aetherskin" ],
   "Actions": [
     {
-      "Name": "Slime Stream",
-      "ActionCost": 2,
-      "Tags": [ "ranged atttack", "line 8" ],
-      "Hit": "2[D]+[fray].",
-      "Miss": "[fray].",
-      "AreaEffect": "[fray].",
-      "Effects": "Shove all characters 2 spaces in the direction of the line."
+      "Name": "Pearlescent Bubble",
+      "ActionCost": 1,
+      "Tags": "range 4",
+      "Description": "The fish spits out three bubbles in range.",
+      "Summons": {
+        "Name": "Pearlescent Bubble",
+        "IsObject": true,
+        "Tags": [ "Terrain Effect" ],
+        "SummonEffects": "When a character enters the bubble's space, it pops, shattering them, shoving them 3 in any direction, and creating a space of difficult terrain. Shattered characters are stunned. Collide: Character also takes fray damage twice."
+      },
+      "Combo": {
+        "Name": "Slime Stream",
+        "ActionCost": 2,
+        "Tags": [ "attack", "line 8" ],
+        "Hit": "2[D]+[fray].",
+        "Miss": "[fray].",
+        "AreaEffect": "[fray].",
+        "Effects": "Shove all characters 2 spaces in the direction of the line.",
+        "CustomComponents": {
+          "Name": "Round 3+",
+          "Description": "Deals bonus damage and shatters target."
+        }
+      }
     },
     {
       "Name": "Floating Toxin",
       "ActionCost": 1,
-      "Tags": "multimark",
-      "Description": "The fish shoots a spiny dart into the bloodstream of a character in range 6, marking them.",
-      "Mark": "While marked, the character has flying, cannot benefit from sturdy, and is shoved 2 in a random direction at the end of their turns. Roll 1d6 for the direction, relative to the map (1: fish chooses, 2: up, 3: down, 4: left, 5: right, 6: character chooses). A character can save against this mark after being shoved, ending it on a success."
-    },
-    {
-      "Name": "Pearlescent Bubble",
-      "ActionCost": 1,
-      "Recharge": 5,
-      "Tags": "summon",
-      "Description": "The fish spits out three bubbles in range 4.",
-      "Summons": {
-        "Name": "Pearlescent Bubble",
-        "Tags": [ "Size 1", "1 HP", "Defense 1" ],
-        "SummonEffects": "When a character collides with the bubble, it pops, shattering them, shoving them 3 in any direction, and creating a space of difficult terrain. Shattered characters are stunned."
-      }
+      "Tags": [ "range 6", "multimark" ],
+      "Description": "The [name] shoots a spiny dart into the bloodstream of a character in range, marking them. While marked, the character has flying, cannot dash, rush, or teleport, cannot benefit from sturdy, and is shoved 2 in a random direction at the end of their turns. Roll 1d6 for the direction, relative to the map (1: [name] chooses, 2: up, 2: down, 3: left, 4: right. 6: character chooses). A character can save against this mark after being shoved this way, ending it on a success."
     }
   ]
 }

@@ -7,7 +7,13 @@
   "SetupTraits": [
     {
       "Name": "Monsters",
-      "Description": "Beasts do not negotiate. They might flee if losing a fight badly."
+      "Description": "Beasts do not negotiate. They might flee if losing a fight badly or act out of self preservation.",
+      "ListedItems": [
+        {
+          "Name": "Motivations",
+          "Description": "Beasts have simple motivations, which are typically for territory or food. Ruin beasts in particular are often affected by the blighted energies of unconfined ruins, which can mutate them or drive them sick or mad. Sometimes it is possible to cure these beasts of their afflictions."
+        }
+      ]
     }
   ]
 }

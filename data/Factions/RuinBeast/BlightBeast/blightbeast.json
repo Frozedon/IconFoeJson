@@ -1,39 +1,63 @@
 {
   "Name": "Blight Beast",
   "Inherits": [ "Ruin Beast", "Artillery" ],
+  "Traits": "Blight Splash",
   "Actions": [
     {
       "Name": "Biotic",
-      "ActionCost": 2,
-      "Tags": [ "ranged attack 8", "cross 2", "pierce" ],
-      "Hit": "2[D]+[fray].",
-      "Miss": "[fray].",
-      "AreaEffect": "[fray].",
-      "Effects": "On hit, foe is shattered and poisoned. Shatters foe even on miss if they are poisoned."
+      "ActionCost": 1,
+      "Tags": [ "attack", "range 8", "small blast", "pierce" ],
+      "Hit": "[D].",
+      "Miss": "1 damage.",
+      "AreaEffect": "1 damage.",
+      "Effects": "Foe is shattered.",
+      "CustomComponents": {
+        "Name": "Round 3+",
+        "Description": "Deals bonus damage and increase effect area to a large blast."
+      }
     },
     {
       "Name": "Deluge",
       "ActionCost": 1,
       "Tags": "repeatable",
-      "Description": "The beast dashes 2, then deals 2 piercing damage to a foe in range 6."
+      "Description": "The [name] flies 2, then deals 2 piercing damage to a foe in range 6."
     },
     {
       "Name": "Blight Lob",
-      "ActionCost": 1,
-      "Recharge": 4,
-      "Tags": [ "terrain effect", "end turn" ],
-      "Description": "The Beast creates a blast 1 area of difficult terrain. Characters standing in the area are vulnerable+. The area lasts for the rest of combat, or until this beast uses this ability again."
+      "ActionCost": 2,
+      "Tags": [ "range 8", "end turn" ],
+      "Description": "The [name] creates a small blast area of difficult terrain in range. Characters in the area when it is created take 3 piercing damage as an area effect, and characters inside the area are vulnerable+."
     }
   ],
   "ConditionalAbilities": [
     {
       "Chapter": 2,
-      "Traits": "Hyperactive"
+      "RemoveActions": "Blight Lob",
+      "Actions": {
+        "Name": "Blight Lob",
+        "ActionCost": 2,
+        "Tags": [ "range 8", "end turn" ],
+        "Description": "The [name] creates a small blast area of difficult terrain in range. Characters in the area when it is created take 3 piercing damage as an area effect, and characters inside the area are vulnerable+.",
+        "CustomComponents": {
+          "Name": "Round 3+",
+          "Description": "Costs 1 action."
+        }
+      }
     },
     {
       "Chapter": 3,
-      "RemoveTraits": "Hyperactive",
-      "Traits": "Hyperactive (Improved)"
+      "RemoveActions": "Blight Lob",
+      "Actions": {
+        "Name": "Blight Lob",
+        "ActionCost": 2,
+        "Tags": [ "range 8", "end turn" ],
+        "Description": "Repeat the following effect three times:",
+        "Effects": "The [name] creates a small blast area of difficult terrain in range. Characters in the area when it is created take 3 piercing damage as an area effect, and characters inside the area are vulnerable+.",
+        "CustomComponents": {
+          "Name": "Round 3+",
+          "Description": "Costs 1 action."
+        }
+      }
     }
   ]
 }

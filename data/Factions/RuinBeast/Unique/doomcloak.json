@@ -3,29 +3,43 @@
   "Inherits": [ "Ruin Beast", "Heavy" ],
   "Type": "Foe",
   "Chapter": 3,
-  "Traits": [ "Flying", "Acid Burst" ],
+  "Traits": [ "Flying", "Sturdy", "Counter", "Defiance" ],
   "Actions": [
     {
       "Name": "Chasing Claw",
       "ActionCost": 1,
-      "Tags": [ "melee atttack", "true strike" ],
+      "Tags": [ "attack", "true strike" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
-      "Effects": "Shove 1, and Doomcloak can dash 1."
+      "Effects": [
+        "Shove 1, and [name] can fly 1.",
+        "Deals bonus damage to choked foes."
+      ]
     },
     {
       "Name": "Rake",
       "ActionCost": 1,
       "Tags": [ "line 3", "repeatable" ],
       "AreaEffect": "Foes in the area take [fray] damage.",
-      "Effects": "The beast may teleport to any space in the area after this action resolves."
+      "Effects": "The [name] may rush to any space in the area after this action resolves."
     },
     {
-      "Name": "Smother",
+      "Name": "Acid Stream",
+      "ActionCost": 1,
+      "Tags": [ "line 4", "true strike" ],
+      "AreaEffect": "Foes in the area take 2 damage and are shoved 1."
+    },
+    {
+      "Name": "Choke",
       "ActionCost": 2,
-      "Recharge": 6,
       "Tags": "stance",
-      "Description": "The Doomcloak gains vigor 1, then moves into an adjacent foe's space, sharing it. While in this stance, both this beast and its chosen foe are immobile. The smothered foe is poisoned, dazed and takes [D]+[fray] damage at the start of their turn, ignoring vigor, and cannot gain vigor while being smothered. When the Doomcloak takes at least 1 damage to hp, this stance ends, shoving it into an adjacent space."
+      "Description": "The [name] gains 8 vigor, then moves into an adjacent foe's space, sharing it, with the following effects:",
+      "ListedItems": [
+        { "Description": "While in this stance, both this [name] and its chosen foe are immobile." },
+        { "Description": "The choked foe takes [D]+[fray] damage at the start of their turn, ignoring vigor, and cannot gain vigor while being smothered." },
+        { "Description": "When the [name] takes damage, the choked foe take 2 piercing damage. This effect can trigger any number of times." },
+        { "Description": "When the [name]'s vigor is broken or replaced, this stance ends, removing it, and placing it into an adjacent space." }
+      ]
     }
   ]
 }

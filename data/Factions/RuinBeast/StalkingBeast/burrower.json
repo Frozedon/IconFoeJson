@@ -3,22 +3,14 @@
   "Inherits": "Stalking Beast",
   "Type": "Foe",
   "Chapter": 2,
-  "Traits": "Dig",
-  "RemoveActions": "Rake",
+  "Traits": "Earthglide",
+  "RemoveActions": "Stalk Prey",
   "Actions": [
-    {
-      "Name": "Spit Rock",
-      "ActionCost": 1,
-      "Tags": [ "line 6", "repeatable" ],
-      "AreaEffect": "Foes take [fray] damage."
-    },
     {
       "Name": "Burrow",
       "ActionCost": 1,
-      "Recharge": 6,
-      "Tags": [ "mark", "end turn" ],
-      "Description": "Mark a character in range 8. The Burrower digs down and becomes intangible.",
-      "Mark": "At the end of the marked character's turn, if that character is still marked, the Burrower teleports to a space adjacent to that character, dealing [fray] damage. If the character is flying, they take no damage. If the character has no other characters or terrain pieces adjacent, they take 3[D] instead and are slowed. Then, the mark and all associated effects end."
+      "Tags": [ "range 8", "mark" ],
+      "Description": "The [name] marks a foe in range. The [name] digs down and creates a pit under itself. While marked, at the end of that foe's turn, the beast can remove itself from the battlefield, then return in any adjacent space to them, dealing 3 damage to them. If the marked foe is not adjacent to any allies, the beast deals 3 damage three times to them, then gains stealth."
     }
   ]
 }

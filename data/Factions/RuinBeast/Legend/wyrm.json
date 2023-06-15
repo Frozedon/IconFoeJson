@@ -1,0 +1,109 @@
+{
+  "Name": "Wyrm",
+  "Inherits": [ "Ruin Beast", "Legend" ],
+  "Type": "Foe",
+  "Chapter": 3,
+  "RemoveTraits": "Enrage",
+  "Traits": [ "Size 3", "Sturdy", "Dragonfire", "Path of Ruin" ],
+  "SetupTraits": {
+    "Name": "Map",
+    "Description": "This fight is best on a medium or larger sized map (10x10, 12x12, 14x14, etc)."
+  },
+  "Actions": [
+    {
+      "Name": "Devastate",
+      "RoundAction": true,
+      "Tags": [ "true strike", "Path of Ruin" ],
+      "Description": "At the end of every round, as a path of ruin effect, the Wyrm marks out an area that extends from the entire path of ruin edge up to 4 spaces from that edge. The Wyrm can not voluntarily enter this area. At the end of the round, it scours the area as a massive area effect. Foes inside must save or take 2[D]+[fray] damage and be stunned, or [D]+[fray] on a successful save."
+    },
+    {
+      "Name": "Sirocco",
+      "RoundAction": true,
+      "Tags": [ "Path of Ruin" ],
+      "Description": "At the start of every odd numbered round, the Wyrm creates a twisting, burning tornado, a one space mobile terrain effect, in range 3. The Sirocco is difficult and dangerous terrain. At the end of the round, as a path of ruin effect, all Siroccos move 3 spaces towards the path of ruin. After each space of this move, they shove all adjacent foes 1 space away from them. Then, any foes shoved by at least one Sirocco during this movement are inflicted with Dragonfire. Siroccos last indefinitely."
+    },
+    {
+      "Name": "Liquify",
+      "RoundAction": true,
+      "Description": "At the start of the round, the Wyrm liquifies the ground beneath a foe's feet. That foe takes 2 piercing damage and becomes immobile. If the affected character would be inflicted with dragon fire, the rock melts and is destroyed instead of dragon fire's normal effects. The immobilized character or an adjacent character can also chip the rock off by using the interact ability (1 action) and ending their turn. When the rock is destroyed, this effect ends."
+    },
+    {
+      "Name": "Gigabeam",
+      "ActionCost": 1,
+      "Tags": [ "1/round" ],
+      "Description": "The Wyrm chooses a foe in range 3 that has not acted yet. At the end of that foe's turn, the Wyrm fires a massive beam as a path of ruin effect. If that foe ends their turn within range 3 of the Wyrm, they are inflicted with dragonfire. If not, then the beam sweeps across the entire battlefield and hits all foes, inflicting dragonfire on all of them."
+    },
+    {
+      "Name": "Blazing Wind",
+      "ActionCost": 1,
+      "Tags": [ "2/round", "Path of Ruin" ],
+      "Description": "As a path of ruin effect, all foes must choose: Take 4 damage or else be shoved 1 towards the path of ruin."
+    },
+    {
+      "Name": "Molten Eruption",
+      "ActionCost": 1,
+      "Tags": [ "range 3", "2/round" ],
+      "Description": "The Wyrm creates a height 2 blight pillar object in free space in range 3. The pillar and all spaces in a small blast area centered on it are dangerous terrain, which the wyrm is immune to. When it is created, adjacent foes take 2 piercing damage."
+    },
+    {
+      "Name": "Jaws of Death",
+      "ActionCost": 1,
+      "Description": "The Wyrm rushes 2, then an adjacent foe must choose: stand their ground or flee.",
+      "ListedItems": [
+        {
+          "Name": "Stand your ground",
+          "Description": "Become slashed and take [fray] damage. Then save, or also be inflicted with dragonfire on a failed save."
+        },
+        {
+          "Name": "Flee",
+          "Description": "Be shoved 4 spaces. The Wyrm can choose the direction of this shove, and can change directions mid-shove."
+        }
+      ],
+      "Combo": {
+        "Name": "Seismic Geyser",
+        "ActionCost": 1,
+        "Tags": [ "range 4" ],
+        "Description": "The Wyrm chooses a foe in range that has not acted yet. At the end of that foe's turn, a geyser erupts under them, dealing [fray] damage and inflicting weakened as a medium blast area effect centered on them. Weakened foes take [D]+[fray] instead."
+      }
+    },
+    {
+      "Name": "Ancient Fury",
+      "ActionCost": 1,
+      "Tags": [ "attack", "medium blast", "true strike" ],
+      "Hit": "[D]+[fray] and shove 2.",
+      "Miss": "[fray] damage and shove 1.",
+      "Effects": "The Wyrm may rush 1 before this attack.",
+      "Combo": {
+        "Name": "Gigacrush",
+        "ActionCost": 2,
+        "Tags": [ "attack", "range 3", "small blast" ],
+        "Hit": "2[D]+[fray].",
+        "Miss": "[D]+[fray].",
+        "AreaEffect": "[D]+[fray].",
+        "Combo": {
+          "Name": "Rage of Arden",
+          "ActionCost": 1,
+          "Tags": [ "attack", "range 4", "Path of Ruin" ],
+          "Hit": "[D]+[fray].",
+          "Miss": "[fray].",
+          "Effects": "The Wyrm soars into the air. It removes itself from the battlefield, then as a path of ruin effect draws a line area effect 3 spaces wide straight across the battlefield, starting on the side opposite the path of ruin edge, and ending with the path of ruin edge. Foes inside take piercing fray damage. Then the Wyrm returns to the battlefield in range 2 of its original location."
+        }
+      }
+    }
+  ],
+  "PhasesDescription": "The Wyrm enters phase II when bloodied.",
+  "Phases": [
+    { },
+    {
+      "Name": "When Bloodied",
+      "Description": "As Phase I, but all Path of Ruin effects activate twice: once directed towards where the Path of Ruin currently is, and then once where it will be next round.",
+      "Actions": {
+        "Name": "Zetaflare",
+        "RoundAction": true,
+        "Tags": [ "true strike", "divine" ],
+        "Description": "The Wyrm chooses a foe at the start of the round. At the end of the round, after all other effects have resolved, all foes not in range 2 of that foe take 5 divine damage, ignoring cover."
+      }
+    }
+  ],
+  "Tactics": "The Wyrm is a ferocious foe that is capable of dealing incredible damage. Most of its effects are telegraphed, moving towards the path of ruin, so good positioning from player characters can avoid them. Characters can mostly choose between being shoved by the wyrm's abilities (and potentially into a bad position) or taking the hurt. Canny characters might position themselves so they are shoved into objects with Blazing Wind, or figure out that Liquify can make them immune to the negative effects of Blazing Wind, Jaws of Death, and Gigabeam, since they cannot be shoved - but also makes them vulnerable to other effects, such as Zetaflare."
+}

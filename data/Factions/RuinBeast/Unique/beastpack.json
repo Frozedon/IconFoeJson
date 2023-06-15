@@ -1,0 +1,33 @@
+{
+  "Name": "Beast Pack",
+  "Inherits": [ "Ruin Beast", "Mob" ],
+  "Type": "Foe",
+  "Traits": "Cornered",
+  "Actions": [
+    {
+      "Name": "Pack Attack",
+      "ActionCost": 1,
+      "Tags": [ "attack" ],
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "Effects": "Up to three other members can dash 2, then deal 2 damage to the attack target."
+    },
+    {
+      "Name": "Hunting Tactics",
+      "ActionCost": 1,
+      "Description": "A [name] in range 3 of a pack member gains stealth and can dash 2."
+    },
+    {
+      "Name": "Vicious Howl",
+      "ActionCost": 1,
+      "Tags": [ "repeatable" ],
+      "Description": "A foe in range 3 of a pack member is weakened. Weakened foes take 2 piercing damage instead."
+    },
+    {
+      "Name": "Drag Down ",
+      "ActionCost": 1,
+      "Tags": [ "range 2", "mark" ],
+      "Description": "A foe in range of a pack member is marked. While marked, they are weakened+ while adjacent to any pack members."
+    }
+  ]
+}

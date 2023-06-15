@@ -2,5 +2,10 @@
   "Name": "Stone Lizard",
   "Inherits": "Brawler Beast",
   "Type": "Foe",
-  "Traits": [ "Heavy Armor", "Rolling Boulder" ]
+  "Traits": [ "Curl Up" ],
+  "Actions": {
+    "Name": "Rolling Boulder",
+    "ActionCost": 1,
+    "Description": "The [name] gathers momentum, then rolls 4 spaces in a straight line, or as far as possible, rushing. After it stops moving, it deals damage to all adjacent foes equal to the spaces it rushed, then shoves them 1."
+  }
 }

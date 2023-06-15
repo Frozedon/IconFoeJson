@@ -7,19 +7,23 @@
     {
       "Name": "Spore",
       "ActionCost": 1,
-      "Recharge": 6,
-      "Description": "The Creeper puts down two terrain effects in free spaces in range 3. Characters that pass through these spaces gain spore infestation. While they have the infestation, they are branded+. When a character with a spore infestation is defeated, they release an explosion around them, dealing [D]+[fray] as a blast 1 (self) area effect and poisoning all characters within. Poisoned characters take max damage. Spore infestation is removed if an effected character gains any amount of vigor."
+      "Tags": [ "range 3" ],
+      "Description": "The [name] puts down two terrain effects in free spaces in range. Characters that pass through these spaces gain spore infestation, with the following effects:",
+      "ListedItems": [
+        { "Description": "While they have the infestation, they are sealed+." },
+        { "Description": "When a character with a spore infestation is defeated, they release an explosion around them, dealing [D]+[fray] as a medium blast area effect centered on them and pacifying all characters within. Pacified characters take maximum damage." },
+        { "Description": "Spore infestation can be removed if a character is cured, instead of any other of cure's regular effects." }
+      ]
     },
     {
-      "Name": "Pupper",
+      "Name": "Puppet",
       "ActionCost": 0,
-      "Description": "A character with spore infestation is shoved 3 spaces in a direction of the creeper's choosing, then may deal [fray] damage to a character of the Creeper's choice."
+      "Description": "A character with spore infestation is shoved 3 spaces in a direction of the [name]'s choosing, then may deal [fray] damage to an adjacent character of the [name]'s choice."
     },
     {
       "Name": "Detonate Thrall",
       "ActionCost": 2,
-      "Recharge": 6,
-      "Description": "A character with spore infestation explodes as if defeated, ending the infestation."
+      "Description": "Any number of characters with spore infestation explode as if defeated, ending the infestation."
     }
   ]
 }

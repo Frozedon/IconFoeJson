@@ -2,34 +2,34 @@
   "Name": "Harpy",
   "Inherits": [ "Ruin Beast", "Leader" ],
   "Type": "Foe",
-  "Traits": "Flying",
+  "Traits": [ "Flying", "Ear Splitting Song" ],
   "Actions": [
     {
       "Name": "Sonic Screech",
       "ActionCost": 1,
-      "Tags": [ "ranged attack", "line 6" ],
+      "Tags": [ "attack", "line 6" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
       "AreaEffect": "[fray].",
-      "Effects": "Characters gain +1 curse on saves until the end of their next turn."
+      "Effects": "Foe is sealed."
     },
     {
-      "Name": "Shriek",
+      "Name": "Hypnogogia",
       "ActionCost": 1,
-      "Tags": "repeatable",
-      "Description": "All foes in range 2 must save or be forced to flee, shoving them 3 spaces in a direction of the Harpy's choice."
+      "Tags": [ "range 8" ],
+      "Description": "A character in range of the [name] becomes pacified. If already pacified, the character becomes unable to dash, fly, or teleport until the end of their next turn."
     },
     {
-      "Name": "Ear Splitting Song",
+      "Name": "Frenzied Song",
       "ActionCost": 1,
-      "Recharge": 5,
-      "Description": "Foes in range 2 of the Harpy must save or become branded and lose all stances."
+      "Tags": [ "range 2" ],
+      "Description": "Allies in range of the [name] can dash 1 and immediately save against all statuses."
     },
     {
       "Name": "Song of Deadly Soothing",
       "ActionCost": 1,
-      "Tags": "stance",
-      "Description": "The Harpy gains aura 3. Foes that end their turn in the aura must save or become shoved as far as possible towards the harpy and pacified."
+      "Tags": [ "range 3" ],
+      "Description": "All foes in range of the [name] must save or become shoved as far as possible towards the [name] and pacified, or just shoved 1 towards it on a successful save."
     }
   ]
 }

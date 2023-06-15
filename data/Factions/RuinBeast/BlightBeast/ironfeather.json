@@ -5,9 +5,8 @@
   "Traits": "Flying",
   "Actions": {
     "Name": "Feather Spray",
-    "ActionCost": 2,
-    "Recharge": 6,
-    "Tags": [ "range 8", "blast 1" ],
-    "Description": "Characters in the area must save or become vulnerable. They then take [fray] damage twice as an area effect."
+    "ActionCost": 1,
+    "Tags": [ "medium blast" ],
+    "AreaEffect": "Characters take 1 piercing damage twice and are shoved 1. Then, the [name] may fly 2 spaces for every foe caught in the area."
   }
 }

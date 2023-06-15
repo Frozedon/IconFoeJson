@@ -1,75 +1,85 @@
 [
   {
     "Name": "Acid Burst (Latch)",
-    "DisplayName": "Acid Burst",
-    "Description": "When this character or its host takes damage, all adjacent foes take 1 piercing damage. Increase this damage to 2 piercing against poisoned characters. This effect can trigger any number of times a round."
+    "Description": "When the [name] or its host take damage, all adjacent foes take 1 piercing damage. This effect can trigger any number of times a round, and does not break pacified."
   },
   {
     "Name": "Aquatic",
-    "Description": "Can move through all spaces of its own deep water areas normally, and moving through those spaces costs 0 movement for it."
+    "Description": "Can move through all spaces of its own deep water areas normally, and has evasion in those areas."
+  },
+  {
+    "Name": "Bounteous Rest",
+    "Description": "The [name] starts combat asleep. This has the following effects:",
+    "ListedItems": [
+      { "Description": "The [name] is immobile." },
+      { "Description": "It cannot act or move outside of its turn, and only takes one action on its turn." },
+      { "Description": "If the [name] is damaged at all by a foe's ability, it wakes up and flies into an unstoppable rage. It also wakes up at the start of round 4. If combat ends before then, or all its allies are defeated before then, the [name] remains asleep and is instantly defeated." }
+    ]
   },
   {
     "Name": "Bubble Barrier",
-    "Description": "The fish and its host have cover from all directions. Any foe that ends its turn adjacent to the host is shoved 1 away from it."
+    "Description": "While the [name] or its host are bloodied, the [name] and its host have evasion. Any foe that starts or ends its turn adjacent to the host while the barrier is active is shoved 1 away from it. Collide: Foe is stunned."
   },
   {
     "Name": "Chitinous Coil",
-    "Description": "The Gigantapede occupies an arc 6 space instead of a normal space for its size. Only its first and last space are attackable or can be used to make attacks or abilities, but its entire body causes obstruction and engagement. Keep track of which is the head, and which is the tail. Only one space can be hit if both are included in the area of an attack or ability (attacker chooses which). When it moves, move its head, then rearrange its body in any valid configuration."
+    "Description": "The [name] occupies an arc 6 space instead of a normal space for its size. Only its first and last space (the head and the tail) are attackable or can be used to make attacks or abilities, but its entire body causes obstruction and engagement. Keep track of which is the head, and which is the tail. Only one space can be hit if both are included in the area of an attack or ability (attacker chooses which). When it moves, move its head, then rearrange its body in any valid configuration."
   },
   {
     "Name": "Cursed Deeps",
-    "Description": "When it enters the battlefield, creates four terrain effects, blast 1 areas of cursed deep water. The center space is a pit, and all other spaces are difficult terrain. None can be placed within range 4 of each other."
+    "Description": "At the start of combat, creates two terrain effects, medium blast areas of cursed deep water. The center space is a pit, and all other spaces are difficult terrain. None can be placed within range 3 of each other."
   },
   {
     "Name": "Dart",
-    "Description": "At the start of its turn, the land shark shoves itself as far as possible towards the closest foe. If the closest foe is standing on an object, as soon as the shark would move onto the object's space, it collides with it and stops moving."
+    "Description": "At the start of its turn, the [name] shoves itself as far as possible towards the closest foe, with each space of its movement moving closer to that foe. If the closest foe is standing on an object, as soon as the [name] would move onto the object's space, it collides with it and stops moving."
   },
   {
-    "Name": "Filter",
-    "Description": "The fish and its host are immune to blights."
+    "Name": "Earthglide",
+    "Description": "The [name] is at home in the earth, granting it the following benefits:",
+    "ListedItems": [
+      { "Description": "Has phasing." },
+      { "Description": "While inside a pit, has evasion." },
+      { "Description": "Ambush creates a pit under its target, hit or miss." }
+    ]
   },
   {
-    "Name": "Hyperactive",
-    "Description": "When overdrive triggers, this beast gains +1 action for the rest of combat."
-  },
-  {
-    "Name": "Hyperactive (Improved)",
-    "Description": "When overdrive triggers, this beast gains +1 action and removes all recharges from its abilities for the rest of combat."
-  },
-  {
-    "Name": "Iron Scales",
-    "Description": "When either the head or the tail of the Gigantapede takes damage from an ability, after that ability resolves, that body part gains resistance until the other body part takes damage from an ability. This effect swaps between head and tail indefinitely."
+    "Name": "Flip Over",
+    "Description": "When taking damage more than its armor total, loses all armor, becomes stunned, and all attacks against it deal bonus damage. These effects last until the end of its next turn."
   },
   {
     "Name": "Landswim",
-    "Description": "The shark has evasion and phasing. The shark cannot move through objects. If the shark collides with an object, it is stunned and loses this trait until the end of its next turn."
-  },
-  {
-    "Name": "Latch",
-    "Description": "Starts combat sharing the same space as another ally the same size or larger. While latched on, can't move, but instead moves with its host. Being moved out of its host's space end this effect. If the Symbiote is shoved or teleported away, it can pass a save to avoid the effect and become immune to shove or teleports until the end of the current turn. Can latch on to a new adjacent allied character with 1 action or its standard move."
+    "Description": "The [name] has evasion and phasing. The [name] cannot move through objects. If the [name] collides with an object, it is stunned and loses this trait until the end of its next turn."
   },
   {
     "Name": "Latch Enrage",
-    "Description": "If latched on and enraged, also grants +1 action to its host. This doesn't stack with a host's enrage."
+    "Description": "If latched on, if enraged, also grants + 1 action to its host. This stacks with a host's enrage."
   },
   {
-    "Name": "Latch Defiance",
-    "Description": "While latched on to a character, that character gains defiance at the start of each of its turns."
-  },
-  {
-    "Name": "Lure",
-    "Description": "At the start of its turn as a free action, the Fisher puts a lure out in a space within range 3 of its location, or moves its current lure 1 space. The lure is a size 1 intangible summon. It cannot be placed or moved adjacent to the Kingfisher outside of the Fisher's reel action, and only one lure can be placed at once. If the Fisher moves further away from range 3 from its lure, unsummon it."
-  },
-  {
-    "Name": "Malicious Latch",
-    "Description": "Can latch on to an adjacent foe as an action or by using its standard move. A foe can pass a save to avoid this effect, and can repeat the save at the end of their turns, ending it on a success and shoving the ape into a free adjacent space. While latched on to a foe, the foe is pacified+ and the ape can choose whether any of the ape's abilities apply to it or not."
+    "Name": "Malicious Screeching",
+    "Description": "While the [name] or its host is bloodied, it has aura 2. Foes in the aura are sealed+, take bonus damage, and take 2 piercing damage if they end their turn there."
   },
   {
     "Name": "Perfect Camouflage",
-    "Description": "The Fisher is intangible unless there's a character adjacent to its Lure."
+    "Description": "The [name] is intangible unless there's a foe adjacent to its Lure."
   },
   {
-    "Name": "Rolling Boulder",
-    "Description": "Rampage goes 4 spaces, ignores all movement penalties, and the lizard can phase through characters during it."
+    "Name": "Petrification",
+    "Description": "Some of the [name]'s abilities inflict petrification, which has the following effects:",
+    "ListedItems": [
+      { "Description": "When a character gains petrification, give them a token." },
+      { "Description": "If a character reaches 3+ tokens, at the end of their turn, discard all petrification tokens, then they are defeated, removed from the battlefield, and replaced by a height 1 lifelike statue object with 10 hp. Return them to the battlefield and rescue them when the statue is destroyed. They can take a turn as normal starting with next round." },
+      { "Description": "A character can get rid of 1 petrification token if at the end of their turn for each of the following that is true: they have not attacked, they have not moved." }
+    ]
+  },
+  {
+    "Name": "Turn Bolts",
+    "Description": "While the [name] or its host are bloodied, it has aura 2. Attacks from outside the aura against characters in the aura gain +1 curse and deal half damage."
+  },
+  {
+    "Name": "Unstoppable Rage",
+    "Description": "If the [name] wakes up for any reason, it flies into an unstoppable rage, granting it the following benefits:",
+    "ListedItems": [
+      { "Description": "The [name] is unstoppable." },
+      { "Description": "It gains 3 actions, can use its Unstoppable Rage abilities, and can only use those abilities, dash, interact, and standard move." }
+    ]
   }
 ]

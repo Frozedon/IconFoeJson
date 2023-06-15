@@ -1,0 +1,33 @@
+{
+  "Name": "Barghest",
+  "Inherits": [ "Ruin Beast", "Skirmisher" ],
+  "Type": "Foe",
+  "Traits": [ "Phasing", "Aetherflash" ],
+  "Actions": [
+    {
+      "Name": "Open Wound",
+      "ActionCost": 1,
+      "Tags": [ "attack" ],
+      "Hit": "[D].",
+      "Miss": "1 damage.",
+      "Effects": "The character gains an open wound. While wounded, it takes [D] again at the end of its turns. This effect does not stack, and ends instead if the character ends their turn adjacent to an ally."
+    },
+    {
+      "Name": "Reality Flicker",
+      "ActionCost": 1,
+      "Description": "The [name] or an adjacent ally can teleport 3."
+    },
+    {
+      "Name": "Bane Hunter",
+      "ActionCost": 1,
+      "Tags": [ "range 4", "mark" ],
+      "AreaEffect": "The [name] releases an unearthly howl, marking a character in range. That character gains aura 2. While the [name] is in the aura, that character takes bonus damage from all sources and cannot attack."
+    },
+    {
+      "Name": "Bane Hunter",
+      "ActionCost": 1,
+      "Tags": [ "repeatable" ],
+      "AreaEffect": "The [name] dashes 3 spaces in any direction. An adjacent foe when it starts moving must save or be dragged them with it, shoving its target towards it until its adjacent. Bloodied foes fail the save."
+    }
+  ]
+}

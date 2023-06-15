@@ -1,0 +1,219 @@
+{
+  "Name": "Apex",
+  "Inherits": [ "Ruin Beast", "Legend" ],
+  "Type": "Foe",
+  "Chapter": 2,
+  "Speed": 5,
+  "RemoveTraits": "Enrage",
+  "Traits": [ "Size 2", "Might of the Wild", "Hunting Grounds", "Monster Hunt" ],
+  "SetupTraits": {
+    "Name": "Might of the Wild",
+    "Description": "Roll or choose two abilities."
+  },
+  "Actions": [
+    {
+      "Name": "Bound",
+      "ActionCost": 1,
+      "Tags": "2/round",
+      "Description": "The Apex rushes 3, then deals 2 damage to adjacent foes and shoves them 1. If it starts this movement inside a Hunting Ground, it can rush 5 or fly 3 instead."
+    },
+    {
+      "Name": "Savage Swipe",
+      "ActionCost": 1,
+      "Tags": [ "attack", "range 2" ],
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "Effects": "Foe and all adjacent foes to its target are slashed. Slashed foes take [fray] damage again.",
+      "Combo": {
+        "Name": "Ram",
+        "ActionCost": 1,
+        "Tags": [ "attack", "true strike" ],
+        "Hit": "[D]+[fray] and shove 2.",
+        "Miss": "[fray] and shove 1.",
+        "Effects": "Apex may dash up to 4 before making this attack.",
+        "Combo": {
+          "Name": "Primeval Crusher",
+          "ActionCost": 2,
+          "Tags": [ "attack", "range 2", "medium blast" ],
+          "Hit": "2[D]+[fray].",
+          "Miss": "[D]+[fray].",
+          "AreaEffect": "[D]+[fray].",
+          "Effects": [
+            "Create a pit under the attack target. Characters already in pits are stunned.",
+            "Apex may dash 1 either before or after this attack."
+          ]
+        }
+      }
+    },
+    {
+      "Name": "Rear Up",
+      "ActionCost": 1,
+      "Tags": [ "range 2", "end turn" ],
+      "Description": "The Apex slams the ground in a medium blast area effect in range. Foes inside take fray damage, then it rears up. At the end of the very next turn, it lands, shoving all foes inside 3.",
+      "Collide": "Foe is slashed.",
+      "Combo": {
+        "Name": "Steaming Rage",
+        "ActionCost": 1,
+        "Description": "The Apex shove all adjacent foes 1, then gains 10 vigor. Its next attack deals bonus damage, and gains pierce. However, after it attacks, the Apex loses any vigor it has.",
+        "Combo": {
+          "Name": "Gargantua Pinch",
+          "ActionCost": 1,
+          "Description": "An adjacent character must save. On a successful save, they take fray damage and are shoved 2 in any direction. On a failed save, the Apex picks them up in jaws or paws, removing them from the battlefield. At the start of that character's next turn, the Apex tosses them, placing them back on the battlefield in a free adjacent space to the Apex, then shoving them 2.",
+          "Collide": "Character is weakened."
+        }
+      }
+    }
+  ],
+  "PhasesDescription": "The Apex enters phase II at round 4 or later.",
+  "Phases": [
+    { },
+    {
+      "Name": "Round 4+",
+      "Traits": "Hidden Might",
+      "Actions": [
+        {
+          "Name": "Terminus Howl",
+          "RoundAction": true,
+          "Description": "At the start of the round, all foes take piercing damage equal to the round number +1, ignoring cover. This damage cannot reduce a foe below 1 hp."
+        }
+      ]
+    }
+  ],
+  "ExtraAbilitySets": [
+    {
+      "Name": "1. Toxic",
+      "Actions": [
+        {
+          "Name": "Toxic Cloud",
+          "ActionCost": 1,
+          "Tags": [ "range 5" ],
+          "Description": "The Apex creates a small blast area of dangerous terrain (which the Apex ignores) in free space in range. Foes inside the area are blinded+. If the Apex uses this ability again, it can either create a new cloud, or blow its existing clouds 2 spaces in any direction, which could cause them to overlap characters. It can have up to 2 clouds at once. Clouds last indefinitely, but evaporate if this ability is weakened."
+        }
+      ]
+    },
+    {
+      "Name": "2. Thick Hide",
+      "Actions": [
+        {
+          "Name": "Harden",
+          "ActionCost": 1,
+          "Description": "The Apex gains 10 vigor as its armor hardens. The next time it takes damage from a foe's ability, the armor explodes, ending all vigor, and dazing and dealing 4 piercing damage to all foes in range 2 as an area effect."
+        }
+      ]
+    },
+    {
+      "Name": "3. Spines",
+      "Actions": [
+        {
+          "Name": "Sanguine Barb",
+          "ActionCost": 1,
+          "Tags": [ "range 6" ],
+          "Description": "The Apex impales a character in range with a barb. While this effect is active, they take 1 piercing damage for each space they move, dash, or are shoved. The effect can be removed if a character doesn't move for their entire turn, or if they are cured."
+        }
+      ]
+    },
+    {
+      "Name": "4. Horned",
+      "Actions": [
+        {
+          "Name": "Primal Charge",
+          "ActionCost": 1,
+          "Description": "The Apex rushes 3, then shoves an adjacent foe 2 spaces.",
+          "Collide": "Foe takes [fray] damage twice and is slashed."
+        }
+      ]
+    },
+    {
+      "Name": "5. Brutal Strength",
+      "Actions": [
+        {
+          "Name": "Stone Toss",
+          "ActionCost": 1,
+          "Tags": [ "range 3" ],
+          "Description": "A foe in range takes 3 damage and is shoved 1, then create a height 1 boulder object next to them.",
+          "Collide": "Foe is stunned."
+        }
+      ]
+    },
+    {
+      "Name": "6. Burrowing",
+      "Traits": "Earthglide",
+      "Actions": [
+        {
+          "Name": "Seismic Geyser",
+          "ActionCost": 1,
+          "Tags": [ "range 5" ],
+          "Description": "The Apex chooses a foe in range that has not acted yet. At the end of that foe's turn, a geyser erupts under them, dealing [fray] damage and inflicting weakened as a medium blast area effect centered on them. Weakened foes take [D]+[fray] instead."
+        }
+      ]
+    },
+    {
+      "Name": "7. Chameleonic",
+      "Traits": "Blend In",
+      "Actions": [
+        {
+          "Name": "Primal Ambush",
+          "ActionCost": 1,
+          "Description": "The Apex disappears from sight, removing itself from the battlefield. It then re-appears adjacent to any player character in range 3, placing it in free adjacent space. They must save or take 2 damage, four times and be dazed, or just 2 damage, twice on a successful save."
+        }
+      ]
+    },
+    {
+      "Name": "8. Winged",
+      "Traits": "Winged",
+      "Actions": [
+        {
+          "Name": "Talon Snatch",
+          "ActionCost": 1,
+          "Description": "The Apex soars into the air, removing it from the battlefield, then returns with at least one space in range 2. When it takes off, it can pick up an adjacent foe, dealing fray damage and forcing them to save. On a failed save, they are removed with the Apex, then placed adjacent after it lands. On a successful save, they are shoved 1."
+        }
+      ]
+    },
+    {
+      "Name": "9. Lashing Tail",
+      "Actions": [
+        {
+          "Name": "Tail Sweep",
+          "ActionCost": 1,
+          "Tags": [ "arc 4" ],
+          "Description": "The Apex sweeps their tail in an arc 4 area effect. Foes inside take 2 damage and are all shoved 2 in a direction of the Apex's choice.",
+          "Collide": "Foes take 2 damage again."
+        }
+      ]
+    },
+    {
+      "Name": "10. Carrion Eater",
+      "Actions": [
+        {
+          "Name": "Carrion Stash",
+          "ActionCost": 1,
+          "Tags": [ "end turn" ],
+          "Description": "The Apex digs up some stashed carrion and eats it. Create a pit in an adjacent space. During their next turn, all their abilities deal bonus damage and their attacks gain +1 boon and may critical hit (+[D])."
+        }
+      ]
+    },
+    {
+      "Name": "11. Sonic Shriek",
+      "Actions": [
+        {
+          "Name": "Shriek",
+          "ActionCost": 1,
+          "Tags": [ "range 2" ],
+          "Description": "The Apex releases a shriek, affecting all foes in range as an area effect. Foes take 2 damage, once, for each space between them and the Apex (so foes at range 2 would take 2 damage, twice, etc). If the Apex is inside a Hunting Ground, this effect increases to range 3."
+        }
+      ]
+    },
+    {
+      "Name": "12. Element Breath",
+      "Actions": [
+        {
+          "Name": "Primal Elements",
+          "ActionCost": 1,
+          "Tags": [ "range 2", "medium blast" ],
+          "Description": "The Apex releases a blast of ice, fire, sand, or some other element, creating a medium blast area effect. Foes inside take 2 damage, then must save or be shoved 2 and blinded, or just shoved 1 on a successful save. Then create up to two dangerous terrain pit spaces in the area (fire, water, quicksand, etc)."
+        }
+      ]
+    }
+  ],
+  "Tactics": "The Apex is a fairly straightforward Legend. It can stack up a lot of bonus damage with its abilities, especially using its Hunting Grounds, but players can also use these hunting grounds to temporarily disable its extra abilities. Players must be careful since they have limited hunting grounds available and their effects are erratic."
+}

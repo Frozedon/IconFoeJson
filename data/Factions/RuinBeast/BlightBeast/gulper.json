@@ -2,12 +2,11 @@
   "Name": "Gulper",
   "Inherits": "Blight Beast",
   "Type": "Foe",
-  "Traits": "Slimy Skin",
   "Actions": {
     "Name": "Slime Spit",
-    "ActionCost": 2,
-    "Tags": "terrain effect",
-    "Description": "The Gulper creates a line 6 area of difficult terrain. Foes caught in the area when it is created are shoved 2.",
-    "Collide": "Foe is shattered."
+    "ActionCost": 1,
+    "Tags": "line 6",
+    "Description": "The [name] shoots a line 6 stream of slime. Characters caught in the area when it is created are shoved 1. Allies are shoved 2 instead, and can be shoved in any direction.",
+    "Collide": "Foe takes 1 piercing damage twice and is is shattered."
   }
 }

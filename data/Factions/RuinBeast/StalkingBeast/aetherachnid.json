@@ -6,16 +6,13 @@
   "Actions": [
     {
       "Name": "Phase Shift",
-      "ActionCost": 1,
-      "Tags": "repeatable",
-      "Description": "Teleport 2 spaces."
+      "ActionCost": 0,
+      "Description": "Teleport the [name] and all its adjacent allies 1 space in any direction."
     },
     {
       "Name": "Teleporting Poison",
       "ActionCost": 1,
-      "Tags": "mark",
-      "Description": "An adjacent foe must save or be poisoned, slowed, and marked. Poisoned characters fail the save.",
-      "Mark": "While marked, the next time the character takes damage, the aetherachnid can teleport them 4, then the mark ends."
+      "Description": "A foe in range 2 is blinded and teleported 1. Bloodied foes are teleported 3 instead."
     }
   ]
 }

@@ -1,0 +1,13 @@
+{
+  "Name": "Hotshot",
+  "Inherits": "Gunner",
+  "Type": "Foe", 
+  "Actions": [
+    {
+      "Name": "Napalm Shell",
+      "ActionCost": 1,
+      "Tags": [ "range 6", "mark" ],
+      "Description": "The [name] marks a foe in range. While marked, at the end of their turn that foe has a dangerous terrain space created under it and any of its adjacent allies. It can save against this mark at the end of their turn, ending it on a success."
+    }
+  ]
+}

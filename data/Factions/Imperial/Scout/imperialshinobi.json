@@ -7,24 +7,24 @@
     {
       "Name": "Shadow Clone",
       "ActionCost": 1,
-      "Tags": "summon",
-      "Description": "Summon a shadow clone in a free space in range 3. Clones disappear at the end of combat or if the Shinobi is defeated.",
+      "Tags": [ "range 3", "summon" ],
+      "Description": "Summon a shadow clone in a free space in range.",
       "Summons": {
         "Name": "Shadow Clone",
-        "Tags": [ "Size 1", "Intangible", "Immobile" ],
-        "SummonEffects": "Foes adjacent to a shadow clone at the start of their turn take [fray] damage from the clone."
+        "Tags": [ "Summon", "size 1" ],
+        "SummonEffects": "Foes adjacent to a shadow clone at the start of their turn take 3 damage from the clone. The [name] and any of its allies may gain stealth if they end their turn adjacent to a clone. Clones disappear at the end of combat or if the [name] is defeated."
       }
     },
     {
       "Name": "Shadow Swap",
       "ActionCost": 0,
-      "Description": "The Shinobi swaps places with a shadow clone, teleporting."
+      "Description": "The [name] or an ally swaps places with a shadow clone in range 3 of them, teleporting."
     },
     {
-      "Name": "Huton",
-      "ActionCost": 2,
-      "Recharge": 6,
-      "Description": "The Shinobi ignites a roaring fireball in range 4 as a blast 2 area effect. Characters inside must save or take [D]+[fray], or just [fray] damage on a successful save. The area continues to rage as a firestorm and becomes dangerous and difficult terrain for the rest of combat, or until this ability is used again."
+      "Name": "Shadow Play",
+      "ActionCost": 1,
+      "Tags": [ "range 2" ],
+      "Description": "The [name] swaps the positions of two characters in range, teleporting them. Allies swapped gain stealth."
     }
   ]
 }

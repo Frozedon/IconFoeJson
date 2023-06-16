@@ -6,6 +6,7 @@
   "Actions": {
     "Name": "Deploy Barricade",
     "ActionCost": 1,
-    "Description": "The sniper creates a height 1 barricade object in an adjacent space."
+    "Tags": [ "1/combat" ],
+    "Description": "The [name] creates a height 1 barricade object in an adjacent space. Adjacent characters other than the [name] are shoved 2 away from it when it is created."
   }
 }

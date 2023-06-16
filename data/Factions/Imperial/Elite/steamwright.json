@@ -2,28 +2,39 @@
   "Name": "Steam Wright",
   "Inherits": [ "Imperial", "Elite", "Skirmisher" ],
   "Type": "Foe",
-  "Traits": [ "Boiling Shroud", "Blood Rush", "Acrobatics" ],
+  "Traits": [ "Boiling Shroud" ],
   "Actions": [
     {
-      "Name": "Steam Hammer",
-      "ActionCost": 2,
-      "Tags": [ "melee attack 2", "blast 1" ],
-      "Hit": "2[D]+[fray].",
-      "Miss": "[fray].",
-      "AreaEffect": "[fray].",
-      "CriticalHit": "(+[D]) and gain +1 action."
+      "Name": "Acrobatics",
+      "ActionCost": 0,
+      "Description": "Dash 2. This action can interrupt and split up other actions or movement."
     },
     {
-      "Name": "Excel",
+      "Name": "Steam Hammer",
       "ActionCost": 1,
-      "Tags": "end turn",
-      "Description": "The Steam Wright revs the Steam Hammer, granting it +1 boon, bonus damage, and increasing its range and blast radius by 1 for the rest of combat. This effect stacks twice."
+      "Tags": [ "attack", "melee", "range 2", "small blast" ],
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "AreaEffect": "[fray].",
+      "Exceed": "Deals bonus damage, dazes foe, and gain +1 action."
+    },
+    {
+      "Name": "Rev Hammer",
+      "ActionCost": 1,
+      "Tags": [ "end turn" ],
+      "Description": "The [name] revs the steam hammer, granting it +1 boon, increasing its range by 1, granting it unerring, and causing a secondary explosion as an area effect after the ability resolves, dealing 3 damage to all foes inside the area."
+    },
+    {
+      "Name": "Steam Shroud",
+      "ActionCost": 1,
+      "Tags": [ "range 3", "mark" ],
+      "AreaEffect": "An ally in range is marked. While marked, they gain stealth at the start of their turns, and have evasion if there are no other characters adjacent."
     },
     {
       "Name": "Steam Blast",
       "ActionCost": 1,
-      "Tags": [ "range 3", "cross 1", "repeatable" ],
-      "AreaEffect": "[fray] damage and inflict burning. Burning characters must save or become blinded. Burning and blinded characters take [fray] damage twice instead."
+      "Tags": [ "line 4" ],
+      "AreaEffect": "Characters take 3 damage. Blinded characters take 3 damage twice instead."
     }
   ]
 }

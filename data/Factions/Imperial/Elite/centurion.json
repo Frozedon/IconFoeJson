@@ -3,42 +3,65 @@
   "Inherits": [ "Imperial", "Elite", "Leader" ],
   "Type": "Foe",
   "Chapter": 3,
-  "RemoveTraits": "Receive Orders",
-  "Traits": [ "Master of Strategy", "Imperial Command Aura", "Cannon Strike" ],
-  "Interrupts": {
-    "Name": "Tactician's Gambit",
-    "Count": 1,
-    "Trigger": "A character is about to make a save or attack roll.",
-    "Effects": "The Centurion also rolls a d20 and may replace the final result with the Centurion's roll instead of the original d20 roll."
-  },
+  "Traits": [ "Master of Strategy", "Imperial Command Aura" ],
+  "Interrupts": [
+    {
+      "Name": "Tactician's Gambit",
+      "Count": 1,
+      "Trigger": "A character is about to make a save or attack roll.",
+      "Effects": "The [name] also rolls a d20 and may replace the final result with the [name]'s roll instead of the original d20 roll."
+    }
+  ],
   "Actions": [
+    {
+      "Name": "Give Orders",
+      "RoundAction": true,
+      "Description": "At the the start of each round, may give an orders token to any ally."
+    },
+    {
+      "Name": "Cannon Strike",
+      "RoundAction": true,
+      "Description": "At the start of each round, may designate a small blast area to be hit by off-battlefield artillery. At the end of the round, any characters in the area must save or take 2[D]+[fray], or [fray] damage on a successful save. Any character standing in the center space is also stunned on a failed save."
+    },
     {
       "Name": "Tactician's Advance",
       "ActionCost": 0,
       "Description": "Up to two allies anywhere on the battlefield may dash 2."
     },
     {
-      "Name": "Banner Sweep",
+      "Name": "Spear Sweep",
       "ActionCost": 1,
-      "Tags": "melee attack 2",
-      "AutoHit": "[D] and shove 1.",
-      "Effects": "All foes in range 2 take [D] and are shoved 1."
+      "Tags": [ "attack", "range 2" ],
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "AreaEffect": "All foes in range 2 take [fray] damage and are shoved 1.",
+      "Effects": "Shove 1.",
+      "Exceed": "Dash 1, then repeat the area effect.",
+      "Combo": {
+        "Name": "Vital Tusk",
+        "ActionCost": 2,
+        "Tags": [ "attack" ],
+        "Hit": "2[D]+[fray].",
+        "Miss": "[fray].",
+        "Effects": "Attack target must save. On a successful save, they are shoved 1. On a failed save, they are removed from the battlefield, then placed in any free adjacent space, then shoved 3.",
+        "Exceed": "Character fails the save."
+      }
     },
     {
-      "Name": "Advanced Flare Gun",
+      "Name": "Flare Gun",
       "ActionCost": 1,
-      "Tags": "repeatable",
-      "Description": "Ignores stealth. A foe in range 8 is branded, burning and loses stealth. Burning foes also take [fray] damage."
+      "Tags": [ "range 6", "repeatable" ],
+      "Description": "Ignores stealth. A foe in range 6 is sealed and loses stealth. Sealed foes also take [fray] damage."
     },
     {
       "Name": "Supreme Standard",
       "ActionCost": 2,
-      "Tags": "summon",
-      "Description": "The Centurion plants a banner in an adjacent space. The centurion can only plant one of these banners at a time.",
+      "Description": "The [name] plants a banner in an adjacent space.",
       "Summons": {
         "Name": "Imperial Standard",
-        "Tags": [ "Size 1", "Immobile", "Sturdy", "20 HP", "Defense 1" ],
-        "SummonEffects": "Aura 2. Allies in the aura gain +1 boon on attacks and saves, and if they start their turn in the area they gain vigor 1. Foes in the aura gain +1 curse on attacks and saves, and if they start their turn in the area, lose all vigor. If the banner is destroyed, all imperials inside except the centurion must save or be stunned."
+        "IsObject": true,
+        "Tags": [ "Size 1 object" ],
+        "SummonEffects": "Aura 1. Self and Allies in the aura gain +1 boon on attacks and saves, and if they start their turn in the area they are cured. Foes in the aura gain +1 curse on attacks and saves, and if they start their turn in the area, they lose all vigor. The [name] can only plant one of these banners at a time."
       }
     }
   ]

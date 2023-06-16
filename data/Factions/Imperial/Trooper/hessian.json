@@ -2,21 +2,22 @@
   "Name": "Hessian",
   "Inherits": "Trooper",
   "Type": "Foe",
-  "Chapter": 2,
-  "Traits": "Blood Rush",
+  "Chapter": 3,
+  "Traits": [ "Sturdy", "Blood Rush" ],
   "Actions": [
     {
       "Name": "Hessian Long Rifle",
       "ActionCost": 2,
-      "Tags": [ "ranged attack 10", "true strike" ],
-      "Hit": "2[D]+[fray] and foe is burning.",
+      "Tags": [ "attack", "range 8", "true strike", "1/combat" ],
+      "Hit": "2[D]+[fray].",
       "Miss": "[fray].",
-      "CriticalHit": "Foe is dazed."
+      "Effects": "Foe is slashed.",
+      "Exceed": "Foe is also stunned."
     },
     {
       "Name": "Disarm",
       "ActionCost": 1,
-      "Description": "An adjacent foe takes [fray] damage and must save. On a failed save, their weapon flies out of their hands to a free space in range 2. They can re-unite with their weapon by ending their turn in or adjacent to it. Until they do, they cannot attack."
+      "Description": "An adjacent foe takes 3 damage and must save. On a failed save, their weapon flies out of their hands to a free space in range 2. They can re-unite with their weapon by ending their turn in that space or adjacent to it. Until they do, they cannot attack."
     }
   ]
 }

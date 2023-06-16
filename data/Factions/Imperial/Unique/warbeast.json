@@ -2,29 +2,28 @@
   "Name": "War Beast",
   "Inherits": [ "Imperial", "Heavy" ],
   "Type": "Foe",
-  "Vitality": 12,
-  "RemoveTraits": "Armor 3",
-  "Traits": [ "Size 2", "Frenzy", "Enrage", "Leashed Beast" ],
+  "Traits": [ "Counter", "Enrage" ],
   "Actions": [
     {
-      "Name": "Gnaw",
+      "Name": "Crushing Jaw",
       "ActionCost": 1,
-      "Tags": "melee attack",
+      "Tags": [ "attack", "true strike" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
-      "CriticalHit": "The War Beast gains +1 action."
+      "Exceed": "Gain +1 action.",
+      "PostEffects": "Deals bonus damage to bloodied foes."
     },
     {
-      "Name": "Snap",
+      "Name": "Shoulder Check",
       "ActionCost": 1,
-      "Tags": "repeatable",
-      "Description": "An adjacent foe takes 2 damage, then is shoved 1, then the War Beast may dash 1."
+      "Description": "An adjacent character takes 2 damage and is shoved 1.",
+      "Collide": "Character is stunned.",
+      "PostEffects": "The [name] may spend additional actions on this ability. For every action spent, increase the shove and damage by +2."
     },
     {
-      "Name": "Iron Jaw",
+      "Name": "Steel Jaw",
       "ActionCost": 1,
-      "Recharge": 6,
-      "Description": "The War Beast dashes 3 spaces in any direction. An adjacent foe when it starts moving must save or be dragged them with it, shoving its target towards it until its adjacent. Bloodied foes fail the save."
+      "Description": "The [name] rushes 3 spaces in any direction. An adjacent foe when it starts moving takes 2 damage and must save or be shoved 2 towards it. Bloodied foes fail the save."
     }
   ]
 }

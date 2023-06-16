@@ -1,0 +1,44 @@
+{
+  "Name": "Sword Master",
+  "Inherits": [ "Imperial", "Elite", "Skirmisher" ],
+  "Type": "Foe",
+  "Chapter": 2,
+  "Actions": [
+    {
+      "Name": "Masamune",
+      "ActionCost": 1,
+      "Tags": [ "attack", "range 2", "unerring" ],
+      "Hit": "[D].",
+      "Miss": "1 damage.",
+      "Effects": "Slash foe with a mortal wound. If they attack during their next turn, they take 6 damage.",
+      "Exceed": "Also apply Muramasa's effect to the foe.",
+      "Combo": {
+        "Name": "Muramasa",
+        "ActionCost": 1,
+        "Tags": [ "attack", "range 2", "unerring" ],
+        "Hit": "[D].",
+        "Miss": "1 damage.",
+        "Effects": "Slash foe with a mortal wound. If they move during their next turn, they take 6 damage. ",
+        "Exceed": "Also apply Masamune's effect to the foe."
+      }
+    },
+    {
+      "Name": "Hone",
+      "ActionCost": 2,
+      "Tags": [ "end turn" ],
+      "Description": "The next attack from this character deals maximum damage and triggers all exceed effects."
+    },
+    {
+      "Name": "Cut Through",
+      "ActionCost": 1,
+      "Tags": [ "line 4" ],
+      "AreaEffect": "3 damage. The [name] may teleport to any point on the line after this ability resolves."
+    },
+    {
+      "Name": "Duelist's Fervor",
+      "ActionCost": 1,
+      "Tags": [ "range 3", "mark" ],
+      "AreaEffect": "The [name] marks a foe in range 3. While the foe is marked and in range 2, the [name] has evasion and deals bonus damage with all abilities against that foe. The foe can end this mark by hitting the [name] with an attack."
+    }
+  ]
+}

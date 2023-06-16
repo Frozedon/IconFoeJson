@@ -1,54 +1,60 @@
 {
   "Name": "Scout",
   "Inherits": [ "Imperial", "Skirmisher" ],
-  "Traits": [ "Terrainwalking", "Lone Wolf" ],
-  "Interrupts": {
-    "Name": "Decoy",
-    "Count": 1,
-    "Trigger": "When targeted by an attack.",
-    "Effects": "Gain evasion against that attack, then after it resolves teleport 3 spaces to a free space, which is its 'real' location."
-  },
+  "Traits": [ "Lone Wolf" ],
   "Actions": [
     {
-      "Name": "Ambush",
+      "Name": "Pistolero",
       "ActionCost": 1,
-      "Tags": "melee attack",
+      "Tags": [ "attack", "range 4" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
-      "Effects": "If made from stealth, The scout can dash 4 before the attack, becomes a critical hit (+[D]), and blinds on hit."
-    },
-    {
-      "Name": "Powder Pistol",
-      "ActionCost": 1,
-      "Tags": "special",
-      "Effects": [
-        "A foe in range 2 takes [fray] damage.",
-        "May also be used as an effect whenever when the Scout critical hits, dashes, or teleports."
-      ]
+      "Exceed": "Gains unerring, and deals bonus damage."
     },
     {
       "Name": "Flash Bomb",
       "ActionCost": 1,
-      "Recharge": 6,
-      "Tags": [ "range 4", "cross 1" ],
-      "AreaEffect": "Foes are slowed. Slowed foes become burning and take [fray] damage."
+      "Tags": [ "range 2", "small blast" ],
+      "AreaEffect": "Foes are blinded. Blinded foes are also dazed."
+    },
+    {
+      "Name": "Prep Decoy",
+      "ActionCost": 1,
+      "Description": "This character dashes 2, then gains the following interrupt until the start of their next turn:",
+      "Interrupts": {
+        "Name": "Decoy",
+        "Count": 1,
+        "Trigger": "Self or any ally in range 4 is targeted by an attack.",
+        "Effects": "Grant evasion against that attack, then after it resolves the targeted character teleports 3 spaces to a free space, which is its 'real' location."
+      }
     }
   ],
   "ConditionalAbilities": [
     {
       "Chapter": 2,
       "RemoveActions": "Flash Bomb",
-      "Actions": {
-        "Name": "Flash Bomb",
-        "ActionCost": 1,
-        "Recharge": 6,
-        "Tags": [ "range 6", "cross 2" ],
-        "AreaEffect": "Foes are slowed. Slowed foes become burning and take [fray] damage."
-      }
+      "Actions": [
+        {
+          "Name": "Flash Bomb",
+          "ActionCost": 1,
+          "Tags": [ "range 2", "small blast" ],
+          "AreaEffect": "Foes are blinded. Blinded foes are also dazed.",
+          "Effects": "May teleport any allies in its area 1 space after the ability resolves."
+        }
+      ]
     },
     {
       "Chapter": 3,
-      "Traits": "Acrobatics"
+      "RemoveActions": "Flash Bomb",
+      "Actions": [
+        {
+          "Name": "Flash Bomb",
+          "ActionCost": 1,
+          "Tags": [ "range 5", "medium blast" ],
+          "AreaEffect": "Foes are blinded. Blinded foes are also dazed.",
+          "Effects": "May teleport any allies in its area 1 space after the ability resolves."
+        }
+      ]
     }
   ]
 }

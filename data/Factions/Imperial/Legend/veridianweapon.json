@@ -1,38 +1,73 @@
 {
   "Name": "Veridian Weapon",
-  "Inherits": [ "Imperial", "Legendary Leader" ],
+  "Inherits": [ "Imperial", "Legend" ],
   "Type": "Foe",
   "Chapter": 3,
-  "HP": 40,
+  "HP": 60,
   "HPText": "[HP] per player character [MIN]. Each section of the ship has 1/3 of its max HP, rounded up.",
   "Speed": 0,
-  "RemoveTraits": [ "Legendary Diaga", "Shelter", "Receive Orders" ],
-  "Traits": [ "Ranged Master", "Airship", "Arkentech Megabomb", "Sections Veridian Weapon" ],
+  "Traits": [ "Airship", "Arkentech Megabomb", "Section Rules Veridian Weapon", "Automata Veridian Weapon" ],
   "PhasesDescription": "When a section is destroyed, lower the Megabomb counter by 1. Each remaining section gains an ability depending on which section was destroyed.",
+  "Actions": [
+    {
+      "Name": "Under-deck Rumbling",
+      "RoundAction": true,
+      "Description": "At the start of the round, as long as the Engine is intact, create a medium blast area anywhere on the battlefield. At the end of the round, the area explodes. Characters still standing in the area take fray damage three times and are shoved 2 away from the center. Automata in the area are destroyed."
+    },
+    {
+      "Name": "Tracking Missile",
+      "RoundAction": true,
+      "Description": "At the start of the round, as long as the Forward Turret is intact, it fires a tracking missile at a foe. At the end of that foe's turn, they take 20 damage and must save or be stunned.",
+      "Effects": "If they are adjacent to any other foes or automata, this damage is reduced by 5 for each of those characters, and each of those characters takes 5 damage instead."
+    },
+    {
+      "Name": "Anti-boarder Napalm Flood",
+      "RoundAction": true,
+      "Description": "At the end of the round, as long as the Aft Turret is intact, all non automata characters not standing on an object take piercing damage equal to the round number."
+    }
+  ],
   "ExtraAbilitysets": [
     {
       "Name": "Airship Engine",
-      "Traits": [ "Under-deck Rumbling", "Destruction Airship Engine" ],
+      "Traits": [ "Destruction Airship Engine" ],
       "Actions": [
         {
           "Name": "Overlock Piston",
-          "ActionCost": 0,
+          "ActionCost": 1,
           "Tags": "1/round",
-          "Description": "The Engine pops a piston out of the deck in any space within range 4 of the engine, which becomes a targetable height 1 destructible object with 10 hp. When destroyed, it explodes for a blast 1 explosion centered on it, dealing fray damage to all characters within. If two or more pistons are active at the end of the round, all Engine parts gain +1 boon on all saves and attacks. If three or more are active, also increase the Megabomb counter by 1."
+          "Description": "The Engine pops a piston out of the deck.",
+          "Summons": {
+            "Name": "Overclock Piston",
+            "Tags": [ "Height 1 Object", "destructible (10 hp)" ],
+            "SummonEffects": "All engine sections and automata gain +1 boon on all attacks per overlock piston active. If three or more are active at the end of the round, also increase the Megabomb counter by 1."
+          }
+        },
+        {
+          "Name": "Repair Automaton",
+          "ActionCost": 1,
+          "Tags": "2/round",
+          "Description": "The Engine releases a repair Automaton.",
+          "Summons": {
+            "Name": "Overclock Piston",
+            "Tags": [ "Summon", "5 defense", "5 hp" ],
+            "SummonEffects": "At the end of the round, the engine grants 3 vigor to any section per active repair automata. It can only repair one section at a time this way."
+          }
         },
         {
           "Name": "Steam Vent",
           "ActionCost": 1,
-          "Tags": [ "melee attack 4", "blast 1" ],
-          "Hit": "[D]+[fray] and foe is pacified.",
-          "Miss": "[fray]."
+          "Tags": [ "attack", "range 4", "medium blast" ],
+          "Hit": "[D]+[fray].",
+          "Miss": "[fray].",
+          "AreaEffect": "[fray].",
+          "Effects": "Attack target is pacified."
         },
         {
           "Name": "Lurch",
           "ActionCost": 1,
-          "Tags": "repeatable",
-          "Description": "All characters are shoved 1 in the same direction as the ship speeds up or slows down. ",
-          "Collide": "Character takes 3 piercing damage instead of regular collide damage."
+          "Tags": [ "repeatable" ],
+          "Description": "All characters, including Automata, are shoved 1 in the same direction as the ship speeds up or slows down.",
+          "Collide": "Foes take 2 piercing damage."
         }
       ]
     },
@@ -41,87 +76,81 @@
       "Traits": "Destruction Forward Turret",
       "Actions": [
         {
+          "Name": "Deck Sweeper",
+          "ActionCost": 1,
+          "Tags": [ "true strike", "1/round" ],
+          "Description": " Deal damage equal to the current round number+1 to all foes. Foes in cover from the turret take no damage."
+        },
+        {
           "Name": "Mega Gun Turret",
           "ActionCost": 1,
-          "Tags": [ "ranged attack 8", "cross 2" ],
-          "Hit": "[D]+[fray] and foe is branded and shoved 1.",
+          "Tags": [ "attack", "range 8", "small blast" ],
+          "Hit": "[D]+[fray].",
           "Miss": "[fray].",
-          "AreaEffect": "[fray]."
+          "AreaEffect": "[fray].",
+          "Effects": "Attack target is sealed and shoved 1."
         },
         {
           "Name": "Pop-up Turret",
           "ActionCost": 1,
-          "Tags": "summon",
+          "Tags": [ "summon" ],
           "Description": "The Turret summons an automaton turret anywhere on the battlefield.",
           "Summons": {
-            "Name": "Automaton Turret",
-            "Tags": [ "Size 1", "10 HP", "Defense 8" ],
-            "SummonEffects": "The Turret counts a height 1 object for abilities and grants cover. When summoned, or once on the turret's turn, the automaton can use the following attack:",
-            "Actions": {
-              "Name": "Automaton Gun",
-              "Tags": "ranged attack 4",
-              "Hit": "[D]+[fray].",
-              "Miss": "[fray]."
-            }
+            "Name": "Turret Automaton",
+            "Tags": [ "Size 1 summon", "5 defense", "5 hp" ],
+            "SummonEffects": "While undefeated, also counts as a height 1 object and can be moved on or used as cover by other characters.",
+            "SummonActions": "Once a round on the forward turret's turn, including when summoned, the automaton can deal 2 damage twice to a character in range 4."
           },
           "Combo": {
-            "Name": "Tracking Missile",
+            "Name": "Collateral Damage",
             "ActionCost": 1,
-            "Tags": "multimark",
-            "Description": "A foe in range 8 is marked.",
-            "Mark": "At the end of their turn, if they are still marked, the turret fires a missile at them. They must save or take 2[D]+[fray], or [D]+[fray] on a successful save, then the mark ends.",
-            "Effects": "If they are adjacent to an Overlock Piston or automaton, this missile hits the the piston or automaton instead, dealing only fray damage to the marked character and instantly destroying the automaton or piston."
+            "Tags": [ "range 6" ],
+            "Description": "The Forward Turret blasts a character in range with a hail of bullets, dealing 2 piercing damage to them, then creates a medium blast area effect on the other side of that character. Characters in the area, including automata, take 2 piercing damage, once, per character caught in the area."
           }
-        },
-        {
-          "Name": "Deck Sweeper",
-          "ActionCost": 1,
-          "Tags": "1/round",
-          "Description": "Deal damage equal to the current round number+1 to all foes. Foes in cover from the turret or adjacent to an automaton take no damage."
         }
       ]
     },
     {
       "Name": "Aft Turret",
-      "Traits": [ "Anti-boarder Napalm Flood", "Destruction Aft Turret" ],
+      "Traits": [ "Destruction Aft Turret" ],
       "Actions": [
         {
-          "Name": "Rotary Cannons",
+          "Name": "Gatling Cannons",
           "ActionCost": 1,
-          "Tags": "ranged attack 6",
+          "Tags": [ "attack", "range 6" ],
           "AutoHit": "3 piercing damage.",
           "AreaEffect": "All foes in range 6 take 3 piercing damage."
         },
         {
-          "Name": "Shield Automata",
+          "Name": "Shield Automaton",
           "ActionCost": 1,
-          "Tags": "summon",
-          "Description": "The section summons an automata in range 6.",
+          "Description": "The section summons a shield automaton.",
           "Summons": {
-            "Name": "Shield Automata",
-            "Tags": [ "Size 1", "1 HP", "Defense 1" ],
-            "SummonEffects": "The automata has aura 2. Characters inside the aura, including foes, have cover. When summoned and once on the aft turret's turn, may move up to 3 spaces."
+            "Name": "Shield Automaton",
+            "Tags": [ "Size 1", "5 defense", "5 hp" ],
+            "SummonEffects": "The automata has aura 1. Foes in the area gain cover from all directions, but automata in the area reduce all damage taken to 1.",
+            "SummonActions": "Once a round, during the Aft Turret's turn (including when summoned) the automaton can move 3 spaces."
           },
           "Combo": {
-            "Name": "Combat Automata",
+            "Name": "Combat Automaton",
             "ActionCost": 1,
-            "Tags": "summon",
-            "Description": "The section summons an automata in range 6.",
+            "Description": "The section summons a combat automaton.",
             "Summons": {
-              "Name": "Combat Automata",
-              "Tags": [ "Size 1", "10 HP", "Defense 8" ],
-              "SummonEffects": "While in the aura of a Shield Automata, is immune to all damage, but can be destroyed by a Tracking Missile.",
-              "SummonActions": "When summoned, or on the turret's turn, can move 3, then make the following attack:",
+              "Name": "Combat Automaton",
+              "Tags": [ "Size 1", "5 defense", "5 hp" ],
+              "SummonActions": "Once a round, during the Aft Turret's turn (including when summoned) the automaton can move 3 spaces, then make the following attack:",
               "Actions": {
                 "Name": "Automaton Gun",
-                "Tags": "ranged attack 4",
-                "Hit": "[D]+[fray].",
-                "Miss": "[fray]."
+                "ActionCost": 0,
+                "Tags": [ "attack", "range 4" ],
+                "Hit": "5 damage.",
+                "Miss": "2 damage."
               }
             }
           }
         }
       ]
     }
-  ]
+  ],
+  "Tactics": "The Veridian weapon is a chaotic fight that is a straight race between destroying ship sections to delay the bomb counter, and destroying the numerous automata it spits out before they become too overwhelming. Characters may want to keep some of these sections and automata alive, however, due to abilities like tracking missile, deck sweeper, and anti-boarder napalm flood, which can more easily be avoided if there are more objects and automata around."
 }

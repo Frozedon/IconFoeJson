@@ -1,38 +1,22 @@
 [
   {
-    "Name": "Arkentech Power Armor",
-    "Description": "Start combat with vigor 1."
-  },
-  {
-    "Name": "Cannon Strike",
-    "Description": "At the start of each round, may designate a blast 1 area to be hit by off-battlefield artillery. At the end of the round, any characters in the area must save or take 2[D]+[fray], or [fray] damage on a successful save. Any character standing in the center space is also stunned on a failed save."
-  },
-  {
-    "Name": "Deflate",
-    "Description": "If the War Balloon is prevented from flying, it becomes immobile until it can fly again."
-  },
-  {
-    "Name": "Gunblade",
-    "Description": "All melee attacks gain On Hit: may deal 2 piercing damage to a foe in range 4 as an effect."
-  },
-  {
-    "Name": "Imperial Automata",
-    "Description": "This character always attempts to attack and focus on the closest foe at the start of its turn unless it's inside a command aura."
+    "Name": "Expert Overwatch",
+    "Description": "The [name] is a masterful gunner, granting the following benefits:",
+    "ListedItems": [
+      { "Description": "When Overwatch's area is created, the [name] can deal 2 piercing damage to all foes inside as an area effect." },
+      { "Description": "Any foe entering or exiting Overwatch's area takes 2 piercing damage from the [name], but no more than once a turn." }
+    ]
   },
   {
     "Name": "Imperial Command Aura",
-    "Description": "Aura 2. Allies in the aura gain +1 boon on attacks and can randomly critically hit (+[D])."
+    "Description": "Aura 2. Allies in the aura gain +1 boon on attacks."
   },
   {
-    "Name": "Leashed Beast",
-    "Description": "If not in an imperial command aura, when bloodied considers all characters foes and will focus on the closest character, regardless of allegiance."
+    "Name": "Orders",
+    "Description": "At the start of the round, give an orders token to any imperial character. That character automatically activates any exceed effects of their attacks, deals bonus damage, and gains +1 action, but can only take their turn after all other imperials have acted. At the end of the round, discard that token."
   },
   {
-    "Name": "Receive Orders",
-    "Description": "When an imperial that's not a commanding officer starts its turn in range of an imperial command aura, it recharges all its abilities."
-  },
-  {
-    "Name": "Vantage Point",
-    "Description": "Characters mounted on this character have +1 boon on ranged attacks and increase the range of all their ranged attacks by +4."
+    "Name": "Promotion",
+    "Description": "Starts combat with vigor equal to their VIT."
   }
 ]

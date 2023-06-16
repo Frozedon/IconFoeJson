@@ -1,46 +1,80 @@
 {
   "Name": "Sergeant",
   "Inherits": [ "Imperial", "Leader" ],
-  "Interrupts": {
-    "Name": "Discipline",
-    "Count": 1,
-    "Trigger": "An ally in range 2 misses with an attack.",
-    "Effects": "That ally re-rolls the attack roll with +1 boon, taking the second result as the final result."
-  },
+  "Traits": "Tactics Aura",
   "Actions": [
     {
       "Name": "Leader's Strike",
       "ActionCost": 1,
-      "Tags": [ "melee attack or ranged attack 5", "repeatable" ],
-      "Hit": "[D].",
-      "Miss": "1 damage.",
-      "Effects": "An ally in range 3 can dash 2 spaces."
+      "Tags": [ "attack", "range 3" ],
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "Effects": [
+        "Foe is sealed.",
+        "An ally in range 3 can dash 2 spaces."
+      ],
+      "Exceed": "Repeat the previous effect."
     },
     {
-      "Name": "Flare Gun",
+      "Name": "Hold the Line! ",
       "ActionCost": 1,
-      "Description": "Ignores stealth. A foe in range 5 is branded and loses stealth."
+      "Tags": [ "mark", "range 5" ],
+      "Description": "The [name] marks an ally in range. That ally gains regeneration and becomes sturdy. All these effects are lost if the mark is moved or replaced."
     },
     {
-      "Name": "Volley Fire",
+      "Name": "Arm Shot",
       "ActionCost": 1,
-      "Recharge": 6,
-      "Description": "The Sergeant chooses a foe in range 8, then deals 2 piercing damage once to that foe, then once again for each ally in range 2 of the Sergeant."
+      "Tags": [ "range 5" ],
+      "Description": "A foe in range takes 2 damage and takes a shot to the arm. After they next attack, they become unable to attack for their entire following turn."
+    },
+    {
+      "Name": "Martial Might",
+      "ActionCost": 1,
+      "Description": "This character gains the following interrupt until the start of their next turn:",
+      "Interrupts": {
+        "Name": "Discipline",
+        "Count": 1,
+        "Trigger": "An ally anywhere makes an attack roll, and the final result is determined. ",
+        "Effects": "The [name] can use this interrupt to cause them to re-roll the attack with +1 boon, taking the second result as the final result instead."
+      }
     }
   ],
   "ConditionalAbilities": [
     {
       "Chapter": 2,
-      "Traits": "Gunblade"
+      "RemoveActions": "Martial Might",
+      "Actions": [
+        {
+          "Name": "Martial Might",
+          "ActionCost": 1,
+          "Description": "This character gains the following interrupt until the start of their next turn.",
+          "Effects": "The [name] and all adjacent allies can dash up to 2, but must move in the same direction.",
+          "Interrupts": {
+            "Name": "Discipline",
+            "Count": 1,
+            "Trigger": "An ally anywhere makes an attack roll, and the final result is determined. ",
+            "Effects": "The [name] can use this interrupt to cause them to re-roll the attack with +1 boon, taking the second result as the final result instead."
+          }
+        }
+      ]
     },
     {
       "Chapter": 3,
-      "Actions": {
-        "Name": "Marching Orders",
-        "ActionCost": 1,
-        "Tags": "stance",
-        "Description": "When Sergeant takes this stance, as an action, and at start of each of their turns, the Sergeant and all allies in range 2 can dash 2 in the same direction."
-      }
+      "RemoveActions": "Martial Might",
+      "Actions": [
+        {
+          "Name": "Martial Might",
+          "ActionCost": 1,
+          "Description": "This character gains the following interrupt until the start of their next turn.",
+          "Effects": "The [name] and all adjacent allies can dash up to 2, but must move in the same direction.",
+          "Interrupts": {
+            "Name": "Discipline",
+            "Count": 2,
+            "Trigger": "An ally anywhere makes an attack roll, and the final result is determined. ",
+            "Effects": "The [name] can use this interrupt to cause them to re-roll the attack with +1 boon, taking the second result as the final result instead."
+          }
+        }
+      ]
     }
   ]
 }

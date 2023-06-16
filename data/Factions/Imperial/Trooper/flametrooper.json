@@ -5,9 +5,8 @@
   "Actions": {
     "Name": "Flame Bomb",
     "ActionCost": 1,
-    "Recharge": 6,
-    "Tags": [ "close blast 1", "true strike" ],
-    "AreaEffect": "[D]+[fray] damage and become burning.",
-    "Effects": "Burning foes must save or become winded."
+    "Tags": [ "range 2", "small blast", "true strike" ],
+    "Description": "May rush 1, then",
+    "AreaEffect": "Characters are weakened. Weakened foes take [fray] damage instead and must save or be stunned."
   }
 }

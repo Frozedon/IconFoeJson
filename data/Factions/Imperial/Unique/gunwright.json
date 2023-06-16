@@ -1,0 +1,40 @@
+{
+  "Name": "Gunwright",
+  "Inherits": [ "Imperial", "Artillery" ],
+  "Type": "Foe",
+  "Chapter": 3,
+  "Traits": [ "Master of Gun" ],
+  "Actions": [
+    {
+      "Name": "Strafe Shot",
+      "ActionCost": 1,
+      "Tags": [ "attack", "range 3" ],
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "Effects": "The [name] may dash 1 before and after this attack. Each time, they may deal 2 damage to a foe in range 3, ignoring cover. They must choose different foes each time and cannot choose the attack target."
+    },
+    {
+      "Name": "Showdown",
+      "ActionCost": 1,
+      "Tags": [ "range 3", "end turn" ],
+      "Description": "The [name] chooses a foe in range. Until the end of that foe's next turn, the [name] cannot move or be moved by allies in any way. At the end of that turn if the chosen foe is in range 3, dash 1, and the effect ends. If they're at range 4 or higher, they take 2 damage three times, ignoring cover."
+    },
+    {
+      "Name": "Tactical Reload",
+      "ActionCost": 1,
+      "Tags": [ "end turn" ],
+      "Description": "Shove an adjacent foe 1, then dash 1. The next ability used by the [name] causes them to erupt with a hail of fire, dealing 2 unerring damage as an area effect to all foes in range 3."
+    },
+    {
+      "Name": "Counter Fire",
+      "ActionCost": 1,
+      "Description": "The [name] gains the following interrupt until the start of their next turn. At round 3+, Counter fire becomes a free action.",
+      "Interrupts": {
+        "Name": "Fiery Retort",
+        "Count": 1,
+        "Trigger": "The [name] or an ally adjacent to it is targeted by a character's ability, and that character is 2 or more spaces away.",
+        "Effects": "The triggering character must save. On successful save, they dive out of the way and are shoved 1 in a direction of the [name]'s choice. On a failed save, they take 2 damage twice, ignoring cover. If their ability was an attack, it also gains +1 curse."
+      }
+    }
+  ]
+}

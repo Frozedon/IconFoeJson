@@ -12,10 +12,7 @@
       "Hit": "2[D]+[fray].",
       "Miss": "[fray].",
       "Effects": "Can only be used against bloodied targets or the Bounty Target.",
-      "CustomComponents": {
-        "Name": "Slay",
-        "Description": "Gain +2 valuables."
-      }
+      "Slay": "Gain +2 valuables."
     },
     {
       "Name": "Kick Off ",

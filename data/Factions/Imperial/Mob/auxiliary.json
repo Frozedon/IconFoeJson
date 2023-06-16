@@ -2,18 +2,27 @@
   "Name": "Auxiliary",
   "Inherits": [ "Imperial", "Mob" ],
   "Type": "Foe",
-  "Speed": 3,
-  "Defense": 8,
   "Interrupts": {
     "Name": "Get Down Sir!",
     "Count": 1,
-    "Trigger": "An adjacent ally takes damage from an ability.",
-    "Effects": "The Auxiliary is defeated. The ally gains resistance to that ability."
+    "Trigger": "An ally adjacent to an auxiliary is targeted by an ability.",
+    "Effects": "That auxiliary is defeated. The ally gains resistance against the triggering ability and is shoved 1 in any direction after it resolves."
   },
-  "Actions": {
-    "Name": "Arquebus",
-    "ActionCost": 2,
-    "Tags": "ranged attack 8",
-    "AutoHit": "Deal 1 piercing damage. Increase to 2 piercing if in an imperial command aura or if the target is burning."
-  }
+  "Actions": [
+    {
+      "Name": "Fusillade",
+      "ActionCost": 2,
+      "Tags": [ "attack", "range 6", "pierce" ],
+      "Hit": "2 damage, three times.",
+      "Miss": "2 damage",
+      "Effects": "Another [name] can deal 2 piercing damage to a foe in range 6 of them.",
+      "Exceed": "Repeat the effect."
+    },
+    {
+      "Name": "Focus Fire",
+      "ActionCost": 2,
+      "Tags": [ "mark" ],
+      "Description": "A foe in range 6 of any [name] becomes marked. While marked, they are vulnerable+ and cannot benefit from cover, stealth, dodge, or evasion. A foe can end this mark by dropping to the ground at the start of their turn, becoming immobile and unable to attack for the duration of that turn."
+    }
+  ]
 }

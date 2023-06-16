@@ -5,6 +5,7 @@
   "Actions": {
     "Name": "Disguise",
     "ActionCost": 1,
-    "Description": "Swap places with a character in range 5, teleporting. Foes can save to avoid this effect. If a foe succeeds on the save, the Spy can dash 3."
+    "Tags": [ "range 3" ],
+    "Description": "Swap places with a foe or ally in range, teleporting both characters. Foes can save to avoid this effect. If a foe succeeds on the save, the [name] can instead dash 3."
   }
 }

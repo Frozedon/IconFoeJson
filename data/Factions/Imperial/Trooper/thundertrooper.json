@@ -3,27 +3,18 @@
   "Inherits": "Trooper",
   "Type": "Foe",
   "Chapter": 2,
-  "RemoveActions": "Brutal Slash",
   "Actions": [
     {
-      "Name": "Rocket Jump",
+      "Name": "Rocket Boost",
       "ActionCost": 1,
-      "Description": "The Thunder trooper flies 3 spaces. All adjacent foes when it lands become burning and shoved 1."
-    },
-    {
-      "Name": "Arkentech Mace",
-      "ActionCost": 1,
-      "Tags": [ "melee attack", "multiattack", "+1 curse", "true strike" ],
-      "Hit": "[D]+[fray] and foe is dazed.",
-      "Miss": "[fray].",
-      "CriticalHit": "Foe is stunned."
+      "Description": "The [name] rushes 4 spaces, also ignoring all terrain and height penalties while moving, then shoves all adjacent characters 1.",
+      "Effects": "This action becomes a free action if the Trooper activated an exceed effect this turn."
     },
     {
       "Name": "Ground Pound",
-      "ActionCost": 2,
-      "Recharge": 6,
-      "Tags": "true strike",
-      "Description": "Foes in a close blast 1 area take [D] and must save or become winded. The area then becomes difficult terrain for the rest of combat."
+      "ActionCost": 1,
+      "Tags": [ "range 2", "true strike" ],
+      "Description": "Foes in a small blast area effect in range take 2 damage. Any foe in the center space is weakened, and that space becomes a pit."
     }
   ]
 }

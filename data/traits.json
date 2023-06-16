@@ -34,12 +34,20 @@
     "Description": "Gains resistance against all abilities from characters that are outside of range 2 from them (Resistance halves damage)."
   },
   {
+    "Name": "All Terrain Vehicle",
+    "Description": "Unaffected by terrain and height movement penalties."
+  },
+  {
     "Name": "Amorous Waltz",
     "Description": "Immune to all damage from pacified foes."
   },
   {
     "Name": "Amorphous",
     "Description": "Can share space with other characters. Any characters that start their turn inside its space take [fray] damage."
+  },
+  {
+    "Name": "Arkentech Bike",
+    "Description": "The [name] ignores difficult terrain. It can only move in straight lines, but has phasing. Any character it passes through takes 2 damage, but no more than once a turn."
   },
   {
     "Name": "Armor [X]",
@@ -52,6 +60,10 @@
   {
     "Name": "Aura of Distortion",
     "Description": "Aura 1. Allies inside the aura have evasion and foes are blinded+. Becomes aura 2 when bloodied."
+  },
+  {
+    "Name": "Aura of Dread",
+    "Description": "The [name] has aura 2. Foes inside the aura take +1 curse on saves. Any foe that fails a save inside the area must sacrifice 3."
   },
   {
     "Name": "Aura of Freedom",
@@ -87,7 +99,13 @@
   },
   {
     "Name": "Battle Platform",
-    "Description": "Characters can mount or dismount this character with their standard move, placing them adjacent when dismounting. Allies can start the battle mounted on this character. While mounted, place them inside a free space in this character (size 2 characters has space for 4 size 1 characters, while size 3 characters has space for 9). They share its space, move when it moves, and have cover. Characters hostile to this character must pass a save to mount it. Characters mounting it when it is defeated are placed adjacent and stunned."
+    "Description": "Characters can mount or dismount the [name] by spending 1 space of movement, placing them adjacent when dismounting, with the following rules:",
+    "ListedItems": [
+      { "Description": "Allies can start the battle mounted on the [name]." },
+      { "Description": "While mounted, place characters inside a free space in the [name] (so the [name] has space for 4 size 1 characters). They share its space, move when it moves, and have cover. While moving with the [name], characters are unstoppable." },
+      { "Description": "Characters hostile to the [name] must pass a save to mount it." },
+      { "Description": "Characters mounting it the [name] when it is defeated are placed in any free adjacent space of the [name]'s choice and take 3 damage." }
+    ]
   },
   {
     "Name": "Blight Splash",
@@ -107,7 +125,7 @@
   },
   {
     "Name": "Blood Rush",
-    "Description": "On Critical Hit or Slay, gains +1 action."
+    "Description": "May rush 2 before making any attack. If the attack triggers exceed, may rush 2 again."
   },
   {
     "Name": "Blood Scent",
@@ -119,11 +137,11 @@
   },
   {
     "Name": "Boiling Shroud",
-    "Description": "While bloodied, has aura 1. All characters in the aura have permanent stealth and are blinded+, but only while inside the aura."
+    "Description": "While bloodied, the [name] has permanent stealth and gains aura 1. All other characters inside the aura are blinded+ while inside."
   },
   {
     "Name": "Brace",
-    "Description": "When adjacent to terrain height 1 or higher, increase the range of all abilities with a listed range by +4, and attacks ignore cover."
+    "Description": "When adjacent to an object, increase the range of all abilities with a listed range by +4."
   },
   {
     "Name": "Bullheaded",
@@ -184,6 +202,10 @@
   {
     "Name": "Defiance",
     "Description": "Prevents hit points from being reduced past 1 hp. When this triggers, remove this effect and character becomes immune to all damage for the rest of the current turn."
+  },
+  {
+    "Name": "Deflate",
+    "Description": "If the [name] is prevented from flying, it becomes immobile until it can fly again."
   },
   {
     "Name": "Dig",
@@ -292,6 +314,10 @@
     "Description": "Ignores terrain damage and movement penalties, height movement penalties, obstruction, and engagement."
   },
   {
+    "Name": "Forced March",
+    "Description": "At the start of their turn, the [name] and all allies may dash 1 in the same direction."
+  },
+  {
     "Name": "Fortify",
     "Description": "At the end of their turn, gains vigilance 1."
   },
@@ -320,6 +346,15 @@
     "Description": "Has Rampart, Reduce all damage to self and allies in orthogonal spaces by 2, as if by armor."
   },
   {
+    "Name": "Heavy Arkentech Armor",
+    "Description": "The [name] is fitted with heavy power armor that is only strong from the front, with the following effects:",
+    "ListedItems": [
+      { "Description": "They cannot dash, fly, or teleport." },
+      { "Description": "They can be used for cover by allies as if a height 1 object." },
+      { "Description": "At the end of the [name]'s turn, decide which character they are facing towards. They become resistant to all damage from that character and unstoppable against any of their abilities. It can instead choose to grant these benefits to an adjacent ally. It must choose a different character each turn from the last." }
+    ]
+  },
+  {
     "Name": "Heavy Armor",
     "Description": "Resistant to abilities used from adjacent spaces."
   },
@@ -342,6 +377,10 @@
   {
     "Name": "Hollow",
     "Description": "Aura 1. While there is exactly 1 other character in hollow's aura, it has have evasion and stealth. This aura has no effect if no other characters, or 2 or more other characters are inside, and its effects (including stealth) turn off it if deactivates."
+  },
+  {
+    "Name": "Hovering",
+    "Description": "Immune to rampart."
   },
   {
     "Name": "Immobile",
@@ -392,32 +431,6 @@
     "EncounterBudget": -1.0
   },
   {
-    "Name": "Legendary Diaga",
-    "Actions": [
-      {
-        "Name": "Diaga",
-        "ActionCost": 1,
-        "Tags": "1/round",
-        "Description": "An ally in range 4 can end a status or blight. If that ally is bloodied, they also gain vigor 1."
-      }
-    ]
-  },
-  {
-    "Name": "Legendary Slip",
-    "Actions": [
-      {
-        "Name": "Slip",
-        "ActionCost": 0,
-        "Tags": "1/round",
-        "Description": "Remove self from the battlefield, then return in a free space in range 5."
-      }
-    ]
-  },
-  {
-    "Name": "Legendary Vigilance",
-    "Description": "Can use Vigilance twice a round."
-  },
-  {
     "Name": "Living Lightning",
     "Description": "Electrifies foes it moves through. Foes that are already electrified must save or become slowed. Allied spaces cost 0 movement to pass through."
   },
@@ -432,11 +445,15 @@
   },
   {
     "Name": "Lone Wolf",
-    "Description": "When ending their turn with no enemies or allies in range 2, gains stealth."
+    "Description": "When ending their turn with no foes or allies in range 2, gains stealth."
+  },
+  {
+    "Name": "Long Legs",
+    "Description": "Ignores all obstruction and terrain movement penalties."
   },
   {
     "Name": "Low Profile",
-    "Description": "Has evasion against ranged attacks. (Roll a d6 when targeted by an attack. On a 4+, the attack automatically misses. Check before the attack roll)"
+    "Description": "Has evasion against ranged attacks."
   },
   {
     "Name": "Lucky Feather",
@@ -450,6 +467,10 @@
   {
     "Name": "Martyrdom",
     "Description": "When defeated, cures all allies in range 2."
+  },
+  {
+    "Name": "Master of Gun",
+    "Description": "Has counter against all abilities used from a range of 3 or greater. Damage from counter ignores cover."
   },
   {
     "Name": "Master of Strategy",
@@ -475,14 +496,6 @@
   {
     "Name": "Noxious Censer",
     "Description": "The priest has Aura 2. Poisoned foes in the aura get +1 curse on attacks and saves."
-  },
-  {
-    "Name": "Overdrive",
-    "Description": "At the start of round 4, this character becomes powered up. All their attacks are critical hits on hit ([+D])."
-  },
-  {
-    "Name": "Overdrive [X]",
-    "Description": "At the start of round [X], this character becomes powered up. All their attacks are critical hits on hit ([+D])."
   },
   {
     "Name": "Overwhelming Stench",
@@ -673,7 +686,7 @@
   },
   {
     "Name": "Tactics Aura",
-    "Description": "Aura 2. Foes in the aura take +1 curse on saves. Foes suffering from a status in the aura take bonus damage from all sources."
+    "Description": "Aura 1. Allies ignore engagement and rampart effects while in the aura, and may dash 1 if they start their turn there."
   },
   {
     "Name": "Terrain Expert",
@@ -718,6 +731,10 @@
   {
     "Name": "Unstoppable",
     "Description": "Immune to all statuses. Can't be immobilized, shoved, or teleported by foes."
+  },
+  {
+    "Name": "Vantage Point",
+    "Description": "Characters mounted on the [name] ignore height disadvantage, have +1 boon on attacks and increase the range of all their abilities with a listed range by +4."
   },
   {
     "Name": "Vengeance",

@@ -1,13 +1,18 @@
 {
-  "Name": "Imperial Spotter",
+  "Name": "Informant",
   "Inherits": "Scout",
   "Type": "Foe",
   "Traits": "Low Profile",
+  "ReplaceActions": "Prep Decoy",
   "Actions": {
-    "Name": "Cannon Strike",
-    "ActionCost": 2,
-    "Recharge": 6,
-    "Tags": "end turn",
-    "Description": "The Spotter marks a blast 1 area in range 8. At the end of the next round, a barrage of cannon fire hits that space as an area effect. Characters inside when the cannon fire comes down must save or take 2[D]+[fray] and be slowed on a failed save, or [D]+[fray] and no slow on a successful save."
+    "Name": "Snitch",
+    "ActionCost": 1,
+    "Description": "The [name] gains the following interrupt until the start of its next turn.",
+    "Interrupts": {
+      "Name": "Gathered Intelligence",
+      "Count": 1,
+      "Trigger": "A foe anywhere starts their turn.",
+      "Effects": "Any number of allies in range 2 of that foe may dash 2, then gain stealth."
+    }
   }
 }

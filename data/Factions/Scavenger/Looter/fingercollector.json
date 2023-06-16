@@ -21,11 +21,8 @@
       "Hit": "2[D]+[fray].",
       "Miss": "[D]+[fray].",
       "Effects": "Can only be used against bloodied targets.",
+      "Slay": "Gain +2 valuables.",
       "CustomComponents": [
-        {
-          "Name": "Slay",
-          "Description": "Gain +2 valuables."
-        },
         {
           "Name": "Greed",
           "Description": "Gains unerring."

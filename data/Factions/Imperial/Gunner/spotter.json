@@ -1,0 +1,13 @@
+{
+  "Name": "Spotter",
+  "Inherits": "Gunner",
+  "Type": "Foe", 
+  "Actions": [
+    {
+      "Name": "Take The Shot",
+      "ActionCost": 1,
+      "Tags": [ "mark" ],
+      "Description": "The [name] marks a foe in range 8 for an off-battlefield sniper. They choose a side of the battlefield. At the end of that character's turn, if they are not in cover from that side of the battlefield, they must save or take [D]+[fray], or [fray] on a successful save. The [name] can change the side of the battlefield at the start of their turn. A character can end this mark by moving 5 or more spaces on their turn."
+    }
+  ]
+}

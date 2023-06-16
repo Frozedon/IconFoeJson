@@ -1,0 +1,28 @@
+{
+  "Name": "Iron Soldat",
+  "Inherits": [ "Imperial", "Heavy" ],
+  "Type": "Foe",
+  "Traits": [ "Enrage", "Heavy Arkentech Armor" ],
+  "Actions": [
+    {
+      "Name": "Chain Gun",
+      "ActionCost": 1,
+      "Tags": [ "attack", "range 4", "true strike" ],
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "Effects": "Foe is weakened. Deals [fray] damage to all adjacent characters to the foe.",
+      "Exceed": "Deals bonus damage and foe is stunned."
+    },
+    {
+      "Name": "Lumbering Charge",
+      "ActionCost": 1,
+      "Description": "The [name] rushes 1, then shoves an adjacent foe or ally 2 spaces."
+    },
+    {
+      "Name": "Mortar",
+      "ActionCost": 1,
+      "Tags": [ "range 6" ],
+      "Description": "The [name] chooses a character in range and creates a medium blast area effect centered on them that moves with them. At the end of that character's turn, the shell lands in the area. Foes within the area take 4 damage once for each foe in the area."
+    }
+  ]
+}

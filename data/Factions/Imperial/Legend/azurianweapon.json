@@ -1,89 +1,142 @@
 {
   "Name": "Azurian Weapon",
-  "Inherits": [ "Imperial", "Legendary Artillery" ],
+  "Inherits": [ "Imperial", "Legend" ],
   "Type": "Foe",
   "Chapter": 2,
-  "HP": 32,
   "Speed": 0,
-  "RemoveTraits": [ "Legendary Slip", "Aetherwall", "Receive Orders" ],
-  "Traits": [ "Legendary Landship", "Ranged Master", "Advanced Scopes", "Arkentech Artillery", "Landship" ],
+  "Traits": [ "Advanced Scopes", "Landship" ],
+  "SetupTraits": {
+    "Name": "Map",
+    "Description": "Run this legend on an 8x8 or 12x12 battlefield."
+  },
   "Actions": [
     {
-      "Name": "Turret Fire",
+      "Name": "Chasm Collapse",
       "ActionCost": 1,
-      "Tags": [ "ranged attack 6", "pierce" ],
-      "Hit": "[D]+[fray] and shove 1.",
-      "Miss": "[fray]."
-    },
-    {
-      "Name": "Torpedo",
-      "ActionCost": 1,
-      "Tags": "summon",
-      "Description": "The Weapon summons a burrowing torpedo in a free space in range 6.",
-      "Summons": {
-        "Name": "Torpedo",
-        "Tags": [ "Size 1", "8 HP", "Defense 1" ],
-        "SummonEffects": "At the start of the weapon's next turn, the torpedo submerges, burrows, and detonates under the closest foe for a blast 1 area effect, destroying it. Foes in the area must save or take [D]+[fray], or [fray] damage on a successful save. Then, create a pit in the area. The torpedo deactivates if destroyed early."
-      }
-    },
-    {
-      "Name": "Heavy Arkentech Mine",
-      "ActionCost": 0,
-      "Tags": "end turn",
-      "Description": "The Weapon places a mine in a free space in range 6 not adjacent to any character. The mine is a 1 space terrain effect. If any character enters or exits a space on or adjacent to the mine, they must save. On a failed save, the mine explodes for [fray] damage in a blast 1 area effect, shoving all affected characters 3, and inflicts burning. Burning foes are vulnerable."
-    },
-    {
-      "Name": "Mortar",
-      "ActionCost": 0,
-      "Tags": "2/round",
-      "Description": "The Weapon chooses a character in range 6. At the end of that character's next turn, they explode for a blast 1 area effect centered on them, dealing [fray] damage to all characters and shoving all characters 1 space away from the target."
-    },
-    {
-      "Name": "Submerge",
-      "ActionCost": 1,
-      "Tags": "1/round",
-      "Description": "The Weapon moves clockwise to the next side of the battlefield."
+      "Tags": [ "1/round" ],
+      "Description": "The weapon creates a 1 space chasm terrain effect anywhere in free space on the map. Foes adjacent to the area when it is created are shoved 1 away from it. The area is a pit, and any foe that attempts to exit the space by any means must pass a save. On a successful save, they can move as normal. On a failed save, remove them and place them adjacent to the pit. They are immobile for the rest of the current turn."
     },
     {
       "Name": "Broadside",
       "ActionCost": 1,
-      "Tags": "2/round",
-      "Description": "All foes in range 6 of the Weapon must save. On a successful save, they are shoved 1. On a failed save, they are shattered and shoved 3. ",
-      "Collide": "They also take [D]+[fray]."
+      "Tags": [ "2/round" ],
+      "Description": "All foes must save. On a successful save, they are shoved 1 away from the Weapon. On a failed save, they are shoved 3.",
+      "Collide": "They also take 4 damage."
     },
     {
-      "Name": "Rotary Cannon",
+      "Name": "Torpedo",
       "ActionCost": 1,
-      "Tags": [ "1/round", "summon" ],
-      "Description": " The Azurian weapon chooses a foe in range 8, then summons a targeting reticle 3 spaces from them. The weapon can have up to 3 targeting reticles, and can target a given character more than once with a reticle. Using this ability again with 3 reticles active resummons a reticle.",
+      "Tags": [ "no max range", "summon", "2/round" ],
+      "Description": "The Weapon summons a burrowing torpedo in a free space.",
       "Summons": {
-        "Name": "Targeting Reticle",
-        "Tags": [ "Size 1", "Intangible" ],
-        "SummonEffects": "The reticle can share space with other characters. It moves 1 space towards the chosen character at the start of that character's turn, then 1 space whenever they take an action. When the reticle enters any character's space, the Weapon deals [D] piercing damage to that character a number of times equal to the round number +1."
+        "Name": "Torpedo",
+        "Tags": [ "Size 1 summon" ],
+        "SummonEffects": "At the end of the next player turn, the torpedo submerges, burrows, and detonates under the closest foe for a medium blast area effect, destroying it. If multiple foes are equidistant, the Weapon can choose. Foes in the area must save or take [D]+[fray] and become stunned, or just [fray] damage on a successful save. Then, create a pit under the foe. Foes standing on an object succeed the save automatically, but all objects under them are removed instead of creating a pit. Foes standing in a pit fail the save automatically."
+      }
+    },
+    {
+      "Name": "Turret Fire",
+      "ActionCost": 1,
+      "Tags": [ "attack", "no max range", "pierce" ],
+      "Hit": "[D]+[fray] and shove 1.",
+      "Miss": "[fray].",
+      "Effects": "The Weapon may move its targeting reticle 1 space in any direction.",
+      "Combo": {
+        "Name": "Seismic Thumper",
+        "ActionCost": 2,
+        "Tags": [ "attack", "no max range", "medium blast", "unerring" ],
+        "Hit": "[D]+[fray].",
+        "Miss": "[fray].",
+        "Effects": "Create a Seismic Thumper destructible object in free space in the area.",
+        "Summons": {
+          "Name": "Seismic Thumper",
+          "IsObject": true,
+          "Tags": [ "Size 1 object", "10 hp" ],
+          "SummonEffects": "Adjacent spaces to the thumper are difficult terrain. Foes that start their turn there take 4 damage."
+        },
+        "Combo": {
+          "Name": "Flak Blast",
+          "ActionCost": 2,
+          "Tags": [ "attack", "no max range", "true strike" ],
+          "Hit": "[D]+[fray].",
+          "Miss": "[fray].",
+          "Effects": "Foe is vulnerable. All foes adjacent to the targeted foe take 1 piercing damage three times."
+        }
+      }
+    },
+    {
+      "Name": "Submerge",
+      "ActionCost": 1,
+      "Description": "The Weapon moves clockwise to the next side of the battlefield. When it emerges, it shoves all adjacent foes 1, then deals 3 damage to all foes in range 3 as an area effect."
+    },
+    {
+      "Name": "Arkentech Super Mine",
+      "ActionCost": 1,
+      "Tags": [ "no max range" ],
+      "Description": "The weapon fires a mine at a free space in range.",
+      "Summons": {
+        "Name": "Arkentech Super Mine",
+        "IsObject": true,
+        "Tags": [ "Object", "destructible (5 hp)" ],
+        "SummonEffects": "The mine arms at the the end of the next player turn, after all other Weapon abilities and effects have resolved. If any foe ends their turn adjacent to the mine while armed or collides with it, it explodes in a burst 1 (self) area effect, dealing 3 piercing damage to foes within and shattering them. If destroyed or removed, the mine fizzles out."
       }
     }
   ],
-  "PhasesDescription": "The Azurian Weapon begins in phase I and enters phase II when bloodied.",
+  "PhasesDescription": "The Weapon enters Phase II at the start of round 4.",
   "Phases": [
     {
-      "Description": "No changes."
-    },
-    {
-      "Description": "As phase I, but in phase II:",
-      "ListedItems": [
+      "Actions": [
         {
           "Name": "Submerge",
-          "Description": "Becomes 2/round."
-        },
-        {
-          "Name": "Arkentech Artillery",
-          "Description": "Does not end on a quadrant of the map once that quadrant is chosen (meaning it will eventually cover the whole map)."
+          "ActionCost": 1,
+          "Description": "The Weapon moves clockwise to the next side of the battlefield. When it emerges, it shoves all adjacent foes 1, then deals 3 damage to all foes in range 3 as an area effect."
         },
         {
           "Name": "Rotary Cannon",
-          "Description": "Has no maximum number of targeting reticles."
+          "RoundAction": true,
+          "Tags": [ "unerring", "pierce", "true strike" ],
+          "Description": "At the start of combat, the weapon chooses a character, then summons a targeting reticle at exactly range 3 from them. The Weapon can only have one of these reticles active at once but either place a new one or retarget the reticle by using this Round Action again on subsequent rounds, changing which character it chases.",
+          "Summons": {
+            "Name": "Targeting Reticle",
+            "Tags": [ "Size 1", "intangible" ],
+            "SummonEffects": "The reticle can share space with other characters. It moves 1 space towards the chosen character at the start of that character's turn, then 1 space after they use any ability, including their standard move and interrupts. When the reticle enters any foe's space, the Weapon deals 3 piercing damage to that character a number of times equal to the round number."
+          }
+        },
+        {
+          "Name": "Arkentech Artillery",
+          "RoundAction": true,
+          "Tags": [ "unerring", "pierce", "true strike" ],
+          "Description": "At the start of combat, divide the map into four equal size quadrants, then number each one. At the start of each round, roll 1d4. The Weapon shoots an artillery barrage into the air that comes down at the end of the round, affecting all foes in the rolled quadrant. Foes in the area at the end of the round must save or take 2[D]+[fray] piercing damage, or [D]+[fray] on a successful save. Then create two height 1 debris objects in free space in the area."
+        }
+      ]
+    },
+    {
+      "Actions": [
+        {
+          "Name": "Submerge",
+          "ActionCost": 1,
+          "Description": "The Weapon moves clockwise to the next side of the battlefield. When it emerges, it shoves all adjacent foes 1, then deals 3 damage to all foes in range 3 as an area effect.",
+          "Effects": "Becomes a free action the first time it's used in a round."
+        },
+        {
+          "Name": "Rotary Cannon",
+          "RoundAction": true,
+          "Tags": [ "unerring", "pierce", "true strike" ],
+          "Description": "At the start of combat, the weapon chooses up to two character, then summons a targeting reticle for each at exactly range 3 from them. The Weapon can only have two of these reticles active at once but either place a new one or retarget a reticle by using this Round Action again on subsequent rounds, changing which character it chases.",
+          "Summons": {
+            "Name": "Targeting Reticle",
+            "Tags": [ "Size 1", "intangible" ],
+            "SummonEffects": "The reticle can share space with other characters. It moves 1 space towards the chosen character at the start of that character's turn, then 1 space after they use any ability, including their standard move and interrupts. When the reticle enters any foe's space, the Weapon deals 3 piercing damage to that character a number of times equal to the round number."
+          }
+        },
+        {
+          "Name": "Arkentech Artillery",
+          "RoundAction": true,
+          "Tags": [ "unerring", "pierce", "true strike" ],
+          "Description": "Merge the four quadrants into two halves of the map. At the start of each round, flip a coin. The Weapon shoots an artillery barrage into the air that comes down at the end of the round, affecting all foes in the flipped half. Foes in the area at the end of the round must save or take 2[D]+[fray] piercing damage, or [D]+[fray] on a successful save. Then create two height 1 debris objects in free space in the area. At the start of round 7, it covers the whole map instead."
         }
       ]
     }
-  ]
+  ],
+  "Tactics": "The Azurian weapon can put out withering amounts of firepower, eventually culminating in carpet bombing the entire map if players don't defeat it fast enough. It can use Broadside to shove foes into the mines and seismic thumpers it puts down, as well as put them out of position and into the artillery fire. Foes can avoid the torpedoes it can fire out if they are quick enough by standing on the debris it put out, or even the mines or thumpers created by its abilities."
 }

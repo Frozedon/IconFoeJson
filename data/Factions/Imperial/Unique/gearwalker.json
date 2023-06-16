@@ -1,0 +1,40 @@
+{
+  "Name": "Gear Walker",
+  "Inherits": [ "Imperial", "Heavy" ],
+  "Type": "Foe",
+  "Chapter": 2,
+  "Traits": [ "Sturdy", "Long Legs" ],
+  "Actions": [
+    {
+      "Name": "Bolt Gun",
+      "ActionCost": 1,
+      "Tags": [ "attack", "range 3" ],
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "Effects": "Foe is shoved 1, then must save. On a failed save, they are shoved 2 more spaces.",
+      "CustomComponents": [
+        {
+          "Name": "Collide or Exceed",
+          "Description": "All movement values during the foe's next turn are reduced to 1."
+        }
+      ]
+    },
+    {
+      "Name": "Deploy Barricade",
+      "ActionCost": 1,
+      "Tags": [ "end turn" ],
+      "Description": "The [name] drops a height 1 barricade object in an adjacent space. The Barricade is a destructible object with 5 hp. Spaces adjacent to the Barricade have rampart. The barricade lasts until this ability is used again."
+    },
+    {
+      "Name": "Ashura Blitz",
+      "ActionCost": 1,
+      "Description": "The [name] rushes 2. If it ends this move adjacent to a foe, it shoves all adjacent foes 1 space, then rushes 2 again.",
+      "Combo": {
+        "Name": "Pressure Rush",
+        "ActionCost": 1,
+        "Tags": [ "range 3" ],
+        "Description": "The [name] chooses a foe in range that has not acted yet. At the end of that foe's turn, it rushes up to 4 spaces towards that foe, ending adjacent if possible. Then, that foe takes fray damage three times, or just once if it's adjacent to an ally."
+      }
+    }
+  ]
+}

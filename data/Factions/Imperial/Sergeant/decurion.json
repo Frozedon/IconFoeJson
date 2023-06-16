@@ -2,18 +2,10 @@
   "Name": "Decurion",
   "Inherits": "Sergeant",
   "Type": "Foe",
-  "RemoveInterrupts": "Discipline",
-  "Interrupts": {
-    "Name": "Corrective Fire",
-    "Count": 1,
-    "Trigger": "An ally in range 2 misses with an attack.",
-    "Effects": "The ally's target must save. On a failed save, they take [D] from the Decurion and become burning. Burning foes fail the save."
-  },
   "Actions": {
-    "Name": "Arm Shot",
+    "Name": "Leg Shot ",
     "ActionCost": 1,
-    "Tags": "mark", 
-    "Description": "A foe in range 8 marked.",
-    "Mark": "While marked, after they attack, they must save or take [fray] damage and become pacified. If a foe ends a turn without attacking, this mark ends."
+    "Tags": [ "range 5" ], 
+    "Description": "A foe in range takes 2 damage, then takes a shot to the leg. During their next turn, they can only move a maximum of 3 spaces. After they move 3 spaces, they become immobile for the rest of the turn."
   }
 }

@@ -2,38 +2,32 @@
   "Name": "Praetorian",
   "Inherits": [ "Imperial", "Elite", "Heavy" ],
   "Type": "Foe",
-  "Traits": "Heavy Armor",
+  "Traits": [ "Heavy Armor", "Aura of Dread" ],
   "Actions": [
-    {
-      "Name": "Inspire Dread",
-      "ActionCost": 0,
-      "Tags": "1/round",
-      "Description": "An imperial ally in range 3 immediately recharges an ability."
-    },
     {
       "Name": "Heavy Mace",
       "ActionCost": 1,
-      "Tags": [ "melee attack", "+1 curse", "true strike" ],
-      "Hit": "[D]+[fray] and foe is dazed.",
+      "Tags": [ "attack", "true strike" ],
+      "Hit": "[D]+[fray].",
       "Miss": "[fray].",
-      "CriticalHit": "(+[D]) and foe is stunned.",
-      "Effects": "Deals bonus damage per adjacent character to the target. All adjacent characters take [fray] damage."
+      "Effects": "Foe is weakened. Deals fray damage to all adjacent characters to the foe.",
+      "Exceed": "Deals bonus damage and foe is stunned."
     },
     {
       "Name": "Rocket Jump",
       "ActionCost": 1,
-      "Description": "The Praetorian flies 3 spaces in a straight line. All adjacent foes when it lands are dazed and shoved 1."
+      "Description": "The [name] rushes 3 spaces in a straight line, ignoring terrain and movement penalties. All adjacent foes when it finishes this movement are shoved 1."
     },
     {
       "Name": "Shield Jumper",
       "ActionCost": 1,
-      "Description": "An ally in range 2 of the Praetorian uses its shield as a springboard and can fly 4."
+      "Description": "An adjacent ally to the [name] uses its shield as a springboard and can fly 3."
     },
     {
       "Name": "Arkentech Repulser Shield",
-      "ActionCost": 2,
-      "Recharge": 6,
-      "Description": "The Praetorian gains aura 2 until the end of its next turn. The Praetorian and any of its allies inside the aura have resistance against abilities originating from characters inside the aura. Multiple shields of this type extend the area instead of overlapping it."
+      "ActionCost": 1,
+      "Tags": [ "end turn", "usable when bloodied" ],
+      "Description": "The [name] becomes immobile and gains aura 2 until the end of its next turn. The [name] and any of its allies inside the aura have resistance against abilities originating from characters inside the aura. Foes entering the aura must first pass a save, or become unable to enter the area by any means on a failed save until the start of their next turn."
     }
   ]
 }

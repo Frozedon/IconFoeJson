@@ -1,49 +1,50 @@
 {
   "Name": "Trooper",
   "Inherits": [ "Imperial", "Heavy" ],
-  "Traits": "Vengeance",
-  "Interrupts": {
-    "Name": "Counter-strike",
-    "Count": 1,
-    "Trigger": "This character or an adjacent ally is hit or miss by a melee attack.",
-    "Effects": "The attacker is shoved 1 and must save. On a failed save, they take [fray] damage and are dazed."
-  },
   "Actions": [
     {
-      "Name": "Brutal Slash",
+      "Name": "Brutal Strike",
       "ActionCost": 1,
-      "Tags": [ "melee attack", "true strike" ],
+      "Tags": [ "attack", "true strike" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
-      "CriticalHit": "Foe is stunned."
+      "Exceed": "Foe is stunned."
     },
     {
       "Name": "Blunderbuss",
       "ActionCost": 1,
-      "Tags": [ "line 3", "repeatable" ],
-      "AreaEffect": "This character fires a heavy sidearm in the area. Foes inside are shoved 1 and take 2 damage."
+      "Tags": [ "line 3", "true strike", "repeatable" ],
+      "Description": "Rush 1, then",
+      "AreaEffect": "Characters are shoved 1 and take 2 damage. If only one character is caught in the area, they are slashed."
     },
     {
       "Name": "Hold the Line!",
       "ActionCost": 2,
-      "Recharge": 6,
-      "Description": "This character gains aura 2 until the end of its next turn. This character and any of its allies inside the aura have resistance against melee attacks."
+      "Description": "The [name] gains 3 vigor, then gains aura 2 until the start of its next turn. The [name] and any of its allies inside the aura are sturdy and have counter and resistance against any abilities or damage from inside the aura."
     }
   ],
   "ConditionalAbilities": [
     {
       "Chapter": 2,
-      "Traits": "Gunblade"
+      "RemoveActions": "Hold the Line!",
+      "Actions": [
+        {
+          "Name": "Hold the Line!",
+          "ActionCost": 2,
+          "Description": "The [name] gains 3 vigor, then gains aura 2 until the start of its next turn. The [name] and any of its allies inside the aura are sturdy and have counter and resistance against any abilities or damage from inside the aura. Foes inside the aura gain +1 curse on attacks."
+        }
+      ]
     },
     {
       "Chapter": 3,
       "RemoveActions": "Hold the Line!",
-      "Actions": {
-        "Name": "Hold the Line!",
-        "ActionCost": 2,
-        "Recharge": 6,
-        "Description": "This character gains aura 2 until the end of its next turn. This character and any of its allies inside the aura have resistance against melee attacks. Foes in the aura are dazed+."
-      }
+      "Actions": [
+        {
+          "Name": "Hold the Line!",
+          "ActionCost": 2,
+          "Description": "The [name] gains 3 vigor, then gains aura 2 until the start of its next turn. The [name]'s Rampart is extended to the entire aura. The [name] and any of its allies inside the aura are sturdy and have counter and resistance against any abilities or damage from inside the aura. Foes inside the aura gain +1 curse on attacks."
+        }
+      ]
     }
   ]
 }

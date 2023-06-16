@@ -1,0 +1,19 @@
+{
+  "Name": "Groundbreaker",
+  "Inherits": "Scout",
+  "Type": "Foe",
+  "Chapter": 2,
+  "Actions": [
+    {
+      "Name": "Grenade Jump",
+      "ActionCost": 1,
+      "Description": "The [name] releases a burst 1 (self) area effect for 2 damage. Then, it flies 4, and all other characters in the area may fly 1."
+    },
+    {
+      "Name": "Zip Line",
+      "ActionCost": 1,
+      "Tags": [ "range 4", "end turn" ],
+      "Description": "The [name] creates a 1 space terrain effect in an adjacent space, then another 1 space terrain effect in free space in range. Characters entering one of these terrain effects during their own turn can grab on to the zip line, removing them from the battlefield, then place themselves in free adjacent space to the other terrain effect, then fly 1. This effect can interrupt abilities and other movement, but can only take place once a turn. If a new zip line is placed, the old one is removed."
+    }
+  ]
+}

@@ -5,54 +5,54 @@
     {
       "Name": "Heavy Arquebus",
       "ActionCost": 2,
-      "Tags": [ "ranged attack 12", "pierce", "special recharge" ],
-      "Hit": "2[D]+[fray] and foe is vulnerable.",
+      "Tags": [ "attack", "range 10" ],
+      "Hit": "2[D]+[fray].",
       "Miss": "[D]+[fray].",
-      "CriticalHit": "Damage becomes divine.",
-      "SpecialRecharge": "Only recharges by taking the reload action."
+      "Effects": "Foe is vulnerable.",
+      "Exceed": "Shell explodes, dealing 1 piercing damage twice in a large blast explosion area effect centered on its target.",
+      "Special": "The [name] cannot attack during their next turn."
     },
     {
-      "Name": "Reload Rifle",
+      "Name": "Extra Ammo",
       "ActionCost": 1,
-      "Description": "Heavy Arquebus recharges.",
-      "Effects": "Becomes a free action in an Imperial Command Aura."
+      "Tags": [ "range 3", "terrain effect" ],
+      "Description": "The [name] puts out a 1 space terrain effect in range. The [name] or any ally standing in the space may consume it to activate the exceed effects of their next attack and grant that attack bonus damage."
     },
     {
-      "Name": "Grappling Hook",
+      "Name": "Overwatch",
       "ActionCost": 1,
-      "Description": "The Gunner teleports adjacent to a summon or object in range 3. Alternately, it can teleport adjacent to a foe in range, and that foe becomes shattered."
-    },
-    {
-      "Name": "Suppressor Turret",
-      "ActionCost": 1,
-      "Recharge": 6,
-      "Tags": "summon",
-      "Description": "The Gunner summons a gun emplacement in range 4.",
-      "Summons": {
-        "Name": "Gun Turret",
-        "Tags": [ "Size 1", "Immobile" ],
-        "SummonEffects": "When a foe in range 4 from the emplacement is damaged by an attack or ability, the emplacement deals 1 piercing damage to that foe, ignoring cover. This effect can trigger any number of times a round."
-      }
+      "Tags": [ "range 8", "end turn" ],
+      "Description": "The [name] creates a medium blast terrain effect anywhere in range and line of sight that lasts until the start of the [name]'s next turn. Any foe that ends their turn in the area takes 6 piercing damage as an area effect. If the [name] is blinded, or a character is in cover from the [name], this damage is halved."
     }
   ],
   "ConditionalAbilities": [
     {
       "Chapter": 2,
-      "RemoveActions": "Grappling Hook",
-      "Actions": {
-        "Name": "Grappling Hook",
-        "ActionCost": 0,
-        "Description": "The Gunner teleports adjacent to a summon or object in range 3. Alternately, it can teleport adjacent to a foe in range, and that foe becomes shattered."
-      }
+      "RemoveActions": "Overwatch",
+      "Actions": [
+        {
+          "Name": "Overwatch",
+          "ActionCost": 1,
+          "Tags": [ "range 8", "end turn" ],
+          "Description": "The [name] creates a medium blast terrain effect anywhere in range and line of sight that lasts until the start of the [name]'s next turn. Any foe that ends their turn in the area takes 6 unerring piercing damage as an area effect. If the [name] is blinded, or a character is in cover from the [name], this damage is halved."
+        }
+      ]
     },
     {
       "Chapter": 3,
-      "Actions": {
-        "Name": "Hone",
-        "ActionCost": 1,
-        "Tags": "end turn",
-        "Description": "The next attack from this character becomes a critical hit on hit (+[D])."
-      }
+      "RemoveActions": "Overwatch",
+      "Actions": [
+        {
+          "Name": "Overwatch",
+          "ActionCost": 1,
+          "Tags": [ "range 8", "end turn" ],
+          "Description": "The [name] creates a medium blast terrain effect anywhere in range and line of sight that lasts until the start of the [name]'s next turn. Any foe that ends their turn in the area takes 6 unerring piercing damage as an area effect. If the [name] is blinded, or a character is in cover from the [name], this damage is halved.",
+          "CustomComponents": {
+            "Name": "Round 3+",
+            "Description": "Becomes a free action."
+          }
+        }
+      ]
     }
   ]
 }

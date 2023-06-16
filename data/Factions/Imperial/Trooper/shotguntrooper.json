@@ -1,0 +1,14 @@
+{
+  "Name": "Shotgun Trooper",
+  "Inherits": "Trooper",
+  "Type": "Foe",
+  "Actions": [
+    {
+      "Name": "Double Barrel",
+      "ActionCost": 1,
+      "Tags": [ "medium blast" ],
+      "Description": "May rush 1, then",
+      "AreaEffect": "2 damage once, for every foe in the area, up to a maximum of three times. Then shove all characters 1."
+    }
+  ]
+}

@@ -1,58 +1,120 @@
 {
   "Name": "Crimson Weapon",
-  "Inherits": [ "Imperial", "Legendary Heavy" ],
+  "Inherits": [ "Imperial", "Legend" ],
   "Type": "Foe",
   "HP": 60,
-  "Speed": 5,
-  "RemoveTraits": "Receive Orders",
-  "Traits": [ "Size 2", "Hellforged", "Arkentech Munitions", "Arkentech Armor Plate" ],
+  "Traits": [ "Size 2", "Hellforged" ],
   "Actions": [
     {
-      "Name": "Weapon Blade",
+      "Name": "Hades Cannon",
+      "RoundAction": true,
+      "Tags": [ "unerring", "true strike" ],
+      "Description": "At the start of the round, the Weapon charges up a massive flame cannon. At the end of the round, it fires a searing blast from the cannon.",
+      "ListedItems": [
+        { "Description": "Assign each side of the weapon a number, from 1 to 4, then roll 1d4. The weapon blasts a line area effect 2 spaces wide that is exactly lined up with the rolled edge of the weapon and goes the entire battlefield." },
+        { "Description": "Foes inside the explosion are weakened and must save or take 2[D]+[fray], or [D]+[fray] on a successful save. This damage cannot reduce a character below 1 hp." },
+        { "Description": "Munition inside explode." },
+        { "Description": "The Weapon takes 8 damage if it's caught inside an explosion." },
+        { "Description": "Then, create a space of burning dangerous terrain under every foe, then 2 more spaces anywhere in the area, even if there were no foes inside." }
+      ]
+    },
+    {
+      "Name": "Mortar",
       "ActionCost": 1,
-      "Tags": [ "melee attack 2", "arc 3", "true strike" ],
+      "Tags": [ "true strike", "2/round" ],
+      "Description": "The weapon chooses a character in range 6 and creates a burst 2 (target) area effect centered on them. At the end of that character's turn, the shell lands in the area. Foes within the area take 3 damage once for each foe in the area. Then, all munitions in the area detonate, and this effect ends."
+    },
+    {
+      "Name": "Drop Barricade",
+      "ActionCost": 1,
+      "Tags": [ "1/round" ],
+      "Description": "The Weapon drops a height 1 barricade in an adjacent space. The Barricade is a destructible object with 5 hp. Spaces adjacent to the Barricade have rampart."
+    },
+    {
+      "Name": "Pressure Blade",
+      "ActionCost": 1,
+      "Tags": [ "attack", "arc 3", "true strike" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
-      "Effects": "Deals bonus damage to dazed characters."
+      "AreaEffect": "[fray].",
+      "Effects": "Attack target is slashed. Deals bonus damage to already stunned, or slashed characters.",
+      "Exceed": "All foes take 2 damage again.",
+      "Combo": {
+        "Name": "Chest Cannon",
+        "ActionCost": 1,
+        "Tags": [ "attack", "range 5", "small blast", "unerring" ],
+        "Hit": "[D]+[fray].",
+        "Miss": "[fray].",
+        "AreaEffect": "[fray].",
+        "Effects": "Create a pit under the target.",
+        "Exceed": "All munitions in the area explode.",
+        "Combo": {
+          "Name": "Pile Bunker",
+          "ActionCost": 2,
+          "Tags": [ "attack", "melee", "range 3" ],
+          "Hit": "2[D]+[fray] and shove 3.",
+          "Miss": "[D]+[fray] and shove 1.",
+          "Effects": "Foe is stunned.",
+          "Exceed": "Then, rush 2."
+        }
+      }
     },
     {
-      "Name": "Side Cannons",
+      "Name": "Ashura Blitz",
       "ActionCost": 1,
-      "Description": "All foes in range 2 of the Weapon take [fray] damage and are shoved 1. All munitions are shoved 1."
-    },
-    {
-      "Name": "Lumber",
-      "ActionCost": 0,
-      "Description": "Dash 2, then shove all adjacent foes and munitions 1."
-    },
-    {
-      "Name": "Ravage",
-      "ActionCost": 1,
-      "Tags": [ "true strike", "end turn", "1/round" ],
-      "Description": "The Crimson Weapon raises its blade and chooses a foe in range 4. At the end of that character's turn, it dashes up to 6 spaces towards them, shoving characters in its path 1 space to either side and detonating any munitions it passes through. That foe must save or take [D] a number of times times equal to the number of player characters or once on a successful save.",
-      "Effects": "They take [D] one less time for every nonsummon ally adjacent to them."
-    },
-    {
-      "Name": "Spitfire",
-      "ActionCost": 1,
-      "Tags": [ "multimark", "2/round" ],
-      "Description": "Mark a character in range 6.",
-      "Mark": "t the end of that character's turn, if that character is still marked, the Weapon shoots a fireball at them for a blast 1 explosion area effect. Characters within must save. On a successful save, they take [fray]. On a failed save they take [D]+[fray] and are burning. Burning characters fail the save. Either way, the mark ends."
-    }
-  ],
-  "PhasesDescription": "The Crimson Weapon changes phases when bloodied.",
-  "Phases": [
-    {
-      "Description": "No changes."
-    },
-    {
-      "Description": "As Phase I, but Ravage becomes 2/round and also gains the following action.",
-      "Actions": {
-        "Name": "Hellscape",
-        "ActionCost": 0,
-        "Tags": "1/round",
-        "Description": "The Weapon fills a blast 1 area in range 5 with searing hellfire. The area is dangerous terrain for the rest of combat. Munitions cannot be created in the area, and munitions that enter the area immediately explode. There is no maximum number of these zones that can be created, and they can overlap."
+      "Description": "The Weapon rushes 2. If it ends this move adjacent to a foe or munition, it shoves all adjacent foes and munitions 1 space, then rushes 2 again.",
+      "Combo": {
+        "Name": "Pressure Rush",
+        "ActionCost": 1,
+        "Tags": [ "range 3" ],
+        "Description": "The Weapon chooses a foe in range that has not acted yet. At the end of that foe's turn, it rushes up to 4 spaces towards that foe, ending adjacent if possible. Then, that foe takes [fray] damage three times, or just once if it's adjacent to an ally.",
+        "Combo": {
+          "Name": "Ashura Burst",
+          "ActionCost": 1,
+          "Tags": [ "range 3", "unerring" ],
+          "Description": "The weapon fires two arcing shells into the air, choosing two free spaces in range 3. The spaces last until activated. When a foe enters the space for any reason, they take fray damage and are weakened, then shoved 1 in any direction. Then create a space of burning dangerous terrain in the area."
+        }
       }
     }
-  ]
+  ],
+  "PhasesDescription": "The Crimson Weapon changes to phase II when bloodied.",
+  "Phases": [
+    {
+      "Actions": [
+        {
+          "Name": "Arkentech Munition",
+          "RoundAction": true,
+          "Tags": [ "summon" ],
+          "Description": "At the start of the round, the Weapon fires a slow burning munition that lands in a space adjacent to any foe.",
+          "Summons": {
+            "Name": "Munition",
+            "Tags": [ "Size 1 summon" ],
+            "SummonEffects": "If a foe ends their turn adjacent to a munition, it explodes for a large blast area effect. Characters inside, including the weapon, must save or take 2[D]+[fray] and be stunned, or just [D]+[fray] on a successful save."
+          }
+        }
+      ]
+    },
+    {
+      "Description": "Any dangerous terrain the Weapon creates also becomes difficult terrain.",
+      "Actions": [
+        {
+          "Name": "Arkentech Munition",
+          "RoundAction": true,
+          "Tags": [ "summon" ],
+          "Description": "At the start of the round, the Weapon fires two slow burning munitiosn that land in spaces adjacent to any foes.",
+          "Summons": {
+            "Name": "Munition",
+            "Tags": [ "Size 1 summon" ],
+            "SummonEffects": "If a foe ends their turn adjacent to a munition, it explodes for a large blast area effect. Characters inside, including the weapon, must save or take 2[D]+[fray] and be stunned, or just [D]+[fray] on a successful save."
+          }
+        },
+        {
+          "Name": "Hellscape",
+          "RoundAction": true,
+          "Description": "At the start of the round, the Crimson Weapon creates a small blast terrain effect of searing fire in free space in range 3. The flames are dangerous terrain. Munitions cannot be created in the area, and if they enter the area for any reason, they immediately explode. The areas last until the end of the fight."
+        }
+      ]
+    }
+  ],
+  "Tactics": "The Crimson Weapon is all about the Hades cannon. This cannon can deal brutal damage - for free! - but its targeting is random. Players that spread out in diagonal spaces around the weapon will be mostly safe from it - mostly. They can also choose to voluntarily stand so that the weapon might blow up its own munitions and damage itself - potentially a worthy sacrifice. Munitions will be eventually too much for players (and the weapon) to handle, so the fight should move quickly in phase II."
 }

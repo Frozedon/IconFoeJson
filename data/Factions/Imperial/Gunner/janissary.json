@@ -1,0 +1,21 @@
+{
+  "Name": "Janissary",
+  "Inherits": "Gunner",
+  "Type": "Foe", 
+  "Chapter": 3,
+  "Traits": "Expert Overwatch",
+  "Actions": [
+    {
+      "Name": "Headshot",
+      "ActionCost": 2,
+      "Tags": [ "range 6" ],
+      "Description": "A foe in range at 25% HP or lower must save. On a failed save, they are defeated, ignoring all other effects. On a successful save, they are reduced to 1 hp."
+    },
+    {
+      "Name": "Suppressive Fire",
+      "ActionCost": 1,
+      "Tags": [ "range 8", "mark" ],
+      "Description": "The [name] marks a foe in range 8. While marked, that foe take 2 piercing damage after they use any ability other than their standard move. If they are in cover from the [name], they can ignore this damage. If they don't take this damage for their entire turn, this mark ends."
+    }
+  ]
+}

@@ -1,45 +1,41 @@
 {
   "Name": "Battle Wagon",
-  "Inherits": [ "Imperial", "Elite" ],
+  "Inherits": [ "Imperial", "Elite", "Heavy" ],
   "Type": "Foe",
-  "Class": "Unique",
   "Chapter": 2,
-  "Vitality": 10,
-  "Speed": 3,
-  "Defense": 5,
-  "FrayDamage": 4,
-  "DamageDie": 6,
-  "Traits": [ "Terrainwalking", "Ranged Master", "Battle Platform" ],
+  "Traits": [ "Size 2", "Sturdy", "Heavy Armor", "All Terrain Vehicle", "Battle Platform" ],
   "Actions": [
     {
       "Name": "Main Cannon",
-      "ActionCost": 2,
-      "Tags": [ "ranged attack 6", "blast 1" ],
-      "Hit": "2[D]+[fray].",
+      "ActionCost": 1,
+      "Tags": [ "attack", "range 4", "medium blast", "true strike" ],
+      "Hit": "[D]+[fray].",
       "Miss": "[fray].",
       "AreaEffect": "[fray].",
-      "Effects": "All foes are shoved 1."
-    },
-    {
-      "Name": "Side Cannons",
-      "ActionCost": 1,
-      "Description": "All foes in range 2 of the Wagon take [fray] damage and are shoved 1."
+      "Effects": "All foes in the area are shoved 1.",
+      "Exceed": "Deals bonus damage. The [name], all its passengers, and all adjacent characters to the [name] are shoved 1 from the back blast away from the attack target."
     },
     {
       "Name": "Lumber",
-      "ActionCost": 0,
-      "Description": "Dash 2, then shove all adjacent foes 1."
+      "ActionCost": 1,
+      "Description": "Rush 3, then shove all adjacent foes 1."
+    },
+    {
+      "Name": "Flak Cannons",
+      "ActionCost": 1,
+      "Tags": [ "line 3", "true strike", "repeatable" ],
+      "Description": "Rush 1, then",
+      "AreaEffect": "Characters are shoved 1 and take 2 damage. If only one character is caught in the area, they are slashed."
     },
     {
       "Name": "Torpedo",
       "ActionCost": 1,
-      "Recharge": 4,
-      "Tags": "summon",
-      "Description": "The Battle Wagon summons a burrowing torpedo in a free space in range 6.",
+      "Tags": [ "range 6", "summon", "1/round" ],
+      "Description": "The [name] summons a burrowing torpedo in a free space in range 6.",
       "Summons": {
         "Name": "Torpedo",
-        "Tags": [ "Size 1", "10 HP", "Defense 1" ],
-        "SummonEffects": "At the start of the wagon's next turn, the torpedo submerges, burrows, and detonates under the closest foe for a blast 1 area effect, destroying it. Foes in the area must save or take [D]+[fray], or [fray] damage on a successful save. Then, create a pit in the area. The torpedo deactivates if destroyed early."
+        "Tags": [ "Size 1 summon" ],
+        "SummonEffects": "At the end of the next player turn, the torpedo submerges, burrows, and detonates under the closest foe for a small blast area effect, destroying it. If multiple foes are equidistant, the [name] can choose. Foes in the area must save or take [D]+[fray], or [fray] damage on a successful save. Then, create a pit under the foe. Foes standing on an object succeed the save automatically, but all objects under them are removed instead of creating a pit."
       }
     }
   ]

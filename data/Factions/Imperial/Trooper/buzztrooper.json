@@ -2,14 +2,15 @@
   "Name": "Buzz Trooper",
   "Inherits": "Trooper",
   "Type": "Foe",
-  "RemoveActions": "Brutal Slash",
+  "RemoveActions": "Brutal Strike",
   "Actions": {
     "Name": "Chain Slash",
     "ActionCost": 1,
-    "Tags": [ "melee attack", "arc 3", "true strike" ],
+    "Tags": [ "attack", "arc 3", "true strike" ],
     "Hit": "[D]+[fray].",
     "Miss": "[fray].",
     "AreaEffect": "[fray].",
-    "CriticalHit": "Repeat the area effect."
+    "Effects": "Attack target is is slashed.",
+    "Exceed": "Rush 1, then repeat the area effect, which could overlap the first."
   }
 }

@@ -17,10 +17,7 @@
       "ActionCost": 1,
       "Tags": [ "range 3", "true strike", "end turn" ],
       "Description": "The [name] chooses a foe in range. At the end of that foe's next turn, the [name] rushes up to 4 spaces towards them. If the [name] ends this movement adjacent to the chosen foe, they must save or take 2[D]+[fray], or [D]+[fray] on a successful save.",
-      "CustomComponents": {
-        "Name": "Slay",
-        "Description": "Gain +2 valuables."
-      }
+      "Slay": "Gain +2 valuables."
     },
     {
       "Name": "Execute",

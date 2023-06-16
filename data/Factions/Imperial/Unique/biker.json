@@ -1,0 +1,34 @@
+{
+  "Name": "Biker",
+  "Inherits": [ "Imperial", "Skirmisher" ],
+  "Type": "Foe",
+  "Traits": [ "Arkentech Bike" ],
+  "Actions": [
+    {
+      "Name": "Chariot",
+      "ActionCost": 2,
+      "Tags": [ "attack", "melee" ],
+      "Hit": "2[D].",
+      "Miss": "[D].",
+      "Effects": "Foe is dazed.",
+      "Exceed": "Foe is knocked into the air, removing them, then placing them in any space in range 3.",
+      "PostEffects": "The [name] dashes up to 2 spaces before and after this attack. This attack deals added base damage on hit or miss based on how far the [name] moved with this ability before making the attack.",
+      "Combo": {
+        "Name": "Spin Out",
+        "ActionCost": 1,
+        "Effects": "Deal 3 damage to all foes in range 2. The [name] gains evasion until the start of its next turn."
+      }
+    },
+    {
+      "Name": "Throw Knife",
+      "ActionCost": 1,
+      "Tags": [ "range 3", "unerring" ],
+      "Description": "A foe in range takes damage equal to the range from the [name]."
+    },
+    {
+      "Name": "Rev",
+      "ActionCost": 1,
+      "Description": "The [name] gains stealth, then increases its speed and the distance moved by Chariot by 2 for the rest of combat."
+    }
+  ]
+}

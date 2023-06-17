@@ -3,17 +3,18 @@
   "Inherits": "Void Demon",
   "Type": "Foe",
   "Chapter": 2,
-  "Traits": "Chameleonic",
-  "Interrupts": {
-    "Name": "Scuttle",
-    "Count": 1,
-    "Trigger": "A foe moves adjacent to the Lurking Demon.",
-    "Effects": "The demon may dash 3."
-  },
-  "Actions": {
-    "Name": "Strangle",
-    "ActionCost": 1,
-    "Tags": [ "stance", "end turn" ],
-    "Description": "A foe in range 3 must save. On a failed save, that foe becomes immobile. This effect ends if either the Demon or their target moves or is moved or another character uses an action while standing adjacent to the target to break the target free. While being strangled, the target cannot gain vigor, loses all vigor at the start of their turn, and takes [D] at the start of their turn."
-  }
+  "Traits": "Lurker in the Dark",
+  "Actions": [
+    {
+      "Name": "Scuttle",
+      "ActionCost": 1,
+      "Description": "The [name] dashes 4 with phasing. If it ends this movement inside a void rift, it can teleport to the space of any other void rift as part of this action."
+    },
+    {
+      "Name": "Strangle",
+      "ActionCost": 1,
+      "Tags": [ "range 3", "mark" ],
+      "Description": "The [name] marks a foe in range. If that foe ends its turn in range 3 of the [name], the [name] grabs and chokes the life out of them. They may shove their prey 2 spaces in any direction, and that foe sacrifices 3. A foe can save at the end of their turn if this effect doesn't activate, ending this effect on a success."
+    }
+  ]
 }

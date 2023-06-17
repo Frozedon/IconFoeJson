@@ -3,13 +3,26 @@
   "Inherits": "Terror Demon",
   "Type": "Foe",
   "Chapter": 2,
-  "Traits": [ "Flying", "Isolation" ],
-  "Actions": {
-    "Name": "Paranoia",
-    "ActionCost": 1,
-    "Recharge": 4,
-    "Tags": "mark",
-    "Description": "A foe in range 6 is marked.",
-    "Mark": "While marked, they cannot target allies with abilities and effects. The character can end this mark normally, or it also ends if they hit this demon with an attack."
-  }
+  "Traits": [ "Flying" ],
+  "Actions": [
+    {
+      "Name": "Pop Bubble",
+      "ActionCost": 1,
+      "Recharge": 4,
+      "Description": "This [name]'s bubbles bulge, giving it the following interrupt until the start of its next turn:",
+      "Interrupts": [
+        {
+          "Name": "Warping Bubble",
+          "Count": 2,
+          "Trigger": "An ally in range 2 is targeted by an ability, and that ability resolves.",
+          "Effects": "That ally gains 2 vigor after that ability resolves each time they were damaged by that ability."
+        }
+      ]
+    },
+    {
+      "Name": "Skinwarp",
+      "ActionCost": 2,
+      "Description": "Remove any ally from the battlefield, then place them anywhere else on the battlefield. If bloodied, they are also cured."
+    }
+  ]
 }

@@ -3,16 +3,30 @@
   "Inherits": "Chaos Demon",
   "Type": "Foe",
   "Chapter": 3,
-  "Interrupts": {
-    "Name": "Reality Splinter",
-    "Count": 1,
-    "Trigger": "The demon is damaged by a foe's ability.",
-    "Effects": "After the ability resolves, the foe swaps places with the demon, teleporting."
-  },
-  "Actions": {
-    "Name": "Invert",
-    "ActionCost": 2,
-    "Recharge": 6,
-    "Description": "A character in range 6 is inverted. At the end of that character's turn, their HP total becomes their total missing hp instead. If they are at full hp, this action has no effect."
-  }
+  "Actions": [
+    {
+      "Name": "Reality Splinter",
+      "ActionCost": 1,
+      "Tags": [ "range 6", "mark" ],
+      "Description": "The [name] marks itself or an ally in range. While that character is marked, the [name] gains the following interrupt.",
+      "Interrupts": [
+        {
+          "Name": "Break Reality",
+          "Count": 1,
+          "Trigger": "The marked character is damaged by a foe's ability.",
+          "Effects": "After the ability resolves, the foe swaps places with the [name], removing and placing both characters."
+        }
+      ]
+    },
+    {
+      "Name": "Sacred Geometry",
+      "ActionCost": 1,
+      "Tags": [ "range 6", "mark" ],
+      "Description": "A foe in range is marked and forced into strange geometries. While marked:",
+      "ListedItems": [
+        { "Description": "Any time they use an ability on an ally, they become unable to use abilities on allies until they use an ability on an enemy." },
+        { "Description": "Any time they use an ability on an enemy, they become unable to use abilities on enemies until they use an ability on an ally." }
+      ]
+    }
+  ]
 }

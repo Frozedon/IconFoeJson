@@ -3,27 +3,43 @@
   "Inherits": [ "Demon", "Elite", "Leader" ],
   "Type": "Foe",
   "Chapter": 2,
-  "Traits": [ "Size 2", "Eyeless", "Decree" ],
+  "Traits": [ "Size 2", "Eyeless" ],
   "Actions": [
     {
-      "Name": "Enfeeble",
+      "Name": "Fair is Fair",
+      "RoundAction": true,
+      "Description": "At the start of the round, the [name] may use one of the following effects.",
+      "ListedItems": [
+        { "Description": "Move any status from self or any ally to a foe." },
+        { "Description": "Move up to 5 vigor from a foe to self or an ally." },
+        { "Description": "Swap the places of self or an ally with another ally in range 3, removing and placing both characters." }
+      ]
+    },
+    {
+      "Name": "Sap Strength",
       "ActionCost": 1,
-      "Tags": "ranged attack 6",
-      "Hit": "[D]+[fray] and character must save or be pacified.",
+      "Tags": [ "attack", "range 5", "small blast", "pierce" ],
+      "Hit": "[D]+[fray] and character is be pacified.",
       "Miss": "[fray].",
-      "Effects": "Pacified characters take [D] again."
+      "AreaEffect": "[fray].",
+      "Effects": "Deals added base damage on hit, miss, or area effect, equal to the vigor the [name] has."
+    },
+    {
+      "Name": "Cut Deal",
+      "ActionCost": 1,
+      "Description": "A foe in range 6 sacrifices 5. That foe chooses one of their allies. That ally gains 5 vigor."
     },
     {
       "Name": "World Revolving",
       "ActionCost": 1,
-      "Description": "Shove all foes on the battlefield 1 spaces in the same direction.",
-      "Collide": "Foe takes [D]+[fray] damage and is branded."
+      "Description": "Shove all characters on the battlefield 1 spaces in the same direction.",
+      "Collide": "Foe takes 2 damage and is sealed. Sealed or pacified foes take 4 damage instead."
     },
     {
       "Name": "Balance Scales",
       "ActionCost": 1,
-      "Tags": "1/round",
-      "Description": "A foe in range 6 must save or take Divine damage equal to 25% of their hp, or 1 divine damage on a successful save. An ally in range 6 gains vigor 1."
+      "Tags": "range 4",
+      "Description": "A foe in range must save or sacrifice 25% of their max hp, or sacrifice 3 on a successful save. Self or an ally in range gains vigor equal to the amount they sacrificed."
     }
   ]
 }

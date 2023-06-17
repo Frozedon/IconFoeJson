@@ -4,34 +4,34 @@
   "Type": "Foe",
   "Vitality": 8,
   "Speed": 15,
-  "RemoveTraits": "Skirmish",
+  "RemoveTraits": "Skirmisher",
   "Traits": "Burning Wheel",
   "Actions": [
     {
       "Name": "Agonize",
       "ActionCost": 1,
-      "Tags": "melee attack",
-      "Hit": "[D] and character must save or become slowed.",
+      "Tags": "attack",
+      "Hit": "[D] and foe is dazed.",
       "Miss": "1 damage.",
-      "Effects": "The Wheel dashes up to 8 spaces before this attack. It deals additional damage equal to how far it traveled before it attacked."
+      "Effects": "The [name] dashes up to 8 spaces before this attack. It deals additional damage equal to how far it traveled before it attacked.",
+      "Combo": {
+        "Name": "Exfoliate",
+        "ActionCost": 2,
+        "Description": "Repeat the following effect three times.",
+        "Effects": "An adjacent foe must save or take [D]+[fray], or [fray] damage on a failed save. Bloodied foes gain +1 curse on the save."
+      }
     },
     {
       "Name": "Spit Fire",
       "ActionCost": 1,
-      "Tags": [ "range 4", "blast 1" ],
-      "AreaEffect": "2 damage and characters are burning. Burning characters instead take [D]+2."
+      "Tags": [ "range 4", "small blast" ],
+      "AreaEffect": "2 damage.",
+      "Effects": "The [name] can spend additional actions on this ability. For every action spent, it increases the range and damage by +2."
     },
     {
       "Name": "Spin Out",
       "ActionCost": 1,
-      "Description": "Adjacent foes must save or become blinded and burning. Burning foes fail the save."
-    },
-    {
-      "Name": "Exfoliate",
-      "ActionCost": 2,
-      "Recharge": 6,
-      "Description": "Repeat the following effect three times.",
-      "Effects": "An adjacent foe must save or take [D]+[fray], or [fray] damage on a failed save. Slow characters fail the save."
+      "Description": "Adjacent foes must save or become blinded, then the [name] gains stealth."
     }
   ]
 }

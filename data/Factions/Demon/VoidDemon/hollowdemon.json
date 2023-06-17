@@ -6,6 +6,7 @@
   "Actions": {
     "Name": "Void Caller",
     "ActionCost": 2,
-    "Description": "Create a natal adjacent to every Void Rift."
+    "Tags": [ "1/combat" ],
+    "Description": "Create a natal adjacent to every Void Rift, up to six times, adding to the natal mob."
   }
 }

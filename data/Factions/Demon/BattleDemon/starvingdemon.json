@@ -2,11 +2,10 @@
   "Name": "Starving Demon",
   "Inherits": "Battle Demon",
   "Type": "Foe",
-  "Traits": "Engorge",
   "Actions": {
     "Name": "Flesh Hook",
     "ActionCost": 1,
-    "Recharge": 4,
-    "Description": "A character in range 5 must pass a save or be shoved towards the demon as far as possible and winded. Instantly recharges and doesn't require a save if used on an ally."
+    "Tags": [ "range 4" ],
+    "Description": "A character in range takes 2 damage and is shoved 2 towards the [name]. If they are bloodied, they are also weakened. Becomes a free action if used on an ally."
   }
 }

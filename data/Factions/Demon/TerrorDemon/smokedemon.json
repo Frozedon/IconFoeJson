@@ -5,8 +5,8 @@
   "Traits": [ "Phasing", "Flying" ],
   "Actions": {
     "Name": "Corruptive Cloud",
-    "ActionCost": 1,
-    "Recharge": 4,
-    "Description": "The smoke demon summons a close blast 1 area effect. The cloud grants cover and the entire zone is considered part of the demon's Aura of Terror. This zone lasts until this ability is used again."
+    "ActionCost": 2,
+    "Tags": [ "range 2", "terrain effect" ],
+    "Description": "The smoke demon summons a medium blast terrain effect. The cloud grants cover and the entire zone is considered part of the [name]'s Aura of Terror. This zone lasts until this ability is used again."
   }
 }

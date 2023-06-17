@@ -8,11 +8,11 @@
     {
       "Name": "Behold",
       "ActionCost": 2,
-      "Tags": [ "ranged attack 8", "blast 1", "pierce" ],
+      "Tags": [ "attack", "range 8", "medium blast" ],
       "Hit": "2[D]+[fray].",
       "Miss": "[fray].",
       "AreaEffect": "[fray].",
-      "Effects": "The Gazer rolls 1d6 and applies one of the following effects to the attack target, which last until the end of its next turn.",
+      "Effects": "The [name] rolls 1d6 and applies one of the following effects to the attack target, which last until the end of its next turn.",
       "Rolls": [
         {
           "Values": 1,
@@ -32,7 +32,7 @@
         {
           "Values": 4,
           "Name": "Scour Scale",
-          "Description": "The target increases its size to 3. It can share space with foes during this effect."
+          "Description": "The target increases its size to 3. It can share space with foes and objects during this effect."
         },
         {
           "Values": 5,
@@ -47,20 +47,10 @@
       ]
     },
     {
-      "Name": "Shift",
-      "ActionCost": 1,
-      "Description": "Teleport 2."
-    },
-    {
-      "Name": "Shock",
-      "ActionCost": 1,
-      "Description": "A foe in range 6 takes 2 damage, then must save or become shattered."
-    },
-    {
-      "Name": "Nullify",
-      "ActionCost": 1,
-      "Tags": [ "stance", "terrain effect", "end turn" ],
-      "Description": "The Gazer becomes sturdy, and places down a blast 1 terrain effect in an adjacent area. These effects last both until the Gazer moves. While in the area, characters deal half damage."
+      "Name": "Yawning Void",
+      "ActionCost": 2,
+      "Tags": [ "terrain effect" ],
+      "Description": "The [name] creates a small blast area of nonspace, a terrain effect, which lasts until the end of combat. When the [name] creates the terrain, it removes all characters inside and places them adjacent to any edge. Characters and effects cannot occupy the space. Any character that enters the space for any reason can be removed by the [name] and placed in any adjacent space. Foes can pass a save to choose which space they end up instead. On a failed save, they take [fray] damage and the [name] can choose anyway."
     }
   ]
 }

@@ -5,11 +5,18 @@
   "Chapter": 2,
   "RemoveTraits": "Aetherwall",
   "Traits": "Distorted Soul",
-  "Actions": {
-    "Name": "Distort Foe",
-    "ActionCost": 1,
-    "Tags": "mark",
-    "Description": "A foe in range 6 must save or become marked.",
-    "Mark": "While marked, the effects of Distorted Soul from this demon also apply to them. This mark is removed if the color demon is defeated."
-  }
+  "Actions": [
+    {
+      "Name": "Fleshwarp",
+      "ActionCost": 1,
+      "Tags": [ "range 4" ],
+      "Description": "A character in range is torn into pieces, then teleported 3 and reassembled. That character takes 1 piercing damage, twice."
+    },
+    {
+      "Name": "Distort Foe",
+      "ActionCost": 1,
+      "Tags": [ "mark", "range 6" ],
+      "Description": "A foe in range is marked. While marked, they gain the Distorted Soul trait (from above)."
+    }
+  ]
 }

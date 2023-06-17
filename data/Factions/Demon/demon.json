@@ -6,11 +6,17 @@
   "SetupTraits": [
     {
       "Name": "Monsters",
-      "Description": "Demons do not flee or negotiate."
+      "Description": "Demons do not flee or negotiate.",
+      "ListedItems": [
+        {
+          "Name": "Motivations",
+          "Description": "Most demons are mindless, extra dimensional killing machines that exist to kill and eat living things. Those that have the intelligence or wherewithal to communicate with Kin usually reveal a cruel and sadistic malice. They delight in inflicting pain, fear, violence, and destruction - including on each other."
+        }
+      ]
     },
     {
       "Name": "Legion",
-      "Description": "When fighting demons, at the start of combat, place 5 Natals, this faction's special mob, on the map in unoccupied space somewhere outside of range 2 of players. These don't count for the total encounter budget."
+      "Description": "When fighting demons, at the start of combat, place a Natal mob, this faction's special mob, on the map. The mob does not count for the total faction budget."
     }
   ]
 }

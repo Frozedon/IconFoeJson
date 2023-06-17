@@ -4,32 +4,58 @@
   "Type": "Foe",
   "Chapter": 3,
   "Speed": 2,
-  "Traits": [ "Size 2", "Dissolving Reality", "Law of the Maze", "Pull of the Maze" ],
+  "Traits": [ "Dissolving Reality" ],
   "Actions": [
     {
-      "Name": "Diablo",
-      "ActionCost": 2,
-      "Tags": [ "ranged attack 8", "cross 1", "pierce" ],
-      "Hit": "2[D]+[fray].",
-      "Miss": "[fray].",
-      "AreaEffect": "[fray].",
-      "Effects": "Deals bonus damage for each foe in end spaces of the cross. If three or more foes are effected, becomes a critical hit (+[D])."
+      "Name": "Law of the Maze",
+      "RoundAction": true,
+      "Description": "At the start of each round, roll 1d20 and 1d10. All values of any d20 in a Dissolving Reality zone are set to the number on the d20. All values of any other die are set to the d10 number, even that number would otherwise be invalid."
+    },
+    {
+      "Name": "Pull of the Maze",
+      "RoundAction": true,
+      "Description": "At the end of the round, the [name] teleports one or two characters in range 3 of a Dissolving Reality area into that area. It may choose itself."
+    },
+    {
+      "Name": "Disgorge Maze Shard",
+      "ActionCost": 1,
+      "Description": "The [name] creates a height 1 object inside one of its dissolving reality zones. Characters that end their turn adjacent to the object may be removed by the [name] and placed in any valid space in range 2 of the [name].",
+      "Combo": {
+        "Name": "Twisting Law",
+        "ActionCost": 2,
+        "Tags": [ "attack", "range 8", "small blast" ],
+        "Hit": "2[D]+[fray].",
+        "Miss": "[fray].",
+        "AreaEffect": "[fray].",
+        "Effects": [
+          "Attack target is shattered.",
+          "All maze shards release a large blast area effect centered on them, dealing 3 piercing damage to all characters. Shattered characters take 6 damage instead."
+        ]
+      }
     },
     {
       "Name": "Cheat Reality",
       "ActionCost": 1,
-      "Tags": "1/round",
-      "Description": "The Maze Demon fixes it's Law of the Maze numbers to 13 (d20) and 6 (d10) for the rest of the round."
+      "Tags": [ "1/round" ],
+      "Description": "The [name] fixes it's Law of the Maze numbers to 13 (d20) and 6 (d10) for the rest of the round."
     },
     {
-      "Name": "Great Warp",
+      "Name": "Rearrange",
       "ActionCost": 1,
-      "Description": "A character in range 6 takes [fray] piercing damage and is teleported 2."
+      "Tags": [ "range 2" ],
+      "Description": "The [name] removes all characters in range, then places them in any valid configuration in range."
     },
     {
-      "Name": "Fold Space",
+      "Name": "Reality Splinter",
       "ActionCost": 1,
-      "Description": "The Maze Demon teleports all adjacent characters 1, then teleports 4."
+      "Tags": [ "range 6", "mark" ],
+      "Description": "The [name] marks itself or an ally in range. While that character is marked, the [name] gains the following interrupt.",
+      "Interrupts": {
+        "Name": "Break Reality",
+        "Count": 1,
+        "Trigger": "The marked character is damaged by a foe's ability.",
+        "Effects": "After the ability resolves, the foe swaps places with the [name], removing and placing both characters."
+      }
     }
   ]
 }

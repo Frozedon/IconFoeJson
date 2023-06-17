@@ -5,15 +5,14 @@
   "Actions": [
     {
       "Name": "Demonweb",
-      "ActionCost": 1,
-      "Recharge": 6,
-      "Tags": "terrain effect",
-      "Description": "Create a blast 1 area of difficult terrain in range 6. Characters in the area are vulnerable+. Demons are immune to its effects."
+      "ActionCost": 2,
+      "Tags": [ "range 6" ],
+      "Description": "Create a small blast area of difficult and dangerous terrain in range. Foes in the area are vulnerable+. This [name] and allies are immune to its effects."
     },
     {
       "Name": "Deadly Strand",
       "ActionCost": 0,
-      "Description": "The demon chooses a character in range 2 of a demonweb. That character must save or be teleported into any space inside the demonweb."
+      "Description": "The [name] chooses a character in range 2 of a demonweb. That character is teleported into the closest space of the demonweb. Foes can save to avoid this effect."
     }
   ]
 }

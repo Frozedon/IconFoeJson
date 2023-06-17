@@ -3,12 +3,11 @@
   "Inherits": "Void Demon",
   "Type": "Foe",
   "Chapter": 3,
-  "Traits": [ "Crystal Dagger", "Vengeance" ],
+  "Traits": [ "Counter", "Crystal Dagger", "Crystal Burst" ],
   "Actions": {
     "Name": "Crystallize",
     "ActionCost": 1,
-    "Tags": "mark",
-    "Description": "A foe in range 4 is marked.",
-    "Mark": "While marked, they turn partly to crystal. While marked, they take 1 divine damage each time they take an action. If they miss with an attack, they additionally take [D] divine damage."
+    "Tags": [ "mark" ],
+    "Description": "A foe in range 4 is marked. While marked, they turn partly to crystal. While marked, they take 3 damage after using any ability. If they miss with an attack, they take 6 damage instead. A foe can end this mark at the end of any turn they didn't deal damage."
   }
 }

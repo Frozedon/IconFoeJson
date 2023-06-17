@@ -7,34 +7,34 @@
   "Interrupts": {
     "Name": "Suprise!",
     "Count": 1,
-    "Trigger": "The mimic is targeted by an ability, and the ability resolves.",
-    "Effects": "The mimic is revealed and dashes up to 3 spaces. An adjacent foe must then save or take [D]+[fray], or just [fray] damage on a failed save."
+    "Trigger": "The [name] is targeted by an ability, and the ability resolves.",
+    "Effects": "The [name] is revealed and dashes up to 3 spaces. An adjacent foe must then save or take [D]+[fray], or just [fray] damage on a failed save."
   },
   "Actions": [
     {
       "Name": "Bone-cracker",
       "ActionCost": 2,
-      "Tags": [ "melee attack", "+1 boon" ],
-      "Hit": "[D], a number of times equal to the round number.",
+      "Tags": [ "attack", "+1 boon" ],
+      "Hit": "[D]+1, a number of times equal to the round number.",
       "Miss": "2 damage, a number of times equal to the round number.",
-      "Effects": "The mimic may dash 2 before making this attack. Reveals the mimic. Deals half damage if the mimic is revealed before making this attack."
+      "Effects": "The [name] may dash 2 before making this attack. Reveals the [name]. Deals half damage if the [name] is revealed before making this attack."
     },
     {
       "Name": "Prowl",
       "ActionCost": 1,
-      "Tags": "end turn",
-      "Description": "Dash 1 and gain stealth."
+      "Tags": [ "end turn" ],
+      "Description": "Dash 2 and gain stealth."
     },
     {
       "Name": "Shell Game",
       "ActionCost": 1,
-      "Description": "Swap places with a decoy, teleporting."
+      "Description": "Swap places with a decoy, removing and placing both characters. This does not reveal the [name]."
     },
     {
       "Name": "Scuttling Retreat",
       "ActionCost": 1,
-      "Tags": "end turn",
-      "Description": "The mimic creates 2 decoys anywhere in range 4, then secretly replaces one of them."
+      "Tags": [ "range 4", "end turn" ],
+      "Description": "The [name] creates 2 decoys anywhere in range, then secretly replaces any active decoy, swapping places with it."
     }
   ]
 }

@@ -1,40 +1,69 @@
 {
   "Name": "Limb Demon",
-  "Inherits": [ "Demon", "Legendary Heavy" ],
+  "Inherits": [ "Demon", "Legend" ],
   "Type": "Foe",
-  "HP": 20,
-  "Speed": 5,
-  "Traits": [ "Size 3", "Regeneration", "Crawling Chaos", "Heaving Mass", "Drag Down", "Demon Core" ],
+  "HP": 60,
+  "RemoveSetupTraits": "Legion",
+  "RemoveTraits": "Devour",
+  "Traits": [ "Size 2", "Amorphous Limb Demon", "Crawling Chaos", "A Thousand Hands" ],
   "Actions": [
     {
-      "Name": "Crush Body",
+      "Name": "Control Limbs",
       "ActionCost": 1,
-      "Tags": [ "melee attack", "close blast 1", "true strike" ],
-      "Hit": "[D]+[fray] and summon a crawling mass.",
-      "Miss": "[fray].",
-      "AreaEffect": "[fray].",
-      "Effects": "Attack target is dazed.",
-      "CriticalHit": "(+[D]) and summon another crawling mass."
-    },
-    {
-      "Name": "Thrash",
-      "ActionCost": 1,
-      "Description": "All adjacent foes take 2 damage and are shoved 1."
-    },
-    {
-      "Name": "Lumbering Charge",
-      "ActionCost": 1,
-      "Description": "Dash 3 with phasing. All characters it passes over are shoved 1 to the side and take [fray] damage."
+      "Tags": [ "multimark", "1/round" ],
+      "Description": "The demon chooses a character in range 4 and gains control over their limbs. After that character rolls a d20, the demon can choose to roll its own d20, substituting the demon's result as the final result. A character can resist this effect by sacrificing 6, also ending this mark."
     },
     {
       "Name": "Swallow Whole",
       "ActionCost": 1,
       "Tags": "1/round",
-      "Description": "A adjacent character must save or be swallowed whole. Remove them from the battlefield. At the start of their turn, the demon spits them out, placing them in any adjacent space to the demon's current location, then shoving them 3 spaces. They are winded.",
-      "Collide": "Character takes [D]+[fray] and is stunned. If a character was swallowed last round, it becomes immune to this ability on the following round."
+      "Description": "An adjacent character must save or be swallowed whole. Remove them from the battlefield. At the start of their turn, the demon spits them out, placing them in any adjacent space to the demon's current location, then shoving them 3 spaces. They are weakened.",
+      "Collide": "Character takes [D]+[fray] and is stunned."
+    },
+    {
+      "Name": "Crush Body",
+      "ActionCost": 1,
+      "Tags": [ "attack", "range 2", "burst 1 (target", "true strike" ],
+      "Hit": "[D]+[fray] and summon a crawling mass.",
+      "Miss": "[fray].",
+      "AreaEffect": "[fray].",
+      "Effects": "Attack target is slashed.",
+      "Combo": {
+        "Name": "Echoing Scream",
+        "ActionCost": 1,
+        "Tags": [ "attack", "line 4", "unerring" ],
+        "Hit": "[D]+[fray].",
+        "Miss": "[fray].",
+        "AreaEffect": "[fray].",
+        "Effects": "All foes in the area must save or be shoved 2 spaces in any direction. All crawling masses and pillars of flesh in the area also release a scream, weakening all adjacent foes.",
+        "Combo": {
+          "Name": "Crush Soul ",
+          "ActionCost": 2,
+          "Tags": [ "attack", "range 3", "large blast" ],
+          "Hit": "[D]+[fray], twice.",
+          "Miss": "[fray], twice.",
+          "AreaEffect": "[fray], twice.",
+          "Effects": "All characters in the area in crawling mass spaces take 3 piercing damage."
+        }
+      }
+    },
+    {
+      "Name": "Pillar of Flesh",
+      "ActionCost": 1,
+      "Description": "The Demon agitates a crawling limbs space in range 4, transforming it into a pillar of flesh. It becomes a height 1 object, or increases its height by +1 if it is already an object. The pillar causes engagement as if it was a character, and characters that end their turn adjacent to the pillar take 2 damage, once, per height of the pillar."
+    },
+    {
+      "Name": "Thrash",
+      "ActionCost": 1,
+      "Description": "The demon deals 2 damage to all adjacent foes and shoves them 1.",
+      "Combo": {
+        "Name": "Lumbering Charge",
+        "ActionCost": 1,
+        "Description": "Rush up to 3 with phasing. All characters in the demon's space during this move are shoved 1 to either side of its movement and take 2 damage after it resolves."
+      }
     }
   ],
-  "PhasesDescription": "The Demon starts in Phase I, then goes into Phase II every third turn (turn 3, 6, 9, etc).",
+  "PhasesDescription": "The Demon starts in Phase I, then goes into Phase II when bloodied.",
   "Phases": [
     {
       "Interrupts": {
@@ -46,12 +75,20 @@
     },
     {
       "Traits": "Absorb",
-      "Actions": {
-        "Name": "Limb From Limb",
-        "ActionCost": 2,
-        "Tags": [ "true strike", "end turn", "1/round" ],
-        "Description": "The Demon charges 6 spaces in a straight line with phasing. Characters in its path must save or take 2[D]+[fray] and be stunned, or [fray] damage on a successful save. When the demon passes through a character, it summons a crawling mass adjacent to them."
-      }
+      "Actions": [
+        {
+          "Name": "Swell Flesh",
+          "RoundAction": true,
+          "Description": "The demon starts to swell and grow unnaturally in size. At the start of the round, it grows its size by +1. This has no maximum."
+        },
+        {
+          "Name": "Swell Flesh",
+          "ActionCost": 2,
+          "Tags": [ "true strike", "end turn", "1/round" ],
+          "Description": "The Demon rushes 4 spaces in a straight line with phasing. Characters in its path must save or take 2[D]+[fray] and be stunned, or [D]+[fray] damage on a successful save. When the demon passes through a character's space during this move, it summons a crawling mass adjacent to them, but only once per character."
+        }
+      ]
     }
-  ]
+  ],
+  "Tactics": "The Limb Demon scatters its mutated body over the battlefield, making it incredibly hard to move around safely for foes over time. Foes will have to position so that its relatively short range attacks cannot reach them without moving it out of the space of its own crawling mass spaces. In phase II, this becomes a race before the demon grows large enough to make this not an option."
 }

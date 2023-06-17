@@ -1,53 +1,137 @@
 {
   "Name": "Majesty Demon",
-  "Inherits": [ "Demon", "Legendary Leader" ],
+  "Inherits": [ "Demon", "Legend" ],
   "Type": "Foe",
   "Chapter": 3,
-  "Vitality": 20,
-  "HP": 120,
+  "HP": 150,
+  "RemoveSetupTraits": "Legion",
   "RemoveTraits": "Devour",
-  "Traits": [ "Size 2", "Flying", "Court of the Covenant" ],
+  "Traits": [ "Size 2", "Court of the Covenant" ],
   "Actions": [
-    {
-      "Name": "Great Enfeeble",
-      "ActionCost": 1,
-      "Tags": "ranged attack 6",
-      "Hit": "[D]+1 damage and character must save or be pacified.",
-      "Miss": "1 damage.",
-      "Effects": "Deals +2 damage, hit or miss, for each status the foe is affected by."
-    },
-    {
-      "Name": "Great Shift",
-      "ActionCost": 1,
-      "Description": "Teleport 3."
-    },
     {
       "Name": "Death XIII",
       "ActionCost": 1,
-      "Tags": "1/round",
-      "Description": "A character in range 6 pulses with dark energy. At the end of that character's turn, they take 20 damage. The character can reduce this damage to 10, then deal 10 damage to an adjacent character, but only if there is an adjacent character available."
+      "Tags": "2/round",
+      "Description": "A foe in range 6 that has not acted yet pulses with dark energy. At the end of that character's turn, they take 20 damage. The character can reduce this damage to 10, then deal 10 damage to an adjacent character, but only if there is an adjacent character available."
+    },
+    {
+      "Name": "Embroil",
+      "ActionCost": 1,
+      "Tags": [ "attack", "range 6" ],
+      "Hit": "[D]+1 damage.",
+      "Miss": "1 damage.",
+      "Effects": "Deals 2 piercing damage again to the target after this ability resolves, for each status the foe is affected by.",
+      "Combo": {
+        "Name": "Effluvia",
+        "ActionCost": 1,
+        "Tags": [ "attack", "range 6" ],
+        "AutoHit": "[fray] damage.",
+        "Effects": "Foe is pacified. Pacified foes take 3 damage, three times.",
+        "Combo": {
+          "Name": "Ebullient",
+          "ActionCost": 1,
+          "Tags": [ "attack", "range 6", "small blast" ],
+          "Hit": "[D]+[fray].",
+          "Miss": "[fray].",
+          "AreaEffect": "[fray].",
+          "Effects": "Copy all statuses on the foe, then inflict them in a different foe in the area."
+        }
+      }
+    },
+    {
+      "Name": "Fold Space",
+      "ActionCost": 1,
+      "Description": "Teleport 4 spaces."
     },
     {
       "Name": "Comet Rain",
       "ActionCost": 1,
-      "Tags": [ "range 6", "cross 2", "2/round" ],
-      "AreaEffect": "[D]+[fray]. Then, create two height 1 comet objects placed adjacent to characters targeted. Characters in cover from the demon take half damage."
+      "Tags": [ "range 6", "medium blast" ],
+      "AreaEffect": "[fray] damage.",
+      "Effects": "Character in the center space is shattered or vulnerable (demon's choice). Then create a height 1 smoking meteor object in free space adjacent to them."
     },
     {
-      "Name": "Wretched",
+      "Name": "Silence",
+      "ActionCost": 1,
+      "Tags": [ "range 4", "mark" ],
+      "Description": "The demon chooses a foe in range. That foe is sealed and must save. On a failed save, they are mark and become unable to attack while marked. This effect ends if the mark is transferred, or at the end of their turn."
+    },
+    {
+      "Name": "Backhand",
+      "ActionCost": 1,
+      "Description": "An adjacent foe is shoved 3.",
+      "Collide": "Foe is weakened or slashed (demon's choice)."
+    },
+    {
+      "Name": "Waterspout",
+      "ActionCost": 1,
+      "Tags": [ "range 4", "unerring", "repeatable" ],
+      "Description": "The demon spurts water, blinding or dazing a foe in range. Blinded foes take 2 damage."
+    },
+    {
+      "Name": "Primal Meteor",
       "ActionCost": 2,
-      "Tags": "1/round",
-      "Description": "A foe in range 8 must save or become winded, dazed, slowed, blinded, vulnerable, shattered, pacified, and branded. On a successful save, a character is affected by two of these statuses of the demon's choice. On a failed save, a character additionally becomes immune to a further use of this action for the rest of combat."
+      "Description": "All foes not in cover from the demon must save or take fray damage twice and become vulnerable, or once on a successful save. Then, summon a height 1 meteor object adjacent to any character affected. Round 3+: Fray damage three times on a failed save.",
+      "CustomComponents": {
+        "Name": "Round 5+",
+        "Description": "[fray] damage five times on a failed save."
+      }
     }
   ],
   "PhasesDescription": "The Majesty Demon changes phases when bloodied.",
   "Phases": [
     {
-      "Description": "No changes."
+      "Actions": [
+        {
+          "Name": "Declare Will",
+          "RoundAction": true,
+          "Description": "At the start of the round, the Majesty Demon makes one of the following decrees (roll 1d6).",
+          "Rolls": [
+            {
+              "Values": 1,
+              "Name": "Decree of Penance",
+              "Description": "All foes deal 10 damage twice, to themselves as an effect at the end of the round."
+            },
+            {
+              "Values": 2,
+              "Name": "Decree of Obesience",
+              "Description": "Foes must end their turn adjacent to one of the summons from Court of the Covenant, or else take 10 damage twice."
+            },
+            {
+              "Values": 3,
+              "Name": "Decree of Pain",
+              "Description": "Player characters cannot be reduced below 1 hp this round. Player characters at exactly 1 hp when the round ends regain hp to put them at 50% of maximum. Player characters not at exactly 1 hp become pacified, sealed, and stunned at the start of next round."
+            },
+            {
+              "Values": 4,
+              "Name": "Decree of Annihilation",
+              "Description": "One foe (chosen by the demon) takes 10 damage four times as an effect at the end of the round."
+            },
+            {
+              "Values": 5,
+              "Name": "Decree of Glory",
+              "Description": "Flagellant knights deal and take double damage this round."
+            },
+            {
+              "Values": 6,
+              "Name": "Decree of Haste",
+              "Description": "All movement and shoves are doubled this round."
+            }
+          ]
+        }
+      ]
     },
     {
-      "Description": "As phase I, but Death XIII can be used twice a round, and also has:",
-      "Traits": "Declare Will" 
+      "Description": "As phase 1, but the demon chooses two decrees, rolling twice and discarding duplicates. In addition, it gains::",
+      "Actions": [
+        {
+          "Name": "Wretched",
+          "ActionCost": 2,
+          "Tags": [ "1/round" ],
+          "Description": "A foe in range 8 must save or become weakened, slashed, dazed, blinded, vulnerable, shattered, pacified, and sealed. On a successful save, a character is affected by two of these statuses of the demon's choice. On a failed save, a character additionally becomes immune to a further use of this action for the rest of combat."
+        }
+      ]
     }
-  ]
+  ],
+  "Tactics": "Player characters may balk at the Majesty Demon's massive amount of hp, but it is mostly a puzzle fight in which destroying its summons is a good way of defeating it, and players can frequently deal double damage. Most, if not all summons are useful to the players and can be used to reduce damage from or manage the demon's incredibly powerful abilities, and players should use the summons wisely, as they get only one set per round. The demon can also use its own summons to mitigate damage or deny players shelter. It also can deal out some very nasty statuses, especially in phase II, and can obliterate players suffering from statuses very quickly."
 }

@@ -1,32 +1,35 @@
 {
   "Name": "Void Demon",
   "Inherits": [ "Demon", "Skirmisher" ],
-  "Traits": [ "Void Prowler", "Pure Nothingness" ],
+  "Traits": [ "Void Prowler" ],
   "Actions": [
-    {
-      "Name": "Tear Rift",
-      "ActionCost": 0,
-      "Description": "Create a void rift in range 3."
-    },
     {
       "Name": "Void Talon",
       "ActionCost": 1,
-      "Tags": [ "melee attack or ranged attack 3", "+1 boon" ],
+      "Tags": [ "attack", "range 3", "+1 boon" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
-      "CriticalHit": "(+[D]) and gain +1 action."
+      "Effects": [
+        "The [name] creates a void rift adjacent to its target, which could be placed underneath it.",
+        "The [name] can spend additional actions on this attack. For every action spend, it may teleport 2, once, before using this ability. If three or more actions are spent on this attack, it gains unerring and deals 2[D]+fray on hit instead."
+      ]
+    },
+    {
+      "Name": "Tear Rift",
+      "ActionCost": 1,
+      "Tags": [ "range 3" ],
+      "Description": "Create a void rift in range 3, then may teleport into the Rift."
     },
     {
       "Name": "Time Lock",
       "ActionCost": 1,
-      "Description": "A foe in range 6 is slowed."
+      "Tags": [ "range 4", "mark" ],
+      "Description": "A foe in range is marked. While marked, that foe cannot use interrupts, free actions, or abilities that cost 2 actions unless they are adjacent to an ally. If adjacent to an ally, a marked foe can save against this mark at the end of their turn, ending it on a success."
     },
     {
       "Name": "Decaying Orbit",
       "ActionCost": 1,
-      "Tags": "repeatable",
-      "Description": "Teleport 1, then deal 1 damage to an adjacent foe.",
-      "Effects": "Increase damage and teleport range by +1 for each time this ability was used this turn."
+      "Description": "Teleport 1, then teleport 1. Each time, may teleport an adjacent character 1 space."
     }
   ],
   "ConditionalAbilities": [

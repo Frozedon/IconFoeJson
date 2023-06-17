@@ -2,5 +2,13 @@
   "Name": "Screaming Demon",
   "Inherits": "Terror Demon",
   "Type": "Foe",
-  "Traits": "Death Whistle"
+  "Traits": "Death Shriek",
+  "Actions": [
+    {
+      "Name": "Howl of Terror",
+      "ActionCost": 1,
+      "Tags": [ "range 2" ],
+      "AreaEffect": "Foes in range take 2 damage, or 4 if they are not adjacent to an ally."
+    }
+  ]
 }

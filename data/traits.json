@@ -43,7 +43,7 @@
   },
   {
     "Name": "Amorphous",
-    "Description": "Can share space with other characters. Any characters that start their turn inside its space take [fray] damage."
+    "Description": "Phasing and can share space with other characters. Eharacters that end their turn inside its space take [fray] damage."
   },
   {
     "Name": "Arkentech Bike",
@@ -90,10 +90,6 @@
     "Description": "Aura 1. Self and allies in the area have dodge."
   },
   {
-    "Name": "Aura of Terror",
-    "Description": "Aura 1. Foes that end their turn in the aura must save or become pacified and shoved 1."
-  },
-  {
     "Name": "Automata",
     "Description": "If the [name] attacks the same character as last turn, it deals bonus damage and gains +1 boon. This effect stacks."
   },
@@ -106,6 +102,10 @@
       { "Description": "Characters hostile to the [name] must pass a save to mount it." },
       { "Description": "Characters mounting it the [name] when it is defeated are placed in any free adjacent space of the [name]'s choice and take 3 damage." }
     ]
+  },
+  {
+    "Name": "Black Temple Bell",
+    "Description": "This [name]'s huge bell is so heavy it can only attack once a round."
   },
   {
     "Name": "Blight Splash",
@@ -148,8 +148,16 @@
     "Description": "Has resistance unless suffering from a status."
   },
   {
+    "Name": "Burning Wheel",
+    "Description": "This [name]'s speed is 15. However, the [name] must move in the same direction for each ability it uses, and can only move in straight lines."
+  },
+  {
     "Name": "Camouflage",
     "Description": "If this [name] ends its turn adjacent to an object or or inside difficult or dangerous terrain, it gains stealth."
+  },
+  {
+    "Name": "Ceaseless Shrieking",
+    "Description": "If no foe is in line of sight of the [name] at the start of its turn, it spends its entire turn shrieking instead of using abilities. All foes take [D]+[fray] piercing damage and are stunned."
   },
   {
     "Name": "Cheap Trick",
@@ -180,8 +188,12 @@
     "Description": "Each time it would take damage from an action or ability, permanently reduce its armor by 1 for the rest of combat, even if that damage is reduced to 0. If it's armor is 0, it becomes vulnerable+."
   },
   {
+    "Name": "Crystal Burst",
+    "Description": "When the [name] is destroyed or devoured, it shatters, teleporting all characters in range 2 from it 2 spaces and dazing them."
+  },
+  {
     "Name": "Crystal Dagger",
-    "Description": "When the demon teleports, it may deal 1 damage to a foe in range 3."
+    "Description": "When the [name] teleports, it may deal 1 damage to a foe in range 3."
   },
   {
     "Name": "Curl Up",
@@ -196,8 +208,8 @@
     "Description": "Deals bonus damage and has evasion unless there's two or more adjacent characters."
   },
   {
-    "Name": "Death Whistle",
-    "Description": "When this character attacks, other characters in range 2 of it must save or lose any stances they are holding."
+    "Name": "Death Shriek",
+    "Description": "When defeated, all foes on the battlefield take 2 piercing damage and gain +1 curse on attacks and saves for the rest of the round."
   },
   {
     "Name": "Defiance",
@@ -226,6 +238,14 @@
     "Description": "+1 boon on attacks and bonus damage to characters inside pits."
   },
   {
+    "Name": "Distorted Soul",
+    "Description": "The [name] has the following abilities:",
+    "ListedItems": [
+      { "Description": "When not bloodied, gain resistance to all abilities from adjacent spaces. However, abilities used against them from range 2 or greater gain pierce and ignore resistance." },
+      { "Description": "When bloodied, gain resistance to damage from any ability not from adjacent spaces. However, all abilities used against them from adjacent spaces gain pierce and ignore resistance." }
+    ]
+  },
+  {
     "Name": "Divine Presence",
     "Description": "Immune to stun."
   },
@@ -241,15 +261,9 @@
     "Name": "Dweller in Dark",
     "Description": "The [name] has the following abilities:",
     "ListedItems": [
-      {
-        "Description": "Immune to blinded."
-      },
-      {
-        "Description": "May use its standard move to teleport from the area of any pit to any other pit in range 4."
-      },
-      {
-        "Description": "Has resistance while inside a pit."
-      }
+      { "Description": "Immune to blinded." },
+      { "Description": "May use its standard move to teleport from the area of any pit to any other pit in range 4." },
+      { "Description": "Has resistance while inside a pit." }
     ]
   },
   {
@@ -304,6 +318,10 @@
   {
     "Name": "Eyeless",
     "Description": "Immune to blinded."
+  },
+  {
+    "Name": "Eyes Within Eyes",
+    "Description": "Immune to blinded. Simply grows more eyes."
   },
   {
     "Name": "Flip Over",
@@ -396,6 +414,10 @@
     "Description": "Cannot be shoved, teleported, or removed from the battlefield."
   },
   {
+    "Name": "Implode",
+    "Description": "At the start of round 4, this [name] explodes, destroying the [name] and dealing [D]+[fray] piercing damage as an area effect to all foes on the battlefield."
+  },
+  {
     "Name": "Insulated",
     "Description": "Immune to damage from terrain and terrain effects."
   },
@@ -465,6 +487,10 @@
     "DashMultiplier": 0
   },
   {
+    "Name": "Lurker in the Dark",
+    "Description": "Has stealth+ if no other characters are in range 2."
+  },
+  {
     "Name": "Martyrdom",
     "Description": "When defeated, cures all allies in range 2."
   },
@@ -475,6 +501,17 @@
   {
     "Name": "Master of Strategy",
     "Description": "Before combat starts, may move every character to any space up to 2 spaces in any direction from their starting location."
+  },
+  {
+    "Name": "Mimicry",
+    "Description": "In any battle with the [name], place 5 decoys on the battlefield at the start of the battle. Unlike other summons, they lack the intangible trait and can be destroyed.",
+    "Summons": [
+      {
+        "Name": "Decoy",
+        "Tags": [ "Size 1 summon", "immobile", "1 hp", "1 defense" ],
+        "SummonEffects": "The GM secretly picks one of the decoys that is actually the [name]. When that decoy is targeted by an ability, before the ability is made, replace the decoy with the [name] and retarget the attack to the [name]. This reveals the [name]."
+      }
+    ]
   },
   {
     "Name": "Mob",
@@ -512,7 +549,7 @@
   },
   {
     "Name": "Painwrack",
-    "Description": "Characters that collide with this character take [fray] damage."
+    "Description": "Characters that collide with the [name] take 4 damage, but no more than once a round."
   },
   {
     "Name": "Partner Work",
@@ -529,6 +566,10 @@
   {
     "Name": "Pixie Dust",
     "Description": "Aura 2. Allies that start their turn in the aura gain flying until the end of their turn."
+  },
+  {
+    "Name": "Power From Pain",
+    "Description": "Has counter, and grants counter to all adjacent allies. Each time counter triggers on self or adjacent allies, this [name] gains 1 vigor."
   },
   {
     "Name": "Primal Strength",
@@ -639,6 +680,10 @@
   {
     "Name": "Spiritfeed",
     "Description": "All this character's abilities gain slay: gain +1 action."
+  },
+  {
+    "Name": "Split",
+    "Description": "At the start of any turn that it is bloodied, the [name] creates an [name] duplicate in an adjacent space. The duplicate is a new character that is an exact copy of the [name] at the time this split happens, except without this trait. It may act starting next round. The [name] can create multiple copies of itself this way in a fight."
   },
   {
     "Name": "Stench",

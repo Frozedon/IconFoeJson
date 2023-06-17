@@ -4,18 +4,20 @@
   "Type": "Foe",
   "Speed": 3,
   "Defense": 5,
-  "RemoveTraits": "Devour",
-  "Traits": "Summon",
+  "Traits": "Legion",
   "Actions": [
     {
       "Name": "Squirm",
-      "ActionCost": 1,
-      "Description": "Dash 2, then deal 1 piercing damage to all adjacent foes."
+      "ActionCost": 2,
+      "Effects": [
+        "Dash 2, then deal 1 piercing damage to all adjacent foes.",
+        "Up to two other Natals may deal 1 piercing damage to an adjacent foe."
+      ]
     },
     {
       "Name": "Void Vomit",
-      "ActionCost": 1,
-      "Description": "Deal 1 piercing damage as an effect to a character in range 3. If that character is adjacent to another demon, increase damage to 2."
+      "ActionCost": 2,
+      "Effects": "Create a difficult terrain space adjacent to up to two natals. This space can be created under characters, and deals 1 piercing damage to a character in the space when it is created."
     }
   ]
 }

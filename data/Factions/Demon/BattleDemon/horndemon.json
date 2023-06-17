@@ -3,19 +3,27 @@
   "Inherits": "Battle Demon",
   "Type": "Foe",
   "Chapter": 3,
-  "Traits": "Aura of Bloodlust",
+  "Traits": [ "Regeneration", "Hurl Body" ],
   "Actions": [
     {
-      "Name": "Earth Breaker",
-      "ActionCost": 1,
-      "Description": "Create a height 1 debris object in range 3. Characters adjacent take 2 damage and are shoved 1. Effect: Becomes a free action while bloodied."
+      "Name": "Void Fist",
+      "ActionCost": 2,
+      "Tags": [ "attack", "melee", "small blast", "+2 curse" ],
+      "Hit": "3[D]+[fray].",
+      "Miss": "[fray].",
+      "AreaEffect": "[fray].",
+      "Effects": [
+        "May rush 2 before this attack.",
+        "Attack target is shoved 3. "
+      ],
+      "Collide": "Foe is stunned."
     },
     {
-      "Name": "Hurl",
+      "Name": "Abyss Spike",
       "ActionCost": 1,
-      "Tags": "repeatable",
-      "Description": "The Horn Demon picks up an adjacent character or summon and shoves them 3.",
-      "Collide": "Character is dazed."
+      "Tags": [ "range 3" ],
+      "Description": "Create a height 2 Abyss spike object in range. Characters adjacent take 2 damage and are shoved 1. The spike releases an aura 1 of dark energy while it's active. Foes in the aura are weakened, and take 2 damage if they end their turn there.",
+      "Effects": "Becomes a free action while bloodied."
     }
   ]
 }

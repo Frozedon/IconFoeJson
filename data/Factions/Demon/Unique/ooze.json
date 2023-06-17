@@ -3,28 +3,29 @@
   "Inherits": [ "Demon", "Heavy" ],
   "Type": "Foe",
   "Vitality": 12,
-  "RemoveTraits": "Armor 3",
-  "Traits": [ "Phasing", "Amorphous", "Split" ],
+  "RemoveTraits": "Guard",
+  "Traits": [ "Amorphous", "Split" ],
   "Actions": [
     {
       "Name": "Tendril",
       "ActionCost": 1,
-      "Tags": "melee attack 3",
+      "Tags": [ "attack", "range 3" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
-      "Effects": "Foe must save or be dazed."
+      "Effects": "Foe is weakened."
     },
     {
       "Name": "Pseudopod",
       "ActionCost": 1,
-      "Description": "A character in range 3 is shoved 1 in a direction of the Ooze's choice."
+      "Tags": [ "range 3" ],
+      "Description": "A character in range is shoved 1 in a direction of the [name]'s choice."
     },
     {
       "Name": "Slide",
       "ActionCost": 1,
       "Tags": "repeatable",
-      "Description": "The Ooze dashes 3 spaces. Foes it passes through take 1 damage.",
-      "Effects": "Deals +1 damage and +1 dash for each time this ability was used this turn."
+      "Description": "The [name] rushes 3 spaces. Foes it passes through take 1 damage.",
+      "Effects": "If this ability is used again this turn, it deals +2 more damage. This effect does not stack."
     }
   ]
 }

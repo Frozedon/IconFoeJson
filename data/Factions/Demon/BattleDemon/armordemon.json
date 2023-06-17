@@ -2,17 +2,18 @@
   "Name": "Armor Demon",
   "Inherits": "Battle Demon",
   "Type": "Foe",
+  "Traits": "Sturdy",
   "Actions": [
     {
-      "Name": "Crushing Advance",
+      "Name": "Implacable Evil",
       "ActionCost": 1,
-      "Description": "Dash 1 space, shove all adjacent characters 1 space, then become sturdy until the start of next turn."
+      "Description": "Rush 1 space, shove all adjacent characters 1 space, then gain counter until the start of next turn."
     },
     {
-      "Name": "Hone",
-      "ActionCost": 1,
-      "Tags": "end turn",
-      "Description": "The next attack from this character becomes a critical hit on hit (+[D])."
+      "Name": "Instill Hatred",
+      "ActionCost": 0,
+      "Tags": [ "range 4" ],
+      "Description": "A bloodied foe in range gains hatred of the [name]."
     }
   ]
 }

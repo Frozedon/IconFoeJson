@@ -5,8 +5,6 @@
   "Actions": {
     "Name": "Swallow Whole",
     "ActionCost": 1,
-    "Recharge": 4,
-    "Description": "An adjacent character must save or be swallowed whole. Remove them from the battlefield. At the start of their turn, the demon spits them out, placing them in any adjacent space to the demon's current location, then shoving them 3 spaces. They are winded.",
-    "Collide": "Character takes [D]+[fray] and is stunned."
+    "Description": "An adjacent character must save or be swallowed whole. On a successful save, they take 2 damage and are weakened. On failed save, they are also removed from the battlefield. At the start of their turn, the [name] spits them out, placing them in any adjacent space to the [name]'s current location, then shoving them 3 spaces."
   }
 }

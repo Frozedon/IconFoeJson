@@ -7,14 +7,13 @@
     {
       "Name": "Shift",
       "ActionCost": 1,
-      "Description": "Teleport 3."
+      "Description": "Teleport 4."
     },
     {
       "Name": "Reality Rift",
       "ActionCost": 1,
-      "Recharge": 4,
-      "Tags": "terrain effect",
-      "Description": "The Feathered demon creates a line 4 terrain effect in range 6. Characters that enter any space of the effect may be teleported 2 by the demon."
+      "Tags": [ "rage 6" ],
+      "Description": "The [name] creates a line 3 terrain effect in range. Characters that enter any space of the effect may be teleported 2 by the [name]. The area lasts until this ability is used again."
     }
   ]
 }

@@ -1,56 +1,46 @@
 {
   "Name": "Battle Demon",
   "Inherits": [ "Demon", "Heavy" ],
-  "Traits": [ "Size 2", "Enrage" ],
+  "Traits": [ "Engorge" ],
   "Actions": [
     {
-      "Name": "Heavy Cleaver",
+      "Name": "Rampage",
       "ActionCost": 1,
-      "Tags": [ "melee attack", "line 3" ],
+      "Tags": [ "attack", "line 3", "true strike" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
       "AreaEffect": "[fray].",
-      "CriticalHit": "(+[D]) and gain +1 action."
+      "Effects": [
+        "Attack target is slashed. The [name] can spend additional actions on this attack. For each action spent, it can repeat the following effect after this ability resolves:",
+        "Rush 1, then deal 2 damage to all adjacent foes and shove them 1."
+      ]
     },
     {
-      "Name": "Reckless Swipe",
+      "Name": "Blood Feed",
       "ActionCost": 1,
-      "Description": "Dash 1, then all adjacent foes must save or become dazed."
+      "Description": "The [name] deals 2 damage to all adjacent characters. It then gains 2 vigor per demon damaged this way, up to a maximum of three times."
     },
     {
-      "Name": "Hack",
-      "ActionCost": 1,
-      "Tags": "repeatable",
-      "Description": "Deal 2 damage to an adjacent foe.",
-      "Effects": "Increase damage by +2 for each time this ability was used this turn. (4, 6, 8, etc)"
-    },
-    {
-      "Name": "Rancor",
-      "ActionCost": 1,
-      "Tags": "mark",
-      "Description": "Mark an adjacent foe.",
-      "Mark": "While marked, if that foe ends their turn adjacent to the Battle Demon, they take [D]+[fray] as an effect. A foe can end this effect by ending their turn more than 2 spaces from the Demon."
+      "Name": "Aura of Slaughter",
+      "ActionCost": 2,
+      "Tags": [ "stance", "aura" ],
+      "Description": "The [name] gains aura 2, with the following effects:",
+      "ListedItems": [
+        { "Description": "Foes that start or end their turn in this aura take 3 damage and must save or gain hatred of the demon. Bloodied foes fail the save." },
+        { "Description": "When the [name] uses devour or devour natal, it deals 2 damage to all other characters other than natals in the aura, then all demons in the aura may rush 1." }
+      ]
     }
   ],
   "ConditionalAbilities": [
     {
       "Chapter": 2,
-      "RemoveActions": "Heavy Cleaver",
-      "Actions": {
-        "Name": "Heavy Cleaver",
-        "ActionCost": 1,
-        "Tags": [ "melee attack", "line 3" ],
-        "Hit": "[D]+[fray].",
-        "Miss": "[fray].",
-        "AreaEffect": "[fray].",
-        "CriticalHit": "(+[D]) and gain +1 action.",
-        "Effects": "Critical hit (+[D]) on hit against bloodied foes."
-      }
+      "RemoveTraits": "Engorge",
+      "Traits": "Engorge 2"
     },
     {
       "Chapter": 3,
-      "RemoveTraits": "Enrage",
-      "Traits": "True Enrage"
+      "RemoveTraits": "Engorge 2",
+      "Traits": "Engorge 3"
     }
   ]
 }

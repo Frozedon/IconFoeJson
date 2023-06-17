@@ -2,20 +2,20 @@
   "Name": "Cutter Demon",
   "Inherits": "Void Demon",
   "Type": "Foe",
+  "RemoveActions": "Time Lock",
   "Actions": [
     {
       "Name": "Cut Through",
       "ActionCost": 1,
-      "Tags": "line 4",
-      "AreaEffect": "[fray] damage.",
-      "Effects": "The Cutter Demon may teleport to any point on the line after this ability resolves."
+      "Tags": [ "line 4" ],
+      "AreaEffect": "3 damage.",
+      "Effects": "The [name] may teleport to any point on the line after this ability resolves."
     },
     {
       "Name": "Hunt",
       "ActionCost": 1,
-      "Tags": "mark",
-      "Description": "The Cutter Demon marks a foe in range 5.",
-      "Mark": "While marked, the demon deals bonus damage, gains +1 boon on attack rolls against that foe, and may teleport 1 every time that foe takes an action. A marked foe can save against this mark at the end of their turns, ending it on a success."
+      "Tags": [ "range 4", "mark" ],
+      "Description": "The [name] marks a foe in range. While marked, the demon deals bonus damage against that foe, gains +1 boon on attack rolls against that foe, and may teleport 1 after that foe uses an ability. A marked foe can save against this mark at the end of their turns, ending it on a success."
     }
   ]
 }

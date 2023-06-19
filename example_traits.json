@@ -1,0 +1,20 @@
+[
+  {
+    "Name": "", // Name of this setup trait.
+    "DisplayName": "", // The name the program should display.
+    "Tags": [ "" ], // Anything that should be in paranthesis.
+    "Description": "", // Description text of this trait.
+    "CustomComponents": [ {}, ... ],
+    "ListedItems": [ {}, ... ], // Bulleted list of text. ItemData format, found at end of file.
+    "Actions": [ {}, ... ], // Format like Actions.
+    "ExtraActions": [ {}, ... ], // Format like Actions.
+    "Interrupts": [ {}, ... ], // Format like Interrupts.
+    "Rolls": [ {}, ... ], // RollData format, found at end of file.
+    "Summons": [ {}, ... ], // SummonData format, found at end of file.
+    "DashMultiplier": 0.5, // Replaces the statblock's DashMultiplier with this given value. Used for the Skirmisher trait.
+    "Defense": 0, // Replace the statblock's Defense.
+    "EncounterBudget": 1, // How many points does this foe take up in the encounter budget
+    "EncounterBudgetAdd": 1 // How many additional points does this foe take up in the encounter budget
+  },
+  {}, ...
+]

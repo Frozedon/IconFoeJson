@@ -1,100 +1,162 @@
 {
-  "Name": "", // Name of this statblock
-  "Inherits": [ "" ] , // Name of statblock you want to inherit traits from
-  "Type": "", // "Job", "Template", "UniqueFoe", or "Special"
-  "Group": "", // The group it should be filtered by
-  "DoNotDisplay": false, // If this should be displayed in the options
-  "EncounterBudget": 1.0, // The amount of points it takes in the encounter budget. Negative number deontes all points
-  "IsBasicTemplate": false, // Is a base template of a faction
-  "IsMob": false, // Is a mob foe
-  "IsElite": false, // Is an elite foe
-  "IsLegend": false, // Is a legend foe
-  "UsesClass": "", // The class of job that the template has to be on
-  "UsesFaction": "", // The faction that the template can only be on
-  "RestrictToBasicTemplates": false, // If this job should be restricted to only basic faction templates
-  "Chapter": 1, // Minimum chapter required to use
+  "Name": "", // Name of this statblock.
+  "DisplayName": "", // What name will be displayed on the statblock.
+  "Type": "", // "Job", "Template", "UniqueFoe", or "Special".
+  "Inherits": [ "" ] , // Names of statblock you want to inherit traits from.
+  "Chapter": 1, // Minimum chapter required to use.
+  "UsesTemplate": false, // If this statblock can have templates applied to it through the program.
+  "RemoveTraits": [ "", ... ], // Traits to remove from inherited template or job.
+  "RemoveSetupTraits": [ "", ... ], // Setup Traits to remove from inherited template or job.
+  "RemoveInterrupts": [ "", ... ], // Interrupts to remove from inherited template or job.
+  "RemoveActions": [ "", ... ], // Actions to remove from inherited template or job.
+  "RemoveUsesSpecialTemplates": [ "", ... ], // Special Templates to remove from inherited template or job.
+  "Faction": "", // The name of the faction this stablock belongs to and will be filtered by.
+  "Class": "", // The class of this statblock (Heavy, Skirmisher, Artillery, Leader, or Unique).
+  "SpecialClass": "", // The special class of this statblock (Mob, Elite, or Legend).
   "Vitality": 0,
-  "AddHPPercent": 0.0, // Percent more HP the foe gains
-  "HPMultiplier": 4, // Multiplied by Health to determine HP
-  "HPMultiplyByPlayers": false, // Adds note to multiply by players
+  "HP": 0, // By default, calculates to 4 x VIT. If this is present, it replaces the calculated HP with this given value.
+  "HPText": "", // Replace the text that displays on HP. Use token [HP] to get HP value and [MIN] to get minimum hp. (ie "[HP] per player character [MIN].").
+  "HPMultiplier": 4, // Multiplied by VIT to calculate HP.
+  "HPMultiplyByPlayers": false, // if true, adds note to multiply by players.
+  "Hits": "", // Replaces HP with Hits. Primarily used for Mobs.
   "Speed": 0,
-  "Dash": 0,
+  "DashMultiplier": 0.5, // Multiplied with Speed to determine Dash value.
   "Defense": 0,
-  "Armor": 0,
-  "FrayDamage": 0, // [fray]
-  "DamageDie": "", // [D]
-  "FactionBlight": "",
-  "MinimumRecharge": 0, // To set a minimum for recharge values on recharge abilities
-  "Traits": [
+  "FrayDamage": 0, // Used for token [fray].
+  "DamageDie": 0, // The size of the die, so 10 for d10, 8 for d8, etc. Use for token [D].
+  "MembersPerPlayer": 0, // How many members per player. Primarily used for Mobs.
+  "Tactics": "", // Description of tactics. Primarily used for Legends.
+  "UsesSpecialTemplates": [ "", ...], // Names of special templates this stablock can have applied. They're for stuff like the Imperial Officer.
+  "Traits": [ "", ... ], // Names of traits this stablock uses. Traits are defined in traits.json files.
+  "SetupTraits": [ // Displayed in the secondary setup box of the program instead of the primary statlbock.
     {
-      "Name": "",
-      "Tags": [ "" ], // Anything that should be in paranthesis
-      "Description": "",
-      "DescriptionNonessential": "", // This description is handled automatically and can be hidden
-      "Nonessential": false, // This trait is handled automatically and can be hidden
-    }
-  ],
-  "RemoveTraits": [ "", ... ], // Traits to remove from inherited template or job
-  "SetupTraits": [
-    {
-      "Name": "",
-      "Tags": [ "" ], // Anything that should be in paranthesis
-      "Description": ""
-    }
+      "Name": "", // Name of this setup trait.
+      "DisplayName": "", // The name the program should display.
+      "Tags": [ "" ], // Anything that should be in paranthesis.
+      "Description": "", // Description text of this trait.
+      "CustomComponents": [ {}, ... ],
+      "ListedItems": [ {}, ... ], // Bulleted list of text. ItemData format, found at end of file.
+      "Actions": [ {}, ... ], // Format like Actions.
+      "ExtraActions": [ {}, ... ], // Format like Actions.
+      "Interrupts": [ {}, ... ], // Format like Interrupts.
+      "Rolls": [ {}, ... ], // RollData format, found at end of file.
+      "Summons": [ {}, ... ] // SummonData format, found at end of file.
+    },
+    {}, ...
   ],
   "Interrupts": [
     {
       "Name": "",
       "Count": 0,
-      "Tags": [ "" ], // Anything that should be in paranthesis after "Interrupt #"
+      "Tags": [ "" ], // Anything that should be in parenthesis after "Interrupt #"
       "Description": "",
       "Trigger": "",
-      "Effects": "",
-      "Collide": ""
-    }
+      "Effects": [ "", ... ],
+      "Collide": "",
+      "ListedItems": [ {}, ... ], // Bulleted list of text. ItemData format, found at end of file.
+      "Summons": [ {}, ... ] // SummonData format, found at end of file.
+    },
+    {}, ...
   ],
   "Actions": [
     {
       "Name": "",
-      "ActionCost": 0,
+      "ActionCost": -1, // Number of actions this action costs. 0 is "free action", -1 does not display
+      "RoundAction": false, // If this is a round action or not.
       "Tags": [ "" ], // Anything that should be in paranthesis after "action #"
-      "Description": "",
-      "Hit": "",
+      "Description": "", // This displays first on the stat block with no prefix. The following data is all displayed in the order shown here.
+      "PreEffects": [ "", ... ], // Effect:, Effect:, ...
+      "Hit": "", // On hit
       "AutoHit": "",
-      "Critical": "",
       "Miss": "",
-      "PostAttack": "",
-      "AreaEffect": "",
-      "Effects": "",
+      "AreaEffect": "", // If miss and area effect have same text, they will display together as "Miss or Area Effect:".
+      "Effects": [ "", ... ], // Effect:, Effect:, ...
+      "Delay": "",
       "Mark": "",
       "Stance": "",
-      "Collide": "",
-      "Blightboost": "",
       "TerrainEffect": "",
+      "Collide": "",
+      "Slay": "",
+      "Exceed": "",
+      "Charge": "",
       "Special": "",
-      "Combo": { }, // Same variables as "Actions"
-      "PostAction": ""
-    }
-  ],
-  "BodyParts": [
-    {
-      "Name": "",
-      "HP": 0,
-      "HPMultiplyByPlayers": false,
-      "Description": ""
-    }
+      "CustomComponents": [ {}, ... ], // ItemData format, found at end of file.
+      "PostEffects": [ "", ... ], // Effect:, Effect:, ...
+      "PostAreaEffect": "", // Area Effect:
+      "PostCollide": "", // Collide:
+      "ListedItems": [ {}, ... ], // Bulleted list of text. ItemData format, found at end of file.
+      "Rolls": [ {}, ... ], // RollData format, found at end of file.
+      "ExtraActions": [ {}, ... ], // Displayed actions that are associated directly with this ability. Action format.
+      "Summons": [ {}, ... ], // SummonData format, found at end of file.
+      "Interrupts": [ {}, ... ], // Displayed interrupts that are associated directly with this ability. Interrupt format.
+      "Combo": {} // Used for if this action has a combo action. Action format.
+    },
+    {}, ...
   ],
   "PhasesDescription": "", // Description to explain how their phases work
   "Phases": [ // This list is given in the order of the phases
     {
       "Name": "",
       "Description": "",
-      "Traits": [
-        { } // Same variables as "Traits"
-      ],
-      "Actions": [
-        { } // Same variables as "Actions"
-      ]
-    }
+      "ListedItems": [ {}, ... ], // Bulleted list of text. ItemData format, found at end of file.
+      "Traits": [ "", ... ], // Names of traits this stablock uses. Traits are defined in traits.json files.
+      "Interrupts": [ {}, ... ], // Interrupt format.
+      "Actions": [ {}, ... ], // Action format.
+    },
+    {}, ...
+  ],
+  "ExtraAbilitySets": [ // Used for stat blocks that have multiple sets of aciton and traits displayed seperately from the rest. Like the Chimaera's heads or the Blood Bound Band members.
+    {
+      "Name": "",
+      "Class": "", // Class that this ability set should be color coded as (Heavy, Skirmisher, Artillery, Leader, or Unique).
+      "Description": "",
+      "ListedItems": [ {}, ... ], // Bulleted list of text. ItemData format, found at end of file.
+      "Traits": [ "", ... ], // Names of traits this stablock uses. Traits are defined in traits.json files.
+      "Interrupts": [ {}, ... ], // Interrupt format.
+      "Actions": [ {}, ... ], // Action format.
+    },
+    {}, ...
+  ],
+  "ConditionalAbilities": [ // Used to change stats based on other stats. Primarily used for chapter differences.
+    {
+      "Chapter": 1, // Conditional. If the chapter is currently this or higher.
+      "IsSpecialClasses": [ "", ... ], // Conditional. Filter by if this is currently that special class.
+      "IsNotSpecialClasses": [ "", ... ], // Conditional. Filter by if this is currently NOT that special class.
+      "RemoveTraits": [ "", ... ], // Traits to remove from inherited template or job.
+      "RemoveSetupTraits": [ "", ... ], // Setup Traits to remove from inherited template or job.
+      "RemoveInterrupts": [ "", ... ], // Interrupts to remove from inherited template or job.
+      "RemoveActions": [ "", ... ], // Actions to remove from inherited template or job.
+      "RemoveUsesSpecialTemplates": [ "", ... ], // Special Templates to remove from inherited template or job.
+      "Traits": [ "", ... ], // Names of traits this stablock uses. Traits are defined in traits.json files.
+      "SetupTraits": [ "", ... ], // Names of traits this stablock uses. Traits are defined in traits.json files.
+      "Interrupts": [ {}, ... ], // Interrupt format.
+      "Actions": [ {}, ... ], // Action format.
+      "UsesSpecialTemplates": [ "", ... ], // Names of special templates this stablock can have applied. They're for stuff like the Imperial Officer.
+      "SpecialClass": "", // The special class of this statblock (Mob, Elite, or Legend).
+      "HPMultiplier": 4, // Multiplied by VIT to calculate HP.
+    },
+    {}, ...
   ]
 }
+
+
+// Special formats
+
+"ItemData": [
+  {
+    "Name": "", // Name of item. Usually display in bold or italics.
+    "Description": "", // Text to display.
+    "CustomComponents": [ {}, ... ], // ItemData format, found at end of file.
+    "ListedItems": [ {}, ... ], // Bulleted list of text. ItemData format, found at end of file.
+  }
+]
+
+"Rolls": [
+  {
+    "Values": [ 0, ... ], // List of roll values this item is used for.
+    "Plus": true, // If the roll number should be displayed with a trailing +. So you can display stuff like "5+", "3+", etc.
+    "Name": "", // Name of item. Usually display in bold or italics.
+    "Description": "", // Text to display.
+    "CustomComponents": [ {}, ... ], // ItemData format, found at end of file.
+  }
+]

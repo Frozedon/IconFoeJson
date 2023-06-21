@@ -3,31 +3,26 @@
   "Inherits": [ "Jotunn", "Heavy" ],
   "Type": "Foe",
   "RemoveTraits": [ "Titanblood", "Titanfall" ],
-  "Traits": [ "Thinblood", "Eyeless", "Blood Scent" ],
+  "Traits": [ "Thinblood", "Eyeless" ],
   "Actions": [
     {
-      "Name": "Slaver",
+      "Name": "Slavering Maw",
       "ActionCost": 1,
-      "Tags": [ "melee attack", "true strike" ],
+      "Tags": [ "attack", "true strike" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
-      "Effects": "The Nilfling can dash 2 before this attack."
-    },
-    {
-      "Name": "Slam",
-      "ActionCost": 1,
-      "Description": "An adjacent foe takes [fray] damage and is shoved 1."
+      "Effects": "The [name] can rush 2 before this attack."
     },
     {
       "Name": "Leap",
       "ActionCost": 1,
-      "Tags": "repeatable",
-      "Description": "The Nilfling flies 2. When it lands, all adjacent characters are shoved 1."
+      "Tags": [ "repeatable" ],
+      "Description": "The [name] flies 2. When it lands, all adjacent characters are shoved 1. If it starts this move from a higher elevation and ends on a lower one, increase the fly to 4, and all adjacent characters when it lands take 2 damage."
     },
     {
       "Name": "Finish Off",
       "ActionCost": 1,
-      "Description": "The Nilfling deals a phenomenal blow to an adjacent bloodied character. That character must save or take 2[D]+[fray], become dazed, and become winded. On a successful save, they only take [D]+[fray] and are either dazed or winded (the Nilfling can choose)."
+      "Effects": "The [name] deals a phenomenal blow to an adjacent bloodied character. That character must save or take 8 damage, become slashed, and become weakened. On a successful save, they only take 4 damage and are either slashed or weakened (the [name] can choose)."
     }
   ],
   "ConditionalAbilities": [

@@ -1,0 +1,51 @@
+{
+  "Name": "Bale Troll",
+  "Inherits": [ "Jotunn", "Heavy" ],
+  "Type": "Foe",
+  "Chapter": 2,
+  "RemoveTraits": "Titanblood",
+  "Traits": [ "Size 2", "Wild Regeneration" ],
+  "Actions": [
+    {
+      "Name": "Storm of Claws",
+      "ActionCost": 1,
+      "Tags": [ "attack", "range 3", "true strike" ],
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "Effects": [
+        "Attack target is slashed.",
+        "All foes in range are shoved 1 towards the [name]."
+      ],
+      "Combo": {
+        "Name": "Boulder Fist",
+        "ActionCost": 2,
+        "Tags": [ "attack", "burst 1 (target)", "+2 curse" ],
+        "Hit": "3[D]+[fray].",
+        "Miss": "[fray].",
+        "AreaEffect": "[fray].",
+        "Effects": [
+          "May rush 2 before this attack.",
+          "Attack target is shoved 3."
+        ],
+        "Collide": "Foe is stunned."
+      }
+    },
+    {
+      "Name": "Incredible Bulk",
+      "ActionCost": 1,
+      "Tags": [ "stance", "end turn" ],
+      "Description": "The [name] deals 10 piercing damage to itself, which cannot reduce it below 1 hp. While in this stance, it gains counter and is sturdy. All allies adjacent to the [name] gain resistance. This stance ends at the start of its turn, but it can deal 10 piercing damage to itself again to refresh it."
+    },
+    {
+      "Name": "Hurl Boulder",
+      "ActionCost": 1,
+      "Tags": [ "range 4" ],
+      "Effects": "A foe in range takes 2 damage and is shoved 1, then create a height 1 boulder object next to them."
+    },
+    {
+      "Name": "Re-attach Limb",
+      "ActionCost": 1,
+      "Description": "The [name] absorbs an adjacent loose limb, destroying it. It gains 4 vigor, and may remove a status affecting it."
+    }
+  ]
+}

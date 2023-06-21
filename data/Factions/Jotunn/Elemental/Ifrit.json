@@ -6,14 +6,14 @@
     {
       "Name": "Dancing Flames",
       "ActionCost": 1,
-      "Description": "The Ifrit deals 2 damage to a character in range 3 and inflicts burning, then deals 2 damage to all burning characters."
+      "Tags": [ "range 3" ],
+      "Description": "The [name] deals 2 damage to a character in range, then deals 2 damage to all marked foes."
     },
     {
       "Name": "Ignition",
       "ActionCost": 1,
-      "Tags": "mark",
-      "Description": "The Ifrit marks a foe in range 3.",
-      "Mark": "While marked, that foe is burning+, and at the start of that foe's turn, or when the Jotunn hits the target with an attack, they explode for a blast 1 area effect, dealing [fray] damage to all characters within."
+      "Tags": [ "range 3", "multimark", "1/round" ],
+      "Description": "The [name] marks a foe in range. At the start of that foe's turn, or when the Jotunn hits the target with an attack, they explode for a small blast area effect centered on them, dealing 2 damage to all characters within."
     }
   ]
 }

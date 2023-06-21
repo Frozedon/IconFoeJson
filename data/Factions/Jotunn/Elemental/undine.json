@@ -6,7 +6,7 @@
   "Actions": {
     "Name": "Waterspout",
     "ActionCost": 1,
-    "Tags": "repeatable",
-    "Description": "The Undine spurts water, blinding a foe in range 4 and inflicting frostbite. Blinded or frostbitten foes also take [fray] damage twice."
+    "Tags": [ "range 4", "unerring", "repeatable" ],
+    "Description": "The [name] spurts water, blinding or dazing a foe in range. Blinded foes take 2 damage."
   }
 }

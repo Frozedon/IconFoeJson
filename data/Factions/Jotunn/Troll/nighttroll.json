@@ -8,61 +8,47 @@
     {
       "Name": "Bale",
       "ActionCost": 1,
-      "Tags": [ "stance", "end turn" ],
-      "Description": "The Night troll becomes immobile and fixes its gaze on a character within range 3. While within range 2 of the troll, that character gains +1 curse on saves and attacks. The Troll can also exit this stance as a free action."
+      "Tags": [ "stance", "aura 2", "end turn" ],
+      "Description": "The [name] becomes immobile and fixes its gaze on one character in the aura. While within the aura, that character automatically misses with all attacks (turn any hit or critical hit into a miss instead). The Troll can exit this stance or change its target by spending 1 action."
     },
     {
       "Name": "Cauldron",
       "ActionCost": 1,
-      "Tags": "summon",
-      "Description": "The Troll summons a cauldron in range 2. Characters adjacent to the cauldron when it's summoned are shoved 1.",
+      "Tags": [ "range 3", "summon" ],
+      "Description": "The [name] summons a cauldron in range, a height 1 object. Characters adjacent to the cauldron when it's summoned are shoved 1.",
       "Summons": {
         "Name": "Cauldron",
         "IsObject": true,
-        "Tags": [ "Size 1", "Height 1" ],
-        "SummonEffects": "The Cauldron has aura 1. The troll and any of its allies in the aura gain +1 boon on saves, whereas foes gain +1 curse. The Troll gains additional actions when adjacent to its cauldron.",
+        "Tags": [ "Object", "height 1" ],
+        "SummonEffects": [
+          "The Cauldron has aura 1. The [name] and any of its allies in the aura gain +1 boon on saves, and foes gain +1 curse on saves in the aura.",
+          "The [name] gains additional actions when in range 2 of its cauldron."
+        ],
         "ListedActions": [
           {
             "Name": "Strange Brew",
             "ActionCost": 1,
-            "Description": "The Troll throws a potion at an ally in range 3, then rolls 1d6.",
+            "Tags": [ "range 3" ],
+            "Description": "The [name] throws a potion at an ally in range. That ally gains 3 vigor, then gambles.",
             "Rolls": [
-              {
-                "Values": 1,
-                "Description": "The brew explodes, stunning the ally."
-              },
-              {
-                "Values": 2,
-                "Description": "The ally increases in size by +1 for the rest of combat, up to a max of size 3."
-              },
-              {
-                "Values": 3,
-                "Description": "The ally gains Defiance."
-              },
-              {
-                "Values": 4,
-                "Description": "The ally is teleported 2."
-              },
-              {
-                "Values": 5,
-                "Description": "The ally gains vigor 1."
-              },
-              {
-                "Values": 6,
-                "Description": "The ally immediately clears all conditions, marks, and blights."
-              }
+              { "Values": 1, "Description": "The brew explodes, stunning the ally." },
+              { "Values": 2, "Description": "The ally increases in size by +1 for the rest of combat, up to a max of size 3. Characters in the area when the ally increases in size are removed and placed adjacent to it." },
+              { "Values": 3, "Description": "The ally gains Defiance." },
+              { "Values": 4, "Description": "The ally is teleported 2."  },
+              { "Values": 5, "Description": "The ally gains 6 more vigor." },
+              { "Values": 6, "Description": "The ally immediately clears all statuses and marks." }
             ]
-          },
-          {
-            "Name": "Cauldron Smash",
-            "ActionCost": 2,
-            "Description": "An adjacent foe is stunned and takes [fray] damage. Unsummon the cauldron."
           },
           {
             "Name": "Black Flame",
             "ActionCost": 1,
-            "Tags": [ "range 5", "blast 1" ],
-            "AreaEffect": "All characters take [fray] damage and are branded."
+            "Tags": [ "range 5", "small blast" ],
+            "AreaEffect": "All characters take [fray] damage. Bloodied characters sealed."
+          },
+          {
+            "Name": "Cauldron Smash",
+            "ActionCost": 2,
+            "Description": "An adjacent foe is stunned and takes 6 damage. Unsummon the cauldron."
           }
         ]
       }
@@ -72,62 +58,98 @@
     {
       "Chapter": 2,
       "RemoveActions": "Cauldron",
-      "Actions": {
-        "Name": "Cauldron",
-        "ActionCost": 1,
-        "Tags": "summon",
-        "Description": "The Troll summons a cauldron in range 2. Characters adjacent to the cauldron when it's summoned are shoved 1.",
-        "Summons": {
+      "Actions": [
+        {
           "Name": "Cauldron",
-          "IsObject": true,
-          "Tags": [ "Size 1", "Height 1" ],
-          "SummonEffects": "The Cauldron has aura 2. The troll and any of its allies in the aura gain +1 boon on saves, whereas foes gain +1 curse. The Troll gains additional actions when adjacent to its cauldron.",
-          "ListedActions": [
-            {
-              "Name": "Strange Brew",
-              "ActionCost": 1,
-              "Description": "The Troll throws a potion at an ally in range 3, then rolls 1d6.",
-              "Rolls": [
-                {
-                  "Values": 1,
-                  "Description": "The brew explodes, stunning the ally."
-                },
-                {
-                  "Values": 2,
-                  "Description": "The ally increases in size by +1 for the rest of combat, up to a max of size 3."
-                },
-                {
-                  "Values": 3,
-                  "Description": "The ally gains Defiance."
-                },
-                {
-                  "Values": 4,
-                  "Description": "The ally is teleported 2."
-                },
-                {
-                  "Values": 5,
-                  "Description": "The ally gains vigor 1."
-                },
-                {
-                  "Values": 6,
-                  "Description": "The ally immediately clears all conditions, marks, and blights."
-                }
-              ]
-            },
-            {
-              "Name": "Cauldron Smash",
-              "ActionCost": 2,
-              "Description": "An adjacent foe is stunned and takes [fray] damage. Unsummon the cauldron."
-            },
-            {
-              "Name": "Black Flame",
-              "ActionCost": 1,
-              "Tags": [ "range 5", "blast 1" ],
-              "AreaEffect": "All characters take [fray] damage and are branded."
-            }
-          ]
+          "ActionCost": 1,
+          "Tags": [ "range 3", "summon" ],
+          "Description": "The [name] summons a cauldron in range, a height 1 object. Characters adjacent to the cauldron when it's summoned are shoved 1.",
+          "Summons": {
+            "Name": "Cauldron",
+            "IsObject": true,
+            "Tags": [ "Object", "height 1" ],
+            "SummonEffects": [
+              "The Cauldron has aura 2. The [name] and any of its allies in the aura gain +1 boon on saves, and foes gain +1 curse on saves in the aura.",
+              "The [name] gains additional actions when in range 2 of its cauldron."
+            ],
+            "ListedActions": [
+              {
+                "Name": "Strange Brew",
+                "ActionCost": 1,
+                "Tags": [ "range 3" ],
+                "Description": "The [name] throws a potion at an ally in range. That ally gains 3 vigor, then gambles.",
+                "Rolls": [
+                  { "Values": 1, "Description": "The brew explodes, stunning the ally." },
+                  { "Values": 2, "Description": "The ally increases in size by +1 for the rest of combat, up to a max of size 3. Characters in the area when the ally increases in size are removed and placed adjacent to it." },
+                  { "Values": 3, "Description": "The ally gains Defiance." },
+                  { "Values": 4, "Description": "The ally is teleported 2."  },
+                  { "Values": 5, "Description": "The ally gains 6 more vigor." },
+                  { "Values": 6, "Description": "The ally immediately clears all statuses and marks." }
+                ]
+              },
+              {
+                "Name": "Black Flame",
+                "ActionCost": 1,
+                "Tags": [ "range 5", "small blast" ],
+                "AreaEffect": "All characters take [fray] damage. Bloodied characters sealed."
+              },
+              {
+                "Name": "Cauldron Smash",
+                "ActionCost": 2,
+                "Description": "An adjacent foe is stunned and takes 6 damage. Unsummon the cauldron."
+              }
+            ]
+          }
         }
-      }
+      ]
+    },
+    {
+      "Chapter": 3,
+      "RemoveActions": "Cauldron",
+      "Actions": [
+        {
+          "Name": "Cauldron",
+          "ActionCost": 1,
+          "Tags": [ "range 3", "summon" ],
+          "Description": "The [name] summons a cauldron in range, a height 1 object. Characters adjacent to the cauldron when it's summoned are shoved 1.",
+          "Summons": {
+            "Name": "Cauldron",
+            "IsObject": true,
+            "Tags": [ "Object", "height 1" ],
+            "SummonEffects": [
+              "The Cauldron has aura 2. The [name] and any of its allies in the aura gain +1 boon on saves, and foes gain +1 curse on saves in the aura. Foes also do no save against conditions at the end of their turn while in the aura.",
+              "The [name] gains additional actions when in range 2 of its cauldron."
+            ],
+            "ListedActions": [
+              {
+                "Name": "Strange Brew",
+                "ActionCost": 1,
+                "Tags": [ "range 3" ],
+                "Description": "The [name] throws a potion at an ally in range. That ally gains 3 vigor, then gambles.",
+                "Rolls": [
+                  { "Values": 1, "Description": "The brew explodes, stunning the ally." },
+                  { "Values": 2, "Description": "The ally increases in size by +1 for the rest of combat, up to a max of size 3. Characters in the area when the ally increases in size are removed and placed adjacent to it." },
+                  { "Values": 3, "Description": "The ally gains Defiance." },
+                  { "Values": 4, "Description": "The ally is teleported 2."  },
+                  { "Values": 5, "Description": "The ally gains 6 more vigor." },
+                  { "Values": 6, "Description": "The ally immediately clears all statuses and marks." }
+                ]
+              },
+              {
+                "Name": "Black Flame",
+                "ActionCost": 1,
+                "Tags": [ "range 5", "small blast" ],
+                "AreaEffect": "All characters take [fray] damage. Bloodied characters sealed."
+              },
+              {
+                "Name": "Cauldron Smash",
+                "ActionCost": 2,
+                "Description": "An adjacent foe is stunned and takes 6 damage. Unsummon the cauldron."
+              }
+            ]
+          }
+        }
+      ]
     }
   ]
 }

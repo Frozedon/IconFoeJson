@@ -1,7 +1,7 @@
 [
   {
     "Name": "Aetherstorm",
-    "Description": "The Quintessence's Raging Storm deals divine damage, and its allies are immune to its effects. In addition, when any character starts its turn in the area, the Quintessent can apply one of following effects.",
+    "Description": " The [name]'s Raging Storm deals 2 divine damage to all foes inside when created, and its allies are immune to its effects. In addition, when any character starts its turn in the area, the [name] can apply one of following effects.",
     "ListedItems": [
       { 
         "Name": "Earth",
@@ -17,35 +17,21 @@
       },
       { 
         "Name": "Water",
-        "Description": "End a mark, blight, or condition on the character."
+        "Description": "End a status on the character."
       }
     ]
   },
   {
     "Name": "Crystal Perfection",
-    "Description": "This Jotunn can use the average of its damage die (6) instead of rolling for damage."
+    "Description": "The [name] can use the average of its damage die (6) instead of rolling for damage."
   },
   {
     "Name": "Cursed Cauldron",
     "Description": "Foes do not save against conditions at the end of their turn while in the aura of the cauldron."
   },
   {
-    "Name": "Exalt Erenhelion",
-    "Description": "At the start of the Round, the Aetnir either chooses Crush Cowards or Break the Mighty. At the end of the round, the chosen effect occurs.",
-    "ListedItems": [
-      { 
-        "Name": "Crush Cowards",
-        "Description": "The Aetnir raises its weapon. At the end of the round, it sweeps out with a massive slash, affecting a blast 3 area effect around it, with different effects depending on how close characters are. Foes 3 spaces away take 2[D]+[fray]. Foes 2 spaces away take [D]+[fray]. Adjacent foes take [fray] damage."
-      },
-      { 
-        "Name": "Break the Mighty",
-        "Description": "The Aetnir raises its shield. At the end of the round, it slams its shield down. Adjacent characters take 2[D]+[fray] and are shoved 2 spaces away. Collide: Characters take [D]+[fray] again and are stunned."
-      }
-    ]
-  },
-  {
     "Name": "Living Deeps",
-    "Description": "Instead of a 2x2 space, this Jotunn occupies an Arc 4 space that can be placed in any configuration. When it moves, move either end space of the Arc, then re-place the Arc in any valid configuration. It can make attacks or use abilities from any of its spaces."
+    "Description": "Instead of a 2x2 space, this [name] occupies an Arc 4 space that can be placed in any configuration. When it moves, move either end space of the Arc, then re-place the Arc in any valid configuration. It can make attacks or use abilities from any of its spaces."
   },
   {
     "Name": "Primal Aether",
@@ -57,20 +43,20 @@
   },
   {
     "Name": "Scouring Gaze",
-    "Description": "At the start of the round, the Cyclopean chooses a blast 1 area in range 6. At the end of the round, they shoot a massive bolt of energy at that area, dealing [D]+[fray] piercing damage as an area effect to characters within. If the Cyclopean is blinded, characters within take only 1 damage instead."
+    "Description": "The [name] shoots a beam of energy at any foe that ends their turn in the Dampen Time area, dealing 4 piercing damage to them. If they are blinded, foes take only 1 piercing damage instead."
   },
   {
-    "Name": "Size 1 OR Size 2",
-    "Description": "This character takes up either a (1 by 1) or (2 by 2) area of spaces."
-  },
-  {
-    "Name": "Titan Armament",
-    "Description": "This Jotunn is armed with Titansteel weaponry. They can take 1 extra turn a round, and 1/round may dash 2 as a free action, then deal [fray] damage to all adjacent foes.",
-    "EncounterBudgetAdd": 1
+    "Name": "Sweet Torment",
+    "Description": "The [name] has aura 2. Foes in the [name]'s aura or in the aura of their cauldron do not save against statuses at the end of their turn."
   },
   {
     "Name": "Thinblood",
-    "Description": "Size 1, and doesn't have the elite trait like other Jotunn."
+    "Description": "Size 1, takes 1 point in an encounter budget, and doesn't have the elite trait like other Jotunn."
+  },
+  {
+    "Name": "Titan Armament",
+    "Description": "This [name] is armed with Titansteel weaponry. They can take 1 extra turn a round.",
+    "EncounterBudgetAdd": 1
   },
   {
     "Name": "Titanblood",
@@ -78,14 +64,15 @@
   },
   {
     "Name": "Titanfall",
-    "Description": "When defeated, roll 1d6 and assign a compass direction (1-None, 2- N, 3-E, 4-S, 5-W, 6-GM choice). The Jotunn falls into a close blast 1 area to its space. Size 1 characters inside must save or take 6 damage, or 3 on a successful save. Move all characters out of the area into the closest available space and place the defeated Jotunn there. They count as a 2x2 space of height 1 terrain while defeated."
+    "Description": "When defeated, roll 1d6 and assign a compass direction (1-none, 2- N, 3-E, 4-S, 5-W, 6-GM choice). The Jotunn falls into a medium blast area placed adjacent to its space in that direction. Size 1 characters inside must save or take 6 damage, or 3 on a successful save. Move all characters out of the area into the closest available space and place the defeated Jotunn there. They count as a 2x2 height 1 object while defeated."
   },
   {
-    "Name": "True Titanblood",
-    "Description": "Gain resistance at 25% max hp or lower."
-  },
-  {
-    "Name": "Whirlgang",
-    "Description": "At the start of its turn, the Mistral and all allies in range 2 may fly 1 in the same direction."
+    "Name": "Wild Regeneration",
+    "Description": "At the end of any turn the [name] takes 10 or more damage to its hp, it gains 10 vigor, then summon a loose limbs summon in free space in range 2.",
+    "Summons": {
+      "Name": "Loose Limbs",
+      "Tags": [ "Summon" ],
+      "SummonEffects": "At the start of the [name]'s turn, may rush 1 space, then deal 2 damage to an adjacent foe."
+    }
   }
 ]

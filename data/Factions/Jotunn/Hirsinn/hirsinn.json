@@ -7,43 +7,37 @@
     {
       "Name": "Mighty Smite",
       "ActionCost": 1,
-      "Tags": [ "melee attack", "line 4", "true strike" ],
+      "Tags": [ "attack", "line 4", "true strike" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
-      "AreaEffect": "[fray]."
+      "AreaEffect": "[fray].",
+      "Effects": "Deals 2 damage again to attack target and the [name] gains 2 vigor if the foe is affected by a status. If that foe is affected by 3 or more statuses, increase damage and vigor gain to 5."
     },
     {
-      "Name": "Beserkgang",
+      "Name": "Berserkgang",
       "ActionCost": 1,
-      "Description": "A foe in range 4 must save or gain hatred of the Jotunn. On a successful save, they are dazed."
+      "Tags": [ "range 3", "1/round" ],
+      "Description": "A foe in range must save or gain hatred of the [name]. On a successful save, they are weakened. If the target or [name] is bloodied, they gain +1 curse on this save."
+    },
+    {
+      "Name": "Storm Cunning",
+      "ActionCost": 1,
+      "Tags": [ "range 2" ],
+      "Description": "Swap places with an ally in range, removing and placing both characters. Bloodied characters gain 3 vigor."
     },
     {
       "Name": "Joyous Combat",
       "ActionCost": 1,
-      "Description": "All adjacent foes must choose: be shoved 2, or take [D] damage from the Jotunn.",
-      "Collide": "Foe is winded."
-    },
-    {
-      "Name": "Strength of the Storm",
-      "ActionCost": 2,
-      "Tags": [ "stance", "end turn" ],
-      "Description": "The Jotunn gains sturdy and counter but becomes immobile. The Jotunn and all its adjacent allies also gain resistance. This stance ends at the end of the Jotunn's next turn."
+      "Effects": "All adjacent foes must choose: be shoved 2, or take 4 damage from the [name].",
+      "Collide": "Foe is slashed."
     }
   ],
   "ConditionalAbilities": [
     {
-      "Chapter": 2,
-      "Actions": {
-        "Name": "Hurl",
-        "ActionCost": 1,
-        "Tags": "repeatable",
-        "Description": "The Jotunn picks up an adjacent character or summon and shoves them 3.",
-        "Collide": "Character is dazed."
-      }
+      "Chapter": 2
     },
     {
-      "Chapter": 3,
-      "Traits": "True Titanblood"
+      "Chapter": 3
     }
   ]
 }

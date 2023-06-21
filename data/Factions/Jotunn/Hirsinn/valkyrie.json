@@ -7,20 +7,20 @@
     {
       "Name": "Spare Weapon",
       "ActionCost": 0,
-      "Tags": "true strike",
-      "Description": "A foe in range 6 is shoved 1 and takes 2 damage."
+      "Tags": [ "range 3", "true strike" ],
+      "Effects": "A foe in range is shoved 1 and takes 2 damage."
     },
     {
       "Name": "Comet",
       "ActionCost": 1,
-      "Tags": "2/combat",
-      "Description": "The Jotunn hurls a spare weapon in a line 3 area, where it comes to rest as a height 1 object. Characters adjacent to the weapon when it lands take [fray] damage and are shoved 1 space."
+      "Tags": [ "2/combat" ],
+      "Description": "The [name] hurls a spare weapon in a line 3 area, where it comes to rest as a height 1 object. Characters adjacent to the weapon when it lands take fray damage and are shoved 1 space."
     },
     {
       "Name": "Split the Earth",
       "ActionCost": 1,
-      "Tags": [ "1/combat", "terrain effect" ],
-      "Description": "The Jotunn creates a line 3 area, then creates pits in those spaces. These spaces can be created under characters."
+      "Tags": [ "terrain effect", "1/combat" ],
+      "Description": "The [name] creates a line 3 area, then creates pits in those spaces. These spaces can be created under characters."
     }
   ]
 }

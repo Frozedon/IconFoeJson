@@ -4,15 +4,10 @@
   "Type": "Foe",
   "Actions": [
     {
-      "Name": "Frost Bolt",
+      "Name": "Frost Blast",
       "ActionCost": 1,
-      "Description": "A foe in range 3 is winded and frostbitten."
-    },
-    {
-      "Name": "Frost Breath",
-      "ActionCost": 2,
-      "Tags": [ "close blast 1", "true strike" ],
-      "AreaEffect": "Characters within take [fray] damage, are inflicted with frostbite, and must save or become winded. Winded or frostbitten characters also take [D]+[fray] damage instead."
+      "Tags": [ "range 3", "small blast", "1/round" ],
+      "AreaEffect": "2 damage. The foe in the center space is also slashed, then summon a height 1 icicle object adjacent to them. The icicle has rampart."
     }
   ]
 }

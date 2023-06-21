@@ -1,104 +1,123 @@
 {
   "Name": "Keeper of the Eldflame",
-  "Inherits": [ "Jotunn", "Legendary Artillery" ],
+  "Inherits": [ "Jotunn", "Legend" ],
   "Type": "Foe",
   "Chapter": 2,
-  "HP": 40,
-  "RemoveTraits": [ "Titanblood", "Aetherwall", "Legendary Slip" ],
-  "Traits": [ "Size 2", "Divine Presence", "Volatile Ember", "Quicksilver" ],
+  "RemoveTraits": [ "Titanblood" ],
+  "Traits": [ "Size 2", "Divine Presence", "Quicksilver" ],
   "Actions": [
+    {
+      "Name": "Volatile Ember",
+      "RoundAction": true,
+      "Description": "At the start of the round, the Keeper creates 1 Volatile Ember in any space within range 2 of a character until there are six Embers active. A Volatile Ember is a special terrain effect that may be picked up by a character moving into its space. A character carrying at least one ember takes 3 divine damage, at the end of their turn. This damage cannot reduce a character below 1 hp. If a character is defeated while holding embers, they are snuffed out.\nThe Keeper's abilities become stronger against character carrying embers. However, carrying an ember fills a character and their weapons with godly power and has the following benefits:",
+      "ListedItems": [
+        {
+          "Name": "1+",
+          "Description": "All attacks gain +1 boon and deal bonus damage."
+        },
+        {
+          "Name": "3+",
+          "Description": "Character's abilities gain true strike and ignore resistance."
+        },
+        {
+          "Name": "6+",
+          "Description": "Character's abilities ignore vigor and deal double damage to the Keeper's armor."
+        }
+      ]
+    },
     {
       "Name": "Smite the Anvil",
       "ActionCost": 1,
-      "Tags": "melee attack 3",
+      "Tags": [ "attack", "range 3" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
       "Effects": "Character gains 1 ember."
     },
     {
+      "Name": "Hard Headed",
+      "ActionCost": 1,
+      "Description": "The Keeper rushes 3. Before and after its movement, it may shove all adjacent foes 1."
+    },
+    {
       "Name": "Quickening",
       "ActionCost": 1,
-      "Tags": "2/round",
-      "Description": "A foe in range 6 has their embers stirred up. At the end of their next turn, they explode, dealing 2 piercing damage once for every ember they are holding in a blast 1 area effect centered on them. They then become vulnerable."
+      "Description": "A foe in range 6 gains an ember, then has their embers stirred up. At the end of their next turn, they explode, dealing 1 piercing damage once for every ember they are holding to all other foes in a large blast area effect centered on them (the chosen character takes no damage). They then become vulnerable and have a space of quicksilver created next to them."
     },
     {
       "Name": "Light the Everforge",
       "ActionCost": 1,
-      "Tags": [ "1/round", "end turn" ],
-      "Description": "The Keeper gains vigor 1 and summons the Everforge, a 2x2 height 2 object. Character standing on the forge when it is summoned are pushed up on top of it. The Forge has 10 hp plus 10 per player character and is automatically hit by attacks. The Smith may use any of the Forge actions below as long as the Forge is active and the Keeper is within range 2. When the Keeper uses Forge, the area on and adjacent to the forge explodes for a 2 piercing damage area effect, and the forge takes 10 damage, potentially destroying it.",
-      "ListedItems": [
+      "Tags": [ "end turn" ],
+      "Description": "The Keeper gains 10 vigor and summons the Everforge",
+      "Summons": {
+        "Name": "Everforge",
+        "IsObject": true,
+        "Tags": [ "2x2 height 2 object", "destructible", "10 hp + 10 per player" ],
+        "SummonEffects": "This massive forge sparks with godly power. Character standing on the forge when it is summoned are pushed up on top of it, and foes adjacent are shoved 1 away from it. The forge has aura 2. While in the aura, the smith is immune to being shoved, teleported, or removed from the battlefield and can use the forge actions below. When the Keeper uses a Forge action, the area on and adjacent to the forge explodes for a 2 piercing damage area effect, and the forge takes 10 damage, potentially destroying it.",
+        "ListedItems": [
+          { "Description": "The Keeper can only keep one of each unique effect active at once, including the forge itself." },
+          { "Description": "When the Keeper uses a forge effect, it gains 10 vigor." },
+          { "Description": "When a Forge effect ends, create a space of quicksilver adjacent to the Keeper." }
+        ]
+      }
+    },
+    {
+      "Name": "Forge Weapon",
+      "ActionCost": 1,
+      "Tags": [ "end turn" ],
+      "Description": "The Keeper forges a godly weapon, rolling 1d6 for type, granting it a new ability. When the ability is used, the weapon is destroyed, ending this effect. Only one weapon form can be active at once until the weapon is used.",
+      "Rolls": [
         {
-          "Description": "The Keeper can only keep one of each unique effect active at once, including the forge itself."
+          "Values": 1,
+          "Name": "Hammer (1 action, attack, +1 curse, range 3, large blast)",
+          "Description": "On hit: 5[D]+[fray] and foe is stunned. Miss or area effect: [D]+[fray]."
         },
         {
-          "Description": "When a Forge effect ends, create a space of quicksilver adjacent to the Keeper."
+          "Values": 2,
+          "Name": "Spear (1 action, attack, pierce, line 10)",
+          "Description": "On hit: [D]+1, five times, Miss or area effect: [D]+1, twice."
+        },
+        {
+          "Values": 3,
+          "Name": "Sword (1 action, true strike, arc 6)",
+          "Description": "On hit: 4[D]+[fray]. Miss or area effect: 2[D]+[fray]."
+        },
+        {
+          "Values": 4,
+          "Name": "Curved Sword (1 action, burst 2 (self))",
+          "Description": "Autohit: [D]+[fray]. Area effect: [D]+[fray]. Effect: Attack target is vulnerable."
+        },
+        {
+          "Values": 5,
+          "Name": "Bow (1 action, unerring, range 10)",
+          "Description": "On hit: 3[D]+[fray]. Miss: [D]+[fray]. Effect: Shove 5. Collide: Foe is stunned and shattered."
+        },
+        {
+          "Values": 6,
+          "Name": "Axe (1 action, melee attack, range 2)",
+          "Description": "On hit: 4[D]+[fray]. Miss: 2[D]+[fray]. Effect: Deals +2[D], hit or miss, to bloodied characters."
         }
-      ],
-      "ExtraActions": [
+      ]
+    },
+    {
+      "Name": "Forge Mail",
+      "ActionCost": 2,
+      "Tags": [ "end turn" ],
+      "Description": "The Keeper forges itself a piece of armor, rolling 1d6 for type. The Keeper can only have one piece of armor active at once, and each have separate effects. When forged, each armor piece gains 8 hp per player character. A character can choose to damage an armor piece instead of the Keeper when damaging the Keeper. Armor pieces don't benefit form the Keeper's vigor, resistance, cover, or dodge. When an armor piece is destroyed, its ongoing effects end and it has an additional effect.",
+      "Rolls": [
         {
-          "Name": "Forge Weapon",
-          "ActionCost": 1,
-          "Tags": "end turn",
-          "Description": "The Keeper gains vigor 1 and forges a godly weapon, granting it a new ability. When the ability is used, the weapon is destroyed, ending this effect. Only one weapon form can be active at once until the weapon is used.",
-          "ExtraActions": [
-            {
-              "Name": "Hammer",
-              "ActionCost": 1,
-              "Tags": [ "melee attack 3", "blast 1", "+1 curse" ],
-              "Hit": "5[D]+[fray] and foe is stunned.",
-              "Miss": "[D]+[fray].",
-              "AreaEffect": "[D]+[fray]."
-            },
-            {
-              "Name": "Spear",
-              "ActionCost": 1,
-              "Tags": [ "melee attack", "line 10", "pierce" ],
-              "Hit": "[D], five times.",
-              "Miss": "[D], twice.",
-              "AreaEffect": "[D], twice."
-            },
-            {
-              "Name": "Sword",
-              "ActionCost": 1,
-              "Tags": [ "melee attack", "arc 6" ],
-              "Hit": "4[D]+[fray].",
-              "Miss": "2[D]+[fray].",
-              "AreaEffect": "2[D]+[fray]."
-            },
-            {
-              "Name": "Curved Sword",
-              "ActionCost": 1,
-              "Tags": [ "melee attack 2", "multiattack" ],
-              "AutoHit": "[D]+[fray]."
-            },
-            {
-              "Name": "Bow",
-              "ActionCost": 1,
-              "Tags": [ "ranged attack 10", "pierce" ],
-              "Hit": "3[D]+[fray].",
-              "Miss": "[D]+[fray].",
-              "Effects": "Shove 5.",
-              "Collide": "Foe is stunned and shattered."
-            }
-          ]
+          "Values": [ 1, 2 ],
+          "Name": "Shield",
+          "Description": "The Keeper forges a massive shield, gaining cover against all abilities not used from adjacent spaces, and dodge. If the shield is destroyed, they throw it, forcing a foe in range 8 to save or take 5 damage, become stunned and shoved 3, or just 2 damage and shoved 1 on a successful save."
         },
         {
-          "Name": "Forge Shield",
-          "ActionCost": 1,
-          "Tags": "end turn",
-          "Description": "The Keeper forges a massive shield, gaining vigor 1, cover from all directions and dodge. At the end of the round, they throw the shield, forcing a foe in range 8 to save or become stunned and shoved 3, destroying the shield and ending this effect."
+          "Values": [ 3, 4 ],
+          "Name": "Helm",
+          "Description": "The Keeper becomes sturdy and its Juggernaut trait triggers twice at the start of the round. When the helmet is destroyed, the Keeper spits fire in a medium blast area effect in range 3 as an interrupt. Foes within take 1 piercing damage four times."
         },
         {
-          "Name": "Forge Helm",
-          "ActionCost": 1,
-          "Tags": "end turn",
-          "Description": "The Keeper gains vigor 1 and becomes unstoppable until the end of the round. The helm shatters at the end of the round, ending this effect."
-        },
-        {
-          "Name": "Forge Armor",
-          "ActionCost": 1,
-          "Tags": "end turn",
-          "Description": "The Keeper gains vigor 2 and gains resistance. The armor shatters at the end of the round, ending this effect."
+          "Values": [ 5, 6 ],
+          "Name": "Breastplate",
+          "Description": "The Keeper gains armor 2 and resistance to abilities from adjacent spaces. In addition it cannot be critically hit (turn all critical hits into regular hits) or take bonus damage. When the armor is destroyed, it blows off the Keeper with an explosion, dealing 2 piercing damage to all foes not in cover from the Keeper as an area effect."
         }
       ]
     }
@@ -109,8 +128,13 @@
       "Description": "No changes."
     },
     {
-      "Description": "Forge actions and Lighting the Everforge no longer end turn.",
+      "Description": "As Phase I, but:",
+      "ListedItems": [
+        { "Description": "Forge actions and Lighting the Everforge no longer end turn." },
+        { "Description": "Forge mail becomes 1 action. The keeper can have any number of armor pieces active from Forge Mail and can choose which to forge" }
+      ],
       "Traits": [ "Great Ignition", "Blade of Creation" ]
     }
-  ]
+  ],
+  "Tactics": "The Keeper is a tempo fight that hits extremely hard every few turns, but requires set up. Its armor abilities can be very potent if allowed to linger, but can cause explosive bursts of tempo when destroyed. In phase II, its ability to smith becomes even faster, and it gains the ability to quickly burn down player characters. Characters can gain increased power from picking up embers, but must be careful not to damage allies with Quickening, and must be wary of burning out from their damage, using quicksilver to quench if needed."
 }

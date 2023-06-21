@@ -3,25 +3,25 @@
   "Inherits": "Troll",
   "Type": "Foe",
   "Chapter": 3,
+  "Traits": "Sweet Torment",
   "Actions": [
     {
       "Name": "Bend Fate",
       "ActionCost": 1,
-      "Tags": "mark",
-      "Description": "The Hag chooses an ally in range 5 and marks them. That ally gains defiance.",
-      "Mark": "While marked, attacks gain +1 curse against that ally, and that ally gains +1 boon on attacks."
+      "Tags": [ "range 5", "mark" ],
+      "Description": "The [name] chooses an ally in range and marks them. That ally gains defiance. While marked, attacks cannot gain boons against that ally, and gain +1 curse, and that allies attacks cannot gain curses and gain +1 boon."
     },
     {
       "Name": "Inside Out",
       "ActionCost": 1,
-      "Tags": "1/round",
-      "Description": "The Hag curses a foe with awful nausea. If that foe moves more than 1 space or takes more than 1 action on their next turn, they must save. On a failed save, they take damage equal to 50% of their maximum HP and are stunned. If they succeed on the save, they take damage equal to 25% of their maximum HP."
+      "Tags": [ "range 5", "2/combat" ],
+      "Description": "The [name] curses a foe in range with awful nausea. If that foe moves more than 1 space or uses any ability that costs 2 actions on their turn, they must save. On a failed save, they take damage equal to 50% of their maximum HP and are stunned. If they succeed on the save, they take damage equal to 25% of their maximum HP."
     },
     {
       "Name": "Rotten Curse",
       "ActionCost": 2,
-      "Tags": "1/round",
-      "Description": "A foe in range 5 takes [fray] damage, once, for every condition or mark they are affected by."
+      "Tags": [ "range 5" ],
+      "Description": "A foe in range must save or take 5 damage, once, for every condition or mark they are affected by. On a successful save, reduce each instance of this damage to 2 instead."
     }
   ]
 }

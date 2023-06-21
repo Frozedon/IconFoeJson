@@ -1,55 +1,105 @@
 {
   "Name": "Warden of the Aeongate",
-  "Inherits": [ "Jotunn", "Legendary Artillery" ],
+  "Inherits": [ "Jotunn", "Legend" ],
   "Type": "Foe",
   "Chapter": 3,
-  "Vitality": 10,
-  "HP": 30,
-  "RemoveTraits": "Titanblood",
-  "Traits": [ "Size 2", "Flying", "Divine Presence", "Sever Mortal Thread", "Time Heals All", "Eternal Star", "Unmoor" ],
+  "HP": 40,
+  "RemoveTraits": [ "Titanblood" ],
+  "Traits": [ "Size 2", "Divine Presence", "Time Heals All", "Tides of Time", "Unmoor" ],
   "Actions": [
     {
-      "Name": "Staff of Eternal Order",
-      "ActionCost": 1,
-      "Tags": "melee attack 3 or ranged attack 8",
-      "AutoHit": "[fray].",
-      "Effects": "Create a cross 2 area effect as a time effect, centered on the target and moving with them. Roll 1d6 for turns remaining. The effect deals [D]+[fray] damage when it triggers."
+      "Name": "Sever Mortal Thread",
+      "RoundAction": true,
+      "Description": "At the start of round 4, and every 2 rounds thereafter, the Warden cuts the lifespan of all characters on the battlefield, reducing their current and maximum hp and vigor by 25%. This does not stack with wounds, and takes priority over any wounds a character has taken (so a character with 1 wound wouldn't lose any additional max hp). This HP reduction stacks (so 25%, 50%, 75%, etc). At the end of round 10, the Warden permanently severs the lifespan all characters, instantly defeating them and ending the fight."
     },
     {
-      "Name": "Primal Polaris",
-      "ActionCost": 1,
-      "Tags": "divine",
-      "Description": "Mark a visible space with a d6 time effect. Roll 1d6 for turns remaining. When the effect goes off meteor smashes into the space, inflicting [D]+[fray] in a blast 1 area centered on the space to all characters within, then ending this effect."
+      "Name": "Eternal Star",
+      "RoundAction": true,
+      "Description": "At the start of each round, the Warden summons an Eternal Star, a massive meteor. The star is a single space time effect with a d6 time die set to 6, targeted on any space. When the star comes down, all foes take divine damage depending on their distance from the star's space.",
+      "ListedItems": [
+        { "Name": "0 (in the space)", "Description": "100% of max hp." },
+        { "Name": "1", "Description": "75% of max hp." },
+        { "Name": "2", "Description": "25% of max hp." },
+        { "Name": "3+", "Description": "1 damage." }
+      ]
     },
     {
       "Name": "Slip Between Space",
-      "ActionCost": 1,
+      "ActionCost": 0,
+      "Tags": [ "1/round" ],
       "Description": "Remove the Warden from the battlefield and place it in a new space in range 5."
-    },
-    {
-      "Name": "Primal Sisyphus",
-      "ActionCost": 1,
-      "Tags": "multimark",
-      "Description": "Mark a character with a d6 rolled time effect, and put a marker on their current location.",
-      "Mark": "When the time effect runs out, remove them from the battlefield and return them to the marker. Then end this mark."
     },
     {
       "Name": "Primal Starseed",
       "ActionCost": 1,
-      "Tags": [ "2/round", "summon" ],
-      "Description": "The Warden chooses a foe, then summons a primal star-seed 5 spaces away from them. The star seed is a size 1 summon that is immune to all damage that moves 1 space towards that character at the start of their turn, then 1 space towards them when they take an action. If the character starts or ends their turn adjacent to the star-seed, it explodes for a blast 2 area effect, destroying it. Foes inside must save or take 2[D]+[fray] on a failed save, or just [fray] damage on a successful save. The star-seed persists for the rest of combat, but if it it caught in the area of Primal Polaris or if it would more than 1 damage from an Eternal Star, it is destroyed and does not explode."
+      "Tags": [ "summon", "1/round" ],
+      "Description": "The Warden chooses a foe, then summons a primal star-seed exactly 4 spaces away from them.",
+      "Summons": {
+        "Name": "Star Seed",
+        "Tags": [ "Size 1", "phasing" ],
+        "SummonEffects": "The seed is keyed to a specific character. At the start of that character's turn, or after that character uses any ability and the ability resolves, the seed moves 1 space towards them. If the seed would enter the space of any foe, it explodes for a large blast area effect, destroying it. Foes inside must save or take 6 divine damage, twice, or just 2 divine damage twice on a successful save. The star-seed persists for the rest of combat, but if it it caught in the area of Primal Polaris or an adjacent space to an Eternal star, it fizzles out and is destroyed."
+      }
     },
     {
       "Name": "Chains of Fate",
       "ActionCost": 1,
-      "Tags": "1/round",
-      "Description": "The Warden chains a foe in range 6 to an adjacent space. If they enter that space, they take [D]+[fray] and are stunned. At the end of their next turn, they are shoved up to 4 spaces towards that space, ending in it if possible, then this effect ends. A character can only be affected by one set of chains at a time."
+      "Tags": [ "range 6", "2/round" ],
+      "Description": "The Warden chains a foe in range 6 to an adjacent space. That foe becomes vulnerable, and if they end their turn in or adjacent to that space, they take [fray] damage three times and are stunned. At the end of their next turn, they are shoved up to 3 spaces towards that space, ending in it if possible, then this effect ends. A character can only be affected by one set of chains at a time."
     },
     {
-      "Name": "The Sun",
+      "Name": "Primal Meteor",
       "ActionCost": 2,
-      "Tags": "1/round",
-      "Description": "The Warden summons an Eternal Star."
+      "Tags": [ "1/round" ],
+      "Description": "All foes not in cover from the jotunn must save or take [fray] damage twice and become vulnerable, or once on a successful save. Then, summon a height 1 meteor object adjacent to any character affected.",
+      "CustomComponents": [
+        {
+          "Name": "Round 3+",
+          "Description": "[fray] damage three times on a failed save."
+        },
+        {
+          "Name": "Round 5+",
+          "Description": "[fray] damage five times on a failed save."
+        }
+      ]
+    },
+    {
+      "Name": "Primal Sisyphus",
+      "ActionCost": 1,
+      "Tags": [ "mark", "1/round" ],
+      "Description": "Mark a character with a d6 rolled time effect, and put a marker on their current location when marked. When the time effect runs out, remove them from the battlefield and return them to the marker, or as close as possible if the space is occupied. Then end this mark."
+    },
+    {
+      "Name": "Staff of Eternal Order",
+      "ActionCost": 1,
+      "Tags": [ "attack", "range 6" ],
+      "AutoHit": "[fray] damage.",
+      "Effects": "Create a time effect, centered on the target and moving with them. Roll 1d6 for turns remaining. The effect deals [D]+[fray] divine damage when it triggers to all characters other than the warden that are sharing the same row or column of the battlefield as that character.",
+      "Combo": {
+        "Name": "Comestion",
+        "ActionCost": 1,
+        "Tags": [ "attack", "range 6", "burst 2 (target)", "unerring", "pierce", "true strike" ],
+        "Hit": "[D]+[fray].",
+        "Miss": "[fray].",
+        "AreaEffect": "[fray].",
+        "Effects": "Create a height 1 meteor object adjacent to the attack target.",
+        "Combo": {
+          "Name": "Nemesis",
+          "ActionCost": 2,
+          "Tags": [ "attack", "range 4" ],
+          "Hit": "[D]+[fray].",
+          "Miss": "[fray].",
+          "AreaEffect": "[fray].",
+          "Effects": [
+            "If target is affected by one or more time effects, they take 2 damage, once, per tick on the highest time effect die, then all time die affecting them are re-rolled, taking the re-roll as the new result.",
+            "Then, that foe becomes vulnerable."
+          ]
+        }
+      }
+    },
+    {
+      "Name": "Primal Polaris",
+      "ActionCost": 1,
+      "Description": "Mark a visible space with a d6 time effect. Roll 1d6 for turns remaining. When the effect goes off, a meteor smashes into the space, inflicting [D]+[fray] divine damage in a small blast area effect centered on the space to all foes within, ending this effect. Foes in the center space are shattered. The Warden can only have up to three of these spaces active at once, and can choose which to replace if it places a new one."
     }
   ],
   "PhasesDescription": "The Warden changes phases when reduced to 0 HP and defeated. It then alters time to a timeline where it wasn't defeated, then reduces its maximum hp. It is finally defeated when reduced to 0 HP in phase 3.",
@@ -58,7 +108,11 @@
       "Description": "No changes."
     },
     {
-      "Description": "The Warden is returned to 50% max and current hp. It summons two Eternal Stars instead of one at the start of each round. The Warden also gains the following actions.",
+      "Description": "As phase I, but:",
+      "ListedItems": [
+        { "Description": "The Warden is returned to 50% max and current hp." },
+        { "Description": "It summons two Eternal Stars instead of one at the start of each round." }
+      ],
       "Actions": {
         "Name": "Key of Existence",
         "ActionCost": 0,
@@ -67,7 +121,14 @@
       }
     },
     {
-      "Description": "The Warden is returned to 25% max and current hp. It takes no turns and takes no actions during this phase, but is immobile and unstoppable. At the start of each round, it summons one Eternal Star per active player character. These stars have no time die. Instead, after all players have acted, the stars land. This phase continues until the Warden or all player characters are defeated, in which case the fight ends."
+      "Description": "As Phase I and II, but:",
+      "ListedItems": [
+        { "Description": "The Warden is returned to 25% max and current hp." },
+        { "Description": "It becomes immobile in this round except for its slip between space ability." },
+        { "Description": "It summons one eternal star per player character, centered on each player character at the start of each round." },
+        { "Description": "Key of Existence becomes 2/round" }
+      ]
     }
-  ]
+  ],
+  "Tactics": "The Warden is a fight that requires heavily on good turn ordering by player characters, true to its theme. Its time effects are heavily telegraphed, but hit extremely hard. It can use Primal Sisyphus and Chains of Fate to pull characters back into Polaris or Eternal Star, or yank them into a bad position for Staff of Eternal Order's time effect. Characters can ameliorate this somewhat with the Unmoor aura, making the character bearing it very important. At phase III, characters will have very little time to burn the Warden down before it flattens them with divine meteors."
 }

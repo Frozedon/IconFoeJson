@@ -9,10 +9,10 @@
     {
       "Name": "Spirit Scythe",
       "ActionCost": 1,
-      "Tags": [ "melee attack 2", "arc 4" ],
+      "Tags": [ "attack", "arc 6" ],
       "AutoHit": "[fray].",
       "AreaEffect": "[fray].",
-      "Effects": "Attack target is branded and shoved 1 in any direction. This effect also applies to frostbitten foes in the area."
+      "Effects": "Attack target is sealed and shoved 1 in any direction."
     },
     {
       "Name": "Lonely Dead",
@@ -20,30 +20,32 @@
       "Description": "The Thannir summons a lonely soul in range 4.",
       "Summons": {
         "Name": "Lonely Soul",
-        "Tags": [ "Size 1", "10 HP" ],
-        "SummonTraits": "Phasing",
-        "SummonActions": "When summoned, or once a round on the Thannir's turn thereafter, may move 3 spaces and deal 2 piercing damage to an adjacent foe. If that foe is branded or marked, the soul can also then shove the foe 1."
+        "Tags": [ "Summon", "Size 1" ],
+        "SummonActions": "When summoned, or once a round on the [name]'s turn thereafter, may move 3 spaces and deal 2 piercing damage to an adjacent foe. If that foe is sealed or marked, the soul can also then shove the foe 1."
       }
+    },
+    {
+      "Name": "Full Bloom",
+      "ActionCost": 1,
+      "Tags": [ "range 6", "small blast" ],
+      "AreaEffect": "2 piercing damage. If a foe is sealed, it takes 2 piercing damage again. If a foe is also marked, it takes 2 piercing damage once more."
     },
     {
       "Name": "Rune of the Spring Flower",
       "ActionCost": 1,
-      "Tags": "multimark",
-      "Description": "The Thannir marks an ally in range 4.",
-      "Mark": "After the marked ally takes damage, they gain vigor 1 and may dash 2. At the end of the round, or after this effect is triggered, remove this mark."
+      "Tags": [ "range 6", "multimark" ],
+      "Description": "The [name] marks itself or an ally in range. After any ability that damages that ally resolves, they gain 2 vigor and may dash 2."
     },
     {
       "Name": "Rune of the Grave",
       "ActionCost": 1,
-      "Tags": "mark",
-      "Description": "A foe in range 6 must save or be marked. On a successful save, they are pacified.",
-      "Mark": "While marked, a character is frostbitten, cannot benefit from defiance, loses all vigor at the end of each turn, and cannot gain vigor. A character can end this mark by spending an entire turn not attacking."
+      "Tags": [ "range 6", "mark" ],
+      "Description": "A foe in range 6 must save or be marked. On a successful save, they are pacified instead. While marked, a character cannot benefit from defiance or effects that prevent them from being defeated, loses all vigor at the end of each turn, and cannot gain vigor. A character can end this mark by spending an entire turn not attacking."
     },
     {
-      "Name": "Lay To Rest",
+      "Name": "Execute",
       "ActionCost": 2,
-      "Tags": "1/round",
-      "Description": "The Thannir chooses a foe in range 3 that is at 25% hp or less. That foe must save or be instantly defeated. On a successful save, they are reduced to 1 hp."
+      "Description": "A foe in range 2 at 25% HP or lower must save. On a failed save, they are defeated, ignoring all other effects. On a successful save, they are reduced to 1 hp."
     }
   ]
 }

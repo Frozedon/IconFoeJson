@@ -1,0 +1,38 @@
+{
+  "Name": "Ire Smith",
+  "Inherits": [ "Jotunn", "Artillery" ],
+  "Type": "Foe",
+  "RemoveTraits": "Titanblood",
+  "Traits": [ "Size 2", "Iron Scale", "Quicksilver" ],
+  "Actions": [
+    {
+      "Name": "Smite the Anvil",
+      "ActionCost": 1,
+      "Tags": [ "attack", "range 3" ],
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "Effects": [
+        "Character takes 1 divine damage, or 1 divine damage twice times if it's marked.",
+        "Create a pool of quicksilver under the [name]."
+      ]
+    },
+    {
+      "Name": "Heat the Forge",
+      "ActionCost": 2,
+      "Description": "Create a pool of quicksilver under the [name]. Then, all foes not in cover from the [name] must save or become vulnerable and have a space of roaring flames dangerous terrain created adjacent to them. Then, the [name] deals 1 piercing damage, three times to all foes.",
+      "Effects": "At round 3+, this becomes 1 action.",
+      "Combo": {
+        "Name": "Work Metal",
+        "ActionCost": 1,
+        "Tags": [ "range 6", "multimark" ],
+        "Description": "The [name] marks a foe in range. While marked, the foe is vulnerable+ and cannot benefit from armor or resistance. This mark and its associate effects ends if the foe ends their turn in a pool of quicksilver, but it consumes the pool and that foe becomes stunned."
+      }
+    },
+    {
+      "Name": "Bellows",
+      "ActionCost": 1,
+      "Tags": [ "range 2", "small blast" ],
+      "AreaEffect": "1 piercing damage, twice, and shove 1."
+    }
+  ]
+}

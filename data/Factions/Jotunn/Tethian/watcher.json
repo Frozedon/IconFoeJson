@@ -4,11 +4,12 @@
   "Type": "Foe",
   "Chapter": 2,
   "Traits": [ "Phasing", "Time Lock" ],
-  "Actions": {
-    "Name": "Ordening Law",
-    "ActionCost": 1,
-    "Tags": "mark",
-    "Description": "A foe in range 6 is marked.",
-    "Mark": "While marked, they can only take 1 action maximum on their turn, including their standard move. They can break this restriction, but take 2 divine damage for every further action taken. They can end this mark by ending any turn in which they took only 1 action."
-  }
+  "Actions": [
+    {
+      "Name": "Ordening Law",
+      "ActionCost": 1,
+      "Tags": [ "multimark", "1/round" ],
+      "Description": "A foe in range 6 is marked. While marked, they can only take use one non-basic ability per round. They can break this restriction, but take 2 divine damage for every further action taken. They can end this mark by ending any turn in which they took only one non-basic ability."
+    }
+  ]
 }

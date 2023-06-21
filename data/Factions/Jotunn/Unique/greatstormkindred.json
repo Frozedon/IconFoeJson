@@ -1,0 +1,56 @@
+{
+  "Name": "Great Storm Kindred",
+  "Inherits": [ "Jotunn", "Heavy" ],
+  "Type": "Foe",
+  "Chapter": 3,
+  "RemoveTraits": "Titanblood",
+  "Traits": "Size 2",
+  "Actions": [
+    {
+      "Name": "Storm Hammer",
+      "RoundAction": true,
+      "Description": "At the start of the round, the [name] slams a hammer of lightning into a small blast area, creating a terrain effect in that space. Foes in the area are weakened+, and the area has Rampart. At the end of the round, the hammer is recalled. All foes in the area, and all foes adjacent to the [name] take 4 damage. If foes are both in the area and adjacent to the [name], they take damage twice."
+    },
+    {
+      "Name": "Mighty Smite",
+      "ActionCost": 1,
+      "Tags": [ "attack", "line 4", "true strike" ],
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "AreaEffect": "[fray].",
+      "Effects": "Deals bonus damage to weakened or slashed foes.",
+      "Combo": {
+        "Name": "Thunderfury",
+        "ActionCost": 2,
+        "Tags": [ "attack", "range 2", "burst 1 (target)", "+2 curses" ],
+        "Hit": "[D]+[fray], three times.",
+        "Miss": "[fray].",
+        "AreaEffect": "[fray].",
+        "Effects": "Deals bonus damage to attack target per status or allied mark they are affected by. If they are affected by three or more, they are stunned."
+      }
+    },
+    {
+      "Name": "Berserkgang",
+      "ActionCost": 1,
+      "Tags": [ "range 3", "1/round" ],
+      "Description": "A foe in range must save or gain hatred of the [name]. On a successful save, they are weakened. If the target or [name] is bloodied, they gain +1 curse on this save."
+    },
+    {
+      "Name": "Storm Cunning",
+      "ActionCost": 1,
+      "Tags": [ "range 2" ],
+      "Description": "Swap places with an ally in range, removing and placing both characters. Bloodied characters gain 3 vigor."
+    },
+    {
+      "Name": "Primal Spark",
+      "ActionCost": 1,
+      "Tags": [ "range 6" ],
+      "Description": "A foe in range takes 2 divine damage."
+    },
+    {
+      "Name": "Sturmreiten",
+      "ActionCost": 1,
+      "Description": "The [name] flies 4 with phasing, and is intangible while flying. All characters they pass through take 2 damage."
+    }
+  ]
+}

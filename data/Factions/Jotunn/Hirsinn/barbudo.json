@@ -5,8 +5,8 @@
   "Actions": {
     "Name": "Great Leap",
     "ActionCost": 1,
-    "Tags": "1/round",
-    "Description": "The Barbuda flies 2, then shoves all adjacent characters 1 spaces. Bloodied characters are shoved 3 spaces instead.",
-    "Collide": "Character takes [D]+[fray]."
+    "Tags": [ "1/round" ],
+    "Description": "The [name] flies 3, then shoves all adjacent characters 1 spaces. Bloodied characters are shoved 3 spaces instead.",
+    "Collide": "Character takes 2 damage. Weakened characters take 5 damage instead."
   }
 }

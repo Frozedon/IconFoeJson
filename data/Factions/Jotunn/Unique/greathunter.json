@@ -9,36 +9,28 @@
     {
       "Name": "Titanforged Greatbow",
       "ActionCost": 2,
-      "Tags": [ "ranged attack 8", "pierce" ],
-      "Hit": "2[D]+[fray] and shove 1.",
+      "Tags": [ "attack", "range 8" ],
+      "Hit": "2[D]+[fray].",
       "Miss": "[fray].",
-      "Effects": "This weapon deals bonus damage and gains +1 boon against characters outside of cover.",
-      "CriticalHit": "(+[D]), foe is shoved 3 and vulnerable."
+      "Effects": "This weapon deals bonus damage and gains +1 boon against characters outside of cover."
     },
     {
       "Name": "Bounding Leaps",
       "ActionCost": 1,
-      "Description": "The Great Hunter flies 4.",
+      "Description": "The Great Hunter flies 3.",
       "Effects": "If it lands on an object, it can repeat this flight once more."
     },
     {
       "Name": "Hunter Arrow",
       "ActionCost": 1,
-      "Description": "Mark an unoccupied space in range 8.",
-      "AreaEffect": "Characters that enter that space are struck by a projectile, taking [D]+[fray] damage and ending this effect. The areas last until the end of the current round. After this effect is triggered or expires, create a height 1 great arrow object in an adjacent space."
+      "Tags": [ "range 8", "repeatable" ],
+      "Description": "Mark an unoccupied space in range. Characters that enter that space for any reason are struck by a projectile, taking 4 piercing damage and ending this effect. The areas last until the end of the current round. After this effect is triggered or expires, create a height 1 great arrow object in an adjacent space."
     },
     {
       "Name": "Bolt from the Blue",
       "ActionCost": 1,
-      "Tags": "mark",
-      "Description": "The Jotunn fires a sheathe of arrows into the air, marks a foe in range 6, then rolls 1d6+1 for the number of arrows.",
-      "Mark": "At the end of each turn, that foe takes 2 piercing damage, then reduces the number of remaining arrows by 1. Using this action again re-rolls the die, taking the new result, and can retarget the mark. If the number of arrows is reduced to 0, this mark and effect ends."
-    },
-    {
-      "Name": "Hone",
-      "ActionCost": 1,
-      "Tags": "end turn",
-      "Description": "The next attack from this character is a critical hit on hit."
+      "Tags": [ "range 6", "multimark", "1/round" ],
+      "Description": "The [name] fires a sheathe of arrows into the air, marks a foe in range, then sets out a d6 power die, starting at 6, or ticks it up by 1 if it already has a die, to a maximum of 6. At the end of any turn, the [name] may tick the die down by 1 to deal 2 piercing damage to any target marked by this ability."
     }
   ]
 }

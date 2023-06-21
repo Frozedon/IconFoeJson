@@ -422,8 +422,12 @@
     "Description": "Immune to damage from terrain and terrain effects."
   },
   {
+    "Name": "Iron Scale",
+    "Description": "Resistant to abilities used from adjacent spaces. Loses this trait when bloodied."
+  },
+  {
     "Name": "Isolation",
-    "Description": "Has resistance to damage dealt by characters with no allies adjacent. (Take 1/2 damage, rounded up)"
+    "Description": "Has resistance to damage dealt by characters with no allies adjacent."
   },
   {
     "Name": "Juggernaut",
@@ -576,6 +580,10 @@
     "Description": "All the [name]'s abilities have Collide: foes are is weakened. Weakened foes take 2 damage on collide instead, and the [name] gains 2 vigor."
   },
   {
+    "Name": "Quicksilver",
+    "Description": "The [name]'s abilities leave pools of quicksilver on the ground. Quicksilver is a 1 space difficult terrain terrain effect, which the [name] ignores."
+  },
+  {
     "Name": "Rampart",
     "Description": "Foes cannot enter or exit a space affected by a rampart effect by dashing, flying, or teleporting."
   },
@@ -602,6 +610,10 @@
   {
     "Name": "Rook",
     "Description": "Grants cover to adjacent allies."
+  },
+  {
+    "Name": "Rune-Glamor",
+    "Description": "May be size 1 or size 2 (choose at the start of combat)."
   },
   {
     "Name": "Saddle Up",
@@ -747,11 +759,11 @@
   },
   {
     "Name": "Time Lock",
-    "Description": "After taking damage, this character becomes intangible until the start of the following turn."
+    "Description": "After any ability resolves that damages the [name], it becomes intangible until the start of the following turn, and may teleport 2."
   },
   {
     "Name": "True Enrage",
-    "Description": "Unstoppable and +1 action while bloodied. (Immune to all statuses. Can't be immobilized, shoved, or teleported by foes)"
+    "Description": "+1 action and unstoppable while bloodied."
   },
   {
     "Name": "Tumbling",
@@ -792,6 +804,10 @@
   {
     "Name": "Wayfinding",
     "Description": "Has evasion while inside difficult or dangerous terrain, and ignores the effects of difficult or dangerous terrain."
+  },
+  {
+    "Name": "Whirlgang",
+    "Description": "At the start of its turn, the [name] and all allies in range 2 may fly 1 in the same direction."
   },
   {
     "Name": "Zipline Dismount",

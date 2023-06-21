@@ -3,12 +3,27 @@
   "Inherits": [ "Jotunn", "Heavy" ],
   "Type": "Foe",
   "RemoveTraits": "Titanblood",
-  "Traits": [ "Size 2", "Exalt Erenhelion" ],
+  "Traits": [ "Size 2", "Enrage" ],
   "Actions": [
+    {
+      "Name": "Exalt Erenhelion",
+      "RoundAction": true,
+      "Description": "At the start of the Round, the [name] either chooses Crush Cowards or Break the Mighty. At the end of the round, the chosen effect occurs.",
+      "ListedItems": [
+        {
+          "Name": "Crush Cowards",
+          "Description": "Effect: The [name] raises its weapon. At the end of the round, it sweeps out with a massive slash, affecting a burst 3 (self) area effect around it, with different effects depending on how close characters are. Foes 3 spaces away take 10 damage. Foes 2 spaces away take 5 damage. Adjacent foes take 1 damage."
+        },
+        {
+          "Name": "Break the Mighty",
+          "Description": "Effect: The [name] raises its shield. At the end of the round, it slams its shield down. Adjacent characters take 6 damage and are shoved 2 spaces away. Collide: Characters take 6 damage again and are stunned."
+        }
+      ]
+    },
     {
       "Name": "Titan Cut",
       "ActionCost": 1,
-      "Tags": [ "melee attack", "line 4" ],
+      "Tags": [ "attack", "line 4" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
       "AreaEffect": "[fray]."
@@ -16,14 +31,26 @@
     {
       "Name": "Joyous Combat",
       "ActionCost": 1,
-      "Description": "All adjacent foes must choose: be shoved 2, or take [D]+[fray] from the Aetnir."
+      "Effects": "All adjacent foes must choose: be shoved 2, or take 4 damage from the [name].",
+      "Collide": "Foe is slashed."
     },
     {
-      "Name": "Great Leap",
+      "Name": "Storm Cunning",
       "ActionCost": 1,
-      "Recharge": 4,
-      "Description": "The Aetnir flies 2, then shoves all adjacent characters 2 spaces.",
-      "Collide": "[D]+[fray] and character is dazed."
+      "Tags": [ "range 2" ],
+      "Description": "Swap places with an ally in range, removing and placing both characters. Bloodied characters gain 3 vigor."
+    },
+    {
+      "Name": "Bull Rush",
+      "ActionCost": 1,
+      "Tags": [ "repeatable" ],
+      "Description": "The [name] rushes 1. An adjacent character when it finishes its movement is either weakened or shoved 1."
+    },
+    {
+      "Name": "Leap",
+      "ActionCost": 1,
+      "Tags": [ "repeatable" ],
+      "Description": "The [name] flies 2. When it lands, all adjacent characters are shoved 1. If it starts this move from a higher elevation and ends on a lower one, increase the fly to 4, and all adjacent characters when it lands take 2 damage."
     }
   ]
 }

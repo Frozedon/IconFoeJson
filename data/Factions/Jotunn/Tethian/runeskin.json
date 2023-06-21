@@ -6,13 +6,14 @@
     {
       "Name": "Great Warp",
       "ActionCost": 1,
-      "Description": "A character in range 6 takes [fray] piercing damage and is teleported 2."
+      "Tags": [ "range 6" ],
+      "Description": "A character in range takes 2 piercing damage and is teleported 2."
     },
     {
       "Name": "Open Rune Gate",
       "ActionCost": 1,
-      "Tags": [ "1/round", "terrain effect" ],
-      "Description": "The Rune-skin opens a gate in a free adjacent space, a 1 space terrain effect. Characters that enter the space are teleported 4 to a space of the Planar's choice. Foes can save to choose the destination of their teleport instead. Using this ability moves the gate."
+      "Tags": [ "terrain effect", "1/round" ],
+      "Description": "The [name] opens a gate in a free adjacent space, a 1 space terrain effect. Characters that enter the space are teleported 4 to a space of the [name]'s choice. Foes can save to choose the destination of their teleport instead. Using this ability again moves the gate."
     }
   ]
 }

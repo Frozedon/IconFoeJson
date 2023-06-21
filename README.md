@@ -13,5 +13,5 @@
 - [X] Imperial
 - [X] Demon
 - [ ] Lowlander
-- [ ] Jotunn
+- [X] Jotunn
 - [ ] Hob

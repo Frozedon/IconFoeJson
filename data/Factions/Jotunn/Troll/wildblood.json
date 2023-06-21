@@ -2,10 +2,147 @@
   "Name": "Wildblood",
   "Inherits": "Troll",
   "Type": "Foe",
-  "Interrupts": {
-    "Name": "Growing Season",
-    "Count": 1,
-    "Trigger": "When damaged by an ability.",
-    "Effects": "The Troll may drop a fruit, a 1 space terrain effect, in a space in range 2. Foes that end their turn adjacent to the fruit are poisoned and branded. Any ally that ends their turn adjacent to the fruit can pick it up, granting vigor 1 to themselves and destroying the fruit. This destroys it."
-  }
+  "RemoveActions": "Cauldron",
+  "Actions": [
+    {
+      "Name": "Cauldron",
+      "ActionCost": 1,
+      "Tags": [ "range 3", "summon" ],
+      "Description": "The [name] summons a cauldron in range, a height 1 object. Characters adjacent to the cauldron when it's summoned are shoved 1.",
+      "Summons": {
+        "Name": "Cauldron",
+        "IsObject": true,
+        "Tags": [ "Object", "height 1" ],
+        "SummonEffects": [
+          "The Cauldron has aura 1. The [name] and any of its allies in the aura gain +1 boon on saves, and foes gain +1 curse on saves in the aura.",
+          "The [name] gains additional actions when in range 2 of its cauldron."
+        ],
+        "ListedActions": [
+          {
+            "Name": "Strange Brew",
+            "ActionCost": 1,
+            "Tags": [ "range 3" ],
+            "Description": "The [name] throws a potion at an ally in range. That ally gains 3 vigor, then gambles.",
+            "Rolls": [
+              { "Values": 1, "Description": "The brew explodes, stunning the ally." },
+              { "Values": 2, "Description": "The ally increases in size by +1 for the rest of combat, up to a max of size 3. Characters in the area when the ally increases in size are removed and placed adjacent to it." },
+              { "Values": 3, "Description": "The ally gains Defiance." },
+              { "Values": 4, "Description": "The ally is teleported 2."  },
+              { "Values": 5, "Description": "The ally gains 6 more vigor." },
+              { "Values": 6, "Description": "The ally immediately clears all statuses and marks." }
+            ]
+          },
+          {
+            "Name": "Sprouting Brew",
+            "ActionCost": 1,
+            "Tags": [ "range 5", "end turn" ],
+            "Description": "The [name] splashes a brew that grows a 1 space wild berry vine, a 1 space terrain effect, in a space in range. Foes that end their turn adjacent to the vine are pacified. Any ally that ends their turn adjacent to the fruit can pick it up, granting 4 vigor to themselves and destroying the vine."
+          },
+          {
+            "Name": "Cauldron Smash",
+            "ActionCost": 2,
+            "Description": "An adjacent foe is stunned and takes 6 damage. Unsummon the cauldron."
+          }
+        ]
+      }
+    }
+  ],
+  "ConditionalAbilities": [
+    {
+      "Chapter": 2,
+      "RemoveActions": "Cauldron",
+      "Actions": [
+        {
+          "Name": "Cauldron",
+          "ActionCost": 1,
+          "Tags": [ "range 3", "summon" ],
+          "Description": "The [name] summons a cauldron in range, a height 1 object. Characters adjacent to the cauldron when it's summoned are shoved 1.",
+          "Summons": {
+            "Name": "Cauldron",
+            "IsObject": true,
+            "Tags": [ "Object", "height 1" ],
+            "SummonEffects": [
+              "The Cauldron has aura 2. The [name] and any of its allies in the aura gain +1 boon on saves, and foes gain +1 curse on saves in the aura.",
+              "The [name] gains additional actions when in range 2 of its cauldron."
+            ],
+            "ListedActions": [
+              {
+                "Name": "Strange Brew",
+                "ActionCost": 1,
+                "Tags": [ "range 3" ],
+                "Description": "The [name] throws a potion at an ally in range. That ally gains 3 vigor, then gambles.",
+                "Rolls": [
+                  { "Values": 1, "Description": "The brew explodes, stunning the ally." },
+                  { "Values": 2, "Description": "The ally increases in size by +1 for the rest of combat, up to a max of size 3. Characters in the area when the ally increases in size are removed and placed adjacent to it." },
+                  { "Values": 3, "Description": "The ally gains Defiance." },
+                  { "Values": 4, "Description": "The ally is teleported 2."  },
+                  { "Values": 5, "Description": "The ally gains 6 more vigor." },
+                  { "Values": 6, "Description": "The ally immediately clears all statuses and marks." }
+                ]
+              },
+              {
+                "Name": "Sprouting Brew",
+                "ActionCost": 1,
+                "Tags": [ "range 5", "end turn" ],
+                "Description": "The [name] splashes a brew that grows a 1 space wild berry vine, a 1 space terrain effect, in a space in range. Foes that end their turn adjacent to the vine are pacified. Any ally that ends their turn adjacent to the fruit can pick it up, granting 4 vigor to themselves and destroying the vine."
+              },
+              {
+                "Name": "Cauldron Smash",
+                "ActionCost": 2,
+                "Description": "An adjacent foe is stunned and takes 6 damage. Unsummon the cauldron."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "Chapter": 3,
+      "RemoveActions": "Cauldron",
+      "Actions": [
+        {
+          "Name": "Cauldron",
+          "ActionCost": 1,
+          "Tags": [ "range 3", "summon" ],
+          "Description": "The [name] summons a cauldron in range, a height 1 object. Characters adjacent to the cauldron when it's summoned are shoved 1.",
+          "Summons": {
+            "Name": "Cauldron",
+            "IsObject": true,
+            "Tags": [ "Object", "height 1" ],
+            "SummonEffects": [
+              "The Cauldron has aura 2. The [name] and any of its allies in the aura gain +1 boon on saves, and foes gain +1 curse on saves in the aura. Foes also do no save against conditions at the end of their turn while in the aura.",
+              "The [name] gains additional actions when in range 2 of its cauldron."
+            ],
+            "ListedActions": [
+              {
+                "Name": "Strange Brew",
+                "ActionCost": 1,
+                "Tags": [ "range 3" ],
+                "Description": "The [name] throws a potion at an ally in range. That ally gains 3 vigor, then gambles.",
+                "Rolls": [
+                  { "Values": 1, "Description": "The brew explodes, stunning the ally." },
+                  { "Values": 2, "Description": "The ally increases in size by +1 for the rest of combat, up to a max of size 3. Characters in the area when the ally increases in size are removed and placed adjacent to it." },
+                  { "Values": 3, "Description": "The ally gains Defiance." },
+                  { "Values": 4, "Description": "The ally is teleported 2."  },
+                  { "Values": 5, "Description": "The ally gains 6 more vigor." },
+                  { "Values": 6, "Description": "The ally immediately clears all statuses and marks." }
+                ]
+              },
+              {
+                "Name": "Sprouting Brew",
+                "ActionCost": 1,
+                "Tags": [ "range 5", "end turn" ],
+                "Description": "The [name] splashes a brew that grows a 1 space wild berry vine, a 1 space terrain effect, in a space in range. Foes that end their turn adjacent to the vine are pacified. Any ally that ends their turn adjacent to the fruit can pick it up, granting 4 vigor to themselves and destroying the vine."
+              },
+              {
+                "Name": "Cauldron Smash",
+                "ActionCost": 2,
+                "Description": "An adjacent foe is stunned and takes 6 damage. Unsummon the cauldron."
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
 }

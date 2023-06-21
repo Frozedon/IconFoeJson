@@ -7,16 +7,19 @@
     {
       "Name": "Rumble",
       "ActionCost": 1,
-      "Description": "The Alp becomes intangible, then dashes 6 spaces."
+      "Description": "The [name] becomes intangible, then dashes 6 spaces. One foe it passes through becomes dazed."
     },
     {
       "Name": "Ancient Geo",
       "ActionCost": 2,
-      "Tags": [ "melee attack", "arc 4 + blast 1" ],
-      "Hit": "2[D]+[fray] and foe is slowed and poisoned.",
-      "Miss": "[fray].",
-      "AreaEffect": "[fray].",
-      "Effects": "Critical hit (+[D]) against poisoned foes."
+      "Tags": [ "attack", "arc 6" ],
+      "Hit": "2[D]+1.",
+      "Miss": "2 damage.",
+      "AreaEffect": "2 damage.",
+      "Effects": [
+        "Attack target releases a medium blast explosion centered on them, dealing 2 damage to all characters within.",
+        "If the attack target is bloody or dazed, they explode again, repeating this effect."
+      ]
     }
   ]
 }

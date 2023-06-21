@@ -1,45 +1,85 @@
 {
   "Name": "Rider of the Primal Storm",
-  "Inherits": [ "Jotunn", "Legendary Heavy" ],
+  "Inherits": [ "Jotunn", "Legend" ],
   "Type": "Foe",
-  "HP": 40,
-  "RemoveTraits": "Titanblood",
-  "Traits": [ "Size 2", "Divine Presence", "Static Charge", "Lingering Spark", "Judgement Bolt" ],
+  "RemoveTraits": [ "Titanblood" ],
+  "Traits": [ "Size 2", "Divine Presence", "Static Charge" ],
   "Actions": [
+    {
+      "Name": "Lingering Spark",
+      "RoundAction": true,
+      "Description": "Create a Lingering Spark adjacent to the first foe that acts in the round at the start of their turn, a 1 space terrain effect. Any foe entering the spark's space can swap their polarity, but take 1 piercing damage. Each spark is destroyed at the end of the round it is created."
+    },
+    {
+      "Name": "Judgement Bolt",
+      "RoundAction": true,
+      "Description": "At the start of each round, roll 1d6. At the end of the round, all foes are hit by divine lightning, the effect of which depends on the roll.",
+      "Rolls": [
+        {
+          "Values": [ 1, 2, 3 ],
+          "Name": "Judgement of Cowards",
+          "Description": "Foes take 2 divine damage. Increase this to 6 divine damage if they are adjacent to one or more of their allies."
+        },
+        {
+          "Values": [ 4, 5, 6 ],
+          "Name": "Judgement of the Brave",
+          "Description": "Foes take 2 divine damage. Increase this to 6 divine damage if they are not adjacent to one or more of their allies."
+        }
+      ]
+    },
     {
       "Name": "Blade of the Storm Lord",
       "ActionCost": 1,
-      "Tags": [ "melee attack", "arc 4", "true strike" ],
+      "Tags": [ "attack", "arc 4", "true strike" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
       "AreaEffect": "[fray].",
-      "Effects": "Shove all foes 1.",
+      "Effects": [
+        "May rush up to 2 before this attack.",
+        "Shove all foes 1."
+      ],
       "Combo": {
         "Name": "Great Bolt",
         "ActionCost": 2,
-        "Tags": [ "ranged attack", "line 10", "true strike" ],
+        "Tags": [ "attack", "line 10" ],
         "Hit": "2[D]+[fray].",
         "Miss": "[fray].",
         "AreaEffect": "[fray].",
-        "Effects": "Attack target crackles with a static charge. If they don't end their next turn adjacent to another character, they take [D]+[fray] again, then this effect ends."
+        "Effects": "Attack target crackles with a static charge. If they don't end their next turn adjacent to another character, they take 3 piercing damage, then this effect ends.",
+        "Combo": {
+          "Name": "Crackling Blow",
+          "ActionCost": 1,
+          "Tags": [ "attack", "range 4", "large blast", "unerring" ],
+          "Hit": "[D]+[fray].",
+          "Miss": "[fray].",
+          "AreaEffect": "[fray].",
+          "Effects": "Attack target crackles with a static charge. If they end their next turn adjacent to another character they take 3 piercing damage and this effect ends. This effect is exclusive with Great Bolt."
+        }
       }
     },
     {
       "Name": "Jolt",
       "ActionCost": 1,
-      "Description": "A foe in range 5 takes [fray] damage. They must then save or become winded and have their polarity flipped. Winded foes fail the save."
+      "Tags": [ "range 4" ],
+      "Description": "A foe in range takes 3 damage. They must then save or become weakened and have their polarity flipped. Weakened foes fail the save."
+    },
+    {
+      "Name": "Grand Fulmination",
+      "ActionCost": 1,
+      "Tags": [ "range 4" ],
+      "Description": "A free space in range of the Rider crackles with lightning. The next time a foe enters that space for any reason, they have their polarity flipped, then must save or take 3 damage three times and be weakened, or just once on a successful save. The space lasts until the end of combat."
     },
     {
       "Name": "Joyous Combat",
       "ActionCost": 1,
-      "Tags": "2/round",
-      "Description": "All adjacent foes must choose: be shoved 2, or take [D]+[fray] from the Rider."
+      "Effects": "All adjacent foes must choose: be shoved 2, or take 5 damage from the Rider.",
+      "Collide": "Foe is slashed."
     },
     {
       "Name": "Sturmreiten",
       "ActionCost": 1,
-      "Tags": "1/round",
-      "Description": "The Rider becomes intangible, then flies 5 in a straight line with phasing. All characters they pass through take [fray] damage. Then, this effect ends."
+      "Tags": [ "2/round" ],
+      "Description": "The Rider flies 4 with phasing, and is intangible while flying. All characters they pass through take 2 damage."
     }
   ],
   "PhasesDescription": "The Rider enters its second phase when bloodied.",
@@ -48,7 +88,15 @@
       "Description": "No changes."
     },
     {
-      "Traits": [ "Call Steed", "Primal Levin" ]
+      "Traits": [ "Call Steed" ],
+      "Actions": [
+        {
+          "Name": "Primal Levin",
+          "RoundAction": true,
+          "Description": "At the start of the round, the Rider creates a number of small blast area effects equal to the round number anywhere on the battlefield, targeting foes if possible. At the end of the round, massive bolts of lightning strike these spaces. Foes in the area of at least one bolt take divine damage equal to 2 + the round number."
+        }
+      ]
     }
-  ]
+  ],
+  "Tactics": "Fighting this boisterous jotunn is mostly about managing polarity. Characters that don't position correctly can quickly be cut down by the jotunn's numerous effects that require a character be adjacent to allies or apart from allies. Characters can ameliorate this somewhat with good positioning, by using Lingering Sparks to flip their polarity, or by walking into Grand Fulmination."
 }

@@ -1,39 +1,49 @@
 {
   "Name": "Vannir",
-  "Inherits": [ "Jotunn", "Artillery" ],
+  "Inherits": [ "Jotunn", "Leader" ],
   "Type": "Foe",
   "RemoveTraits": "Titanblood",
-  "Traits": "Size 1 OR Size 2",
-  "Interrupts": {
-    "Name": "Master of Rune-Cunning",
-    "Count": 1,
-    "Trigger": "The Vannir is targeted by an attack.",
-    "Effects": "The attacker must save. On a failed save, the attack automatically misses."
-  },
+  "Traits": "Rune-Glamor",
   "Actions": [
     {
       "Name": "Star Shower",
       "ActionCost": 1,
-      "Tags": [ "ranged attack 10", "cross 3", "pierce" ],
+      "Tags": [ "attack", "range 6", "small blast", "pierce" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
       "AreaEffect": "[fray]."
     },
     {
-      "Name": "Rune-curse",
+      "Name": "Master of Rune-Cunning",
       "ActionCost": 1,
-      "Description": "A foe in range 6 becomes vulnerable or shattered (Vannir's choice)."
+      "Description": "The [name] gains the following interrupt. It does not refresh at the start of their turn, and uses last until the end of the current round.",
+      "Interrupts": [
+        {
+          "Name": "Rune-Wise",
+          "Count": 2,
+          "Trigger": "The [name] or an ally in range 2 is targeted by an attack.",
+          "Effects": "The attacker must save. On a failed save, the attack automatically misses."
+        }
+      ]
     },
     {
-      "Name": "Rune of Destruction",
+      "Name": "Rune-curse",
       "ActionCost": 1,
-      "Description": "The Vannir summons a glowing rune on a free ground space within range 4. The rune can be moved over freely. There can only be a maximum of three of these Runes at once (each could be from different Vannir), and the newest one created replaces the oldest rune if there are already three. At the end of any round in which a rune is not covered by a terrain piece, character, or summon, all foes take [fray] piercing damage for each active rune. Runes disappear at the end of combat."
+      "Tags": [ "range 6" ],
+      "Description": "A foe in range becomes sealed or pacified ([name] chooses). If they have both conditions, they also take 4 piercing damage."
     },
     {
       "Name": "Aencraft",
       "ActionCost": 1,
-      "Recharge": 6,
-      "Description": "The Vannir summons 3 illusory duplicates in range 3, which are summons with 1 hp, then may swap places with one of them, teleporting. Characters don't know which is the real one, and the Vannir may move all of them when they move, and use abilities from any of their locations. If the Vannir takes this move and has duplicates remaining, it can summon until it has 3, then swap places again."
+      "Tags": [ "range 6", "mark" ],
+      "Description": "The [name] marks itself or an ally in range. That character gains a d4 power die, starting at 4, and the [name] gains the following interrupt, which it can use any number of times a round as long as the power die is 1 or greater. If the die would be reduced to 0, this mark ends.",
+      "Interrupts": [
+        {
+          "Name": "Illusory Double",
+          "Trigger": "The marked character is targeted by an ability.",
+          "Effects": "The [name] may spend any amount of ticks on the power die to gamble, rolling one dice per tick spent. That character immediately gains vigor equal to the gamble result. If the result was 4+, they also become sturdy against the ability. After the ability resolves, they may teleport 2."
+        }
+      ]
     }
   ]
 }

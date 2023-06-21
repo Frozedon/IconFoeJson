@@ -5,7 +5,7 @@
   "Actions": {
     "Name": "Porcine",
     "ActionCost": 1,
-    "Tags": "1/round",
-    "Description": "A character in range 4 must save. On a successful save, they are pacified. Otherwise, they are transformed into a pig. While transformed, they cannot attack but can otherwise act normally. They untransform at the end of combat, or if they end their turn adjacent to the Troll or their cauldron."
+    "Tags": [ "range 5", "1/round" ],
+    "Description": "A character in range must save. On a successful save, they are pacified. Otherwise, they are transformed into a pig. While transformed, they cannot attack, dash, fly, or teleport but can otherwise act normally. They untransform at the end of combat, or if they end their turn adjacent to the [name] or their cauldron."
   }
 }

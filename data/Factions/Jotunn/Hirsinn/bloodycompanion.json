@@ -3,22 +3,31 @@
   "Inherits": "Hirsinn",
   "Type": "Foe",
   "Chapter": 3,
-  "Traits": [ "Defiance", "True Enrage" ],
-  "Interrupts": {
-    "Name": "Counter-strike",
-    "Count": 1,
-    "Trigger": "The Jotunn or an adjacent ally is hit or miss by a melee attack.",
-    "Effects": "The attacker is shoved 1 and must save. On a failed save, they take [fray] damage and are dazed."
-  },
-  "Actions": {
-    "Name": "Bloody Fuller",
-    "ActionCost": 2,
-    "Tags": [ "melee attack 2", "multiattack", "true strike" ],
-    "Hit": "[D].",
-    "Miss": "-.",
-    "Effects": [
-      "Shove 1.",
-      "Deals added damage, hit or miss, equal to 2 times the round number."
-    ]
-  }
+  "Traits": [ "Defiance", "Regeneration", "True Enrage" ],
+  "Actions": [
+    {
+      "Name": "Counter Strike",
+      "ActionCost": 1,
+      "Description": "The [name] takes a defensive pose, gaining two uses of the following interrupt, which do not refresh at the start of its turn, and last until the end of the current round. It cannot use this ability again while it has uses of this interrupt remaining.",
+      "Interrupts": [
+        {
+          "Name": "Counter-strike",
+          "Count": 2,
+          "Trigger": "The [name] or an adjacent ally is targeted by an attack.",
+          "Effects": "The [name] grants sturdy to the attack target for the duration of the attack. Then, after it resolves, the [name] may rush 3. If that puts it adjacent to the attacker, the attacker takes 3 damage and is shoved 1."
+        }
+      ]
+    },
+    {
+      "Name": "Bloody Fuller",
+      "ActionCost": 1,
+      "Tags": [ "attack", "range 2", "true strike" ],
+      "Hit": "[D]+2.",
+      "Miss": "2 damage.",
+      "Effects": [
+        "Shove 1.",
+        "Deals damage again to attack target and all foes adjacent to the attack target, hit or miss, equal to 2 times the round number."
+      ]
+    }
+  ]
 }

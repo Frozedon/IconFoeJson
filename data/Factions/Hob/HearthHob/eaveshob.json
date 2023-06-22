@@ -6,15 +6,21 @@
   "Traits": [ "Flying", "Lucky Feather" ],
   "Actions": [
     {
-      "Name": "Crow Storm",
+      "Name": "Pilfer Luck",
       "ActionCost": 1,
-      "Recharge": 6,
-      "Description": "The hob chooses a foe in range 4. At the end of that foe's next turn, a huge storm of crows descends on their location for a blast 1 area effect centered on them. That foe takes [fray] damage six times. Reduce this damage once for each other character in the area of effect."
+      "Tags": [ "range 3", "mark" ],
+      "Description": "The [name] marks a foe in range. While marked the foe cannot gain boons, and the [name] gains +1 boon on all its attacks and saves. A foe can end this mark by choosing to roll all attacks and saves with +1 curse for their entire turn. The mark then ends."
+    },
+    {
+      "Name": "Crow Storm",
+      "ActionCost": 2,
+      "Tags": [ "range 4" ],
+      "Description": "The [name] chooses a foe in range. At the end of that foe's next turn, a huge storm of crows descends on their location for a medium blast area effect centered on them. That foe takes 4 damage six times. Reduce this damage once for each other character in the area of effect."
     },
     {
       "Name": "Bounding Leaps",
       "ActionCost": 1,
-      "Description": "The hob flies 3.",
+      "Description": "The [name] flies 3.",
       "Effects": "If it lands on an object or adjacent to a character, it can repeat this flight once more."
     }
   ]

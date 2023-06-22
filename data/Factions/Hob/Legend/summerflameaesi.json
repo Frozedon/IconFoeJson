@@ -1,51 +1,73 @@
 {
   "Name": "Summer Flame Aesi",
-  "Inherits": [ "Hob", "Legendary Heavy" ],
+  "Inherits": [ "Hob", "Legend" ],
   "Type": "Foe",
-  "HP": 40,
-  "Traits": [ "Divine Ambrosia", "Sober Up" ],
+  "Traits": [ "Size 2", "Divine Ambrosia", "Sober Up" ],
   "Actions": [
-    {
-      "Name": "Brew Smash",
-      "ActionCost": 1,
-      "Tags": [ "melee attack 3", "blast 1", "true strike" ],
-      "Hit": "[D]+[fray].",
-      "Miss": "[fray].",
-      "AreaEffect": "[fray].",
-      "Effects": [
-        "All affected foes take +1 intoxication if they have less than 4.",
-        "On hit: Critical hit against dazed foes."
-      ]
-    },
-    {
-      "Name": "Wandering Haze",
-      "ActionCost": 0,
-      "Description": "The Aesi dashes 2, then shoves an adjacent foe 1."
-    },
-    {
-      "Name": "Raucous Dance",
-      "ActionCost": 1,
-      "Tags": "close blast 2",
-      "Description": "The Aesi implores all foes in the area to dance, shoving them 2 spaces. Characters can choose the direction by taking +1 intoxication, otherwise the Aesi chooses the direction.",
-      "Collide": "Foe takes [D]+[fray]."
-    },
-    {
-      "Name": "Uncork",
-      "ActionCost": 1,
-      "Tags": "1/round",
-      "Description": "The Aesi summons a size 1 keg object in range 3. The object has aura 1. Characters in the aura are dazed+, and if they start their turn there, they increase their intoxication by +1."
-    },
     {
       "Name": "Fire Pit",
       "ActionCost": 1,
-      "Tags": [ "1/round", "terrain effect" ],
+      "Tags": [ "2/round" ],
       "Description": "The Aesi creates a pit space that is also dangerous terrain."
     },
     {
       "Name": "Stiff Drink",
       "ActionCost": 1,
-      "Tags": [ "2/round", "true strike" ],
-      "Description": "The Aesi implores an adjacent character to drink before giving them a stiff whack. If the character drinks, they gain vigor 1 but increase their intoxication by 2. Then, they must save or take 2[D]+[fray] damage from the Aesi and become dazed, or [D]+[fray] on a successful save. Dazed foes fail the save."
+      "Tags": [ "true strike", "1/round" ],
+      "Description": "The Aesi implores an adjacent character to drink before giving them a stiff whack. If the character drinks, they gain a vigor surge but increase their intoxication by 2. Then, they must save or take 2[D]+[fray] damage from the Aesi and become slashed, or [D]+[fray] on a successful save. Slashed foes fail the save."
+    },
+    {
+      "Name": "Brew Smash",
+      "ActionCost": 1,
+      "Tags": [ "attack", "range 3", "small blast", "true strike" ],
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "AreaEffect": "[fray].",
+      "Effects": [
+        "All affected foes take +1 intoxication if they have less than 4. ",
+        "Deals bonus damage to weakened foes."
+      ],
+      "Combo": {
+        "Name": "Wild Blow",
+        "ActionCost": 1,
+        "Tags": [ "attack", "melee", "small blast", "+1 curse" ],
+        "Hit": "[D]+[fray].",
+        "Miss": "[fray].",
+        "AreaEffect": "[fray].",
+        "Effects": [
+          "May rush 2 before this attack.",
+          "Deals 1 damage again to the target, once, hit or miss, for each level of intoxication."
+        ]
+      }
+    },
+    {
+      "Name": "Uncork",
+      "ActionCost": 1,
+      "Tags": [ "range 3" ],
+      "Description": "The Aesi summons a height 1 keg object in range.",
+      "Summons": {
+        "Name": "Keg",
+        "IsObject": true,
+        "Tags": [ "Objects", "desctructible (5 hp)", "size 1" ],
+        "SummonEffects": "The object has aura 1. Characters in the aura are weakened+, and if they start their turn there, they increase their intoxication by +1."
+      },
+      "Combo": {
+        "Name": "Steal Slip",
+        "ActionCost": 1,
+        "Description": "The Aesi drinks from all adjacent kegs, gaining 2 vigor per keg. If it drinks from 3 or more kegs, its next attack deals maximum damage."
+      }
+    },
+    {
+      "Name": "Raucous Dance",
+      "ActionCost": 1,
+      "Tags": [ "burst 2 (self)" ],
+      "Description": "The Aesi implores all foes in the area to dance, shoving them 2 spaces. Characters can choose the direction by taking +1 intoxication, otherwise the Aesi chooses the direction.",
+      "Collide": "Foe takes 5 damage."
+    },
+    {
+      "Name": "Wandering Haze",
+      "ActionCost": 1,
+      "Description": "The Aesi rushes 3, then shoves all adjacent foes 1."
     }
   ],
   "PhasesDescription": "The Aesi enters Phase II when bloodied.",
@@ -54,29 +76,30 @@
       "Description": "No changes."
     },
     {
-      "Traits": "Haze of Ambrosia",
       "Actions": [
+        {
+          "Name": "Haze of Ambrosia",
+          "RoundAction": true,
+          "Description": "All foes increase their intoxication by +1."
+        },
         {
           "Name": "Ignite",
           "ActionCost": 1,
-          "Tags": "1/round",
-          "Description": "The Aesi shows off its fire breathing. A foe in range 4 must save or take 3 damage, once, (reduced to 1, once, on a successful save) for every stack of intoxication they have, but then clears all intoxication, resetting the die to 1."
+          "Tags": [ "range 4", "1/round" ],
+          "Description": "The Aesi shows off its fire breathing. A foe in range 4 must save or take 4 piercing damage, once, (reduced to 2 piercing, once, on a successful save) for every stack of intoxication they have, but then clears all intoxication, resetting the die to 1."
         },
         {
           "Name": "Duel of Flagons",
           "ActionCost": 1,
-          "Tags": "1/round",
-          "Description": "The Aesi chooses a foe in range 3 and tosses them a flagon.",
+          "Tags": [ "range 3", "1/round" ],
+          "Description": "The Aesi chooses a foe in range and tosses them a flagon.",
           "ListedItems": [
-            {
-              "Description": "If that character chooses not to drink, the Aesi gains vigor 1 and clears all statuses and marks."
-            },
-            {
-              "Description": "If that character chooses to drink, they increase their intoxication by 2. The foe rolls 1d6 and the Aesi rolls 1d8. The loser of the contest becomes dazed and takes 2 divine damage, or 4 if they were already dazed. If a character wins, they can challenge the Aesi again, repeating this effect."
-            }
+            { "Description": "If that character chooses not to drink, the Aesi gains 10 vigor and clears all statuses." },
+            { "Description": "If that character chooses to drink, they increase their intoxication by 2. The foe rolls 1d6 and the Aesi rolls 1d8. The loser of the contest becomes weakened and sacrifices 4. If they were already weakened, they sacrifice 6 instead. If a character wins, they can repeat the challenge, repeating this effect." }
           ]
         }
       ]
     }
-  ]
+  ],
+  "Tactics": "Fighting this drunken brawler is a matter of timing sober up so that it doesn't put you in a bad spot. There might be times it is better to indulge, such as with Stiff Drink and Duel of Flagons. After all, characters that save successfully against Ambrosia intoxication take no ill effects, and can gamble on their good fortune. Keeping intoxication high can still be risky due to moves like Ignite and Wild Blow."
 }

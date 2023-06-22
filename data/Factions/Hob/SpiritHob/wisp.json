@@ -7,13 +7,13 @@
   "Actions": {
     "Name": "Dancing Light",
     "ActionCost": 1,
-    "Tags": [ "end turn", "summon" ],
-    "Description": "The Hob summons a dancing light in range 6 in any space not adjacent to a character.",
-    "Charge": "Summons two lights.",
+    "Tags": [ "range 6", "end turn", "summon" ],
+    "Description": "The [name] summons a dancing light in range in any space not adjacent to a character.",
+    "Charge": "Summon two lights.",
     "Summons": {
       "Name": "Dancing Light",
-      "Tags": [ "Size 1", "1 HP", "Defense 8" ],
-      "SummonEffects": "When a foe starts or ends a turn adjacent to the light, it explodes in a blast 1 area effect centered on it. Characters inside must save or take [fray] damage twice, or once on a successful save. If the light is destroyed, it fizzles out without exploding."
+      "Tags": [ "Size 1", "intangible" ],
+      "SummonEffects": "When a foe starts or ends a turn adjacent to the light, it explodes in a medium blast area effect centered on it. Characters inside must save or take [fray] damage twice, or once on a successful save. If the light is destroyed, it fizzles out without exploding."
     }
   }
 }

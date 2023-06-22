@@ -6,7 +6,7 @@
   "Actions": {
     "Name": "Thorny Thicket",
     "ActionCost": 1,
-    "Tags": [ "1/combat", "terrain effect" ],
-    "Description": "The spirit creates a line 3 area of dangerous terrain in range 6."
+    "Tags": [ "range 6", "1/combat" ],
+    "Description": "The [name] creates a line 3 area of dangerous terrain in range."
   }
 }

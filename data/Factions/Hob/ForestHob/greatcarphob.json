@@ -3,11 +3,18 @@
   "Inherits": "Forest Hob",
   "Type": "Foe",
   "Chapter": 2,
-  "Traits": "Drag Under (Carp)",
-  "Actions": {
-    "Name": "Summon Pool",
-    "ActionCost": 0,
-    "Tags": [ "1/combat", "terrain effect" ],
-    "Description": "The Carp Hobb creates a pit in a free space in range 3."
-  }
+  "Actions": [
+    {
+      "Name": "Dive Kick",
+      "ActionCost": 1,
+      "Description": "The [name] rushes up to 2 spaces in a straight line, then an adjacent foe is shoved the number of spaces the [name] rushed.",
+      "Charge": "Up to 5 spaces instead."
+    },
+    {
+      "Name": "Drag Under",
+      "ActionCost": 1,
+      "Tags": [ "usable when bloodied" ],
+      "Description": "An adjacent foe takes [fray] damage, and remove both the [name] and that foe from play as they dive into a pool of magicked water. Both return to play at the start of that foe's next turn, in any free space in range 3 of their original location."
+    }
+  ]
 }

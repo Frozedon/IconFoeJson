@@ -1,47 +1,43 @@
 {
   "Name": "Falling Leaf Aesi",
-  "Inherits": [ "Hob", "Legendary Skirmisher" ],
+  "Inherits": [ "Hob", "Legend" ],
   "Type": "Foe",
   "Chapter": 2,
-  "HP": 24,
-  "Traits": [ "Immortal Thievery", "Gust" ],
+  "Traits": [ "Immortal Thievery" ],
   "Interrupts": {
     "Name": "Steal Ability",
     "Tags": [ "2/round", "thievery" ],
     "Trigger": "A foe in range 2 uses an ability and the ability resolves.",
-    "Effects": "The foe loses the memory of that ability, becoming unable to use it until they pick up a memory. If the ability is a stance or aura, it has no effect for the duration."
+    "Effects": "The foe loses the memory of that ability, becoming unable to use it until they pick up a memory."
   },
   "Actions": [
     {
-      "Name": "Leaf Dance",
-      "ActionCost": 1,
-      "Tags": [ "melee attack", "multiattack", "+1 boon" ],
-      "Hit": "[D]+[fray].",
-      "Miss": "[fray].",
-      "Effects": "Aesi may dash up to 5 spaces during any part of this attack, making attacks against any adjacent foes during its movement, but must move in a straight line. During this movement, they can shove any memories 1 to either side."
-    },
-    {
-      "Name": "Whirling Leaves",
-      "ActionCost": 1,
-      "Description": "Repeat the following effect three times.",
-      "Effects": "Teleport 1, then deal 2 damage to all adjacent foes and shove all adjacent foes and memories."
+      "Name": "Swirling Leaves",
+      "RoundAction": true,
+      "Description": "At the start of each round, the Aesi puts down a space of swirling wind, a 1 space terrain effect, adjacent to its space. Characters that enter such a space, including the Aesi, can fly 3 spaces as an effect, but only once a turn. Spaces persist until the end of combat."
     },
     {
       "Name": "Greenpath",
-      "ActionCost": 2,
+      "ActionCost": 1,
       "Tags": "1/round",
-      "Description": "Remove the Aesi from play, then place them anywhere on the battlefield in free space. Clear all statuses, marks and blights from them."
+      "Description": "Remove the Aesi from play, then place them anywhere on the battlefield in free space. Clear all statuses from them."
+    },
+    {
+      "Name": "Wall of Thorns",
+      "ActionCost": 1,
+      "Tags": [ "2/round" ],
+      "Description": "The Aesi creates a line 3 area of height 1 thorny wall objects. Each object is destructible (5 hp) and also considered dangerous terrain, but only for foes. Foes that collide with it take 2 piercing damage."
     },
     {
       "Name": "Fae Thief",
       "ActionCost": 1,
       "Tags": [ "2/round", "thievery" ],
-      "Description": "The Aesi steals something from a foe in range 5. Roll 1d6 to see what. Picking up a memory removes an effect of the foe's choice. Re-roll repeat effects.",
+      "Description": "The Aesi steals something from a foe in range 5, marking them. Roll 1d6 to see what. Picking up a memory ends this effect. Re-roll repeat effects.",
       "Rolls": [
         {
           "Values": 1,
           "Name": "Friendship",
-          "Description": "Foe's abilities can't target allies and treat all allies as immune to their effects, including any active marks, stances, auras, etc."
+          "Description": "Foes abilities can't target allies and treat all allies as immune to their effects, including any active marks, stances, auras, etc."
         },
         {
           "Values": 2,
@@ -51,7 +47,7 @@
         {
           "Values": 3,
           "Name": "Luck",
-          "Description": "Foe cannot gain boons or critically hit."
+          "Description": "Foe makes all attacks and saves with +1 curse, cannot gain boons, and cannot critical hit."
         },
         {
           "Values": 4,
@@ -60,30 +56,87 @@
         },
         {
           "Values": 5,
-          "Name": "Talent",
-          "Description": "Foe takes +1 curse on all attacks and saves."
+          "Name": "Grace",
+          "Description": "Aesi cannot miss this foe with attacks, and they cannot reduce damage from the Aesi in any way."
         },
         {
           "Values": 6,
           "Name": "Youth",
-          "Description": "Foe cannot dash and is slowed+."
+          "Description": "Foe cannot dash and is dazed+."
         }
       ]
     },
     {
-      "Name": "Wall of Thorns",
+      "Name": "Leaf Dance",
       "ActionCost": 1,
-      "Tags": [ "1/round", "terrain effect" ],
-      "Description": "The Aesi creates a line 4 area of height 2 thorny wall objects. Each object is destructible (10 hp) and also considered dangerous terrain. Character that collide with it take 2 divine damage."
+      "Tags": [ "attack", "+1 boon" ],
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "Effects": "Aesi may dash 2 spaces before this attack.",
+      "Combo": {
+        "Name": "Cutting Wit",
+        "ActionCost": 1,
+        "Tags": [ "attack", "range 2", "small blast", "+1 boon" ],
+        "Hit": "[D]+[fray].",
+        "Miss": "[fray].",
+        "AreaEffect": "[fray].",
+        "Effects": "All foes are dazed. Shove all memories outside of the area.",
+        "Combo": {
+          "Name": "Artery Cut",
+          "ActionCost": 2,
+          "Tags": [ "attack", "line 4", "mark" ],
+          "Hit": "2[D]+[fray].",
+          "Miss": "[fray].",
+          "AreaEffect": "[fray].",
+          "Effects": "Attack target is marked and gains an open wound. While marked, it takes [D] again at the end of its turns. This mark ends instead if the character ends their turn adjacent to an ally."
+        }
+      }
+    },
+    {
+      "Name": "Gust Strike",
+      "ActionCost": 1,
+      "Description": "The Aesi flies exactly 3 spaces in a straight line, dealing 2 damage to all foes it passes over. If it lands on an object height 1 or higher, it may repeat this effect, but only once a turn, and may only damage foes once per use of this ability."
+    },
+    {
+      "Name": "Whirling Branches",
+      "ActionCost": 1,
+      "Effects": "Teleport 1, then deal 1 damage to all adjacent foes and shove all adjacent foes and memories 1. Repeat this effect three times."
     }
   ],
-  "PhasesDescription": "On round 4, and every two rounds thereafter (6, 8, 10 etc), the Aesi uses Mortal Mockery.",
+  "PhasesDescription": "At the start of round 3, and every two rounds thereafter (5, 7, etc), the Aesi uses Mortal Mockery.",
   "Phases": [
     {
       "Description": "No changes."
     },
     {
-      "Traits": "Mortal Mockery"
+      "Name": "Mortal Mockery *Round 3, 5, 7, etc.)",
+      "Description": "As phase I, but also:",
+      "Actions": [
+        {
+          "Name": "Mortal Mockery",
+          "RoundAction": true,
+          "Description": "The Aesi transforms its physical form into a mockery of the closest foe. The effects depend on the foe's class. If the same effect would be chosen twice, the Aesi can choose a different one of its choice to apply.\nNaturally, all of these effects stack if the Aesi is allowed to use them again. Why be one class when you can be all of them?",
+          "ListedItems": [
+            {
+              "Name": "Mock Stalwart",
+              "Description": "The Aesi gains armor 2 and rampart. In addition, Leaf dance and Cutting Wit gain true strike."
+            },
+            {
+              "Name": "Mock Vagabond",
+              "Description": "The Aesi may split up all its movement with actions. In addition, Leaf dance and Cutting Wit gain unerring and the ability to critically hit, dealing +[D] on a crit."
+            },
+            {
+              "Name": "Mock Mendicant",
+              "Description": "The Aesi gains regeneration. In addition, Leaf Dance and Cutting Wit deal bonus damage."
+            },
+            {
+              "Name": "Mock Wright",
+              "Description": "The Aesi gains the Aetherwall trait. In addition, Leaf Dance and Cutting Wit gain pierce."
+            }
+          ]
+        }
+      ]
     }
-  ]
+  ],
+  "Tactics": "Characters fighting this Aesi will find themselves scrambling to recover memories as they have their abilities quite literally blown out of them. The Aesi can make this difficult by knocking memories around, isolating them with Wall of Thorns, and forcing them to group up with Artery Cut. In phase II, characters must make quick work of the Aesi, or find themselves overwhelmed."
 }

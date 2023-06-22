@@ -5,18 +5,19 @@
   "Actions": [
     {
       "Name": "Fireworks",
-      "ActionCost": 2,
-      "Description": "All foes in range 2 take 3 damage and are branded."
+      "ActionCost": 1,
+      "Tags": [ "burst 3 (self)" ],
+      "AreaEffect": "All foes in range 2 take 2 damage. Foes at exactly range 3 are sealed."
     },
     {
       "Name": "Bonfire Festival",
       "ActionCost": 0,
-      "Tags": [ "1/combat", "terrain effect" ],
-      "Description": "The Bonfire spirit creates a height 1 bonfire object.",
+      "Tags": [ "range 3", "terrain effect", "1/combat" ],
+      "Description": "The [name] creates a height 1 bonfire object.",
       "Summons": {
         "Name": "Bonfire",
         "IsObject": true,
-        "Tags": [ "Size 1", "Height 1" ],
+        "Tags": [ "Height 1 object" ],
         "SummonEffects": "The area on top of the object is dangerous terrain, and the object emits aura 1. Allies in the aura gain the charged effects of all abilities, even on normal turns."
       }
     }

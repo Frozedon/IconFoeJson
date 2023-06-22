@@ -3,20 +3,19 @@
   "Inherits": "Field Hob",
   "Type": "Foe",
   "Chapter": 3,
-  "Traits": "Amorous Waltz",
+  "Traits": [ "Phasing", "Amorous Aura" ],
   "Actions": [
     {
       "Name": "Love-struck",
       "ActionCost": 1,
-      "Recharge": 6,
-      "Effects": "A foe of the Aesi's choice must save. On a successful save, the foe is pacified. On a failed save, the Aesi chooses itself or one of its allies. Until the end of their next turn, all other characters than the chosen character are immune to all damage and effects from the chosen foe."
+      "Tags": [ "range 4" ],
+      "Description": "A foe of the [name]'s choice in range4 must save. On a successful save, the foe is pacified. On a failed save, the [name] chooses itself or one of its allies. Until the end of their next turn, all other characters than the chosen character are immune to all damage and effects from the chosen foe."
     },
     {
       "Name": "Donkey",
       "ActionCost": 1,
-      "Tags": "mark",
-      "Description": "The Aesi marks a character in range 5. They grow donkey ears on the top of their head.",
-      "Mark": "While marked, when the character uses an ability, they first roll 1d6. On a 4+, the character can choose targets as normal. On a 1-3, the Aesi chooses the target of the ability for them, which could include an ally of the target, then this effect and mark ends."
+      "Tags": [ "range 4", "mark", "2/combat" ],
+      "Description": "The [name] marks a character in range. They grow donkey ears on the top of their head. While marked, they are pacified+, and after they use any non-basic ability, the [name] may shove them 2 in any direction. At the end of their turn, they may save to end this mark, ending it on a success."
     }
   ]
 }

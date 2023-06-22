@@ -3,10 +3,11 @@
   "Inherits": "Forest Hob",
   "Type": "Foe",
   "Traits": "Heavy Armor",
-  "Actions": {
-    "Name": "Mudslide",
-    "ActionCost": 0,
-    "Tags": [ "1/combat", "terrain effect" ],
-    "Description": "The Hob dashes 4 with phasing, then creates a terrain effect in the spaces it just passed through. Characters that enter the space for the first time on their turn or start their turn there must save or slip and be shoved 2 in a direction of the hob's choice."
-  }
+  "Actions": [
+    {
+      "Name": "Mudslide",
+      "ActionCost": 1,
+      "Description": "The [name] rushes 3 with phasing, then creates a terrain effect in the spaces it just passed through. Characters that enter the space for the first time on their turn or start their turn there must save or slip and be shoved 2 in a direction of the [name]'s choice."
+    }
+  ]
 }

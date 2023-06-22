@@ -38,8 +38,8 @@
     "Description": "Unaffected by terrain and height movement penalties."
   },
   {
-    "Name": "Amorous Waltz",
-    "Description": "Immune to all damage from pacified foes."
+    "Name": "Amorous Aura",
+    "Description": "Aura 2. Characters in the aura reduce all damage from pacified foes to 1."
   },
   {
     "Name": "Amorphous",
@@ -52,6 +52,10 @@
   {
     "Name": "Armor [X]",
     "Description": "Reduce all damage taken by [X]."
+  },
+  {
+    "Name": "Aura of Alacrity",
+    "Description": "Aura 1. Allies in the aura can use the charged effects of abilities even on normal turns."
   },
   {
     "Name": "Aura of Bloodlust",
@@ -185,7 +189,7 @@
   },
   {
     "Name": "Crumbling Body",
-    "Description": "Each time it would take damage from an action or ability, permanently reduce its armor by 1 for the rest of combat, even if that damage is reduced to 0. If it's armor is 0, it becomes vulnerable+."
+    "Description": "Has 12 armor. After any ability damages the hob, permanently reduce its armor by 1 for the rest of combat, even if that damage is reduced to 0. If it's armor is 0, all attacks against it become critical hits on hit."
   },
   {
     "Name": "Crystal Burst",
@@ -445,7 +449,7 @@
   },
   {
     "Name": "Lead Astray",
-    "Description": "Aura 2. This character may teleport any other character that ends their turn in the aura 2 spaces in any direction."
+    "Description": "Aura 2. The [name] may teleport any character that ends their turn in the aura 2 spaces in any direction."
   },
   {
     "Name": "Leap",
@@ -455,6 +459,16 @@
     "Name": "Legend",
     "Description": "Takes 1 turn for each player character.",
     "EncounterBudget": -1.0
+  },
+  {
+    "Name": "Lesser Mortal Mockery",
+    "Description": "At the start of its turn, the [name] transforms its physical form into a brief mockery of the closest foe. The effects depend on the foe's class. If multiple foes are equidistant, it can choose.",
+    "ListedItems": [
+      { "Name": "Stalwart", "Description": "The [name] becomes sturdy until the start of its next turn." },
+      { "Name": "Vagabond", "Description": "The [name] gains evasion until the start of its next turn." },
+      { "Name": "Mendicant", "Description": "The [name] may cure itself." },
+      { "Name": "Wright", "Description": "The [name] creates a height 1 aethershard object in range 3, then may teleport on top of it." }
+    ]
   },
   {
     "Name": "Living Lightning",
@@ -483,7 +497,7 @@
   },
   {
     "Name": "Lucky Feather",
-    "Description": "When taking damage that would reduce this character to 0 hp, roll 1d6. On a 3+, become immune to all damage from the triggering ability. True strike bypasses this effect."
+    "Description": "When taking damage that would reduce the hob to 0 hp, gamble. On a 3+, become immune to all damage from the triggering ability. True strike bypasses this effect."
   },
   {
     "Name": "Lumbering",
@@ -518,6 +532,10 @@
     ]
   },
   {
+    "Name": "Mist Form",
+    "Description": "The [name] is a character and also a space of dangerous and difficult terrain. Characters can share space with it, and it has resistance against any character inside of its space."
+  },
+  {
     "Name": "Mob",
     "Description": "This character doesn't trigger slay effects, and is removed when defeated."
   },
@@ -540,7 +558,7 @@
   },
   {
     "Name": "Overwhelming Stench",
-    "Description": "Aura 1. Attackers in the aura gain +1 curse on attacks, and any character that ends their turn in the aura must save or become slow and poisoned. Poisoned characters treat the area as dangerous terrain."
+    "Description": "Aura 1. Attackers in the aura gain +1 curse on attacks, and characters in aura that end their turn there are dazed. Dazed characters take 4 damage instead."
   },
   {
     "Name": "Pack Tactics",
@@ -617,7 +635,13 @@
   },
   {
     "Name": "Saddle Up",
-    "Description": "An adjacent ally can mount or dismount this character as a free action, entering and sharing its space. Whiled mounted, attacks take +1 curse against a rider. Allies can start any combat already riding this character. This character has room for two size 1 characters. If this character is defeated, characters dismount."
+    "Description": "Allies can mount or dismount the [name] by spending 1 space of movement, placing them adjacent when dismounting, with the following rules:",
+    "ListedItems": [
+      { "Description": "Allies can start the battle mounted." },
+      { "Description": "While mounted, place characters inside a free space on the [name]. They share its space, move when it moves, and have cover. While moving with the [name], characters are unstoppable." },
+      { "Description": "The rider benefits from the [name]'s phasing." },
+      { "Description": "Characters mounting the [name] when it is defeated are placed in any free adjacent space of the [name]'s choice and take 3 damage." }
+    ]
   },
   {
     "Name": "Salty",
@@ -756,6 +780,10 @@
   {
     "Name": "The Old Blood",
     "Description": "Immune to blights."
+  },
+  {
+    "Name": "Thicket Dance",
+    "Description": "At the start of its turn, before any delay effects activate, the [name] and all characters in range 2 teleport 1 space in a direction of the [name]'s choice."
   },
   {
     "Name": "Time Lock",

@@ -2,19 +2,13 @@
   "Name": "Ruddcap",
   "Inherits": "Forest Hob",
   "Type": "Foe",
-  "RemoveActions": "Stone Toss",
   "Actions": [
-    {
-      "Name": "Poison Spore",
-      "ActionCost": 1,
-      "Tags": "repeatable",
-      "Description": "A foe in range 3 takes 2 damage and is poisoned. Poisoned foes are winded."
-    },
     {
       "Name": "Poison Burst",
       "ActionCost": 2,
-      "Description": "The Ruddcap releases a burst of poisonous spores that becomes a close blast 1 area of dangerous terrain that lasts until the hob uses this ability again. Foes that end their turn in the area are poisoned. Poisoned foes are stunned.",
-      "Charge": "Close blast 2."
+      "Tags": [ "range 2" ],
+      "Description": "The [name] releases a burst of poisonous spores that becomes a small blast blast area of difficult terrain that lasts until the hob uses this ability again. Foes that start or end their turn in the area are weakened and take 2 damage. Weakened foes are stunned.",
+      "Charge": "Range 4 and medium blast."
     }
   ]
 }

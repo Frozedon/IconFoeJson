@@ -2,35 +2,28 @@
   "Name": "Banderhob",
   "Inherits": [ "Hob", "Elite", "Skirmisher" ],
   "Type": "Foe",
-  "Vitality": 8,
-  "Interrupts": {
-    "Name": "Protect the Child",
-    "Count": 3,
-    "Description": "At the start of combat, the Banderhobb chooses a foe, deciding it's a child to be protected.",
-    "Trigger": "A character ends their turn adjacent to the chosen character, or deals damage with an ability to that character.",
-    "Effects": "The Hob teleports to an adjacent space as an effect, then swipes that character. Other hobs are shoved 1 and take no damage. All other characters take [D]+[fray] damage. This effect ends if the Banderhobb's target deals damage to it in any way. If the effect ends, the Banderhobb can immediately choose a character to protect, but can't choose any target it's already chosen this combat."
-  },
+  "Traits": [ "Protect the Child" ],
   "Actions": [
     {
       "Name": "Savage Swipes",
       "ActionCost": 1,
-      "Tags": [ "melee attack", "multiattack" ],
-      "Hit": "[D].",
-      "Miss": "1 damage.",
-      "Effects": "If there's only one valid character in range, increase damage to 2[D]+[fray] on hit.",
-      "Charge": "Gains range 2."
+      "Tags": [ "attack", "burst 2 (self)" ],
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "AreaEffect": "[fray].",
+      "Effects": "If there's only one valid character in range, deals bonus damage.",
+      "Charge": "Burst 3."
     },
     {
       "Name": "Bounding Leaps",
       "ActionCost": 1,
-      "Description": "The Banderhob flies 4.",
+      "Description": "The [name] flies 4.",
       "Effects": "If it lands on an object or adjacent to a character, it can repeat this flight once more."
     },
     {
       "Name": "Pounce",
       "ActionCost": 2,
-      "Recharge": 5,
-      "Description": "The hob flies 4, then an adjacent foe is slowed and must save or take [D]+[fray], twice, or [D]+[fray] on a successful save."
+      "Description": "The [name] flies 4, then an adjacent foe is dazed and must save or take [D]+[fray], twice, or [fray] on a successful save."
     }
   ]
 }

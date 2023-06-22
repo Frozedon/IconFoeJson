@@ -14,4 +14,4 @@
 - [X] Demon
 - [ ] Lowlander
 - [X] Jotunn
-- [ ] Hob
+- [X] Hob

@@ -3,9 +3,9 @@
   "Inherits": "Hearth Hob",
   "Type": "Foe",
   "Actions": {
-    "Name": "Aencraft",
+    "Name": "Displacement",
     "ActionCost": 1,
-    "Recharge": 6,
-    "Description": "The Fennehob summons 3 illusory duplicates in range 3, which are summons with 1 hp, then may secretly swap places with one of them, teleporting. The Hob may move all of them whenever they move, and use abilities from any of their locations. If the Hob takes this move and has duplicates remaining, it can summon until it has 3, then swap places again."
+    "Tags": [ "range 3", "mark" ],
+    "Description": "The [name] marks itself or an ally in range. That character gains evasion and dodge, and may teleport whenever it would move any number of spaces. These mark effects turn off if the marked character is adjacent to a foe."
   }
 }

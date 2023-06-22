@@ -9,34 +9,35 @@
     {
       "Name": "Ancient Bolt",
       "ActionCost": 1,
-      "Tags": [ "ranged attack", "line 8", "pierce" ],
+      "Tags": [ "attack", "line 8", "pierce" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
-      "Effects": "Foes in the line are electrified. Electrified characters take 2 damage, once, for every adjacent character."
+      "AreaEffect": "[fray].",
+      "Effects": "Attack target takes 2 damage, once, for every adjacent foe or ally."
     },
     {
       "Name": "Root Lash",
       "ActionCost": 1,
-      "Effects": "A character in range 4 from a root summon or a deep root takes [fray] damage, then must save or be shoved as far as possible towards that root, or 1 space on a successful save."
+      "Effects": "A character in range 4 from a root summon or a deep root takes 3 damage, then must save or be shoved as far as possible towards that root, or 1 space on a successful save."
     },
     {
-      "Name": "Ancient Dagon",
+      "Name": "Ancient Rime",
       "ActionCost": 1,
-      "Tags": [ "line 6", "1/round", "pierce" ],
+      "Tags": [ "line 6", "pierce", "1/round" ],
       "AreaEffect": "Characters in the area take [fray] damage.",
-      "Delay": "The hob's next turn must be slow but at the start of that turn, a freezing weapon made of water coalesces at the end of the line, repeating the area. Characters in the area take [D]+[fray]."
+      "Delay": "The [name]'s next turn must be slow but at the start of that turn, a freezing weapon made of water coalesces at the end of the line, repeating the area. Characters in the area effect take [D]+[fray]. Then this effect ends."
     },
     {
       "Name": "Summon Root",
       "ActionCost": 1,
-      "Description": "The Wissan creates a lesser root in a free space in range 6.",
+      "Tags": [ "range 6" ],
+      "Description": "The [name] creates a lesser root in a free space in range.",
       "Summons": {
         "Name": "Lesser Root",
-        "IsObject": true,
-        "Tags": [ "Size 1", "Immune to all damage and effects" ],
+        "Tags": [ "Size 1", "intangible" ],
         "SummonEffects": [
           "The root emits aura 1 around it. Foes in the aura are vulnerable+.",
-          "When a root is summoned, deal 1 damage, once, to any character in range 2 for every lesser root or deep root in range 2 of that character, including this one."
+          "When a root is summoned, deal 1 damage, once, to one foe in range 2 for every lesser root or deep root in range 2 of that character, including this one."
         ]
       }
     }

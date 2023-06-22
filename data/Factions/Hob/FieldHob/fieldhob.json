@@ -1,56 +1,76 @@
 {
   "Name": "Field Hob",
   "Inherits": [ "Hob", "Leader" ],
-  "Interrupts": {
-    "Name": "Cut Deal", 
-    "Count": 1,
-    "Trigger": "A character in range 3 of the Hob gains a status.",
-    "Effects": "The Hob transfers the status to itself or another character in range 3 of the Hob. A foe can save to avoid gaining a status from this effect."
-  },
+  "Traits": "Aura of Alacrity",
   "Actions": [
     {
       "Name": "The Old Magic",
       "ActionCost": 1,
-      "Tags": [ "melee attack or ranged attack 3" ],
+      "Tags": [ "attack", "range 5" ],
       "Hit": "[D].",
       "Miss": "1 damage.",
-      "Effects": "The Hob inflicts all statuses it is currently suffering from on its foe, then deals 2 damage, once, per status its foe is afflicted by."
+      "Effects": "The [name] inflicts a status it is currently suffering from on its foe, then deals 2 damage, once, per status its foe is afflicted by.",
+      "Charge": "All statuses."
     },
     {
       "Name": "Yank Thread",
       "ActionCost": 1,
-      "Effects": "A foe in range 4 is branded. Branded foes are shoved 2 in any direction."
+      "Tags": [ "range 4" ],
+      "Effects": "A foe in range is sealed. Sealed foes are shoved 2 in any direction."
     },
     {
-      "Name": "Fairy Knot",
+      "Name": "Cut Deal",
       "ActionCost": 1,
-      "Tags": "end turn",
-      "Recharge": 6,
-      "Description": "The Hob chooses an ally in range 6. That ally can immediately activate any Delay effects it is holding OR immediately regain the use of an interrupt."
+      "Description": "The [name] gains the following interrupt until the start of its next turn.",
+      "Interrupts": [
+        {
+          "Name": "Cut Deal",
+          "Count": 2,
+          "Trigger": "A character in range 3 of the [name] gains a status.",
+          "Effects": "The [name] transfers the status to itself or an ally in range 3 of the [name]. If it removed a status from an ally, that ally gains 2 vigor."
+        }
+      ]
     },
     {
       "Name": "Marry",
       "ActionCost": 1,
-      "Tags": "multimark",
-      "Recharge": 5,
-      "Description": "The Hob marks any two non-summon characters.",
-      "Mark": "Any time these characters are in within range 3 of each other, both are pacified+. A marked character can end this mark on both characters by using an action to blow a kiss at the other character, or by spending their entire turn not attacking."
+      "Tags":  [ "range 3", "multimark" ],
+      "Description": "The [name] marks any two characters in range. While marked, if a marked character ends their turn in range 3 of their marked partner, they are both pacified and gain 3 vigor."
     }
   ],
   "ConditionalAbilities": [
     {
       "Chapter": 2,
-      "Traits": "Aura of Alacrity"
+      "RemoveActions": "The Old Magic",
+      "Actions": [
+        {
+          "Name": "The Old Magic",
+          "ActionCost": 1,
+          "Tags": [ "attack", "range 5" ],
+          "Hit": "[D].",
+          "Miss": "1 damage.",
+          "Effects": "The [name] inflicts a status it is currently suffering from on its foe, then deals 2 damage, once, per status and mark its foe is afflicted by.",
+          "Charge": "All statuses."
+        }
+      ]
     },
     {
       "Chapter": 3,
-      "Actions": {
-        "Name": "Haste",
-        "ActionCost": 2,
-        "Tags": "mark",
-        "Description": "An ally in range 6 is marked.",
-        "Mark": "While marked, they gain +1 action and double their speed."
-      }
+      "RemoveActions": "The Old Magic",
+      "Actions": [
+        {
+          "Name": "The Old Magic",
+          "ActionCost": 1,
+          "Tags": [ "attack", "range 5" ],
+          "Hit": "[D].",
+          "Miss": "1 damage.",
+          "Effects": [
+            "The [name] inflicts a status it is currently suffering from on its foe, then deals 2 damage, once, per status and mark its foe is afflicted by.",
+            "If the [name] or its target is bloodied, end each status on the [name] that it inflicts on the foe."
+          ],
+          "Charge": "All statuses."
+        }
+      ]
     }
   ]
 }

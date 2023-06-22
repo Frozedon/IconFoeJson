@@ -4,13 +4,16 @@
   "Type": "Foe",
   "Traits": "Spiritfeed",
   "Actions": {
-    "Name": "Sonic Screech",
+    "Name": "Horrific Screech ",
     "ActionCost": 1,
-    "Tags": [ "ranged attack", "line 6" ],
-    "Hit": "[D]+[fray].",
-    "Miss": "[fray].",
-    "AreaEffect": "[fray].",
-    "Effects": "Characters gain +1 curse on saves until the end of their next turn.",
-    "Charge": "Line 6 + blast 1."
+    "Description": "The [name] gains the following interrupt until the start of its next turn.",
+    "Interrupts": [
+      {
+        "Name": "Screech",
+        "Count": 1,
+        "Trigger": "A foe in range 6 of the [name] rolls a save, and the result is determined.",
+        "Effects": "The triggering foe, re-rolls their save with +1 curse, taking the new result as final. If they fail the save, they also become vulnerable."
+      }
+    ]
   }
 }

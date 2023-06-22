@@ -7,22 +7,23 @@
     {
       "Name": "Steal Skill",
       "ActionCost": 1,
-      "Description": "The Hob chooses a foe in range 3. Until the end of that foe's next turn, they treat all foes as having evasion and dodge."
+      "Tags": [ "range 4", "multimark" ],
+      "Description": "The [name] chooses a foe in range, marking them. While marked, they treat all foes as having evasion and dodge. A character ends this mark if they hit with an attack."
     },
     {
       "Name": "Lost Object",
       "ActionCost": 1,
-      "Description": "The Hob produces and throws a lost object at a foe in range 4. Roll 1d6.",
+      "Description": "The [name] produces and throws a lost object at a foe in range. Roll 1d6.",
       "Rolls": [
         {
           "Values": 1,
           "Name": "Elixir",
-          "Description": "Foe gains vigor 1."
+          "Description": "Foe gains 4 vigor."
         },
         {
           "Values": 2,
           "Name": "Kettle Full of Tea",
-          "Description": "Hot tea inflicts [fray] damage, burning and blinded."
+          "Description": "Hot tea inflicts 5 damage and blinds the character."
         },
         {
           "Values": 3,
@@ -32,7 +33,7 @@
         {
           "Values": 4,
           "Name": "Old Sandwich",
-          "Description": "Foe is slowed and poisoned, then must save or lose all vigor."
+          "Description": "Foe is dazed, then must save or lose all vigor."
         },
         {
           "Values": 5,

@@ -3,10 +3,9 @@
   "Inherits": "Field Hob",
   "Type": "Foe",
   "Actions": {
-    "Name": "Curse of Thorns",
+    "Name": "Curse of Bounty",
     "ActionCost": 1,
-    "Tags": "mark",
-    "Description": "A character in range 5 from the Bark Spirit is cursed and marked.",
-    "Mark": "While marked, if that character ends their turn within range 2 of a hob or a hob summon, they take [D] piercing damage."
+    "Tags": [ "range 4" ],
+    "Description": " A character in range from the [name] is cursed. At the end of that foe's next turn, they grant 4 vigor to all hobs in range 2, then this effect ends."
   }
 }

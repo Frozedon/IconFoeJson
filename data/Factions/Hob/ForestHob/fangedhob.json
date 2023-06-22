@@ -8,15 +8,15 @@
     {
       "Name": "Tongue Lash",
       "ActionCost": 1,
-      "Description": "A foe in range 3 is shoved 1 towards the Hob.",
+      "Tags": [ "range 3" ],
+      "Description": "A foe in range is shoved 1 towards the [name].",
       "Charge": "Range 5, and shove 3."
     },
     {
       "Name": "Latch On",
-      "ActionCost": 0,
-      "Tags": "end turn",
-      "Recharge": 4,
-      "Description": "The Hob ends its turn and clamps fangs down on an adjacent foe's leg. That foe must save or until the start of the Hob's next turn, the Hob moves into and shares their space, moving when they move, including teleporting. Whenever they take damage from an ability, the Hob gnaws at them, dealing 2 damage and shoving them both 1. At the start of the Hob's next turn, they detach, ending this effect. It also ends if the Hob and their target are separated for any reason. This ability automatically recharges if the foe makes their save."
+      "ActionCost": 1,
+      "Tags": [ "end turn", "usable while bloodied" ],
+      "Description": "The [name] ends its turn and clamps fangs down on an adjacent foe's leg. The [name] becomes unstoppable, and moves into and shares their space, moving when they dash, rush, fly or teleport. After any ability resolves that damages that foe, the [name] deals 2 damage to them and shoves them 1 in any direction. At the start of the [name]'s next turn, they detach, ending this effect. It also ends if the [name] and their target are separated for any reason."
     }
   ]
 }

@@ -3,117 +3,47 @@
   "Inherits": [ "Hob", "Elite", "Leader" ],
   "Type": "Foe",
   "Chapter": 2,
+  "Traits": [ "Bargain" ],
   "Interrupts": [
-    {
-      "Name": "Bargain",
-      "Count": 1,
-      "Description": "As an interrupt, the Geryan can strike one of the following bargains with any foe. The bargain interrupts anything that's currently going on, and resolves immediately. Accepting a bargain is voluntary. If a character refuses a bargain, the Geryan regains this interrupt.",
-      "ListedItems": [
-        {
-          "Name": "Luck",
-          "CustomComponents": [
-            {
-              "Name": "Trigger",
-              "Description": "The foe started their turn."
-            },
-            {
-              "Name": "Effect",
-              "Description": "The foe gains +1 boon on all attacks and saves this turn."
-            },
-            {
-              "Name": "Terms",
-              "Description": "The Geryan recharges all its abilities."
-            }
-          ]
-        },
-        {
-          "Name": "Immortality",
-          "CustomComponents": [
-            {
-              "Name": "Trigger",
-              "Description": "Foe just took a wound."
-            },
-            {
-              "Name": "Effect",
-              "Description": "The character can ignore the wound."
-            },
-            {
-              "Name": "Terms",
-              "Description": "The Geryan grants vigor 2 to itself and an ally in range 6."
-            }
-          ]
-        },
-        {
-          "Name": "Wealth",
-          "CustomComponents": [
-            {
-              "Name": "Trigger",
-              "Description": "The foe's turn started."
-            },
-            {
-              "Name": "Effect",
-              "Description": "Place a wealth token in a free space of the Geryan's choice in range 6. The wealth token is an intangible summon. It can be picked up if any character ends its turn adjacent with no other characters adjacent to the token, and is dropped in an adjacent space if a character is defeated. If a character ends combat with the wealth token, they gain 2 dust."
-            }
-          ]
-        },
-        {
-          "Name": "Beauty",
-          "CustomComponents": [
-            {
-              "Name": "Trigger",
-              "Description": "The foe just took damage."
-            },
-            {
-              "Name": "Effect",
-              "Description": "The foe reduces all that damage to 1. Their skin and hair/fur become clean and look amazing."
-            },
-            {
-              "Name": "Terms",
-              "Description": "Every ally of the Geryan in range 3 of that foe gains hatred of them and they become branded."
-            }
-          ]
-        }
-      ]
-    },
     {
       "Name": "Wish",
       "Count": 1,
-      "Recharge": 6,
+      "Tags": [ "1/combat" ],
       "Trigger": "An ally in range 6 is reduced to 0 hp.",
-      "Effects": "That ally returns to 25% hp instead, then the the Geryan takes 25% of its max hp in damage, which could cause it to be defeated."
+      "Effects": "That ally returns to 25% hp instead, then the the [name] sacrifices 25% of its maximum hp."
     }
   ],
   "Actions": [
     {
       "Name": "Old Staff",
-      "ActionCost": 2,
-      "Tags": "melee attack 2",
-      "Hit": "2[D]+[fray] and foe is branded.",
-      "Miss": "[fray]."
+      "ActionCost": 1,
+      "Tags": [ "attack", "range 4", "small blast" ],
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "Effects": "Attack target is pacified."
     },
     {
       "Name": "Chastise",
       "ActionCost": 1,
-      "Tags": "repeatable",
-      "Effects": "A character in range 6 takes 1 piercing damage. If that character attacks before the end of their next turn, they take [D]+[fray] piercing damage and this effect ends."
+      "Tags": [ "range 4" ],
+      "Effects": "A character in range takes 1 piercing damage. If that character attacks before the end of their next turn, they take [D]+[fray] piercing damage again and this effect ends."
     },
     {
-      "Name": "Misfortune",
+      "Name": "Pilfer Luck",
       "ActionCost": 1,
-      "Recharge": 5,
-      "Effects": "A character in range 10 gains +1 curse on all attack rolls and saves until the end of their next turn."
+      "Tags": [ "range 3", "multimark" ],
+      "Effects": "The [name] marks a foe in range. While marked the foe cannot gain boons, and the Hob gains +1 boon on all its attacks and saves. A foe can end this mark by choosing to roll all attacks and saves with +1 curse for their entire turn. The mark then ends."
     },
     {
-      "Name": "Great Luck",
+      "Name": "Inside Out",
       "ActionCost": 1,
-      "Recharge": 5,
-      "Description": "An ally in range 10 gains +1 boon on all attack rolls and saves until the end of their next turn."
+      "Tags": [ "range 4", "1/combat" ],
+      "Description": "The [name] curses a foe with awful nausea. If that foe moves more than 1 space or uses any ability that costs 2 actions on their turn, they must save. On a failed save, they take damage equal to 50% of their maximum HP and are stunned. If they succeed on the save, they take damage equal to 25% of their maximum HP."
     },
     {
-      "Name": "Ancient Reversa",
+      "Name": "Ancient Heal",
       "ActionCost": 1,
-      "Recharge": 5,
-      "Description": "The Geryan gains aura 2 until the start of their next turn. While inside the aura, when any character (foe or ally) takes damage, roll a d6. On a 4+, that character is cured."
+      "Description": "The [name] gains aura 2 until the start of their next turn. All characters in the aura that start their turn there gain 2 vigor."
     }
   ]
 }

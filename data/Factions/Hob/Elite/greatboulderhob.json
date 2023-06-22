@@ -2,33 +2,38 @@
   "Name": "Great Boulder Hob",
   "Inherits": [ "Hob", "Elite", "Heavy" ],
   "Type": "Foe",
-  "RemoveTraits": [ "Spirit Away", "Armor 3" ],
-  "Traits": [ "Sturdy", "Size 3", "Armor 12", "Lumbering", "Crumbling Body" ],
+  "Traits": [ "Size 2", "Lumbering", "Crumbling Body" ],
   "Actions": [
     {
       "Name": "Ancient Geo",
-      "ActionCost": 1,
-      "Tags": [ "melee attack", "arc 4 + blast 1" ],
-      "Hit": "2[D] and foe is dazed.",
-      "Miss": "[D].",
-      "AreaEffect": "[D].",
-      "Effects": "Dazed foes take +[D] from either effect."
+      "ActionCost": 2,
+      "Tags": [ "attack", "arc 4" ],
+      "Hit": "2[D]+1 damage.",
+      "Miss": "2 damage.",
+      "AreaEffect": "2 damage.",
+      "Effects": [
+        "Attack target releases a medium blast explosion centered on them, dealing 2 damage to all characters within.",
+        "If the attack target is bloody or dazed, they explode again, repeating this effect."
+      ],
+      "Charge": "Repeat the effect."
     },
     {
-      "Name": "Charged Stone Toss",
+      "Name": "Great Stone Toss",
       "ActionCost": 1,
-      "Description": "A foe in range 6 takes 2 damage and is shoved 1, then create a height 1 boulder object next to them."
+      "Tags": [ "range 4" ],
+      "Effects": "A foe in range takes 2 damage and is shoved 1, then create a height 1 boulder object next to them."
     },
     {
       "Name": "Earthforce",
       "ActionCost": 1,
-      "Description": "An adjacent object is shoved 3. Characters in its path are shoved 1 to either side, then take [fray] damage and become dazed.",
-      "Collide": "Characters also take [D]."
+      "Description": "An adjacent object is shoved 3. Characters in its path are shoved 1 to either side and become slashed.",
+      "Collide": "Characters also take 4 damage."
     },
     {
       "Name": "Hurl Self",
       "ActionCost": 2,
-      "Description": "The Boulder hob reduces its max hp by 25%, hurling part of itself at a foe. A foe in range 5 must save or take 3[D]+[fray], be shoved 3, and become stunned. On a successful save, they are shoved 1, dazed, and take [D]+[fray]. Then, create a height 1 boulder object adjacent to that foe. The hob can reduce its hp to 0 and defeat itself with this move."
+      "Tags": [ "usable when bloodied" ],
+      "Description": "The [name] sacrifices 25% of its maximum hp, hurling part of itself at a foe. A foe in range 5 must save or take 3[D]+[fray], be shoved 3, and become stunned. On a successful save, they are shoved 1, slashed, and take [D]+[fray]. Then, create a height 1 boulder object adjacent to that foe. If the hob is at 1 hp, it defeats itself with this move."
     }
   ]
 }

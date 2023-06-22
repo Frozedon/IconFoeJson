@@ -1,0 +1,13 @@
+{
+  "Name": "Seal Spirit",
+  "Inherits": "Field Hob",
+  "Type": "Foe",
+  "Actions": [
+    {
+      "Name": "Seal Form",
+      "ActionCost": 1,
+      "Tags": [ "range 4", "mark" ],
+      "Description": "The [name] transforms itself or character in range 4 into a seal, teleporting them 2, marking them and leaving that character's original body as a set of clothes as a 1 space terrain effect, placed adjacent to them. While a character is a seal, they cannot attack, but have evasion and phasing. A character other than the transformed character can pick up the clothes by using the interact ability (1 action) while standing on the space, ending this effect. The marked character is removed from the battlefield and placed adjacent to the space."
+    }
+  ]
+}

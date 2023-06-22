@@ -3,46 +3,50 @@
   "Inherits": [ "Hob", "Elite", "Artillery" ],
   "Type": "Foe",
   "Chapter": 3,
-  "RemoveTraits": [ "Slip", "Spirit Away" ],
-  "Traits": [ "Wild Hunt", "Bloom" ],
   "Actions": [
     {
-      "Name": "Wild Prance",
-      "ActionCost": 0,
-      "Tags": [ "1/round", "terrain effect" ],
-      "Description": "The beast flies 4 spaces, then creates a close blast 1 area of difficult terrain. It can only have three such areas active at once (choosing which to replace if so) and the areas can overlap."
+      "Name": "Wild Hunt",
+      "RoundAction": true,
+      "Description": "At the start of the round, the [name] can choose an edge of the map. At the end of that round, a huge stampede of animals sweeps across the map from that end to the next. All foes take 2 damage, three times. However, characters that are standing on the other side of objects or terrain as if they were in cover from this effect are immune to it."
+    },
+    {
+      "Name": "Prance",
+      "RoundAction": true,
+      "Description": "At the start of the round, the [name] flies 3 spaces, then creates a height 3 blooming tree object in any space it vacated."
     },
     {
       "Name": "Primal Stars",
       "ActionCost": 1,
-      "Tags": [ "ranged attack 10", "multiattack", "pierce" ],
-      "AutoHit": "4 damage."
-    },
-    {
-      "Name": "Breath of the Wild",
-      "ActionCost": 1,
-      "Tags": [ "ranged attack 5", "blast 2" ],
-      "Recharge": 6,
-      "Hit": "2[D]+[fray].",
-      "Miss": "[fray].",
-      "Effects": "All foes are shoved 1."
+      "Tags": [ "attack", "range 6", "burst 3 (target)" ],
+      "AutoHit": "2 damage, twice.",
+      "AreaEffect": "2 damage, twice.",
+      "Combo": {
+        "Name": "Breath of the Wild",
+        "ActionCost": 1,
+        "Tags": [ "attack", "range 4", "small blast", "pierce" ],
+        "Hit": "[D]+[fray].",
+        "Miss": "[fray].",
+        "AreaEffect": "[fray].",
+        "Effects": "Deals bonus damage and increase to large blast if it catches a tree in the area. Doesn't affect allies."
+      }
     },
     {
       "Name": "Overgrow",
       "ActionCost": 1,
-      "Tags": "1/round",
-      "Description": "The beast chooses a foe in range 6. At the end of that foe's turn, if they have not moved at least 4 spaces from their location at the start of their turn, they become immobile as the undergrowth grows over their feet. This effect ends when they take any amount of damage, or they or an adjacent character can hack the growth away as an action, dealing [D]+[fray] piercing damage to them but ending the effect."
+      "Tags": [ "range 6" ],
+      "Description": "The [name] chooses a foe in range. At the end of that foe's turn, if they have not moved at least 4 spaces at the start of their turn, they become immobile as the undergrowth grows over their feet. This effect ends when they take any amount of damage, or they or an adjacent character can hack the growth away with the interact ability (1 action), dealing 4 piercing damage to them but ending the effect."
     },
     {
       "Name": "Horn Smash",
       "ActionCost": 1,
-      "Description": "A foe in range 2 must save. On a successful save, they take [fray] damage. On a failed save, they take [fray] damage, are shattered, and additionally take 1 piercing damage for each space they move or are shoved before the end of their next turn."
+      "Tags": [ "range 2" ],
+      "Description": "A foe in range 2 is shattered. Shattered foes are shoved 2."
     },
     {
       "Name": "Pollen Haze",
       "ActionCost": 1,
-      "Tags": [ "range 6", "blast 1" ],
-      "AreaEffect": "Foes in the area take 2 damage and must save or become vulnerable. If the area catches a tree in the area, foes in the area take 2 damage again."
+      "Tags": [ "range 6", "small blast" ],
+      "AreaEffect": "Foes in the area take 1 damage twice. A foe in the center spaces then becomes vulnerable. If the area catches a tree in the area, foes take 1 piercing damage three times instead."
     }
   ]
 }

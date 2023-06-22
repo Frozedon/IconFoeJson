@@ -2,11 +2,19 @@
   "Name": "Nixie",
   "Inherits": "Spirit Hob",
   "Type": "Foe",
-  "RemoveInterrupts": "Spirit Trickery",
-  "Interrupts": {
-    "Name": "Spit Curses", 
-    "Count": 1,
-    "Trigger": "The hob is damaged by an ability, and the ability resolves.",
-    "Effects": "The ability's owner gains +1 curse on saves until the end of its next turn."
-  }
+  "Actions": [
+    {
+      "Name": "Spirit Trickery",
+      "ActionCost": 1,
+      "Description": "The [name] gains the following interrupt until the start of its next turn.",
+      "Interrupts": [
+        {
+          "Name": "Spirit Trickery",
+          "Count": 2,
+          "Trigger": "The [name] or an ally in range 2 is damaged by a foe's ability, and the ability resolves.",
+          "Effects": "The triggering foe, the [name], and their ally (if applicable) are all teleported 2."
+        }
+      ]
+    }
+  ]
 }

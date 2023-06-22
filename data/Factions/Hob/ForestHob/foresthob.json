@@ -1,41 +1,32 @@
 {
   "Name": "Forest Hob",
   "Inherits": [ "Hob", "Heavy" ],
-  "Interrupts": {
-    "Name": "Bounce", 
-    "Count": 1,
-    "Trigger": "This hob or an adjacent ally takes damage from an adjacent foe.",
-    "Effects": "That foe is shoved 1.",
-    "Collide": "Character takes [D]+[fray] and is dazed."
-  },
   "Actions": [
     {
       "Name": "Pummel",
       "ActionCost": 1,
-      "Tags": "melee attack",
+      "Tags": [ "attack", "true strike" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
-      "Effects": "Attack target is dazed. Dazed foes take bonus damage.",
-      "Charge": "All foes in range 2 also take [fray] damage."
+      "Charge": "Shove all adjacent foes 2."
     },
     {
-      "Name": "Stone Toss",
+      "Name": "Root",
       "ActionCost": 1,
-      "Effects": "A foe in range 3 takes 2 damage and is shoved 1, then create a height 1 boulder object next to them.",
-      "Charge": "Range 6."
+      "Tags": [ "range 3", "multimark" ],
+      "Effects": "The [name] chooses itself or an ally in range, marking them. When marked, that character gains 3 vigor, and while marked, that character is immune to all shove, teleport, and remove from the battlefield effects from foes. This mark ends if the marked character moves, but does not end if its allies move them."
     },
     {
       "Name": "Twist Leg",
       "ActionCost": 1,
-      "Tags": "mark",
-      "Description": "A foe in range 3 is marked.",
-      "Mark": "While marked, each time that foe is shoved or gains a new status, they take 2 damage. A foe can end this mark by not moving for their entire turn."
+      "Tags": [ "range 3", "mark" ],
+      "Effects": "A foe in range is slashed, then marked. While marked, each time that foe is shoved, teleported, or removed and placed on the battlefield, they take 2 damage. A foe can end this mark by not moving for their entire turn."
     },
     {
       "Name": "Seismic Slam",
       "ActionCost": 1,
-      "Tags": "end turn",
-      "Description": "The Hob ends its turn and gains",
+      "Tags": [ "end turn" ],
+      "Description": "The [name] ends its turn and gains",
       "Delay": "it's next turn must be slow. At the start of that turn, all adjacent foes must save or take 2[D]+[fray] and be shoved 1, or [D]+[fray] on a successful save.",
       "PostCollide": "Foe is stunned."
     }
@@ -44,26 +35,30 @@
     {
       "Chapter": 2,
       "RemoveActions": "Seismic Slam",
-      "Actions": {
-        "Name": "Seismic Slam",
-        "ActionCost": 1,
-        "Tags": [ "end turn", "delay" ],
-        "Description": "The Hob ends its turn and gains",
-        "Delay": "it's next turn must be slow. At the start of that turn, all adjacent foes must save or take 2[D]+[fray] and be shoved 1, or [D]+[fray] on a successful save. Deals bonus damage for every object adjacent to the hob.",
-        "PostCollide": "Foe is stunned."
-      }
+      "Actions": [
+        {
+          "Name": "Seismic Slam",
+          "ActionCost": 1,
+          "Tags": [ "end turn" ],
+          "Description": "The [name] ends its turn and gains",
+          "Delay": "it's next turn must be slow. At the start of that turn, all adjacent foes must save or take 2[D]+[fray] and be shoved 1, or [D]+[fray] on a successful save. Deal bonus damage for every object adjacent to the [name].",
+          "PostCollide": "Foe is stunned."
+        }
+      ]
     },
     {
       "Chapter": 3,
       "RemoveActions": "Seismic Slam",
-      "Actions": {
-        "Name": "Seismic Slam",
-        "ActionCost": 1,
-        "Tags": [ "end turn", "delay" ],
-        "Description": "The Hob ends its turn and gains",
-        "Delay": "it's next turn must be slow. At the start of that turn, all foes in range 2 must save or take 2[D]+[fray] and be shoved 1, or [D]+[fray] on a successful save. Deals bonus damage for every object in range 2 of the hob.",
-        "PostCollide": "Foe is stunned."
-      }
+      "Actions": [
+        {
+          "Name": "Seismic Slam",
+          "ActionCost": 1,
+          "Tags": [ "end turn" ],
+          "Description": "The [name] ends its turn and gains",
+          "Delay": "it's next turn must be slow. At the start of that turn, all foes in range 2 must save or take 2[D]+[fray] and be shoved 1, or [D]+[fray] on a successful save. Deal bonus damage for every object in range 2 of the [name].",
+          "PostCollide": "Foe is stunned."
+        }
+      ]
     }
   ]
 }

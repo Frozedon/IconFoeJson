@@ -6,29 +6,30 @@
     {
       "Name": "Body Slam",
       "ActionCost": 1,
-      "Tags": "melee attack 5",
+      "Tags": [ "attack" ],
       "Hit": "[fray] damage, twice.",
-      "Miss": "[fray].",
-      "Effects": "Foe is winded."
+      "Miss": "[fray] damage, once.",
+      "Effects": "Foe is weakened."
     },
     {
       "Name": "Tidepool",
       "ActionCost": 1,
-      "Description": "Shove all characters in range 2 1 space toward the Kappa."
+      "Tags": [ "range 2" ],
+      "Description": "Shove all characters in range 1 space toward the [name]."
     },
     {
       "Name": "Great Suplex",
       "ActionCost": 1,
-      "Recharge": 4,
-      "Description": "The Kappa grabs an adjacent foe, the removes both the Kappa and them from the battlefield. Return them in free space within range 3, adjacent to each other. The foe takes fray damage, is dazed, and then shoved 1."
+      "Tags": [ "usable when bloodied" ],
+      "Description": "The [name] grabs an adjacent foe, the removes both the [name] and them from the battlefield. Return them in free space within range 3, adjacent to each other. The foe takes [fray] damage, is slashed, and then shoved 1."
     },
     {
       "Name": "Spinning Geyser",
       "ActionCost": 1,
-      "Tags": [ "end turn", "delay" ],
-      "Description": "The Kappa ends its turn and gain",
-      "Delay": "The Kappa's next turn must be slow. At the start of that turn, it summons a massive geyser underneath it. Adjacent characters are shoved 4. The Geyser becomes a pit space for the rest of combat. Whenever the Kappa uses this ability again, repeat the shove effect on all active geysers. The Kappa can choose whether or not to be shoved by this effect, and is immune to the pit space.",
-      "PostCollide": "Character is stunned and takes [D]+[fray] instead of the normal collide damage."
+      "Tags": [ "end turn", "terrain effect", "delay" ],
+      "Description": "The [name] ends its turn and gain",
+      "Delay": "The [name]'s next turn must be slow. At the start of that turn, it summons a massive geyser underneath it. Adjacent characters are shoved 3.",
+      "PostCollide": "Character is stunned and takes [D]+[fray]. The Geyser becomes a pit space terrain effect for the rest of combat. Whenever the [name] uses this ability again, repeat the shove effect on all active geysers. The [name] can choose whether or not to be shoved by this effect, and is immune to the pit space."
     }
   ]
 }

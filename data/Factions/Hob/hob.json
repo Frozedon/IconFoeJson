@@ -2,7 +2,7 @@
   "Name": "Hob",
   "Faction": "Hob",
   "Type": "Template",
-  "Traits": [ "Greenwalker", "Spirit Away", "Trickery" ],
+  "Traits": [ "Greenwalker", "Trickery" ],
   "SetupTraits": [
     {
       "Name": "Kin",
@@ -21,6 +21,16 @@
     {
       "Name": "Monsters",
       "Description": "Hobs that are stirred up by some natural disaster or desecration of the natural world are warped and malicious, and will not bargain or negotiate until things are put right, usually returning to their usual natures once the crisis passes."
+    },
+    {
+      "Name": "Forest Children",
+      "Description": "Any fight with Hobs may include a Sprigg mob."
+    }
+  ],
+  "ConditionalAbilities": [
+    {
+      "IsNotSpecialClasses": [ "Legend", "Mob" ],
+      "Traits": [ "Spirit Away" ]
     }
   ]
 }

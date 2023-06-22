@@ -1,69 +1,79 @@
 [
   {
-    "Name": "Aura of Alacrity",
-    "Description": "Aura 1. Allies in the aura can use the charged effects of abilities even on normal turns."
-  },
-  {
     "Name": "Barely There",
-    "Description": "Spriggs are intangible and don't cause engagement. Characters can't collide with them and can share their space. They disappear when combat ends, or all other non-sprigg allies have been defeated."
+    "Description": "[name]s are intangible and don't cause engagement or obstruction. Characters can't collide with them and can share their space. They disappear when combat ends, or all other non-[name] allies have been defeated."
   },
   {
-    "Name": "Bloom",
-    "Description": "At the start of its turns, the beast creates a height 3 blooming tree object adjacent to it."
+    "Name": "Bargain",
+    "Description": "Once per round, as an interrupt, the [name] can strike one of the following bargains with any foe. The bargain interrupts anything that's currently going on, and resolves immediately. Accepting a bargain is voluntary. If a character refuses a bargain, the [name] or an ally of its choice gains 4 vigor.",
+    "ListedItems": [
+      {
+        "Name": "Luck",
+        "CustomComponents": [
+          { "Name": "Trigger", "Description": "The foe started their turn." },
+          { "Name": "Effect", "Description": "The foe gains +1 boon on all attacks and saves this turn." },
+          { "Name": "Terms", "Description": "The [name] gains another use of one of its 1/combat abilities." }
+        ]
+      },
+      {
+        "Name": "Immortality",
+        "CustomComponents": [
+          { "Name": "Trigger", "Description": "Foe just took a wound." },
+          { "Name": "Effect", "Description": "The character can ignore the wound." },
+          { "Name": "Terms", "Description": "The [name] grants a vigor surge to itself and an ally in range 6." }
+        ]
+      },
+      {
+        "Name": "Wealth",
+        "CustomComponents": [
+          { "Name": "Trigger", "Description": "The foe's turn started" },
+          { "Name": "Effect", "Description": "Place a wealth token in a free space of the [name]'s choice in range 6. The wealth token is an intangible summon. It can be picked up if any character ends its turn adjacent with no other characters adjacent to the token, and is dropped in an adjacent space if a character is defeated. If a character ends combat with the wealth token, they gain 1 dust." }
+        ]
+      },
+      {
+        "Name": "Beauty",
+        "CustomComponents": [
+          { "Name": "Trigger", "Description": "The foe just took damage." },
+          { "Name": "Effect", "Description": "The foe reduces all that damage to 1. Their skin and hair/fur become clean and look amazing." },
+          { "Name": "Terms", "Description": "Every ally of the [name] in range 3 of that foe gains hatred of them and they become sealed and pacified." }
+        ]
+      }
+    ]
   },
   {
     "Name": "Deep Rooted",
-    "Description": "At the start of any combat, place 4 deep roots on the map, which are size 1 summons that cannot be moved in any way. The roots have aura 1. Foes in the aura are vulnerable+. All roots must be accessible to characters and placed within range 6 of another root. The Roots are considered to be the Wissan for purposes of targeting and each has 25% of its max hp. When a root is destroyed, remove it."
+    "Description": "At the start of any combat, place 4 deep roots on the map.",
+    "Summons": {
+      "Name": "Deep Root",
+      "IsObject": true,
+      "Tags": [ "Object", "height 1", "immobile" ],
+      "SummonEffects": "The roots have aura 1. Foes in the aura are vulnerable+. All roots must be accessible to characters and placed within range 6 of another root. The Roots are considered to be the Wissan for purposes of targeting and each has 25% of its max hp. When a root is destroyed, remove it."
+    }
   },
   {
-    "Name": "Drag Under (Carp)",
-    "DisplayName": "Drag Under",
-    "Description": "When this Hob ends its turn, it can choose an adjacent foe, which must save. On a failed save, that foe takes [D]+[fray], and remove both the Hob and that foe from play as they dive into a pool of magicked water. Both return to play at the start of that foe's next turn, in any free space in range 3 of their original location."
-  },
-  {
-    "Name": "Mist Form",
-    "Description": "The Hob is a character and also a space of dangerous and difficult terrain. Characters can share space with it, and it has resistance against any character inside of its space."
+    "Name": "Protect the Child",
+    "Description": "At the start of combat, the [name] chooses a foe, deciding it's a child to be protected. It gains three uses of the following interrupt, which carry over between turns and only refresh at the start of each round.",
+    "Interrupts": {
+      "Name": "Protect the Child",
+      "Count": 3,
+      "Trigger": "A character ends their turn adjacent to the chosen character, or deals damage with an ability to that character.",
+      "Effects": "The [name] teleports to an adjacent space as an effect, then swipes that character. Allies are shoved 1 and take no damage. All other characters take [D]+[fray] damage. This effect ends if the [name]'s target deals damage to it in any way. If the effect ends, the [name] can immediately choose a new character to protect, but can't choose any target it's already chosen this combat."
+    }
   },
   {
     "Name": "Spirit Away",
     "Actions": {
       "Name": "Spirit Away",
       "ActionCost": 0,
-      "Description": "The Hob swaps places with an adjacent character, teleporting both. If either character cannot teleport, this move cannot be made."
+      "Description": "The [name] swaps places with an adjacent character, removing and placing both characters."
     }
   },
   {
-    "Name": "Thicket Dance",
-    "Description": "At the start of its turn, before any delay effects activate, the Mayfly spirit and all characters in range 2 teleport 1 space in a direction of the spirit's choice. Foes can save to avoid this effect."
-  },
-  {
     "Name": "Tied to the Tree",
-    "Description": "The Wissan's body is immune to all damage. When all four roots are destroyed, it is instantly defeated and disappears. It can teleport to any space adjacent to a root as a free action."
+    "Description": "The [name]'s body is intangible. When all four roots are destroyed, it is instantly defeated and disappears. It can teleport to any space adjacent to a root as a free action."
   },
   {
     "Name": "Trickery",
-    "Description": "Like player characters, Hobs have charge abilities and can take slow turns."
-  },
-  {
-    "Name": "Wild Hunt",
-    "Description": "At the start of the round, the beast can choose an edge of the map. At the end of that round, a huge stampede of animals sweeps across the map from that end to the next.",
-    "ListedItems": [
-      {
-        "Description": "Repeat this effect 3 times on all foes.",
-        "CustomComponents": [
-          {
-            "Name": "Effect",
-            "Description": "Foe takes 1 damage and are shoved 1 in the direciton of the herd."
-          },
-          {
-            "Name": "Collide",
-            "Description": "Foe is stunned."
-          }
-        ]
-      },
-      {
-        "Description": "Characters that are standing on the other side of objects or terrain as if they were in cover from this effect are immune to it."
-      }
-    ]
+    "Description": "Like player characters, [name]s have charge abilities and can choose to take a slow turn whenever they would take a regular turn."
   }
 ]

@@ -1,100 +1,154 @@
 {
   "Name": "Deep Snow Aesi",
-  "Inherits": [ "Hob", "Legendary Artillery" ],
+  "Inherits": [ "Hob", "Legend" ],
   "Type": "Foe",
   "Chapter": 3,
-  "HP": 32,
-  "Traits": [ "Flying", "Phasing", "Creeping Cold" ],
+  "Traits": [ "Flying" ],
   "SetupTraits": {
-    "Name": "Suggested Battlefield",
+    "Name": "Map",
     "Description": "This legend is best fought in a battlefield that is 12x12 or a little larger."
   },
   "Actions": [
     {
+      "Name": "Stiffen Limbs",
+      "ActionCost": 1,
+      "Tags": [ "range 4", "2/round" ],
+      "Description": "The Aesi chooses a foe in range. During their next turn, that foe must move at least 5 spaces, or else take 5 piercing damage and become stunned. Then, this effect ends."
+    },
+    {
+      "Name": "Freeze Solid",
+      "ActionCost": 1,
+      "Tags": [ "range 4", "1/round" ],
+      "Description": "A character in range becomes shattered. At the end of that character's next turn, they must save. On a failed save, they are encased in ice, removing them from the battlefield and becoming replaced with a destructible (10 hp) height 1 frozen statue object. Until the statue is destroyed, they cannot take a turn. When it's destroyed, they are returned to the battlefield in the space they left and can take a turn as normal."
+    },
+    {
+      "Name": "Biting Cold",
+      "ActionCost": 1,
+      "Tags": [ "range 4", "multimark", "1/round" ],
+      "Description": "The Aesi marks a foe in range. While marked, that foe cannot benefit from sturdy or unstoppable. This mark ends if this foe starts their turn adjacent to an ally."
+    },
+    {
       "Name": "Storm Whip",
       "ActionCost": 1,
-      "Tags": [ "melee attack 4", "blast 1", "pierce" ],
+      "Tags": [ "attack", "range 4", "small blast", "true strike" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
       "AreaEffect": "[fray].",
-      "Effects": "Shove 1.",
-      "Collide": "For is vulnerable.",
+      "Effects": "Shove all foes 1 away from the center space.",
+      "Collide": "Foe is vulnerable.",
       "Combo": {
         "Name": "Diamond Dust", 
         "ActionCost": 2, 
-        "Tags": [ "ranged attack 6", "blast 1", "pierce" ],
+        "Tags": [ "attack", "range 6", "large blast" ],
         "Hit": "2[D]+[fray].",
         "Miss": "[fray].",
         "AreaEffect": "[fray].",
-        "Effects": "Deals 1 damage, again, for every character in the area.",
+        "Effects": "Deals 1 piercing damage, again, to all foes for every foe or object in the area.",
         "Combo": {
           "Name": "Crystalline Lance",
           "ActionCost": 1,
-          "Tags": [ "ranged attack 10", "pierce" ],
-          "Hit": "[D]+[fra]y.",
+          "Tags": [ "attack", "line 10", "unerring" ],
+          "Hit": "[D]+[fray].",
           "Miss": "[fray].",
-          "Effects": "Foe must save or be shoved 6"
+          "AreaEffect": "[fray].",
+          "Effects": "Foe must save or be shoved 4, or shoved 1 on a successful save.",
+          "Collide": "Foe takes 5 damage and is shattered."
         }
       }
     },
     {
       "Name": "Northern Winds",
-      "ActionCost": 0,
-      "Description": "The Aesi dashes 3. It becomes intangible and gains phasing while moving."
+      "ActionCost": 1,
+      "Description": "The Aesi flies 2. It becomes intangible while moving."
     },
     {
-      "Name": "Stiffen Limbs",
+      "Name": "Scatterfrost",
       "ActionCost": 1,
-      "Tags": "1/round",
-      "Description": "The Aesi chooses up to three characters in range 6. During their next turn, those characters must end their turn at least 4 spaces from their starting location at the start of their turn, or else take [D]+[fray] and become stunned."
+      "Tags": [ "range 4" ],
+      "Description": "The Aesi shoves up to three foes 1 space. Foes in difficult terrain are shoved 2 in any direction instead.",
+      "Collide": "Foe takes 2 damage."
     },
     {
-      "Name": "Freeze Solid",
-      "ActionCost": 1,
-      "Tags": "1/round",
-      "Description": "A character in range 6 becomes shattered. At the end of that character's next turn, they must save. On a failed save, they are encased in ice, removing them from the battlefield and becoming replaced with a destructible (10 hp) height 1 frozen statue object. Until the is destroyed, they cannot take a turn. When it's destroyed, they are returned to the battlefield in the space they left and can take a turn as normal"
+      "Name": "Howling Blizzard",
+      "ActionCost": 2,
+      "Tags": [ "stance" ],
+      "Description": "The Aesi gains aura 2 while in this stance, gaining resistance to damage from foes in the aura and unstoppable against their abilities. This aura cancels out Whipping Winds.",
+      "Combo": {
+        "Name": "Whipping Winds",
+        "ActionCost": 2,
+        "Tags": [ "stance" ],
+        "Description": "The Aesi gains aura 2, gaining resistance to damage from foes outside the aura, and unstoppable against their abilities. This aura cancels out Howling Blizzard."
+      }
     }
   ],
-  "PhasesDescription": "On round 4, and every two rounds thereafter (6, 8, 10 etc), the Aesi uses Mortal Mockery.",
+  "PhasesDescription": "The Aesi enters phase II at the start of round 4 or when bloodied.",
   "Phases": [
     {
-      "Actions": {
-        "Name": "Frozen Impaler",
-        "ActionCost": 1,
-        "Tags": "2/round",
-        "Description": "The Aesi chooses a character in range 6. At the end of that character's turn, an icicle coalesces and falls on that character for a blast 1 area effect centered on them. Characters inside take 2 damage, then create the icicle adjacent to the targeted character. The icicle is a height 2 destructible object (1o hp) that has aura 1. The aura has the following effects:",
-        "ListedItems": [
-          {
-            "Description": "Foes that start their turn in the aura take 2 piercing damage."
-          },
-          {
-            "Description": "Foes are vulnerable+ while in the aura."
-          },
-          {
-            "Description": "The aura is difficult terrain."
+      "Actions": [
+        {
+          "Name": "Creeping Cold ",
+          "RoundAction": true,
+          "Description": "At the start of combat, the Aesi creates a Creeping Cold effect in every space along the edge of the map, a creeping black frost terrain effect. The Aesi ignores its effects, but cannot voluntarily enter the area and must end its turn outside it if possible.",
+          "ListedItems": [
+            { "Description": "The area is difficult terrain, even for flying characters." },
+            { "Description": "Foes that either start or end their turn in Creeping Cold sacrifice 25% of their maximum hp. Foes at 1 hp are defeated instantly, and removed from the battlefield as they freeze solid and replaced with a frozen statue object with 10 hp. When the statue is destroyed, return that foe to the battlefield, in its space, still defeated." },
+            { "Description": "At the start of every two rounds thereafter (3, 5, 7, etc), the effect creeps in by 1 space on all sides, shrinking the available battlefield space until it covers all spaces." }
+          ]
+        },
+        {
+          "Name": "Frozen Impaler",
+          "ActionCost": 1,
+          "Tags": [ "range 6", "2/round" ],
+          "Description": "The Aesi chooses a character in range. At the end of that character's turn, an icicle coalesces and falls on that character for a small blast area effect centered on them. Characters inside take 2 piercing damage, then create the icicle adjacent to the targeted character.",
+          "Summons": {
+            "Name": "Icicle",
+            "IsObject": true,
+            "SummonEffects": "The icicle has aura 1. The aura has the following effects:",
+            "ListedItems": [
+              { "Description": "Foes that start their turn in the aura take 2 piercing damage." },
+              { "Description": "Foes are vulnerable+ while in the aura." },
+              { "Description": "The aura is difficult terrain." }
+            ]
           }
-        ]
-      }
+        }
+      ]
     },
     {
       "Traits": "Icy Death",
-      "Actions": {
-        "Name": "Frozen Impaler",
-        "ActionCost": 0,
-        "Tags": "2/round",
-        "Description": "The Aesi chooses a character in range 6. At the end of that character's turn, an icicle coalesces and falls on that character for a blast 1 area effect centered on them. Characters inside take 2 damage, then create the icicle adjacent to the targeted character. The icicle is a height 2 destructible object (1o hp) that has aura 1. The aura has the following effects:",
-        "ListedItems": [
-          {
-            "Description": "Foes that start their turn in the aura take 2 piercing damage."
-          },
-          {
-            "Description": "Foes are vulnerable+ while in the aura."
-          },
-          {
-            "Description": "The aura is difficult terrain."
+      "Actions": [
+        {
+          "Name": "Creeping Cold ",
+          "RoundAction": true,
+          "Description": "At the start of combat, the Aesi creates a Creeping Cold effect in every space along the edge of the map, a creeping black frost terrain effect. The Aesi ignores its effects, but cannot voluntarily enter the area and must end its turn outside it if possible.",
+          "ListedItems": [
+            { "Description": "The area is difficult terrain, even for flying characters." },
+            { "Description": "Foes that either start or end their turn in Creeping Cold sacrifice 50% of their maximum hp. Foes at 1 hp are defeated instantly, and removed from the battlefield as they freeze solid and replaced with a frozen statue object with 10 hp. When the statue is destroyed, return that foe to the battlefield, in its space, still defeated." },
+            { "Description": "At the start of every two rounds thereafter (3, 5, 7, etc), the effect creeps in by 1 space on all sides, shrinking the available battlefield space until it covers all spaces." }
+          ]
+        },
+        {
+          "Name": "Frozen Impaler",
+          "ActionCost": 1,
+          "Tags": [ "range 6", "2/round" ],
+          "Description": "The Aesi chooses a character in range. At the end of that character's turn, an icicle coalesces and falls on that character for a large blast area effect centered on them. Characters inside take 2 piercing damage, then create the icicle adjacent to the targeted character.",
+          "Summons": {
+            "Name": "Icicle",
+            "IsObject": true,
+            "SummonEffects": "The icicle has aura 1. The aura has the following effects:",
+            "ListedItems": [
+              { "Description": "Foes that start their turn in the aura take 2 piercing damage." },
+              { "Description": "Foes are vulnerable+ while in the aura." },
+              { "Description": "The aura is difficult terrain." }
+            ]
           }
-        ]
-      }
+        },
+        {
+          "Name": "Icy Death",
+          "RoundAction": true,
+          "Description": "A wind begins blowing from one side of the map, which the Aesi chooses at the start of each round. After using any ability, a foe is shoved 1 in the direction of the wind."
+        }
+      ]
     }
-  ]
+  ],
+  "Tactics": "The Aesi of Winter is fought in a gradually shrinking arena, which will eventually become a death trap due to its Frozen Impaler, Stiffen Limbs abilities, and numerous AoE attacks. It can alternate between Whipping Winds and Howling Blizzard depending on its positioning. Characters can try to cancel out its shove options by leaving the icicles from Frozen Impaler up and the frozen statues of their allies, but may also want to destroy the icicles to stop the build up of their powerful auras, and the objects to free their allies."
 }

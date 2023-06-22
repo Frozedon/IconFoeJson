@@ -3,18 +3,18 @@
   "Inherits": "Spirit Hob",
   "Type": "Foe",
   "Chapter": 3,
-  "Traits": [ "Phasing", "Mist Form" ],
+  "Traits": [ "Mist Form" ],
   "Actions": [
     {
       "Name": "Great Slip",
       "ActionCost": 1,
-      "Description": "Remove the Hob from the battlefield, then place it in any space in range 4."
+      "Description": "Remove the [name] from the battlefield, then place it in any space in range 4."
     },
     {
       "Name": "Flash Freeze",
       "ActionCost": 1,
-      "Recharge": 5,
-      "Description": "A character in range 8 has an encasing of ice cover them. While encased, the targeted foe is immobile until they take any amount of damage. They or an adjacent ally can also use an action to break them out, dealing [D]+[fray] piercing damage to them but ending the effect."
+      "Tags": [ "range 6" ],
+      "Description": "A character in range has an encasing of ice cover them. While encased, the targeted foe is immobile until they take any amount of damage. They or an adjacent ally can also use the interact ability to break them out, dealing 6 piercing damage to them but ending this effect."
     }
   ]
 }

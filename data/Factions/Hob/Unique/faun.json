@@ -1,0 +1,35 @@
+{
+  "Name": "Faun",
+  "Inherits": [ "Hob", "Skirmisher" ],
+  "Type": "Foe",
+  "Actions": [
+    {
+      "Name": "Marching Pipes ",
+      "ActionCost": 1,
+      "Tags": [ "attack" ],
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "Effects": "The [name] and a single ally in range 2 may dash 2 before this attack.",
+      "Charge": "Repeat the effect."
+    },
+    {
+      "Name": "Dancing Curse",
+      "ActionCost": 1,
+      "Tags": [ "range 3", "mark" ],
+      "Description": "The [name] curses a foe in range, marking them. While marked, after any ability resolves that allows that character to dash, fly, or teleport, all the [name]'s allies everywhere may dash 2, and that foe becomes dazed."
+    },
+    {
+      "Name": "Hot Foot",
+      "ActionCost": 1,
+      "Tags": [ "range 3" ],
+      "Description": "The [name] chooses a foe in range. That foe must move at least 5 spaces during its next turn, or else sacrifice 5. Then, this effect ends.",
+      "Charge": "At least 8 spaces."
+    },
+    {
+      "Name": "Swirling Leaves",
+      "ActionCost": 1,
+      "Tags": [ "range 2" ],
+      "Description": "The [name] puts down a terrain effect in range. Characters that enter the space can fly 3 spaces as an effect, but only once a turn."
+    }
+  ]
+}

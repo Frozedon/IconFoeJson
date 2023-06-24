@@ -4,7 +4,7 @@
   "Type": "Foe",
   "Chapter": 2,
   "RemoveTraits": [ "Titanblood" ],
-  "Traits": [ "Size 2", "Divine Presence", "Quicksilver" ],
+  "Traits": [ "Size 2", "Divine Presence", "Quicksilver (Keeper)" ],
   "Actions": [
     {
       "Name": "Volatile Ember",

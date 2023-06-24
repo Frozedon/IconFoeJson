@@ -88,7 +88,7 @@
     {
       "Name": "3. Filth",
       "Class": "Skirmisher",
-      "Traits": [ "Skirmish", "Dodge", "Dripping Blade", "Blessing Filth" ],
+      "Traits": [ "Skirmisher", "Dodge", "Dripping Blade", "Blessing Filth" ],
       "Actions": {
         "Name": "Poison Gas",
         "ActionCost": 2,
@@ -99,7 +99,7 @@
     {
       "Name": "4. Cats",
       "Class": "Skirmisher",
-      "Traits": [ "Skirmish", "Dodge", "Blessing Cats" ],
+      "Traits": [ "Skirmisher", "Dodge", "Blessing Cats" ],
       "Actions": [
         {
           "Name": "Feline Felicity",
@@ -135,7 +135,7 @@
     {
       "Name": "6. Pale",
       "Class": "Skirmisher",
-      "Traits": [ "Skirmish", "Dodge", "Blessing Pale" ],
+      "Traits": [ "Skirmisher", "Dodge", "Blessing Pale" ],
       "Actions": {
         "Name": "Nighthaunt",
         "ActionCost": 2,

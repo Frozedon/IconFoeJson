@@ -26,20 +26,8 @@
     "Description": "The [name] can use the average of its damage die (6) instead of rolling for damage."
   },
   {
-    "Name": "Cursed Cauldron",
-    "Description": "Foes do not save against conditions at the end of their turn while in the aura of the cauldron."
-  },
-  {
     "Name": "Living Deeps",
     "Description": "Instead of a 2x2 space, this [name] occupies an Arc 4 space that can be placed in any configuration. When it moves, move either end space of the Arc, then re-place the Arc in any valid configuration. It can make attacks or use abilities from any of its spaces."
-  },
-  {
-    "Name": "Primal Aether",
-    "Description": "This character's abilities do not trigger interrupts or activate effects from its foes."
-  },
-  {
-    "Name": "Rune of Warding",
-    "Description": "Aura 2. Foes that enter the aura take 2 piercing damage. They can only take this damage once round."
   },
   {
     "Name": "Scouring Gaze",

@@ -29,7 +29,8 @@
   
 
   {
-    "Name": "Quicksilver", 
+    "Name": "Quicksilver (Keeper)",
+    "DisplayName": "Quicksilver", 
     "Description": "Certain abilities from the Keeper drop a pool of Quicksilver. Quicksilver is difficult terrain, which the Keeper ignores. Characters that end their turn in quicksilver quench their embers, getting rid of all of them, but also consuming the quicksilver space."
   },
   {

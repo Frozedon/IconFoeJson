@@ -2,7 +2,7 @@
   "Name": "Barghest",
   "Inherits": [ "Ruin Beast", "Skirmisher" ],
   "Type": "Foe",
-  "Traits": [ "Phasing", "Aetherflash" ],
+  "Traits": [ "Phasing", "Aetherflesh" ],
   "Actions": [
     {
       "Name": "Open Wound",

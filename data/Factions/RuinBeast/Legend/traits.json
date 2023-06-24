@@ -75,7 +75,8 @@
     "Description": "The apex's third Might of the Wild ability becomes active."
   },
   {
-    "Name": "Earthglide",
+    "Name": "Earthglide (Apex)",
+    "DisplayName": "Earthglide",
     "Description": "The Apex has Phasing."
   },
   {

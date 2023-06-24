@@ -42,15 +42,6 @@
     "Description": "Has evasion against characters holding a valuables token."
   },
   {
-    "Name": "Golden Step",
-    "Description": "The first time a round this character picks up a valuables token, may dash 2, then deal [fray] damage to an adjacent foe."
-  },
-  {
-    "Name": "Golden Step (Improved)",
-    "DisplayName": "Golden Step",
-    "Description": "Any time this character picks up a valuables token, they may dash 3, then deal [fray] damage to an adjacent foe."
-  },
-  {
     "Name": "Great Junk Armor",
     "Description": "The first and second time this character is damaged by an ability in a combat, reduce all damage to 0 and summon a valuables token in spaces in range 2 from them."
   },
@@ -81,10 +72,6 @@
   {
     "Name": "Oooh, Shiny",
     "Description": "When [name] enters the space of a valuables token, they stop moving and admire it, then pick it up. This stops any movement from any ability or round action and immediately halts the ability."
-  },
-  {
-    "Name": "Smelt",
-    "Description": "Reduce overdrive counter by 1 when picking up a valuables token."
   },
   {
     "Name": "Tally",

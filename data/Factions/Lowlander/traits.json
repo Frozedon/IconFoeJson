@@ -4,10 +4,6 @@
     "Description": "When bloodied, becomes sturdy, kidnap goes +2 more spaces, and kidnap also slashes foes."
   },
   {
-    "Name": "Call Ruin",
-    "Description": "At the start of the round, the Ruin speaker chooses a space in range 6, that becomes known to all characters. At the end of the round, a ruin chunk surfaces in that space, a height 3 object. Spaces next to this terrain are difficult terrain. Any character occupying the space is pushed up on top of the ruin chunk but also takes 3[D]+[fray] and is stunned."
-  },
-  {
     "Name": "Great Kidnap",
     "Description": "The [name] can spend both actions on Kidnap to increase its distance to 6 spaces."
   },

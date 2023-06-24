@@ -42,6 +42,10 @@
     "Description": "Whenever the [name] loses all vigor, create a natal in range 2."
   },
   {
+    "Name": "Dissolving Reality",
+    "Description": "At the start of round 1, 3, and 5, the [name] creates a special terrain effect of Dissolving Reality anywhere on the battlefield, a medium blast zone. The zone is dangerous terrain to characters other than Demons."
+  },
+  {
     "Name": "Engorge",
     "Description": "Becomes unstoppable if it devours another non-natal demon."
   },
@@ -79,29 +83,6 @@
       { "Description": "Foes inside void rifts are blinded+." },
       { "Description": "Demons inside void rifts have evasion and ignore movement penalties when entering or exiting a rift space." },
       { "Description": "[name]s can treat any two void rifts as adjacent spaces when moving, teleporting when they move between them. However, they can only teleport this way once a turn." }
-    ]
-  },
-  {
-    "Name": "Void Prowler 2",
-    "DisplayName": "Void Prowler",
-    "Description": "[name]s can create void rifts, which are 1 space pit terrain effects with the following features:",
-    "ListedItems": [
-      { "Description": "Foes inside void rifts are blinded+." },
-      { "Description": "Demons inside void rifts have evasion and ignore movement penalties when entering or exiting a rift space." },
-      { "Description": "[name]s can treat any two void rifts as adjacent spaces when moving, teleporting when they move between them. However, they can only teleport this way once a turn." },
-      { "Description": "Rifts are dangerous terrain for foes." }
-    ]
-  },
-  {
-    "Name": "Void Prowler 3",
-    "DisplayName": "Void Prowler",
-    "Description": "[name]s can create void rifts, which are 1 space pit terrain effects with the following features:",
-    "ListedItems": [
-      { "Description": "Foes inside void rifts are blinded+." },
-      { "Description": "Demons inside void rifts have evasion and ignore movement penalties when entering or exiting a rift space." },
-      { "Description": "[name]s can treat any two void rifts as adjacent spaces when moving, teleporting when they move between them. However, they can only teleport this way once a turn." },
-      { "Description": "Rifts are dangerous terrain for foes." },
-      { "Description": "[name]s gain stealth+ while adjacent to void rifts." }
     ]
   }
 ]

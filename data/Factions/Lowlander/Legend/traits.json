@@ -38,7 +38,7 @@
         "Name": "1-2: Cultist",
         "Class": "Skirmisher",
         "Tags": [ "15 hp", "10 defense", "spd 4" ],
-        "Traits": [ "Dodge", "Skirmish" ],
+        "Traits": [ "Dodge", "Skirmisher" ],
         "Actions": [
           {
             "Name": "Blood Spiller",

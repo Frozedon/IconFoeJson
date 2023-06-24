@@ -1,6 +1,6 @@
 [
   {
-    "Name": "Acid Burst (Latch)",
+    "Name": "Acid Burst",
     "Description": "When the [name] or its host take damage, all adjacent foes take 1 piercing damage. This effect can trigger any number of times a round, and does not break pacified."
   },
   {
@@ -42,10 +42,6 @@
     ]
   },
   {
-    "Name": "Flip Over",
-    "Description": "When taking damage more than its armor total, loses all armor, becomes stunned, and all attacks against it deal bonus damage. These effects last until the end of its next turn."
-  },
-  {
     "Name": "Landswim",
     "Description": "The [name] has evasion and phasing. The [name] cannot move through objects. If the [name] collides with an object, it is stunned and loses this trait until the end of its next turn."
   },
@@ -69,6 +65,10 @@
       { "Description": "If a character reaches 3+ tokens, at the end of their turn, discard all petrification tokens, then they are defeated, removed from the battlefield, and replaced by a height 1 lifelike statue object with 10 hp. Return them to the battlefield and rescue them when the statue is destroyed. They can take a turn as normal starting with next round." },
       { "Description": "A character can get rid of 1 petrification token if at the end of their turn for each of the following that is true: they have not attacked, they have not moved." }
     ]
+  },
+  {
+    "Name": "Sheltering Mass",
+    "Description": "The [name] blocks line of sight and can be used as cover as though it was a height 3 object."
   },
   {
     "Name": "Turn Bolts",

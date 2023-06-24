@@ -1,6 +1,7 @@
 {
   "Name": "Sprigg",
   "Inherits": [ "Hob", "Mob" ],
+  "Type": "Foe",
   "MembersPerPlayer": 1,
   "Traits": [ "Barely There" ],
   "Actions": [

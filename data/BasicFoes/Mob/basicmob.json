@@ -10,17 +10,17 @@
       "Tags": [ "attack", "range 3" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray]",
-      "Effect": "Target foe takes 2 damage once again for every other [name] member in adjacent spaces to them, up to three times."
+      "Effects": "Target foe takes 2 damage once again for every other [name] member in adjacent spaces to them, up to three times."
     },
     {
       "Name": "Rush",
       "ActionCost": 1,
-      "Effect": "Up to three members in any order may dash 2, then deal 1 damage to a foe and shove them 1 space."
+      "Effects": "Up to three members in any order may dash 2, then deal 1 damage to a foe and shove them 1 space."
     },
     {
       "Name": "Rally",
       "ActionCost": 1,
-      "Effect": "Up to three allies adjacent to a member may dash 1 space, or one ally adjacent to a member may dash 3 spaces."
+      "Effects": "Up to three allies adjacent to a member may dash 1 space, or one ally adjacent to a member may dash 3 spaces."
     }
   ]
 }

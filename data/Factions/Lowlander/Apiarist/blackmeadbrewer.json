@@ -3,12 +3,11 @@
   "Inherits": "Apiarist",
   "Type": "Foe",
   "Chapter": 2,
-  "Traits": [ "Defiance", "Regenerator" ],
+  "Traits": [ "Defiance", "Regeneration" ],
   "Actions": {
     "Name": "Black Honey Vial",
     "ActionCost": 1,
-    "Recharge": 6,
-    "Tags": "terrain effect",
-    "Description": "The brewer throws a black honey vial at a free space in range 6, a 1 space terrain effect, drawing in swarms of insects. The area is difficult and dangerous terrain, and characters inside are vulnerable+. At the start of the Brewer's next turn, the area increases to blast 2."
+    "Tags": [ "range 6" ],
+    "Description": "The [name] throws a black honey vial at a free space in range, a 1 space terrain effect, drawing in swarms of insects. The area is difficult and dangerous terrain, and characters inside are vulnerable+. At the start of the [name]'s next turn, the area increases to a large blast."
   }
 }

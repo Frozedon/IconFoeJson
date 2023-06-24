@@ -1,19 +1,7 @@
 [
   {
-    "Name": "Acid Rain",
-    "Description": "At the start of combat, the priest creates a blast 1 terrain effect in range 6. Characters that end their turn inside the terrain effect take piercing damage equal to the round number +2. The scion can redirect the terrain effect to any other point in range 6 as an action."
-  },
-  {
-    "Name": "Beastmaster",
-    "Description": "The Wrangler starts combat with 3 trained beasts. Place them within range 3. Each beast has a different ability (detailed in the Sic action)."
-  },
-  {
-    "Name": "Blightbellow",
-    "Description": "While bloodied, this character' areas of effect increase by +1, including active areas."
-  },
-  {
     "Name": "Blightlands Brawn",
-    "Description": "When bloodied, becomes sturdy, Kidnap has no recharge, and goes +2 more spaces. (Can't be stunned or dazed, and reduce the distance of all shoves by 1)"
+    "Description": "When bloodied, becomes sturdy, kidnap goes +2 more spaces, and kidnap also slashes foes."
   },
   {
     "Name": "Call Ruin",
@@ -21,57 +9,24 @@
   },
   {
     "Name": "Great Kidnap",
-    "Description": "The Slab can spend 2 actions on Kidnap to increase its distance to 6 spaces."
-  },
-  {
-    "Name": "Harden",
-    "Description": "The Clot hardens over time, and increases all damage it deals by an amount equal to twice the round number. At the end of round 6, it finally petrifies and is defeated."
+    "Description": "The [name] can spend both actions on Kidnap to increase its distance to 6 spaces."
   },
   {
     "Name": "Lowlander Toxin",
-    "Description": "All attacks by lowlanders gain on hit: inflict lowlander toxin. A character afflicted by lowlander toxin loses 2 hp at the end of their turn, ignoring resistance, armor, and vigor. This effect cannot be removed in any way, only ends when combat ends or the character is defeated, and cannot reduce a character past 1 hp. Does not stack."
+    "Description": "At the start of each round in any combat featuring lowlanders, all nonlowlander characters sacrifice 2 hp."
   },
   {
-    "Name": "Master of the Underway",
-    "Description": "This character gains stealth if they start or end their turn in a pit and can use their standard move or 1 action to teleport from any pit space to any other pit space."
-  },
-  {
-    "Name": "Master of the Underway (Improved)",
-    "Description": "This character gains stealth if they start or end their turn in a pit and as a free action they can teleport from any pit space to any other pit space."
-  },
-  {
-    "Name": "Mud Body",
-    "Description": "Has resistance while inside difficult or dangerous terrain, or pits. If outside those terrain areas, takes bonus damage and +1 curse on attacks and saves."
-  },
-  {
-    "Name": "Rusty Blade",
-    "Description": "When this character teleports to a pit space, they can then throw a knife at any foe in range 3, dealing 2 damage."
+    "Name": "Pit Expert",
+    "Description": "Ignores movement and height disadvantage from pits."
   },
   {
     "Name": "Suddenly!",
-    "Description": "At the start of any round, the GM can spring a lowlander trap in any unoccupied space not adjacent to a player character. All traps can be disarmed by a character taking the interact action adjacent, removing it. Lowlanders and any of their allies are not affected by their own traps, or their effects, and can move over them normally. Traps remain even if deactivated. The trap is a pit with one of the following effects:",
+    "Description": "At the start of any round, the GM can spring a lowlander trap in any unoccupied space not adjacent to a player character, with the following features:",
     "ListedItems": [
-      {
-        "Name": "Snare Trap",
-        "Description": "A character in range 2 of the trap must save or be shoved until inside the trap."
-      },
-      {
-        "Name": "Stake Trap",
-        "Description": "Trap is also dangerous terrain."
-      },
-      {
-        "Name": "Poison Trap",
-        "Description": "Characters that end their turn in the trap are poisoned and inflicted with lowlander toxin."
-      }
+      { "Description": "The trap is a pit." },
+      { "Description": "When activated, a foe in range 2 of the trap must save or be shoved until inside the trap." },
+      { "Description": "Foes that end their turn inside the pit take 3 piercing damage." },
+      { "Description": "All traps can be disarmed by a character taking the interact action adjacent, removing it." }
     ]
-  },
-  {
-    "Name": "Toxic Revenge",
-    "Description": "Area Effect: When defeated, explodes with venom, inflicting [D]+[fray], poisoning and inflicting lowlander toxin on all adjacent foes."
-  },
-  {
-    "Name": "Venom Blade (Scab)",
-    "DisplayName": "Venom Blade",
-    "Description": "Attacks inflict poisoned, ignore vigor, and deal bonus damage against bloodied characters."
   }
 ]

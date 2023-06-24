@@ -3,36 +3,36 @@
   "Inherits": [ "Lowlander", "Leader" ],
   "Type": "Foe",
   "Chapter": 2,
-  "Traits": [ "Size 2", "Slime Trail" ],
+  "Traits": [ "Size 2" ],
   "Actions": [
     {
-      "Name": "Slime Stream",
+      "Name": "Bubble Stream",
       "ActionCost": 1,
-      "Tags": "line 8 + blast 1",
+      "Tags": [ "attack", "line 8" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
-      "Effects": "Foes in the area must save or become pacified and poisoned. Pacified foes take bonus damage."
+      "Effects": "If only one foe is caught in the line, creates a large blast area effect centered on them. All characters are shoved 1 away from that character. Foes in the area take 2 piercing damage, and allies gain 2 vigor."
     },
     {
-      "Name": "Polaris",
+      "Name": "Suds Spray",
       "ActionCost": 1,
-      "Description": "Mark a visible space. At the end of each turn past this one (foe or allied), roll a d6. On a 6, a meteor smashes into the space, inflicting [D]+[fray] in a blast 1 area effect on that space. This effect ends at the start of the snail's next turn, or when triggered."
+      "Tags": [ "range 3" ],
+      "Description": "The [name] sprays a medium blast area effect with slippery liquid. Characters in the area are shoved 1, then the [name] creates up to two spaces of difficult terrain in the area."
     },
     {
       "Name": "Bubble Shield",
       "ActionCost": 1,
-      "Recharge": 5,
-      "Description": "The Snail gains Aura 2 until the start of its next turn. Characters in the aura gain resistance to abilities from outside the aura."
+      "Description": "The [name] gains Aura 2 until the start of its next turn and becomes immobile for the duration. Characters in the aura gain resistance to abilities from outside the aura."
     },
     {
       "Name": "Pearlescent Bubble",
-      "ActionCost": 1,
-      "Recharge": 5,
-      "Description": "The Snail spits out three bubbles in range 4.",
+      "ActionCost": 2,
+      "Tags": [ "range 4" ],
+      "Description": "The [name] spits out three bubbles in range.",
       "Summons": {
         "Name": "Pearlescent Bubble",
-        "Tags": [ "Size 1", "1 HP", "Defense 1" ],
-        "SummonEffects": "When a character collides with the bubble, it pops, pacifying them, shoving them 3 in any direction, and creating a space of difficult terrain. Pacified characters are stunned."
+        "Tags": [ "Size 1", "summon" ],
+        "SummonEffects": "When a character enters the bubble's space for any reason, it pops, destroying it. Foes are pacified then, shoved 3 in any direction. Allies gain vigor 3."
       }
     }
   ]

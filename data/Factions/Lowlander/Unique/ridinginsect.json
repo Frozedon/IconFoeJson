@@ -13,20 +13,20 @@
     {
       "Name": "Bite",
       "ActionCost": 1,
-      "Tags": "melee attack",
-      "Hit": "[D]+[fray] and foe is poisoned.",
-      "Miss": "[fray].",
-      "Effects": "Poisoned foes are dazed."
+      "Tags": [ "attack" ],
+      "Hit": "[D]+[fray] and foe is weakened.",
+      "Miss": "[fray]."
     },
     {
       "Name": "Acid Spit",
       "ActionCost": 1,
-      "Description": "Deal 2 piercing damage to a foe and all characters adjacent to that foe in range 4."
+      "Tags": [ "range 4", "burst 1 (target)" ],
+      "AreaEffect": "2 piercing damage."
     },
     {
       "Name": "Leap",
       "ActionCost": 1,
-      "Description": "The Insect flies 3. If it moves from a higher elevation to a lower one, increase this flight to 6."
+      "Description": "The [name] flies 3. If it moves from a higher elevation to a lower one, increase this flight to 6."
     }
   ]
 }

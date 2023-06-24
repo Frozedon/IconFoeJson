@@ -1,19 +1,50 @@
 {
   "Name": "Fetid Idol",
-  "Inherits": [ "Lowlander", "Legendary Leader" ],
+  "Inherits": [ "Lowlander", "Legend" ],
   "Type": "Foe",
-  "HP": 40,
-  "Speed": 0,
-  "Defense": 0,
-  "RemoveTraits": [ "Legendary Diaga", "Terrain Expert" ],
-  "Traits": [ "The Idol", "Aura of Sacrifice", "Manifestations (Base)", "Worshippers (Base)" ],
+  "RemoveTraits": [ "Juggernaut" ],
+  "Traits": [ "The Idol", "Aura of Sacrifice", "Worshippers" ],
   "PhasesDescription": "The Idol changes phases when bloodied.",
   "Phases": [
     {
-      "Traits": [ "Worshippers (Phase I)", "Manifestations (Phase I)" ]
+      "Actions": [
+        {
+          "Name": "Worshippers",
+          "RoundAction": true,
+          "Description": "At the start of combat, then at the start of each round, the Idol creates clots until it has 1 clot per player, adding to the clot mob. Then it creates other worshippers randomly, rolling for each one, until it has a total number of worshippers equal to twice the number of players (the mob always counts as 1 worshipper)."
+        },
+        {
+          "Name": "Manifestations",
+          "RoundAction": true,
+          "Description": "At the start of each round, the Idol creates one of the following terrain effects (roll 1d6). Manifestations must be created in free spaces. There is no maximum number active.",
+          "ListedItems": [
+            { "Name": "1-2: Blight Geyser", "Description": "Create a pit. At the end of each round, the pit erupts. Characters in a medium blast area effect centered on it take 6 piercing damage." },
+            { 
+              "Name": "3-4: Spewing Growth",
+              "Description": "Creates a height 1 destructible object (10 hp). The area around it is difficult terrain. During the Idol's turn, the Idol can use the following ability once a round for each pillar, made from a pillar's location:",
+              "CustomComponents": [
+                {
+                  "Name": "Disorienting Vomit (Free action, range 6, unerring)",
+                  "Description": "3 damage and shove 2."
+                }
+              ]
+            },
+            { "Name": "5-6: Pillar of Filth", "Description": "Create a height 3 pillar. Destructible (10 hp), and when destroyed, or when a character collides with it, falls over. Create a line 3 area effect next to it in a direction chosen by the character that destroyed it. Characters inside must save or take 2[D]+fray and be stunned, or [D]+fray on a successful save. The area becomes difficult terrain for the rest of combat." }
+          ]
+        }
+      ]
     },
     {
-      "Traits": [ "Unholy Vapors", "Worshippers (Phase II)", "Manifestations (Phase II)" ]
+      "Name": "(When Bloodied)",
+      "Traits": [ "Worshippers Phase 2", "Manifestations Phase 2" ],
+      "Actions": [
+        {
+          "Name": "Unholy Vapors",
+          "RoundAction": true,
+          "Description": "At the start of each round, non-lowlander characters must save or sacrifice down to 50% of their max hp, if higher. If the round is 6 or later, they must sacrifice down to 25% hp instead."
+        }
+      ]
     }
-  ]
+  ],
+  "Tactics": "The Fetid Idol itself is not the focus of this fight, but its worshippers, who will vastly outnumber the players. Players that can dish out a lot of damage to an area will find success in this fight, as clearing the idol's corrupted flock is the only way to defeat it, a fact that becomes especially relevant in phase II when players are racing the clock. Characters should be especially wary of standing near or adjacent to the idol, where they take double damage, but can use this to their advantage - it does not discriminate!"
 }

@@ -1,0 +1,39 @@
+{
+  "Name": "Battle Beetle",
+  "Inherits": [ "Lowlander", "Heavy" ],
+  "Type": "Foe",
+  "Chapter": 3,
+  "RemoveTraits": [ "Guard" ],
+  "Traits": [ "Size 3", "Sturdy", "Enrage", "Battle Platform", "Zipline Dismount" ],
+  "Actions": [
+    {
+      "Name": "Beetle Horn",
+      "ActionCost": 1,
+      "Tags": [ "attack", "range 2", "true strike" ],
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "Effects": [
+        "Foe is weakened.",
+        "Deals bonus damage against foes at exactly range 2."
+      ]
+    },
+    {
+      "Name": "Side Harpoons",
+      "ActionCost": 1,
+      "Tags": [ "range 4" ],
+      "Description": "The [name] deals 3 damage to a foe in range once for each mounted ally. A foe can only be damaged once by this ability."
+    },
+    {
+      "Name": "Beetle Rampage",
+      "ActionCost": 1,
+      "Tags": [ "repeatable" ],
+      "Effects": "The [name] rushes up to 2 spaces. When it ends this movement, all adjacent foes take 2 damage and are shoved 1."
+    },
+    {
+      "Name": "Main Harpoon",
+      "ActionCost": 2,
+      "Tags": [ "range 6", "usable when bloodied" ],
+      "Description": "A foe in range must save or take 2[D]+[fray], become slashed, and be shoved until adjacent to the [name]. On a success, the foe takes [D]+[fray] and is shoved 2 towards the [name] instead."
+    }
+  ]
+}

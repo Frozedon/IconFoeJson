@@ -1,0 +1,39 @@
+{
+  "Name": "Boil Slug",
+  "Inherits": [ "Lowlander", "Artillery" ],
+  "Type": "Foe",
+  "Actions": [
+    {
+      "Name": "Bubble Up",
+      "ActionCost": 1,
+      "Description": "The [name] becomes sturdy, gains 5 vigor, and gains counter. It loses all these effects at the start of its next turn.",
+      "Combo": {
+        "Name": "Slime Stream",
+        "ActionCost": 2,
+        "Tags": [ "attack", "line 8" ],
+        "Hit": "2[D]+[fray].",
+        "Miss": "[D]+[fray].",
+        "AreaEffect": "[D]+[fray].",
+        "Effects": "Shove all characters 2 spaces in the direction of the line.",
+        "CustomComponents": [
+          {
+            "Name": "Round 3+",
+            "Description": "Deals bonus damage and shatters target."
+          }
+        ]
+      }
+    },
+    {
+      "Name": "Sucking Mire",
+      "ActionCost": 1,
+      "Tags": [ "range 5" ],
+      "Description": "The [name] creates a slimy pit in range. It can be created underneath bloodied foes. Foes that start their turn in the pit must save or be unable to dash, fly, or teleport for the remainder of their turn."
+    },
+    {
+      "Name": "Sucking Spit",
+      "ActionCost": 1,
+      "Description": "The [name] shoots a line 6 stream of slime. Characters caught in the area when it is created are shoved 1. Allies are shoved 2 instead, and can be shoved in any direction.",
+      "Collide": "Foe takes 1 piercing damage twice and is shattered."
+    }
+  ]
+}

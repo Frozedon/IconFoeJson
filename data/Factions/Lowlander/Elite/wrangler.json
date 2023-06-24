@@ -4,69 +4,55 @@
   "Type": "Foe",
   "Chapter": 2,
   "Traits": [ "Beastmaster" ],
-  "Interupts": {
-    "Name": "Fierce Loyalty",
-    "Count": 1,
-    "Trigger": "The Wrangler or one of its summons adjacent to them is targeted by an ability or attack.",
-    "Effects": "The attack or ability is retargeted to either the Wrangler or the summon (Wrangler chooses which)."
-  },
   "Actions": [
+    {
+      "Name": "Sic",
+      "ActionCost": 1,
+      "Tags": [ "attack" ],
+      "Description": "The [name] makes one of the following attacks, from the position and location of one of its beast summons, from the following list. If the [name] is bloodied, these attacks deal bonus damage. It must activate a different summon from the last each turn.",
+      "ListedItems": [
+        {
+          "Name": "Hound Fly",
+          "Description": "Fly 3, then",
+          "CustomComponents": [
+            { "Name": "Attack (Line 4, unerring)" },
+            { "Name": "On hit", "Description": "[D]+[fray]." },
+            { "Name": "Miss or area effect", "Description": "[fray]." }
+          ]
+        },
+        {
+          "Name": "Gorebeast",
+          "Description": "Sturdy. May rush 2, then",
+          "CustomComponents": [
+            { "Name": "Attack", "Description": "" },
+            { "Name": "On hit", "Description": "[D]+[fray]." },
+            { "Name": "Miss", "Description": "[fray]." },
+            { "Name": "Effect", "Description": "Shove 2." },
+            { "Name": "Collide", "Description": "Foe is stunned." }
+          ]
+        },
+        {
+          "Name": "Spitter",
+          "Description": "May move 2, then",
+          "CustomComponents": [
+            { "Name": "Attack (Range 8, pierce)" },
+            { "Name": "On hit", "Description": "[fray] damage, 3 times." },
+            { "Name": "Miss", "Description": "[fray] damage." }
+          ]
+        }
+      ]
+    },
     {
       "Name": "Crack the Whip",
       "ActionCost": 1,
-      "Description": "The Wrangler shoves all summons (hostile and allied) in range 3 3 spaces in any direction."
+      "Tags": [ "range 3" ],
+      "Description": "The [name] shoves all summons (hostile and allied) in range, 3 spaces in any direction."
     },
     {
       "Name": "Weakening Toxin",
       "ActionCost": 1,
-      "Description": "A foe in range 5 is pacified. Pacified foes take [fray] damage, which doesn't break pacified."
-    },
-    {
-      "Name": "Sic",
-      "ActionCost": 1,
-      "Description": "The Wrangler activates one of its beast summons, from the following list, using its summon action. If it's bloodied, it can activate all three. It must activate a different summon from the last each turn.",
-      "Summons": [
-        {
-          "Name": "Hound Fly",
-          "Tags": [ "Size 1", "20 HP" ],
-          "Traits": [ "Flying", "Dodge" ],
-          "SummonActions": "May fly 3, then",
-          "Actions": {
-            "Name": "Attack",
-            "Tags": [ "melee attack", "line 4", "pierce" ],
-            "Hit": "[D]+[fray].",
-            "Miss": "[fray].",
-            "AreaEffect": "[fray]."
-          }
-        },
-        {
-          "Name": "Gorebeast",
-          "Tags": [ "Size 1", "20 HP" ],
-          "Traits": "Sturdy",
-          "SummonActions": "May dash 2, then",
-          "Actions": {
-            "Name": "Attack",
-            "Tags": "melee attack",
-            "Hit": "[D]+[fray].",
-            "Miss": "[fray].",
-            "Effects": "Shove 2.",
-            "Collide": "[D] and stunned."
-          }
-        },
-        {
-          "Name": "Spitter",
-          "Tags": [ "Size 1", "20 HP" ],
-          "Traits": "Aetherwall",
-          "SummonActions": "May move 2, then",
-          "Actions": {
-            "Name": "Attack",
-            "Tags": "ranged attack 8",
-            "Hit": "[fray] damage 3 times.",
-            "Miss": "[fray].",
-            "Effects": "Foe is poisoned. If foe is already poisoned, attack ignores vigor."
-          }
-        }
-      ]
+      "Tags": [ "range 5" ],
+      "Description": "A foe in range is pacified. Pacified foes take 4 piercing damage damage, which doesn't break pacified."
     }
   ]
 }

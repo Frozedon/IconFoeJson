@@ -12,6 +12,6 @@
 - [X] Scavenger
 - [X] Imperial
 - [X] Demon
-- [ ] Lowlander
+- [X] Lowlander
 - [X] Jotunn
 - [X] Hob

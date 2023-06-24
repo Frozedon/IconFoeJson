@@ -2,7 +2,6 @@
   "Name": "Lowlander",
   "Faction": "Lowlander",
   "Type": "Template",
-  "Traits": [ "Terrain Expert", "Lowlander Toxin" ],
   "SetupTraits": [
     {
       "Name": "Kin", 
@@ -22,7 +21,7 @@
   "ConditionalAbilities": [
     {
       "IsNotSpecialClasses": "Legend",
-      "Traits": "Suddenly!"
+      "Traits": [ "Pit Expert", "Lowlander Toxin", "Suddenly!" ]
     }
   ]
 }

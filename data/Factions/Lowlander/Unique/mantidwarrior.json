@@ -1,0 +1,35 @@
+{
+  "Name": "Mantid Warrior",
+  "Inherits": [ "Lowlander", "Skirmisher" ],
+  "Type": "Foe",
+  "Chapter": 2,
+  "Traits": "Camouflage",
+  "Actions": [
+    {
+      "Name": "Wind Slash",
+      "ActionCost": 1,
+      "Description": "The [name] deals 2 damage to all adjacent characters, then teleports 2, then gains stealth.",
+      "Combo": {
+        "Name": "Blightrazor",
+        "ActionCost": 2,
+        "Tags": [ "attack", "arc 4" ],
+        "Hit": "2[D]+[fray].",
+        "Miss": "[D]+[fray].",
+        "AreaEffect": "[D]+[fray].",
+        "Effects": "If only one character is caught in the area they are dazed and take bonus damage."
+      }
+    },
+    {
+      "Name": "Leaf Dance",
+      "ActionCost": 1,
+      "Tags": [ "stance" ],
+      "Description": "The [name] gains counter and evasion. After each time counter activates, it may teleport 1. This stance ends when the Mantid is hit by an attack."
+    },
+    {
+      "Name": "Cut Through",
+      "ActionCost": 1,
+      "Tags": [ "line 4" ],
+      "AreaEffect": "3 damage. The Mantid may teleport to any point on the line after this ability resolves."
+    }
+  ]
+}

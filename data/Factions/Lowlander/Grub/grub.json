@@ -1,41 +1,61 @@
 {
   "Name": "Grub",
   "Inherits": [ "Lowlander", "Skirmisher" ],
-  "Traits": [ "Master of the Underway", "Dirty Fighting" ],
+  "Traits": [ "Master of the Underway" ],
   "Actions": [
     {
-      "Name": "Strafe Shot",
+      "Name": "Razor Shot",
       "ActionCost": 1,
-      "Tags": [ "ranged attack 5", "+1 boon" ],
+      "Tags": [ "attack", "range 4", "+1 boon" ],
       "Hit": "[D]+[fray].",
       "Miss": "[fray].",
-      "Effects": "May dash 1 before and after attack. Ignores cover and deals bonus damage against bloodied foes."
+      "Effects": [
+        "May dash 1 before and after attack.",
+        "Gains unerring and deals bonus damage to foes in pits or bloodied foes."
+      ]
     },
     {
-      "Name": "Swindle",
+      "Name": "Dirty Fighting",
       "ActionCost": 1,
-      "Description": "Swap places with a character in range 3, teleporting. Foes can save to avoid this effect."
+      "Tags": [ "range 3" ],
+      "Description": "Swap places with a character in range, teleporting both characters. Foes can pass a save to avoid this effect, but are dazed on a successful save. Can't use if unable to teleport."
     },
     {
       "Name": "Reveal Pit",
       "ActionCost": 1,
-      "Tags": [ "terrain effect", "end turn" ],
-      "Description": "The Grub chooses a foe in range 6, then creates a pit underneath them. The chosen character can save to jump out of the way, moving themselves 1 space to a side of their choice on a successful save."
+      "Tags": [ "range 4", "terrain effect", "end turn" ],
+      "Description": "The [name] chooses a foe in range, then creates a pit underneath them. The chosen character can avoid the pit by becoming dazed instead, shoving them 1 space out of the way in a direction of the [name]'s choice. Dazed foes cannot avoid the pit and take 3 damage."
     }
   ],
   "ConditionalAbilities": [
     {
       "Chapter": 2,
-      "RemoveTraits": "Master of the Underway",
-      "Traits": "Master of the Underway (Improved)"
+      "RemoveActions": "Reveal Pit",
+      "Actions": [
+        {
+          "Name": "Reveal Pit",
+          "ActionCost": 1,
+          "Tags": [ "range 4", "terrain effect", "end turn" ],
+          "Description": "The [name] chooses a foe in range, then creates a pit underneath them. The chosen character can avoid the pit by becoming dazed instead, shoving them 1 space out of the way in a direction of the [name]'s choice. Dazed foes cannot avoid the pit and take 3 damage.",
+          "Effects": "Create a pit under the [name]."
+        }
+      ]
     },
     {
       "Chapter": 3,
-      "Actions": {
-        "Name": "Dig Tunnel",
-        "ActionCost": 1,
-        "Description": "The Grub chooses two pit spaces on the battlefield and connects them with a tunnel. Any character can use a free action to teleport from one end of the tunnel to the next, as long as the other end of the tunnel is unoccupied."
-      }
+      "RemoveActions": "Reveal Pit",
+      "Actions": [
+        {
+          "Name": "Reveal Pit",
+          "ActionCost": 1,
+          "Tags": [ "range 4", "terrain effect", "end turn" ],
+          "Description": "The [name] chooses a foe in range, then creates a pit underneath them. The chosen character can avoid the pit by becoming dazed instead, shoving them 1 space out of the way in a direction of the [name]'s choice. Dazed foes cannot avoid the pit and take 3 damage.",
+          "Effects": [
+            "Create a pit under the [name].",
+            "After using this ability, the [name] may teleport to the space of any free pit, then deal 2 damage to all adjacent foes."
+          ]
+        }
+      ]
     }
   ]
 }

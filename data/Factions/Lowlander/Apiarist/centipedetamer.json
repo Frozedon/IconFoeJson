@@ -5,6 +5,7 @@
   "Actions": {
     "Name": "Agonizing Bite",
     "ActionCost": 1,
-    "Description": "The tamer calls centipedes out of the earth to bite a foe, targeting a blast 2 area in range 6. For every pit in the area, a foe in the area takes 2 piercing damage, once. A poisoned foe can be hit multiple times by one use of this ability, otherwise it may only affect each foe once."
+    "Tags": [ "range 6" ],
+    "Effects": "The [name] calls centipedes out of the earth to bite a foe, targeting a medium blast area. For every pit in the area, a foe in the area takes 2 piercing damage, once. A shattered or vulnerable foe can be damaged multiple times by one use of this ability, otherwise it may only affect each foe once."
   }
 }

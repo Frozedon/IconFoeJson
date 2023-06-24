@@ -2,10 +2,18 @@
   "Name": "Scab",
   "Inherits": "Grub",
   "Type": "Foe",
-  "Traits": "Venom Blade (Scab)",
-  "Actions": {
-    "Name": "Throw Knife",
-    "ActionCost": 1,
-    "Description": "A foe in range 3 takes [fray] damage. If that foe is bloodied, they take [fray] damage twice."
-  }
+  "Actions": [
+    {
+      "Name": "Track",
+      "ActionCost": 1,
+      "Tags": [ "range 5", "mark" ],
+      "Description": "A foe in range is marked. While marked, that foe cannot benefit from cover and the [name] may dash up to 3 spaces towards that foe at the end of their turn."
+    },
+    {
+      "Name": "Quick Shot",
+      "ActionCost": 1,
+      "Tags": [ "range 3", "unerring" ],
+      "Description": "A foe in range takes 2 damage. If that foe is bloodied, they take 3 damage twice instead."
+    }
+  ]
 }

@@ -5,8 +5,7 @@
   "Actions": {
     "Name": "Maddening Stinging",
     "ActionCost": 1,
-    "Tags": "mark",
-    "Description": "The initiate marks a foe in range 6 with pheromones that attract stinging and biting insects.",
-    "Mark": "While marked, the first time each turn the foe takes damage, the initiate may shove them 1. An adjacent ally, but not the marked character, can deal [fray] damage as an action to the marked character to dislodge the insects, ending this mark."
+    "Tags": [ "range 6", "mark" ],
+    "Description": "The [name] marks a foe in range with pheromones that attract stinging and biting insects. While marked, after using any ability on their turn, the [name] may shove the marked foe 1 in any direction. An adjacent ally, but not the marked character, can deal 4 piercing damage to and use the interact ability on the marked character to dislodge the insects, ending this mark."
   }
 }

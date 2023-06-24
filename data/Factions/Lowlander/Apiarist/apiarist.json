@@ -5,34 +5,42 @@
     {
       "Name": "Summon the Swarm",
       "ActionCost": 2,
-      "Tags": [ "ranged attack 8", "blast 1", "pierce" ],
-      "Hit": "[D]+[fray] and foe is poisoned.",
+      "Tags": [ "attack", "range 8", "medium blast" ],
+      "Hit": "[D]+[fray].",
       "Miss": "[fray].",
       "AreaEffect": "[fray].",
       "Effects": [
         "Does not affect allies.",
-        "Deals bonus damage for each character in the area. If 3 or more characters are in the area, attack becomes a critical hit on hit and all foes in the area are shattered."
+        "Deals bonus damage for each character in the area. If 3 or more characters are in the area, all foes in the area take 2 piercing damage and are shattered."
       ]
     },
     {
       "Name": "Skittering Mass",
       "ActionCost": 1,
-      "Description": "A foe in range 8 becomes vulnerable or takes 1 piercing damage, three times as an area effect"
+      "Tags": [ "range 6" ],
+      "Description": "A foe in range either becomes vulnerable or takes 1 piercing damage, twice.",
+      "CustomComponents": [
+        {
+          "Name": "Round 3+",
+          "Description": "This inflicts both effects."
+        }
+      ]
     },
     {
       "Name": "Updraft",
       "ActionCost": 1,
-      "Description": "An ally or allied summon in range 6 may fly 3."
+      "Tags": [ "range 6" ],
+      "Description": "An ally or allied summon in range may fly 3."
     },
     {
       "Name": "Attack Insect",
       "ActionCost": 1,
-      "Tags": "summon",
-      "Description": "The Apiarist summons an attack insect in range 6. It can only have one insect active at once.",
+      "Tags": [ "range 3", "summon" ],
+      "Description": "The [name] summons an attack insect in range. It may have a maximum of two insects at once.",
       "Summons": {
         "Name": "Attack Insect",
-        "Tags": [ "Size 1", "Flying", "16 HP", "Defense 8" ],
-        "SummonActions": "When summoned, or once on the Apiarist's turn thereafter, the insect may fly up to 2 spaces, then deal 2 piercing damage, twice, to a foe in range 4."
+        "Tags": [ "Size 1" ],
+        "SummonActions": "When summoned, or once on the [name]'s turn thereafter, the insect may fly up to 3 spaces, then deal 1 piercing damage, twice, to an adjacent foe."
       }
     }
   ],
@@ -40,37 +48,38 @@
     {
       "Chapter": 2,
       "RemoveActions": "Attack Insect",
-      "Actions": {
-        "Name": "Attack Insect",
-        "ActionCost": 1,
-        "Tags": "summon",
-        "Description": "The Apiarist summons an attack insect in range 6. It can only have one insect active at once.",
-        "Summons": {
+      "Actions": [
+        {
           "Name": "Attack Insect",
-          "Tags": [ "Size 1", "Flying", "16 HP", "Defense 8" ],
-          "SummonActions": "When summoned, or once on the Apiarist's turn thereafter, the insect may fly up to 2 spaces, then deal 2 piercing damage, twice, to a foe in range 4.",
-          "SummonEffects": "When it flies, the Apiarist or an ally can latch on and fly with it, mirrroing its movement."
+          "ActionCost": 1,
+          "Tags": [ "range 3", "summon" ],
+          "Description": "The [name] summons an attack insect in range. It may have a maximum of two insects at once.",
+          "Summons": {
+            "Name": "Attack Insect",
+            "Tags": [ "Size 1" ],
+            "SummonActions": "When summoned, or once on the [name]'s turn thereafter, the insect may fly up to 3 spaces, then deal 1 piercing damage, twice, to an adjacent foe.",
+            "SummonEffects": "When an attack insect flies, the [name] or an ally can latch on and fly with it, mirroring its movement."
+          }
         }
-      }
+      ]
     },
     {
       "Chapter": 3,
       "RemoveActions": "Attack Insect",
-      "Actions": {
-        "Name": "Attack Insect",
-        "ActionCost": 1,
-        "Tags": "summon",
-        "Description": "The Apiarist summons an attack insect in range 6. It can only have one insect active at once.",
-        "Summons": {
+      "Actions": [
+        {
           "Name": "Attack Insect",
-          "Tags": [ "Size 1", "Flying", "16 HP", "Defense 8" ],
-          "SummonActions": "When summoned, or once on the Apiarist's turn thereafter, the insect may fly up to 2 spaces, then deal 2 piercing damage, twice, to a foe in range 4.",
-          "SummonEffects": [
-            "When the insect flies, the Apiarist or an ally can latch on and fly with it, mirrroing its movement.",
-            "The insect deals double damage to bloodied foes."
-          ]
+          "ActionCost": 1,
+          "Tags": [ "range 3", "summon" ],
+          "Description": "The [name] summons an attack insect in range. It may have a maximum of two insects at once.",
+          "Summons": {
+            "Name": "Attack Insect",
+            "Tags": [ "Size 1" ],
+            "SummonActions": "When summoned, or once on the [name]'s turn thereafter, the insect may fly up to 3 spaces, then deal 1 piercing damage, twice, to an adjacent foe. Deals double damage to bloodied foes.",
+            "SummonEffects": "When an attack insect flies, the [name] or an ally can latch on and fly with it, mirroring its movement."
+          }
         }
-      }
+      ]
     }
   ]
 }

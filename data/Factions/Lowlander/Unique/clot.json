@@ -2,31 +2,30 @@
   "Name": "Clot",
   "Inherits": [ "Lowlander", "Heavy" ],
   "Type": "Foe",
-  "Vitality": 12,
   "Speed": 2,
   "RemoveTraits": "Armor 3",
-  "Traits": [ "Sturdy", "Defiance", "Mud Body", "Harden" ],
+  "Traits": [ "Mud Body", "Harden" ],
   "Actions": [
     {
       "Name": "Slap",
       "ActionCost": 1,
-      "Tags": "melee attack",
+      "Tags": [ "attack" ],
       "Hit": "[D].",
       "Miss": "1 damage.",
-      "Effects": "Poisoned foes are dazed."
+      "Effects": "May rush 1 before the attack."
     },
     {
       "Name": "Mud Spray",
       "ActionCost": 1,
-      "Description": "A foe in range 3 is winded."
+      "Tags": [ "range 3" ],
+      "Description": "A foe in range is weakened. Weakened foes take 4 damage."
     },
     {
       "Name": "Mudslide",
       "ActionCost": 1,
       "Tags": "terrain effect",
-      "Recharge": 5,
-      "Description": "The Clot dashes 3, then creates a terrain effect in the spaces it just passed through. The effect is difficult terrain, and characters that enter the space for the first time on their turn or start their turn there must save or slip and be shoved 2 in a direction of the clot's choice.",
-      "Collide": "Character takes [D]."
+      "Description": "The [name] rushes 3, then creates a terrain effect in the spaces it just passed through. The effect is difficult terrain, and characters other than [name]s that enter the space for the first time on their turn or start their turn there must save or slip and be shoved 2 in a direction of the [name]'s choice.",
+      "Collide": "Character takes 3 damage, twice."
     }
   ]
 }

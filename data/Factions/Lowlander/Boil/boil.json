@@ -5,46 +5,59 @@
     {
       "Name": "Toxion",
       "ActionCost": 1,
-      "Tags": "melee attack or ranged attack 5",
-      "Hit": "[D]+[fray] and foe is poisoned.",
+      "Tags": [ "attack", "range 5" ],
+      "Hit": "[D]+[fray].",
       "Miss": "[fray].",
-      "Effects": "Poisoned foes are shoved 2 in a direction of the Boil's choice."
+      "Effects": "Sealed or Pacified foes are shoved 2 in a direction of the [name]'s choice."
     },
     {
-      "Name": "Sporeseed",
+      "Name": "Deep Well Poison",
       "ActionCost": 1,
-      "Description": "A foe in range 4 is branded."
+      "Tags": [ "range 5", "mark" ],
+      "Description": "A foe in range is marked. While marked, they gain no benefit from being sturdy or unstoppable. At the start of their turn, the [name] may shove them 1 space as an effect."
     },
     {
       "Name": "Noxious Cloud",
       "ActionCost": 1,
-      "Recharge": 4,
-      "Tags": "terrain effect",
-      "Description": "The Boil creates a choking cloud, a blast 1 terrain effect, in range 4. Characters in the cloud have cover but the area is dangerous terrain and they take +1 curse on attack rolls. Lowlanders are immune to its effects. The cloud lasts until this ability is used again."
+      "Tags": [ "range 3" ],
+      "Description": "The [name] creates a choking cloud, a small blast terrain effect, in free space in range with the following effects:",
+      "ListedItems": [
+        { "Description": "Foes in the cloud are pacified+ and take 2 piercing damage if they start their turn there." },
+        { "Description": "Allies that start their turn in the cloud gain 2 vigor, or 6 vigor if they are marked with Adrenalize." },
+        { "Description": "The cloud lasts until this ability is used again." }
+      ]
     },
     {
       "Name": "Adrenalize",
       "ActionCost": 1,
-      "Tags": "mark",
-      "Description": "An ally in range 5 is marked.",
-      "Mark": "While marked, they gain +1 boon on attacks and deal bonus damage with all abilities. If that ally is bloodied, they also gain regeneration."
-    },
-    {
-      "Name": "Catalyze",
-      "ActionCost": 1,
-      "Tags": "multimark",
-      "Description": "A character in range 5 must save. On a successful save, they are poisoned. On a failed save, they become marked by the Boil.",
-      "Mark": "While marked, the effect of lowlander toxin on them is tripled."
+      "Tags": [ "range 4", "multimark" ],
+      "Description": "An ally in range is marked. When marked, they gain defiance, and while marked they gain an increased effect from noxious cloud."
     }
   ],
   "ConditionalAbilities": [
     {
       "Chapter": 2,
-      "Traits": "Defiance"
+      "RemoveActions": "Adrenalize",
+      "Actions": [
+        {
+          "Name": "Adrenalize",
+          "ActionCost": 1,
+          "Tags": [ "range 4", "multimark" ],
+          "Description": "An ally in range is marked. When marked, they gain defiance and may dash 3. While marked they gain an increased effect from noxious cloud."
+        }
+      ]
     },
     {
       "Chapter": 3,
-      "Traits": "Toxic Revenge"
+      "RemoveActions": "Adrenalize",
+      "Actions": [
+        {
+          "Name": "Adrenalize",
+          "ActionCost": 1,
+          "Tags": [ "range 4", "multimark" ],
+          "Description": "An ally in range is marked. When marked, they gain defiance and may dash 3. While marked they gain +2 speed and an increased effect from noxious cloud."
+        }
+      ]
     }
   ]
 }

@@ -7,14 +7,12 @@
     {
       "Name": "Collapse Tunnel",
       "ActionCost": 2,
-      "Description": "The Mole creates a line 4 area effect of difficult terrain. Characters standing in the area when it is created must save or be slowed. If a pit is caught in the space, it explodes with a blast 1 area effect, dealing [D]+[fray] to characters within but destroying the pit."
+      "Description": "The [name] creates a line 4 area effect of difficult terrain. Characters standing in the area when it is created are dazed. If a pit is caught in the space, it explodes with a medium blast area effect, dealing 6 damage to characters within but removing the pit."
     },
     {
-      "Name": "Dig Down",
+      "Name": "Dig Tunnel",
       "ActionCost": 1,
-      "Recharge": 6,
-      "Tags": "end turn",
-      "Description": "Remove the Mole from the battlefield. Return them to any unoccupied space on the battlefield at the start of their next turn."
+      "Description": "The [name] chooses two pit spaces on the battlefield and connects them with a tunnel. Any character can use a free action to teleport from one end of the tunnel to the next, as long as the other end of the tunnel is unoccupied."
     }
   ]
 }

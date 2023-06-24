@@ -6,10 +6,12 @@
   "Actions": {
     "Name": "Fury Strikes",
     "ActionCost": 1,
-    "Tags": [ "melee attack", "true strike", "mark" ],
+    "Tags": [ "attack", "true strike", "mark" ],
     "Hit": "[D]+[fray].",
     "Miss": "[fray].",
-    "Effects": "Mark the foe after the attack resolves.",
-    "Mark": "While marked, the butcher's attacks cannot miss the marked foe (turn any miss into a hit) and deal bonus damage."
+    "Effects": [
+      "Foe is slashed.",
+      "May mark the foe after the attack resolves. While marked, the [name]'s attacks cannot miss the marked foe (turn any miss into a hit) and deal bonus damage."
+    ]
   }
 }

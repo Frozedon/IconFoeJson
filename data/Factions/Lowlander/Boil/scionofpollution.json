@@ -3,12 +3,23 @@
   "Inherits": "Boil",
   "Type": "Foe",
   "Chapter": 3,
-  "Traits": [ "Blightbellow", "Acid Rain" ],
-  "Actions": {
-    "Name": "Fetid Wind",
-    "ActionCost": 2,
-    "Description": "All foes are shoved 2 in the same direction.",
-    "Effects": "Poisoned foes are struck with overwhelming sickness and must save or become stunned.",
-    "Collide": "Character takes [D]+[fray]."
-  }
+  "Actions": [
+    {
+      "Name": "Acid Rain", 
+      "RoundAction": true,
+      "Description": "At the start of combat, the [name] creates a medium blast terrain effect in free space in range 6. Characters that end their turn inside the terrain effect take piercing damage equal to the round number +2. The [name] can redirect the terrain effect as part of this round action, moving it 3 spaces in any direction."
+    },
+    {
+      "Name": "Fetid Wind",
+      "ActionCost": 1,
+      "Description": "All foes are shoved 1 in the same direction.",
+      "Collide": "Character takes [fray] damage."
+    },
+    {
+      "Name": "Dissolution",
+      "ActionCost": 1,
+      "Tags": [ "range 4" ],
+      "Effects": "An ally in range  is dissolved into poisonous gas. That ally sacrifices 15, but gains flying and becomes intangible until the start of their next turn."
+    }
+  ]
 }

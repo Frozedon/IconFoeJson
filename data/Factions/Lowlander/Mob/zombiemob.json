@@ -1,0 +1,32 @@
+{
+  "Name": "Zombie Mob",
+  "Inherits": [ "Lowlander", "Mob" ],
+  "Type": "Foe",
+  "Traits": [ "Walking Dead", "Swarm Detonation" ],
+  "Actions": [
+    {
+      "Name": "Drag Along",
+      "ActionCost": 2,
+      "Tags": [ "attack" ],
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "Effects": "Shove 1 in any direction. If a character ends this shove adjacent to another [name], shove them 2 again."
+    },
+    {
+      "Name": "Swarm Release",
+      "ActionCost": 2,
+      "Tags": [ "stance" ],
+      "Description": "Each [name] releases an aura 1, with one of the following effects. The [name] can swap which effect is active at the start of the [name]'s turn. This stance lasts until the [name] moves on its turn.",
+      "ListedItems": [
+        {
+          "Name": "Swarm Frenzy",
+          "Description": "Foes that end their turns in the aura take 2 piercing damage and must save or become dazed."
+        },
+        {
+          "Name": "Swarm Synchronized",
+          "Description": "Attacks against allies in the aura take +1 curse, and allies gain cover against abilities not used from adjacent spaces."
+        }
+      ]
+    }
+  ]
+}

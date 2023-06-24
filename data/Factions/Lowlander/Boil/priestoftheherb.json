@@ -5,13 +5,13 @@
   "Actions": {
     "Name": "Purifying Censer",
     "ActionCost": 2,
-    "Tags": "summon",
-    "Description": "The Apothecary summons a censer in range 3.",
+    "Tags": [ "range 3" ],
+    "Description": "The [name] summons a censer in range.",
     "Summons": {
       "Name": "Herbal Censer",
       "IsObject": true,
-      "Tags": [ "Size 1", "Height 1" ],
-      "SummonEffects": "The censer has aura 1. Allies that end their turn inside the censer's aura may save. On a successful save, they end all statuses, blights, and marks of their choice affecting them."
+      "Tags": [ "Height 1 object" ],
+      "SummonEffects": "The censer has aura 1. Allies that end their turn inside the censer's aura may end a status or mark of their choice."
     }
   }
 }

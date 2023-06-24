@@ -1,170 +1,124 @@
 [
   {
     "Name": "The Idol",
-    "Description": "The Idol is a 2x2 space on the map that is a height 3 terrain piece and not a character. It is immune to damage from characters, but otherwise counts as terrain for abilities and other effects that rely on terrain."
+    "Description": "The Idol is a 2x2 height 3 immobile object on the map that is not a character and is immune to all damage and effects except from its own worshippers. It cannot be removed for any reason."
   },
   {
     "Name": "Aura of Sacrifice",
-    "Description": "Characters adjacent to the Idol take double damage and cannot benefit from defiance."
+    "Description": "Damage deal to characters adjacent to the idol becomes divine."
   },
   {
-    "Name": "Manifestations (Base)",
-    "DisplayName": "Manifestations",
-    "Description": "The Idol creates terrain effects at the start of combat, then at the start of each round. These can have effects on its turn or at the start of each round."
-  },
-  {
-    "Name": "Worshippers (Base)",
-    "DisplayName": "Worshippers",
-    "Description": "At the start of combat and the start of every round, the Idol summons worshippers, the amount and type of which depend on its phase. Summons use the idol's damage profile. Worshippers are lowlander summons, and when defeated the idol takes damage equal to their maximum hp. This is the only way to defeat the idol. Worshippers can be summoned in any free space in range 3 from the idol or in or adjacent to any of its terrain effects. On each of the Idol's turns two summons or up to five lesser clots can act, using the action(s) in their profile. Summons can act even if they have already acted that round.",
+    "Name": "Worshippers",
+    "Description": "At the start of combat and the start of every round, the Idol creates worshippers. It always has a mob of lesser clots, and a number of total worshippers (including the mob) equal to twice the number of players. Worshippers use the idol's damage die (d8) and fray damage (3).",
+    "ListedItems": [
+      { "Description": "Worshippers are new characters that only act on the idol's turn. When created, they can be created in range 3 of the idol or any of its terrain effects." },
+      { "Description": "On each of the Idol's turns, it chooses a different worshipper to act, including the clot mob. A worshipper may use their standard move, dash, or use the abilities in their profile." },
+      { "Description": "Worshippers can act again in a round, but only when all worshippers have acted at least once." },
+      { "Description": "When defeated, worshippers other than Clots deal damage to the idol equal to their maximum hp. This is only way to damage the idol." }
+    ],
     "Summons": [
       {
         "Name": "Lesser Clot",
         "Class": "Mob",
-        "Tags": [ "1 HP", "Defense 1", "Speed 3" ],
-        "Traits": [ "Terrain Expert", "Lowlander Toxin", "Mob", "Mud Body (Lesser Clot)" ],
+        "Tags": [ "5 defense", "spd 4" ],
+        "Traits": [ "Mob", "Filth Body" ],
         "Actions": {
           "Name": "Fetid Grasp",
           "ActionCost": 2,
-          "Description": "Move 2 spaces and deal 1 damage to an adjacent foe. If that foe is standing in difficult or dangerous terrain, or adjacent to another clot, increase damage to 2 piercing."
-        }
-      },
-      {
-        "Name": "Cultist",
-        "Class": "Skirmisher",
-        "Tags": [ "12 HP", "Defense 10", "Speed 4" ],
-        "Traits": [ "Terrain Expert", "Lowlander Toxin", "Dodge", "Skirmish" ],
-        "Actions": [
-          {
-            "Name": "Blood Spiller",
-            "ActionCost": 2,
-            "Tags": "melee attack",
-            "Hit": "[D]+[fray].",
-            "Miss": "[fray].",
-            "Effects": [
-              "Deals [fray] damage again to bloodied characters, or [D] again to characters at 25% hp or lower.",
-              "Dash 2 before or after the attack."
-            ]
-          },
-          {
-            "Name": "Fling Filth",
-            "ActionCost": 1,
-            "Description": "A character in range 4 is poisoned and must save or become slowed. Poisoned characters fail the save."
-          }
-        ]
-      },
-      {
-        "Name": "Vile Darter",
-        "Class": "Artillery",
-        "Tags": [ "12 HP", "Defense 8", "Speed 4" ],
-        "Traits": [ "Terrain Expert", "Lowlander Toxin", "Aetherwall" ],
-        "Actions": {
-          "Name": "Blowdart",
-          "ActionCost": 2,
-          "Tags": "ranged attack 8",
-          "Hit": "2[D]+[fray].",
+          "Tags": [ "attack", "range 2" ],
+          "Hit": "[D]+[fray].",
           "Miss": "[fray].",
           "Effects": [
-            "Dash 2 before or after the attack.",
-            "Inflict poisoned. Poisoned foes are shattered."
+            "Shove foe 1 space towards the acting clot.",
+            "All other clots may shove a foe in range 2 one space towards them, then all foes that were shoved this way take 2 damage."
           ]
         }
       },
       {
-        "Name": "Giant Beetle",
+        "Name": "1-2: Cultist",
+        "Class": "Skirmisher",
+        "Tags": [ "15 hp", "10 defense", "spd 4" ],
+        "Traits": [ "Dodge", "Skirmish" ],
+        "Actions": [
+          {
+            "Name": "Blood Spiller",
+            "ActionCost": 1,
+            "Tags": [ "attack" ],
+            "Hit": "[D]+[fray].",
+            "Miss": "[fray].",
+            "Effects": [
+              "Deals [fray] damage again to bloodied characters, or [fray] damage twice again to characters at 25% hp or lower.",
+              "Dash 2 before or after the attack."
+            ]
+          },
+          {
+            "Name": "Drag Hook",
+            "ActionCost": 1,
+            "Tags": [ "unerring" ],
+            "Effects": "A character in range 5 takes 2 damage, is dazed and shoved 1 in any direction. Bloodied characters are shoved 3 instead."
+          }
+        ]
+      },
+      {
+        "Name": "3-4: Vile Darter",
+        "Class": "Artillery",
+        "Tags": [ "15 hp", "8 defense", "spd 4" ],
+        "Traits": [ "Aetherwall" ],
+        "Actions": {
+          "Name": "Blowdart",
+          "ActionCost": 2,
+          "Tags": [ "attack", "range 8" ],
+          "Hit": "2[D]+[fray].",
+          "Miss": "[fray].",
+          "Effects": [
+            "Deals bonus damage to bloodied foes.",
+            "If foe is standing adjacent to the idol or in difficult or dangerous terrain, they are shattered."
+          ]
+        }
+      },
+      {
+        "Name": "5-6: Giant Insect",
         "Class": "Heavy",
-        "Tags": [ "20 HP", "Defense 6", "Speed 3" ],
-        "Traits": [ "Terrain Expert", "Lowlander Toxin", "Armor 2", "Fortify" ],
+        "Tags": [ "20 hp", "6 defense", "spd 4" ],
+        "Traits": [ "Guard" ],
         "Actions": [
           {
             "Name": "Crush",
             "ActionCost": 1,
-            "Tags": [ "melee attack", "true strike" ],
-            "Hit": "[D]+[fray] and shove 3.",
-            "Miss": "[fray] and shove 1.",
-            "Effects": "Poisoned characters are shoved 2 more spaces.",
-            "Collide": "Character is winded."
+            "Tags": [ "attack", "true strike" ],
+            "Hit": "[D]+[fray].",
+            "Miss": "[fray].",
+            "Effects": "Shove 1, or shove 3 if foe is bloodied.",
+            "Collide": "Character is weakened."
           },
           {
             "Name": "Pound",
             "ActionCost": 1,
+            "Tags": [ "medium blast" ],
             "Description": "Dash 2 spaces.",
-            "AreaEffect": "Characters take [fray] damage and are shoved 1."
+            "AreaEffect": "Characters take 2 damage and are shoved 1."
           }
         ]
       }
     ]
   },
   {
-    "Name": "Manifestations (Phase I)",
-    "DisplayName": "Manifestations",
-    "Description": "At the start of combat, then at the start of each round, the Idol creates one of the following terrain effects (roll 1d6). Manifestations must be created in free spaces on the ground. There is no maximum.",
-    "Rolls": [
-      {
-        "Values": [ 1, 2 ],
-        "Name": "Filthy Geyser",
-        "Description": "Create a pit. At the end of each round, the pit erupts. Characters in a blast 1 area effect centered on it take [D]+[fray] piercing damage and are poisoned."
-      },
-      {
-        "Values": [ 3, 4 ],
-        "Name": "Spewing Growth",
-        "Description": "Creates a height 1 destructible object (10 hp). The area around it is difficult terrain. During the Idol's turn, the Idol can make the following attack once from a pillar's location Disorienting Vomit: (ranged attack 6) On hit: [D]+[fray] and character is poisoned. Miss: [fray]. Poisoned foes are shoved 2."
-      },
-      {
-        "Values": [ 5, 6 ],
-        "Name": "Pillar of Filth",
-        "Description": "Create a height 3 pillar. Destructible, and when destroyed, or when a character collides with it, falls over. Create a line 3 area effect next to it. Characters inside must save or take 2[D]+[fray] and be stunned, or [D]+[fray] on a successful save. Area becomes difficult terrain for the rest of combat."
-      }
-    ]
+    "Name": "Filth Body",
+    "Description": "Lesser Clots are immune to all damage while inside difficult or dangerous terrain or adjacent to the Idol."
   },
   {
-    "Name": "Worshippers (Phase I)",
+    "Name": "Worshippers Phase 2",
     "DisplayName": "Worshippers",
-    "Description": "At the start of combat, then at the start of each round, the Idol summons until it has 1 clot per player. Then it can summon until it has a number of total other summons equal to twice the number of players."
+    "Description": "As phase I, but once a round, may act with an extra worshipper during a turn (so two worshippers act at once, in any order)."
   },
   {
-    "Name": "Unholy Vapors",
-    "Description": "At the start of each round, non-lowlander characters must save or be reduced to 50% hp on a failed save if they are not already bloodied. At round 6 or higher, vapors reduces all non-lowlander characters to 25% hp."
-  },
-  {
-    "Name": "Manifestations (Phase II)",
+    "Name": "Manifestations Phase 2",
     "DisplayName": "Manifestations",
-    "Description": "As phase I, but also creates the following:",
-    "ListedItems": {
-      "Name": "Pit of Sacrifice",
-      "Description": "Create a pit. Characters in the pit take double damage and cannot benefit from defiance."
-    }
-  },
-  {
-    "Name": "Worshippers (Phase II)",
-    "DisplayName": "Worshippers",
-    "Description": "As phase I, but can summon up to 2 clots per player."
-  },
-  {
-    "Name": "Mud Body (Lesser Clot)",
-    "DisplayName": "Mud Body",
-    "Description": "Has dodge while inside difficult or dangerous terrain or adjacent to the Idol."
-  },
-
-
-  {
-    "Name": "Walking Cataclysm",
-    "Description": "At the start of each round, the Head Lopper chooses two spaces within range 3 of a different foe. At the end of the round, height 3 dungeon spire objects burst forth from the earth in those spaces, creating a blast 1 area effect around them when they emerge that daze and deals [fray] damage to characters within. Characters standing on them are pushed up on top of them."
-  },
-  {
-    "Name": "Havoc",
-    "Description": "At the start of every round in this phase, the Head Lopper chooses any foe. At the end of the round, they remove themselves from the battlefield, flying high into the air, then land on top of the foe, dealing a massive impact. As an effect, the foe takes [D]+[fray] damage. For every other character or piece of terrain height 1 or higher adjacent, this effect deals bonus damage. Then, the Head Lopper lands, placing them in a free space in range 2."
-  },
-  {
-    "Name": "God Waster",
-    "Description": "At the start of the round, the Head Lopper either chooses Raze Hell or Raze Heaven. At the end of the round, they unleash a massive storm of violence. As an effect, all foes take divine damage depending on a character's elevation.",
+    "Description": "As phase I, but in addition to its regular manifestations, creates the following:",
     "ListedItems": [
       {
-        "Name": "Raze Hell",
-        "Description": "\n  • Pits: 100% of max hp.\n  • Ground: 50% of max hp.\n  • Height 1: 25% of max hp.\n  • Height 2 or higher: No effect."
-      },
-      {
-        "Name": "Raze Heaven",
-        "Description": "\n  • Pits: no effect.\n  • Ground: 25% of max hp.\n  • Height 1: 50% of max hp.\n  • Height 2 or higher: 100% of max hp."
+        "Name": "Pit of Sacrifice",
+        "Description": "Create a pit. Damage dealt to characters in the pit becomes divine."
       }
     ]
   },
@@ -172,27 +126,23 @@
 
   {
     "Name": "Worm and Rider",
-    "Description": "This fight is made of two opponents, the worm and the rider. Each is separately targetable, has its own hp, and tracks statuses and effects separately. When this legend acts, it alternates turns between the Worm and Rider if possible (if both of them are active and on the battlefield - the Rider might not be from Hurian Dive)."
+    "Description": "This fight is made of two characters, the worm and the rider. Each is separately targetable, has its own hp, and tracks statuses and effects separately. When this legend acts, it alternates turns between the Worm and Rider if possible (if both of them are active and on the battlefield - the Rider might not be from Hurian Dive).",
+    "ListedItems": [
+      { "Description": "The Worm is size 2 and sturdy." },
+      { "Description": "The Rider is size 1 and has the skirmisher and dodge traits." }
+    ]
   },
   {
     "Name": "Wormspore Bond",
-    "Description": "If the Worm or Rider is defeated, at the end of the round, if their partner is active, undefeated, and within range 6, they return to 25% maximum hp and return from being defeated. The legend is only fully defeated if both worm and rider are defeated in the same round."
+    "Description": "If the Worm or Rider is defeated, at the end of the round, if their partner is active, undefeated, and within range 4, they return to 25% maximum hp and return from being defeated. The legend is only fully defeated if both worm and rider are defeated in the same round."
+  },
+  {
+    "Name": "Deep Riders",
+    "Description": "Both these characters ignore movement and height penalties from pits. Attacks against characters in pits deal bonus damage and can critical hit (+[D])."
   },
   {
     "Name": "Worm Riding",
     "Description": "When the Worm enters or exits any space within range 2 of the Rider, the rider can hitch along. Remove the Rider from play as it hops on the worm. At the end of the current turn, place the Rider adjacent to the worm."
-  },
-  {
-    "Name": "Skewer",
-    "Description": "Attacks against characters in pits are always critical hits."
-  },
-  {
-    "Name": "Devour the Land",
-    "Description": "At the start of the round, the Worm chooses a blast 1 area of the battlefield. At the end of the round, the worm burrows and devours the earth in that area, creating a massive hole for the rest of combat. Foes in the area when it is devoured are stunned and take 2[D]+[fray]. The entire area counts as a connected pit. Place the worm in the area or as close as possible after this trait resolves."
-  },
-  {
-    "Name": "Crumbling Earth",
-    "Description": "At the start of the each round, all foes in pits take 3 piercing damage."
   },
   {
     "Name": "Law of the Worm",

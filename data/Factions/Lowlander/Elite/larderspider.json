@@ -1,0 +1,48 @@
+{
+  "Name": "Larder Spider",
+  "Inherits": [ "Lowlander", "Elite", "Skirmisher" ],
+  "Type": "Foe",
+  "Chapter": 3,
+  "Traits": [ "Hunting Horror" ],
+  "Actions": [
+    {
+      "Name": "Subterranean Hunter",
+      "RoundAction": true,
+      "Description": "At the start of the round, the [name] can choose to burrow into the ground. If so:",
+      "ListedItems": [
+        { "Description": "Remove it from the battlefield. The GM secretly places a [name]'s burrow marker within range 3 of a player character." },
+        { "Description": "A foe can reveal the [name] by entering or exiting a space adjacent to the marker." },
+        { "Description": "Otherwise, the [name] is revealed at the start of its turn." },
+        { "Description": "When revealed, the [name] is placed on the map on the marker, removing the marker, and may dash 3 as an interrupt." },
+        { "Description": "While burrowed, every time a player turn passes, the [name] may gain a d6 power die or may tick the die up by 1 if it already has one. Discard the die if the [name] is revealed by a foe." },
+        { "Description": "The [name] may spend this power die when attacking with Toxic Fang. If they do, it deals 4 damage, once, on hit or miss to its target after the ability resolves for every charge on the die." }
+      ]
+    },
+    {
+      "Name": "Toxic Fang",
+      "ActionCost": 1,
+      "Tags": [ "attack" ],
+      "Hit": "[D]+[fray].",
+      "Miss": "[fray].",
+      "Effects": "Foe is blinded.",
+      "Special": "Gains a massive damage boost if burrowed."
+    },
+    {
+      "Name": "Web Swing",
+      "ActionCost": 1,
+      "Description": "The [name] flies 3, then gains stealth."
+    },
+    {
+      "Name": "Venom Spike",
+      "ActionCost": 1,
+      "Tags": [ "range 4", "unerring", "repeatable" ],
+      "Description": "A foe in range takes 2 damage. If that foe is bloodied, they take 3 damage instead and are also dazed."
+    },
+    {
+      "Name": "Reveal Pit",
+      "ActionCost": 1,
+      "Tags": [ "terrain effect", "end turn" ],
+      "Description": "The [name] chooses a foe in range 4, then creates a pit underneath them. The chosen character can avoid the pit by becoming dazed instead, shoving them 1 space out of the way in a direction of the [name]'s choice. Dazed foes cannot avoid the pit and take 3 damage."
+    }
+  ]
+}

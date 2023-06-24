@@ -3,16 +3,16 @@
   "Inherits": "Boil",
   "Type": "Foe",
   "Chapter": 2,
-  "Traits": [ "Regenerator", "Aura of Rot" ],
+  "Traits": [ "Regeneration", "Aura of Rot" ],
   "Actions": {
     "Name": "Noxious Garden",
     "ActionCost": 2,
-    "Description": "The Mycowright creates up to two mushroom summons in range.",
+    "Tags": [ "range 3" ],
+    "Description": "The [name] creates up to two mushroom summons in range.",
     "Summons": {
       "Name": "Mushroom",
-      "IsObject": true,
-      "Tags": [ "Size 1", "Height 1", "Immobile", "1 HP" ],
-      "SummonEffects": "When a character collides with a mushroom, it explodes for a blast 1 area effect. Characters inside must save or become pacified, then take [D]+[fray] piercing damage, or just [fray] piercing damage on a successful save. The character that collided automatically fails the save."
+      "Tags": [ "Size 1", "immobile", "1 hp" ],
+      "SummonEffects": "When a character collides with a mushroom, it explodes for a small blast blast area effect. Characters inside must save or become pacified, then take [D]+[fray] piercing damage, or just [fray] damage on a successful save. The character that collided automatically fails the save."
     }
   }
 }

@@ -1,111 +1,140 @@
 {
   "Name": "Hurian Worm Rider",
-  "Inherits": [ "Lowlander", "Legendary Skirmisher" ],
+  "Inherits": [ "Lowlander", "Legend" ],
   "Type": "Foe",
   "Chapter": 3,
-  "HP": 12,
+  "HP": 25,
   "HPText": "Each partner has [HP] hp per player [MIN]",
-  "RemoveTraits": [ "Dodge", "Skirmish", "Terrain Expert" ],
-  "Traits": [ "Worm and Rider", "Wormspore Bond" ],
+  "RemoveTraits": [ "Juggernaut" ],
+  "Traits": [ "Worm and Rider", "Wormspore Bond", "Deep Riders" ],
+  "Actions": [
+    {
+      "Name": "Life Bond",
+      "RoundAction": true,
+      "Description": "At the start of the round, this character may clear a status or mark affecting either the worm or the rider."
+    }
+  ],
   "PhasesDescription": "The phase changes at round 4 and later.",
   "Phases": [
     {
-      "Description": "Round 3 or lower."
+      "Name": "Round 3 or lower."
     },
     {
-      "Description": "Round 4 or higher.",
-      "Traits": [ "Crumbling Earth", "Law of the Worm" ]
+      "Description": "Round 4 or higher. As phase 1, except Devour the Land triggers twice, and:",
+      "Traits": [ "Law of the Worm" ],
+      "Actions": [
+        {
+          "Name": "Crumbling Earth",
+          "RoundAction": true,
+          "Description": "At the start of the round, all foes in pitcs take 3 piercing damage."
+        }
+      ]
     }
   ],
   "ExtraAbilitysets": [
     {
       "Name": "Rider",
-      "Traits": [ "Size 1", "Dodge", "Skirmish", "Worm Riding", "Skewer" ],
+      "Traits": [ "Worm Riding" ],
       "Actions": [
         {
-          "Name": "Wormhunter Spear",
+          "Name": "Wormlure",
           "ActionCost": 1,
-          "Tags": [ "melee attack or ranged attack 4", "+1 boon" ],
-          "Hit": "[D]+[fray].",
-          "Miss": "[fray].",
-          "Effects": "On hit, until the end of their next turn, foe takes 1 damage for each space they move. Bloodied foes take 2 damage instead.",
-          "Combo": {
-            "Name": "Spear Strike",
-            "ActionCost": 2,
-            "Tags": [ "melee attack", "line 4" ],
-            "Hit": "2[D]+[fray].",
-            "Miss": "[fray].",
-            "AreaEffect": "[fray].",
-            "Effects": "The Rider may dash 4 spaces before or after this attack."
-          }
+          "Tags": [ "range 3", "terrain effect", "1/round" ],
+          "Description": "The Rider puts out a worm lure, a 1 space terrain effect, in range. If any foe ends its turn adjacent to the worm lure, if the Worm is active it may immediately remove and place itself adjacent to the lure, destroying it, then use its Massive Jaws attack as an interrupt, ignoring the attack limit. The lure remains action until triggered."
         },
         {
           "Name": "Burrow",
           "ActionCost": 1,
-          "Tags": "end turn",
-          "Description": "The Rider teleports adjacent to the Worms' space, then creates a pit in the space it left."
-        },
-        {
-          "Name": "Serrated Trap",
-          "ActionCost": 1,
-          "Tags": [ "2/round", "summon" ],
-          "Description": "The Rider springs a trap adjacent to a foe.",
-          "Summons": {
-            "Name": "Trap",
-            "Tags": [ "Size 1", "5 HP", "Immobile", "Automatically hit by attacks" ],
-            "SummonEffects": "That foe becomes immobile until the trap is destroyed. They can also save at the end of their turn, destroying the trap on a successful save."
-          }
-        },
-        {
-          "Name": "Wormlure",
-          "ActionCost": 1,
-          "Tags": [ "1/round", "terrain effect" ],
-          "Description": "The Rider puts out a worm lure, a 1 space terrain effect. If any foe ends its turn adjacent to the worm lure, if the Worm is active it may immediately teleport adjacent to the lure, destroying it, then use its Massive Jaws attack, ignoring the attack limit. The lure remains action until triggered."
+          "Tags": [ "2/round" ],
+          "Description": "The Rider removes itself from the battlefield, then gains 3 vigor and places itself adjacent to the Worm, creating a pit in the space it left."
         },
         {
           "Name": "Hurian Dive",
           "ActionCost": 2,
-          "Tags": "1/round",
-          "Description": "The Rider chooses a foe in range 6, then removes themselves from the battlefield. At the end of that foe's next turn, that foe must save as the Rider descends, dealing [D] four times on a failed save, or twice on a successful save. Lower this damage by [D] for every adjacent ally of the target, which could cause it to do no damage. Then, place the Rider in any free space in range 2."
+          "Tags": [ "range 6", "1/round" ],
+          "Description": "The Rider chooses a foe in range, then removes themselves from the battlefield. At the end of that foe's next turn, that foe must save as the Rider descends, dealing 6 damage four times on a failed save, or twice on a successful save. Lower this damage by one instance for every adjacent ally of the target, which could cause it to do no damage. Then, place the Rider in any free space in range 2."
+        },
+        {
+          "Name": "Wormhunter Spear",
+          "ActionCost": 1,
+          "Tags": [ "attack", "range 4", "unerring", "+1 boon" ],
+          "Hit": "[D]+[fray] and shove 2.",
+          "Miss": "[fray] and shove 1.",
+          "Collide": "Foe is dazed.",
+          "Combo": {
+            "Name": "Shuriken Spray",
+            "ActionCost": 1,
+            "Tags": [ "attack", "range 4" ],
+            "Hit": "[D]+[fray].",
+            "Miss": "[fray].",
+            "Effects": "Release a burst 2 (target) area effect, dealing 2 piercing damage to all other foes.",
+            "Combo": {
+              "Name": " Artery Cut",
+              "ActionCost": 2,
+              "Tags": [ "attack", "line 4", "mark" ],
+              "Hit": "2[D]+[fray].",
+              "Miss": "[fray].",
+              "AreaEffect": "[fray].",
+              "Effects": "Attack target is marked and gains an open wound. While marked, it takes [D] again at the end of its turns. This effect ends instead if the character ends their turn adjacent to an ally."
+            }
+          }
+        },
+        {
+          "Name": "Slicing Shuriken",
+          "ActionCost": 1,
+          "Tags": [ "burst 3 (self)" ],
+          "AreaEffect": "2 damage. Bloodied foes take 4 damage instead."
         }
       ]
     },
     {
       "Name": "Worm",
-      "Traits": [ "Size 2", "Sturdy", "Devour the Land" ],
       "Actions": [
+        {
+          "Name": "Devour the Land",
+          "RoundAction": true,
+          "Description": "At the start of the round, the Worm chooses a medium blast area of the battlefield. At the end of the round, the worm burrows, removing itself from the battlefield, and devours the earth in that area, creating a massive hole for the rest of combat. Foes in the area when it is devoured are stunned and must save or take 2[D]+[fray] damage, or just [fray] damage on a successful save. The entire area counts as a connected pit. Place the worm in the area or as close as possible after this trait resolves."
+        },
         {
           "Name": "Massive Jaws",
           "ActionCost": 1,
-          "Tags": [ "melee attack", "close blast 1" ],
+          "Tags": [ "attack", "range 2", "burst 1 (target)", "true strike" ],
           "Hit": "[D]+[fray].",
           "Miss": "[fray].",
           "AreaEffect": "[fray].",
           "Effects": [
-            "Becomes a critical hit on hit if only one for is caught in the area.",
-            "Bloodied characters are flung into the air, shoving them 3 in any direction"
+            "Foe is dazed.",
+            "Bloodied foes in the area are flung into the air, shoving them 2 in any direction."
           ]
+        },
+        {
+          "Name": "Spit Rock",
+          "ActionCost": 1,
+          "Tags": [ "range 6", "unerring" ],
+          "Description": "A foe in range takes 2 damage and is blinded. Blinded foes take 2 damage, twice instead."
         },
         {
           "Name": "Body Slam",
           "ActionCost": 1,
-          "Tags": "line 4",
-          "AreaEffect": "Foes in the area must save or take [D]+[fray] and be shoved 1 to either side of the line. On a successful save, they only take [fray] damage."
+          "Tags": [ "line 4" ],
+          "AreaEffect": "Foes in the area must save or take [fray] damage twice and be shoved 2 to either side of the line. On a successful save, they only take [fray] damage and are shoved 1."
         },
         {
           "Name": "Burrow",
           "ActionCost": 1,
-          "Tags": "end turn",
-          "Description": "Remove the worm from play, then place it back in any free space. Foes adjacent when it emerges take [fray] damage. Create a pit in one of the spaces it left."
+          "Tags": [ "end turn" ],
+          "Description": "Remove the worm from play, then place it back in any free space. Foes adjacent when it emerges are shoved 1. Create a pit in one of the spaces it left."
         },
         {
           "Name": "Swallow Whole",
           "ActionCost": 1,
-          "Tags": "2/round",
-          "Description": "An adjacent character to the worm must save or be swallowed whole. Remove them from the battlefield. At the start of their turn, the worm spits them out, placing them in any adjacent space to the worm's current location, then shoving them 3 spaces. They are blinded.",
-          "Collide": "Character takes [D]+[fray] and is stunned."
+          "Tags": [ "1/round" ],
+          "Description": "A adjacent character must save or be swallowed whole. On a successful save, they are dazed. Remove them from the battlefield. At the start of their turn, the worm spits them out, placing them in any adjacent space to the worm's current location, then shoving them 2 spaces. ",
+          "Collide": "Character takes [D]+[fray].",
+          "PostEffects": "Dazed characters fail the save."
         }
       ]
     }
-  ]
+  ],
+  "Tactics": "This double team fight is all about staying out of pits for player characters - something that will become increasingly hard to do over time. The worm and rider work together with many of their moves, with the worm able to shove foes into bad positions for the rider to pick them off with Artery Cut and Hurian Dive. You can use this to your advantage in phase II, when they can do this both on the same turn. Defeating one at a time is not an option, with each partner able to resurrect the other. Characters that stick together will have a better time in this fight, but also risk getting hit by a huge devour the land or massive jaws."
 }

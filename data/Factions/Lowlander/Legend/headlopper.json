@@ -1,56 +1,80 @@
 {
   "Name": "Head Lopper",
-  "Inherits": [ "Lowlander", "Legendary Heavy" ],
+  "Inherits": [ "Lowlander", "Legend" ],
   "Type": "Foe",
   "Chapter": 2,
-  "HP": 40,
-  "Traits": "Walking Cataclysm",
   "Actions": [
+    {
+      "Name": "Walking Cataclysm",
+      "RoundAction": true,
+      "Description": "At the start of each round, the Head Lopper chooses two spaces, each within range 3 of a different foe. At the end of the round, a height 3 dungeon spire object bursts forth from the earth in the first space, and a pit in the second. Each creates a medium blast area effect centered on them when they emerge that weakens and deals fray damage to foes within. Foes standing on the space when it is created must save or also become stunned."
+    },
+    {
+      "Name": "Havoc",
+      "RoundAction": true,
+      "Description": "At the start of the round, the Head Lopper chooses any foe. At the end of the round, they remove themselves from the battlefield, flying high into the air, then land on top of the foe, dealing a massive impact. As an effect, the foe takes 6 damage. For every other character, pit, or object adjacent, this effect deals 6 damage again. Then, the Head Lopper lands, placing them in a free space adjacent to that character."
+    },
     {
       "Name": "Earth Breaker",
       "ActionCost": 1,
-      "Tags": [ "melee attack", "close blast 1", "true strike" ],
-      "Hit": "[D]+[fray] and foe is winded.",
+      "Tags": [ "attack", "burst 1 (target)", "true strike" ],
+      "Hit": "[D]+[fray] and foe is weakened.",
       "Miss": "[fray].",
       "AreaEffect": "[fray].",
-      "Effects": "Create a height 1 boulder object under the attack space. Increase the height of any existing terrain spaces in the area by +1.",
+      "Effects": "Create a height 1 boulder object under the attack target. Increase the height of any existing objects in the area by +1, to a max of 3.",
       "Combo": {
         "Name": "Massive Overhead",
         "ActionCost": 2,
-        "Tags": [ "melee attack", "close blast 1", "true strike", "+1 curse" ],
-        "Hit": "3[D]+[fray] and foe must save or be stunned.",
-        "Miss": "[fray].",
-        "AreaEffect": "[fray].",
-        "Effects": "Create a pit under the attack space. Lower all terrain in the area by 1 space."
+        "Tags": [ "attack", "range 2", "burst 1 (target)", "+2 curse" ],
+        "Hit": "3[D]+[fray].",
+        "Miss": "[D]+[fray].",
+        "AreaEffect": "[D]+[fray].",
+        "Effects": [
+          "May rush 2 before this attack.",
+          "Attack target must save or be stunned.",
+          "Create a pit under the attack space. Lower all objects in the area by 1 space, or remove all height 1 objects."
+        ],
+        "Combo": {
+          "Name": "Tornado Kick",
+          "ActionCost": 1,
+          "Tags": [ "attack", "line 4", "unerring" ],
+          "Hit": "[D]+[fray].",
+          "Miss": "[fray].",
+          "AreaEffect": "[fray].",
+          "Effects": [
+            "May rush 1 before and after this attack.",
+            "Shove 2 to all foes."
+          ],
+          "Collide": "4 damage."
+        }
       }
     },
     {
       "Name": "Spinning Lariat",
       "ActionCost": 1,
-      "Tags": "repeatable",
-      "Description": "The Head Lopper dashes 3. All foes it passes by are shoved 1.",
-      "Collide": "Foe takes [fray] damage and is dazed."
+      "Tags": [ "repeatable" ],
+      "Description": "The Head Lopper rushes 3. All foes that are adjacent during any part of this movement are shoved 1.",
+      "Collide": "Foe takes 2 damage and is slashed."
     },
     {
-      "Name": "Mighty Leap",
+      "Name": "Jotunn Crusher",
       "ActionCost": 1,
-      "Tags": "repeatable",
-      "Description": "The Head Lopper flies 2 spaces in a straight line. Adjacent foes when they land are shoved 1.",
-      "Collide": "Foe is dazed. If this action is made from a higher elevation to a lower one, foes also take [fray] damage and the flight becomes 4 spaces."
+      "Tags": [ "repeatable" ],
+      "Description": "The Head Lopper rips up the earth and throws a boulder at a character in range 5. That character takes [fray] damage, then create a height 1 boulder object adjacent to them."
     },
     {
-      "Name": "Grab",
-      "ActionCost": 0,
-      "Tags": [ "2/round", "end turn" ],
-      "Description": "An foe in range 2 must save. On a failed save, the Head Lopper dashes until adjacent, then grabs the foe, immobilizing them. If the Head Lopper or the targeted foe are separated, this effect ends. Otherwise, at the end of the very next turn, the Head Lopper performs one of the following moves, ending this effect:",
+      "Name": "Demon Pankration",
+      "ActionCost": 1,
+      "Tags": [ "range 3", "end turn", "2/round" ],
+      "Description": "The head lopper attempts to grab foe of its choice in range. At the of the very next player turn, if that foe is still in range 3, the Head Lopper removes itself from the battlefield, places itself adjacent, then performs one of the following moves, dealing 6 damage and ending this effect:",
       "ListedItems": [
         {
           "Name": "DDT",
-          "Description": "The foe is stunned, winded, dazed, and shoved 1."
+          "Description": "The foe is stunned, weakened, slashed, and shoved 1."
         },
         {
           "Name": "Spinning Piledriver",
-          "Description": "The Head Lopper and the foe fly 2 together, then the foe takes [fray] damage and has a pit created underneath them."
+          "Description": "The Head Lopper and the foe rush 2 together, then the foe takes piercing [fray] damage again and has a pit created underneath them."
         },
         {
           "Name": "Backbreaker",
@@ -59,13 +83,47 @@
       ]
     }
   ],
-  "PhasesDescription": "The Headlopper changes phases when bloodied.",
+  "PhasesDescription": "Changes phases when bloodied. When changing phases, becomes immune to all damage and unstoppable until the start of its next turn.",
   "Phases": [
     {
-      "Traits": "Havoc"
     },
     {
-      "Traits": [ "Enrage", "God Waster" ]
+      "Description": "As phase I, but gains:",
+      "Traits": [ "Enrage" ],
+      "Actions": [
+        {
+          "Name": "Gigakaiser",
+          "ActionCost": 1,
+          "Tags": [ "1/round" ],
+          "Description": "The Head Lopper rushes 2, then an adjacent character is stunned. Stunned characters must additionally sacrifice 25% of their maximum hp. Stunned characters at 25% hp or lower are instantly defeated."
+        },
+        {
+          "Name": "God Waster",
+          "RoundAction": true,
+          "Description": "At the start of the round, the Head Lopper either chooses Raze Hell or Raze Heaven. Whichever they choose, they must choose the opposite next round, alternating each round. At the end of the round, they unleash a massive storm of violence. As an effect, all foes take divine damage depending on a character's elevation, which cannot reduce them below 1 hp.",
+          "ListedItems": [
+            {
+              "Name": "Raze Hell",
+              "ListedItems": [
+                { "Name": "Pits", "Description": "100% of max hp." },
+                { "Name": "Ground", "Description": "50% of max hp." },
+                { "Name": "Height 1", "Description": "25% of max hp." },
+                { "Name": "Height 2 or higher", "Description": "No effect." }
+              ]
+            },
+            {
+              "Name": "Raze Heaven",
+              "ListedItems": [
+                { "Name": "Pits", "Description": "No effect." },
+                { "Name": "Ground", "Description": "25% of max hp." },
+                { "Name": "Height 1", "Description": "50% of max hp." },
+                { "Name": "Height 2 or higher", "Description": "100% of max hp." }
+              ]
+            }
+          ]
+        }
+      ]
     }
-  ]
+  ],
+  "Tactics": "During this fight, the Head Lopper tears up the battlefield with its insane strength, transforming it into a scarred wasteland. Over time, it will become tough for characters to avoid colliding, and avoid its powerful Demon Pankration moves and its massive Havoc dive. In phase II, characters must take note of the elevation of the battlefield, which could be the difference between life and death. Characters can build their own refuges to escape God Waster, or position themselves so it becomes hard for the Head Lopper to knock them into bad positions with Tornado kick and Demon Pankration."
 }

@@ -2,32 +2,39 @@
   "Name": "Ruin Speaker",
   "Inherits": [ "Lowlander", "Elite", "Artillery" ],
   "Type": "Foe",
-  "Traits": "Call Ruin",
+  "Traits": [ "Ruin Lord" ],
   "Actions": [
+    {
+      "Name": "Call Ruin",
+      "RoundAction": true,
+      "Description": "At the start of the round, the [name] chooses a space in range 6. At the end of the round, a ruin chunk surfaces in that space, a height 3 object. Spaces next to this terrain are difficult terrain. Any character occupying the space is pushed up on top of the ruin chunk but also takes piercing fray damage and is stunned."
+    },
     {
       "Name": "Landwrack",
       "ActionCost": 2,
-      "Tags": "ranged attack 8",
+      "Tags": [ "attack", "arc 8" ],
       "Hit": "2[D]+[fray].",
       "Miss": "[fray].",
-      "Effects": "Create a height 1 ruin object adjacent to the character."
+      "AreaEffect": "[fray].",
+      "Effects": "Summon a height 1 ruin object adjacent to the character. Deals bonus damage for each object it passed through before the attack target.",
+      "Combo": {
+        "Name": "Sinkhole",
+        "ActionCost": 1,
+        "Tags": [ "range 6", "mark" ],
+        "Description": "A foe in range is marked and has a pit created under them. At the end of their turn, that character creates another pit underneath them. If that character is already standing a pit when one is created by this ability, they take 4 piercing damage instead. At the end of their turn, this mark ends."
+      }
     },
     {
       "Name": "Entropus",
       "ActionCost": 1,
-      "Tags": "multimark",
-      "Description": "A character in range 6 of the ruin speaker is marked and starts to petrify.",
-      "Mark": "While marked, they take [D] piercing damage at the end of their turns if they end their turn adjacent to or inside an object or terrain effect. A character can clear this mark by not moving for their entire turn."
+      "Tags": [ "range 6", "multimark", "1/round" ],
+      "Description": "A character in range of the [name] is marked and starts to petrify. While marked, they are shattered and take 5 piercing damage at the end of their turns if they end their turn adjacent to or inside an object, pit, difficult, or dangerous terrain. A character can clear this mark by not moving for their entire turn"
     },
     {
       "Name": "Earthglide",
       "ActionCost": 1,
+      "Tags": [ "repeatable" ],
       "Description": "Dash 3. Gain phasing and become intangible while moving."
-    },
-    {
-      "Name": "Welcome",
-      "ActionCost": 1,
-      "Description": "The Ruin Speaker creates a lowlander trap in a free space in range 6."
     }
   ]
 }

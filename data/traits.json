@@ -108,6 +108,17 @@
     ]
   },
   {
+    "Name": "Beastmaster",
+    "Description": "The [name] starts combat with 3 unique trained beast summons. Place them within range 3.",
+    "Summons": [
+      {
+        "Name": "Trained Beasts",
+        "Tags": [ "Size 1", "5 defense", "20 hp" ],
+        "SummonEffects": "Unlike other summons, these summons have defense and health and lack intangible (so they can take damage and effects). When defeated, the summons disappear as normal, and they do not cause obstruction or engagement."
+      }
+    ]
+  },
+  {
     "Name": "Black Temple Bell",
     "Description": "This [name]'s huge bell is so heavy it can only attack once a round."
   },
@@ -137,7 +148,7 @@
   },
   {
     "Name": "Bloodwhetter",
-    "Description": "When this character is damaged by an ability they may deal 2 damage to an adjacent foe. This happens each time this character is damaged."
+    "Description": "When the [name] is damaged by an ability they may deal 2 damage to an adjacent foe, each time they are damaged."
   },
   {
     "Name": "Boiling Shroud",
@@ -296,8 +307,8 @@
     "Description": "+1 action when bloodied."
   },
   {
-    "Name": "Entrench",
-    "Description": "Unstoppable while inside a pit. (Immune to all statuses. Can't be immobilized, shoved, or teleported by foes)"
+    "Name": "Entrenched",
+    "Description": "Unstoppable while in a pit."
   },
   {
     "Name": "Equivalent Exchange",
@@ -368,6 +379,10 @@
     "Description": "Has Rampart, Reduce all damage to self and allies in orthogonal spaces by 2, as if by armor."
   },
   {
+    "Name": "Harden",
+    "Description": "The [name] hardens over time, and increases all damage it deals by an amount equal to twice the round number. At the end of round 6, it finally petrifies and is defeated."
+  },
+  {
     "Name": "Heavy Arkentech Armor",
     "Description": "The [name] is fitted with heavy power armor that is only strong from the front, with the following effects:",
     "ListedItems": [
@@ -403,6 +418,10 @@
   {
     "Name": "Hovering",
     "Description": "Immune to rampart."
+  },
+  {
+    "Name": "Hunting Horror",
+    "Description": "The [name] has evasion unless there are two or more adjacent foes."
   },
   {
     "Name": "Immobile",
@@ -471,8 +490,14 @@
     ]
   },
   {
-    "Name": "Living Lightning",
-    "Description": "Electrifies foes it moves through. Foes that are already electrified must save or become slowed. Allied spaces cost 0 movement to pass through."
+    "Name": "Lick Knife",
+    "Description": "The [name]'s abilities all have",
+    "CustomComponents": [
+      {
+        "Name": "Slay",
+        "Description": "gain +1 action. This trait can only trigger once a turn."
+      }
+    ]
   },
   {
     "Name": "Living Root",
@@ -521,6 +546,10 @@
     "Description": "Before combat starts, may move every character to any space up to 2 spaces in any direction from their starting location."
   },
   {
+    "Name": "Master of the Underway",
+    "Description": "The [name] gains stealth if they start or end their turn in a pit and can use 2 spaces of movement to teleport from any pit space to any other free pit space."
+  },
+  {
     "Name": "Mimicry",
     "Description": "In any battle with the [name], place 5 decoys on the battlefield at the start of the battle. Unlike other summons, they lack the intangible trait and can be destroyed.",
     "Summons": [
@@ -549,12 +578,20 @@
     }
   },
   {
+    "Name": "Mud Body",
+    "Description": "Has resistance while inside difficult or dangerous terrain, or pits. If outside those terrain areas, takes bonus damage and +1 curse on attacks and saves."
+  },
+  {
+    "Name": "Mutate",
+    "Description": "When bloodied, the [name] deals bonus damage and becomes unstoppable."
+  },
+  {
     "Name": "Nimble",
     "Description": "Has evasion unless suffering from a status."
   },
   {
     "Name": "Noxious Censer",
-    "Description": "The priest has Aura 2. Poisoned foes in the aura get +1 curse on attacks and saves."
+    "Description": "Aura 2. Characters in the aura have cover against abilities used from the outside, and foes in the aura get +1 curse on attacks."
   },
   {
     "Name": "Overwhelming Stench",
@@ -618,16 +655,16 @@
     "Description": "If bloodied, gain 4 vigor at the end of your turn."
   },
   {
-    "Name": "Regenerator",
-    "Description": "Starts combat with vigor 1 and Regeneration. Starts combat bloodied. (Gain vigor 1 as the end of their turn)."
-  },
-  {
     "Name": "Resistance",
     "Description": "Take 1/2 damage, rounded up."
   },
   {
     "Name": "Rook",
     "Description": "Grants cover to adjacent allies."
+  },
+  {
+    "Name": "Ruin Lord",
+    "Description": "Can stack up to two marks on characters."
   },
   {
     "Name": "Rune-Glamor",
@@ -723,7 +760,7 @@
   },
   {
     "Name": "Stench",
-    "Description": "The [name] has aura 1. Foes in the aura take +1 curse on attacks and saves."
+    "Description": "Aura 1. Foes in the aura take +1 curse on attacks and saves."
   },
   {
     "Name": "Stone Pantry",
@@ -759,11 +796,15 @@
   },
   {
     "Name": "Swarm",
-    "Description": "Has resistance to any damage not from area effects or attacks. Does not provide obstruction, but characters treat its space as difficult terrain. (Take 1/2 damage, rounded up)"
+    "Description": "Has resistance to any damage not from area effects or attacks. Does not provide obstruction, but characters treat its space as difficult terrain."
+  },
+  {
+    "Name": "Swarm Detonation",
+    "Description": "When any [name] is defeated, it deals 2 piercing damage to all adjacent foes."
   },
   {
     "Name": "Swarm Shroud",
-    "Description": "Aura 2. Ranged attacks against this character and allies in the aura gain +1 curse, and foes that start their turn in the aura take 1 piercing damage."
+    "Description": "Aura 2. Attacks against the [name] and allies in the aura gain +1 curse, and foes that start their turn in the area take 1 piercing damage."
   },
   {
     "Name": "Tactics Aura",
@@ -790,6 +831,15 @@
     "Description": "After any ability resolves that damages the [name], it becomes intangible until the start of the following turn, and may teleport 2."
   },
   {
+    "Name": "Toxic Revenge",
+    "CustomComponents": [
+      {
+        "Name": "Area Effect",
+        "Description": "Area Effect: When defeated, explodes with venom, inflicting [D]+[fray] damage as a burst 1 (self) area effect."
+      }
+    ]
+  },
+  {
     "Name": "True Enrage",
     "Description": "+1 action and unstoppable while bloodied."
   },
@@ -799,7 +849,7 @@
   },
   {
     "Name": "Tunnel",
-    "Description": "When this character ends its turn, create a pit underneath it."
+    "Description": "When the [name] ends its turn, create a pit underneath it."
   },
   {
     "Name": "Two Heads",
@@ -830,6 +880,10 @@
     "Description": "Attacks inflict poisoned, ignore vigor, and deal bonus damage against bloodied characters."
   },
   {
+    "Name": "Walking Dead",
+    "Description": "Disintegrates and is defeated if all other foes are defeated."
+  },
+  {
     "Name": "Wayfinding",
     "Description": "Has evasion while inside difficult or dangerous terrain, and ignores the effects of difficult or dangerous terrain."
   },
@@ -839,6 +893,6 @@
   },
   {
     "Name": "Zipline Dismount",
-    "Description": "Characters mounted on this character can fly 5 and dismount it as free action."
+    "Description": "Characters mounted on the [name] can fly 3 and dismount it as free action ability."
   }
 ]

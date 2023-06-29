@@ -2,6 +2,8 @@
   "Name": "Summer Flame Aesi",
   "Inherits": [ "Hob", "Legend" ],
   "Type": "Foe",
+  "RemoveSetupTraits": [ "Forest Children" ],
+  "RemoveTraits": [ "Greenwalker", "Trickery" ],
   "Traits": [ "Size 2", "Divine Ambrosia", "Sober Up" ],
   "Actions": [
     {

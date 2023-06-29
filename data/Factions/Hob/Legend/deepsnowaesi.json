@@ -3,6 +3,8 @@
   "Inherits": [ "Hob", "Legend" ],
   "Type": "Foe",
   "Chapter": 3,
+  "RemoveSetupTraits": [ "Forest Children" ],
+  "RemoveTraits": [ "Greenwalker", "Trickery" ],
   "Traits": [ "Flying" ],
   "SetupTraits": {
     "Name": "Map",

@@ -74,6 +74,7 @@
       }
     },
     {
+      "Description": "As phase I, but loses Flinch and gains",
       "Actions": [
         {
           "Name": "Swell Flesh",
@@ -81,7 +82,7 @@
           "Description": "The demon starts to swell and grow unnaturally in size. At the start of the round, it grows its size by +1. This has no maximum."
         },
         {
-          "Name": "Swell Flesh",
+          "Name": "Limb from Limb",
           "ActionCost": 2,
           "Tags": [ "true strike", "end turn", "1/round" ],
           "Description": "The Demon rushes 4 spaces in a straight line with phasing. Characters in its path must save or take 2[D]+[fray] and be stunned, or [D]+[fray] damage on a successful save. When the demon passes through a character's space during this move, it summons a crawling mass adjacent to them, but only once per character."

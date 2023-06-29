@@ -3,6 +3,8 @@
   "Inherits": [ "Hob", "Legend" ],
   "Type": "Foe",
   "Chapter": 2,
+  "RemoveSetupTraits": [ "Forest Children" ],
+  "RemoveTraits": [ "Greenwalker", "Trickery" ],
   "Traits": [ "Immortal Thievery" ],
   "Interrupts": {
     "Name": "Steal Ability",

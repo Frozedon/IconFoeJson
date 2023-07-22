@@ -3,7 +3,7 @@
   "Inherits": "Skirmisher",
   "Type": "Foe",
   "UsesTemplate": true,
-  "Tags": "Phasing",
+  "Traits": "Phasing",
   "Actions": [
     {
       "Name": "Shadow Cloak",
